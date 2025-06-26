@@ -8,7 +8,7 @@ export default function AboutPage() {
 				<div className='max-w-5xl mx-auto'>
 					<div className='text-center mb-12'>
 						<h1 className='text-4xl md:text-5xl font-bold text-gray-800 mb-4'>
-							About WordFinder
+							About FindWordFinder
 						</h1>
 						<p className='text-lg text-gray-600 max-w-3xl mx-auto'>
 							Empowering word game players with the best tools to
