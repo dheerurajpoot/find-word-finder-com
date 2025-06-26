@@ -15,7 +15,7 @@ export default function PrivacyPage() {
 						</CardHeader>
 						<CardContent>
 							<p className='leading-relaxed mb-4'>
-								WordFinder collects information you provide
+								FindWordFinder collects information you provide
 								directly to us, such as when you contact us
 								through our contact form. This may include:
 							</p>
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
 						</CardHeader>
 						<CardContent>
 							<p className='leading-relaxed'>
-								WordFinder may use cookies and similar tracking
+								FindWordFinder may use cookies and similar tracking
 								technologies to enhance your experience. Cookies
 								are small files that a site or its service
 								provider transfers to your computer&apos;s hard
@@ -122,7 +122,7 @@ export default function PrivacyPage() {
 						</CardHeader>
 						<CardContent>
 							<p className='leading-relaxed'>
-								WordFinder does not knowingly collect personal
+								FindWordFinder does not knowingly collect personal
 								information from children under 13. If we become
 								aware that a child under 13 has provided us with
 								personal information, we will delete such
@@ -153,7 +153,7 @@ export default function PrivacyPage() {
 							<p className='leading-relaxed'>
 								If you have any questions about this privacy
 								policy, please contact us at
-								privacy@wordfinder.com or through our contact
+								privacy@findwordfinder.com or through our contact
 								form.
 							</p>
 							<p className='text-sm text-gray-600 mt-4'>
