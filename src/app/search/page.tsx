@@ -69,7 +69,7 @@ function SearchContent() {
 	const [length, setLength] = useState("");
 	const [dictionary, setDictionary] = useState("all");
 	const [sortBy, setSortBy] = useState("points");
-	const [groupByLength, setGroupByLength] = useState(false);
+	const [groupByLength, setGroupByLength] = useState(true);
 	const [words, setWords] = useState<Word[]>([]);
 	const [loading, setLoading] = useState(false);
 	const [showMore, setShowMore] = useState(false);
@@ -97,68 +97,107 @@ function SearchContent() {
 		include?: string;
 		exclude?: string;
 	}) => {
-		const lengthNum = parseInt(length, 10);
-		if (!length || isNaN(lengthNum)) return [];
+		// If no length is specified, search for common word lengths (3-8 letters)
+		const searchLengths = length
+			? [parseInt(length, 10)]
+			: [3, 4, 5, 6, 7, 8];
+		const allResults: string[] = [];
 
-		// Build 'sp' pattern
-		const middleLength = lengthNum - starts.length - ends.length;
-		if (middleLength < 0) return [];
+		for (const lengthNum of searchLengths) {
+			if (isNaN(lengthNum) || lengthNum < 1) continue;
 
-		const pattern = `${starts}${"?".repeat(middleLength)}${ends}`;
+			// Build 'sp' pattern
+			const middleLength = lengthNum - starts.length - ends.length;
+			if (middleLength < 0) continue;
 
-		const apiUrl = `https://api.datamuse.com/words?sp=${pattern}&topics=${
-			letters || ""
-		}&max=100`;
+			const pattern = `${starts}${"?".repeat(middleLength)}${ends}`;
 
-		const res = await axios.get(apiUrl);
-		const data = await res.data;
+			// Use different API approach based on search type
+			let apiUrl: string;
 
-		const rawWords: string[] = data.map(
-			(item: { word: string }) => item.word
-		);
-
-		// Filter words
-		const filtered = rawWords.filter((word: string) => {
-			// Exact length
-			if (word.length !== lengthNum) return false;
-
-			// Must contain substring
-			if (contains && !word.includes(contains.toLowerCase()))
-				return false;
-
-			// Must include all letters
-			if (letters) {
-				const lower = word.toLowerCase();
-				for (const l of letters.toLowerCase()) {
-					if (!lower.includes(l)) return false;
-				}
+			if (letters && !starts && !ends && !contains) {
+				// Letter-only search: find words containing these letters
+				// Use a broader search that finds words with the specified length
+				apiUrl = `https://api.datamuse.com/words?sp=${"?".repeat(
+					lengthNum
+				)}&max=100`;
+			} else {
+				// Pattern-based search
+				apiUrl = `https://api.datamuse.com/words?sp=${pattern}&topics=${
+					letters || ""
+				}&max=100`;
 			}
 
-			// Must include all 'include' letters
-			if (include) {
-				const lower = word.toLowerCase();
-				for (const l of include.toLowerCase()) {
-					if (!lower.includes(l)) return false;
-				}
+			try {
+				const res = await axios.get(apiUrl);
+				const data = await res.data;
+
+				const rawWords: string[] = data.map(
+					(item: { word: string }) => item.word
+				);
+
+				// Filter words
+				const filtered = rawWords.filter((word: string) => {
+					// Exact length
+					if (word.length !== lengthNum) return false;
+
+					// Must contain substring
+					if (contains && !word.includes(contains.toLowerCase()))
+						return false;
+
+					// Must include all letters (for letter-only searches)
+					if (letters && !starts && !ends && !contains) {
+						const lower = word.toLowerCase();
+						const letterArray = letters.toLowerCase().split("");
+						for (const l of letterArray) {
+							if (!lower.includes(l)) return false;
+						}
+					}
+
+					// Must include all letters (for pattern searches)
+					if (letters && (starts || ends || contains)) {
+						const lower = word.toLowerCase();
+						for (const l of letters.toLowerCase()) {
+							if (!lower.includes(l)) return false;
+						}
+					}
+
+					// Must include all 'include' letters
+					if (include) {
+						const lower = word.toLowerCase();
+						for (const l of include.toLowerCase()) {
+							if (!lower.includes(l)) return false;
+						}
+					}
+
+					// Must NOT include any 'exclude' letters
+					if (exclude) {
+						const lower = word.toLowerCase();
+						for (const l of exclude.toLowerCase()) {
+							if (lower.includes(l)) return false;
+						}
+					}
+
+					// Optional dictionary filter
+					if (dictionary === "common") {
+						if (word.length > 12 || word.length < 3) return false;
+					}
+
+					return true;
+				});
+
+				allResults.push(...filtered);
+			} catch (error) {
+				console.error(
+					`Error fetching words for length ${lengthNum}:`,
+					error
+				);
 			}
+		}
 
-			// Must NOT include any 'exclude' letters
-			if (exclude) {
-				const lower = word.toLowerCase();
-				for (const l of exclude.toLowerCase()) {
-					if (lower.includes(l)) return false;
-				}
-			}
-
-			// Optional dictionary filter
-			if (dictionary === "common") {
-				if (word.length > 12 || word.length < 3) return false;
-			}
-
-			return true;
-		});
-
-		return filtered.slice(0, 100);
+		// Remove duplicates and limit results
+		const uniqueResults = Array.from(new Set(allResults));
+		return uniqueResults.slice(0, 100);
 	};
 
 	const calculateScore = (word: string): number => {
@@ -221,21 +260,37 @@ function SearchContent() {
 			};
 
 			try {
-				const stringResults = await fetchWords(params);
+				// Only perform search if we have some search criteria
+				if (
+					params.letters ||
+					params.starts ||
+					params.ends ||
+					params.contains ||
+					params.include ||
+					params.exclude
+				) {
+					const stringResults = await fetchWords(params);
 
-				const wordResults: Word[] = stringResults.map((word) => ({
-					word,
-					score: calculateScore(word),
-					length: word.length,
-				}));
+					const wordResults: Word[] = stringResults.map((word) => ({
+						word,
+						score: calculateScore(word),
+						length: word.length,
+					}));
 
-				const sortedResults = wordResults.sort((a: Word, b: Word) => {
-					if (sortBy === "points") return b.score - a.score;
-					if (sortBy === "a-z") return a.word.localeCompare(b.word);
-					if (sortBy === "z-a") return b.word.localeCompare(a.word);
-					return 0;
-				});
-				setWords(sortedResults);
+					const sortedResults = wordResults.sort(
+						(a: Word, b: Word) => {
+							if (sortBy === "points") return b.score - a.score;
+							if (sortBy === "a-z")
+								return a.word.localeCompare(b.word);
+							if (sortBy === "z-a")
+								return b.word.localeCompare(a.word);
+							return 0;
+						}
+					);
+					setWords(sortedResults);
+				} else {
+					setWords([]);
+				}
 			} catch (error) {
 				console.log(error);
 				setWords([]);
@@ -276,8 +331,15 @@ function SearchContent() {
 			setInclude(includeParam);
 			setExclude(excludeParam);
 
-			// Perform initial search if any field is provided
-			if (lettersParam || startsParam || endsParam || containsParam) {
+			// Perform initial search if any search criteria is provided
+			if (
+				lettersParam ||
+				startsParam ||
+				endsParam ||
+				containsParam ||
+				includeParam ||
+				excludeParam
+			) {
 				handleSearch({
 					letters: lettersParam,
 					starts: startsParam,
@@ -347,6 +409,314 @@ function SearchContent() {
 			</div>
 
 			<div className='container mx-auto px-4 py-8'>
+				{/* Mobile search filter at top */}
+				<div className='block lg:hidden mb-6'>
+					<Card>
+						<CardContent className='p-4'>
+							<div className='relative mb-4'>
+								<Input
+									id='letters-mobile'
+									type='text'
+									placeholder=''
+									value={letters}
+									onChange={(e) =>
+										setLetters(e.target.value.toUpperCase())
+									}
+									className='peer pr-8'
+								/>
+								<Label
+									htmlFor='letters-mobile'
+									className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+									style={
+										letters
+											? {
+													top: "-0.3rem",
+													fontSize: "1.125rem",
+													color: "#3b82f6",
+													backgroundColor:
+														"rgba(255, 255, 255, 0.95)",
+													padding: "0 0.25rem",
+													borderRadius: "25px",
+											  }
+											: {}
+									}>
+									Letters
+								</Label>
+								{letters && (
+									<Button
+										variant='ghost'
+										size='sm'
+										className='absolute right-1 top-1 h-6 w-6 p-0'
+										onClick={() => clearFilter("letters")}>
+										<X className='h-3 w-3' />
+									</Button>
+								)}
+							</div>
+							<div className='grid grid-cols-2 gap-2 mb-4'>
+								<div className='relative'>
+									<Input
+										id='starts-mobile'
+										type='text'
+										placeholder=''
+										value={starts}
+										onChange={(e) =>
+											setStarts(
+												e.target.value.toUpperCase()
+											)
+										}
+										className='peer text-sm'
+									/>
+									<Label
+										htmlFor='starts-mobile'
+										className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+										style={
+											starts
+												? {
+														top: "-0.3rem",
+														fontSize: "1.125rem",
+														color: "#3b82f6",
+														backgroundColor:
+															"rgba(255, 255, 255, 0.95)",
+														padding: "0 0.25rem",
+														borderRadius: "25px",
+												  }
+												: {}
+										}>
+										Starts
+									</Label>
+									{starts && (
+										<Button
+											variant='ghost'
+											size='sm'
+											className='absolute right-1 top-1 h-6 w-6 p-0'
+											onClick={() =>
+												clearFilter("starts")
+											}>
+											<X className='h-3 w-3' />
+										</Button>
+									)}
+								</div>
+								<div className='relative'>
+									<Input
+										id='ends-mobile'
+										type='text'
+										placeholder=''
+										value={ends}
+										onChange={(e) =>
+											setEnds(
+												e.target.value.toUpperCase()
+											)
+										}
+										className='peer text-sm'
+									/>
+									<Label
+										htmlFor='ends-mobile'
+										className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+										style={
+											ends
+												? {
+														top: "-0.3rem",
+														fontSize: "1.125rem",
+														color: "#3b82f6",
+														backgroundColor:
+															"rgba(255, 255, 255, 0.95)",
+														padding: "0 0.25rem",
+														borderRadius: "25px",
+												  }
+												: {}
+										}>
+										Ends
+									</Label>
+									{ends && (
+										<Button
+											variant='ghost'
+											size='sm'
+											className='absolute right-1 top-1 h-6 w-6 p-0'
+											onClick={() => clearFilter("ends")}>
+											<X className='h-3 w-3' />
+										</Button>
+									)}
+								</div>
+							</div>
+							<div className='grid grid-cols-2 gap-2 mb-4'>
+								<div className='relative'>
+									<Input
+										id='contains-mobile'
+										type='text'
+										placeholder=''
+										value={contains}
+										onChange={(e) =>
+											setContains(
+												e.target.value.toUpperCase()
+											)
+										}
+										className='peer text-sm'
+									/>
+									<Label
+										htmlFor='contains-mobile'
+										className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+										style={
+											contains
+												? {
+														top: "-0.3rem",
+														fontSize: "1.125rem",
+														color: "#3b82f6",
+														backgroundColor:
+															"rgba(255, 255, 255, 0.95)",
+														padding: "0 0.25rem",
+														borderRadius: "25px",
+												  }
+												: {}
+										}>
+										Contains
+									</Label>
+									{contains && (
+										<Button
+											variant='ghost'
+											size='sm'
+											className='absolute right-1 top-1 h-6 w-6 p-0'
+											onClick={() =>
+												clearFilter("contains")
+											}>
+											<X className='h-3 w-3' />
+										</Button>
+									)}
+								</div>
+								<div className='relative'>
+									<Input
+										id='length-mobile'
+										type='number'
+										placeholder=''
+										value={length}
+										onChange={(e) =>
+											setLength(e.target.value)
+										}
+										className='peer text-sm'
+									/>
+									<Label
+										htmlFor='length-mobile'
+										className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+										style={
+											length
+												? {
+														top: "-0.3rem",
+														fontSize: "1.125rem",
+														color: "#3b82f6",
+														backgroundColor:
+															"rgba(255, 255, 255, 0.95)",
+														padding: "0 0.25rem",
+														borderRadius: "25px",
+												  }
+												: {}
+										}>
+										Length
+									</Label>
+									{length && (
+										<Button
+											variant='ghost'
+											size='sm'
+											className='absolute right-1 top-1 h-6 w-6 p-0'
+											onClick={() =>
+												clearFilter("length")
+											}>
+											<X className='h-3 w-3' />
+										</Button>
+									)}
+								</div>
+							</div>
+							<div className='grid grid-cols-2 gap-2 mb-4'>
+								<div className='relative'>
+									<Input
+										id='include-mobile'
+										type='text'
+										placeholder=''
+										value={include}
+										onChange={(e) =>
+											setInclude(
+												e.target.value.toUpperCase()
+											)
+										}
+										className='peer text-sm'
+									/>
+									<Label
+										htmlFor='include-mobile'
+										className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+										style={
+											include
+												? {
+														top: "-0.3rem",
+														fontSize: "1.125rem",
+														color: "#3b82f6",
+														backgroundColor:
+															"rgba(255, 255, 255, 0.95)",
+														padding: "0 0.25rem",
+														borderRadius: "25px",
+												  }
+												: {}
+										}>
+										Include
+									</Label>
+									{include && (
+										<Button
+											variant='ghost'
+											size='sm'
+											className='absolute right-1 top-1 h-6 w-6 p-0'
+											onClick={() => setInclude("")}>
+											<X className='h-3 w-3' />
+										</Button>
+									)}
+								</div>
+								<div className='relative'>
+									<Input
+										id='exclude-mobile'
+										type='text'
+										placeholder=''
+										value={exclude}
+										onChange={(e) =>
+											setExclude(
+												e.target.value.toUpperCase()
+											)
+										}
+										className='peer text-sm'
+									/>
+									<Label
+										htmlFor='exclude-mobile'
+										className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+										style={
+											exclude
+												? {
+														top: "-0.3rem",
+														fontSize: "1.125rem",
+														color: "#3b82f6",
+														backgroundColor:
+															"rgba(255, 255, 255, 0.95)",
+														padding: "0 0.25rem",
+														borderRadius: "25px",
+												  }
+												: {}
+										}>
+										Exclude
+									</Label>
+									{exclude && (
+										<Button
+											variant='ghost'
+											size='sm'
+											className='absolute right-1 top-1 h-6 w-6 p-0'
+											onClick={() => setExclude("")}>
+											<X className='h-3 w-3' />
+										</Button>
+									)}
+								</div>
+							</div>
+							<Button
+								onClick={() => handleSearch()}
+								className='w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold mt-2'
+								disabled={loading}>
+								{loading ? "SEARCHING..." : "SEARCH"}
+							</Button>
+						</CardContent>
+					</Card>
+				</div>
 				<div className='grid grid-cols-1 lg:grid-cols-4 gap-8'>
 					{/* Main Content */}
 					<div className='lg:col-span-3'>
@@ -380,18 +750,10 @@ function SearchContent() {
 						{Object.entries(groupedWords).map(
 							([lengthKey, wordsInGroup]) => (
 								<div key={lengthKey} className='mb-8'>
-									{groupByLength && lengthKey !== "all" && (
-										<div className='bg-green-400 text-white px-4 py-2 rounded-t-lg'>
-											<h3 className='font-semibold'>
-												{lengthKey} Letter Words
-											</h3>
-										</div>
-									)}
-
 									{/* Sort/filter bar */}
 									<div className='flex justify-between items-center bg-yellow-400 px-4 py-2 rounded-t-lg border-b mb-2'>
 										<span className='font-medium text-gray-700'>
-											Results
+											Results: {lengthKey} Letter Words
 										</span>
 										<div className='flex items-center gap-2'>
 											<span className='text-sm text-gray-600'>
@@ -469,17 +831,17 @@ function SearchContent() {
 							<Card className='border-none bg-white shadow-none'>
 								<CardHeader className='text-center'>
 									<CardTitle className='text-3xl font-bold text-gray-800'>
-										Your Go-To Word Finder for Any Game
+										Your Go-To Find Word Finder for Any Game
 									</CardTitle>
 								</CardHeader>
 								<CardContent className='mx-auto max-w-4xl space-y-4 text-center text-lg text-gray-600'>
 									<p>
 										Unlock your full potential in word games
-										with our versatile Word Finder. Whether
-										you&apos;re playing Scrabble, Words with
-										Friends, solving a crossword, or
-										tackling any other word puzzle, our tool
-										is designed to give you the winning
+										with our versatile Find Word Finder.
+										Whether you&apos;re playing Scrabble,
+										Words with Friends, solving a crossword,
+										or tackling any other word puzzle, our
+										tool is designed to give you the winning
 										edge.
 									</p>
 									<p>
@@ -536,24 +898,42 @@ function SearchContent() {
 							</div>
 						</div>
 					</div>
-
-					{/* Sidebar */}
-					<div className='lg:col-span-1 space-y-6'>
-						{/* Search Panel */}
+					{/* Sidebar - only visible on desktop */}
+					<div className='hidden lg:block lg:col-span-1 space-y-6'>
+						{/* Search Panel (desktop only) */}
 						<Card>
 							<CardContent className='p-4'>
 								<div className='relative mb-4'>
 									<Input
+										id='letters'
 										type='text'
-										placeholder='BEA???'
+										placeholder=''
 										value={letters}
 										onChange={(e) => {
 											setLetters(
 												e.target.value.toUpperCase()
 											);
 										}}
-										className='pr-8'
+										className='peer pr-8'
 									/>
+									<Label
+										htmlFor='letters'
+										className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+										style={
+											letters
+												? {
+														top: "-0.3rem",
+														fontSize: "1.125rem",
+														color: "#3b82f6",
+														backgroundColor:
+															"rgba(255, 255, 255, 0.95)",
+														padding: "0 0.25rem",
+														borderRadius: "25px",
+												  }
+												: {}
+										}>
+										Letters
+									</Label>
 									{letters && (
 										<Button
 											variant='ghost'
@@ -569,16 +949,38 @@ function SearchContent() {
 								<div className='grid grid-cols-2 gap-2 mb-4'>
 									<div className='relative'>
 										<Input
+											id='starts'
 											type='text'
-											placeholder='Starts'
+											placeholder=''
 											value={starts}
 											onChange={(e) => {
 												setStarts(
 													e.target.value.toUpperCase()
 												);
 											}}
-											className='text-sm'
+											className='peer text-sm'
 										/>
+										<Label
+											htmlFor='starts'
+											className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+											style={
+												starts
+													? {
+															top: "-0.3rem",
+															fontSize:
+																"1.125rem",
+															color: "#3b82f6",
+															backgroundColor:
+																"rgba(255, 255, 255, 0.95)",
+															padding:
+																"0 0.25rem",
+															borderRadius:
+																"25px",
+													  }
+													: {}
+											}>
+											Starts
+										</Label>
 										{starts && (
 											<Button
 												variant='ghost'
@@ -593,16 +995,38 @@ function SearchContent() {
 									</div>
 									<div className='relative'>
 										<Input
+											id='ends'
 											type='text'
-											placeholder='Ends'
+											placeholder=''
 											value={ends}
 											onChange={(e) => {
 												setEnds(
 													e.target.value.toUpperCase()
 												);
 											}}
-											className='text-sm'
+											className='peer text-sm'
 										/>
+										<Label
+											htmlFor='ends'
+											className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+											style={
+												ends
+													? {
+															top: "-0.3rem",
+															fontSize:
+																"1.125rem",
+															color: "#3b82f6",
+															backgroundColor:
+																"rgba(255, 255, 255, 0.95)",
+															padding:
+																"0 0.25rem",
+															borderRadius:
+																"25px",
+													  }
+													: {}
+											}>
+											Ends
+										</Label>
 										{ends && (
 											<Button
 												variant='ghost'
@@ -619,16 +1043,38 @@ function SearchContent() {
 								<div className='grid grid-cols-2 gap-2 mb-4'>
 									<div className='relative'>
 										<Input
+											id='contains'
 											type='text'
-											placeholder='Contains'
+											placeholder=''
 											value={contains}
 											onChange={(e) => {
 												setContains(
 													e.target.value.toUpperCase()
 												);
 											}}
-											className='text-sm'
+											className='peer text-sm'
 										/>
+										<Label
+											htmlFor='contains'
+											className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+											style={
+												contains
+													? {
+															top: "-0.3rem",
+															fontSize:
+																"1.125rem",
+															color: "#3b82f6",
+															backgroundColor:
+																"rgba(255, 255, 255, 0.95)",
+															padding:
+																"0 0.25rem",
+															borderRadius:
+																"25px",
+													  }
+													: {}
+											}>
+											Contains
+										</Label>
 										{contains && (
 											<Button
 												variant='ghost'
@@ -643,14 +1089,36 @@ function SearchContent() {
 									</div>
 									<div className='relative'>
 										<Input
+											id='length'
 											type='number'
-											placeholder='Length'
+											placeholder=''
 											value={length}
 											onChange={(e) => {
 												setLength(e.target.value);
 											}}
-											className='text-sm'
+											className='peer text-sm'
 										/>
+										<Label
+											htmlFor='length'
+											className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+											style={
+												length
+													? {
+															top: "-0.3rem",
+															fontSize:
+																"1.125rem",
+															color: "#3b82f6",
+															backgroundColor:
+																"rgba(255, 255, 255, 0.95)",
+															padding:
+																"0 0.25rem",
+															borderRadius:
+																"25px",
+													  }
+													: {}
+											}>
+											Length
+										</Label>
 										{length && (
 											<Button
 												variant='ghost'
@@ -667,16 +1135,38 @@ function SearchContent() {
 								<div className='grid grid-cols-2 gap-2 mb-4'>
 									<div className='relative'>
 										<Input
+											id='include'
 											type='text'
-											placeholder='Include (letters)'
+											placeholder=''
 											value={include}
 											onChange={(e) => {
 												setInclude(
 													e.target.value.toUpperCase()
 												);
 											}}
-											className='text-sm'
+											className='peer text-sm'
 										/>
+										<Label
+											htmlFor='include'
+											className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+											style={
+												include
+													? {
+															top: "-0.3rem",
+															fontSize:
+																"1.125rem",
+															color: "#3b82f6",
+															backgroundColor:
+																"rgba(255, 255, 255, 0.95)",
+															padding:
+																"0 0.25rem",
+															borderRadius:
+																"25px",
+													  }
+													: {}
+											}>
+											Include
+										</Label>
 										{include && (
 											<Button
 												variant='ghost'
@@ -691,16 +1181,38 @@ function SearchContent() {
 									</div>
 									<div className='relative'>
 										<Input
+											id='exclude'
 											type='text'
-											placeholder='Exclude (letters)'
+											placeholder=''
 											value={exclude}
 											onChange={(e) => {
 												setExclude(
 													e.target.value.toUpperCase()
 												);
 											}}
-											className='text-sm'
+											className='peer text-sm'
 										/>
+										<Label
+											htmlFor='exclude'
+											className='absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 transition-all duration-200 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:text-base peer-focus:-top-[0.3rem] peer-focus:text-lg peer-focus:text-blue-500 peer-focus:bg-white peer-focus:px-1'
+											style={
+												exclude
+													? {
+															top: "-0.3rem",
+															fontSize:
+																"1.125rem",
+															color: "#3b82f6",
+															backgroundColor:
+																"rgba(255, 255, 255, 0.95)",
+															padding:
+																"0 0.25rem",
+															borderRadius:
+																"25px",
+													  }
+													: {}
+											}>
+											Exclude
+										</Label>
 										{exclude && (
 											<Button
 												variant='ghost'

@@ -23,7 +23,7 @@ export function Footer() {
 								W
 							</div>
 							<span className='text-xl font-semibold'>
-								FindWordFinder
+								Find Word Finder
 							</span>
 						</div>
 						<p className='text-gray-300 text-sm leading-relaxed'>
@@ -65,7 +65,7 @@ export function Footer() {
 								<Link
 									href='/'
 									className='text-gray-300 hover:text-white transition-colors text-sm'>
-									Word Finder
+									Find Word Finder
 								</Link>
 							</li>
 							<li>
@@ -205,25 +205,25 @@ export function Footer() {
 				<div className='container mx-auto px-4 py-6'>
 					<div className='flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0'>
 						<div className='text-gray-400 text-sm'>
-							© {currentYear} FindWordFinder. All rights reserved.
+							© {currentYear} Find Word Finder. All rights
+							reserved.
 						</div>
 						<div className='flex items-center space-x-6 text-sm'>
 							<Link
-								href='/sitemap'
+								href='/sitemap.xml'
 								className='text-gray-400 hover:text-white transition-colors'>
 								Sitemap
 							</Link>
 							<Link
-								href='/cookies'
+								href='/terms'
 								className='text-gray-400 hover:text-white transition-colors'>
-								Cookie Policy
+								Term Of Service
 							</Link>
-							<div className='text-gray-400'>
-								Made with ❤️ by
-								<Link href='https://www.dheeru.org'>
-									&nbsp; Dheeru Rajpoot
-								</Link>
-							</div>
+							<Link
+								href='/privacy'
+								className='text-gray-400 hover:text-white transition-colors'>
+								Privacy Policy
+							</Link>
 						</div>
 					</div>
 				</div>
