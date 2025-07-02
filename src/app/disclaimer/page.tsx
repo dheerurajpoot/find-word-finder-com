@@ -68,7 +68,7 @@ export default function DisclaimerPage() {
             </CardHeader>
             <CardContent>
               <p className="leading-relaxed">
-                We may update this disclaimer from time to time. We will notify you of any changes by posting the new disclaimer on this page and updating the "Last Updated" date below.
+                We may update this disclaimer from time to time. We will notify you of any changes by posting the new disclaimer on this page and updating the &quot;Last Updated&quot; date below.
               </p>
             </CardContent>
           </Card>
