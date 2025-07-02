@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Search, Shuffle } from "lucide-react";
+import { Search } from "lucide-react";
 import { WordDetailsDialog } from "@/components/word-details-dialog";
 
 export default function WordsWithLettersPage() {
@@ -73,7 +73,7 @@ export default function WordsWithLettersPage() {
 						{/* Header */}
 						<div className='bg-white border border-gray-300 rounded-xl p-8 mb-4 shadow flex flex-col gap-2'>
 							<h1 className='text-4xl font-bold mb-2'>Words with Letters</h1>
-							<p className='mb-2'><span className='font-bold'>Words with A</span> are commonly used for word games like Scrabble and Words with Friends. This list will help you to find the top scoring words to beat the opponent. You can also find a list of all <a href="/words-start-with/A" className='text-blue-600 hover:underline'>words that start with A</a> and <a href="/words-ending-in/A" className='text-blue-600 hover:underline'>words that end with A</a>. Try our <a href="/words-by-length/5/with/A" className='text-blue-600 hover:underline'>five letter words with A page</a> if you're playing Wordle-like games or use the <a href="/wordle-helper" className='text-blue-600 hover:underline'>New York Times Wordle Solver</a> to quickly find the NYT Wordle daily answer.</p>
+							<p className='mb-2'><span className='font-bold'>Words with A</span> are commonly used for word games like Scrabble and Words with Friends. This list will help you to find the top scoring words to beat the opponent. You can also find a list of all <Link href="/words-start-with/A" className='text-blue-600 hover:underline'>words that start with A</Link> and <Link href="/words-ending-in/A" className='text-blue-600 hover:underline'>words that end with A</Link>. Try our <Link href="/words-by-length/5/with/A" className='text-blue-600 hover:underline'>five letter words with A page</Link> if you&apos;re playing Wordle-like games or use the <Link href="/wordle-helper" className='text-blue-600 hover:underline'>New York Times Wordle Solver</Link> to quickly find the NYT Wordle daily answer.</p>
 						</div>
 
 						{/* Search Results */}
