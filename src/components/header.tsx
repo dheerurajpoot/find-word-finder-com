@@ -51,11 +51,6 @@ export function Header() {
 					{/* Desktop Navigation */}
 					<nav className='hidden md:flex items-center space-x-8'>
 						<Link
-							href='/grammar'
-							className='hover:text-green-100 transition-colors'>
-							Grammar
-						</Link>
-						<Link
 							href='/word-lists'
 							className='hover:text-green-100 transition-colors'>
 							Word Lists
@@ -116,11 +111,6 @@ export function Header() {
 												Resources
 											</h3>
 											<div className='space-y-2'>
-												<Link
-													href='/grammar'
-													className='block p-2 rounded-lg hover:bg-gray-100 transition-colors text-sm'>
-													Grammar Guide
-												</Link>
 												<Link
 													href='/word-lists'
 													className='block p-2 rounded-lg hover:bg-gray-100 transition-colors text-sm'>

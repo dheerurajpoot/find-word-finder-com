@@ -71,21 +71,9 @@ export default function WordsStartWithPage() {
 					{/* Main Content */}
 					<div className='lg:col-span-3 space-y-8'>
 						{/* Header */}
-						<div className='bg-white rounded-xl shadow-lg p-8 border border-gray-100'>
-							<div className='flex items-center gap-3 mb-6'>
-								<ArrowLeft className='h-8 w-8 text-green-500' />
-								<h1 className='text-4xl font-bold text-gray-800'>
-									Words Starting With
-								</h1>
-							</div>
-							<p className='text-lg text-gray-700 leading-relaxed mb-6'>
-								Discover words that begin with specific letters
-								or prefixes. Perfect for word games, crossword
-								puzzles, vocabulary building, and creative
-								writing. Search by single letters, common
-								prefixes, or browse alphabetically to find the
-								perfect word for your needs.
-							</p>
+						<div className='bg-white border border-gray-300 rounded-xl p-8 mb-4 shadow flex flex-col gap-2'>
+							<h1 className='text-4xl font-bold mb-2'>Words that Start in A</h1>
+							<p className='mb-2'><span className='font-bold'>Words that start with A</span> are commonly used for word games like Scrabble and Words with Friends. This list will help you to find the top scoring words to beat the opponent. You can also find a list of all <a href="/words-ending-in/A" className='text-blue-600 hover:underline'>words that end with A</a> and <a href="/words-with-letters/A" className='text-blue-600 hover:underline'>words with A</a>. Try our <a href="/words-by-length/5/starting-with/A" className='text-blue-600 hover:underline'>five letter words starting with A page</a> if you're playing Wordle-like games or use the <a href="/wordle-helper" className='text-blue-600 hover:underline'>New York Times Wordle Solver</a> to quickly find the NYT Wordle daily answer.</p>
 						</div>
 
 						{/* Popular Prefixes */}
