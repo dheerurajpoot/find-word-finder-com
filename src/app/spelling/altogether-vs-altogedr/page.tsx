@@ -62,7 +62,7 @@ export default function AltogetherVsAltogedrPage() {
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
               <li>The train was altogether full.</li>
               <li>Altogether, the project cost $10,000.</li>
-              <li>I'm altogether satisfied with the results.</li>
+              <li>I&apos;m altogether satisfied with the results.</li>
             </ul>
           </div>
         </Card>

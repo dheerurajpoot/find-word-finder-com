@@ -59,7 +59,7 @@ export default function DisappointVsDissapointPage() {
             </div>
             <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>I don't want to disappoint my parents.</li>
+              <li>I don&apos;t want to disappoint my parents.</li>
               <li>The movie disappointed many fans.</li>
               <li>She was disappointed by the test results.</li>
             </ul>

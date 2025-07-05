@@ -60,7 +60,7 @@ export default function KnowledgeableVsKnowledgablePage() {
             </div>
             <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>The guide was very knowledgeable about the city's history.</li>
+              <li>The guide was very knowledgeable about the city&apos;s history.</li>
               <li>She is knowledgeable in computer programming.</li>
               <li>He gave a knowledgeable presentation on the topic.</li>
             </ul>

@@ -62,7 +62,7 @@ export default function AltogetherVsAltogtherPage() {
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
               <li>There were altogether 20 people at the party.</li>
               <li>Altogether, the project cost $10,000.</li>
-              <li>I'm altogether satisfied with the results.</li>
+              <li>I&apos;m altogether satisfied with the results.</li>
             </ul>
           </div>
         </Card>

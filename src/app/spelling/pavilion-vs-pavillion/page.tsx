@@ -60,7 +60,7 @@ export default function PavilionVsPavillionPage() {
             </div>
             <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>The concert was held in the park's pavilion.</li>
+              <li>The concert was held in the park&apos;s pavilion.</li>
               <li>We had our wedding reception in the garden pavilion.</li>
               <li>The sports pavilion has changing rooms and equipment storage.</li>
             </ul>

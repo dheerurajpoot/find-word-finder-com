@@ -62,7 +62,7 @@ export default function AltogetherVsAltogatherPage() {
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
               <li>The train was altogether full.</li>
               <li>Altogether, we spent $500 on the project.</li>
-              <li>I'm altogether satisfied with the results.</li>
+              <li>I&apos;m altogether satisfied with the results.</li>
             </ul>
           </div>
         </Card>
@@ -101,7 +101,7 @@ export default function AltogetherVsAltogatherPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Altogether&quot; is the correct spelling. &quot;Altogather&quot; is a common misspelling—remember, it's &quot;altogether&quot; not &quot;altogather&quot;.
+        <strong>Note:</strong> &quot;Altogether&quot; is the correct spelling. &quot;Altogather&quot; is a common misspelling—remember, it&apos;s &quot;altogether&quot; not &quot;altogather&quot;.
       </div>
 
       {/* FAQ Section */}

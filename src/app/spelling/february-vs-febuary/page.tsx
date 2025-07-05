@@ -60,7 +60,7 @@ export default function FebruaryVsFebuaryPage() {
             </div>
             <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>Valentine's Day is celebrated in February.</li>
+              <li>Valentine&apos;s Day is celebrated in February.</li>
               <li>February is the shortest month of the year.</li>
               <li>My birthday is in February.</li>
             </ul>
@@ -87,9 +87,9 @@ export default function FebruaryVsFebuaryPage() {
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
                 <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Valentine's Day</li>
+                  <li>Valentine&apos;s Day</li>
                   <li>Groundhog Day</li>
-                  <li>Presidents' Day</li>
+                  <li>Presidents&apos; Day</li>
                   <li>Leap year</li>
                 </ul>
               </div>

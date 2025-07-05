@@ -61,7 +61,7 @@ export default function BeginningVsBeginnigPage() {
             <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
               <li>The beginning of the movie was very exciting.</li>
-              <li>We're just at the beginning of our journey.</li>
+              <li>We&apos;re just at the beginning of our journey.</li>
               <li>The beginning of spring brings new life.</li>
             </ul>
           </div>

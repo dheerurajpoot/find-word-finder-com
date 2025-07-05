@@ -62,7 +62,7 @@ export default function TomorrowVsTommorowPage() {
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
               <li>We will meet tomorrow.</li>
               <li>Tomorrow is going to be a busy day.</li>
-              <li>I'll finish the project tomorrow.</li>
+              <li>I&apos;ll finish the project tomorrow.</li>
             </ul>
           </div>
         </Card>

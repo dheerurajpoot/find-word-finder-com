@@ -100,7 +100,7 @@ export default function AlcoholVsAlchoholPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Alcohol&quot; is the correct spelling. &quot;Alchohol&quot; is a common misspelling—remember, it's spelled with &quot;co&quot; not &quot;cho&quot;.
+        <strong>Note:</strong> &quot;Alcohol&quot; is the correct spelling. &quot;Alchohol&quot; is a common misspelling—remember, it&apos;s spelled with &quot;co&quot; not &quot;cho&quot;.
       </div>
 
       {/* FAQ Section */}

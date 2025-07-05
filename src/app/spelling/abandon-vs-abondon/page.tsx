@@ -80,7 +80,7 @@ export default function AbandonVsAbondonPage() {
                   <li>Desert</li>
                   <li>Leave</li>
                   <li>Leave high and dry</li>
-                  <li>Turn one's back on</li>
+                  <li>Turn one&apos;s back on</li>
                   <li>Forsake</li>
                 </ul>
               </div>

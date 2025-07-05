@@ -87,7 +87,7 @@ export default function ApologyVsAppologyPage() {
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Phrases:</div>
                 <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>I'm sorry</li>
+                  <li>I&apos;m sorry</li>
                   <li>My bad</li>
                   <li>Mea culpa</li>
                   <li>Expression of regret</li>

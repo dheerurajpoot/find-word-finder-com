@@ -61,7 +61,7 @@ export default function AlmostVsAllmostPage() {
             <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
               <li>The job is almost finished.</li>
-              <li>It's almost time for dinner.</li>
+              <li>It&apos;s almost time for dinner.</li>
               <li>She almost missed the bus.</li>
             </ul>
           </div>

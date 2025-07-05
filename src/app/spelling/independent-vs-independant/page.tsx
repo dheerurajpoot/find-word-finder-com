@@ -56,7 +56,7 @@ export default function IndependentVsIndependantPage() {
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Definition</div>
             <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Independent</span> (adjective/noun): Free from outside control; not depending on another's authority; self-reliant.
+              <span className="font-bold">Independent</span> (adjective/noun): Free from outside control; not depending on another&apos;s authority; self-reliant.
             </div>
             <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
@@ -123,7 +123,7 @@ export default function IndependentVsIndependantPage() {
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">What does independent mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Free from outside control; not depending on another's authority; self-reliant.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Free from outside control; not depending on another&apos;s authority; self-reliant.</div>
             </div>
           </Card>
         </div>

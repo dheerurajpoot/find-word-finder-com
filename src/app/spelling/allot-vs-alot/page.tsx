@@ -100,7 +100,7 @@ export default function AllotVsAlotPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Allot&quot; is the correct spelling. &quot;Alot&quot; is a common misspelling—remember, it's &quot;a lot&quot; (two words) when you mean &quot;many&quot; or &quot;much&quot;.
+        <strong>Note:</strong> &quot;Allot&quot; is the correct spelling. &quot;Alot&quot; is a common misspelling—remember, it&apos;s &quot;a lot&quot; (two words) when you mean &quot;many&quot; or &quot;much&quot;.
       </div>
 
       {/* FAQ Section */}

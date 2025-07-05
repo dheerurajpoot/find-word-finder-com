@@ -100,7 +100,7 @@ export default function AberrationVsAbberationPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Aberration&quot; is the correct spelling. &quot;Abberation&quot; is a common misspelling—remember, it has two &quot;r's&quot; in the middle.
+        <strong>Note:</strong> &quot;Aberration&quot; is the correct spelling. &quot;Abberation&quot; is a common misspelling—remember, it has two &quot;r&apos;s&quot; in the middle.
       </div>
 
       {/* FAQ Section */}

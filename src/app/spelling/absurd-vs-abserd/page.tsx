@@ -60,7 +60,7 @@ export default function AbsurdVsAbserdPage() {
             <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
               <li>The idea was completely absurd.</li>
-              <li>It's absurd to think that would work.</li>
+              <li>It&apos;s absurd to think that would work.</li>
               <li>The situation became increasingly absurd.</li>
             </ul>
           </div>
