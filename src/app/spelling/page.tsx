@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Abandon vs Abandone - Which is Correct?",
-  description: "Learn the correct spelling between 'abandon' and 'abandone'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;abandon&apos; and &apos;abandone&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AbandonVsAbandonePage() {
@@ -30,7 +30,7 @@ export default function AbandonVsAbandonePage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Abandone</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Abandone" is not a valid word in English.
+                This spelling is incorrect. &quot;Abandone&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function AbandonVsAbandonePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Abandon</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Abandon" is a verb meaning to leave permanently or give up.
+                This is the correct spelling. &quot;Abandon&quot; is a verb meaning to leave permanently or give up.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function AbandonVsAbandonePage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "abandon":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;abandon&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Verbs:</div>
@@ -102,17 +102,17 @@ export default function AbandonVsAbandonePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Abandon" is the correct spelling. "Abandone" is a common misspelling—remember, it ends with "-on" not "-one".
+        <strong>Note:</strong> &quot;Abandon&quot; is the correct spelling. &quot;Abandone&quot; is a common misspelling—remember, it ends with &quot;-on&quot; not &quot;-one&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it abandon or abandone?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "abandon." "Abandone" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;abandon.&quot; &quot;Abandone&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

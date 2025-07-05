@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Principal vs Principle - Which is Correct?",
-  description: "Learn the correct spelling and usage between 'principal' and 'principle'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling and usage between &apos;principal&apos; and &apos;principle&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function PrincipalVsPrinciplePage() {

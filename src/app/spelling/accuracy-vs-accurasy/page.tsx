@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Accurasy vs Accuracy - Which is Correct?",
-  description: "Learn the correct spelling between 'accurasy' and 'accuracy'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;accurasy&apos; and &apos;accuracy&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AccuracyVsAccurasyPage() {

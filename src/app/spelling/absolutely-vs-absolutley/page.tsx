@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Absolutely vs Absolutley - Which is Correct?",
-  description: "Learn the correct spelling between 'absolutely' and 'absolutley'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;absolutely&apos; and &apos;absolutley&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AbsolutelyVsAbsolutleyPage() {

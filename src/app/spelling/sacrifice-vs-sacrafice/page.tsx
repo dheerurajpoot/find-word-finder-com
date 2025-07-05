@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Sacrifice vs Sacrafice - Which is Correct?",
-  description: "Learn the correct spelling between 'sacrifice' and 'sacrafice'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;sacrifice&apos; and &apos;sacrafice&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function SacrificeVsSacraficePage() {
@@ -100,7 +100,7 @@ export default function SacrificeVsSacraficePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Sacrifice&quot; is the correct spelling. &quot;Sacrafice&quot; is a common misspelling—remember, it ends with "-ifice," not "-afice".
+        <strong>Note:</strong> &quot;Sacrifice&quot; is the correct spelling. &quot;Sacrafice&quot; is a common misspelling—remember, it ends with &quot;-ifice,&quot; not &quot;-afice&quot;.
       </div>
 
       {/* FAQ Section */}

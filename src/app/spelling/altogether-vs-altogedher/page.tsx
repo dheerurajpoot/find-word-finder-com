@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Altogedher vs Altogether - Which is Correct?",
-  description: "Learn the correct spelling between 'altogedher' and 'altogether'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;altogedher&apos; and &apos;altogether&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AltogetherVsAltogedherPage() {

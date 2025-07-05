@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Playwrite vs Playwright - Which is Correct?",
-  description: "Learn the correct spelling between 'playwrite' and 'playwright'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;playwrite&apos; and &apos;playwright&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function PlaywrightVsPlaywritePage() {

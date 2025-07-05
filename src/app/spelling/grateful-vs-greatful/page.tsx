@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Grateful vs Greatful - Which is Correct?",
-  description: "Learn the correct spelling between 'grateful' and 'greatful'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;grateful&apos; and &apos;greatful&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function GratefulVsGreatfulPage() {
@@ -30,7 +30,7 @@ export default function GratefulVsGreatfulPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Greatful</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Greatful" is not a valid word in English.
+                This spelling is incorrect. &quot;Greatful&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function GratefulVsGreatfulPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Grateful</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Grateful" is an adjective meaning thankful.
+                This is the correct spelling. &quot;Grateful&quot; is an adjective meaning thankful.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function GratefulVsGreatfulPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "grateful":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;grateful&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Adjectives:</div>
@@ -102,17 +102,17 @@ export default function GratefulVsGreatfulPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Grateful" is the correct spelling. "Greatful" is a common misspelling—remember, it is spelled with "grate," not "great".
+        <strong>Note:</strong> &quot;Grateful&quot; is the correct spelling. &quot;Greatful&quot; is a common misspelling—remember, it is spelled with &quot;grate,&quot; not &quot;great&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it greatful or grateful?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "grateful." "Greatful" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;grateful.&quot; &quot;Greatful&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

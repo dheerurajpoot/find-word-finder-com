@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Acquaintence vs Acquaintance - Which is Correct?",
-  description: "Learn the correct spelling between 'acquaintence' and 'acquaintance'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;acquaintence&apos; and &apos;acquaintance&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AcquaintanceVsAcquaintencePage() {

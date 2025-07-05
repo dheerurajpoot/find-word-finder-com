@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Forty vs Fourty - Which is Correct?",
-  description: "Learn the correct spelling between 'forty' and 'fourty'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;forty&apos; and &apos;fourty&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function FortyVsFourtyPage() {
@@ -30,7 +30,7 @@ export default function FortyVsFourtyPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Fourty</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Fourty" is not a valid word in English.
+                This spelling is incorrect. &quot;Fourty&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function FortyVsFourtyPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Forty</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Forty" is the number equivalent to 40.
+                This is the correct spelling. &quot;Forty&quot; is the number equivalent to 40.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function FortyVsFourtyPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "forty":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;forty&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Numbers:</div>
@@ -101,17 +101,17 @@ export default function FortyVsFourtyPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Forty" is the correct spelling for the number 40. "Fourty" is a common misspelling—remember, it drops the "u" from "four".
+        <strong>Note:</strong> &quot;Forty&quot; is the correct spelling for the number 40. &quot;Fourty&quot; is a common misspelling—remember, it drops the &quot;u&quot; from &quot;four&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it fourty or forty?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "forty." "Fourty" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;forty.&quot; &quot;Fourty&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

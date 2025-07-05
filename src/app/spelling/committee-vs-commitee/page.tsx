@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Committee vs Commitee - Which is Correct?",
-  description: "Learn the correct spelling between 'committee' and 'commitee'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;committee&apos; and &apos;commitee&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function CommitteeVsCommitEePage() {
@@ -30,7 +30,7 @@ export default function CommitteeVsCommitEePage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Commitee</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Commitee" is not a valid word in English.
+                This spelling is incorrect. &quot;Commitee&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function CommitteeVsCommitEePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Committee</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Committee" is a noun meaning a group of people appointed for a specific function.
+                This is the correct spelling. &quot;Committee&quot; is a noun meaning a group of people appointed for a specific function.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function CommitteeVsCommitEePage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "committee":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;committee&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Groups:</div>
@@ -101,17 +101,17 @@ export default function CommitteeVsCommitEePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Committee" is the correct spelling. "Commitee" is a common misspelling—remember, it has two "t" letters and two "e" letters at the end.
+        <strong>Note:</strong> &quot;Committee&quot; is the correct spelling. &quot;Commitee&quot; is a common misspelling—remember, it has two &quot;t&quot; letters and two &quot;e&quot; letters at the end.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it commitee or committee?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "committee." "Commitee" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;committee.&quot; &quot;Commitee&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Mispell vs Misspell - Which is Correct?",
-  description: "Learn the correct spelling between 'mispell' and 'misspell'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;mispell&apos; and &apos;misspell&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function MisspellVsMispellPage() {

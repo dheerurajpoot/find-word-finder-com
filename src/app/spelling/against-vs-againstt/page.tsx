@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Against vs Againstt - Which is Correct?",
-  description: "Learn the correct spelling between 'against' and 'againstt'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;against&apos; and &apos;againstt&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AgainstVsAgainsttPage() {
@@ -72,7 +72,7 @@ export default function AgainstVsAgainsttPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "against":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;against&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Prepositions:</div>
@@ -100,7 +100,7 @@ export default function AgainstVsAgainsttPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Against&quot; is the correct spelling. &quot;Againstt&quot; is a common misspelling—remember, it only has one "t" at the end.
+        <strong>Note:</strong> &quot;Against&quot; is the correct spelling. &quot;Againstt&quot; is a common misspelling—remember, it only has one &quot;t&quot; at the end.
       </div>
 
       {/* FAQ Section */}

@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Allegee vs Allege - Which is Correct?",
-  description: "Learn the correct spelling between 'allegee' and 'allege'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;allegee&apos; and &apos;allege&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AllegeVsAllegeePage() {

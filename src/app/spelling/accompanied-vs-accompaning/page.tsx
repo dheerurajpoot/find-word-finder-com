@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Accompaning vs Accompanied - Which is Correct?",
-  description: "Learn the correct spelling between 'accompaning' and 'accompanied'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;accompaning&apos; and &apos;accompanied&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AccompaniedVsAccompaningPage() {

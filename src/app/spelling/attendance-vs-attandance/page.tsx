@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Attendance vs Attandance - Which is Correct?",
-  description: "Learn the correct spelling between 'attendance' and 'attandance'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;attendance&apos; and &apos;attandance&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AttendanceVsAttandancePage() {
@@ -30,7 +30,7 @@ export default function AttendanceVsAttandancePage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Attandance</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Attandance" is not a valid word in English.
+                This spelling is incorrect. &quot;Attandance&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function AttendanceVsAttandancePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Attendance</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Attendance" is a noun meaning being present at an event or place.
+                This is the correct spelling. &quot;Attendance&quot; is a noun meaning being present at an event or place.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function AttendanceVsAttandancePage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "attendance":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;attendance&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Nouns:</div>
@@ -102,17 +102,17 @@ export default function AttendanceVsAttandancePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Attendance" is the correct spelling. "Attandance" is a common misspelling—remember, it has an "e" after the "t".
+        <strong>Note:</strong> &quot;Attendance&quot; is the correct spelling. &quot;Attandance&quot; is a common misspelling—remember, it has an &quot;e&quot; after the &quot;t&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it attandance or attendance?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "attendance." "Attandance" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;attendance.&quot; &quot;Attandance&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

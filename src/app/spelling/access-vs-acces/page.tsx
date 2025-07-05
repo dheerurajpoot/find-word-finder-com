@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Acces vs Access - Which is Correct?",
-  description: "Learn the correct spelling between 'acces' and 'access'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;acces&apos; and &apos;access&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AccessVsAccesPage() {

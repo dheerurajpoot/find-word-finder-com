@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Embarass vs Embarrass - Which is Correct?",
-  description: "Learn the correct spelling between 'embarass' and 'embarrass'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;embarass&apos; and &apos;embarrass&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function EmbarrassVsEmbarassPage() {

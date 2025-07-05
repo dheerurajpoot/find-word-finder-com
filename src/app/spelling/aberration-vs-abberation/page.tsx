@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Aberration vs Abberation - Which is Correct?",
-  description: "Learn the correct spelling between 'aberration' and 'abberation'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;aberration&apos; and &apos;abberation&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AberrationVsAbberationPage() {
@@ -72,7 +72,7 @@ export default function AberrationVsAbberationPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "aberration":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;aberration&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Nouns:</div>

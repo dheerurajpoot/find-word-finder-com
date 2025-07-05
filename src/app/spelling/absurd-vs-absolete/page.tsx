@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Absurd vs Absolete - Which is Correct?",
-  description: "Learn the correct spelling between 'absurd' and 'absolete'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;absurd&apos; and &apos;absolete&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AbsurdVsAbsoletePage() {

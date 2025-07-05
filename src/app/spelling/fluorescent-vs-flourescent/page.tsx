@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Flourescent vs Fluorescent - Which is Correct?",
-  description: "Learn the correct spelling between 'flourescent' and 'fluorescent'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;flourescent&apos; and &apos;fluorescent&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function FluorescentVsFlourescentPage() {

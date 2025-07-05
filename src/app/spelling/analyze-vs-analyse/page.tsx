@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Analyze vs Analyse - Which is Correct?",
-  description: "Learn the correct spelling between 'analyze' and 'analyse'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;analyze&apos; and &apos;analyse&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AnalyzeVsAnalysePage() {
@@ -30,7 +30,7 @@ export default function AnalyzeVsAnalysePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Analyze</div>
               <div className="text-lg md:text-xl text-gray-700">
-                "Analyze" is the standard spelling in American English.
+                &quot;Analyze&quot; is the standard spelling in American English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function AnalyzeVsAnalysePage() {
               </div>
               <div className="text-3xl font-extrabold text-blue-600 mb-2">Analyse</div>
               <div className="text-lg md:text-xl text-gray-700">
-                "Analyse" is the standard spelling in British English.
+                &quot;Analyse&quot; is the standard spelling in British English.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function AnalyzeVsAnalysePage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "analyze/analyse":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;analyze/analyse&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Verbs:</div>
@@ -102,17 +102,17 @@ export default function AnalyzeVsAnalysePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Analyze" is preferred in American English, while "Analyse" is used in British English. Both are correct depending on the region.
+        <strong>Note:</strong> &quot;Analyze&quot; is preferred in American English, while &quot;Analyse&quot; is used in British English. Both are correct depending on the region.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it analyze or analyse?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Both are correct: "analyze" (US), "analyse" (UK).</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Both are correct: &quot;analyze&quot; (US), &quot;analyse&quot; (UK).</div>
             </div>
           </Card>
           <Card>

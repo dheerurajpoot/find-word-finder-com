@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Absorbant vs Absorbent - Which is Correct?",
-  description: "Learn the correct spelling between 'absorbant' and 'absorbent'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;absorbant&apos; and &apos;absorbent&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AbsorbentVsAbsorbantPage() {

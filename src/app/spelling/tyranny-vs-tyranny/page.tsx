@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Tyranny vs Tyranny - Which is Correct?",
-  description: "Learn the correct spelling of 'tyranny'. Discover definitions, examples, and usage tips for this commonly misspelled word.",
+  description: "Learn the correct spelling of &apos;tyranny&apos;. Discover definitions, examples, and usage tips for this commonly misspelled word.",
 };
 
 export default function TyrannyVsTyrannyPage() {

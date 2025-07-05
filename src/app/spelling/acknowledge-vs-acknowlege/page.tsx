@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Acknowledge vs Acknowlege - Which is Correct?",
-  description: "Learn the correct spelling between 'acknowledge' and 'acknowlege'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;acknowledge&apos; and &apos;acknowlege&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AcknowledgeVsAcknowlegePage() {
@@ -100,7 +100,7 @@ export default function AcknowledgeVsAcknowlegePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Acknowledge&quot; is the correct spelling. &quot;Acknowlege&quot; is a common misspelling—remember, it has a "d" before the "g".
+        <strong>Note:</strong> &quot;Acknowledge&quot; is the correct spelling. &quot;Acknowlege&quot; is a common misspelling—remember, it has a &quot;d&quot; before the &quot;g&quot;.
       </div>
 
       {/* FAQ Section */}
@@ -110,7 +110,7 @@ export default function AcknowledgeVsAcknowlegePage() {
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it acknowlege or acknowledge?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "acknowledge." "Acknowlege" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;acknowledge.&quot; &quot;Acknowlege&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

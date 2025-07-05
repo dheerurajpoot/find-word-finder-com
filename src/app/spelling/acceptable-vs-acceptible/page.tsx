@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Acceptable vs Acceptible - Which is Correct?",
-  description: "Learn the correct spelling between 'acceptable' and 'acceptible'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;acceptable&apos; and &apos;acceptible&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AcceptableVsAcceptiblePage() {
@@ -72,7 +72,7 @@ export default function AcceptableVsAcceptiblePage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "acceptable":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;acceptable&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Adjectives:</div>
@@ -100,7 +100,7 @@ export default function AcceptableVsAcceptiblePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Acceptable&quot; is the correct spelling. &quot;Acceptible&quot; is a common misspelling—remember, the correct ending is "-able" not "-ible".
+        <strong>Note:</strong> &quot;Acceptable&quot; is the correct spelling. &quot;Acceptible&quot; is a common misspelling—remember, the correct ending is &quot;-able&quot; not &quot;-ible&quot;.
       </div>
 
       {/* FAQ Section */}

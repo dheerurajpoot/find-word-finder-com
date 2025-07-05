@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Pronunciation vs Pronounciation - Which is Correct?",
-  description: "Learn the correct spelling between 'pronunciation' and 'pronounciation'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;pronunciation&apos; and &apos;pronounciation&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function PronunciationVsPronounciationPage() {
@@ -100,7 +100,7 @@ export default function PronunciationVsPronounciationPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Pronunciation&quot; is the correct spelling. &quot;Pronounciation&quot; is a common misspelling—remember, there is no extra "o" after the "n".
+        <strong>Note:</strong> &quot;Pronunciation&quot; is the correct spelling. &quot;Pronounciation&quot; is a common misspelling—remember, there is no extra &quot;o&quot; after the &quot;n&quot;.
       </div>
 
       {/* FAQ Section */}

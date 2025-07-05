@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Posession vs Possession - Which is Correct?",
-  description: "Learn the correct spelling between 'posession' and 'possession'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;posession&apos; and &apos;possession&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function PossessionVsPosessionPage() {

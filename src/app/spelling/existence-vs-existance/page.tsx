@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Existence vs Existance - Which is Correct?",
-  description: "Learn the correct spelling between 'existence' and 'existance'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;existence&apos; and &apos;existance&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function ExistenceVsExistancePage() {
@@ -30,7 +30,7 @@ export default function ExistenceVsExistancePage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Existance</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Existance" is not a valid word in English.
+                This spelling is incorrect. &quot;Existance&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function ExistenceVsExistancePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Existence</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Existence" is a noun meaning the state of being real or alive.
+                This is the correct spelling. &quot;Existence&quot; is a noun meaning the state of being real or alive.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function ExistenceVsExistancePage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "existence":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;existence&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Nouns:</div>
@@ -102,17 +102,17 @@ export default function ExistenceVsExistancePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Existence" is the correct spelling. "Existance" is a common misspelling—remember, it ends with "-ence".
+        <strong>Note:</strong> &quot;Existence&quot; is the correct spelling. &quot;Existance&quot; is a common misspelling—remember, it ends with &quot;-ence&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it existance or existence?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "existence." "Existance" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;existence.&quot; &quot;Existance&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

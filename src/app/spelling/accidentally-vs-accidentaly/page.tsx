@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Accidentaly vs Accidentally - Which is Correct?",
-  description: "Learn the correct spelling between 'accidentaly' and 'accidentally'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;accidentaly&apos; and &apos;accidentally&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AccidentallyVsAccidentalyPage() {

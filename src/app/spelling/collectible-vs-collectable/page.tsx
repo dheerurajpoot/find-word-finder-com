@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Collectible vs Collectable - Which is Correct?",
-  description: "Learn the correct spelling between 'collectible' and 'collectable'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;collectible&apos; and &apos;collectable&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function CollectibleVsCollectablePage() {
@@ -30,7 +30,7 @@ export default function CollectibleVsCollectablePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Collectible</div>
               <div className="text-lg md:text-xl text-gray-700">
-                "Collectible" is the standard spelling in American English and is most common for items meant to be collected.
+                &quot;Collectible&quot; is the standard spelling in American English and is most common for items meant to be collected.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function CollectibleVsCollectablePage() {
               </div>
               <div className="text-3xl font-extrabold text-blue-600 mb-2">Collectable</div>
               <div className="text-lg md:text-xl text-gray-700">
-                "Collectable" is the standard spelling in British English, but "collectible" is also accepted.
+                &quot;Collectable&quot; is the standard spelling in British English, but &quot;collectible&quot; is also accepted.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function CollectibleVsCollectablePage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "collectible/collectable":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;collectible/collectable&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Nouns:</div>
@@ -102,17 +102,17 @@ export default function CollectibleVsCollectablePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Collectible" is preferred in American English, especially for items meant to be collected. "Collectable" is more common in British English, but both are understood in both regions.
+        <strong>Note:</strong> &quot;Collectible&quot; is preferred in American English, especially for items meant to be collected. &quot;Collectable&quot; is more common in British English, but both are understood in both regions.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it collectible or collectable?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Both are correct: "collectible" (US), "collectable" (UK). "Collectible" is more common for items meant to be collected.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Both are correct: &quot;collectible&quot; (US), &quot;collectable&quot; (UK). &quot;Collectible&quot; is more common for items meant to be collected.</div>
             </div>
           </Card>
           <Card>

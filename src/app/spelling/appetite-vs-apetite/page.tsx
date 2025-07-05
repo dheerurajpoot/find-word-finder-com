@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Apetite vs Appetite - Which is Correct?",
-  description: "Learn the correct spelling between 'apetite' and 'appetite'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;apetite&apos; and &apos;appetite&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AppetiteVsApetitePage() {

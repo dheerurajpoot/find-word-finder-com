@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Buisness vs Business - Which is Correct?",
-  description: "Learn the correct spelling between 'buisness' and 'business'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;buisness&apos; and &apos;business&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function BusinessVsBuisnessPage() {

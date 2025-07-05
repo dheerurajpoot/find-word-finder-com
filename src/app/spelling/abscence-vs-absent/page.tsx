@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Absence vs Abscence - Which is Correct?",
-  description: "Learn the correct spelling between 'absence' and 'abscence'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;absence&apos; and &apos;abscence&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AbscenceVsAbsentPage() {

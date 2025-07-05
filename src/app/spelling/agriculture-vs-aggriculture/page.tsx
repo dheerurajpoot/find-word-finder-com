@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Aggriculture vs Agriculture - Which is Correct?",
-  description: "Learn the correct spelling between 'aggriculture' and 'agriculture'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;aggriculture&apos; and &apos;agriculture&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AgricultureVsAggriculturePage() {

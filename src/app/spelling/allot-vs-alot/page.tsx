@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Allot vs Alot - Which is Correct?",
-  description: "Learn the correct spelling between 'allot' and 'alot'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;allot&apos; and &apos;alot&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AllotVsAlotPage() {
@@ -30,7 +30,7 @@ export default function AllotVsAlotPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Alot</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Alot" is not a valid word in English.
+                This spelling is incorrect. &quot;Alot&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function AllotVsAlotPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Allot</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Allot" is a verb meaning to give or apportion.
+                This is the correct spelling. &quot;Allot&quot; is a verb meaning to give or apportion.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function AllotVsAlotPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "allot":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;allot&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Distribution:</div>
@@ -101,17 +101,17 @@ export default function AllotVsAlotPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Allot" is the correct spelling. "Alot" is a common misspelling—remember, it's "a lot" (two words) when you mean "many" or "much".
+        <strong>Note:</strong> &quot;Allot&quot; is the correct spelling. &quot;Alot&quot; is a common misspelling—remember, it's &quot;a lot&quot; (two words) when you mean &quot;many&quot; or &quot;much&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it alot or allot?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "allot." "Alot" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;allot.&quot; &quot;Alot&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

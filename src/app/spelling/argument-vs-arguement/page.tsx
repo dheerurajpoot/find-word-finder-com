@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Argument vs Arguement - Which is Correct?",
-  description: "Learn the correct spelling between 'argument' and 'arguement'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;argument&apos; and &apos;arguement&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function ArgumentVsArguementPage() {
@@ -30,7 +30,7 @@ export default function ArgumentVsArguementPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Arguement</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Arguement" is not a valid word in English.
+                This spelling is incorrect. &quot;Arguement&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function ArgumentVsArguementPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Argument</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Argument" is a noun meaning a disagreement or reason.
+                This is the correct spelling. &quot;Argument&quot; is a noun meaning a disagreement or reason.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function ArgumentVsArguementPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "argument":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;argument&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Nouns:</div>
@@ -102,17 +102,17 @@ export default function ArgumentVsArguementPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Argument" is the correct spelling. "Arguement" is a common misspelling—remember, the "e" comes after the "u".
+        <strong>Note:</strong> &quot;Argument&quot; is the correct spelling. &quot;Arguement&quot; is a common misspelling—remember, the &quot;e&quot; comes after the &quot;u&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it arguement or argument?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "argument." "Arguement" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;argument.&quot; &quot;Arguement&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

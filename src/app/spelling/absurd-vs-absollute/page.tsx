@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Absurd vs Absollute - Which is Correct?",
-  description: "Learn the correct spelling between 'absurd' and 'absollute'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;absurd&apos; and &apos;absollute&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AbsurdVsAbsollutePage() {
@@ -110,7 +110,7 @@ export default function AbsurdVsAbsollutePage() {
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it absollute or absurd?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "absurd." "Absollute" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;absurd.&quot; &quot;Absollute&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

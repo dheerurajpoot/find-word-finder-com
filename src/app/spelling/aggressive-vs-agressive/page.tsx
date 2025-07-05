@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Agressive vs Aggressive - Which is Correct?",
-  description: "Learn the correct spelling between 'agressive' and 'aggressive'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;agressive&apos; and &apos;aggressive&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AggressiveVsAgressivePage() {

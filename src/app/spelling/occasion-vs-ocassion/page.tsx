@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Occasion vs Ocassion - Which is Correct?",
-  description: "Learn the correct spelling between 'occasion' and 'ocassion'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;occasion&apos; and &apos;ocassion&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function OccasionVsOcassionPage() {
@@ -72,7 +72,7 @@ export default function OccasionVsOcassionPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "occasion":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;occasion&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Nouns:</div>
@@ -110,7 +110,7 @@ export default function OccasionVsOcassionPage() {
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it ocassion or occasion?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "occasion." "Ocassion" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;occasion.&quot; &quot;Ocassion&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

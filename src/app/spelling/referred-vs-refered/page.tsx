@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Refered vs Referred - Which is Correct?",
-  description: "Learn the correct spelling between 'refered' and 'referred'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;refered&apos; and &apos;referred&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function ReferredVsReferedPage() {

@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Able vs Abble - Which is Correct?",
-  description: "Learn the correct spelling between 'able' and 'abble'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;able&apos; and &apos;abble&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AbleVsAbblePage() {

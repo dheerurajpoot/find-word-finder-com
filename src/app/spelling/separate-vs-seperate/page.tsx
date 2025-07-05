@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Seperate vs Separate - Which is Correct?",
-  description: "Learn the correct spelling between 'seperate' and 'separate'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;seperate&apos; and &apos;separate&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function SeparateVsSeperatePage() {

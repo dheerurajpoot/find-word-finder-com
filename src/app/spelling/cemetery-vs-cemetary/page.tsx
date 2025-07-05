@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Cemetary vs Cemetery - Which is Correct?",
-  description: "Learn the correct spelling between 'cemetary' and 'cemetery'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;cemetary&apos; and &apos;cemetery&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function CemeteryVsCemetaryPage() {

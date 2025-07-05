@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Freind vs Friend - Which is Correct?",
-  description: "Learn the correct spelling between 'freind' and 'friend'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;freind&apos; and &apos;friend&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function FriendVsFreindPage() {

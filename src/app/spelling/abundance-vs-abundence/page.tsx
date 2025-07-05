@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Abundance vs Abundence - Which is Correct?",
-  description: "Learn the correct spelling between 'abundance' and 'abundence'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;abundance&apos; and &apos;abundence&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AbundanceVsAbundencePage() {

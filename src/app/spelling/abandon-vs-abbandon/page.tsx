@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Abandon vs Abbandon - Which is Correct?",
-  description: "Learn the correct spelling between 'abandon' and 'abbandon'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;abandon&apos; and &apos;abbandon&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AbandonVsAbbandonPage() {
@@ -72,7 +72,7 @@ export default function AbandonVsAbbandonPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "abandon":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;abandon&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Verbs:</div>
@@ -100,7 +100,7 @@ export default function AbandonVsAbbandonPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> The word &quot;abandon&quot; has only one &quot;b&quot; in the middle. The misspelling &quot;abbandon&quot; with two &quot;b's&quot; is a common error. Remember: it's &quot;a-ban-don&quot; (one &quot;b&quot;), not &quot;ab-ban-don&quot; (two &quot;b's&quot;).
+        <strong>Note:</strong> The word &quot;abandon&quot; has only one &quot;b&quot; in the middle. The misspelling &quot;abbandon&quot; with two &quot;b&apos;s&quot; is a common error. Remember: it&apos;s &quot;a-ban-don&quot; (one &quot;b&quot;), not &quot;ab-ban-don&quot; (two &quot;b&apos;s&quot;).
       </div>
 
       {/* FAQ Section */}

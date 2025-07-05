@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Activity vs Activty - Which is Correct?",
-  description: "Learn the correct spelling between 'activity' and 'activty'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;activity&apos; and &apos;activty&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function ActivityVsActivtyPage() {
@@ -30,7 +30,7 @@ export default function ActivityVsActivtyPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Activty</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Activty" is not a valid word in English.
+                This spelling is incorrect. &quot;Activty&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function ActivityVsActivtyPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Activity</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Activity" is a noun meaning something that a person or group does.
+                This is the correct spelling. &quot;Activity&quot; is a noun meaning something that a person or group does.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function ActivityVsActivtyPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "activity":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;activity&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Nouns:</div>
@@ -102,17 +102,17 @@ export default function ActivityVsActivtyPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Activity" is the correct spelling. "Activty" is a common misspelling—remember, it has an "i" before the "t".
+        <strong>Note:</strong> &quot;Activity&quot; is the correct spelling. &quot;Activty&quot; is a common misspelling—remember, it has an &quot;i&quot; before the &quot;t&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it activty or activity?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "activity." "Activty" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;activity.&quot; &quot;Activty&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

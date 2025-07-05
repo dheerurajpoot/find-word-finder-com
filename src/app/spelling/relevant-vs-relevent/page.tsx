@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Relevant vs Relevent - Which is Correct?",
-  description: "Learn the correct spelling between 'relevant' and 'relevent'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;relevant&apos; and &apos;relevent&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function RelevantVsReleventPage() {
@@ -30,7 +30,7 @@ export default function RelevantVsReleventPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Relevent</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Relevent" is not a valid word in English.
+                This spelling is incorrect. &quot;Relevent&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function RelevantVsReleventPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Relevant</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Relevant" is an adjective meaning closely connected or appropriate.
+                This is the correct spelling. &quot;Relevant&quot; is an adjective meaning closely connected or appropriate.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function RelevantVsReleventPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "relevant":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;relevant&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Adjectives:</div>
@@ -102,17 +102,17 @@ export default function RelevantVsReleventPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Relevant" is the correct spelling. "Relevent" is a common misspelling—remember, it ends with "-vant," not "-vent".
+        <strong>Note:</strong> &quot;Relevant&quot; is the correct spelling. &quot;Relevent&quot; is a common misspelling—remember, it ends with &quot;-vant,&quot; not &quot;-vent&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it relevent or relevant?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "relevant." "Relevent" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;relevant.&quot; &quot;Relevent&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

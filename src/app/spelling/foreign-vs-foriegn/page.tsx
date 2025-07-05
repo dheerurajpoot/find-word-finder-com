@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Foreign vs Foriegn - Which is Correct?",
-  description: "Learn the correct spelling between 'foreign' and 'foriegn'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;foreign&apos; and &apos;foriegn&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function ForeignVsForiegnPage() {
@@ -42,7 +42,7 @@ export default function ForeignVsForiegnPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Foreign</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Foreign" is an adjective meaning from another country.
+                This is the correct spelling. &quot;Foreign&quot; is an adjective meaning from another country.
               </div>
             </div>
           </Card>
@@ -100,7 +100,7 @@ export default function ForeignVsForiegnPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Foreign" is the correct spelling. "Foriegn" is a common misspelling—remember, the "e" comes before the "i".
+        <strong>Note:</strong> &quot;Foreign&quot; is the correct spelling. &quot;Foriegn&quot; is a common misspelling—remember, the &quot;e&quot; comes before the &quot;i&quot;.
       </div>
 
       {/* FAQ Section */}

@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Disappear vs Dissapear - Which is Correct?",
-  description: "Learn the correct spelling between 'disappear' and 'dissapear'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;disappear&apos; and &apos;dissapear&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function DisappearVsDissapearPage() {
@@ -30,7 +30,7 @@ export default function DisappearVsDissapearPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Dissapear</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Dissapear" is not a valid word in English.
+                This spelling is incorrect. &quot;Dissapear&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function DisappearVsDissapearPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Disappear</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Disappear" is a verb meaning to cease to be visible.
+                This is the correct spelling. &quot;Disappear&quot; is a verb meaning to cease to be visible.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function DisappearVsDissapearPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "disappear":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;disappear&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Verbs:</div>
@@ -102,17 +102,17 @@ export default function DisappearVsDissapearPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Disappear" is the correct spelling. "Dissapear" is a common misspelling—remember, it only has one "s" after the "i".
+        <strong>Note:</strong> &quot;Disappear&quot; is the correct spelling. &quot;Dissapear&quot; is a common misspelling—remember, it only has one &quot;s&quot; after the &quot;i&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it dissapear or disappear?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "disappear." "Dissapear" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;disappear.&quot; &quot;Dissapear&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

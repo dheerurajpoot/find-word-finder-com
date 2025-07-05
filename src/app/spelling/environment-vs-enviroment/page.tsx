@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Enviroment vs Environment - Which is Correct?",
-  description: "Learn the correct spelling between 'enviroment' and 'environment'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;enviroment&apos; and &apos;environment&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function EnvironmentVsEnviromentPage() {

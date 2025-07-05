@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Apreciate vs Appreciate - Which is Correct?",
-  description: "Learn the correct spelling between 'apreciate' and 'appreciate'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;apreciate&apos; and &apos;appreciate&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AppreciateVsApreciatePage() {

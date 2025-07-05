@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Calendar vs Calender - Which is Correct?",
-  description: "Learn the correct spelling between 'calendar' and 'calender'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;calendar&apos; and &apos;calender&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function CalendarVsCalenderPage() {
@@ -30,7 +30,7 @@ export default function CalendarVsCalenderPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Calender</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect for a date book. "Calender" is a machine in papermaking, not a schedule.
+                This spelling is incorrect for a date book. &quot;Calender&quot; is a machine in papermaking, not a schedule.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function CalendarVsCalenderPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Calendar</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Calendar" is a noun meaning a chart showing dates.
+                This is the correct spelling. &quot;Calendar&quot; is a noun meaning a chart showing dates.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function CalendarVsCalenderPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "calendar":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;calendar&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Nouns:</div>
@@ -102,17 +102,17 @@ export default function CalendarVsCalenderPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Calendar" is the correct spelling for a date book or schedule. "Calender" is a common misspelling—remember, it ends with "-ar". ("Calender" is a real word for a machine in papermaking, but not for dates.)
+        <strong>Note:</strong> &quot;Calendar&quot; is the correct spelling for a date book or schedule. &quot;Calender&quot; is a common misspelling—remember, it ends with &quot;-ar&quot;. (&quot;Calender&quot; is a real word for a machine in papermaking, but not for dates.)
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it calender or calendar?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word for a date book is "calendar." "Calender" is a common misspelling, but is a real word for a machine in papermaking.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word for a date book is &quot;calendar.&quot; &quot;Calender&quot; is a common misspelling, but is a real word for a machine in papermaking.</div>
             </div>
           </Card>
           <Card>

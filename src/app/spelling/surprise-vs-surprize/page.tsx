@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Surprise vs Surprize - Which is Correct?",
-  description: "Learn the correct spelling between 'surprise' and 'surprize'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;surprise&apos; and &apos;surprize&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function SurpriseVsSurprizePage() {
@@ -30,7 +30,7 @@ export default function SurpriseVsSurprizePage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Surprize</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Surprize" is not a valid word in English.
+                This spelling is incorrect. &quot;Surprize&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function SurpriseVsSurprizePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Surprise</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Surprise" is a noun and verb meaning unexpected.
+                This is the correct spelling. &quot;Surprise&quot; is a noun and verb meaning unexpected.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function SurpriseVsSurprizePage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "surprise":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;surprise&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Nouns:</div>
@@ -102,17 +102,17 @@ export default function SurpriseVsSurprizePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Surprise" is the correct spelling. "Surprize" is a common misspelling—remember, it ends with "-prise," not "-prize".
+        <strong>Note:</strong> &quot;Surprise&quot; is the correct spelling. &quot;Surprize&quot; is a common misspelling—remember, it ends with &quot;-prise,&quot; not &quot;-prize&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it surprize or surprise?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "surprise." "Surprize" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;surprise.&quot; &quot;Surprize&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Persistant vs Persistent - Which is Correct?",
-  description: "Learn the correct spelling between 'persistant' and 'persistent'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;persistant&apos; and &apos;persistent&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function PersistentVsPersistantPage() {

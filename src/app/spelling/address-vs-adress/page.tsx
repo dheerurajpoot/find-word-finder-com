@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Adress vs Address - Which is Correct?",
-  description: "Learn the correct spelling between 'adress' and 'address'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;adress&apos; and &apos;address&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AddressVsAdressPage() {

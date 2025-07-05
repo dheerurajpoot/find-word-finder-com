@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Noticable vs Noticeable - Which is Correct?",
-  description: "Learn the correct spelling between 'noticable' and 'noticeable'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;noticable&apos; and &apos;noticeable&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function NoticeableVsNoticablePage() {

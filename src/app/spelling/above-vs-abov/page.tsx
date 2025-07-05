@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Above vs Abov - Which is Correct?",
-  description: "Learn the correct spelling between 'above' and 'abov'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;above&apos; and &apos;abov&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AboveVsAbovPage() {

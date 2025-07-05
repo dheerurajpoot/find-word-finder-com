@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Absorbancy vs Absorbency - Which is Correct?",
-  description: "Learn the correct spelling between 'absorbancy' and 'absorbency'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;absorbancy&apos; and &apos;absorbency&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AbsorbancyVsAbsorbencyPage() {

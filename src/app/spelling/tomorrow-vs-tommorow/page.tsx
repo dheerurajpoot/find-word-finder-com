@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Tomorrow vs Tommorow - Which is Correct?",
-  description: "Learn the correct spelling between 'tomorrow' and 'tommorow'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;tomorrow&apos; and &apos;tommorow&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function TomorrowVsTommorowPage() {
@@ -30,7 +30,7 @@ export default function TomorrowVsTommorowPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Tommorow</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Tommorow" is not a valid word in English.
+                This spelling is incorrect. &quot;Tommorow&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function TomorrowVsTommorowPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Tomorrow</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Tomorrow" is a noun/adverb meaning the day after today.
+                This is the correct spelling. &quot;Tomorrow&quot; is a noun/adverb meaning the day after today.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function TomorrowVsTommorowPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "tomorrow":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;tomorrow&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Nouns:</div>
@@ -101,17 +101,17 @@ export default function TomorrowVsTommorowPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Tomorrow" is the correct spelling. "Tommorow" is a common misspelling—remember, it only has one "m" in the middle.
+        <strong>Note:</strong> &quot;Tomorrow&quot; is the correct spelling. &quot;Tommorow&quot; is a common misspelling—remember, it only has one &quot;m&quot; in the middle.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it tommorow or tomorrow?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "tomorrow." "Tommorow" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;tomorrow.&quot; &quot;Tommorow&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

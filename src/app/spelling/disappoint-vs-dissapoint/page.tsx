@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Disappoint vs Dissapoint - Which is Correct?",
-  description: "Learn the correct spelling between 'disappoint' and 'dissapoint'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;disappoint&apos; and &apos;dissapoint&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function DisappointVsDissapointPage() {
@@ -100,7 +100,7 @@ export default function DisappointVsDissapointPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Disappoint&quot; is the correct spelling. &quot;Dissapoint&quot; is a common misspelling—remember, it only has one "s" after the "i".
+        <strong>Note:</strong> &quot;Disappoint&quot; is the correct spelling. &quot;Dissapoint&quot; is a common misspelling—remember, it only has one &quot;s&quot; after the &quot;i&quot;.
       </div>
 
       {/* FAQ Section */}

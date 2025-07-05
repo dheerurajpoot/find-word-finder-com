@@ -5,7 +5,7 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Occurrence vs Occurence - Which is Correct?",
-  description: "Learn the correct spelling between 'occurrence' and 'occurence'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;occurrence&apos; and &apos;occurence&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function OccurrenceVsOccurencePage() {
@@ -30,7 +30,7 @@ export default function OccurrenceVsOccurencePage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Occurence</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Occurence" is not a valid word in English.
+                This spelling is incorrect. &quot;Occurence&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +44,7 @@ export default function OccurrenceVsOccurencePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Occurrence</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Occurrence" is a noun meaning an incident or event.
+                This is the correct spelling. &quot;Occurrence&quot; is a noun meaning an incident or event.
               </div>
             </div>
           </Card>
@@ -74,7 +74,7 @@ export default function OccurrenceVsOccurencePage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "occurrence":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;occurrence&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Events:</div>
@@ -101,17 +101,17 @@ export default function OccurrenceVsOccurencePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Occurrence" is the correct spelling. "Occurence" is a common misspelling—remember, it has two "r" letters and ends with "-ence".
+        <strong>Note:</strong> &quot;Occurrence&quot; is the correct spelling. &quot;Occurence&quot; is a common misspelling—remember, it has two &quot;r&quot; letters and ends with &quot;-ence&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it occurence or occurrence?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "occurrence." "Occurence" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;occurrence.&quot; &quot;Occurence&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

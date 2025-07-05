@@ -4,7 +4,7 @@ import { Card, } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Abandon vs Abandone - Which is Correct?",
-  description: "Learn the correct spelling between 'abandon' and 'abandone'. Discover definitions, examples, and usage tips for these commonly confused words.",
+  description: "Learn the correct spelling between &apos;abandon&apos; and &apos;abandone&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
 export default function AbandonVsAbandonePage() {
@@ -73,7 +73,7 @@ export default function AbandonVsAbandonePage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "abandon":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;abandon&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Verbs:</div>
