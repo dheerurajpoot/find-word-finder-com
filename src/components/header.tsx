@@ -30,6 +30,7 @@ export function Header() {
 		{ name: "Word Generator", href: "/word-generator", icon: BookOpen },
 		{ name: "Word Lists", href: "/word-lists", icon: List },
 		{ name: "Blog", href: "/blog", icon: Newspaper },
+		{ name: "Misspelling", href: "/spelling", icon: Newspaper },
 		{
 			name: "Scrabble Score Calculator",
 			href: "/scrabble-calculator",
@@ -50,6 +51,11 @@ export function Header() {
 
 					{/* Desktop Navigation */}
 					<nav className='hidden md:flex items-center space-x-8'>
+						<Link
+							href='/spelling'
+							className='hover:text-green-100 transition-colors'>
+							Misspelling
+						</Link>
 						<Link
 							href='/word-lists'
 							className='hover:text-green-100 transition-colors'>

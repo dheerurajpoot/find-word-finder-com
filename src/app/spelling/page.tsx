@@ -1,131 +1,148 @@
+import Link from "next/link";
 import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Abandon vs Abandone - Which is Correct?",
-  description: "Learn the correct spelling between &apos;abandon&apos; and &apos;abandone&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
+  title: "Spelling",
+  description: "Explore common spelling confusions and learn the correct forms. Click any card to see detailed explanations, examples, and tips.",
 };
 
-export default function AbandonVsAbandonePage() {
+// List of all spelling comparison folders (auto-generated from your attached folder structure)
+const spellingPages = [
+  "tyranny-vs-tyranny",
+  "tyranny-vs-tyrany",
+  "surprise-vs-surprize",
+  "threshold-vs-threshhold",
+  "tomorrow-vs-tommorow",
+  "tongue-vs-tounge",
+  "receive-vs-recieve",
+  "recommend-vs-reccomend",
+  "referred-vs-refered",
+  "relevant-vs-relevent",
+  "sacrifice-vs-sacrafice",
+  "separate-vs-seperate",
+  "successful-vs-successfull",
+  "prejudice-vs-prejiduce",
+  "principal-vs-principle",
+  "pronunciation-vs-pronounciation",
+  "publicly-vs-publically",
+  "questionnaire-vs-questionaire",
+  "pastime-vs-pasttime",
+  "pavilion-vs-pavillion",
+  "persistent-vs-persistant",
+  "playwright-vs-playwrite",
+  "possession-vs-posession",
+  "maneuver-vs-manoeuvre",
+  "memento-vs-momento",
+  "misspell-vs-mispell",
+  "noticeable-vs-noticable",
+  "occasion-vs-ocassion",
+  "occurrence-vs-occurence",
+  "grateful-vs-greatful",
+  "hierarchy-vs-heirarchy",
+  "independent-vs-independant",
+  "judgment-vs-judgement",
+  "knowledgeable-vs-knowledgable",
+  "liaison-vs-liason",
+  "fascinating-vs-facinating",
+  "february-vs-febuary",
+  "finally-vs-finaly",
+  "fluorescent-vs-flourescent",
+  "foreign-vs-foriegn",
+  "forty-vs-fourty",
+  "friend-vs-freind",
+  "definitely-vs-definately",
+  "disappear-vs-dissapear",
+  "disappoint-vs-dissapoint",
+  "embarrass-vs-embarass",
+  "environment-vs-enviroment",
+  "existence-vs-existance",
+  "familiar-vs-familar",
+  "calendar-vs-calender",
+  "cemetery-vs-cemetary",
+  "changeable-vs-changable",
+  "collectible-vs-collectable",
+  "column-vs-collumn",
+  "committed-vs-commited",
+  "committee-vs-commitee",
+  "appreciate-vs-apreciate",
+  "argument-vs-arguement",
+  "athlete-vs-athelete",
+  "attendance-vs-attandance",
+  "beginning-vs-beginnig",
+  "believe-vs-belive",
+  "business-vs-buisness",
+  "altogether-vs-altogedr",
+  "altogether-vs-altogther",
+  "amateur-vs-amature",
+  "analysis-vs-analisis",
+  "analyze-vs-analyse",
+  "apology-vs-appology",
+  "apparent-vs-aparent",
+  "appetite-vs-apetite",
+  "already-vs-allready",
+  "although-vs-allthough",
+  "altogether-vs-alltogether",
+  "altogether-vs-altogather",
+  "altogether-vs-altogeder",
+  "altogether-vs-altogedher",
+  "agriculture-vs-aggriculture",
+  "alcohol-vs-alchohol",
+  "allege-vs-allegee",
+  "allot-vs-alot",
+  "almost-vs-allmost",
+  "address-vs-adress",
+  "against-vs-againist",
+  "against-vs-againstt",
+  "aggressive-vs-agressive",
+  "agility-vs-agilty",
+  "agony-vs-aggony",
+  "acquaintance-vs-acquaintence",
+  "acquire-vs-aquire",
+  "across-vs-acros",
+  "action-vs-actoin",
+  "activity-vs-activty",
+  "actually-vs-actualy",
+  "addition-vs-additon",
+  "accuracy-vs-accuraccy",
+  "accuracy-vs-accurasy",
+  "achieve-vs-acheive",
+  "achievement-vs-acheivement",
+];
+
+// Helper to prettify folder names
+function prettify(name: string) {
+  return name
+    .replace(/-/g, " ")
+    .replace(/\bvs\b/i, "or")
+    .replace(/\b(\w)/g, (m) => m.toUpperCase());
+}
+
+const pastelColors = [
+  "bg-pink-200", "bg-green-100", "bg-yellow-100", "bg-purple-100", "bg-green-300", "bg-pink-100", "bg-yellow-200", "bg-purple-200"
+];
+
+export default function SpellingPage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Abandon or Abandone</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Abandon or Abandone, and how to use them properly.
-        </p>
-      </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Abandone</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Abandone&quot; is not a valid word in English.
-              </div>
+    <div className="max-w-6xl mx-auto py-10 px-4">
+      <h1 className="text-4xl md:text-5xl font-extrabold mb-8">Featured</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {spellingPages.map((folder, i) => (
+          <Link
+            key={folder}
+            href={`/spelling/${folder}`}
+            className={`rounded-xl p-6 flex flex-col items-start justify-between min-h-[120px] transition-shadow shadow-sm hover:shadow-lg ${pastelColors[i % pastelColors.length]}`}
+          >
+            <div className="flex items-center mb-4">
+              {/* Ribbon/medal icon */}
+              <span className="inline-block w-8 h-8 mr-2">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="6" fill="#e0e7ff" stroke="#6366f1" strokeWidth="2"/><path d="M8 15l-2 6 6-3 6 3-2-6" stroke="#6366f1" strokeWidth="2" fill="none"/></svg>
+              </span>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Abandon</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Abandon&quot; is a verb meaning to leave permanently or give up.
-              </div>
+            <div className="text-xl font-semibold text-black mb-2">
+              {prettify(folder)}
             </div>
-          </Card>
-        </div>
-      </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Abandon</span> (verb): To leave permanently, give up, or desert someone or something.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>They had to abandon their car in the snowstorm.</li>
-              <li>She refused to abandon her dreams despite the challenges.</li>
-              <li>The building was abandoned after the fire.</li>
-            </ul>
-          </div>
-        </Card>
-      </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;abandon&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Verbs:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Desert</li>
-                  <li>Forsake</li>
-                  <li>Relinquish</li>
-                  <li>Surrender</li>
-                  <li>Give up</li>
-                </ul>
-              </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Nouns:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Desertion</li>
-                  <li>Forsaking</li>
-                  <li>Relinquishment</li>
-                  <li>Surrender</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Abandon&quot; is the correct spelling. &quot;Abandone&quot; is a common misspelling—remember, it ends with &quot;-on&quot; not &quot;-one&quot;.
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it abandon or abandone?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;abandon.&quot; &quot;Abandone&quot; is a common misspelling.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce abandon?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈbændən/ (uh-BAN-dun).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does abandon mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">To leave permanently, give up, or desert someone or something.</div>
-            </div>
-          </Card>
-        </div>
+          </Link>
+        ))}
       </div>
     </div>
   );
