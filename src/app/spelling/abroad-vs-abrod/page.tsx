@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Abroad vs Abrod - Which is Correct?",
@@ -30,7 +28,7 @@ export default function AbroadVsAbrodPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Abrod</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Abrod" is not a valid word in English.
+                This spelling is incorrect. &quot;Abrod&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function AbroadVsAbrodPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Abroad</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Abroad" is an adverb meaning in or to a foreign country.
+                This is the correct spelling. &quot;Abroad&quot; is an adverb meaning in or to a foreign country.
               </div>
             </div>
           </Card>
@@ -102,23 +100,23 @@ export default function AbroadVsAbrodPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Abroad" is the correct spelling. "Abrod" is a common misspelling—remember, it ends with "-oad" not "-od".
+        <strong>Note:</strong> &quot;Abroad&quot; is the correct spelling. &quot;Abrod&quot; is a common misspelling—remember, it ends with &quot;-oad&quot; not &quot;-od&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it abrod or abroad?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "abroad." "Abrod" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;abroad.&quot; &quot;Abrod&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce abroad?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈbrɔːd/ (uh-BRAWD).</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ə&apos;brɔːd/ (uh-BRAWD).</div>
             </div>
           </Card>
           <Card>

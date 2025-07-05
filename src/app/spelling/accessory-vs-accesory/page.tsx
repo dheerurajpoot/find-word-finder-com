@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Accessory vs Accesory - Which is Correct?",
@@ -30,7 +28,7 @@ export default function AccessoryVsAccesoryPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Accesory</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Accesory" is not a valid word in English.
+                This spelling is incorrect. &quot;Accesory&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function AccessoryVsAccesoryPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Accessory</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Accessory" is a noun meaning an additional item or add-on.
+                This is the correct spelling. &quot;Accessory&quot; is a noun meaning an additional item or add-on.
               </div>
             </div>
           </Card>
@@ -102,17 +100,17 @@ export default function AccessoryVsAccesoryPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Accessory" is the correct spelling. "Accesory" is a common misspelling—remember, it has two "s" letters.
+        <strong>Note:</strong> &quot;Accessory&quot; is the correct spelling. &quot;Accesory&quot; is a common misspelling—remember, it has two &quot;s&quot; letters.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it accesory or accessory?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "accessory." "Accesory" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;accessory.&quot; &quot;Accesory&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Acceptance vs Acceptence - Which is Correct?",
@@ -30,7 +28,7 @@ export default function AcceptanceVsAcceptencePage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Acceptence</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Acceptence" is not a valid word in English.
+                This spelling is incorrect. &quot;Acceptence&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function AcceptanceVsAcceptencePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Acceptance</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Acceptance" is a noun meaning the act of agreeing or receiving.
+                This is the correct spelling. &quot;Acceptance&quot; is a noun meaning the act of agreeing or receiving.
               </div>
             </div>
           </Card>
@@ -102,12 +100,12 @@ export default function AcceptanceVsAcceptencePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Acceptance" is the correct spelling. "Acceptence" is a common misspelling—remember, the correct ending is "-ance".
+        <strong>Note:</strong> &quot;Acceptance&quot; is the correct spelling. &quot;Acceptence&quot; is a common misspelling—remember, the correct ending is "-ance".
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">

@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Pronunciation vs Pronounciation - Which is Correct?",
@@ -30,7 +28,7 @@ export default function PronunciationVsPronounciationPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Pronounciation</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Pronounciation" is not a valid word in English.
+                This spelling is incorrect. &quot;Pronounciation&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function PronunciationVsPronounciationPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Pronunciation</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Pronunciation" is a noun meaning the way a word is spoken.
+                This is the correct spelling. &quot;Pronunciation&quot; is a noun meaning the way a word is spoken.
               </div>
             </div>
           </Card>
@@ -74,7 +72,7 @@ export default function PronunciationVsPronounciationPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "pronunciation":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;pronunciation&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Nouns:</div>
@@ -102,17 +100,17 @@ export default function PronunciationVsPronounciationPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Pronunciation" is the correct spelling. "Pronounciation" is a common misspelling—remember, there is no extra "o" after the "n".
+        <strong>Note:</strong> &quot;Pronunciation&quot; is the correct spelling. &quot;Pronounciation&quot; is a common misspelling—remember, there is no extra "o" after the "n".
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it pronounciation or pronunciation?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "pronunciation." "Pronounciation" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;pronunciation&quot;. &quot;Pronounciation&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

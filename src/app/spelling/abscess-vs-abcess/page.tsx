@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Abscess vs Abcess - Which is Correct?",
@@ -30,7 +28,7 @@ export default function AbscessVsAbcessPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Abcess</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Abcess" is not a valid word in English.
+                This spelling is incorrect. &quot;Abcess&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function AbscessVsAbcessPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Abscess</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Abscess" is a noun meaning a swollen area with pus.
+                This is the correct spelling. &quot;Abscess&quot; is a noun meaning a swollen area with pus.
               </div>
             </div>
           </Card>
@@ -102,23 +100,23 @@ export default function AbscessVsAbcessPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Abscess" is the correct spelling. "Abcess" is a common misspelling—remember, it has "s" before "c" not "c" before "s".
+        <strong>Note:</strong> &quot;Abscess&quot; is the correct spelling. &quot;Abcess&quot; is a common misspelling—remember, it has &quot;s&quot; before &quot;c&quot; not &quot;c&quot; before &quot;s&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it abcess or abscess?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "abscess." "Abcess" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;abscess.&quot; &quot;Abcess&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce abscess?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ˈæbsɛs/ (AB-ses).</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ə&apos;æbsɛs/ (uh-AB-ses).</div>
             </div>
           </Card>
           <Card>

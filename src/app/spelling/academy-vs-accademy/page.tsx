@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Academy vs Accademy - Which is Correct?",
@@ -30,7 +28,7 @@ export default function AcademyVsAccademyPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Accademy</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Accademy" is not a valid word in English.
+                This spelling is incorrect. &quot;Accademy&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function AcademyVsAccademyPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Academy</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Academy" is a noun meaning a place of study.
+                This is the correct spelling. &quot;Academy&quot; is a noun meaning a place of study.
               </div>
             </div>
           </Card>
@@ -102,17 +100,17 @@ export default function AcademyVsAccademyPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Academy" is the correct spelling. "Accademy" is a common misspelling—remember, it has only one "c".
+        <strong>Note:</strong> &quot;Academy&quot; is the correct spelling. &quot;Accademy&quot; is a common misspelling—remember, it has only one &quot;c&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it accademy or academy?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "academy." "Accademy" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;academy.&quot; &quot;Accademy&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

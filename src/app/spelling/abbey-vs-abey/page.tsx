@@ -22,7 +22,7 @@ export default function AbbeyVsAbeyPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Abey</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Abey" is not a valid word in English.
+                This spelling is incorrect. &quot;Abey&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -36,7 +36,7 @@ export default function AbbeyVsAbeyPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Abbey</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Abbey" is a noun meaning a building or group of buildings where monks or nuns live and work.
+                This is the correct spelling. &quot;Abbey&quot; is a noun meaning a building or group of buildings where monks or nuns live and work.
               </div>
             </div>
           </Card>
@@ -66,7 +66,7 @@ export default function AbbeyVsAbeyPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "abbey":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;abbey&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Related Places:</div>
@@ -93,29 +93,29 @@ export default function AbbeyVsAbeyPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Abbey" is the correct spelling. "Abey" is a common misspelling—remember, it ends with "-bey" not "-bey".
+        <strong>Note:</strong> &quot;Abbey&quot; is the correct spelling. &quot;Abey&quot; is a common misspelling—remember, it ends with &quot;-bey&quot; not &quot;-bey&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it abbey or abey?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "abbey." "Abey" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;abbey.&quot; &quot;Abey&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce abbey?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ˈæb.i/ (AB-ee).</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ə&apos;bændən/ (uh-BAN-dun).</div>
             </div>
           </Card>
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">What does abbey mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">A building or group of buildings where monks or nuns live, worship, and work.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">&quot;Abbey&quot; means a building or group of buildings where monks or nuns live, worship, and work.</div>
             </div>
           </Card>
         </div>

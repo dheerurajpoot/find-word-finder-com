@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Familiar vs Familar - Which is Correct?",
@@ -30,7 +28,7 @@ export default function FamiliarVsFamilarPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Familar</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Familar" is not a valid word in English.
+                This spelling is incorrect. &quot;Familar&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function FamiliarVsFamilarPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Familiar</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Familiar" is an adjective meaning well known.
+                This is the correct spelling. &quot;Familiar&quot; is an adjective meaning well known.
               </div>
             </div>
           </Card>
@@ -102,17 +100,17 @@ export default function FamiliarVsFamilarPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Familiar" is the correct spelling. "Familar" is a common misspelling—remember, it has an "i" after the "m".
+        <strong>Note:</strong> &quot;Familiar&quot; is the correct spelling. &quot;Familar&quot; is a common misspelling—remember, it has an "i" after the "m".
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it familar or familiar?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "familiar." "Familar" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;familiar&quot;. &quot;Familar&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

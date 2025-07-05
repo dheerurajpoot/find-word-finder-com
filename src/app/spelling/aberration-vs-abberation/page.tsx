@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Aberration vs Abberation - Which is Correct?",
@@ -30,7 +28,7 @@ export default function AberrationVsAbberationPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Abberation</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Abberation" is not a valid word in English.
+                This spelling is incorrect. &quot;Abberation&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function AberrationVsAbberationPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Aberration</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Aberration" is a noun meaning a departure from what is normal.
+                This is the correct spelling. &quot;Aberration&quot; is a noun meaning a departure from what is normal.
               </div>
             </div>
           </Card>
@@ -102,23 +100,23 @@ export default function AberrationVsAbberationPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Aberration" is the correct spelling. "Abberation" is a common misspelling—remember, it has two "r's" in the middle.
+        <strong>Note:</strong> &quot;Aberration&quot; is the correct spelling. &quot;Abberation&quot; is a common misspelling—remember, it has two &quot;r's&quot; in the middle.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it abberation or aberration?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "aberration." "Abberation" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;aberration.&quot; &quot;Abberation&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce aberration?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ˌæbəˈreɪʃən/ (ab-uh-RAY-shun).</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ˌæbə&apos;reɪʃən/ (ab-uh-RAY-shun).</div>
             </div>
           </Card>
           <Card>

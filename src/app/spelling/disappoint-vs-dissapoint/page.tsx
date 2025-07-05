@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Disappoint vs Dissapoint - Which is Correct?",
@@ -30,7 +28,7 @@ export default function DisappointVsDissapointPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Dissapoint</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Dissapoint" is not a valid word in English.
+                This spelling is incorrect. &quot;Dissapoint&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function DisappointVsDissapointPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Disappoint</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Disappoint" is a verb meaning to fail to fulfill hopes or expectations.
+                This is the correct spelling. &quot;Disappoint&quot; is a verb meaning to fail to fulfill hopes or expectations.
               </div>
             </div>
           </Card>
@@ -74,7 +72,7 @@ export default function DisappointVsDissapointPage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "disappoint":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;disappoint&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Verbs:</div>
@@ -102,17 +100,17 @@ export default function DisappointVsDissapointPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Disappoint" is the correct spelling. "Dissapoint" is a common misspelling—remember, it only has one "s" after the "i".
+        <strong>Note:</strong> &quot;Disappoint&quot; is the correct spelling. &quot;Dissapoint&quot; is a common misspelling—remember, it only has one "s" after the "i".
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it dissapoint or disappoint?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "disappoint." "Dissapoint" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;disappoint&quot;. &quot;Dissapoint&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

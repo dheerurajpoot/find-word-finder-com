@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Abbey vs Abbay - Which is Correct?",
@@ -30,7 +28,7 @@ export default function AbbeyVsAbbayPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Abbay</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Abbay" is not a valid word in English.
+                This spelling is incorrect. &quot;Abbay&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function AbbeyVsAbbayPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Abbey</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Abbey" is a noun meaning a building for monks or nuns.
+                This is the correct spelling. &quot;Abbey&quot; is a noun meaning a building for monks or nuns.
               </div>
             </div>
           </Card>
@@ -102,23 +100,23 @@ export default function AbbeyVsAbbayPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Abbey" is the correct spelling. "Abbay" is a common misspelling—remember, it ends with "-ey" not "-ay".
+        <strong>Note:</strong> &quot;Abbey&quot; is the correct spelling. &quot;Abbay&quot; is a common misspelling—remember, it ends with &quot;-ey&quot; not &quot;-ay&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it abbay or abbey?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "abbey." "Abbay" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;abbey.&quot; &quot;Abbay&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce abbey?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ˈæbi/ (AB-ee).</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ə&apos;bændən/ (uh&apos;BAN-dun).</div>
             </div>
           </Card>
           <Card>

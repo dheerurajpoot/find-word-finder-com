@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Amateur vs Amature - Which is Correct?",
@@ -30,7 +28,7 @@ export default function AmateurVsAmaturePage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Amature</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Amature" is not a valid word in English.
+                This spelling is incorrect. &quot;Amature&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function AmateurVsAmaturePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Amateur</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Amateur" is a noun/adjective meaning someone who does something for pleasure.
+                This is the correct spelling. &quot;Amateur&quot; is a noun/adjective meaning someone who does something for pleasure.
               </div>
             </div>
           </Card>
@@ -102,17 +100,17 @@ export default function AmateurVsAmaturePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Amateur" is the correct spelling. "Amature" is a common misspelling—remember, it ends with "-eur".
+        <strong>Note:</strong> &quot;Amateur&quot; is the correct spelling. &quot;Amature&quot; is a common misspelling—remember, it ends with "-eur".
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it amature or amateur?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "amateur." "Amature" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;amateur&quot;. &quot;Amature&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

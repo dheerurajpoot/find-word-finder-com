@@ -1,82 +1,129 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Metadata } from "next";
+import { Card } from "@/components/ui/card";
+
+export const metadata: Metadata = {
+  title: "Enviroment vs Environment - Which is Correct?",
+  description: "Learn the correct spelling between 'enviroment' and 'environment'. Discover definitions, examples, and usage tips for these commonly confused words.",
+};
 
 export default function EnvironmentVsEnviromentPage() {
   return (
     <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      <div className="text-center space-y-2">
-        <h1 className="text-2xl font-bold">Enviroment or Environment</h1>
-        <p className="text-muted-foreground text-sm">Did you mean "Environment"?</p>
+      {/* Title and subtitle */}
+      <div className="text-center space-y-3">
+        <h1 className="text-5xl font-extrabold tracking-tight">Enviroment or Environment</h1>
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
+          Did you mean &quot;Environment&quot;?
+        </p>
       </div>
+
+      {/* Correct/Incorrect Cards - Image Style */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Card className="flex-1 border-destructive/40">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-destructive text-base">
-              <Badge variant="destructive">INCORRECT</Badge> Enviroment
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-destructive text-sm">"Enviroment" is not a correct English word.</p>
-          </CardContent>
-        </Card>
-        <Card className="flex-1 border-green-400/40">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-green-600 text-base">
-              <Badge className="bg-green-600 text-white">CORRECT</Badge> Environment
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-green-700 text-sm">"Environment" is the correct spelling.</p>
-          </CardContent>
-        </Card>
+        <div className="flex-1">
+          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-4xl">❌</span>
+                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
+              </div>
+              <div className="text-3xl font-extrabold text-red-600 mb-2">Enviroment</div>
+              <div className="text-lg md:text-xl text-gray-700">
+                This spelling is incorrect. &quot;Enviroment&quot; is not a valid word in English.
+              </div>
+            </div>
+          </Card>
+        </div>
+        <div className="flex-1">
+          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-4xl">✅</span>
+                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
+              </div>
+              <div className="text-3xl font-extrabold text-green-600 mb-2">Environment</div>
+              <div className="text-lg md:text-xl text-gray-700">
+                This is the correct spelling. &quot;Environment&quot; is a noun meaning surroundings or conditions.
+              </div>
+            </div>
+          </Card>
+        </div>
       </div>
+
+      {/* Definition */}
       <div className="space-y-8">
         <Card>
-          <CardHeader>
-            <CardTitle>Environment <span className="text-xs text-muted-foreground font-normal">(noun)</span></CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="mb-2">
-              <span className="font-semibold">Definition:</span> The surroundings or conditions in which a person, animal, or plant lives or operates.
+          <div className="p-6">
+            <div className="mb-2 font-bold text-2xl">Definition</div>
+            <div className="mb-2 text-lg md:text-xl">
+              <span className="font-bold">Environment</span> (noun): The surroundings or conditions in which a person, animal, or plant lives or operates; the natural world or physical surroundings.
             </div>
-            <div className="mb-2">
-              <span className="font-semibold">Example:</span> We must protect the environment for future generations.
-            </div>
-            <div>
-              <span className="font-semibold">Synonyms:</span>
-              <ul className="list-disc list-inside ml-4 text-sm text-muted-foreground">
-                <li>Habitat</li>
-                <li>Surroundings</li>
-                <li>Setting</li>
-                <li>Milieu</li>
-              </ul>
-            </div>
-          </CardContent>
+            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
+            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+              <li>We must protect the environment for future generations.</li>
+              <li>The work environment is very supportive.</li>
+              <li>Plants adapt to their environment over time.</li>
+            </ul>
+          </div>
         </Card>
       </div>
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-sm">
-        <strong>Note:</strong> "Environment" is the correct spelling for the natural world or surroundings. "Enviroment" is a common misspelling—remember, it has an "n" after the "o."
+
+      {/* Synonyms */}
+      <div className="space-y-8">
+        <Card className="bg-blue-50">
+          <div className="p-6">
+            <div className="mb-2 font-bold text-2xl">Synonyms</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;environment&quot;:</div>
+            <div className="flex flex-col sm:flex-row justify-between gap-12">
+              <div className="min-w-[220px]">
+                <div className="font-semibold text-lg md:text-xl">Nouns:</div>
+                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+                  <li>Habitat</li>
+                  <li>Surroundings</li>
+                  <li>Setting</li>
+                  <li>Milieu</li>
+                  <li>Atmosphere</li>
+                </ul>
+              </div>
+              <div className="min-w-[220px]">
+                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
+                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+                  <li>Ecosystem</li>
+                  <li>Biosphere</li>
+                  <li>Context</li>
+                  <li>Conditions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Card>
       </div>
+
+      {/* Note */}
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
+        <strong>Note:</strong> &quot;Environment&quot; is the correct spelling for the natural world or surroundings. &quot;Enviroment&quot; is a common misspelling—remember, it has an &quot;n&quot; after the &quot;o.&quot;
+      </div>
+
+      {/* FAQ Section */}
       <div>
-        <h2 className="text-lg font-bold mb-4">FAQ's</h2>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
-            <CardContent>
-              <span className="font-semibold">Is it enviroment or environment?</span>
-              <div className="text-sm text-muted-foreground">The correct word is "environment." "Enviroment" is a common misspelling.</div>
-            </CardContent>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">Is it enviroment or environment?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;environment.&quot; &quot;Enviroment&quot; is a common misspelling.</div>
+            </div>
           </Card>
           <Card>
-            <CardContent>
-              <span className="font-semibold">How to pronounce environment?</span>
-              <div className="text-sm text-muted-foreground">The correct pronunciation is /ɪnˈvaɪrənmənt/ (in-VY-ruhn-ment).</div>
-            </CardContent>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce environment?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ɪnˈvaɪrənmənt/ (in-VY-ruhn-ment).</div>
+            </div>
           </Card>
           <Card>
-            <CardContent>
-              <span className="font-semibold">What does environment mean?</span>
-              <div className="text-sm text-muted-foreground">The surroundings or conditions in which a person, animal, or plant lives or operates.</div>
-            </CardContent>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">What does environment mean?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The surroundings or conditions in which a person, animal, or plant lives or operates; the natural world or physical surroundings.</div>
+            </div>
           </Card>
         </div>
       </div>

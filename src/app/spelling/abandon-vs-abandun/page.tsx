@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Abandon vs Abandun - Which is Correct?",
@@ -30,7 +28,7 @@ export default function AbandonVsAbandunPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Abandun</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Abandun" is not a valid word in English.
+                This spelling is incorrect. &quot;Abandun&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function AbandonVsAbandunPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Abandon</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Abandon" is a verb and noun meaning to leave behind.
+                This is the correct spelling. &quot;Abandon&quot; is a verb and noun meaning to leave behind.
               </div>
             </div>
           </Card>
@@ -102,23 +100,23 @@ export default function AbandonVsAbandunPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Abandon" is the correct spelling. "Abandun" is a common misspelling—remember, it ends with "-on" not "-un".
+        <strong>Note:</strong> &quot;Abandon&quot; is the correct spelling. &quot;Abandun&quot; is a common misspelling—remember, it ends with &quot;-on&quot; not &quot;-un&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it abandun or abandon?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "abandon." "Abandun" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;abandon.&quot; &quot;Abandun&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce abandon?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈbændən/ (uh-BAN-dun).</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ə&apos;bændən/ (uh&apos;BAN-dun).</div>
             </div>
           </Card>
           <Card>

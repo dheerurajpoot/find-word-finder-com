@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Absurd vs Absollute - Which is Correct?",
@@ -30,7 +28,7 @@ export default function AbsurdVsAbsollutePage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Absollute</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Absollute" is not a valid word in English.
+                This spelling is incorrect. &quot;Absollute&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function AbsurdVsAbsollutePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Absurd</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Absurd" is an adjective meaning wildly unreasonable or illogical.
+                This is the correct spelling. &quot;Absurd&quot; is an adjective meaning wildly unreasonable or illogical.
               </div>
             </div>
           </Card>
@@ -74,7 +72,7 @@ export default function AbsurdVsAbsollutePage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "absurd":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;absurd&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Adjectives:</div>
@@ -102,12 +100,12 @@ export default function AbsurdVsAbsollutePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Absurd" is the correct spelling. "Absollute" is a common misspelling—remember, it ends with "-urd" not "-ollute".
+        <strong>Note:</strong> &quot;Absurd&quot; is the correct spelling. &quot;Absollute&quot; is a common misspelling—remember, it ends with &quot;-urd&quot; not &quot;-ollute&quot;.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">

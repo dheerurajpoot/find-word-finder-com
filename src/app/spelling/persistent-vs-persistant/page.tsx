@@ -1,82 +1,129 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Metadata } from "next";
+import { Card } from "@/components/ui/card";
+
+export const metadata: Metadata = {
+  title: "Persistant vs Persistent - Which is Correct?",
+  description: "Learn the correct spelling between 'persistant' and 'persistent'. Discover definitions, examples, and usage tips for these commonly confused words.",
+};
 
 export default function PersistentVsPersistantPage() {
   return (
     <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      <div className="text-center space-y-2">
-        <h1 className="text-2xl font-bold">Persistant or Persistent</h1>
-        <p className="text-muted-foreground text-sm">Did you mean "Persistent"?</p>
+      {/* Title and subtitle */}
+      <div className="text-center space-y-3">
+        <h1 className="text-5xl font-extrabold tracking-tight">Persistant or Persistent</h1>
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
+          Did you mean &quot;Persistent&quot;?
+        </p>
       </div>
+
+      {/* Correct/Incorrect Cards - Image Style */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Card className="flex-1 border-destructive/40">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-destructive text-base">
-              <Badge variant="destructive">INCORRECT</Badge> Persistant
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-destructive text-sm">"Persistant" is not a correct English word.</p>
-          </CardContent>
-        </Card>
-        <Card className="flex-1 border-green-400/40">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-green-600 text-base">
-              <Badge className="bg-green-600 text-white">CORRECT</Badge> Persistent
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-green-700 text-sm">"Persistent" is the correct spelling.</p>
-          </CardContent>
-        </Card>
+        <div className="flex-1">
+          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-4xl">❌</span>
+                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
+              </div>
+              <div className="text-3xl font-extrabold text-red-600 mb-2">Persistant</div>
+              <div className="text-lg md:text-xl text-gray-700">
+                This spelling is incorrect. &quot;Persistant&quot; is not a valid word in English.
+              </div>
+            </div>
+          </Card>
+        </div>
+        <div className="flex-1">
+          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-4xl">✅</span>
+                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
+              </div>
+              <div className="text-3xl font-extrabold text-green-600 mb-2">Persistent</div>
+              <div className="text-lg md:text-xl text-gray-700">
+                This is the correct spelling. &quot;Persistent&quot; is an adjective meaning continuing firmly despite obstacles.
+              </div>
+            </div>
+          </Card>
+        </div>
       </div>
+
+      {/* Definition */}
       <div className="space-y-8">
         <Card>
-          <CardHeader>
-            <CardTitle>Persistent <span className="text-xs text-muted-foreground font-normal">(adjective)</span></CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="mb-2">
-              <span className="font-semibold">Definition:</span> Continuing firmly or obstinately in a course of action in spite of difficulty or opposition.
+          <div className="p-6">
+            <div className="mb-2 font-bold text-2xl">Definition</div>
+            <div className="mb-2 text-lg md:text-xl">
+              <span className="font-bold">Persistent</span> (adjective): Continuing firmly or obstinately in a course of action in spite of difficulty or opposition; tenacious and determined.
             </div>
-            <div className="mb-2">
-              <span className="font-semibold">Example:</span> Her persistent efforts finally paid off.
-            </div>
-            <div>
-              <span className="font-semibold">Synonyms:</span>
-              <ul className="list-disc list-inside ml-4 text-sm text-muted-foreground">
-                <li>Tenacious</li>
-                <li>Determined</li>
-                <li>Relentless</li>
-                <li>Dogged</li>
-              </ul>
-            </div>
-          </CardContent>
+            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
+            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+              <li>Her persistent efforts finally paid off.</li>
+              <li>He was persistent in his pursuit of the truth.</li>
+              <li>The persistent rain ruined our picnic plans.</li>
+            </ul>
+          </div>
         </Card>
       </div>
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-sm">
-        <strong>Note:</strong> "Persistent" is the correct spelling for someone who continues firmly despite obstacles. "Persistant" is a common misspelling—remember, it ends with "-ent." 
+
+      {/* Synonyms */}
+      <div className="space-y-8">
+        <Card className="bg-blue-50">
+          <div className="p-6">
+            <div className="mb-2 font-bold text-2xl">Synonyms</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;persistent&quot;:</div>
+            <div className="flex flex-col sm:flex-row justify-between gap-12">
+              <div className="min-w-[220px]">
+                <div className="font-semibold text-lg md:text-xl">Adjectives:</div>
+                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+                  <li>Tenacious</li>
+                  <li>Determined</li>
+                  <li>Relentless</li>
+                  <li>Dogged</li>
+                  <li>Steadfast</li>
+                </ul>
+              </div>
+              <div className="min-w-[220px]">
+                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
+                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+                  <li>Unwavering</li>
+                  <li>Resolute</li>
+                  <li>Persevering</li>
+                  <li>Unyielding</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Card>
       </div>
+
+      {/* Note */}
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
+        <strong>Note:</strong> &quot;Persistent&quot; is the correct spelling for someone who continues firmly despite obstacles. &quot;Persistant&quot; is a common misspelling—remember, it ends with &quot;-ent.&quot;
+      </div>
+
+      {/* FAQ Section */}
       <div>
-        <h2 className="text-lg font-bold mb-4">FAQ's</h2>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
-            <CardContent>
-              <span className="font-semibold">Is it persistant or persistent?</span>
-              <div className="text-sm text-muted-foreground">The correct word is "persistent." "Persistant" is a common misspelling.</div>
-            </CardContent>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">Is it persistant or persistent?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;persistent.&quot; &quot;Persistant&quot; is a common misspelling.</div>
+            </div>
           </Card>
           <Card>
-            <CardContent>
-              <span className="font-semibold">How to pronounce persistent?</span>
-              <div className="text-sm text-muted-foreground">The correct pronunciation is /pərˈsɪstənt/ (per-SIS-tent).</div>
-            </CardContent>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce persistent?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /pərˈsɪstənt/ (per-SIS-tent).</div>
+            </div>
           </Card>
           <Card>
-            <CardContent>
-              <span className="font-semibold">What does persistent mean?</span>
-              <div className="text-sm text-muted-foreground">Continuing firmly or obstinately in a course of action in spite of difficulty or opposition.</div>
-            </CardContent>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">What does persistent mean?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Continuing firmly or obstinately in a course of action in spite of difficulty or opposition; tenacious and determined.</div>
+            </div>
           </Card>
         </div>
       </div>

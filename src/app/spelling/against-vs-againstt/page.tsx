@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Against vs Againstt - Which is Correct?",
@@ -30,7 +28,7 @@ export default function AgainstVsAgainsttPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Againstt</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Againstt" is not a valid word in English.
+                This spelling is incorrect. &quot;Againstt&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function AgainstVsAgainsttPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Against</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Against" is a preposition meaning in opposition to or in contact with.
+                This is the correct spelling. &quot;Against&quot; is a preposition meaning in opposition to or in contact with.
               </div>
             </div>
           </Card>
@@ -102,17 +100,17 @@ export default function AgainstVsAgainsttPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Against" is the correct spelling. "Againstt" is a common misspelling—remember, it only has one "t" at the end.
+        <strong>Note:</strong> &quot;Against&quot; is the correct spelling. &quot;Againstt&quot; is a common misspelling—remember, it only has one "t" at the end.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it againstt or against?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "against." "Againstt" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;against&quot;. &quot;Againstt&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

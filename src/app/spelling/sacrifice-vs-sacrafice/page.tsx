@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Sacrifice vs Sacrafice - Which is Correct?",
@@ -30,7 +28,7 @@ export default function SacrificeVsSacraficePage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Sacrafice</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Sacrafice" is not a valid word in English.
+                This spelling is incorrect. &quot;Sacrafice&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function SacrificeVsSacraficePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Sacrifice</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Sacrifice" is a noun/verb meaning to give up something valuable.
+                This is the correct spelling. &quot;Sacrifice&quot; is a noun/verb meaning to give up something valuable.
               </div>
             </div>
           </Card>
@@ -74,7 +72,7 @@ export default function SacrificeVsSacraficePage() {
         <Card className="bg-blue-50">
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "sacrifice":</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;sacrifice&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
                 <div className="font-semibold text-lg md:text-xl">Verbs:</div>
@@ -102,17 +100,17 @@ export default function SacrificeVsSacraficePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Sacrifice" is the correct spelling. "Sacrafice" is a common misspelling—remember, it ends with "-ifice," not "-afice".
+        <strong>Note:</strong> &quot;Sacrifice&quot; is the correct spelling. &quot;Sacrafice&quot; is a common misspelling—remember, it ends with "-ifice," not "-afice".
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it sacrafice or sacrifice?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "sacrifice." "Sacrafice" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;sacrifice&quot;. &quot;Sacrafice&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>

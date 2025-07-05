@@ -1,82 +1,129 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Metadata } from "next";
+import { Card } from "@/components/ui/card";
+
+export const metadata: Metadata = {
+  title: "Judgment vs Judgement - Which is Correct?",
+  description: "Learn the correct spelling between 'judgment' and 'judgement'. Discover definitions, examples, and usage tips for these commonly confused words.",
+};
 
 export default function JudgmentVsJudgementPage() {
   return (
     <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      <div className="text-center space-y-2">
-        <h1 className="text-2xl font-bold">Judgment or Judgement</h1>
-        <p className="text-muted-foreground text-sm">US vs UK spelling: both are correct, but used in different regions and contexts.</p>
+      {/* Title and subtitle */}
+      <div className="text-center space-y-3">
+        <h1 className="text-5xl font-extrabold tracking-tight">Judgment or Judgement</h1>
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
+          US vs UK spelling: both are correct, but used in different regions and contexts.
+        </p>
       </div>
+
+      {/* Correct/Incorrect Cards - Image Style */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Card className="flex-1 border-green-400/40">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-green-600 text-base">
-              <Badge className="bg-green-600 text-white">US</Badge> Judgment
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-green-700 text-sm">"Judgment" is the standard spelling in American English and in legal contexts worldwide.</p>
-          </CardContent>
-        </Card>
-        <Card className="flex-1 border-blue-400/40">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-blue-600 text-base">
-              <Badge className="bg-blue-600 text-white">UK</Badge> Judgement
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-blue-700 text-sm">"Judgement" is the standard spelling in British English (except in legal contexts, where "judgment" is used).</p>
-          </CardContent>
-        </Card>
+        <div className="flex-1">
+          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-4xl">🇺🇸</span>
+                <span className="text-2xl font-extrabold text-green-800">US</span>
+              </div>
+              <div className="text-3xl font-extrabold text-green-600 mb-2">Judgment</div>
+              <div className="text-lg md:text-xl text-gray-700">
+                &quot;Judgment&quot; is the standard spelling in American English and in legal contexts worldwide.
+              </div>
+            </div>
+          </Card>
+        </div>
+        <div className="flex-1">
+          <Card className="bg-blue-50 border border-blue-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-4xl">🇬🇧</span>
+                <span className="text-2xl font-extrabold text-blue-800">UK</span>
+              </div>
+              <div className="text-3xl font-extrabold text-blue-600 mb-2">Judgement</div>
+              <div className="text-lg md:text-xl text-gray-700">
+                &quot;Judgement&quot; is the standard spelling in British English (except in legal contexts, where &quot;judgment&quot; is used).
+              </div>
+            </div>
+          </Card>
+        </div>
       </div>
+
+      {/* Definition */}
       <div className="space-y-8">
         <Card>
-          <CardHeader>
-            <CardTitle>Judgment/Judgement <span className="text-xs text-muted-foreground font-normal">(noun)</span></CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="mb-2">
-              <span className="font-semibold">Definition:</span> The ability to make considered decisions or come to sensible conclusions; a decision of a court or judge.
+          <div className="p-6">
+            <div className="mb-2 font-bold text-2xl">Definition</div>
+            <div className="mb-2 text-lg md:text-xl">
+              <span className="font-bold">Judgment/Judgement</span> (noun): The ability to make considered decisions or come to sensible conclusions; a decision of a court or judge; the capacity to assess situations or circumstances.
             </div>
-            <div className="mb-2">
-              <span className="font-semibold">Example:</span> She showed good judgment in the situation. / The court issued its judgment.
-            </div>
-            <div>
-              <span className="font-semibold">Synonyms:</span>
-              <ul className="list-disc list-inside ml-4 text-sm text-muted-foreground">
-                <li>Discernment</li>
-                <li>Decision</li>
-                <li>Ruling</li>
-                <li>Verdict</li>
-              </ul>
-            </div>
-          </CardContent>
+            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
+            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+              <li>She showed good judgment in the situation.</li>
+              <li>The court issued its judgment.</li>
+              <li>His judgment was clouded by emotion.</li>
+            </ul>
+          </div>
         </Card>
       </div>
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-sm">
-        <strong>Note:</strong> "Judgment" is preferred in American English and in legal contexts. "Judgement" is more common in British English, except in law. Both are understood in both regions.
+
+      {/* Synonyms */}
+      <div className="space-y-8">
+        <Card className="bg-blue-50">
+          <div className="p-6">
+            <div className="mb-2 font-bold text-2xl">Synonyms</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;judgment/judgement&quot;:</div>
+            <div className="flex flex-col sm:flex-row justify-between gap-12">
+              <div className="min-w-[220px]">
+                <div className="font-semibold text-lg md:text-xl">Nouns:</div>
+                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+                  <li>Discernment</li>
+                  <li>Decision</li>
+                  <li>Ruling</li>
+                  <li>Verdict</li>
+                  <li>Assessment</li>
+                </ul>
+              </div>
+              <div className="min-w-[220px]">
+                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
+                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+                  <li>Wisdom</li>
+                  <li>Prudence</li>
+                  <li>Discretion</li>
+                  <li>Evaluation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Card>
       </div>
+
+      {/* Note */}
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
+        <strong>Note:</strong> &quot;Judgment&quot; is preferred in American English and in legal contexts. &quot;Judgement&quot; is more common in British English, except in law. Both are understood in both regions.
+      </div>
+
+      {/* FAQ Section */}
       <div>
-        <h2 className="text-lg font-bold mb-4">FAQ's</h2>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
-            <CardContent>
-              <span className="font-semibold">Is it judgment or judgement?</span>
-              <div className="text-sm text-muted-foreground">Both are correct: "judgment" (US, legal), "judgement" (UK, general). "Judgment" is always used in legal contexts.</div>
-            </CardContent>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">Is it judgment or judgement?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Both are correct: &quot;judgment&quot; (US, legal), &quot;judgement&quot; (UK, general). &quot;Judgment&quot; is always used in legal contexts.</div>
+            </div>
           </Card>
           <Card>
-            <CardContent>
-              <span className="font-semibold">How to pronounce judgment/judgement?</span>
-              <div className="text-sm text-muted-foreground">Both are pronounced /ˈdʒʌdʒmənt/ (JUJ-ment).</div>
-            </CardContent>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce judgment/judgement?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Both are pronounced /ˈdʒʌdʒmənt/ (JUJ-ment).</div>
+            </div>
           </Card>
           <Card>
-            <CardContent>
-              <span className="font-semibold">What does judgment/judgement mean?</span>
-              <div className="text-sm text-muted-foreground">The ability to make considered decisions; a decision of a court or judge.</div>
-            </CardContent>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">What does judgment/judgement mean?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The ability to make considered decisions; a decision of a court or judge; the capacity to assess situations or circumstances.</div>
+            </div>
           </Card>
         </div>
       </div>

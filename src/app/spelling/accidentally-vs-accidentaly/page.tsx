@@ -1,82 +1,129 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Metadata } from "next";
+import { Card } from "@/components/ui/card";
+
+export const metadata: Metadata = {
+  title: "Accidentaly vs Accidentally - Which is Correct?",
+  description: "Learn the correct spelling between 'accidentaly' and 'accidentally'. Discover definitions, examples, and usage tips for these commonly confused words.",
+};
 
 export default function AccidentallyVsAccidentalyPage() {
   return (
     <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      <div className="text-center space-y-2">
-        <h1 className="text-2xl font-bold">Accidentaly or Accidentally</h1>
-        <p className="text-muted-foreground text-sm">Did you mean "Accidentally"?</p>
+      {/* Title and subtitle */}
+      <div className="text-center space-y-3">
+        <h1 className="text-5xl font-extrabold tracking-tight">Accidentaly or Accidentally</h1>
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
+          Did you mean &quot;Accidentally&quot;?
+        </p>
       </div>
+
+      {/* Correct/Incorrect Cards - Image Style */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Card className="flex-1 border-destructive/40">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-destructive text-base">
-              <Badge variant="destructive">INCORRECT</Badge> Accidentaly
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-destructive text-sm">"Accidentaly" is not a correct English word.</p>
-          </CardContent>
-        </Card>
-        <Card className="flex-1 border-green-400/40">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-green-600 text-base">
-              <Badge className="bg-green-600 text-white">CORRECT</Badge> Accidentally
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-green-700 text-sm">"Accidentally" is the correct spelling.</p>
-          </CardContent>
-        </Card>
+        <div className="flex-1">
+          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-4xl">❌</span>
+                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
+              </div>
+              <div className="text-3xl font-extrabold text-red-600 mb-2">Accidentaly</div>
+              <div className="text-lg md:text-xl text-gray-700">
+                This spelling is incorrect. &quot;Accidentaly&quot; is not a valid word in English.
+              </div>
+            </div>
+          </Card>
+        </div>
+        <div className="flex-1">
+          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-4xl">✅</span>
+                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
+              </div>
+              <div className="text-3xl font-extrabold text-green-600 mb-2">Accidentally</div>
+              <div className="text-lg md:text-xl text-gray-700">
+                This is the correct spelling. &quot;Accidentally&quot; is an adverb meaning happening by chance or mistake.
+              </div>
+            </div>
+          </Card>
+        </div>
       </div>
+
+      {/* Definition */}
       <div className="space-y-8">
         <Card>
-          <CardHeader>
-            <CardTitle>Accidentally <span className="text-xs text-muted-foreground font-normal">(adverb)</span></CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="mb-2">
-              <span className="font-semibold">Definition:</span> Happening by chance or mistake; unintentionally.
+          <div className="p-6">
+            <div className="mb-2 font-bold text-2xl">Definition</div>
+            <div className="mb-2 text-lg md:text-xl">
+              <span className="font-bold">Accidentally</span> (adverb): Happening by chance or mistake; unintentionally; without planning or intention.
             </div>
-            <div className="mb-2">
-              <span className="font-semibold">Example:</span> She accidentally deleted the file.
-            </div>
-            <div>
-              <span className="font-semibold">Synonyms:</span>
-              <ul className="list-disc list-inside ml-4 text-sm text-muted-foreground">
-                <li>Unintentionally</li>
-                <li>Inadvertently</li>
-                <li>By mistake</li>
-                <li>By accident</li>
-              </ul>
-            </div>
-          </CardContent>
+            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
+            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+              <li>She accidentally deleted the file.</li>
+              <li>He accidentally bumped into the table.</li>
+              <li>I accidentally left my keys at home.</li>
+            </ul>
+          </div>
         </Card>
       </div>
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-sm">
-        <strong>Note:</strong> "Accidentally" is the correct spelling for something done by accident. "Accidentaly" is a common misspelling—remember, it has two "l"s before the "y."
+
+      {/* Synonyms */}
+      <div className="space-y-8">
+        <Card className="bg-blue-50">
+          <div className="p-6">
+            <div className="mb-2 font-bold text-2xl">Synonyms</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;accidentally&quot;:</div>
+            <div className="flex flex-col sm:flex-row justify-between gap-12">
+              <div className="min-w-[220px]">
+                <div className="font-semibold text-lg md:text-xl">Adverbs:</div>
+                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+                  <li>Unintentionally</li>
+                  <li>Inadvertently</li>
+                  <li>By mistake</li>
+                  <li>By accident</li>
+                  <li>Unwittingly</li>
+                </ul>
+              </div>
+              <div className="min-w-[220px]">
+                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
+                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+                  <li>Involuntarily</li>
+                  <li>Spontaneously</li>
+                  <li>Unconsciously</li>
+                  <li>Fortuitously</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Card>
       </div>
+
+      {/* Note */}
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
+        <strong>Note:</strong> &quot;Accidentally&quot; is the correct spelling for something done by accident. &quot;Accidentaly&quot; is a common misspelling—remember, it has two &quot;l&quot;s before the &quot;y.&quot;
+      </div>
+
+      {/* FAQ Section */}
       <div>
-        <h2 className="text-lg font-bold mb-4">FAQ's</h2>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
-            <CardContent>
-              <span className="font-semibold">Is it accidentaly or accidentally?</span>
-              <div className="text-sm text-muted-foreground">The correct word is "accidentally." "Accidentaly" is a common misspelling.</div>
-            </CardContent>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">Is it accidentaly or accidentally?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;accidentally.&quot; &quot;Accidentaly&quot; is a common misspelling.</div>
+            </div>
           </Card>
           <Card>
-            <CardContent>
-              <span className="font-semibold">How to pronounce accidentally?</span>
-              <div className="text-sm text-muted-foreground">The correct pronunciation is /ˌæksɪˈdɛntəli/ (ak-si-DEN-tuh-lee).</div>
-            </CardContent>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce accidentally?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ˌæksɪˈdɛntəli/ (ak-si-DEN-tuh-lee).</div>
+            </div>
           </Card>
           <Card>
-            <CardContent>
-              <span className="font-semibold">What does accidentally mean?</span>
-              <div className="text-sm text-muted-foreground">Happening by chance or mistake; unintentionally.</div>
-            </CardContent>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">What does accidentally mean?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Happening by chance or mistake; unintentionally; without planning or intention.</div>
+            </div>
           </Card>
         </div>
       </div>

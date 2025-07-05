@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Occasion vs Ocassion - Which is Correct?",
@@ -30,7 +28,7 @@ export default function OccasionVsOcassionPage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Ocassion</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Ocassion" is not a valid word in English.
+                This spelling is incorrect. &quot;Ocassion&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function OccasionVsOcassionPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Occasion</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Occasion" is a noun meaning a special event.
+                This is the correct spelling. &quot;Occasion&quot; is a noun meaning a special event.
               </div>
             </div>
           </Card>
@@ -102,12 +100,12 @@ export default function OccasionVsOcassionPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Occasion" is the correct spelling. "Ocassion" is a common misspelling—remember, it has two "c" letters.
+        <strong>Note:</strong> &quot;Occasion&quot; is the correct spelling. &quot;Ocassion&quot; is a common misspelling—remember, it has two &quot;c&quot; letters.
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">

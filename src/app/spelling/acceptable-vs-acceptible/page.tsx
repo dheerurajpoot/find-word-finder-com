@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Acceptable vs Acceptible - Which is Correct?",
@@ -30,7 +28,7 @@ export default function AcceptableVsAcceptiblePage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Acceptible</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. "Acceptible" is not a valid word in English.
+                This spelling is incorrect. &quot;Acceptible&quot; is not a valid word in English.
               </div>
             </div>
           </Card>
@@ -44,7 +42,7 @@ export default function AcceptableVsAcceptiblePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Acceptable</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. "Acceptable" is an adjective meaning able to be agreed on or suitable.
+                This is the correct spelling. &quot;Acceptable&quot; is an adjective meaning able to be agreed on or suitable.
               </div>
             </div>
           </Card>
@@ -102,17 +100,17 @@ export default function AcceptableVsAcceptiblePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> "Acceptable" is the correct spelling. "Acceptible" is a common misspelling—remember, the correct ending is "-able" not "-ible".
+        <strong>Note:</strong> &quot;Acceptable&quot; is the correct spelling. &quot;Acceptible&quot; is a common misspelling—remember, the correct ending is "-able" not "-ible".
       </div>
 
       {/* FAQ Section */}
       <div>
-        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
         <div className="space-y-3">
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it acceptible or acceptable?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is "acceptable." "Acceptible" is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;acceptable.&quot; &quot;Acceptible&quot; is a common misspelling.</div>
             </div>
           </Card>
           <Card>
