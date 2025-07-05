@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Explore common spelling confusions and learn the correct forms. Click any card to see detailed explanations, examples, and tips.",
 };
 
-// List of all spelling comparison folders (auto-generated from your attached folder structure)
+// Auto-generated from attached folder structure
 const spellingPages = [
   "tyranny-vs-tyranny",
   "tyranny-vs-tyrany",
@@ -109,7 +109,6 @@ const spellingPages = [
   "achievement-vs-acheivement",
 ];
 
-// Helper to prettify folder names
 function prettify(name: string) {
   return name
     .replace(/-/g, " ")
@@ -121,12 +120,19 @@ const pastelColors = [
   "bg-pink-200", "bg-green-100", "bg-yellow-100", "bg-purple-100", "bg-green-300", "bg-pink-100", "bg-yellow-200", "bg-purple-200"
 ];
 
+// Sort alphabetically by prettified title
+const sortedPages = spellingPages.slice().sort((a, b) => {
+  const titleA = prettify(a);
+  const titleB = prettify(b);
+  return titleA.localeCompare(titleB);
+});
+
 export default function SpellingPage() {
   return (
     <div className="max-w-6xl mx-auto py-10 px-4">
       <h1 className="text-4xl md:text-5xl font-extrabold mb-8">Featured</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {spellingPages.map((folder, i) => (
+        {sortedPages.map((folder, i) => (
           <Link
             key={folder}
             href={`/spelling/${folder}`}
