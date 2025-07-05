@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { Card, } from "@/components/ui/card";
 
-
 export const metadata: Metadata = {
   title: "Abandon vs Abandone - Which is Correct?",
   description: "Learn the correct spelling between &apos;abandon&apos; and &apos;abandone&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
