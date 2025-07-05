@@ -7,6 +7,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { baseUrl } from "@/lib/constant";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -76,7 +77,7 @@ export default function RootLayout({
 
 				{/* Google Analytics */}
 				<Script
-					src='https://www.googletagmanager.com/gtag/js?id=YOUR_GOOGLE_ANALYTICS_ID'
+					src='https://www.googletagmanager.com/gtag/js?id=G-WD0SR0VT9B'
 					strategy='afterInteractive'
 				/>
 				<Script id='google-analytics' strategy='afterInteractive'>
@@ -84,7 +85,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'YOUR_GOOGLE_ANALYTICS_ID');
+            gtag('config', 'G-WD0SR0VT9B');
           `}
 				</Script>
 				<link rel='icon' href='/favicon.ico' />

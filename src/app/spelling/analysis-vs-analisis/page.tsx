@@ -1,0 +1,134 @@
+import { Metadata } from "next";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+
+export const metadata: Metadata = {
+  title: "Analysis vs Analisis - Which is Correct?",
+  description: "Learn the correct spelling between 'analysis' and 'analisis'. Discover definitions, examples, and usage tips for these commonly confused words.",
+};
+
+export default function AnalysisVsAnalisisPage() {
+  return (
+    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
+      {/* Title and subtitle */}
+      <div className="text-center space-y-3">
+        <h1 className="text-5xl font-extrabold tracking-tight">Analysis or Analisis</h1>
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
+          Which spelling is correct, Analysis or Analisis, and how to use them properly.
+        </p>
+      </div>
+
+      {/* Correct/Incorrect Cards - Image Style */}
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex-1">
+          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-4xl">❌</span>
+                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
+              </div>
+              <div className="text-3xl font-extrabold text-red-600 mb-2">Analisis</div>
+              <div className="text-lg md:text-xl text-gray-700">
+                This spelling is incorrect in English. "Analisis" is the correct spelling in Spanish.
+              </div>
+            </div>
+          </Card>
+        </div>
+        <div className="flex-1">
+          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
+            <div>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-4xl">✅</span>
+                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
+              </div>
+              <div className="text-3xl font-extrabold text-green-600 mb-2">Analysis</div>
+              <div className="text-lg md:text-xl text-gray-700">
+                This is the correct spelling in English. "Analysis" is a noun meaning detailed examination.
+              </div>
+            </div>
+          </Card>
+        </div>
+      </div>
+
+      {/* Definition */}
+      <div className="space-y-8">
+        <Card>
+          <div className="p-6">
+            <div className="mb-2 font-bold text-2xl">Definition</div>
+            <div className="mb-2 text-lg md:text-xl">
+              <span className="font-bold">Analysis</span> (noun): Detailed examination of the elements or structure of something; systematic study or investigation.
+            </div>
+            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
+            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+              <li>The analysis of the data revealed important trends.</li>
+              <li>We need to conduct a thorough analysis of the problem.</li>
+              <li>The financial analysis showed positive growth.</li>
+            </ul>
+          </div>
+        </Card>
+      </div>
+
+      {/* Synonyms */}
+      <div className="space-y-8">
+        <Card className="bg-blue-50">
+          <div className="p-6">
+            <div className="mb-2 font-bold text-2xl">Synonyms</div>
+            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to "analysis":</div>
+            <div className="flex flex-col sm:flex-row justify-between gap-12">
+              <div className="min-w-[220px]">
+                <div className="font-semibold text-lg md:text-xl">Nouns:</div>
+                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+                  <li>Examination</li>
+                  <li>Study</li>
+                  <li>Evaluation</li>
+                  <li>Assessment</li>
+                  <li>Investigation</li>
+                </ul>
+              </div>
+              <div className="min-w-[220px]">
+                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
+                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
+                  <li>Review</li>
+                  <li>Scrutiny</li>
+                  <li>Inspection</li>
+                  <li>Breakdown</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      {/* Note */}
+      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
+        <strong>Note:</strong> "Analysis" is the correct spelling in English. "Analisis" is a common misspelling by English speakers, but is correct in Spanish.
+      </div>
+
+      {/* FAQ Section */}
+      <div>
+        <div className="text-2xl font-bold mb-4">FAQ's</div>
+        <div className="space-y-3">
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">Is it analisis or analysis?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct word in English is "analysis." "Analisis" is a common misspelling in English, but correct in Spanish.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce analysis?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈnæləsɪs/ (uh-NAL-uh-sis).</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">What does analysis mean?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">A detailed examination of the elements or structure of something; systematic study or investigation.</div>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </div>
+  );
+} 
