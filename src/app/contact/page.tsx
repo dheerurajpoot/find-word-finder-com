@@ -37,7 +37,7 @@ export default function ContactPage() {
 								<a
 									href='mailto:support@findwordfinder.com'
 									className='text-green-600 font-semibold hover:underline'>
-									support@findwordfinder.com
+									contact@findwordfinder.com
 								</a>
 								<p className='text-sm text-gray-500 mt-2'>
 									We typically respond within 1-2 business
