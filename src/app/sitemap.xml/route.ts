@@ -23,6 +23,10 @@ export async function GET() {
     <lastmod>${now}</lastmod>
   </sitemap>
   <sitemap>
+    <loc>${baseUrl}/sitemap/misspellings.xml</loc>
+    <lastmod>${now}</lastmod>
+  </sitemap>
+  <sitemap>
     <loc>${baseUrl}/sitemap/grammar.xml</loc>
     <lastmod>${now}</lastmod>
   </sitemap>

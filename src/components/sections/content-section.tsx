@@ -169,11 +169,11 @@ export function ContentSections() {
 							</div>
 						</div>
 
-						{/* Today's NYT Mini Clues */}
+						{/* Today's Try Another Tool */}
 						<div className='bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100'>
 							<div className='bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-4 rounded-t-xl'>
 								<h3 className='text-2xl font-bold'>
-									Today&apos;s NYT Mini Clues
+									Today&apos;s Try Another Tool
 								</h3>
 							</div>
 							<div className='p-6'>

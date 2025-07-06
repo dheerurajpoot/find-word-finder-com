@@ -1,24 +1,23 @@
 import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
-
 export const metadata: Metadata = {
-  title: "Apparent vs Aparent - Which is Correct?",
-  description: "Learn the correct spelling between &apos;apparent&apos; and &apos;aparent&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
+  title: "Apparent vs Aparant - Which is Correct?",
+  description: "Learn the correct spelling between &apos;apparent&apos; and &apos;aparant&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
-export default function ApparentVsAparentPage() {
+export default function ApparentVsAparantPage() {
   return (
     <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
       {/* Title and subtitle */}
       <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Apparent or Aparent</h1>
+        <h1 className="text-5xl font-extrabold tracking-tight">Apparent or Aparant</h1>
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Apparent or Aparent, and how to use them properly.
+          Which spelling is correct, Apparent or Aparant, and how to use them properly.
         </p>
       </div>
 
-      {/* Correct/Incorrect Cards - Image Style */}
+      {/* Correct/Incorrect Cards */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <div className="flex-1">
           <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
@@ -27,9 +26,9 @@ export default function ApparentVsAparentPage() {
                 <span className="text-4xl">❌</span>
                 <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
               </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Aparent</div>
+              <div className="text-3xl font-extrabold text-red-600 mb-2">Aparant</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Aparent&quot; is not a valid word in English.
+                This spelling is incorrect. &quot;Aparant&quot; is missing the second &quot;p&quot; and the correct vowel order.
               </div>
             </div>
           </Card>
@@ -43,7 +42,7 @@ export default function ApparentVsAparentPage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Apparent</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Apparent&quot; is an adjective meaning clearly visible or understood.
+                This is the correct spelling. &quot;Apparent&quot; means clearly visible or understood; obvious.
               </div>
             </div>
           </Card>
@@ -56,13 +55,13 @@ export default function ApparentVsAparentPage() {
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Definition</div>
             <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Apparent</span> (adjective): Clearly visible or understood; obvious; seeming to be true.
+              <span className="font-bold">Apparent</span> (adjective): Clearly visible or understood; obvious. Seeming real or true, but not necessarily so.
             </div>
             <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>Her happiness was apparent to everyone.</li>
-              <li>It was apparent that he was lying.</li>
-              <li>The apparent cause of the problem was a software bug.</li>
+              <li>It was apparent that she was upset.</li>
+              <li>The solution became apparent after more research.</li>
+              <li>There was no apparent reason for his absence.</li>
             </ul>
           </div>
         </Card>
@@ -76,22 +75,23 @@ export default function ApparentVsAparentPage() {
             <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;apparent&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Adjectives:</div>
+                <div className="font-semibold text-lg md:text-xl">Obvious:</div>
                 <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
                   <li>Obvious</li>
                   <li>Evident</li>
                   <li>Clear</li>
                   <li>Manifest</li>
-                  <li>Visible</li>
+                  <li>Noticeable</li>
                 </ul>
               </div>
               <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Nouns:</div>
+                <div className="font-semibold text-lg md:text-xl">Seeming:</div>
                 <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Appearance</li>
-                  <li>Evidence</li>
-                  <li>Visibility</li>
-                  <li>Clarity</li>
+                  <li>Seeming</li>
+                  <li>Superficial</li>
+                  <li>Supposed</li>
+                  <li>Ostensible</li>
+                  <li>Pretended</li>
                 </ul>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function ApparentVsAparentPage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Apparent&quot; is the correct spelling. &quot;Aparent&quot; is a common misspelling—remember, it has two &quot;p&quot; letters.
+        <strong>Note:</strong> &quot;Apparent&quot; is the correct spelling. &quot;Aparant&quot; is a common misspelling—remember the double &quot;p&quot; and the correct vowel order.
       </div>
 
       {/* FAQ Section */}
@@ -110,24 +110,66 @@ export default function ApparentVsAparentPage() {
         <div className="space-y-3">
           <Card>
             <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it aparent or apparent?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;apparent.&quot; &quot;Aparent&quot; is a common misspelling.</div>
+              <div className="font-semibold text-lg md:text-xl mb-1">Is it aparant or apparent?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct spelling is &quot;apparent.&quot; &quot;Aparant&quot; is incorrect—it&apos;s missing the second &quot;p&quot; and the correct vowel order.</div>
             </div>
           </Card>
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce apparent?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈpærənt/ (uh-PAR-uhnt).</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈpærənt/ (uh-PAIR-uhnt).</div>
             </div>
           </Card>
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">What does apparent mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Clearly visible or understood; obvious; seeming to be true.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">It means clearly visible or understood; obvious. It can also mean seeming real or true, but not necessarily so.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the difference between apparent and obvious?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Both mean clear or easy to see, but &quot;apparent&quot; can also mean something that only seems to be true.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">Can apparent be used in formal writing?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;It was apparent that the results were inconclusive&quot; is appropriate in formal contexts.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">What are common phrases with apparent?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Common phrases include: apparent reason, apparent cause, apparent difference, and apparent contradiction.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">Is apparent used in scientific contexts?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;Apparent magnitude&quot; in astronomy, &quot;apparent temperature&quot; in meteorology, etc.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the noun form of apparent?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The noun is &quot;apparency&quot; (rare), but more commonly, &quot;appearance&quot; is used.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the origin of apparent?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Apparent comes from Latin &quot;apparens&quot; meaning to appear or become visible.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">Can apparent be used in everyday conversation?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;It&apos;s apparent you worked hard on this&quot; or &quot;For no apparent reason&quot; are common uses.</div>
             </div>
           </Card>
         </div>
       </div>
     </div>
   );
-} 
+}

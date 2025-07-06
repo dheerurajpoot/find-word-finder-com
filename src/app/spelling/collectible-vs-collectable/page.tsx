@@ -14,7 +14,7 @@ export default function CollectibleVsCollectablePage() {
       <div className="text-center space-y-3">
         <h1 className="text-5xl font-extrabold tracking-tight">Collectible or Collectable</h1>
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          US vs UK spelling: both are correct, but used in different regions and contexts.
+        Collectible vs Collectable spelling: both are correct, but used in different regions and contexts.
         </p>
       </div>
 

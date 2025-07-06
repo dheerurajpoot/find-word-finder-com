@@ -18,7 +18,7 @@ export default function AccommodateVsAccomodatePage() {
         </p>
       </div>
 
-      {/* Correct/Incorrect Cards - Image Style */}
+      {/* Correct/Incorrect Cards */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <div className="flex-1">
           <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
@@ -29,7 +29,7 @@ export default function AccommodateVsAccomodatePage() {
               </div>
               <div className="text-3xl font-extrabold text-red-600 mb-2">Accomodate</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Accomodate&quot; is not a valid word in English.
+                This spelling is incorrect. &quot;Accomodate&quot; is missing the second &quot;m&quot; - it should be &quot;accommodate.&quot;
               </div>
             </div>
           </Card>
@@ -43,7 +43,7 @@ export default function AccommodateVsAccomodatePage() {
               </div>
               <div className="text-3xl font-extrabold text-green-600 mb-2">Accommodate</div>
               <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Accommodate&quot; is a verb meaning to provide with something desired, needed, or suited.
+                This is the correct spelling. &quot;Accommodate&quot; means to provide space or make adjustments for someone or something.
               </div>
             </div>
           </Card>
@@ -56,13 +56,13 @@ export default function AccommodateVsAccomodatePage() {
           <div className="p-6">
             <div className="mb-2 font-bold text-2xl">Definition</div>
             <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Accommodate</span> (verb): To provide with something desired, needed, or suited; to make room for.
+              <span className="font-bold">Accommodate</span> (verb): 1) To provide space or lodging for someone. 2) To make adjustments or adaptations to suit someone&apos;s needs. 3) To fit or contain something.
             </div>
             <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
             <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>The hotel can accommodate 300 guests.</li>
+              <li>The hotel can accommodate up to 200 guests.</li>
               <li>We need to accommodate the new requirements.</li>
-              <li>The building was designed to accommodate wheelchair users.</li>
+              <li>The room can accommodate all the furniture.</li>
             </ul>
           </div>
         </Card>
@@ -76,22 +76,23 @@ export default function AccommodateVsAccomodatePage() {
             <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;accommodate&quot;:</div>
             <div className="flex flex-col sm:flex-row justify-between gap-12">
               <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Verbs:</div>
+                <div className="font-semibold text-lg md:text-xl">Provide Space:</div>
                 <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
                   <li>House</li>
+                  <li>Lodge</li>
                   <li>Shelter</li>
-                  <li>Provide for</li>
-                  <li>Fit</li>
-                  <li>Adapt</li>
+                  <li>Contain</li>
+                  <li>Hold</li>
                 </ul>
               </div>
               <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Nouns:</div>
+                <div className="font-semibold text-lg md:text-xl">Adjust:</div>
                 <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Accommodation</li>
-                  <li>Housing</li>
-                  <li>Shelter</li>
-                  <li>Provision</li>
+                  <li>Adapt</li>
+                  <li>Adjust</li>
+                  <li>Modify</li>
+                  <li>Conform</li>
+                  <li>Comply</li>
                 </ul>
               </div>
             </div>
@@ -101,7 +102,7 @@ export default function AccommodateVsAccomodatePage() {
 
       {/* Note */}
       <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Accommodate&quot; is the correct spelling. &quot;Accomodate&quot; is a common misspelling—remember, it has two &quot;c&quot;s and two &quot;m&quot;s.
+        <strong>Note:</strong> &quot;Accommodate&quot; is the correct spelling. &quot;Accomodate&quot; is a common misspelling—remember the double &quot;m&quot; in accommodate.
       </div>
 
       {/* FAQ Section */}
@@ -111,7 +112,7 @@ export default function AccommodateVsAccomodatePage() {
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">Is it accomodate or accommodate?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;accommodate.&quot; &quot;Accomodate&quot; is a common misspelling.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The correct spelling is &quot;accommodate.&quot; &quot;Accomodate&quot; is incorrect—it&apos;s missing the second &quot;m.&quot;</div>
             </div>
           </Card>
           <Card>
@@ -123,7 +124,49 @@ export default function AccommodateVsAccomodatePage() {
           <Card>
             <div className="p-6">
               <div className="font-semibold text-lg md:text-xl mb-1">What does accommodate mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">To provide with something desired, needed, or suited; to make room for.</div>
+              <div className="text-lg md:text-xl text-muted-foreground">It means to provide space or lodging, or to make adjustments to suit someone&apos;s needs.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the difference between accommodate and adapt?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Accommodate often means providing space or making adjustments for others, while adapt means changing oneself to fit a situation.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">Can accommodate be used in business contexts?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;We can accommodate your schedule&quot; or &quot;The system accommodates multiple users&quot; are common business uses.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">What are common phrases with accommodate?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Common phrases include: accommodate guests, accommodate needs, accommodate changes, and accommodate requests.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">Is accommodate used in hospitality contexts?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;The hotel can accommodate large groups&quot; is a very common hospitality industry phrase.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the noun form of accommodate?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">The noun is &quot;accommodation&quot; - the act of accommodating or the space provided.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the origin of accommodate?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Accommodate comes from Latin &quot;accommodatus&quot; meaning fitted or adapted.</div>
+            </div>
+          </Card>
+          <Card>
+            <div className="p-6">
+              <div className="font-semibold text-lg md:text-xl mb-1">Can accommodate be used in educational contexts?</div>
+              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;The school accommodates students with special needs&quot; is a common educational usage.</div>
             </div>
           </Card>
         </div>

@@ -13,7 +13,7 @@ export default function PrincipalVsPrinciplePage() {
       <div className="text-center space-y-3">
         <h1 className="text-5xl font-extrabold tracking-tight">Principal or Principle</h1>
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          These two words are often confused due to their similar spelling and pronunciation.
+        Principal or Principle are commonly confused words due to their similar spelling and pronunciation.
         </p>
       </div>
 
