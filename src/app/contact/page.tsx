@@ -63,7 +63,7 @@ export default function ContactPage() {
 								<a
 									href='tel:+1-555-123-4567'
 									className='text-green-600 font-semibold hover:underline'>
-									+1 (555) 123-4567
+									+91-9876543212
 								</a>
 								<p className='text-sm text-gray-500 mt-2'>
 									Available Mon-Fri, 9am-5pm EST.
