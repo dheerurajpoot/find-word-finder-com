@@ -7,39 +7,39 @@ export async function GET() {
 	const sitemapIndex = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>${baseUrl}/sitemap/static.xml</loc>
+    <loc>${baseUrl}sitemap/static.xml</loc>
     <lastmod>${now}</lastmod>
   </sitemap>
   <sitemap>
-    <loc>${baseUrl}/sitemap/tools.xml</loc>
+    <loc>${baseUrl}sitemap/tools.xml</loc>
     <lastmod>${now}</lastmod>
   </sitemap>
   <sitemap>
-    <loc>${baseUrl}/sitemap/words.xml</loc>
+    <loc>${baseUrl}sitemap/words.xml</loc>
     <lastmod>${now}</lastmod>
   </sitemap>
   <sitemap>
-    <loc>${baseUrl}/sitemap/blog.xml</loc>
+    <loc>${baseUrl}sitemap/blog.xml</loc>
     <lastmod>${now}</lastmod>
   </sitemap>
   <sitemap>
-    <loc>${baseUrl}/sitemap/misspellings.xml</loc>
+    <loc>${baseUrl}sitemap/misspellings.xml</loc>
     <lastmod>${now}</lastmod>
   </sitemap>
   <sitemap>
-    <loc>${baseUrl}/sitemap/grammar.xml</loc>
+    <loc>${baseUrl}sitemap/grammar.xml</loc>
     <lastmod>${now}</lastmod>
   </sitemap>
   <sitemap>
-    <loc>${baseUrl}/sitemap/dictionary.xml</loc>
+    <loc>${baseUrl}sitemap/dictionary.xml</loc>
     <lastmod>${now}</lastmod>
   </sitemap>
   <sitemap>
-    <loc>${baseUrl}/sitemap/games.xml</loc>
+    <loc>${baseUrl}sitemap/games.xml</loc>
     <lastmod>${now}</lastmod>
   </sitemap>
   <sitemap>
-    <loc>${baseUrl}/sitemap/legal.xml</loc>
+    <loc>${baseUrl}sitemap/legal.xml</loc>
     <lastmod>${now}</lastmod>
   </sitemap>
 </sitemapindex>`;
