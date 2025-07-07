@@ -1,173 +1,122 @@
 import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Allot vs A llot - Which is Correct?",
-  description: "Learn the correct spelling between &apos;allot&apos; and &apos;a llot&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
+  title: "Allot vs A-llot - Which is Correct? | Word Finder",
+  description: "Learn the correct spelling between &quot;allot&quot; and &quot;a-llot&quot;. Discover definitions, usage examples, and common mistakes to avoid.",
 };
 
-export default function AllotVsALlotPage() {
+export default function AllotVsAllotPage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Allot or A llot</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Allot or A llot, and how to use them properly.
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Allot vs A-llot</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;allot&quot; and &quot;a-llot&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">A llot</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;A llot&quot; should be written as one word.
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: A-llot</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Allot</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Allot&quot; means to assign or distribute.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;A-llot&quot; is a common misspelling. The correct spelling is &quot;allot&quot; as a single word, not hyphenated.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Allot</h3>
             </div>
-          </Card>
-        </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Allot&quot; is the correct spelling. It means to give or apportion something to someone as a share or task.</p>
+          </CardContent>
+        </Card>
       </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Allot</span> (verb): To assign or distribute something, especially time, money, or space.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>The teacher will allot 30 minutes for the test.</li>
-              <li>We need to allot more money for the project.</li>
-              <li>Each team was allotted equal time for their presentation.</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definition of Allot</h2>
+        <div className="bg-white p-6 rounded-lg shadow-md border">
+          <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-4"><strong>Allot</strong> (verb): To give or apportion something to someone as a share or task.</p>
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <h4 className="text-xl font-semibold mb-3 text-blue-900">Examples:</h4>
+            <ul className="text-lg md:text-xl text-blue-800 space-y-2">
+              <li>• Each student was <strong>allotted</strong> a locker.</li>
+              <li>• The time <strong>allotted</strong> for the test was two hours.</li>
+              <li>• Funds were <strong>allotted</strong> to each department.</li>
+              <li>• The manager will <strong>allot</strong> tasks to the team members.</li>
             </ul>
           </div>
-        </Card>
+        </div>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;allot&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Verbs:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Assign</li>
-                  <li>Distribute</li>
-                  <li>Allocate</li>
-                  <li>Apportion</li>
-                  <li>Designate</li>
-                </ul>
-              </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Allocation</li>
-                  <li>Assignment</li>
-                  <li>Distribution</li>
-                  <li>Apportionment</li>
-                </ul>
-              </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms for Allot</h2>
+        <div className="bg-blue-100 p-6 rounded-lg">
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <h4 className="text-xl font-semibold mb-3 text-blue-900">Common Synonyms:</h4>
+              <ul className="text-lg md:text-xl text-blue-800 space-y-1">
+                <li>• Assign</li>
+                <li>• Allocate</li>
+                <li>• Distribute</li>
+                <li>• Apportion</li>
+                <li>• Grant</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold mb-3 text-blue-900">Related Terms:</h4>
+              <ul className="text-lg md:text-xl text-blue-800 space-y-1">
+                <li>• Share</li>
+                <li>• Portion</li>
+                <li>• Provide</li>
+                <li>• Endow</li>
+                <li>• Allotment</li>
+              </ul>
             </div>
           </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Allot&quot; is the correct spelling. &quot;A llot&quot; is incorrect—remember, it&apos;s one word, not two separate words.
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it a llot or allot?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;allot.&quot; &quot;A llot&quot; is incorrect—it should be written as one word.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce allot?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈlɒt/ (uh-LOT).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does allot mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">To assign or distribute something, especially time, money, or space.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What is the noun form of allot?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The noun form is &quot;allotment&quot; - meaning the act of allotting or something that is allotted.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the difference between allot and a lot?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">&quot;Allot&quot; is a verb meaning to assign, while &quot;a lot&quot; is a phrase meaning many or much.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can allot be used in formal writing?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes, &quot;allot&quot; is appropriate for both formal and informal contexts.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What are common phrases with allot?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Common phrases include: allot time, allot money, allot space, and allot resources.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is allot the same as allocate?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Both mean to assign, but &quot;allocate&quot; is more formal and often used in business contexts.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can you allot something to someone?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes, you can allot something to someone: &quot;We allotted the budget to different departments.&quot;</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the past tense of allot?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The past tense is &quot;allotted&quot; - &quot;We allotted extra time for the meeting.&quot;</div>
-            </div>
-          </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Usage Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Important Points:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Allot</strong> is spelled as a single word, not hyphenated.</li>
+            <li>• Commonly used in academic, business, and everyday contexts.</li>
+            <li>• The noun form is &quot;allotment&quot;.</li>
+            <li>• The past tense is &quot;allotted&quot;.</li>
+            <li>• The plural is &quot;allots&quot; (for third person singular present).</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;a-llot&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;a-llot&quot; is never correct. The proper spelling is always &quot;allot&quot; as a single word.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;allot&quot; is one word, not two or hyphenated.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can &quot;allot&quot; be used in everyday conversation?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;allot&quot; is commonly used in both formal and informal contexts.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;allot&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: allot time, allot resources, allot funds, allot tasks.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;a-llot&quot; happens because the prefix &quot;a-&quot; is mistakenly separated from the root, or by analogy with other hyphenated words.</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Allot</strong> is the correct spelling as a single word. It means to give or assign as a share or task. The misspelling &quot;a-llot&quot; is never correct. Use &quot;allot&quot; in both formal and informal contexts.</p>
       </div>
     </div>
   );

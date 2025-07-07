@@ -1,131 +1,122 @@
 import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Agilty vs Agility - Which is Correct?",
-  description: "Learn the correct spelling between &apos;agilty&apos; and &apos;agility&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
+  title: "Agility vs Agilty - Which is Correct? | Word Finder",
+  description: "Learn the correct spelling between &quot;agility&quot; and &quot;agilty&quot;. Discover definitions, usage examples, and common mistakes to avoid.",
 };
 
 export default function AgilityVsAgiltyPage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Agilty or Agility</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Did you mean &quot;Agility&quot;?
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Agility vs Agilty</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;agility&quot; and &quot;agilty&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Agilty</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Agilty&quot; is not a valid word in English.
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Agilty</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Agility</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Agility&quot; is a noun meaning ability to move quickly and easily.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Agilty&quot; is a common misspelling. The correct spelling is &quot;agility&quot; with an &apos;i&apos; after the &apos;l&apos;.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Agility</h3>
             </div>
-          </Card>
-        </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Agility&quot; is the correct spelling. It means the ability to move quickly and easily, or the ability to think and understand quickly.</p>
+          </CardContent>
+        </Card>
       </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Agility</span> (noun): Ability to move quickly and easily; nimbleness; the quality of being agile.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>The athlete&apos;s agility was impressive.</li>
-              <li>Cats are known for their agility and grace.</li>
-              <li>The dancer moved with remarkable agility.</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definition of Agility</h2>
+        <div className="bg-white p-6 rounded-lg shadow-md border">
+          <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-4"><strong>Agility</strong> (noun): The ability to move quickly and easily; nimbleness. Also, the ability to think and understand quickly.</p>
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <h4 className="text-xl font-semibold mb-3 text-blue-900">Examples:</h4>
+            <ul className="text-lg md:text-xl text-blue-800 space-y-2">
+              <li>• The gymnast demonstrated incredible <strong>agility</strong> on the balance beam.</li>
+              <li>• Agility is important for soccer players.</li>
+              <li>• The company&apos;s <strong>agility</strong> allowed it to adapt to market changes.</li>
+              <li>• Mental <strong>agility</strong> is valued in problem-solving roles.</li>
             </ul>
           </div>
-        </Card>
+        </div>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;agility&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Nouns:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Nimbleness</li>
-                  <li>Quickness</li>
-                  <li>Dexterity</li>
-                  <li>Swiftness</li>
-                  <li>Grace</li>
-                </ul>
-              </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Flexibility</li>
-                  <li>Coordination</li>
-                  <li>Suppleness</li>
-                  <li>Lightness</li>
-                </ul>
-              </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms for Agility</h2>
+        <div className="bg-blue-100 p-6 rounded-lg">
+          <div className="grid md:grid-cols-2 gap-4">
+            <div>
+              <h4 className="text-xl font-semibold mb-3 text-blue-900">Common Synonyms:</h4>
+              <ul className="text-lg md:text-xl text-blue-800 space-y-1">
+                <li>• Nimbleness</li>
+                <li>• Quickness</li>
+                <li>• Dexterity</li>
+                <li>• Spryness</li>
+                <li>• Liveliness</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-xl font-semibold mb-3 text-blue-900">Related Terms:</h4>
+              <ul className="text-lg md:text-xl text-blue-800 space-y-1">
+                <li>• Flexibility</li>
+                <li>• Coordination</li>
+                <li>• Alertness</li>
+                <li>• Adaptability</li>
+                <li>• Swiftness</li>
+              </ul>
             </div>
           </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Agility&quot; is a noun meaning ability to move quickly and easily. &quot;Agilty&quot; is a common misspelling.
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it agilty or agility?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;agility.&quot; &quot;Agilty&quot; is a common misspelling.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce agility?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈdʒɪlɪti/ (uh-JIL-uh-tee).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does agility mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Ability to move quickly and easily; nimbleness; the quality of being agile.</div>
-            </div>
-          </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Usage Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Important Points:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Agility</strong> is spelled with an &apos;i&apos; after the &apos;l&apos;, not &quot;agilty&quot;.</li>
+            <li>• Used to describe both physical and mental quickness.</li>
+            <li>• Commonly used in sports, business, and cognitive contexts.</li>
+            <li>• The adjective form is &quot;agile&quot;.</li>
+            <li>• The plural is &quot;agilities&quot;.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;agilty&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;agilty&quot; is never correct. The proper spelling is always &quot;agility&quot; with an &apos;i&apos; after the &apos;l&apos;.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;agility&quot; comes from &quot;agile&quot; plus &quot;-ity&quot;.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can &quot;agility&quot; refer to mental quickness?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;agility&quot; can refer to both physical and mental quickness or adaptability.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;agility&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: agility training, mental agility, business agility, agility ladder.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;agilty&quot; happens because the &apos;i&apos; after the &apos;l&apos; is sometimes forgotten or omitted.</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Agility</strong> is the correct spelling with an &apos;i&apos; after the &apos;l&apos;. It means the ability to move or think quickly and easily. The misspelling &quot;agilty&quot; is never correct. Use &quot;agility&quot; in both physical and mental contexts.</p>
       </div>
     </div>
   );
