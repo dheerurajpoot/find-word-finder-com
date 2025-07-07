@@ -1,17 +1,17 @@
-import { Metadata } from "next";
-import { Card, CardContent } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Address vs Adress - Which is Correct? | Word Finder",
-  description: "Learn the correct spelling between &quot;address&quot; and &quot;adress&quot;. Discover definitions, usage examples, and common mistakes to avoid.",
-};
+  title: 'Address vs Adres - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;address&quot; and &quot;adres&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
-export default function AddressVsAdressPage() {
+export default function AddressVsAdresPage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       {/* Main Heading */}
       <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">
-        Address vs Adress
+        Address vs Adres
       </h1>
       
       {/* Subtitle */}
@@ -20,7 +20,7 @@ export default function AddressVsAdressPage() {
           Which Spelling is Correct?
         </h2>
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-          Understanding the difference between &quot;Address&quot; or &quot;Adress&quot;: these commonly confused spellings and how to use them properly.
+          Understanding the difference between &quot;Address&quot; or &quot;Adres&quot;: these commonly confused spellings and how to use them properly.
         </p>
       </div>
 
@@ -30,10 +30,10 @@ export default function AddressVsAdressPage() {
           <CardContent className="p-6">
             <div className="flex items-center mb-4">
               <span className="text-3xl mr-3">❌</span>
-              <h3 className="text-2xl font-bold text-red-800">Incorrect: Adress</h3>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Adres</h3>
             </div>
             <p className="text-lg md:text-xl text-red-700">
-              &quot;Adress&quot; is a misspelling. The correct spelling is &quot;address&quot; with two &apos;d&apos;s.
+              &quot;Adres&quot; is a misspelling. The correct spelling is &quot;address&quot; with two &apos;d&apos;s.
             </p>
           </CardContent>
         </Card>
@@ -119,9 +119,9 @@ export default function AddressVsAdressPage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;adress&quot; ever correct?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;adres&quot; ever correct?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: No, &quot;adress&quot; is never correct. The proper spelling is always &quot;address&quot; with two &apos;d&apos;s.
+              A: No, &quot;adres&quot; is never correct. The proper spelling is always &quot;address&quot; with two &apos;d&apos;s.
             </p>
           </div>
 
@@ -156,7 +156,7 @@ export default function AddressVsAdressPage() {
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: The misspelling &quot;adress&quot; likely occurs because people may not realize there are two &apos;d&apos;s in the word or may confuse it with similar words.
+              A: The misspelling &quot;adres&quot; likely occurs because people may not realize there are two &apos;d&apos;s in the word or may confuse it with similar words.
             </p>
           </div>
 
@@ -180,9 +180,9 @@ export default function AddressVsAdressPage() {
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <p className="text-lg md:text-xl text-green-800 leading-relaxed">
-          Remember: <strong>Address</strong> is the correct spelling with two &apos;d&apos;s. It means a location or to speak to someone. The misspelling &quot;adress&quot; with one &apos;d&apos; is never correct. Use this word when you want to describe a location, speak to someone, or deal with a problem.
+          Remember: <strong>Address</strong> is the correct spelling with two &apos;d&apos;s. It means a location or to speak to someone. The misspelling &quot;adres&quot; with one &apos;d&apos; is never correct. Use this word when you want to describe a location, speak to someone, or deal with a problem.
         </p>
       </div>
     </div>
-  );
+  )
 } 

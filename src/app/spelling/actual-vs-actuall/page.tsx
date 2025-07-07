@@ -20,7 +20,7 @@ export default function ActualVsActuallPage() {
           Which Spelling is Correct?
         </h2>
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-          Understanding the difference between these commonly confused spellings and when to use each one correctly.
+          Understanding the difference between Actual or Actuall these commonly confused spellings and how to use them properly.
         </p>
       </div>
 
