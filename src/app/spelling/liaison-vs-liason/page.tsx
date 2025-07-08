@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Liaison vs Liason - Which is Correct?",
+  title: "Liaison or Liason - Which is Correct?",
   description: "Learn the correct spelling between &apos;liaison&apos; and &apos;liason&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

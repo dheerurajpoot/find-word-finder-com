@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Disappear vs Dissapear - Which is Correct?",
+  title: "Disappear or Dissapear - Which is Correct?",
   description: "Learn the correct spelling between &apos;disappear&apos; and &apos;dissapear&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

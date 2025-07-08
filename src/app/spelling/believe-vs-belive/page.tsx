@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Believe vs Belive - Which is Correct?",
+  title: "Believe or Belive - Which is Correct?",
   description: "Learn the correct spelling between &apos;believe&apos; and &apos;belive&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

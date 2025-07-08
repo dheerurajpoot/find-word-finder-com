@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Analysis vs Analisis - Which is Correct?",
+  title: "Analysis or Analisis - Which is Correct?",
   description: "Learn the correct spelling between &apos;analysis&apos; and &apos;analisis&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

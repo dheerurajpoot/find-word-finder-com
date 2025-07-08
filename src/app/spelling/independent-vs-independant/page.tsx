@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Independent vs Independant - Which is Correct?",
+  title: "Independent or Independant - Which is Correct?",
   description: "Learn the correct spelling between &apos;independent&apos; and &apos;independant&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

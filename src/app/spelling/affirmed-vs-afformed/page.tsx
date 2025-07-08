@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Affirmed vs Afformed - Which is Correct? | Word Finder',
+  title: 'Affirmed or Afformed - Which is Correct? | Word Finder',
   description: 'Learn the correct spelling between &quot;affirmed&quot; and &quot;afformed&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
 }
 
@@ -11,7 +11,7 @@ export default function AffirmedVsAfformedPage() {
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       {/* Main Heading */}
       <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">
-        Affirmed vs Afformed
+        Affirmed or Afformed
       </h1>
       {/* Subtitle */}
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
@@ -22,7 +22,7 @@ export default function AffirmedVsAfformedPage() {
           Understanding the difference between &quot;Affirmed&quot; or &quot;Afformed&quot;: these commonly confused spellings and how to use them properly.
         </p>
       </div>
-      {/* Correct vs Incorrect Cards */}
+      {/* Correct or Incorrect Cards */}
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <Card className="border-2 border-red-500 bg-red-50">
           <CardContent className="p-6">

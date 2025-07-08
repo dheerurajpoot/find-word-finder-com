@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Applied vs Aplied - Which is Correct?",
+  title: "Applied or Aplied - Which is Correct?",
   description: "Learn the correct spelling between &apos;applied&apos; and &apos;aplied&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

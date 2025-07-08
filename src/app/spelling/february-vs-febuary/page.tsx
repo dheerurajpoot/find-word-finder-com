@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "February vs Febuary - Which is Correct?",
+  title: "February or Febuary - Which is Correct?",
   description: "Learn the correct spelling between &apos;February&apos; and &apos;Febuary&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

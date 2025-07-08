@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Absurd vs Absured - Which is Correct?",
+  title: "Absurd or Absured - Which is Correct?",
   description: "Learn the correct spelling between &apos;absurd&apos; and &apos;absured&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

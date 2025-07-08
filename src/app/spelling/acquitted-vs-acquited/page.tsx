@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Acquitted vs Acquited - Which is Correct?",
+  title: "Acquitted or Acquited - Which is Correct?",
   description: "Learn the correct spelling between &apos;acquitted&apos; and &apos;acquited&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

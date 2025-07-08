@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Altogether vs All together - Which is Correct?",
+  title: "Altogether or All together - Which is Correct?",
   description: "Learn the correct spelling between &apos;altogether&apos; and &apos;all together&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Abscess vs Abcess - Which is Correct?",
+  title: "Abscess or Abcess - Which is Correct?",
   description: "Learn the correct spelling between &apos;abscess&apos; and &apos;abcess&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

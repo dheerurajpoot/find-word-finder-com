@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Existence vs Existance - Which is Correct?",
+  title: "Existence or Existance - Which is Correct?",
   description: "Learn the correct spelling between &apos;existence&apos; and &apos;existance&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

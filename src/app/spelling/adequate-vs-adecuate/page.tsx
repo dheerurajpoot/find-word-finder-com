@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Adequate vs Adecuate - Which is Correct? | Word Finder',
+  title: 'Adequate or Adecuate - Which is Correct? | Word Finder',
   description: 'Learn the correct spelling between &quot;adequate&quot; and &quot;adecuate&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
 }
 
@@ -11,7 +11,7 @@ export default function AdequateVsAdecuatePage() {
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       {/* Main Heading */}
       <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">
-        Adequate vs Adecuate
+        Adequate or Adecuate
       </h1>
       
       {/* Subtitle */}
@@ -24,7 +24,7 @@ export default function AdequateVsAdecuatePage() {
         </p>
       </div>
 
-      {/* Correct vs Incorrect Cards */}
+      {/* Correct or Incorrect Cards */}
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <Card className="border-2 border-red-500 bg-red-50">
           <CardContent className="p-6">

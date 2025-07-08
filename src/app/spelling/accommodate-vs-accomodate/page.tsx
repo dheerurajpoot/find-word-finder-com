@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Accommodate vs Accomodate - Which is Correct?",
+  title: "Accommodate or Accomodate - Which is Correct?",
   description: "Learn the correct spelling between &apos;accommodate&apos; and &apos;accomodate&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

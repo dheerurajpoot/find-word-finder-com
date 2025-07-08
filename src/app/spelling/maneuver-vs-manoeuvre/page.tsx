@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Maneuver vs Manoeuvre - Which is Correct?",
+  title: "Maneuver or Manoeuvre - Which is Correct?",
   description: "Learn the correct spelling between &apos;maneuver&apos; and &apos;manoeuvre&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
@@ -13,7 +13,7 @@ export default function ManeuverVsManoeuvrePage() {
       <div className="text-center space-y-3">
         <h1 className="text-5xl font-extrabold tracking-tight">Maneuver or Manoeuvre</h1>
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-        Maneuver vs Manoeuvre spelling: both are correct, but used in different regions and contexts.
+        Maneuver or Manoeuvre spelling: both are correct, but used in different regions and contexts.
         </p>
       </div>
 

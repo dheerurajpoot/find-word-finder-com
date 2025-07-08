@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Judgment vs Judgement - Which is Correct?",
+  title: "Judgment or Judgement - Which is Correct?",
   description: "Learn the correct spelling between &apos;judgment&apos; and &apos;judgement&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 
@@ -13,7 +13,7 @@ export default function JudgmentVsJudgementPage() {
       <div className="text-center space-y-3">
         <h1 className="text-5xl font-extrabold tracking-tight">Judgment or Judgement</h1>
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-        Judgment vs Judgement spelling: both are correct, but used in different regions and contexts.
+        Judgment or Judgement spelling: both are correct, but used in different regions and contexts.
         </p>
       </div>
 

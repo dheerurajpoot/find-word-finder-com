@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Abuse vs Ebuse - Which is Correct?",
+  title: "Abuse or Ebuse - Which is Correct?",
   description: "Learn the correct spelling between &apos;abuse&apos; and &apos;ebuse&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

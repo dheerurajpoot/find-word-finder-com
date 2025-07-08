@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Across vs Acros - Which is Correct?",
+  title: "Across or Acros - Which is Correct?",
   description: "Learn the correct spelling between &apos;across&apos; and &apos;acros&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

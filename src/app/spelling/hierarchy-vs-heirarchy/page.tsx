@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Hierarchy vs Heirarchy - Which is Correct?",
+  title: "Hierarchy or Heirarchy - Which is Correct?",
   description: "Learn the correct spelling between &apos;hierarchy&apos; and &apos;heirarchy&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

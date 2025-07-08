@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Seperate vs Separate - Which is Correct?",
+  title: "Seperate or Separate - Which is Correct?",
   description: "Learn the correct spelling between &apos;seperate&apos; and &apos;separate&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

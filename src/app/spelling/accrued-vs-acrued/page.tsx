@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Accrued vs Acrued - Which is Correct?",
+  title: "Accrued or Acrued - Which is Correct?",
   description: "Learn the correct spelling between &apos;accrued&apos; and &apos;acrued&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

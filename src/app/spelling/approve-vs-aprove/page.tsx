@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Approve vs Aprove - Which is Correct?",
+  title: "Approve or Aprove - Which is Correct?",
   description: "Learn the correct spelling between &apos;approve&apos; and &apos;aprove&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

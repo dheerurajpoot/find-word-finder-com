@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Amateur vs Amature - Which is Correct?",
+  title: "Amateur or Amature - Which is Correct?",
   description: "Learn the correct spelling between &apos;amateur&apos; and &apos;amature&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

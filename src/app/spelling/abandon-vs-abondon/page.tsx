@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Abandon vs Abondon - Which is Correct?",
+  title: "Abandon or Abondon - Which is Correct?",
   description: "Learn the correct spelling between &apos;abandon&apos; and &apos;abondon&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

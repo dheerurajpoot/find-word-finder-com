@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Approval vs Aproval - Which is Correct?",
+  title: "Approval or Aproval - Which is Correct?",
   description: "Learn the correct spelling between &apos;approval&apos; and &apos;aproval&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

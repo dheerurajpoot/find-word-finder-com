@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Tyranny vs Tyranny - Which is Correct?",
+  title: "Tyranny or Tyranny - Which is Correct?",
   description: "Learn the correct spelling of &apos;tyranny&apos;. Discover definitions, examples, and usage tips for this commonly misspelled word.",
 };
 

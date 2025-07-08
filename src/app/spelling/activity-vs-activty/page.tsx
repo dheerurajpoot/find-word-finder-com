@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Activity vs Activty - Which is Correct?",
+  title: "Activity or Activty - Which is Correct?",
   description: "Learn the correct spelling between &apos;activity&apos; and &apos;activty&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

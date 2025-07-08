@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Acheive vs Achieve - Which is Correct?",
+  title: "Acheive or Achieve - Which is Correct?",
   description: "Learn the correct spelling between &apos;acheive&apos; and &apos;achieve&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

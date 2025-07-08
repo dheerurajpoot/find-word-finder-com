@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Absorption vs Absorbtion - Which is Correct?",
+  title: "Absorption or Absorbtion - Which is Correct?",
   description: "Learn the correct spelling between &apos;absorption&apos; and &apos;absorbtion&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Attendance vs Attandance - Which is Correct?",
+  title: "Attendance or Attandance - Which is Correct?",
   description: "Learn the correct spelling between &apos;attendance&apos; and &apos;attandance&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

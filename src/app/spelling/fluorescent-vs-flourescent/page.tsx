@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Flourescent vs Fluorescent - Which is Correct?",
+  title: "Flourescent or Fluorescent - Which is Correct?",
   description: "Learn the correct spelling between &apos;flourescent&apos; and &apos;fluorescent&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

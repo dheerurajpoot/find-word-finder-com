@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Apology vs Appology - Which is Correct?",
+  title: "Apology or Appology - Which is Correct?",
   description: "Learn the correct spelling between &apos;apology&apos; and &apos;appology&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

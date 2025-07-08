@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Accent vs Acsent - Which is Correct?",
+  title: "Accent or Acsent - Which is Correct?",
   description: "Learn the correct spelling between &apos;accent&apos; and &apos;acsent&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

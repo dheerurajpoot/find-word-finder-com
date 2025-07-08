@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "About vs Ebout - Which is Correct?",
+  title: "About or Ebout - Which is Correct?",
   description: "Learn the correct spelling between &apos;about&apos; and &apos;ebout&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

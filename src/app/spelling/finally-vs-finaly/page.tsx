@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Finally vs Finaly - Which is Correct?",
+  title: "Finally or Finaly - Which is Correct?",
   description: "Learn the correct spelling between &apos;finally&apos; and &apos;finaly&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

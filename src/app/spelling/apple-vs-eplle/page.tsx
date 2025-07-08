@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Apple vs Eplle - Which is Correct?",
+  title: "Apple or Eplle - Which is Correct?",
   description: "Learn the correct spelling between &apos;apple&apos; and &apos;eplle&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

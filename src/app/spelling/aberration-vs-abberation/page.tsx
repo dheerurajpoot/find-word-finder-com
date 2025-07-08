@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Aberration vs Abberation - Which is Correct?",
+  title: "Aberration or Abberation - Which is Correct?",
   description: "Learn the correct spelling between &apos;aberration&apos; and &apos;abberation&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

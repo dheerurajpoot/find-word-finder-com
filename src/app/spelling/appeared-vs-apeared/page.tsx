@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Appeared vs Apeared - Which is Correct?",
+  title: "Appeared or Apeared - Which is Correct?",
   description: "Learn the correct spelling between &apos;appeared&apos; and &apos;apeared&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Ability vs Ablety - Which is Correct?",
+  title: "Ability or Ablety - Which is Correct?",
   description: "Learn the correct spelling between &apos;ability&apos; and &apos;ablety&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

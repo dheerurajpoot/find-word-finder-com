@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Arrive vs Arive - Which is Correct?",
+  title: "Arrive or Arive - Which is Correct?",
   description: "Learn the correct spelling between &apos;arrive&apos; and &apos;arive&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

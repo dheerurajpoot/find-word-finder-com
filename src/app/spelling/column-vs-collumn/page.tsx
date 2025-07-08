@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Column vs Collumn - Which is Correct?",
+  title: "Column or Collumn - Which is Correct?",
   description: "Learn the correct spelling between &apos;column&apos; and &apos;collumn&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

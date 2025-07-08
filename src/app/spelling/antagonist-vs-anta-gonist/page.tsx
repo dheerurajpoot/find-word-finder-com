@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Antagonist vs Anta gonist - Which is Correct?",
+  title: "Antagonist or Anta gonist - Which is Correct?",
   description: "Learn the correct spelling between &apos;antagonist&apos; and &apos;anta gonist&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

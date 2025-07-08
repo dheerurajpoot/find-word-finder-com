@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Prejiduce vs Prejudice - Which is Correct?",
+  title: "Prejiduce or Prejudice - Which is Correct?",
   description: "Learn the correct spelling between &apos;prejiduce&apos; and &apos;prejudice&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

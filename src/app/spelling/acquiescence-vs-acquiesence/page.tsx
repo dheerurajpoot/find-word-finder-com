@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Acquiescence vs Acquiesence - Which is Correct?",
+  title: "Acquiescence or Acquiesence - Which is Correct?",
   description: "Learn the correct spelling between &apos;acquiescence&apos; and &apos;acquiesence&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

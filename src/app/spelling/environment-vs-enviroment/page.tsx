@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Enviroment vs Environment - Which is Correct?",
+  title: "Enviroment or Environment - Which is Correct?",
   description: "Learn the correct spelling between &apos;enviroment&apos; and &apos;environment&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

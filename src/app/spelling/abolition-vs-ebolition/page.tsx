@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Abolition vs Ebolition - Which is Correct?",
+  title: "Abolition or Ebolition - Which is Correct?",
   description: "Learn the correct spelling between &apos;abolition&apos; and &apos;ebolition&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Occurrence vs Occurence - Which is Correct?",
+  title: "Occurrence or Occurence - Which is Correct?",
   description: "Learn the correct spelling between &apos;occurrence&apos; and &apos;occurence&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

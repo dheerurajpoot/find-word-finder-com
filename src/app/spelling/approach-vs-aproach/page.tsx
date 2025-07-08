@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Approach vs Aproach - Which is Correct?",
+  title: "Approach or Aproach - Which is Correct?",
   description: "Learn the correct spelling between &apos;approach&apos; and &apos;aproach&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

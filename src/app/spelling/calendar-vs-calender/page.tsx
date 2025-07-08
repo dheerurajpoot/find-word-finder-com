@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Calendar vs Calender - Which is Correct?",
+  title: "Calendar or Calender - Which is Correct?",
   description: "Learn the correct spelling between &apos;calendar&apos; and &apos;calender&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

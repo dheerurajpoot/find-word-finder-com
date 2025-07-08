@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Changable vs Changeable - Which is Correct?",
+  title: "Changable or Changeable - Which is Correct?",
   description: "Learn the correct spelling between &apos;changable&apos; and &apos;changeable&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

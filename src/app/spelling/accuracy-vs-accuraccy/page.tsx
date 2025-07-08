@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Accuraccy vs Accuracy - Which is Correct?",
+  title: "Accuraccy or Accuracy - Which is Correct?",
   description: "Learn the correct spelling between &apos;accuraccy&apos; and &apos;accuracy&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

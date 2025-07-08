@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Additon vs Addition - Which is Correct?",
+  title: "Additon or Addition - Which is Correct?",
   description: "Learn the correct spelling between &apos;additon&apos; and &apos;addition&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Area vs Aria - Which is Correct?",
+  title: "Area or Aria - Which is Correct?",
   description: "Learn the correct spelling between &apos;area&apos; and &apos;aria&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

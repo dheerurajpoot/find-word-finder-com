@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Accumulate vs Acumulate - Which is Correct?",
+  title: "Accumulate or Acumulate - Which is Correct?",
   description: "Learn the correct spelling between &apos;accumulate&apos; and &apos;acumulate&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

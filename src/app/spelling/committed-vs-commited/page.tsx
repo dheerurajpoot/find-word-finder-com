@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Committed vs Commited - Which is Correct?",
+  title: "Committed or Commited - Which is Correct?",
   description: "Learn the correct spelling between &apos;committed&apos; and &apos;commited&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

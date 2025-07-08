@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Accommodation vs Accomodation - Which is Correct?",
+  title: "Accommodation or Accomodation - Which is Correct?",
   description: "Learn the correct spelling between &apos;accommodation&apos; and &apos;accomodation&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

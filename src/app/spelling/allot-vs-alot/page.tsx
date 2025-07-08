@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Allot vs Alot - Which is Correct?",
+  title: "Allot or Alot - Which is Correct?",
   description: "Learn the correct spelling between &apos;allot&apos; and &apos;alot&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Reccomend vs Recommend - Which is Correct?",
+  title: "Reccomend or Recommend - Which is Correct?",
   description: "Learn the correct spelling between &apos;reccomend&apos; and &apos;recommend&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

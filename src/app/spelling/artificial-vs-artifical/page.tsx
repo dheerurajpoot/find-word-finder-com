@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Artificial vs Artifical - Which is Correct?",
+  title: "Artificial or Artifical - Which is Correct?",
   description: "Learn the correct spelling between &apos;artificial&apos; and &apos;artifical&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

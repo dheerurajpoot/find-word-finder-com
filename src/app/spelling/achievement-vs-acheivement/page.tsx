@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Achievement vs Acheivement - Which is Correct?",
+  title: "Achievement or Acheivement - Which is Correct?",
   description: "Learn the correct spelling between &apos;achievement&apos; and &apos;acheivement&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Grateful vs Greatful - Which is Correct?",
+  title: "Grateful or Greatful - Which is Correct?",
   description: "Learn the correct spelling between &apos;grateful&apos; and &apos;greatful&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

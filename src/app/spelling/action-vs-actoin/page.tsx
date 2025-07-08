@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Action vs Actoin - Which is Correct?",
+  title: "Action or Actoin - Which is Correct?",
   description: "Learn the correct spelling between &apos;action&apos; and &apos;actoin&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

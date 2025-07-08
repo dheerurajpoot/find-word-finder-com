@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Pavilion vs Pavillion - Which is Correct?",
+  title: "Pavilion or Pavillion - Which is Correct?",
   description: "Learn the correct spelling between &apos;pavilion&apos; and &apos;pavillion&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

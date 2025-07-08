@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Threshold vs Threshhold - Which is Correct?",
+  title: "Threshold or Threshhold - Which is Correct?",
   description: "Learn the correct spelling between &apos;threshold&apos; and &apos;threshhold&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

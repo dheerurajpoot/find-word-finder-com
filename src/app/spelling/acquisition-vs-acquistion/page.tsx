@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Acquisition vs Acquistion - Which is Correct?",
+  title: "Acquisition or Acquistion - Which is Correct?",
   description: "Learn the correct spelling between &apos;acquisition&apos; and &apos;acquistion&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

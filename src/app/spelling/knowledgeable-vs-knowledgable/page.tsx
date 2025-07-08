@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Knowledgeable vs Knowledgable - Which is Correct?",
+  title: "Knowledgeable or Knowledgable - Which is Correct?",
   description: "Learn the correct spelling between &apos;knowledgeable&apos; and &apos;knowledgable&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

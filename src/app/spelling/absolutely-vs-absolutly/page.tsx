@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Absolutely vs Absolutly - Which is Correct?",
+  title: "Absolutely or Absolutly - Which is Correct?",
   description: "Learn the correct spelling between &apos;absolutely&apos; and &apos;absolutly&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

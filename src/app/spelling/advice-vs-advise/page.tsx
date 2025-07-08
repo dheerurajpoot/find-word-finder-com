@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Advice vs Advise - Which is Correct? | Word Finder',
+  title: 'Advice or Advise - Which is Correct? | Word Finder',
   description: 'Learn the correct spelling between &quot;advice&quot; and &quot;advise&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
 }
 
@@ -11,7 +11,7 @@ export default function AdviceVsAdvisePage() {
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       {/* Main Heading */}
       <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">
-        Advice vs Advise
+        Advice or Advise
       </h1>
       
       {/* Subtitle */}
@@ -24,7 +24,7 @@ export default function AdviceVsAdvisePage() {
         </p>
       </div>
 
-      {/* Correct vs Incorrect Cards */}
+      {/* Correct or Incorrect Cards */}
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <Card className="border-2 border-green-500 bg-green-50">
           <CardContent className="p-6">
@@ -131,7 +131,7 @@ export default function AdviceVsAdvisePage() {
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
             <li>• <strong>Advice</strong> (noun) ends with &apos;ce&apos; and refers to the guidance itself.</li>
             <li>• <strong>Advise</strong> (verb) ends with &apos;se&apos; and refers to the action of giving guidance.</li>
-            <li>• Think: &quot;I give you advice&quot; vs &quot;I advise you&quot;.</li>
+            <li>• Think: &quot;I give you advice&quot; or &quot;I advise you&quot;.</li>
             <li>• Both words are commonly used in formal and informal contexts.</li>
             <li>• The words come from the Old French &quot;avis&quot; meaning &quot;opinion.&quot;</li>
           </ul>
@@ -143,7 +143,7 @@ export default function AdviceVsAdvisePage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: When do I use &quot;advice&quot; vs &quot;advise&quot;?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: When do I use &quot;advice&quot; or &quot;advise&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
               A: Use &quot;advice&quot; (noun) when referring to the guidance itself: &quot;I need advice.&quot; Use &quot;advise&quot; (verb) when referring to the action of giving guidance: &quot;I advise you to study.&quot;
             </p>
@@ -180,7 +180,7 @@ export default function AdviceVsAdvisePage() {
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often confuse these words?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: People confuse them because they sound very similar and have related meanings. The spelling difference (&apos;ce&apos; vs &apos;se&apos;) is subtle and easy to miss.
+              A: People confuse them because they sound very similar and have related meanings. The spelling difference (&apos;ce&apos; or &apos;se&apos;) is subtle and easy to miss.
             </p>
           </div>
 

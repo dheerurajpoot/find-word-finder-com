@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Acquaintances vs Acquiantences - Which is Correct?",
+  title: "Acquaintances or Acquiantences - Which is Correct?",
   description: "Learn the correct spelling between &apos;acquaintances&apos; and &apos;acquiantences&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

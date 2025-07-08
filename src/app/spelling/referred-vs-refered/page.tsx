@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Refered vs Referred - Which is Correct?",
+  title: "Refered or Referred - Which is Correct?",
   description: "Learn the correct spelling between &apos;refered&apos; and &apos;referred&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

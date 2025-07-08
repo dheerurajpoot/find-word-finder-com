@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Argument vs Arguement - Which is Correct?",
+  title: "Argument or Arguement - Which is Correct?",
   description: "Learn the correct spelling between &apos;argument&apos; and &apos;arguement&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

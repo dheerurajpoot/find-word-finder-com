@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Forty vs Fourty - Which is Correct?",
+  title: "Forty or Fourty - Which is Correct?",
   description: "Learn the correct spelling between &apos;forty&apos; and &apos;fourty&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Assassination vs Assasination - Which is Correct?",
+  title: "Assassination or Assasination - Which is Correct?",
   description: "Learn the correct spelling between &apos;assassination&apos; and &apos;assasination&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

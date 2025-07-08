@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Appealing vs Appealling - Which is Correct?",
+  title: "Appealing or Appealling - Which is Correct?",
   description: "Learn the correct spelling between &apos;appealing&apos; and &apos;appealling&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

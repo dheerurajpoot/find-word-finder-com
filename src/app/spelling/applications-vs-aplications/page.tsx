@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Applications vs Aplications - Which is Correct?",
+  title: "Applications or Aplications - Which is Correct?",
   description: "Learn the correct spelling between &apos;applications&apos; and &apos;aplications&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

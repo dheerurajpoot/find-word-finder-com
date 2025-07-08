@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Beginning vs Beginnig - Which is Correct?",
+  title: "Beginning or Beginnig - Which is Correct?",
   description: "Learn the correct spelling between &apos;beginning&apos; and &apos;beginnig&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

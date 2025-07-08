@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Facinating vs Fascinating - Which is Correct?",
+  title: "Facinating or Fascinating - Which is Correct?",
   description: "Learn the correct spelling between &apos;facinating&apos; and &apos;fascinating&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

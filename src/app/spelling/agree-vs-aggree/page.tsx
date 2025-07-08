@@ -2,14 +2,14 @@ import { Metadata } from 'next'
 import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Agree vs Aggree - Which is Correct? | Word Finder',
+  title: 'Agree or Aggree - Which is Correct? | Word Finder',
   description: 'Learn the correct spelling between &quot;agree&quot; and &quot;aggree&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
 }
 
 export default function AgreeVsAggreePage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Agree vs Aggree</h1>
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Agree or Aggree</h1>
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Understanding the difference between &quot;Agree&quot; or &quot;Aggree&quot;: these commonly confused spellings and how to use them properly.</p>

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Definately vs Definitely - Which is Correct?",
+  title: "Definately or Definitely - Which is Correct?",
   description: "Learn the correct spelling between &apos;definately&apos; and &apos;definitely&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

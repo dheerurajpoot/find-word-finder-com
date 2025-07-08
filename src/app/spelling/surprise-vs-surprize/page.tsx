@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Surprise vs Surprize - Which is Correct?",
+  title: "Surprise or Surprize - Which is Correct?",
   description: "Learn the correct spelling between &apos;surprise&apos; and &apos;surprize&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

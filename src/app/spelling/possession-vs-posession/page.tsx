@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Posession vs Possession - Which is Correct?",
+  title: "Posession or Possession - Which is Correct?",
   description: "Learn the correct spelling between &apos;posession&apos; and &apos;possession&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

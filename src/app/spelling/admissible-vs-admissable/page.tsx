@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Admissible vs Admissable - Which is Correct? | Word Finder',
+  title: 'Admissible or Admissable - Which is Correct? | Word Finder',
   description: 'Learn the correct spelling between &quot;admissible&quot; and &quot;admissable&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
 }
 
@@ -11,7 +11,7 @@ export default function AdmissibleVsAdmissablePage() {
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       {/* Main Heading */}
       <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">
-        Admissible vs Admissable
+        Admissible or Admissable
       </h1>
       
       {/* Subtitle */}
@@ -24,7 +24,7 @@ export default function AdmissibleVsAdmissablePage() {
         </p>
       </div>
 
-      {/* Correct vs Incorrect Cards */}
+      {/* Correct or Incorrect Cards */}
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <Card className="border-2 border-red-500 bg-red-50">
           <CardContent className="p-6">

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Absent vs Apsent - Which is Correct?",
+  title: "Absent or Apsent - Which is Correct?",
   description: "Learn the correct spelling between &apos;absent&apos; and &apos;apsent&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

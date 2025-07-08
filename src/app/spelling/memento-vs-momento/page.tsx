@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Momento vs Memento - Which is Correct?",
+  title: "Momento or Memento - Which is Correct?",
   description: "Learn the correct spelling between &apos;momento&apos; and &apos;memento&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

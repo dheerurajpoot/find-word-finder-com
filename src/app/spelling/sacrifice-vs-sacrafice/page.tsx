@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Sacrifice vs Sacrafice - Which is Correct?",
+  title: "Sacrifice or Sacrafice - Which is Correct?",
   description: "Learn the correct spelling between &apos;sacrifice&apos; and &apos;sacrafice&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

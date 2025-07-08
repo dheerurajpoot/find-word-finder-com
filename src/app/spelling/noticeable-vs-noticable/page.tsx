@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Noticable vs Noticeable - Which is Correct?",
+  title: "Noticable or Noticeable - Which is Correct?",
   description: "Learn the correct spelling between &apos;noticable&apos; and &apos;noticeable&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

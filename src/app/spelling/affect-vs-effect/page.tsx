@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Affect vs Effect - Which is Correct? | Word Finder',
+  title: 'Affect or Effect - Which is Correct? | Word Finder',
   description: 'Learn the correct spelling between &quot;affect&quot; and &quot;effect&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
 }
 
@@ -11,7 +11,7 @@ export default function AffectVsEffectPage() {
     <div className="container mx-auto px-4 py-8 max-w-4xl">
       {/* Main Heading */}
       <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">
-        Affect vs Effect
+        Affect or Effect
       </h1>
       
       {/* Subtitle */}
@@ -24,7 +24,7 @@ export default function AffectVsEffectPage() {
         </p>
       </div>
 
-      {/* Correct vs Incorrect Cards */}
+      {/* Correct or Incorrect Cards */}
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <Card className="border-2 border-green-500 bg-green-50">
           <CardContent className="p-6">
@@ -131,7 +131,7 @@ export default function AffectVsEffectPage() {
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
             <li>• <strong>Affect</strong> (verb) starts with &apos;a&apos; and refers to the action of influencing.</li>
             <li>• <strong>Effect</strong> (noun) starts with &apos;e&apos; and refers to the result or consequence.</li>
-            <li>• Think: &quot;A for Action&quot; (affect) vs &quot;E for End result&quot; (effect).</li>
+            <li>• Think: &quot;A for Action&quot; (affect) or &quot;E for End result&quot; (effect).</li>
             <li>• Both words are commonly used in formal and informal contexts.</li>
             <li>• The words come from the Latin &quot;affectus&quot; and &quot;effectus.&quot;</li>
           </ul>
@@ -143,7 +143,7 @@ export default function AffectVsEffectPage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: When do I use &quot;affect&quot; vs &quot;effect&quot;?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: When do I use &quot;affect&quot; or &quot;effect&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
               A: Use &quot;affect&quot; (verb) when referring to the action of influencing: &quot;The rain will affect the game.&quot; Use &quot;effect&quot; (noun) when referring to the result: &quot;The effect of the rain was a cancelled game.&quot;
             </p>
@@ -180,7 +180,7 @@ export default function AffectVsEffectPage() {
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often confuse these words?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: People confuse them because they sound very similar and have related meanings. The spelling difference (&apos;a&apos; vs &apos;e&apos;) is subtle and easy to miss, especially when typing quickly.
+              A: People confuse them because they sound very similar and have related meanings. The spelling difference (&apos;a&apos; or &apos;e&apos;) is subtle and easy to miss, especially when typing quickly.
             </p>
           </div>
 

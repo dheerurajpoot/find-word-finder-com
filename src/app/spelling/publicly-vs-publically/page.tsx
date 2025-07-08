@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Publicly vs Publically - Which is Correct?",
+  title: "Publicly or Publically - Which is Correct?",
   description: "Learn the correct spelling between &apos;publicly&apos; and &apos;publically&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

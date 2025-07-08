@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Abroad vs Abrod - Which is Correct?",
+  title: "Abroad or Abrod - Which is Correct?",
   description: "Learn the correct spelling between &apos;abroad&apos; and &apos;abrod&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

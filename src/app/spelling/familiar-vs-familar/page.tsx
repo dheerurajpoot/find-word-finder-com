@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Familiar vs Familar - Which is Correct?",
+  title: "Familiar or Familar - Which is Correct?",
   description: "Learn the correct spelling between &apos;familiar&apos; and &apos;familar&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Embarass vs Embarrass - Which is Correct?",
+  title: "Embarass or Embarrass - Which is Correct?",
   description: "Learn the correct spelling between &apos;embarass&apos; and &apos;embarrass&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Access vs Acsess - Which is Correct?",
+  title: "Access or Acsess - Which is Correct?",
   description: "Learn the correct spelling between &apos;access&apos; and &apos;acsess&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Pastime vs Pasttime - Which is Correct?",
+  title: "Pastime or Pasttime - Which is Correct?",
   description: "Learn the correct spelling between &apos;pastime&apos; and &apos;pasttime&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

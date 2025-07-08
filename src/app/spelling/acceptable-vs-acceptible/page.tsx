@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Acceptable vs Acceptible - Which is Correct?",
+  title: "Acceptable or Acceptible - Which is Correct?",
   description: "Learn the correct spelling between &apos;acceptable&apos; and &apos;acceptible&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Appearance vs Apperance - Which is Correct?",
+  title: "Appearance or Apperance - Which is Correct?",
   description: "Learn the correct spelling between &apos;appearance&apos; and &apos;apperance&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

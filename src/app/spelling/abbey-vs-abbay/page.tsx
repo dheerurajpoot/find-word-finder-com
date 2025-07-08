@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Abbey vs Abbay - Which is Correct?",
+  title: "Abbey or Abbay - Which is Correct?",
   description: "Learn the correct spelling between &apos;abbey&apos; and &apos;abbay&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

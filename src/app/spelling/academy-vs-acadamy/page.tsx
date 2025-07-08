@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Academy vs Acadamy - Which is Correct?",
+  title: "Academy or Acadamy - Which is Correct?",
   description: "Learn the correct spelling between &apos;academy&apos; and &apos;acadamy&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

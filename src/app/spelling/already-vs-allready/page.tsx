@@ -1,132 +1,137 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Allready vs Already - Which is Correct?",
-  description: "Learn the correct spelling between &apos;allready&apos; and &apos;already&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Already or Allready - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;already&quot; and &quot;allready&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
 export default function AlreadyVsAllreadyPage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Allready or Already</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Did you mean &quot;Already&quot;?
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Already or Allready</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;already&quot; and &quot;allready&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Allready</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Allready&quot; is not a valid word in English.
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Allready</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Already</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Already&quot; is an adverb meaning before or by now.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Allready&quot; is a common misspelling. The correct spelling is &quot;already&quot; with a single &apos;l&apos;.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Already</h3>
             </div>
-          </Card>
-        </div>
-      </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Already</span> (adverb): Before or by now or the time in question; previously; by this time.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>She had already left when I arrived.</li>
-              <li>I&apos;ve already finished my homework.</li>
-              <li>They were already there when we got there.</li>
-            </ul>
-          </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Already&quot; is the correct spelling. It means before or by now; prior to a specified or implied time.</p>
+          </CardContent>
         </Card>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;already&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Adverbs:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Previously</li>
-                  <li>Earlier</li>
-                  <li>By now</li>
-                  <li>Beforehand</li>
-                  <li>Hitherto</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Already (adverb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">Before or by now; prior to a specified or implied time.</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-green-800 space-y-2">
+                  <li>• I have <strong>already</strong> finished my homework.</li>
+                  <li>• She has <strong>already</strong> left the office.</li>
+                  <li>• The movie had <strong>already</strong> started when we arrived.</li>
                 </ul>
               </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>In advance</li>
-                  <li>So far</li>
-                  <li>Up to now</li>
-                  <li>Before this</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Allready (adverb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Allready&quot; is not a standard English word and is considered a misspelling of &quot;already&quot;.</p>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-red-800 space-y-2">
+                  <li>• &quot;Allready&quot; is not used in standard English for &quot;already&quot;.</li>
+                  <li>• Always use <strong>already</strong> when referring to something done before now.</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Already&quot; is an adverb meaning before or by now. &quot;Allready&quot; is a common misspelling.
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it allready or already?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;already.&quot; &quot;Allready&quot; is a common misspelling.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce already?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ɔːlˈrɛdi/ (awl-RED-ee).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does already mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Before or by now or the time in question; previously; by this time.</div>
-            </div>
+            </CardContent>
           </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-green-900">Already:</h4>
+              <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Previously</li>
+                <li>• Before now</li>
+                <li>• By this time</li>
+                <li>• Earlier</li>
+                <li>• Formerly</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-red-900">Allready:</h4>
+              <ul className="text-lg md:text-xl text-red-800 space-y-1">
+                <li>• (No valid synonyms; not a standard English word in this context)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Usage Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Important Points:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Already</strong> is spelled with a single &apos;l&apos;, not double.</li>
+            <li>• Used to describe something done before now or by this time.</li>
+            <li>• The opposite is &quot;not yet&quot;.</li>
+            <li>• &quot;Allready&quot; is not correct in this context.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;allready&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;allready&quot; is never correct as a spelling for &quot;already&quot;. Always use &quot;already&quot; for something done before now.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;already&quot; has a single &apos;l&apos;, not double.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can &quot;already&quot; be used in different contexts?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;already&quot; can refer to time, completion, or readiness.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;already&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: already done, already finished, already left, already started.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;allready&quot; happens because double &apos;l&apos; is common in English, but &quot;already&quot; only has one.</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Already</strong> is the correct spelling with a single &apos;l&apos;. It means before or by now. The misspelling &quot;allready&quot; is never correct. Use &quot;already&quot; in time, completion, and readiness contexts.</p>
       </div>
     </div>
-  );
+  )
 } 

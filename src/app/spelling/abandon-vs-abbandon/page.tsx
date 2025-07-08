@@ -1,132 +1,137 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Abandon vs Abbandon - Which is Correct?",
-  description: "Learn the correct spelling between &apos;abandon&apos; and &apos;abbandon&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Abandon or Abbandon - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;abandon&quot; and &quot;abbandon&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
 export default function AbandonVsAbbandonPage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Abandon or Abbandon</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Abandon or Abbandon, and how to use them properly.
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Abandon or Abbandon</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;abandon&quot; and &quot;abbandon&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Abbandon</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Abbandon&quot; has an extra &quot;b&quot; and is not a valid word in English.
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Abbandon</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Abandon</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Abandon&quot; has only one &quot;b&quot; and is the proper English word.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Abbandon&quot; is a common misspelling. The correct spelling is &quot;abandon&quot; with a single &apos;b&apos;.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Abandon</h3>
             </div>
-          </Card>
-        </div>
-      </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Abandon</span> (verb): To leave permanently, give up, or desert someone or something; to relinquish control or possession.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>They had to abandon their car in the snowstorm.</li>
-              <li>She refused to abandon her dreams despite the challenges.</li>
-              <li>The building was abandoned after the fire.</li>
-            </ul>
-          </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Abandon&quot; is the correct spelling. It means to leave permanently or give up completely.</p>
+          </CardContent>
         </Card>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;abandon&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Verbs:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Desert</li>
-                  <li>Forsake</li>
-                  <li>Relinquish</li>
-                  <li>Surrender</li>
-                  <li>Give up</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Abandon (verb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">To leave permanently, give up completely, or desert someone or something.</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-green-800 space-y-2">
+                  <li>• They had to <strong>abandon</strong> their car in the snowstorm.</li>
+                  <li>• She refused to <strong>abandon</strong> her dreams despite the challenges.</li>
+                  <li>• The building was <strong>abandoned</strong> after the fire.</li>
                 </ul>
               </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Desertion</li>
-                  <li>Forsaking</li>
-                  <li>Relinquishment</li>
-                  <li>Surrender</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Abbandon (verb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Abbandon&quot; is not a standard English word and is considered a misspelling of &quot;abandon&quot;.</p>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-red-800 space-y-2">
+                  <li>• &quot;Abbandon&quot; is not used in standard English for &quot;abandon&quot;.</li>
+                  <li>• Always use <strong>abandon</strong> when referring to leaving permanently or giving up.</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> The word &quot;abandon&quot; has only one &quot;b&quot; in the middle. The misspelling &quot;abbandon&quot; with two &quot;b&apos;s&quot; is a common error. Remember: it&apos;s &quot;a-ban-don&quot; (one &quot;b&quot;), not &quot;ab-ban-don&quot; (two &quot;b&apos;s&quot;).
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it abbandon or abandon?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;abandon.&quot; &quot;Abbandon&quot; is a common misspelling with an extra &quot;b&quot;.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce abandon?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ə&apos;bændən/ (uh&apos;BAN-dun).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does abandon mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">To leave permanently, give up, or desert someone or something; to relinquish control or possession.</div>
-            </div>
+            </CardContent>
           </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-green-900">Abandon:</h4>
+              <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Desert</li>
+                <li>• Forsake</li>
+                <li>• Relinquish</li>
+                <li>• Surrender</li>
+                <li>• Give up</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-red-900">Abbandon:</h4>
+              <ul className="text-lg md:text-xl text-red-800 space-y-1">
+                <li>• (No valid synonyms; not a standard English word in this context)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Usage Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Important Points:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Abandon</strong> is spelled with a single &apos;b&apos;, not double.</li>
+            <li>• Used to describe leaving permanently or giving up completely.</li>
+            <li>• The opposite is &quot;keep&quot; or &quot;maintain&quot;.</li>
+            <li>• &quot;Abbandon&quot; is not correct in this context.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;abbandon&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;abbandon&quot; is never correct as a spelling for &quot;abandon&quot;. Always use &quot;abandon&quot; for leaving permanently or giving up.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;abandon&quot; has a single &apos;b&apos;, not double.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can &quot;abandon&quot; be used in different contexts?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;abandon&quot; can refer to leaving places, people, or giving up on ideas or plans.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;abandon&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: abandon ship, abandon hope, abandon all hope, abandon the idea, abandon the project.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;abbandon&quot; happens because double &apos;b&apos; is common in English, but &quot;abandon&quot; only has one.</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Abandon</strong> is the correct spelling with a single &apos;b&apos;. It means to leave permanently or give up completely. The misspelling &quot;abbandon&quot; is never correct. Use &quot;abandon&quot; in contexts involving leaving, deserting, or giving up.</p>
       </div>
     </div>
-  );
+  )
 } 

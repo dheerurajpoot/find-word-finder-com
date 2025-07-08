@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Abraded vs Abraided - Which is Correct?",
+  title: "Abraded or Abraided - Which is Correct?",
   description: "Learn the correct spelling between &apos;abraded&apos; and &apos;abraided&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

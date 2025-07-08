@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Occasion vs Ocassion - Which is Correct?",
+  title: "Occasion or Ocassion - Which is Correct?",
   description: "Learn the correct spelling between &apos;occasion&apos; and &apos;ocassion&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Accomplish vs Acomplish - Which is Correct?",
+  title: "Accomplish or Acomplish - Which is Correct?",
   description: "Learn the correct spelling between &apos;accomplish&apos; and &apos;acomplish&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

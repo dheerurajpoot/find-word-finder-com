@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Foreign vs Foriegn - Which is Correct?",
+  title: "Foreign or Foriegn - Which is Correct?",
   description: "Learn the correct spelling between &apos;foreign&apos; and &apos;foriegn&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

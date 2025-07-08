@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Apetite vs Appetite - Which is Correct?",
+  title: "Apetite or Appetite - Which is Correct?",
   description: "Learn the correct spelling between &apos;apetite&apos; and &apos;appetite&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

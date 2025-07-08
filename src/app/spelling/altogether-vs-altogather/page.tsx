@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Altogether vs Altogather - Which is Correct?",
+  title: "Altogether or Altogather - Which is Correct?",
   description: "Learn the correct spelling between &apos;altogether&apos; and &apos;altogather&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

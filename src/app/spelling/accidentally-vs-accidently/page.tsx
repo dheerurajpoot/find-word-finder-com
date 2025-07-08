@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Accidentally vs Accidently - Which is Correct?",
+  title: "Accidentally or Accidently - Which is Correct?",
   description: "Learn the correct spelling between &apos;accidentally&apos; and &apos;accidently&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

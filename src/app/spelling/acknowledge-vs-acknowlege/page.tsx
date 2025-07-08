@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Acknowledge vs Acknowlege - Which is Correct?",
+  title: "Acknowledge or Acknowlege - Which is Correct?",
   description: "Learn the correct spelling between &apos;acknowledge&apos; and &apos;acknowlege&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

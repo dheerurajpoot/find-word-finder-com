@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 
 
 export const metadata: Metadata = {
-  title: "Relevant vs Relevent - Which is Correct?",
+  title: "Relevant or Relevent - Which is Correct?",
   description: "Learn the correct spelling between &apos;relevant&apos; and &apos;relevent&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
 };
 

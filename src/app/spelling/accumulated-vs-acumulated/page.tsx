@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Accumulated vs Acumulated - Which is Correct? | Word Finder',
+  title: 'Accumulated or Acumulated - Which is Correct? | Word Finder',
   description: 'Learn the correct spelling between &quot;accumulated&quot; and &quot;acumulated&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
 }
 
@@ -24,7 +24,7 @@ export default function AccumulatedVsAcumulatedPage() {
         </p>
       </div>
 
-      {/* Correct vs Incorrect Cards */}
+      {/* Correct or Incorrect Cards */}
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <Card className="border-2 border-red-500 bg-red-50">
           <CardContent className="p-6">
