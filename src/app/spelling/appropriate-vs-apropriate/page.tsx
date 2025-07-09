@@ -1,174 +1,153 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Appropriate or Apropriate - Which is Correct?",
-  description: "Learn the correct spelling between &apos;appropriate&apos; and &apos;apropriate&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Appropriate or Apropriate - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;appropriate&quot; and &quot;apropriate&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
 export default function AppropriateVsApropriatePage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Appropriate or Apropriate</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Appropriate or Apropriate, and how to use them properly.
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Appropriate or Apropriate</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;appropriate&quot; and &quot;apropriate&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Apropriate</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Apropriate&quot; is missing the first &quot;p&quot;.
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Apropriate</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Appropriate</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Appropriate&quot; has double &quot;p&quot;.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Apropriate&quot; is a misspelling. The correct spelling is &quot;appropriate&quot; with two &quot;p&quot;s.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Appropriate</h3>
             </div>
-          </Card>
-        </div>
-      </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Appropriate</span> (adjective/verb): Suitable or proper for a particular situation; to take something for one&apos;s own use.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>It&apos;s appropriate to wear formal clothes to a wedding.</li>
-              <li>The government appropriated funds for the project.</li>
-              <li>That comment wasn&apos;t appropriate for the situation.</li>
-            </ul>
-          </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Appropriate&quot; is the correct spelling. It means suitable or fitting for a particular situation.</p>
+          </CardContent>
         </Card>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;appropriate&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Suitable:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Suitable</li>
-                  <li>Proper</li>
-                  <li>Fitting</li>
-                  <li>Correct</li>
-                  <li>Relevant</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Appropriate (adjective/verb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">Suitable or fitting for a particular situation, purpose, or person; to take something for one&apos;s own use.</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-green-800 space-y-2">
+                  <li>• That dress is <strong>appropriate</strong> for the occasion.</li>
+                  <li>• The company <strong>appropriated</strong> funds for the project.</li>
+                  <li>• His behavior was not <strong>appropriate</strong> for the meeting.</li>
                 </ul>
               </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Actions:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Allocate</li>
-                  <li>Assign</li>
-                  <li>Designate</li>
-                  <li>Reserve</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Apropriate (adjective/verb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Apropriate&quot; is a misspelling of &quot;appropriate&quot; and is not a valid English word.</p>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-red-800 space-y-2">
+                  <li>• &quot;Apropriate&quot; is not used in standard English.</li>
+                  <li>• Always use <strong>appropriate</strong> when referring to suitability.</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Appropriate&quot; is the correct spelling. &quot;Apropriate&quot; is incorrect—remember the double &quot;p&quot; at the beginning.
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it apropriate or appropriate?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct spelling is &quot;appropriate.&quot; &quot;Apropriate&quot; is incorrect—it&apos;s missing the first &quot;p&quot;.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce appropriate?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈproʊpriət/ (uh-PROH-pree-uht).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does appropriate mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Suitable or proper for a particular situation; to take something for one&apos;s own use.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the difference between appropriate and suitable?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">&quot;Appropriate&quot; often implies social or contextual correctness, while &quot;suitable&quot; is more about practical fit.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can appropriate be used as a verb?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;The government appropriated funds&quot; means they took or allocated funds for a specific purpose.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What are common phrases with appropriate?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Common phrases include: appropriate for, appropriate to, age-appropriate, and contextually appropriate.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is appropriate used in formal contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! Appropriate behavior, appropriate language, and appropriate dress are common in formal settings.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the opposite of appropriate?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Inappropriate, unsuitable, improper, or unfitting are opposites of appropriate.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the origin of appropriate?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Appropriate comes from Latin &quot;appropriatus&quot; meaning to make one&apos;s own, from &quot;ad&quot; + &quot;proprius&quot; meaning own.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can appropriate be used in business contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! Appropriate measures, appropriate response, and appropriate allocation are common business terms.</div>
-            </div>
+            </CardContent>
           </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-green-900">Appropriate:</h4>
+              <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Suitable</li>
+                <li>• Fitting</li>
+                <li>• Proper</li>
+                <li>• Correct</li>
+                <li>• Right</li>
+                <li>• Adequate</li>
+                <li>• Pertinent</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-red-900">Apropriate:</h4>
+              <ul className="text-lg md:text-xl text-red-800 space-y-1">
+                <li>• (No valid synonyms; not a standard English word)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Usage Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Important Points:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Appropriate</strong> is spelled with two &quot;p&quot;s not one.</li>
+            <li>• Used to indicate suitability or correctness.</li>
+            <li>• Commonly used in both formal and informal contexts.</li>
+            <li>• The word comes from Latin &quot;appropriatus&quot; meaning &quot;made one&apos;s own.&quot;</li>
+            <li>• &quot;Apropriate&quot; is never correct in any context.</li>
+            <li>• Often used in phrases like &quot;appropriate for&quot; or &quot;appropriate to.&quot;</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;apropriate&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;apropriate&quot; is never correct. The proper spelling is always &quot;appropriate&quot; with two &quot;p&quot;s.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ap-pro-pri-ate&quot; - it has two &quot;p&quot;s, similar to &quot;appear&quot; or &quot;apply.&quot;</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between appropriate and suitable?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Both mean fitting, but &quot;appropriate&quot; often implies social or cultural correctness, while &quot;suitable&quot; is more about practical fit.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can appropriate be used in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;appropriate&quot; is very appropriate in formal writing and business communications.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;apropriate&quot; likely occurs because of confusion about whether to use one or two &quot;p&quot;s.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;appropriate&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: appropriate for, appropriate to, not appropriate, and highly appropriate.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is appropriate always positive?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Appropriate&quot; is generally positive as it indicates suitability, but context matters.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can appropriate be used as a verb?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;appropriate&quot; can be both an adjective (suitable) and a verb (to take for one&apos;s own use).</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Appropriate</strong> is the correct spelling with two &quot;p&quot;s not one. It means suitable or fitting for a particular situation. The misspelling &quot;apropriate&quot; is never correct. Use &quot;appropriate&quot; to indicate suitability in both formal and informal contexts.</p>
       </div>
     </div>
-  );
+  )
 } 

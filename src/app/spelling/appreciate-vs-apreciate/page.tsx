@@ -1,132 +1,153 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Apreciate or Appreciate - Which is Correct?",
-  description: "Learn the correct spelling between &apos;apreciate&apos; and &apos;appreciate&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Appreciate or Apreciate - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;appreciate&quot; and &quot;apreciate&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
 export default function AppreciateVsApreciatePage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Apreciate or Appreciate</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Did you mean &quot;Appreciate&quot;?
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Appreciate or Apreciate</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;appreciate&quot; and &quot;apreciate&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Apreciate</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Apreciate&quot; is not a valid word in English.
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Apreciate</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Appreciate</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Appreciate&quot; is a verb meaning to recognize worth or be grateful.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Apreciate&quot; is a misspelling. The correct spelling is &quot;appreciate&quot; with two &quot;p&quot;s.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Appreciate</h3>
             </div>
-          </Card>
-        </div>
-      </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Appreciate</span> (verb): To recognize the full worth of; to be grateful for; to understand the value or significance of something.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>I appreciate your help with this project.</li>
-              <li>We really appreciate your support.</li>
-              <li>She appreciates fine art and music.</li>
-            </ul>
-          </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Appreciate&quot; is the correct spelling. It means to recognize the value or quality of something.</p>
+          </CardContent>
         </Card>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;appreciate&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Verbs:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Value</li>
-                  <li>Respect</li>
-                  <li>Be grateful for</li>
-                  <li>Acknowledge</li>
-                  <li>Recognize</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Appreciate (verb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">To recognize the value or quality of something; to be grateful for; to understand or be aware of.</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-green-800 space-y-2">
+                  <li>• I really <strong>appreciate</strong> your help.</li>
+                  <li>• She <strong>appreciates</strong> fine art.</li>
+                  <li>• We <strong>appreciate</strong> your patience.</li>
                 </ul>
               </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Understand</li>
-                  <li>Comprehend</li>
-                  <li>Esteem</li>
-                  <li>Treasure</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Apreciate (verb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Apreciate&quot; is a misspelling of &quot;appreciate&quot; and is not a valid English word.</p>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-red-800 space-y-2">
+                  <li>• &quot;Apreciate&quot; is not used in standard English.</li>
+                  <li>• Always use <strong>appreciate</strong> when expressing gratitude.</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Appreciate&quot; is the correct spelling for recognizing worth or being grateful. &quot;Apreciate&quot; is a common misspelling—remember, it has two &quot;p&quot; letters.
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it apreciate or appreciate?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;appreciate.&quot; &quot;Apreciate&quot; is a common misspelling.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce appreciate?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈpriːʃieɪt/ (uh-PREE-shee-ate).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does appreciate mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">To recognize the full worth of; to be grateful for; to understand the value or significance of something.</div>
-            </div>
+            </CardContent>
           </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-green-900">Appreciate:</h4>
+              <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Value</li>
+                <li>• Recognize</li>
+                <li>• Understand</li>
+                <li>• Acknowledge</li>
+                <li>• Be grateful for</li>
+                <li>• Respect</li>
+                <li>• Treasure</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-red-900">Apreciate:</h4>
+              <ul className="text-lg md:text-xl text-red-800 space-y-1">
+                <li>• (No valid synonyms; not a standard English word)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Usage Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Important Points:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Appreciate</strong> is spelled with two &quot;p&quot;s not one.</li>
+            <li>• Used to express gratitude or recognize value.</li>
+            <li>• Commonly used in both formal and informal contexts.</li>
+            <li>• The word comes from Latin &quot;appretiare&quot; meaning &quot;to value.&quot;</li>
+            <li>• &quot;Apreciate&quot; is never correct in any context.</li>
+            <li>• Often used in phrases like &quot;appreciate it&quot; or &quot;appreciate the.&quot;</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;apreciate&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;apreciate&quot; is never correct. The proper spelling is always &quot;appreciate&quot; with two &quot;p&quot;s.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ap-pre-ci-ate&quot; - it has two &quot;p&quot;s, similar to &quot;appear&quot; or &quot;apply.&quot;</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between appreciate and like?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Appreciate&quot; implies deeper recognition of value or gratitude, while &quot;like&quot; is more casual preference.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can appreciate be used in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;appreciate&quot; is very appropriate in formal writing and business communications.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;apreciate&quot; likely occurs because of confusion about whether to use one or two &quot;p&quot;s.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;appreciate&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: appreciate it, appreciate the, really appreciate, and would appreciate.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is appreciate always positive?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Appreciate&quot; is generally positive as it indicates gratitude or recognition of value.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can appreciate be used as a noun?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;appreciate&quot; is a verb. The noun form is &quot;appreciation&quot; (show appreciation).</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Appreciate</strong> is the correct spelling with two &quot;p&quot;s not one. It means to recognize the value or quality of something or to be grateful. The misspelling &quot;apreciate&quot; is never correct. Use &quot;appreciate&quot; to express gratitude or recognition in both formal and informal contexts.</p>
       </div>
     </div>
-  );
+  )
 } 

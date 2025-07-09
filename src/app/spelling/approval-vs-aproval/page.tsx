@@ -1,174 +1,153 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Approval or Aproval - Which is Correct?",
-  description: "Learn the correct spelling between &apos;approval&apos; and &apos;aproval&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Approval or Aproval - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;approval&quot; and &quot;aproval&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
 export default function ApprovalVsAprovalPage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Approval or Aproval</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Approval or Aproval, and how to use them properly.
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Approval or Aproval</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;approval&quot; and &quot;aproval&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Aproval</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Aproval&quot; is missing the first &quot;p&quot;.
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Aproval</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Approval</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Approval&quot; has double &quot;p&quot;.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Aproval&quot; is a misspelling. The correct spelling is &quot;approval&quot; with two &quot;p&quot;s.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Approval</h3>
             </div>
-          </Card>
-        </div>
-      </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Approval</span> (noun): The act of officially agreeing to or accepting something; permission or consent.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>The project received approval from the board.</li>
-              <li>She nodded in approval of the plan.</li>
-              <li>We need your approval before proceeding.</li>
-            </ul>
-          </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Approval&quot; is the correct spelling. It means the act of approving or accepting something.</p>
+          </CardContent>
         </Card>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;approval&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Agreement:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Agreement</li>
-                  <li>Consent</li>
-                  <li>Permission</li>
-                  <li>Acceptance</li>
-                  <li>Endorsement</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Approval (noun):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">The act of approving or accepting something; official permission or consent.</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-green-800 space-y-2">
+                  <li>• The project received <strong>approval</strong> from the board.</li>
+                  <li>• We need your <strong>approval</strong> before proceeding.</li>
+                  <li>• The <strong>approval</strong> process takes several days.</li>
                 </ul>
               </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Support:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Support</li>
-                  <li>Backing</li>
-                  <li>Authorization</li>
-                  <li>Sanction</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Aproval (noun):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Aproval&quot; is a misspelling of &quot;approval&quot; and is not a valid English word.</p>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-red-800 space-y-2">
+                  <li>• &quot;Aproval&quot; is not used in standard English.</li>
+                  <li>• Always use <strong>approval</strong> when referring to permission.</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Approval&quot; is the correct spelling. &quot;Aproval&quot; is incorrect—remember the double &quot;p&quot; at the beginning.
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it aproval or approval?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct spelling is &quot;approval.&quot; &quot;Aproval&quot; is incorrect—it&apos;s missing the first &quot;p&quot;.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce approval?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈpruːvəl/ (uh-PROO-vuhl).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does approval mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The act of officially agreeing to or accepting something; permission or consent.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the difference between approval and permission?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">&quot;Approval&quot; suggests positive agreement, while &quot;permission&quot; is more about allowing something to happen.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can approval be used in business contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;The proposal needs approval from management&quot; is a common business phrase.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What are common phrases with approval?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Common phrases include: approval of, approval for, final approval, and pending approval.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is approval used in formal contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! Official approval, regulatory approval, and board approval are very formal terms.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the verb form of approval?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The verb is &quot;approve&quot; - meaning to officially agree to or accept something.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the origin of approval?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Approval comes from the verb &quot;approve&quot; which comes from Latin &quot;approbare&quot; meaning to prove or confirm.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can approval be used in personal contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! Parental approval, peer approval, and social approval are common in personal relationships.</div>
-            </div>
+            </CardContent>
           </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-green-900">Approval:</h4>
+              <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Permission</li>
+                <li>• Consent</li>
+                <li>• Authorization</li>
+                <li>• Endorsement</li>
+                <li>• Sanction</li>
+                <li>• Agreement</li>
+                <li>• Acceptance</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-red-900">Aproval:</h4>
+              <ul className="text-lg md:text-xl text-red-800 space-y-1">
+                <li>• (No valid synonyms; not a standard English word)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Usage Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Important Points:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Approval</strong> is spelled with two &quot;p&quot;s not one.</li>
+            <li>• Used to indicate permission or acceptance.</li>
+            <li>• Commonly used in business and formal contexts.</li>
+            <li>• The word comes from Old French &quot;aprover&quot; meaning &quot;to approve.&quot;</li>
+            <li>• &quot;Aproval&quot; is never correct in any context.</li>
+            <li>• Often used in phrases like &quot;get approval&quot; or &quot;seek approval.&quot;</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;aproval&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;aproval&quot; is never correct. The proper spelling is always &quot;approval&quot; with two &quot;p&quot;s.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ap-pro-val&quot; - it has two &quot;p&quot;s, similar to &quot;appear&quot; or &quot;apply.&quot;</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between approval and permission?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Both mean consent, but &quot;approval&quot; often implies endorsement or agreement, while &quot;permission&quot; is more about authorization.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can approval be used in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;approval&quot; is very appropriate in formal writing and business communications.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;aproval&quot; likely occurs because of confusion about whether to use one or two &quot;p&quot;s.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;approval&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: get approval, seek approval, give approval, and pending approval.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is approval always positive?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Approval&quot; is generally positive as it indicates acceptance or permission, but context matters.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can approval be used as a verb?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;approval&quot; is a noun. The verb form is &quot;approve&quot; (to approve something).</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Approval</strong> is the correct spelling with two &quot;p&quot;s not one. It means the act of approving or accepting something. The misspelling &quot;aproval&quot; is never correct. Use &quot;approval&quot; to indicate permission or acceptance in both formal and informal contexts.</p>
       </div>
     </div>
-  );
+  )
 } 

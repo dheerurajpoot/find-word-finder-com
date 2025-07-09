@@ -1,174 +1,153 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Appearance or Appearence - Which is Correct?",
-  description: "Learn the correct spelling between &apos;appearance&apos; and &apos;appearence&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Appearance or Appearence - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;appearance&quot; and &quot;appearence&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
 export default function AppearanceVsAppearencePage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Appearance or Appearence</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Appearance or Appearence, and how to use them properly.
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Appearance or Appearence</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;appearance&quot; and &quot;appearence&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Appearence</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Appearence&quot; should be spelled with &quot;ance&quot;.
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Appearence</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Appearance</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Appearance&quot; means the way something looks or seems.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Appearence&quot; is a misspelling. The correct spelling is &quot;appearance&quot; with two &quot;p&quot;s and two &quot;r&quot;s.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Appearance</h3>
             </div>
-          </Card>
-        </div>
-      </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Appearance</span> (noun): The way that someone or something looks; the act of appearing or becoming visible; outward aspect or impression.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>Her appearance at the party surprised everyone.</li>
-              <li>The building&apos;s appearance has changed over the years.</li>
-              <li>Don&apos;t judge a book by its appearance.</li>
-            </ul>
-          </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Appearance&quot; is the correct spelling. It means the way something looks or seems to be.</p>
+          </CardContent>
         </Card>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;appearance&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Nouns:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Look</li>
-                  <li>Aspect</li>
-                  <li>Image</li>
-                  <li>Presence</li>
-                  <li>Form</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Appearance (noun):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">The way something or someone looks; the outward aspect or form of something.</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-green-800 space-y-2">
+                  <li>• Her <strong>appearance</strong> was neat and professional.</li>
+                  <li>• The building&apos;s <strong>appearance</strong> has changed over the years.</li>
+                  <li>• Don&apos;t judge by <strong>appearance</strong> alone.</li>
                 </ul>
               </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Outward</li>
-                  <li>Exterior</li>
-                  <li>Surface</li>
-                  <li>Impression</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Appearence (noun):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Appearence&quot; is a misspelling of &quot;appearance&quot; and is not a valid English word.</p>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-red-800 space-y-2">
+                  <li>• &quot;Appearence&quot; is not used in standard English.</li>
+                  <li>• Always use <strong>appearance</strong> when referring to looks.</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Appearance&quot; is the correct spelling. &quot;Appearence&quot; is incorrect—remember the &quot;ance&quot; ending, not &quot;ence&quot;.
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it appearence or appearance?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct spelling is &quot;appearance.&quot; &quot;Appearence&quot; is incorrect—it should end with &quot;ance&quot;, not &quot;ence&quot;.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce appearance?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈpɪrəns/ (uh-PEER-uhns).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does appearance mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The way that someone or something looks; the act of appearing or becoming visible; outward aspect or impression.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the difference between appearance and look?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">&quot;Appearance&quot; is more formal and comprehensive, while &quot;look&quot; is more casual and immediate.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can appearance be used for non-physical things?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! You can talk about the appearance of a situation, an argument, or even a mathematical equation.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What are common phrases with appearance?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Common phrases include: make an appearance, keep up appearances, outward appearance, and public appearance.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is appearance used in legal contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! In law, &quot;appearance&quot; refers to a party&apos;s formal participation in a legal proceeding.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the verb form of appearance?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The verb form is &quot;appear&quot; - meaning to become visible or present.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the origin of appearance?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Appearance comes from Old French &quot;aparance&quot; meaning appearance, from Latin &quot;apparentia&quot; meaning visibility.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can appearance be used in psychology?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! In psychology, appearance can refer to how someone presents themselves or how they are perceived by others.</div>
-            </div>
+            </CardContent>
           </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-green-900">Appearance:</h4>
+              <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Look</li>
+                <li>• Aspect</li>
+                <li>• Form</li>
+                <li>• Image</li>
+                <li>• Presentation</li>
+                <li>• Outward</li>
+                <li>• Visage</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-red-900">Appearence:</h4>
+              <ul className="text-lg md:text-xl text-red-800 space-y-1">
+                <li>• (No valid synonyms; not a standard English word)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Usage Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Important Points:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Appearance</strong> is spelled with two &quot;p&quot;s and two &quot;r&quot;s.</li>
+            <li>• Used to describe how something or someone looks.</li>
+            <li>• Can refer to physical looks or outward impressions.</li>
+            <li>• The word comes from the verb &quot;appear&quot; + the suffix &quot;-ance.&quot;</li>
+            <li>• &quot;Appearence&quot; is never correct in any context.</li>
+            <li>• Often used in phrases like &quot;appearance of&quot; or &quot;make an appearance.&quot;</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;appearence&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;appearence&quot; is never correct. The proper spelling is always &quot;appearance&quot; with two &quot;p&quot;s and two &quot;r&quot;s.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ap-pear-ance&quot; - it&apos;s the noun form of &quot;appear&quot; with &quot;-ance&quot; added.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between appearance and look?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Both refer to how something appears, but &quot;appearance&quot; is more formal and can refer to broader impressions.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can appearance be used in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;appearance&quot; is appropriate in both formal and informal writing contexts.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;appearence&quot; likely occurs because of confusion about the double consonants or pronunciation.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;appearance&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: appearance of, make an appearance, physical appearance, and public appearance.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is appearance always about physical looks?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;appearance&quot; can refer to how something seems or appears to be, not just physical appearance.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can appearance be used as a verb?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;appearance&quot; is a noun. The verb form is &quot;appear&quot; (to appear somewhere).</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Appearance</strong> is the correct spelling with two &quot;p&quot;s and two &quot;r&quot;s. It means the way something or someone looks or seems to be. The misspelling &quot;appearence&quot; is never correct. Use &quot;appearance&quot; to describe looks or outward impressions.</p>
       </div>
     </div>
-  );
+  )
 } 

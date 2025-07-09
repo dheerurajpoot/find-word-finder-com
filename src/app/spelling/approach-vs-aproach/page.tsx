@@ -1,174 +1,153 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Approach or Aproach - Which is Correct?",
-  description: "Learn the correct spelling between &apos;approach&apos; and &apos;aproach&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Approach or Aproach - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;approach&quot; and &quot;aproach&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
 export default function ApproachVsAproachPage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Approach or Aproach</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Approach or Aproach, and how to use them properly.
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Approach or Aproach</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;approach&quot; and &quot;aproach&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Aproach</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Aproach&quot; is missing the first &quot;p&quot;.
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Aproach</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Approach</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Approach&quot; has double &quot;p&quot;.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Aproach&quot; is a misspelling. The correct spelling is &quot;approach&quot; with two &quot;p&quot;s.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Approach</h3>
             </div>
-          </Card>
-        </div>
-      </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Approach</span> (verb/noun): To come near or nearer to something; a way of dealing with a situation; a method or technique.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>The plane began to approach the runway.</li>
-              <li>We need a new approach to solve this problem.</li>
-              <li>She approached the situation with caution.</li>
-            </ul>
-          </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Approach&quot; is the correct spelling. It means to come near or deal with something.</p>
+          </CardContent>
         </Card>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;approach&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Verbs:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Near</li>
-                  <li>Come</li>
-                  <li>Reach</li>
-                  <li>Advance</li>
-                  <li>Move toward</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Approach (verb/noun):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">To come near or deal with something; a way of dealing with a situation or problem.</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-green-800 space-y-2">
+                  <li>• We need to <strong>approach</strong> this problem differently.</li>
+                  <li>• The <strong>approach</strong> to the building is beautiful.</li>
+                  <li>• Let&apos;s try a new <strong>approach</strong> to solving this.</li>
                 </ul>
               </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Methods:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Method</li>
-                  <li>Strategy</li>
-                  <li>Technique</li>
-                  <li>Way</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Aproach (verb/noun):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Aproach&quot; is a misspelling of &quot;approach&quot; and is not a valid English word.</p>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-red-800 space-y-2">
+                  <li>• &quot;Aproach&quot; is not used in standard English.</li>
+                  <li>• Always use <strong>approach</strong> when referring to coming near.</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Approach&quot; is the correct spelling. &quot;Aproach&quot; is incorrect—remember the double &quot;p&quot; at the beginning.
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it aproach or approach?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct spelling is &quot;approach.&quot; &quot;Aproach&quot; is incorrect—it&apos;s missing the first &quot;p&quot;.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce approach?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈproʊtʃ/ (uh-PROHCH).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does approach mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">To come near or nearer to something; a way of dealing with a situation; a method or technique.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the difference between approach and method?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">&quot;Approach&quot; is broader and includes attitude, while &quot;method&quot; is more specific and systematic.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can approach be used for physical movement?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;The car approached the intersection&quot; means it came near to the intersection.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What are common phrases with approach?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Common phrases include: approach to, approach from, hands-on approach, and systematic approach.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is approach used in business contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! Business approach, marketing approach, and strategic approach are very common terms.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the noun form of approach?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Approach can be both a verb and a noun - meaning a method or way of doing something.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the origin of approach?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Approach comes from Old French &quot;aprochier&quot; which comes from Latin &quot;ad&quot; + &quot;prope&quot; meaning near.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can approach be used in academic contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! Research approach, theoretical approach, and methodological approach are common in academia.</div>
-            </div>
+            </CardContent>
           </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-green-900">Approach:</h4>
+              <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Come near</li>
+                <li>• Deal with</li>
+                <li>• Method</li>
+                <li>• Strategy</li>
+                <li>• Way</li>
+                <li>• Technique</li>
+                <li>• Method</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-red-900">Aproach:</h4>
+              <ul className="text-lg md:text-xl text-red-800 space-y-1">
+                <li>• (No valid synonyms; not a standard English word)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Usage Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Important Points:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Approach</strong> is spelled with two &quot;p&quot;s not one.</li>
+            <li>• Used to indicate coming near or dealing with something.</li>
+            <li>• Commonly used in both formal and informal contexts.</li>
+            <li>• The word comes from Old French &quot;aprochier&quot; meaning &quot;to come near.&quot;</li>
+            <li>• &quot;Aproach&quot; is never correct in any context.</li>
+            <li>• Often used in phrases like &quot;approach to&quot; or &quot;approach the.&quot;</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;aproach&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;aproach&quot; is never correct. The proper spelling is always &quot;approach&quot; with two &quot;p&quot;s.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ap-pro-ach&quot; - it has two &quot;p&quot;s, similar to &quot;appear&quot; or &quot;apply.&quot;</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between approach and method?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Both refer to ways of doing something, but &quot;approach&quot; often implies a broader strategy, while &quot;method&quot; is more specific.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can approach be used in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;approach&quot; is very appropriate in formal writing and business communications.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;aproach&quot; likely occurs because of confusion about whether to use one or two &quot;p&quot;s.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;approach&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: approach to, approach the, new approach, and different approach.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is approach always positive?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Approach&quot; is neutral - it can be positive, negative, or neutral depending on context.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can approach be used as both verb and noun?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;approach&quot; can be both a verb (to approach) and a noun (an approach).</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Approach</strong> is the correct spelling with two &quot;p&quot;s not one. It means to come near or deal with something. The misspelling &quot;aproach&quot; is never correct. Use &quot;approach&quot; to indicate coming near or dealing with situations in both formal and informal contexts.</p>
       </div>
     </div>
-  );
+  )
 } 

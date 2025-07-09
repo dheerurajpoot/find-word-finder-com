@@ -1,174 +1,152 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Appear or Apear - Which is Correct?",
-  description: "Learn the correct spelling between &apos;appear&apos; and &apos;apear&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Appear or Apear - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;appear&quot; and &quot;apear&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
 export default function AppearVsApearPage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Appear or Apear</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Appear or Apear, and how to use them properly.
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Appear or Apear</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;appear&quot; and &quot;apear&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Apear</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Apear&quot; is missing the first &quot;p&quot;.
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Apear</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Appear</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Appear&quot; means to become visible or present.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Apear&quot; is a misspelling. The correct spelling is &quot;appear&quot; with two &quot;p&quot;s.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Appear</h3>
             </div>
-          </Card>
-        </div>
-      </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Appear</span> (verb): To become visible; to come into sight; to seem or look; to make a public appearance.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>The stars appear in the night sky.</li>
-              <li>She will appear on the talk show tomorrow.</li>
-              <li>It appears that the weather will be nice today.</li>
-            </ul>
-          </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Appear&quot; is the correct spelling. It means to become visible or to seem to be something.</p>
+          </CardContent>
         </Card>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;appear&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Verbs:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Show</li>
-                  <li>Emerge</li>
-                  <li>Surface</li>
-                  <li>Materialize</li>
-                  <li>Arrive</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Appear (verb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">To become visible; to come into sight; to seem to be something; to present oneself.</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-green-800 space-y-2">
+                  <li>• The sun will <strong>appear</strong> at dawn.</li>
+                  <li>• She will <strong>appear</strong> in court tomorrow.</li>
+                  <li>• It <strong>appears</strong> to be raining outside.</li>
                 </ul>
               </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Become visible</li>
-                  <li>Come into view</li>
-                  <li>Show up</li>
-                  <li>Turn up</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Apear (verb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Apear&quot; is a misspelling of &quot;appear&quot; and is not a valid English word.</p>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-red-800 space-y-2">
+                  <li>• &quot;Apear&quot; is not used in standard English.</li>
+                  <li>• Always use <strong>appear</strong> when referring to becoming visible.</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Appear&quot; is the correct spelling. &quot;Apear&quot; is incorrect—remember the double &quot;p&quot; at the beginning.
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it apear or appear?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct spelling is &quot;appear.&quot; &quot;Apear&quot; is incorrect—it&apos;s missing the first &quot;p&quot;.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce appear?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈpɪr/ (uh-PEER).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does appear mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">To become visible; to come into sight; to seem or look; to make a public appearance.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the difference between appear and show?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">&quot;Appear&quot; suggests something becoming visible naturally, while &quot;show&quot; suggests something being revealed or displayed.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can appear be used for non-physical things?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! You can say &quot;It appears that...&quot; to mean something seems to be the case.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What are common phrases with appear?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Common phrases include: appear to be, appear out of nowhere, appear on stage, and appear in court.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is appear used in literature?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;Appear&quot; is commonly used in storytelling to describe characters or events coming into view.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the past tense of appear?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The past tense is &quot;appeared&quot; - meaning came into sight or became visible.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the origin of appear?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Appear comes from Latin &quot;apparere&quot; meaning to become visible, from &quot;ad-&quot; (to) + &quot;parere&quot; (to be visible).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can appear be used in formal writing?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;Appear&quot; is appropriate for both formal and informal contexts.</div>
-            </div>
+            </CardContent>
           </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-green-900">Appear:</h4>
+              <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Emerge</li>
+                <li>• Show up</li>
+                <li>• Surface</li>
+                <li>• Materialize</li>
+                <li>• Seem</li>
+                <li>• Look</li>
+                <li>• Present</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-red-900">Apear:</h4>
+              <ul className="text-lg md:text-xl text-red-800 space-y-1">
+                <li>• (No valid synonyms; not a standard English word)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Usage Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Important Points:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Appear</strong> is spelled with two &quot;p&quot;s at the beginning.</li>
+            <li>• The word comes from Latin &quot;apparere&quot; meaning to appear.</li>
+            <li>• Can mean both &quot;become visible&quot; and &quot;seem to be.&quot;</li>
+            <li>• Often used in formal contexts and legal proceedings.</li>
+            <li>• &quot;Apear&quot; is never correct in any context.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;apear&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;apear&quot; is never correct. The proper spelling is always &quot;appear.&quot;</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;app&quot; + &quot;ear&quot; - appear means to make something visible to your ears (in a figurative sense).</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between appear and seem?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Appear can mean both &quot;become visible&quot; and &quot;seem to be,&quot; while seem only means to give the impression of being something.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can appear be used in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;appear&quot; is very appropriate in formal writing and legal contexts.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;apear&quot; likely occurs because of confusion about the double &quot;p&quot; or pronunciation.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;appear&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: appear in court, appear to be, and appear on stage.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is appear always about visual things?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, appear can refer to anything that becomes visible or seems to be true, not just visual things.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can appear be used as a noun?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;appear&quot; is only a verb. The noun form would be &quot;appearance.&quot;</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Appear</strong> is the correct spelling with two &quot;p&quot;s. It means to become visible or to seem to be something. The misspelling &quot;apear&quot; is never correct. Use &quot;appear&quot; when referring to something becoming visible or seeming to be the case.</p>
       </div>
     </div>
-  );
+  )
 } 
