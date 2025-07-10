@@ -1,174 +1,217 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Assassination or Assasination - Which is Correct?",
-  description: "Learn the correct spelling between &apos;assassination&apos; and &apos;assasination&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Assassination vs Assasination - Which is Correct? | Word Tips',
+  description: 'Learn the correct spelling between "assassination" and "assasination". Discover the proper usage, definitions, and common mistakes to avoid.',
+}
 
 export default function AssassinationVsAssasinationPage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Assassination or Assasination</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Assassination or Assasination, and how to use them properly.
-        </p>
-      </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Assasination</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Assasination&quot; is missing the second &quot;s&quot;.
-              </div>
-            </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Assassination</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Assassination&quot; has double &quot;s&quot;.
-              </div>
-            </div>
-          </Card>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      {/* Header */}
+      <div className="text-center mb-8">
+        <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Assassination vs Assasination</h1>
+        <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg inline-block">
+          <p className="text-lg md:text-xl font-semibold">Which spelling is correct?</p>
         </div>
       </div>
 
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Assassination</span> (noun): The murder of a prominent person, especially a political leader, by surprise attack.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>The assassination of President Kennedy shocked the nation.</li>
-              <li>Security was increased after the assassination attempt.</li>
-              <li>The assassination plot was foiled by intelligence agents.</li>
+      {/* Correct vs Incorrect Cards */}
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-200 bg-red-50 p-6">
+          <div className="flex items-center mb-4">
+            <span className="text-3xl mr-3">❌</span>
+            <h2 className="text-2xl font-bold text-red-800">Incorrect</h2>
+          </div>
+          <div className="text-center">
+            <div className="text-6xl font-bold text-red-600 mb-4">assasination</div>
+            <p className="text-lg md:text-xl text-red-700">This spelling is incorrect and should not be used.</p>
+          </div>
+        </Card>
+
+        <Card className="border-2 border-green-200 bg-green-50 p-6">
+          <div className="flex items-center mb-4">
+            <span className="text-3xl mr-3">✅</span>
+            <h2 className="text-2xl font-bold text-green-800">Correct</h2>
+          </div>
+          <div className="text-center">
+            <div className="text-6xl font-bold text-green-600 mb-4">assassination</div>
+            <p className="text-lg md:text-xl text-green-700">This is the correct spelling with double &quot;s&quot; and double &quot;n.&quot;</p>
+          </div>
+        </Card>
+      </div>
+
+      {/* Definition Section */}
+      <Card className="mb-8 p-6">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definition</h2>
+        <div className="space-y-4">
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">Assassination (noun)</h3>
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              The act of murdering someone, especially a prominent person, by a surprise attack, often for political or religious reasons. 
+              It typically involves a planned, targeted killing carried out by a professional or someone with a specific agenda.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">Examples:</h3>
+            <ul className="list-disc list-inside space-y-2 text-lg md:text-xl text-gray-700">
+              <li>The <strong>assassination</strong> of President Kennedy shocked the nation.</li>
+              <li>Several <strong>assassinations</strong> were attempted during the civil war.</li>
+              <li>The <strong>assassination</strong> plot was discovered before it could be carried out.</li>
+              <li>Historical records document many political <strong>assassinations</strong> throughout history.</li>
             </ul>
           </div>
-        </Card>
-      </div>
+        </div>
+      </Card>
+
+      {/* Why the Confusion */}
+      <Card className="mb-8 p-6">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Why the Confusion?</h2>
+        <div className="space-y-4 text-lg md:text-xl text-gray-700 leading-relaxed">
+          <p>
+            The confusion between &quot;assassination&quot; and &quot;assasination&quot; likely stems from:
+          </p>
+          <ul className="list-disc list-inside space-y-2">
+            <li><strong>Phonetic pronunciation:</strong> The double &quot;s&quot; and double &quot;n&quot; sounds can be difficult to distinguish</li>
+            <li><strong>Typographical errors:</strong> Missing letters when typing quickly</li>
+            <li><strong>Complex spelling pattern:</strong> Multiple double consonants in the same word</li>
+            <li><strong>Unfamiliar word:</strong> Not commonly used in everyday conversation</li>
+            <li><strong>Similar word patterns:</strong> Some words have single consonants in similar positions</li>
+          </ul>
+        </div>
+      </Card>
+
+      {/* Etymology and Spelling Rules */}
+      <Card className="mb-8 p-6">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Etymology and Spelling Rules</h2>
+        <div className="space-y-4 text-lg md:text-xl text-gray-700 leading-relaxed">
+          <p>
+            <strong>Word origin:</strong> The word &quot;assassination&quot; comes from the verb &quot;assassinate,&quot; 
+            which derives from the noun &quot;assassin,&quot; ultimately from the Arabic &quot;ḥashshāshīn.&quot;
+          </p>
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <h4 className="font-semibold mb-2 text-blue-900">Spelling pattern:</h4>
+            <ul className="list-disc list-inside space-y-1 text-blue-800">
+              <li>Double &quot;s&quot; after &quot;a&quot;</li>
+              <li>Single &quot;a&quot; in the middle</li>
+              <li>Double &quot;s&quot; before &quot;i&quot;</li>
+              <li>Double &quot;n&quot; before &quot;ation&quot;</li>
+              <li>&quot;ation&quot; suffix for noun formation</li>
+            </ul>
+          </div>
+          <p className="mt-4">
+            <strong>Memory tip:</strong> Think of &quot;assassination&quot; as having two &quot;s&quot;s and two &quot;n&quot;s 
+            because it involves a double act of killing (double &quot;s&quot; for &quot;secret&quot; and double &quot;n&quot; for &quot;night&quot;).
+          </p>
+        </div>
+      </Card>
 
       {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;assassination&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Murder:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Murder</li>
-                  <li>Killing</li>
-                  <li>Execution</li>
-                  <li>Elimination</li>
-                  <li>Liquidation</li>
-                </ul>
-              </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Political:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Political murder</li>
-                  <li>Targeted killing</li>
-                  <li>Regicide</li>
-                  <li>Patricide</li>
-                </ul>
-              </div>
-            </div>
+      <Card className="mb-8 p-6 bg-blue-50">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms for &quot;Assassination&quot;</h2>
+        <div className="grid md:grid-cols-2 gap-4 text-lg md:text-xl">
+          <div>
+            <h3 className="font-semibold mb-2 text-blue-900">Formal:</h3>
+            <ul className="list-disc list-inside space-y-1 text-blue-800">
+              <li>murder</li>
+              <li>killing</li>
+              <li>elimination</li>
+              <li>execution</li>
+              <li>slaying</li>
+            </ul>
           </div>
-        </Card>
-      </div>
+          <div>
+            <h3 className="font-semibold mb-2 text-blue-900">Contextual:</h3>
+            <ul className="list-disc list-inside space-y-1 text-blue-800">
+              <li>targeted killing</li>
+              <li>political murder</li>
+              <li>contract killing</li>
+              <li>hit</li>
+              <li>liquidation</li>
+            </ul>
+          </div>
+        </div>
+      </Card>
 
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Assassination&quot; is the correct spelling. &quot;Assasination&quot; is incorrect—remember the double &quot;s&quot; in the middle.
-      </div>
+      {/* Usage Tips */}
+      <Card className="mb-8 p-6">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Usage Tips</h2>
+        <div className="space-y-4 text-lg md:text-xl text-gray-700 leading-relaxed">
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">When to use &quot;assassination&quot;:</h3>
+            <ul className="list-disc list-inside space-y-2">
+              <li>In historical contexts about political killings</li>
+              <li>In discussions about organized crime or terrorism</li>
+              <li>In literature or fiction about professional killings</li>
+              <li>In academic writing about political violence</li>
+              <li>In news reports about targeted killings</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">Common contexts:</h3>
+            <ul className="list-disc list-inside space-y-2">
+              <li>Historical accounts</li>
+              <li>Political discussions</li>
+              <li>Crime fiction and literature</li>
+              <li>Academic research</li>
+              <li>International relations</li>
+            </ul>
+          </div>
+        </div>
+      </Card>
 
       {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it assasination or assassination?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct spelling is &quot;assassination.&quot; &quot;Assasination&quot; is incorrect—it&apos;s missing the second &quot;s&quot;.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce assassination?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˌsæsɪˈneɪʃən/ (uh-sas-uh-NAY-shuhn).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does assassination mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The murder of a prominent person, especially a political leader, by surprise attack.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the difference between assassination and murder?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">&quot;Assassination&quot; specifically refers to killing prominent figures for political reasons, while &quot;murder&quot; is more general.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can assassination be used in historical contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! Historical assassinations like Lincoln&apos;s assassination or Caesar&apos;s assassination are common references.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What are common phrases with assassination?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Common phrases include: assassination attempt, assassination plot, character assassination, and political assassination.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is assassination used in literature?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! Assassination plots, assassination attempts, and assassination conspiracies are common in fiction and drama.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the verb form of assassination?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The verb is &quot;assassinate&quot; - meaning to murder a prominent person by surprise attack.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the origin of assassination?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Assassination comes from the word &quot;assassin&quot; which comes from Arabic &quot;hashshashin&quot; meaning hashish users.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can assassination be used metaphorically?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;Character assassination&quot; means destroying someone&apos;s reputation, not physically killing them.</div>
-            </div>
-          </Card>
+      <Card className="mb-8 p-6">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">Q: Is &quot;assasination&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              A: No, &quot;assasination&quot; is never correct in standard English. It is always a spelling error for &quot;assassination.&quot;
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">Q: What&apos;s the pronunciation of &quot;assassination&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              A: It is pronounced as /əˌsæsɪˈneɪʃən/ with the stress on the fourth syllable. The double &quot;s&quot; is pronounced as a single &quot;s&quot; sound.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">Q: Are there related words with similar spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              A: Yes, &quot;assassinate&quot; (the verb) and &quot;assassin&quot; (the person who carries out the assassination) 
+              also have the same double &quot;s&quot; and double &quot;n&quot; pattern.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">Q: How can I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              A: Remember that &quot;assassination&quot; has two &quot;s&quot;s and two &quot;n&quot;s. Think of it as 
+              &quot;as + sas + sin + ation&quot; or use the memory trick: an assassin needs to be &quot;double&quot; careful 
+              (hence double letters) when carrying out an assassination.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">Q: Is this a common spelling mistake?</h3>
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              A: Yes, this is a relatively common spelling error, especially since it&apos;s not a frequently used word 
+              and has an unusual spelling pattern with multiple double consonants.
+            </p>
+          </div>
         </div>
+      </Card>
+
+      {/* Summary */}
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">
+          <strong>&quot;Assassination&quot;</strong> is the correct spelling with double &quot;s&quot; and double &quot;n.&quot; 
+          The spelling &quot;assasination&quot; is incorrect and should never be used. This word comes from the verb &quot;assassinate&quot; 
+          and maintains its complex spelling pattern. Remember that &quot;assassination&quot; has two &quot;s&quot;s and two &quot;n&quot;s 
+          because it involves a double act of stealth and killing, followed by the &quot;-ation&quot; noun suffix.
+        </p>
       </div>
     </div>
-  );
+  )
 } 
