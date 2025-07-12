@@ -1,20 +1,20 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Account vs Accout - Which is Correct? | Word Finder',
-  description: 'Learn the correct spelling between "account" and "accout". Discover the proper spelling, definitions, examples, and common usage tips.',
-  keywords: 'account, accout, spelling, correct spelling, word comparison, English spelling',
+  title: 'Ancient vs Acient - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between "ancient" and "acient". Discover the proper spelling, definitions, examples, and common usage tips.',
+  keywords: 'ancient, acient, spelling, correct spelling, word comparison, English spelling',
   openGraph: {
-    title: 'Account vs Accout - Which is Correct?',
-    description: 'Learn the correct spelling between "account" and "accout". Discover the proper spelling, definitions, examples, and common usage tips.',
+    title: 'Ancient vs Acient - Which is Correct?',
+    description: 'Learn the correct spelling between "ancient" and "acient". Discover the proper spelling, definitions, examples, and common usage tips.',
     type: 'website',
   },
 }
 
-export default function AccountVsAccoutPage() {
+export default function AncientVsAcientPage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Account vs Accout</h1>
+      <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Ancient vs Acient</h1>
       
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
@@ -28,19 +28,19 @@ export default function AccountVsAccoutPage() {
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
           <h3 className="text-2xl font-bold mb-4 text-green-900 flex items-center">
-            ✅ Correct: Account
+            ✅ Correct: Ancient
           </h3>
           <p className="text-lg md:text-xl text-green-800 mb-4">
-            <strong>Definition:</strong> A record of financial transactions; a description or explanation; a bank or credit arrangement.
+            <strong>Definition:</strong> Belonging to the very distant past; very old; having existed for a very long time.
           </p>
           <p className="text-lg md:text-xl text-green-800">
-            <strong>Pronunciation:</strong> /əˈkaʊnt/ (uh-KOWNT)
+            <strong>Pronunciation:</strong> /ˈeɪnʃənt/ (AYN-shuhnt)
           </p>
         </div>
 
         <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
           <h3 className="text-2xl font-bold mb-4 text-red-900 flex items-center">
-            ❌ Incorrect: Accout
+            ❌ Incorrect: Acient
           </h3>
           <p className="text-lg md:text-xl text-red-800 mb-4">
             <strong>Why it&apos;s wrong:</strong> Missing the &quot;n&quot; in the spelling.
@@ -55,10 +55,10 @@ export default function AccountVsAccoutPage() {
         <h2 className="text-2xl font-bold mb-4 text-blue-900">Definition &amp; Meaning</h2>
         <div className="text-lg md:text-xl text-blue-800 space-y-4">
           <p>
-            <strong>Account</strong> refers to a record of financial transactions, a description or explanation of events, or a bank or credit arrangement. It can also mean to consider or regard something in a particular way.
+            <strong>Ancient</strong> refers to something that belongs to the very distant past, is very old, or has existed for a very long time. It can describe civilizations, artifacts, traditions, or anything from the remote past.
           </p>
           <p>
-            The word comes from the Latin &quot;computare,&quot; meaning &quot;to count.&quot; The &quot;n&quot; is essential to the correct spelling and pronunciation.
+            The word comes from the Latin &quot;antiquus,&quot; meaning &quot;old.&quot; The &quot;n&quot; is essential to the correct spelling and pronunciation.
           </p>
         </div>
       </div>
@@ -68,10 +68,10 @@ export default function AccountVsAccoutPage() {
         <div className="text-lg md:text-xl text-purple-800 space-y-4">
           <p><strong>Correct usage:</strong></p>
           <ul className="list-disc list-inside space-y-2 ml-4">
-            <li>I need to check my bank <strong>account</strong> balance.</li>
-            <li>Please give me an <strong>account</strong> of what happened.</li>
-            <li>She opened a new savings <strong>account</strong>.</li>
-            <li>You must <strong>account</strong> for all your expenses.</li>
+            <li>The archaeologists discovered <strong>ancient</strong> ruins in the desert.</li>
+            <li>She studied <strong>ancient</strong> Greek philosophy in college.</li>
+            <li>The <strong>ancient</strong> temple was over 2,000 years old.</li>
+            <li>This <strong>ancient</strong> tradition has been passed down for generations.</li>
           </ul>
         </div>
       </div>
@@ -80,23 +80,23 @@ export default function AccountVsAccoutPage() {
         <h2 className="text-2xl font-bold mb-4 text-indigo-900">Synonyms</h2>
         <div className="grid md:grid-cols-2 gap-4 text-lg md:text-xl text-indigo-800">
           <div>
-            <h3 className="font-semibold mb-2">For &quot;financial record&quot;:</h3>
+            <h3 className="font-semibold mb-2">For &quot;very old&quot;:</h3>
             <ul className="list-disc list-inside space-y-1 ml-4">
-              <li>Ledger</li>
-              <li>Record</li>
-              <li>Statement</li>
-              <li>Balance</li>
-              <li>Register</li>
+              <li>Antique</li>
+              <li>Vintage</li>
+              <li>Archaic</li>
+              <li>Primitive</li>
+              <li>Prehistoric</li>
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold mb-2">For &quot;explanation&quot;:</h3>
+            <h3 className="font-semibold mb-2">For &quot;from the past&quot;:</h3>
             <ul className="list-disc list-inside space-y-1 ml-4">
-              <li>Description</li>
-              <li>Report</li>
-              <li>Narrative</li>
-              <li>Story</li>
-              <li>Version</li>
+              <li>Historical</li>
+              <li>Traditional</li>
+              <li>Time-honored</li>
+              <li>Classical</li>
+              <li>Bygone</li>
             </ul>
           </div>
         </div>
@@ -105,9 +105,9 @@ export default function AccountVsAccoutPage() {
       <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>Remember the &quot;n&quot; in account - think of it as &quot;ac-count&quot;</li>
-          <li>The word is related to &quot;count&quot; and &quot;counter&quot;</li>
-          <li>Common misspellings include: accout, acount, accont</li>
+          <li>Remember the &quot;n&quot; in ancient - think of it as &quot;an-cient&quot;</li>
+          <li>The word is related to &quot;antique&quot; and &quot;antiquity&quot;</li>
+          <li>Common misspellings include: acient, anceint, anceint</li>
           <li>This is often a typing error rather than a spelling confusion</li>
         </ul>
       </div>
@@ -116,16 +116,16 @@ export default function AccountVsAccoutPage() {
         <h2 className="text-2xl font-bold mb-4 text-gray-900">FAQ</h2>
         <div className="space-y-4">
           <div>
-            <h3 className="text-lg font-semibold mb-2 text-gray-800">Why do people misspell &quot;account&quot;?</h3>
+            <h3 className="text-lg font-semibold mb-2 text-gray-800">Why do people misspell &quot;ancient&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">This is often a typing error where people accidentally skip the &quot;n&quot; when typing quickly, rather than a spelling confusion.</p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-2 text-gray-800">Is &quot;accout&quot; ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-700">No, &quot;accout&quot; is always incorrect. The proper spelling always includes the &quot;n.&quot;</p>
+            <h3 className="text-lg font-semibold mb-2 text-gray-800">Is &quot;acient&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">No, &quot;acient&quot; is always incorrect. The proper spelling always includes the &quot;n.&quot;</p>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-2 text-gray-800">How can I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">Think of the word &quot;count&quot; - account is &quot;ac-count&quot; with an &quot;n.&quot;</p>
+            <p className="text-lg md:text-xl text-gray-700">Think of the word as &quot;an-cient&quot; - break it down into syllables to remember the &quot;n.&quot;</p>
           </div>
         </div>
       </div>
@@ -134,13 +134,13 @@ export default function AccountVsAccoutPage() {
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <div className="text-lg md:text-xl text-green-800 space-y-3">
           <p>
-            <strong>Account</strong> is the correct spelling, featuring an &quot;n&quot; that is essential to the word&apos;s proper form. This word refers to financial records, explanations, or bank arrangements.
+            <strong>Ancient</strong> is the correct spelling, featuring an &quot;n&quot; that is essential to the word&apos;s proper form. This word refers to something that belongs to the very distant past or is very old.
           </p>
           <p>
-            The misspelling <strong>accout</strong> (missing the &quot;n&quot;) is incorrect and should be avoided in all formal writing contexts.
+            The misspelling <strong>acient</strong> (missing the &quot;n&quot;) is incorrect and should be avoided in all formal writing contexts.
           </p>
           <p>
-            Remember: Account has an &quot;n&quot; - think of it as &quot;ac-count&quot; to help you spell it correctly every time.
+            Remember: Ancient has an &quot;n&quot; - think of it as &quot;an-cient&quot; to help you spell it correctly every time.
           </p>
         </div>
       </div>

@@ -1,133 +1,149 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
-
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Accumulate or Accumlate - Which is Correct?",
-  description: "Learn the correct spelling between &apos;accumulate&apos; and &apos;accumlate&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Accumulate vs Accumlate - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between "accumulate" and "accumlate". Discover the proper spelling, definitions, examples, and common usage tips.',
+  keywords: 'accumulate, accumlate, spelling, correct spelling, word comparison, English spelling',
+  openGraph: {
+    title: 'Accumulate vs Accumlate - Which is Correct?',
+    description: 'Learn the correct spelling between "accumulate" and "accumlate". Discover the proper spelling, definitions, examples, and common usage tips.',
+    type: 'website',
+  },
+}
 
 export default function AccumulateVsAccumlatePage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Accumulate or Accumlate</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Accumulate or Accumlate, and how to use them properly.
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Accumulate vs Accumlate</h1>
+      
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+          Which Spelling is Correct?
+        </h2>
+        <p className="text-lg md:text-xl text-gray-700">
+          Understanding the correct spelling of this commonly misspelled word and how to use it properly in your writing.
         </p>
       </div>
 
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Accumlate</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Accumlate&quot; is not a valid word in English.
-              </div>
-            </div>
-          </Card>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-2xl font-bold mb-4 text-green-900 flex items-center">
+            ✅ Correct: Accumulate
+          </h3>
+          <p className="text-lg md:text-xl text-green-800 mb-4">
+            <strong>Definition:</strong> To gather or collect gradually; to increase in amount or number over time.
+          </p>
+          <p className="text-lg md:text-xl text-green-800">
+            <strong>Pronunciation:</strong> /əˈkjuːmjəleɪt/ (uh-KYOO-myuh-layt)
+          </p>
         </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Accumulate</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Accumulate&quot; is a verb meaning to gather or collect.
-              </div>
-            </div>
-          </Card>
+
+        <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+          <h3 className="text-2xl font-bold mb-4 text-red-900 flex items-center">
+            ❌ Incorrect: Accumlate
+          </h3>
+          <p className="text-lg md:text-xl text-red-800 mb-4">
+            <strong>Why it&apos;s wrong:</strong> Missing the &quot;u&quot; in the spelling.
+          </p>
+            <p className="text-lg md:text-xl text-red-800">
+            <strong>Common mistake:</strong> People often drop the &quot;u&quot; when typing quickly.
+          </p>
         </div>
       </div>
 
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Accumulate</span> (verb): To gather together or acquire an increasing number or quantity of; to collect or amass over time.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>Dust can accumulate quickly in a closed room.</li>
-              <li>She has accumulated a large collection of books.</li>
-              <li>Interest will accumulate on your savings account.</li>
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Definition &amp; Meaning</h2>
+        <div className="text-lg md:text-xl text-blue-800 space-y-4">
+          <p>
+            <strong>Accumulate</strong> means to gather, collect, or amass gradually over time. It implies a steady increase in amount, number, or quantity.
+          </p>
+          <p>
+            The word comes from the Latin &quot;accumulare,&quot; meaning &quot;to heap up.&quot; The &quot;u&quot; is essential to the correct spelling and pronunciation.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-purple-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-purple-900">Examples in Sentences</h2>
+        <div className="text-lg md:text-xl text-purple-800 space-y-4">
+          <p><strong>Correct usage:</strong></p>
+          <ul className="list-disc list-inside space-y-2 ml-4">
+            <li>Dust began to <strong>accumulate</strong> on the old books.</li>
+            <li>She <strong>accumulated</strong> a large collection of stamps over the years.</li>
+            <li>Interest will <strong>accumulate</strong> on the loan if not paid.</li>
+            <li>Snow <strong>accumulated</strong> on the mountain peaks.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="bg-indigo-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-indigo-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-4 text-lg md:text-xl text-indigo-800">
+          <div>
+            <h3 className="font-semibold mb-2">For &quot;gather&quot;:</h3>
+            <ul className="list-disc list-inside space-y-1 ml-4">
+              <li>Collect</li>
+              <li>Amass</li>
+              <li>Assemble</li>
+              <li>Stockpile</li>
+              <li>Build up</li>
             </ul>
           </div>
-        </Card>
-      </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;accumulate&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Verbs:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Collect</li>
-                  <li>Gather</li>
-                  <li>Amass</li>
-                  <li>Assemble</li>
-                  <li>Build up</li>
-                </ul>
-              </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Stockpile</li>
-                  <li>Hoard</li>
-                  <li>Compile</li>
-                  <li>Accrue</li>
-                </ul>
-              </div>
-            </div>
+          <div>
+            <h3 className="font-semibold mb-2">For &quot;increase&quot;:</h3>
+            <ul className="list-disc list-inside space-y-1 ml-4">
+              <li>Grow</li>
+              <li>Mount</li>
+              <li>Pile up</li>
+              <li>Stack up</li>
+              <li>Multiply</li>
+            </ul>
           </div>
-        </Card>
+        </div>
       </div>
 
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Accumulate&quot; is the correct spelling. &quot;Accumlate&quot; is a common misspelling—remember, it has two &quot;c&quot;s and a &quot;u&quot; after the first &quot;c&quot;.
+      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
+        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+          <li>Remember the &quot;u&quot; in accumulate - think of it as &quot;ac-cum-u-late&quot;</li>
+          <li>The word is related to &quot;accumulation&quot; and &quot;cumulative&quot;</li>
+          <li>Common misspellings include: accumlate, accumalate, accumelate</li>
+          <li>This is often a typing error rather than a spelling confusion</li>
+        </ul>
       </div>
 
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it accumlate or accumulate?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;accumulate.&quot; &quot;Accumlate&quot; is a common misspelling.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce accumulate?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈkjuːmjəleɪt/ (uh-KYOO-myuh-layt).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does accumulate mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">To gather together or acquire an increasing number or quantity of; to collect or amass over time.</div>
-            </div>
-          </Card>
+      <div className="bg-gray-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900">FAQ</h2>
+        <div className="space-y-4">
+          <div>
+            <h3 className="text-lg font-semibold mb-2 text-gray-800">Why do people misspell &quot;accumulate&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">This is often a typing error where people accidentally skip the &quot;u&quot; when typing quickly, rather than a spelling confusion.</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-2 text-gray-800">Is &quot;accumlate&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">No, &quot;accumlate&quot; is always incorrect. The proper spelling always includes the &quot;u.&quot;</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-2 text-gray-800">How can I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">Think of the word as &quot;ac-cum-u-late&quot; - break it down into syllables to remember the &quot;u.&quot;</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <div className="text-lg md:text-xl text-green-800 space-y-3">
+          <p>
+            <strong>Accumulate</strong> is the correct spelling, featuring a &quot;u&quot; that is essential to the word&apos;s proper form. This word means to gather or collect gradually over time.
+          </p>
+          <p>
+            The misspelling <strong>accumlate</strong> (missing the &quot;u&quot;) is incorrect and should be avoided in all formal writing contexts.
+          </p>
+          <p>
+            Remember: Accumulate has a &quot;u&quot; - think of it as &quot;ac-cum-u-late&quot; to help you spell it correctly every time.
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 } 

@@ -7,6 +7,7 @@ export async function GET() {
 	const legalPages = [
 		{ url: "/privacy", priority: "0.4", changefreq: "yearly" },
 		{ url: "/terms", priority: "0.4", changefreq: "yearly" },
+		{ url: "/disclaimer", priority: "0.4", changefreq: "yearly" },
 	];
 
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

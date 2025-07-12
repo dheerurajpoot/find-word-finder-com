@@ -1,175 +1,149 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Accrued or Acrued - Which is Correct?",
-  description: "Learn the correct spelling between &apos;accrued&apos; and &apos;acrued&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Accrued vs Acrued - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between "accrued" and "acrued". Discover the proper spelling, definitions, examples, and common usage tips.',
+  keywords: 'accrued, acrued, spelling, correct spelling, word comparison, English spelling',
+  openGraph: {
+    title: 'Accrued vs Acrued - Which is Correct?',
+    description: 'Learn the correct spelling between "accrued" and "acrued". Discover the proper spelling, definitions, examples, and common usage tips.',
+    type: 'website',
+  },
+}
 
 export default function AccruedVsAcruedPage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Accrued or Acrued</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Accrued or Acrued, and how to use them properly.
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Accrued vs Acrued</h1>
+      
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+          Which Spelling is Correct?
+        </h2>
+        <p className="text-lg md:text-xl text-gray-700">
+          Understanding the correct spelling of this commonly misspelled word and how to use it properly in your writing.
         </p>
       </div>
 
-      {/* Correct/Incorrect Cards */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Acrued</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Acrued&quot; is missing the second &quot;c&quot; - it should be &quot;accrued.&quot;
-              </div>
-            </div>
-          </Card>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-2xl font-bold mb-4 text-green-900 flex items-center">
+            ✅ Correct: Accrued
+          </h3>
+          <p className="text-lg md:text-xl text-green-800 mb-4">
+            <strong>Definition:</strong> Past tense and past participle of &quot;accrue&quot; - to accumulate or increase over time.
+          </p>
+          <p className="text-lg md:text-xl text-green-800">
+            <strong>Pronunciation:</strong> /əˈkruːd/ (uh-KROOD)
+          </p>
         </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Accrued</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Accrued&quot; means accumulated or gathered over time.
-              </div>
-            </div>
-          </Card>
+
+        <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+          <h3 className="text-2xl font-bold mb-4 text-red-900 flex items-center">
+            ❌ Incorrect: Acrued
+          </h3>
+          <p className="text-lg md:text-xl text-red-800 mb-4">
+            <strong>Why it&apos;s wrong:</strong> Missing the second &quot;c&quot; in the spelling.
+          </p>
+          <p className="text-lg md:text-xl text-red-800">
+            <strong>Common mistake:</strong> People often forget the double &quot;c&quot; in accrued.
+          </p>
         </div>
       </div>
 
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Accrued</span> (verb, past tense): Accumulated or gathered over time. To increase or accumulate gradually.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>Interest has accrued on the loan.</li>
-              <li>Vacation time accrued during the year.</li>
-              <li>The benefits accrued over several months.</li>
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Definition &amp; Meaning</h2>
+        <div className="text-lg md:text-xl text-blue-800 space-y-4">
+          <p>
+            <strong>Accrued</strong> is the past tense and past participle form of the verb &quot;accrue.&quot; It means to accumulate, increase, or grow over time, especially in financial contexts.
+          </p>
+          <p>
+            The word comes from the Latin &quot;accrescere,&quot; meaning &quot;to grow.&quot; The double &quot;c&quot; is essential to the correct spelling and pronunciation.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-purple-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-purple-900">Examples in Sentences</h2>
+        <div className="text-lg md:text-xl text-purple-800 space-y-4">
+          <p><strong>Correct usage:</strong></p>
+          <ul className="list-disc list-inside space-y-2 ml-4">
+            <li>Interest has <strong>accrued</strong> on the savings account.</li>
+            <li>Vacation time <strong>accrued</strong> while she was on leave.</li>
+            <li>The company <strong>accrued</strong> significant debt over the years.</li>
+            <li>Benefits <strong>accrued</strong> to all participants in the program.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="bg-indigo-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-indigo-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-4 text-lg md:text-xl text-indigo-800">
+          <div>
+            <h3 className="font-semibold mb-2">For &quot;accumulate&quot;:</h3>
+            <ul className="list-disc list-inside space-y-1 ml-4">
+              <li>Gathered</li>
+              <li>Collected</li>
+              <li>Amassed</li>
+              <li>Built up</li>
+              <li>Accumulated</li>
             </ul>
           </div>
-        </Card>
-      </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;accrued&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Financial:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Accumulated</li>
-                  <li>Earned</li>
-                  <li>Collected</li>
-                  <li>Gathered</li>
-                  <li>Amassed</li>
-                </ul>
-              </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">General:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Increased</li>
-                  <li>Grown</li>
-                  <li>Built up</li>
-                  <li>Developed</li>
-                  <li>Expanded</li>
-                </ul>
-              </div>
-            </div>
+          <div>
+            <h3 className="font-semibold mb-2">For &quot;increase&quot;:</h3>
+            <ul className="list-disc list-inside space-y-1 ml-4">
+              <li>Grown</li>
+              <li>Expanded</li>
+              <li>Multiplied</li>
+              <li>Escalated</li>
+              <li>Mounted</li>
+            </ul>
           </div>
-        </Card>
+        </div>
       </div>
 
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Accrued&quot; is the correct spelling. &quot;Acrued&quot; is a common misspelling—remember the double &quot;c&quot; in accrued.
+      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
+        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+          <li>Remember the double &quot;c&quot; in accrued - think of it as &quot;ac-crued&quot;</li>
+          <li>The word is related to &quot;accrue&quot; and &quot;accrual&quot;</li>
+          <li>Common misspellings include: acrued, accured, acrued</li>
+          <li>This word is commonly used in financial and business contexts</li>
+        </ul>
       </div>
 
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it acrued or accrued?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct spelling is &quot;accrued.&quot; &quot;Acrued&quot; is incorrect—it&apos;s missing the second &quot;c.&quot;</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce accrued?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈkruːd/ (uh-KROOD).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does accrued mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">It means accumulated or gathered over time, especially in financial contexts.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the difference between accrued and earned?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Accrued refers to accumulation over time, while earned specifically refers to receiving payment for work.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can accrued be used in formal writing?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;Interest has accrued on the account&quot; is appropriate in formal contexts.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What are common phrases with accrued?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Common phrases include: accrued interest, accrued benefits, accrued vacation, and accrued expenses.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is accrued used in financial contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;Accrued&quot; is commonly used in accounting, banking, and financial reporting.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the verb form of accrued?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The verb is &quot;accrue&quot; - to accumulate or gather over time.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the origin of accrued?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Accrued comes from Latin &quot;accrescere&quot; meaning to grow or increase.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can accrued be used in everyday conversation?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;Benefits have accrued&quot; or &quot;Interest accrued&quot; are common uses.</div>
-            </div>
-          </Card>
+      <div className="bg-gray-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900">FAQ</h2>
+        <div className="space-y-4">
+          <div>
+            <h3 className="text-lg font-semibold mb-2 text-gray-800">Why do people misspell &quot;accrued&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">The double &quot;c&quot; is unusual in English, and many people assume it should be spelled with a single &quot;c&quot; like many other words.</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-2 text-gray-800">Is &quot;acrued&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">No, &quot;acrued&quot; is always incorrect. The proper spelling always includes the double &quot;c.&quot;</p>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-2 text-gray-800">How can I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">Think of the phrase &quot;ac-crued&quot; or remember that it has two &quot;c&quot;s like &quot;accrue.&quot;</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <div className="text-lg md:text-xl text-green-800 space-y-3">
+          <p>
+            <strong>Accrued</strong> is the correct spelling, featuring a double &quot;c&quot; that is essential to the word&apos;s proper form. This word means to accumulate or increase over time.
+          </p>
+          <p>
+            The misspelling <strong>acrued</strong> (with a single &quot;c&quot;) is incorrect and should be avoided in all formal writing contexts.
+          </p>
+          <p>
+            Remember: Accrued has two &quot;c&quot;s - think of it as &quot;ac-crued&quot; to help you spell it correctly every time.
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 } 
