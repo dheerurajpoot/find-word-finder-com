@@ -1,183 +1,139 @@
-import { Metadata } from "next";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Acquire or Aquire - Which is Correct?",
-  description: "Learn the correct spelling between 'acquire' and 'aquire'. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Acquire or Aquire - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;acquire&quot; and &quot;aquire&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
 export default function AcquireVsAquirePage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <h1 className="text-5xl font-extrabold text-center mb-8">Acquire or Aquire</h1>
-      
-      <div className="bg-gradient-to-r from-blue-100 to-purple-100 p-6 rounded-lg mb-8">
-        <h2 className="text-2xl font-bold text-center mb-4">
-          Which spelling is correct?
-        </h2>
-        <p className="text-lg md:text-xl text-center">
-          Learn the difference between &quot;Acquire&quot; and &quot;Aquire&quot;. These are commonly confused spellings and how to use them correctly.
-        </p>
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Acquire or Aquire</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;acquire&quot; and &quot;aquire&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
       <div className="grid md:grid-cols-2 gap-6 mb-8">
-        <div className="bg-red-50 border-2 border-red-200 rounded-lg p-6">
-          <div className="text-3xl font-extrabold text-red-600 mb-2">❌ Aquire</div>
-          <div className="text-lg md:text-xl text-red-700">
-            This spelling is incorrect. &quot;Aquire&quot; is missing the &quot;c&quot; - it should be &quot;acquire.&quot;
-          </div>
-        </div>
-
-        <div className="bg-green-50 border-2 border-green-200 rounded-lg p-6">
-          <div className="text-3xl font-extrabold text-green-600 mb-2">✅ Acquire</div>
-          <div className="text-lg md:text-xl text-green-700">
-            This is the correct spelling. &quot;Acquire&quot; means to gain, obtain, or come to have something.
-          </div>
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Aquire</h3>
+            </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Aquire&quot; is a misspelling. The correct spelling is &quot;acquire&quot; with &quot;c&quot; after &quot;a&quot;.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Acquire</h3>
+            </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Acquire&quot; is the correct spelling. It means to gain possession of something or to learn a skill.</p>
+          </CardContent>
+        </Card>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Acquire (verb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">To gain possession of something; to learn or develop a skill, habit, or quality.</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-green-800 space-y-2">
+                  <li>• The company <strong>acquired</strong> a new subsidiary.</li>
+                  <li>• She <strong>acquired</strong> fluency in Spanish.</li>
+                  <li>• He <strong>acquired</strong> a taste for classical music.</li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Aquire (verb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Aquire&quot; is a misspelling of &quot;acquire&quot; and is not a valid English word.</p>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-red-800 space-y-2">
+                  <li>• &quot;Aquire&quot; is not used in standard English.</li>
+                  <li>• Always use <strong>acquire</strong> when referring to gaining possession.</li>
+                </ul>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
-
-      <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
-        <h2 className="text-3xl font-bold mb-4">Definition</h2>
-        <div className="text-lg md:text-xl space-y-4">
-          <p>
-            <span className="font-bold">Acquire</span> (verb): To gain, obtain, or come to have something; to learn or develop a skill, habit, or quality.
-          </p>
-          <div className="bg-gray-50 p-4 rounded-lg">
-            <h3 className="font-semibold mb-2">Examples:</h3>
-            <ul className="list-disc list-inside space-y-1">
-              <li>She acquired a new skill through practice.</li>
-              <li>The company acquired several smaller businesses.</li>
-              <li>He acquired a taste for classical music.</li>
-            </ul>
-          </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-green-900">Acquire:</h4>
+              <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Obtain</li>
+                <li>• Gain</li>
+                <li>• Get</li>
+                <li>• Learn</li>
+                <li>• Develop</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-red-900">Aquire:</h4>
+              <ul className="text-lg md:text-xl text-red-800 space-y-1">
+                <li>• (No valid synonyms; not a standard English word)</li>
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </div>
-
-      <div className="bg-blue-50 rounded-lg p-6 mb-8">
-        <h2 className="text-3xl font-bold mb-4">Synonyms</h2>
-        <div className="grid md:grid-cols-2 gap-4 text-lg md:text-xl">
-          <div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;acquire&quot;:</div>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Obtain</li>
-              <li>Gain</li>
-              <li>Get</li>
-              <li>Secure</li>
-              <li>Attain</li>
-              <li>Procure</li>
-              <li>Collect</li>
-              <li>Develop</li>
-            </ul>
-          </div>
-          <div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Related terms:</div>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Acquisition</li>
-              <li>Acquired</li>
-              <li>Acquiring</li>
-              <li>Purchase</li>
-              <li>Buy</li>
-              <li>Learn</li>
-              <li>Master</li>
-              <li>Possess</li>
-            </ul>
-          </div>
-        </div>
+      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+          <li>• <strong>Acquire</strong> is spelled with &quot;c&quot; after &quot;a&quot;, not just &quot;a&quot;.</li>
+          <li>• The word comes from Latin &quot;acquirere&quot; meaning to seek in addition to.</li>
+          <li>• Used in business, education, and general contexts.</li>
+          <li>• Can refer to both physical possessions and abstract qualities.</li>
+          <li>• &quot;Aquire&quot; is never correct in any context.</li>
+        </ul>
       </div>
-
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-8">
-        <h2 className="text-3xl font-bold mb-4">Usage Notes</h2>
-        <div className="text-lg md:text-xl space-y-4">
-          <p>
-            <strong>Note:</strong> &quot;Acquire&quot; is the correct spelling. &quot;Aquire&quot; is a common misspelling—remember to include the &quot;c&quot; after the &quot;a.&quot;
-          </p>
-          <p>
-            <strong>Tip:</strong> Think of &quot;acquisition&quot; to remember the correct spelling. The word comes from Latin &quot;acquirere&quot; meaning to seek in addition to.
-          </p>
-        </div>
-      </div>
-
-      <div className="bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-3xl font-bold mb-6">Frequently Asked Questions</h2>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
-          <div className="border-b border-gray-200 pb-4">
-            <div className="font-semibold text-lg md:text-xl mb-1">Is it aquire or acquire?</div>
-            <div className="text-lg md:text-xl text-muted-foreground">The correct spelling is &quot;acquire.&quot; &quot;Aquire&quot; is incorrect—it&apos;s missing the &quot;c.&quot;</div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;aquire&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;aquire&quot; is never correct. The proper spelling is always &quot;acquire.&quot;</p>
           </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce acquire?</div>
-            <div className="text-lg md:text-xl text-muted-foreground">It&apos;s pronounced as /əˈkwaɪər/ (uh-KWIRE).</div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;a&quot; + &quot;c&quot; + &quot;quire&quot; - like &quot;a&quot; with &quot;c&quot; and &quot;quire&quot;, not just &quot;a&quot;.</p>
           </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <div className="font-semibold text-lg md:text-xl mb-1">What does acquire mean?</div>
-            <div className="text-lg md:text-xl text-muted-foreground">Acquire means to gain, obtain, or come to have something; to learn or develop a skill, habit, or quality.</div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between acquire and obtain?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: They are very similar, but &quot;acquire&quot; often implies a more deliberate or gradual process.</p>
           </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <div className="font-semibold text-lg md:text-xl mb-1">How do you use acquire in a sentence?</div>
-            <div className="text-lg md:text-xl text-muted-foreground">You can say &quot;She acquired a new language&quot; or &quot;The company acquired a competitor.&quot;</div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can acquire be used in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;acquire&quot; is appropriate in both formal and informal writing contexts.</p>
           </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <div className="font-semibold text-lg md:text-xl mb-1">Is acquire formal or informal?</div>
-            <div className="text-lg md:text-xl text-muted-foreground">Acquire is more formal and is commonly used in professional, academic, and business contexts.</div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;aquire&quot; likely occurs because of confusion about the spelling or pronunciation.</p>
           </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the difference between acquire and get?</div>
-            <div className="text-lg md:text-xl text-muted-foreground">Acquire is more formal and suggests a deliberate process, while get is more casual and general.</div>
-          </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <div className="font-semibold text-lg md:text-xl mb-1">Can acquire be used in everyday conversation?</div>
-            <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;I acquired a new skill&quot; or &quot;She acquired a taste for coffee&quot; are common uses.</div>
-          </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the noun form of acquire?</div>
-            <div className="text-lg md:text-xl text-muted-foreground">The noun form is &quot;acquisition&quot; - meaning the act of acquiring or something acquired.</div>
-          </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the past tense of acquire?</div>
-            <div className="text-lg md:text-xl text-muted-foreground">The past tense is &quot;acquired&quot; - &quot;She acquired the company last year.&quot;</div>
-          </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the origin of acquire?</div>
-            <div className="text-lg md:text-xl text-muted-foreground">Acquire comes from Latin &quot;acquirere&quot; meaning to seek in addition to, from &quot;ad&quot; (to) + &quot;quaerere&quot; (to seek).</div>
-          </div>
-
-          <div className="border-b border-gray-200 pb-4">
-            <div className="font-semibold text-lg md:text-xl mb-1">Is acquire used in business contexts?</div>
-            <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;The company acquired new technology&quot; or &quot;We acquired new clients&quot; are common in business settings.</div>
-          </div>
-
-          <div className="pb-4">
-            <div className="font-semibold text-lg md:text-xl mb-1">What are common phrases with acquire?</div>
-            <div className="text-lg md:text-xl text-muted-foreground">Common phrases include: acquire knowledge, acquire skills, acquire property, and acquire a taste for.</div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;acquire&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: acquire knowledge, acquire skills, acquire property, acquire a taste, and acquire a habit.</p>
           </div>
         </div>
       </div>
-
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
-        <h2 className="text-3xl font-bold mb-4">Summary</h2>
-        <div className="text-lg md:text-xl space-y-4">
-          <p>
-            <strong>Correct spelling:</strong> Acquire
-          </p>
-          <p>
-            <strong>Incorrect spelling:</strong> Aquire
-          </p>
-          <p>
-            <strong>Meaning:</strong> To gain, obtain, or come to have something; to learn or develop a skill, habit, or quality.
-          </p>
-          <p>
-            <strong>Remember:</strong> Always include the &quot;c&quot; in acquire. Think of &quot;acquisition&quot; to remember the correct spelling.
-          </p>
-        </div>
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Acquire</strong> is the correct spelling with &quot;c&quot; after &quot;a&quot;. It means to gain possession of something or to learn a skill. The misspelling &quot;aquire&quot; is never correct.</p>
       </div>
     </div>
-  );
+  )
 } 

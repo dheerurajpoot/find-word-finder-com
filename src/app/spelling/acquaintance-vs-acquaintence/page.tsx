@@ -1,132 +1,139 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Acquaintence or Acquaintance - Which is Correct?",
-  description: "Learn the correct spelling between &apos;acquaintence&apos; and &apos;acquaintance&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Acquaintance or Acquaintence - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;acquaintance&quot; and &quot;acquaintence&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
 export default function AcquaintanceVsAcquaintencePage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Acquaintence or Acquaintance</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Did you mean &quot;Acquaintance&quot;?
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Acquaintance or Acquaintence</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;acquaintance&quot; and &quot;acquaintence&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Acquaintence</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Acquaintence&quot; is not a valid word in English.
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Acquaintence</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Acquaintance</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Acquaintance&quot; is a noun meaning a person one knows slightly.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Acquaintence&quot; is a misspelling. The correct spelling is &quot;acquaintance&quot; with &quot;ance&quot; at the end.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Acquaintance</h3>
             </div>
-          </Card>
-        </div>
-      </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Acquaintance</span> (noun): A person one knows slightly, but who is not a close friend; knowledge or experience of something.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>I met an old acquaintance at the conference.</li>
-              <li>She has many acquaintances but few close friends.</li>
-              <li>He has some acquaintance with the subject.</li>
-            </ul>
-          </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Acquaintance&quot; is the correct spelling. It refers to a person one knows slightly or a relationship of knowing someone.</p>
+          </CardContent>
         </Card>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;acquaintance&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Nouns:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Associate</li>
-                  <li>Contact</li>
-                  <li>Colleague</li>
-                  <li>Companion</li>
-                  <li>Connection</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Acquaintance (noun):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">A person one knows slightly; knowledge or experience of something; a relationship of knowing someone.</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-green-800 space-y-2">
+                  <li>• She is an <strong>acquaintance</strong> from work.</li>
+                  <li>• I have a passing <strong>acquaintance</strong> with French.</li>
+                  <li>• They are casual <strong>acquaintances</strong>.</li>
                 </ul>
               </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Related Terms:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Familiarity</li>
-                  <li>Knowledge</li>
-                  <li>Understanding</li>
-                  <li>Awareness</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Acquaintence (noun):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Acquaintence&quot; is a misspelling of &quot;acquaintance&quot; and is not a valid English word.</p>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-red-800 space-y-2">
+                  <li>• &quot;Acquaintence&quot; is not used in standard English.</li>
+                  <li>• Always use <strong>acquaintance</strong> when referring to someone you know.</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Acquaintance&quot; is the correct spelling for someone you know slightly. &quot;Acquaintence&quot; is a common misspelling—remember, the correct ending is &quot;-ance.&quot;
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it acquaintence or acquaintance?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;acquaintance.&quot; &quot;Acquaintence&quot; is a common misspelling.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce acquaintance?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əˈkweɪntəns/ (uh-KWAYN-tuns).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does acquaintance mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">A person one knows slightly, but who is not a close friend; knowledge or experience of something.</div>
-            </div>
+            </CardContent>
           </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-green-900">Acquaintance:</h4>
+              <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Contact</li>
+                <li>• Associate</li>
+                <li>• Connection</li>
+                <li>• Familiarity</li>
+                <li>• Knowledge</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-red-900">Acquaintence:</h4>
+              <ul className="text-lg md:text-xl text-red-800 space-y-1">
+                <li>• (No valid synonyms; not a standard English word)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+          <li>• <strong>Acquaintance</strong> is spelled with &quot;ance&quot; at the end, not &quot;ence&quot;.</li>
+          <li>• The word comes from &quot;acquaint&quot; + &quot;ance&quot; suffix.</li>
+          <li>• Used in social and formal contexts.</li>
+          <li>• Can refer to both people and knowledge of subjects.</li>
+          <li>• &quot;Acquaintence&quot; is never correct in any context.</li>
+        </ul>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;acquaintence&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;acquaintence&quot; is never correct. The proper spelling is always &quot;acquaintance.&quot;</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;acquaint&quot; + &quot;ance&quot; - like &quot;acquaint&quot; with &quot;ance&quot; ending, not &quot;ence&quot;.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between acquaintance and friend?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: An acquaintance is someone you know slightly, while a friend is someone you have a closer relationship with.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can acquaintance be used in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;acquaintance&quot; is appropriate in both formal and informal writing contexts.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;acquaintence&quot; likely occurs because of confusion about the &quot;ance&quot; vs &quot;ence&quot; ending.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;acquaintance&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: casual acquaintance, passing acquaintance, mutual acquaintance, and acquaintance rape.</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Acquaintance</strong> is the correct spelling with &quot;ance&quot; at the end. It refers to a person one knows slightly or a relationship of knowing someone. The misspelling &quot;acquaintence&quot; is never correct.</p>
       </div>
     </div>
-  );
+  )
 } 
