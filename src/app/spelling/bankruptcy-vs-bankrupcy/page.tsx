@@ -2,11 +2,11 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Bankruptcy vs Bankrupcy - Which is Correct? | Word Finder',
-  description: 'Learn the correct spelling between "bankruptcy" and "bankrupcy". Discover definitions, examples, and usage tips for these commonly confused words.',
+  description: 'Learn the correct spelling between &quot;bankruptcy&quot; and &quot;bankrupcy&quot;. Discover definitions, examples, and usage tips for these commonly confused words.',
   keywords: 'bankruptcy, bankrupcy, spelling, correct spelling, word comparison, English spelling',
   openGraph: {
     title: 'Bankruptcy vs Bankrupcy - Which is Correct?',
-    description: 'Learn the correct spelling between "bankruptcy" and "bankrupcy". Discover definitions, examples, and usage tips.',
+    description: 'Learn the correct spelling between &quot;bankruptcy&quot; and &quot;bankrupcy&quot;. Discover definitions, examples, and usage tips.',
     type: 'website',
   },
 }
@@ -29,7 +29,7 @@ export default function BankruptcyVsBankrupcyPage() {
             ❌ Bankrupcy
           </h3>
           <p className="text-lg md:text-xl text-red-800 mb-4">
-            This spelling is <strong>incorrect</strong>. The word "bankrupcy" does not exist in English.
+            This spelling is <strong>incorrect</strong>. The word &quot;bankrupcy&quot; does not exist in English.
           </p>
           <div className="bg-red-100 p-4 rounded">
             <p className="text-red-900 font-semibold">Incorrect Examples:</p>
@@ -46,7 +46,7 @@ export default function BankruptcyVsBankrupcyPage() {
             ✅ Bankruptcy
           </h3>
           <p className="text-lg md:text-xl text-green-800 mb-4">
-            This is the <strong>correct</strong> spelling. "Bankruptcy" is the proper legal term.
+            This is the <strong>correct</strong> spelling. &quot;Bankruptcy&quot; is the proper legal term.
           </p>
           <div className="bg-green-100 p-4 rounded">
             <p className="text-green-900 font-semibold">Correct Examples:</p>
@@ -96,9 +96,9 @@ export default function BankruptcyVsBankrupcyPage() {
       <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• "Bankruptcy" is always spelled with a "t" before the "c"</li>
-          <li>• The word comes from Italian "banca rotta" meaning "broken bench"</li>
-          <li>• In legal contexts, always use the correct spelling "bankruptcy"</li>
+          <li>• &quot;Bankruptcy&quot; is always spelled with a &quot;t&quot; before the &quot;c&quot;</li>
+          <li>• The word comes from Italian &quot;banca rotta&quot; meaning &quot;broken bench&quot;</li>
+          <li>• In legal contexts, always use the correct spelling &quot;bankruptcy&quot;</li>
           <li>• The pronunciation is /ˈbæŋkrəptsi/ (BANK-ruhp-see)</li>
           <li>• Different countries have different bankruptcy laws and procedures</li>
         </ul>
@@ -108,15 +108,15 @@ export default function BankruptcyVsBankrupcyPage() {
         <h2 className="text-2xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people misspell "bankruptcy" as "bankrupcy"?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people misspell &quot;bankruptcy&quot; as &quot;bankrupcy&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: This is likely due to phonetic confusion. The "t" sound in "bankruptcy" can be subtle in speech, leading some to omit it in writing.
+                              A: This is likely due to phonetic confusion. The &quot;t&quot; sound in &quot;bankruptcy&quot; can be subtle in speech, leading some to omit it in writing.
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is "bankrupcy" ever acceptable?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is &quot;bankrupcy&quot; ever acceptable?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: No, "bankrupcy" is never correct. Always use "bankruptcy" in all contexts.
+                              A: No, &quot;bankrupcy&quot; is never correct. Always use &quot;bankruptcy&quot; in all contexts.
             </p>
           </div>
           <div>
@@ -132,10 +132,10 @@ export default function BankruptcyVsBankrupcyPage() {
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <div className="text-lg md:text-xl text-green-800 space-y-4">
           <p>
-            <strong>Bankruptcy</strong> is the correct spelling of this legal term. The incorrect spelling "bankrupcy" should never be used.
+            <strong>Bankruptcy</strong> is the correct spelling of this legal term. The incorrect spelling &quot;bankrupcy&quot; should never be used.
           </p>
           <p>
-            Remember: Bankruptcy = Bank + rupt + cy (with a "t" before the "c"). This spelling is consistent across all English-speaking countries and legal systems.
+            Remember: Bankruptcy = Bank + rupt + cy (with a &quot;t&quot; before the &quot;c&quot;). This spelling is consistent across all English-speaking countries and legal systems.
           </p>
         </div>
       </div>

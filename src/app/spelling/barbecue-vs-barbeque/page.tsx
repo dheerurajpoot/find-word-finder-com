@@ -2,11 +2,11 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Barbecue vs Barbeque - Which is Correct? | Word Finder',
-  description: 'Learn the correct spelling between "barbecue" and "barbeque". Discover definitions, examples, and usage tips for these commonly confused words.',
+  description: 'Learn the correct spelling between &quot;barbecue&quot; and &quot;barbeque&quot;. Discover definitions, examples, and usage tips for these commonly confused words.',
   keywords: 'barbecue, barbeque, BBQ, spelling, correct spelling, word comparison, English spelling',
   openGraph: {
     title: 'Barbecue vs Barbeque - Which is Correct?',
-    description: 'Learn the correct spelling between "barbecue" and "barbeque". Discover definitions, examples, and usage tips.',
+    description: 'Learn the correct spelling between &quot;barbecue&quot; and &quot;barbeque&quot;. Discover definitions, examples, and usage tips.',
     type: 'website',
   },
 }
@@ -29,7 +29,7 @@ export default function BarbecueVsBarbequePage() {
             ❌ Barbeque
           </h3>
           <p className="text-lg md:text-xl text-red-800 mb-4">
-            This spelling is <strong>incorrect</strong>. "Barbeque" is a misspelling of the word "barbecue."
+            This spelling is <strong>incorrect</strong>. &quot;Barbeque&quot; is a misspelling of the word &quot;barbecue.&quot;
           </p>
           <div className="bg-red-100 p-4 rounded">
             <p className="text-red-900 font-semibold">Incorrect Examples:</p>
@@ -46,7 +46,7 @@ export default function BarbecueVsBarbequePage() {
             ✅ Barbecue
           </h3>
           <p className="text-lg md:text-xl text-green-800 mb-4">
-            This is the <strong>correct</strong> spelling. "Barbecue" is the proper English spelling.
+            This is the <strong>correct</strong> spelling. &quot;Barbecue&quot; is the proper English spelling.
           </p>
           <div className="bg-green-100 p-4 rounded">
             <p className="text-green-900 font-semibold">Correct Examples:</p>

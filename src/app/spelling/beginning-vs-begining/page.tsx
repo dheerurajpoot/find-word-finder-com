@@ -2,11 +2,11 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Beginning vs Begining - Which is Correct? | Word Finder',
-  description: 'Learn the correct spelling between "beginning" and "begining". Discover definitions, examples, and usage tips for these commonly confused words.',
+  description: 'Learn the correct spelling between &quot;beginning&quot; and &quot;begining&quot;. Discover definitions, examples, and usage tips for these commonly confused words.',
   keywords: 'beginning, begining, spelling, correct spelling, word comparison, English spelling, noun, verb',
   openGraph: {
     title: 'Beginning vs Begining - Which is Correct?',
-    description: 'Learn the correct spelling between "beginning" and "begining". Discover definitions, examples, and usage tips.',
+    description: 'Learn the correct spelling between &quot;beginning&quot; and &quot;begining&quot;. Discover definitions, examples, and usage tips.',
     type: 'website',
   },
 }
@@ -29,7 +29,7 @@ export default function BeginningVsBeginingPage() {
             ❌ Begining
           </h3>
           <p className="text-lg md:text-xl text-red-800 mb-4">
-            This spelling is <strong>incorrect</strong>. "Begining" is a misspelling of the word "beginning."
+            This spelling is <strong>incorrect</strong>. &quot;Begining&quot; is a misspelling of the word &quot;beginning.&quot;
           </p>
           <div className="bg-red-100 p-4 rounded">
             <p className="text-red-900 font-semibold">Incorrect Examples:</p>
@@ -46,7 +46,7 @@ export default function BeginningVsBeginingPage() {
             ✅ Beginning
           </h3>
           <p className="text-lg md:text-xl text-green-800 mb-4">
-            This is the <strong>correct</strong> spelling. "Beginning" is the proper English spelling.
+            This is the <strong>correct</strong> spelling. &quot;Beginning&quot; is the proper English spelling.
           </p>
           <div className="bg-green-100 p-4 rounded">
             <p className="text-green-900 font-semibold">Correct Examples:</p>
@@ -99,12 +99,12 @@ export default function BeginningVsBeginingPage() {
       <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• "Beginning" is always spelled with double "n" in the middle</li>
-          <li>• The word comes from "begin" + the suffix "-ing"</li>
+          <li>• &quot;Beginning&quot; is always spelled with double &quot;n&quot; in the middle</li>
+          <li>• The word comes from &quot;begin&quot; + the suffix &quot;-ing&quot;</li>
           <li>• The pronunciation is /bɪˈɡɪnɪŋ/ (bi-GIN-ing)</li>
-          <li>• "Begining" is a common misspelling but is never correct</li>
-          <li>• The double "n" follows the rule: double the final consonant before adding "-ing"</li>
-          <li>• This spelling pattern applies to other words like "running," "swimming," etc.</li>
+          <li>• &quot;Begining&quot; is a common misspelling but is never correct</li>
+          <li>• The double &quot;n&quot; follows the rule: double the final consonant before adding &quot;-ing&quot;</li>
+          <li>• This spelling pattern applies to other words like &quot;running,&quot; &quot;swimming,&quot; etc.</li>
         </ul>
       </div>
 
@@ -112,21 +112,21 @@ export default function BeginningVsBeginingPage() {
         <h2 className="text-2xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it "begining"?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it &quot;begining&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: This misspelling occurs because people forget to double the "n" when adding the "-ing" suffix to "begin." The rule is to double the final consonant before adding "-ing."
+              A: This misspelling occurs because people forget to double the &quot;n&quot; when adding the &quot;-ing&quot; suffix to &quot;begin.&quot; The rule is to double the final consonant before adding &quot;-ing.&quot;
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is "begining" ever acceptable?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is &quot;begining&quot; ever acceptable?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: No, "begining" is always incorrect. Always use "beginning" in all contexts.
+                              A: No, &quot;begining&quot; is always incorrect. Always use &quot;beginning&quot; in all contexts.
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between "beginning" and "start"?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between &quot;beginning&quot; and &quot;start&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: Both refer to the commencement of something, but "beginning" often implies the very first part or origin, while "start" can refer to any point where something begins.
+              A: Both refer to the commencement of something, but &quot;beginning&quot; often implies the very first part or origin, while &quot;start&quot; can refer to any point where something begins.
             </p>
           </div>
         </div>
@@ -136,10 +136,10 @@ export default function BeginningVsBeginingPage() {
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <div className="text-lg md:text-xl text-green-800 space-y-4">
           <p>
-            <strong>Beginning</strong> is the correct spelling of this word. The incorrect spelling "begining" should never be used.
+            <strong>Beginning</strong> is the correct spelling of this word. The incorrect spelling &quot;begining&quot; should never be used.
           </p>
           <p>
-            Remember: Beginning = Begin + ning (with double "n"). This follows the English spelling rule of doubling the final consonant before adding "-ing" to words ending in consonant-vowel-consonant.
+            Remember: Beginning = Begin + ning (with double &quot;n&quot;). This follows the English spelling rule of doubling the final consonant before adding &quot;-ing&quot; to words ending in consonant-vowel-consonant.
           </p>
         </div>
       </div>
