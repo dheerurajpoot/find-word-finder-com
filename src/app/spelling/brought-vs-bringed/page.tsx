@@ -1,59 +1,59 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Brought or Brought - Which is Correct? | Word Finder',
-  description: 'Learn the correct spelling between &quot;brought&quot; and &quot;brought&quot;. Discover definitions, examples, and usage tips for these commonly confused words.',
-  keywords: 'brought, brought, spelling, correct spelling, word comparison, English spelling, past tense, irregular verb',
+  title: 'Brought or Bringed - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;brought&quot; and &quot;bringed&quot;. Discover definitions, examples, and usage tips for these commonly confused words.',
+  keywords: 'brought, bringed, spelling, correct spelling, word comparison, English spelling, past tense, irregular verb',
   openGraph: {
-    title: 'Brought or Brought - Which is Correct?',
-    description: 'Learn the correct spelling between &quot;brought&quot; and &quot;brought&quot;. Discover definitions, examples, and usage tips.',
+    title: 'Brought or Bringed - Which is Correct?',
+    description: 'Learn the correct spelling between &quot;brought&quot; and &quot;bringed&quot;. Discover definitions, examples, and usage tips.',
     type: 'website',
   },
 }
 
-export default function BroughtVsBroughtPage() {
+export default function BroughtVsBringedPage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Brought or Brought</h1>
+      <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Brought or Bringed</h1>
       
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Which Spelling is Correct?</h2>
         <p className="text-lg md:text-xl opacity-90">
-          Understanding the correct spelling of &quot;Brought&quot; and &quot;Brought&quot;. This is the past tense and past participle form of the verb &quot;bring.&quot;
+          Understanding the correct spelling of &quot;Brought&quot; and &quot;Bringed&quot;. This is the past tense and past participle form of the verb &quot;bring.&quot;
         </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 mb-8">
         <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
           <h3 className="text-2xl font-bold mb-4 text-red-900 flex items-center">
-            ❌ Brought (Incorrect Usage)
+            ❌ Bringed
           </h3>
           <p className="text-lg md:text-xl text-red-800 mb-4">
-            This spelling is <strong>incorrect</strong> when used in the wrong context. &quot;Brought&quot; is the past tense of &quot;bring.&quot;
+            This spelling is <strong>incorrect</strong>. &quot;Bringed&quot; is a misspelling of the word &quot;brought.&quot;
           </p>
           <div className="bg-red-100 p-4 rounded">
             <p className="text-red-900 font-semibold">Incorrect Examples:</p>
             <ul className="text-red-800 mt-2 space-y-1">
-              <li>• I will brought the book tomorrow</li>
-              <li>• She broughts the food every day</li>
-              <li>• They are broughting the supplies</li>
+              <li>• I bringed the book to class</li>
+              <li>• She bringed her friend to the party</li>
+              <li>• They bringed the food yesterday</li>
             </ul>
           </div>
         </div>
 
         <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
           <h3 className="text-2xl font-bold mb-4 text-green-900 flex items-center">
-            ✅ Brought (Correct Usage)
+            ✅ Brought
           </h3>
           <p className="text-lg md:text-xl text-green-800 mb-4">
-            This is the <strong>correct</strong> spelling when used properly. &quot;Brought&quot; is the proper English spelling.
+            This is the <strong>correct</strong> spelling. &quot;Brought&quot; is the proper English spelling.
           </p>
           <div className="bg-green-100 p-4 rounded">
             <p className="text-green-900 font-semibold">Correct Examples:</p>
             <ul className="text-green-800 mt-2 space-y-1">
-              <li>• I brought the book yesterday</li>
-              <li>• She brought the food last week</li>
-              <li>• They brought the supplies</li>
+              <li>• I brought the book to class</li>
+              <li>• She brought her friend to the party</li>
+              <li>• They brought the food yesterday</li>
             </ul>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function BroughtVsBroughtPage() {
           <li>• &quot;Brought&quot; is the irregular past tense and past participle of &quot;bring&quot;</li>
           <li>• The word comes from Old English &quot;brōhte&quot; (past tense of &quot;bringan&quot;)</li>
           <li>• The pronunciation is /brɔːt/ (brawt)</li>
-          <li>• &quot;Brought&quot; is used for both past tense and past participle</li>
+          <li>• &quot;Bringed&quot; is a common misspelling but is never correct</li>
           <li>• &quot;Bring&quot; is an irregular verb: bring → brought → brought</li>
           <li>• This follows the same pattern as other irregular verbs like &quot;think&quot; → &quot;thought&quot;</li>
         </ul>
@@ -115,27 +115,27 @@ export default function BroughtVsBroughtPage() {
         <h2 className="text-2xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: When should I use &quot;brought&quot;?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it &quot;bringed&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: Use &quot;brought&quot; for past tense and past participle forms of &quot;bring.&quot; For example: &quot;I brought the book&quot; (past tense) or &quot;I have brought the book&quot; (past participle).
+              A: This misspelling occurs because people try to apply the regular verb pattern (add &quot;-ed&quot;) to &quot;bring,&quot; but &quot;bring&quot; is an irregular verb that doesn&apos;t follow this rule.
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between &quot;bring&quot; and &quot;brought&quot;?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is &quot;bringed&quot; ever acceptable?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: No, &quot;bringed&quot; is always incorrect. Always use &quot;brought&quot; in all contexts.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between &quot;brought&quot; and &quot;bring&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
               A: &quot;Bring&quot; is the base form (present tense), while &quot;brought&quot; is the past tense and past participle form of the same verb.
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Can I use &quot;brought&quot; in the future tense?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: How do I remember the correct spelling?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: No, &quot;brought&quot; is only for past tense and past participle. For future tense, use &quot;will bring&quot; or &quot;going to bring.&quot;
-            </p>
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: How do I remember the correct usage?</h3>
-            <p className="text-lg md:text-xl text-gray-700">
-              A: Remember that &quot;brought&quot; is for past actions only. Think: &quot;I bring&quot; (present), &quot;I brought&quot; (past), &quot;I have brought&quot; (past participle).
+              A: Remember that &quot;bring&quot; is an irregular verb like &quot;think&quot; → &quot;thought.&quot; The past tense is &quot;brought,&quot; not &quot;bringed.&quot;
             </p>
           </div>
         </div>
@@ -145,10 +145,10 @@ export default function BroughtVsBroughtPage() {
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <div className="text-lg md:text-xl text-green-800 space-y-4">
           <p>
-            <strong>Brought</strong> is the correct spelling of this word when used in the proper context (past tense and past participle).
+            <strong>Brought</strong> is the correct spelling of this word. The incorrect spelling &quot;bringed&quot; should never be used.
           </p>
           <p>
-            Remember: Bring is an irregular verb (bring → brought → brought). Use &quot;brought&quot; only for past actions, not for present or future tense.
+            Remember: Bring is an irregular verb (bring → brought → brought). The past tense is &quot;brought,&quot; not &quot;bringed,&quot; just like &quot;think&quot; → &quot;thought.&quot;
           </p>
         </div>
       </div>
