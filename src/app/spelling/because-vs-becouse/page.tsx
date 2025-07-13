@@ -29,7 +29,7 @@ export default function BecauseVsBecousePage() {
             ❌ Becouse
           </h3>
           <p className="text-lg md:text-xl text-red-800 mb-4">
-            This spelling is <strong>incorrect</strong>. "Becouse" is a misspelling of the word "because."
+            This spelling is <strong>incorrect</strong>. &quot;Becouse&quot; is a misspelling of the word &quot;because.&quot;
           </p>
           <div className="bg-red-100 p-4 rounded">
             <p className="text-red-900 font-semibold">Incorrect Examples:</p>
@@ -46,7 +46,7 @@ export default function BecauseVsBecousePage() {
             ✅ Because
           </h3>
           <p className="text-lg md:text-xl text-green-800 mb-4">
-            This is the <strong>correct</strong> spelling. "Because" is the proper English spelling.
+            This is the <strong>correct</strong> spelling. &quot;Because&quot; is the proper English spelling.
           </p>
           <div className="bg-green-100 p-4 rounded">
             <p className="text-green-900 font-semibold">Correct Examples:</p>
@@ -99,12 +99,12 @@ export default function BecauseVsBecousePage() {
       <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• "Because" is always spelled with "au" in the middle</li>
-          <li>• The word comes from Middle English "bi cause" meaning "by cause"</li>
+          <li>• &quot;Because&quot; is always spelled with &quot;au&quot; in the middle</li>
+          <li>• The word comes from Middle English &quot;bi cause&quot; meaning &quot;by cause&quot;</li>
           <li>• The pronunciation is /bɪˈkɔːz/ (bi-KAWZ)</li>
-          <li>• "Becouse" is a common misspelling but is never correct</li>
-          <li>• "Because of" is a common phrase meaning "due to" or "on account of"</li>
-          <li>• Avoid starting sentences with "because" in formal writing unless the sentence is complete</li>
+          <li>• &quot;Becouse&quot; is a common misspelling but is never correct</li>
+          <li>• &quot;Because of&quot; is a common phrase meaning &quot;due to&quot; or &quot;on account of&quot;</li>
+          <li>• Avoid starting sentences with &quot;because&quot; in formal writing unless the sentence is complete</li>
         </ul>
       </div>
 
@@ -112,21 +112,21 @@ export default function BecauseVsBecousePage() {
         <h2 className="text-2xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it "becouse"?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it &quot;becouse&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: This misspelling likely occurs because the "au" sound in "because" can be pronounced differently in various accents, leading some to hear and write it as "becouse."
+              A: This misspelling likely occurs because the &quot;au&quot; sound in &quot;because&quot; can be pronounced differently in various accents, leading some to hear and write it as &quot;becouse.&quot;
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is "becouse" ever acceptable?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is &quot;becouse&quot; ever acceptable?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: No, "becouse" is always incorrect. Always use "because" in all contexts.
+              A: No, &quot;becouse&quot; is always incorrect. Always use &quot;because&quot; in all contexts.
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between "because" and "since"?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between &quot;because&quot; and &quot;since&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: Both can introduce reasons, but "since" can also refer to time. "Because" is more specific to causation and is often preferred for clarity.
+              A: Both can introduce reasons, but &quot;since&quot; can also refer to time. &quot;Because&quot; is more specific to causation and is often preferred for clarity.
             </p>
           </div>
         </div>
@@ -136,10 +136,10 @@ export default function BecauseVsBecousePage() {
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <div className="text-lg md:text-xl text-green-800 space-y-4">
           <p>
-            <strong>Because</strong> is the correct spelling of this conjunction. The incorrect spelling "becouse" should never be used.
+            <strong>Because</strong> is the correct spelling of this conjunction. The incorrect spelling &quot;becouse&quot; should never be used.
           </p>
           <p>
-            Remember: Because = Be + cause (with "au" in the middle). This spelling is consistent across all English-speaking countries and is one of the most fundamental words in the language.
+            Remember: Because = Be + cause (with &quot;au&quot; in the middle). This spelling is consistent across all English-speaking countries and is one of the most fundamental words in the language.
           </p>
         </div>
       </div>

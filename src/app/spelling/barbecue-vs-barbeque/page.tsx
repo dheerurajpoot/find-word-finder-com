@@ -99,12 +99,12 @@ export default function BarbecueVsBarbequePage() {
       <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• "Barbecue" is the standard English spelling</li>
-          <li>• The word comes from Spanish "barbacoa" and ultimately from Taino "barbakoa"</li>
-          <li>• "BBQ" is an acceptable abbreviation in informal contexts</li>
+          <li>• &quot;Barbecue&quot; is the standard English spelling</li>
+          <li>• The word comes from Spanish &quot;barbacoa&quot; and ultimately from Taino &quot;barbakoa&quot;</li>
+          <li>• &quot;BBQ&quot; is an acceptable abbreviation in informal contexts</li>
           <li>• The pronunciation is /ˈbɑːrbɪkjuː/ (BAR-bi-kyoo)</li>
           <li>• Regional variations exist in cooking styles and terminology</li>
-          <li>• "Barbeque" is a common misspelling but should be avoided in formal writing</li>
+          <li>• &quot;Barbeque&quot; is a common misspelling but should be avoided in formal writing</li>
         </ul>
       </div>
 
@@ -112,15 +112,15 @@ export default function BarbecueVsBarbequePage() {
         <h2 className="text-2xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it "barbeque"?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it &quot;barbeque&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: This misspelling likely occurs because the "c" sound in "barbecue" can be subtle, and some people hear it as "barbeque" when spoken quickly.
+              A: This misspelling likely occurs because the &quot;c&quot; sound in &quot;barbecue&quot; can be subtle, and some people hear it as &quot;barbeque&quot; when spoken quickly.
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is "barbeque" ever acceptable?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is &quot;barbeque&quot; ever acceptable?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: No, "barbeque" is always incorrect. Always use "barbecue" in formal and informal writing.
+              A: No, &quot;barbeque&quot; is always incorrect. Always use &quot;barbecue&quot; in formal and informal writing.
             </p>
           </div>
           <div>
@@ -136,10 +136,10 @@ export default function BarbecueVsBarbequePage() {
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <div className="text-lg md:text-xl text-green-800 space-y-4">
           <p>
-            <strong>Barbecue</strong> is the correct spelling of this cooking method and social event. The incorrect spelling "barbeque" should never be used.
+            <strong>Barbecue</strong> is the correct spelling of this cooking method and social event. The incorrect spelling &quot;barbeque&quot; should never be used.
           </p>
           <p>
-            Remember: Barbecue = Bar + be + cue (with a "c" before the "ue"). This spelling is consistent across all English-speaking countries and is the standard in dictionaries and formal writing.
+            Remember: Barbecue = Bar + be + cue (with a &quot;c&quot; before the &quot;ue&quot;). This spelling is consistent across all English-speaking countries and is the standard in dictionaries and formal writing.
           </p>
         </div>
       </div>

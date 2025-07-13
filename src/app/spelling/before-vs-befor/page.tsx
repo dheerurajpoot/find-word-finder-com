@@ -29,7 +29,7 @@ export default function BeforeVsBeforPage() {
             ❌ Befor
           </h3>
           <p className="text-lg md:text-xl text-red-800 mb-4">
-            This spelling is <strong>incorrect</strong>. "Befor" is a misspelling of the word "before."
+            This spelling is <strong>incorrect</strong>. &quot;Befor&quot; is a misspelling of the word &quot;before.&quot;
           </p>
           <div className="bg-red-100 p-4 rounded">
             <p className="text-red-900 font-semibold">Incorrect Examples:</p>
@@ -46,7 +46,7 @@ export default function BeforeVsBeforPage() {
             ✅ Before
           </h3>
           <p className="text-lg md:text-xl text-green-800 mb-4">
-            This is the <strong>correct</strong> spelling. "Before" is the proper English spelling.
+            This is the <strong>correct</strong> spelling. &quot;Before&quot; is the proper English spelling.
           </p>
           <div className="bg-green-100 p-4 rounded">
             <p className="text-green-900 font-semibold">Correct Examples:</p>
@@ -102,11 +102,11 @@ export default function BeforeVsBeforPage() {
       <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• "Before" is always spelled with "e" at the end</li>
-          <li>• The word comes from Old English "beforan" meaning "in front of"</li>
+          <li>• &quot;Before&quot; is always spelled with &quot;e&quot; at the end</li>
+          <li>• The word comes from Old English &quot;beforan&quot; meaning &quot;in front of&quot;</li>
           <li>• The pronunciation is /bɪˈfɔːr/ (bi-FOR)</li>
-          <li>• "Befor" is a common misspelling but is never correct</li>
-          <li>• "Before" can function as a preposition, adverb, or conjunction</li>
+          <li>• &quot;Befor&quot; is a common misspelling but is never correct</li>
+          <li>• &quot;Before&quot; can function as a preposition, adverb, or conjunction</li>
           <li>• The word is essential for expressing time relationships and sequences</li>
         </ul>
       </div>
@@ -115,21 +115,21 @@ export default function BeforeVsBeforPage() {
         <h2 className="text-2xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it "befor"?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it &quot;befor&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: This misspelling likely occurs because the final "e" in "before" can be subtle in pronunciation, leading some to omit it in writing.
+              A: This misspelling likely occurs because the final &quot;e&quot; in &quot;before&quot; can be subtle in pronunciation, leading some to omit it in writing.
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is "befor" ever acceptable?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is &quot;befor&quot; ever acceptable?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: No, "befor" is always incorrect. Always use "before" in all contexts.
+              A: No, &quot;befor&quot; is always incorrect. Always use &quot;before&quot; in all contexts.
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between "before" and "prior to"?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between &quot;before&quot; and &quot;prior to&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: Both mean the same thing, but "prior to" is more formal. "Before" is more commonly used in everyday speech and writing.
+              A: Both mean the same thing, but &quot;prior to&quot; is more formal. &quot;Before&quot; is more commonly used in everyday speech and writing.
             </p>
           </div>
         </div>
@@ -139,10 +139,10 @@ export default function BeforeVsBeforPage() {
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <div className="text-lg md:text-xl text-green-800 space-y-4">
           <p>
-            <strong>Before</strong> is the correct spelling of this essential word. The incorrect spelling "befor" should never be used.
+            <strong>Before</strong> is the correct spelling of this essential word. The incorrect spelling &quot;befor&quot; should never be used.
           </p>
           <p>
-            Remember: Before = Be + for + e (with an "e" at the end). This spelling is consistent across all English-speaking countries and is one of the most fundamental words for expressing time relationships.
+            Remember: Before = Be + for + e (with an &quot;e&quot; at the end). This spelling is consistent across all English-speaking countries and is one of the most fundamental words for expressing time relationships.
           </p>
         </div>
       </div>

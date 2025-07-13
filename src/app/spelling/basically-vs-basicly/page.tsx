@@ -29,7 +29,7 @@ export default function BasicallyVsBasiclyPage() {
             ❌ Basicly
           </h3>
           <p className="text-lg md:text-xl text-red-800 mb-4">
-            This spelling is <strong>incorrect</strong>. "Basicly" is a misspelling of the word "basically."
+            This spelling is <strong>incorrect</strong>. &quot;Basicly&quot; is a misspelling of the word &quot;basically.&quot;
           </p>
           <div className="bg-red-100 p-4 rounded">
             <p className="text-red-900 font-semibold">Incorrect Examples:</p>
@@ -46,7 +46,7 @@ export default function BasicallyVsBasiclyPage() {
             ✅ Basically
           </h3>
           <p className="text-lg md:text-xl text-green-800 mb-4">
-            This is the <strong>correct</strong> spelling. "Basically" is the proper English spelling.
+            This is the <strong>correct</strong> spelling. &quot;Basically&quot; is the proper English spelling.
           </p>
           <div className="bg-green-100 p-4 rounded">
             <p className="text-green-900 font-semibold">Correct Examples:</p>
@@ -99,11 +99,11 @@ export default function BasicallyVsBasiclyPage() {
       <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• "Basically" is always spelled with "ally" at the end</li>
-          <li>• The word comes from "basic" + the suffix "-ally"</li>
+          <li>• &quot;Basically&quot; is always spelled with &quot;ally&quot; at the end</li>
+          <li>• The word comes from &quot;basic&quot; + the suffix &quot;-ally&quot;</li>
           <li>• The pronunciation is /ˈbeɪsɪkli/ (BAY-sik-lee)</li>
-          <li>• "Basicly" is a common misspelling but is never correct</li>
-          <li>• Overuse of "basically" in speech can make communication less precise</li>
+          <li>• &quot;Basicly&quot; is a common misspelling but is never correct</li>
+          <li>• Overuse of &quot;basically&quot; in speech can make communication less precise</li>
           <li>• In formal writing, consider using more specific alternatives</li>
         </ul>
       </div>
@@ -112,21 +112,21 @@ export default function BasicallyVsBasiclyPage() {
         <h2 className="text-2xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it "basicly"?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it &quot;basicly&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: This misspelling occurs because the "al" sound in "basically" can be subtle when spoken quickly, leading some to hear and write it as "basicly."
+              A: This misspelling occurs because the &quot;al&quot; sound in &quot;basically&quot; can be subtle when spoken quickly, leading some to hear and write it as &quot;basicly.&quot;
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is "basicly" ever acceptable?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is &quot;basicly&quot; ever acceptable?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: No, "basicly" is always incorrect. Always use "basically" in all contexts.
+              A: No, &quot;basicly&quot; is always incorrect. Always use &quot;basically&quot; in all contexts.
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: How should I use "basically" in writing?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: How should I use &quot;basically&quot; in writing?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: Use "basically" sparingly and purposefully. It&apos;s acceptable in informal writing but consider more precise alternatives in formal contexts.
+              A: Use &quot;basically&quot; sparingly and purposefully. It&apos;s acceptable in informal writing but consider more precise alternatives in formal contexts.
             </p>
           </div>
         </div>
@@ -136,10 +136,10 @@ export default function BasicallyVsBasiclyPage() {
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <div className="text-lg md:text-xl text-green-800 space-y-4">
           <p>
-            <strong>Basically</strong> is the correct spelling of this adverb. The incorrect spelling "basicly" should never be used.
+            <strong>Basically</strong> is the correct spelling of this adverb. The incorrect spelling &quot;basicly&quot; should never be used.
           </p>
           <p>
-            Remember: Basically = Basic + ally (with "ally" at the end). This spelling follows the standard English pattern for forming adverbs from adjectives ending in "-ic."
+            Remember: Basically = Basic + ally (with &quot;ally&quot; at the end). This spelling follows the standard English pattern for forming adverbs from adjectives ending in &quot;-ic.&quot;
           </p>
         </div>
       </div>
