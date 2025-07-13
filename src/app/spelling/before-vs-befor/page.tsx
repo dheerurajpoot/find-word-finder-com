@@ -1,149 +1,150 @@
 import { Metadata } from 'next'
-import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Before or Befor - Which is Correct? | Word Finder',
-  description: 'Learn the correct spelling between &quot;before&quot; and &quot;befor&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+  title: 'Before vs Befor - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between "before" and "befor". Discover definitions, examples, and usage tips for these commonly confused words.',
+  keywords: 'before, befor, spelling, correct spelling, word comparison, English spelling, preposition, adverb',
+  openGraph: {
+    title: 'Before vs Befor - Which is Correct?',
+    description: 'Learn the correct spelling between "before" and "befor". Discover definitions, examples, and usage tips.',
+    type: 'website',
+  },
 }
 
 export default function BeforeVsBeforPage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Before or Befor</h1>
-      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;before&quot; and &quot;befor&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
+      <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Before vs Befor</h1>
+      
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl opacity-90">
+          Understanding the correct spelling of this essential time-related word.
+        </p>
       </div>
-      <div className="grid md:grid-cols-2 gap-6 mb-8">
-        <Card className="border-2 border-red-500 bg-red-50">
-          <CardContent className="p-6">
-            <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">❌</span>
-              <h3 className="text-2xl font-bold text-red-800">Incorrect: Befor</h3>
-            </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Befor&quot; is a misspelling. The correct spelling is &quot;before&quot; with &quot;e&quot; at the end.</p>
-          </CardContent>
-        </Card>
-        <Card className="border-2 border-green-500 bg-green-50">
-          <CardContent className="p-6">
-            <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">✅</span>
-              <h3 className="text-2xl font-bold text-green-800">Correct: Before</h3>
-            </div>
-            <p className="text-lg md:text-xl text-green-700">&quot;Before&quot; is the correct spelling. It means earlier than, in front of, or prior to.</p>
-          </CardContent>
-        </Card>
-      </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="bg-white shadow-md border">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-green-900">Before (preposition/adverb/conjunction):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">Earlier than; in front of; prior to; in advance of.</p>
-              <div className="bg-green-50 p-4 rounded-lg">
-                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
-                <ul className="text-lg md:text-xl text-green-800 space-y-2">
-                  <li>• I&apos;ll see you <strong>before</strong> the meeting.</li>
-                  <li>• She arrived <strong>before</strong> everyone else.</li>
-                  <li>• Think <strong>before</strong> you speak.</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
-          <Card className="bg-white shadow-md border">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-red-900">Befor (preposition/adverb/conjunction):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Befor&quot; is a misspelling of &quot;before&quot; and is not a valid English word.</p>
-              <div className="bg-red-50 p-4 rounded-lg">
-                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
-                <ul className="text-lg md:text-xl text-red-800 space-y-2">
-                  <li>• &quot;Befor&quot; is not used in standard English.</li>
-                  <li>• Always use <strong>before</strong> when referring to time or position.</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
+
+      <div className="grid md:grid-cols-2 gap-8 mb-8">
+        <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+          <h3 className="text-2xl font-bold mb-4 text-red-900 flex items-center">
+            ❌ Befor
+          </h3>
+          <p className="text-lg md:text-xl text-red-800 mb-4">
+            This spelling is <strong>incorrect</strong>. "Befor" is a misspelling of the word "before."
+          </p>
+          <div className="bg-red-100 p-4 rounded">
+            <p className="text-red-900 font-semibold">Incorrect Examples:</p>
+            <ul className="text-red-800 mt-2 space-y-1">
+              <li>• I saw her befor the meeting</li>
+              <li>• Please arrive befor 3 PM</li>
+              <li>• He had never been there befor</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-2xl font-bold mb-4 text-green-900 flex items-center">
+            ✅ Before
+          </h3>
+          <p className="text-lg md:text-xl text-green-800 mb-4">
+            This is the <strong>correct</strong> spelling. "Before" is the proper English spelling.
+          </p>
+          <div className="bg-green-100 p-4 rounded">
+            <p className="text-green-900 font-semibold">Correct Examples:</p>
+            <ul className="text-green-800 mt-2 space-y-1">
+              <li>• I saw her before the meeting</li>
+              <li>• Please arrive before 3 PM</li>
+              <li>• He had never been there before</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="bg-green-100">
-            <CardContent className="p-6">
-              <h4 className="text-xl font-semibold mb-2 text-green-900">Before:</h4>
-              <ul className="text-lg md:text-xl text-green-800 space-y-1">
-                <li>• Prior to</li>
-                <li>• Earlier than</li>
-                <li>• In front of</li>
-                <li>• Preceding</li>
-                <li>• Ahead of</li>
-              </ul>
-            </CardContent>
-          </Card>
-          <Card className="bg-red-100">
-            <CardContent className="p-6">
-              <h4 className="text-xl font-semibold mb-2 text-red-900">Befor:</h4>
-              <ul className="text-lg md:text-xl text-red-800 space-y-1">
-                <li>• (No valid synonyms; not a standard English word)</li>
-              </ul>
-            </CardContent>
-          </Card>
+
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Definition of Before</h2>
+        <div className="text-lg md:text-xl text-blue-800 space-y-4">
+          <p>
+            <strong>Before</strong> (preposition): Earlier than; in front of; in the presence of.
+          </p>
+          <p>
+            <strong>Before</strong> (adverb): At an earlier time; previously; in advance.
+          </p>
+          <p>
+            <strong>Before</strong> (conjunction): Earlier than the time when; rather than; in preference to.
+          </p>
+          <p>
+            Used to indicate time, position, or preference in various contexts.
+          </p>
         </div>
       </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
-        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
-          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
-          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Before</strong> is spelled with &quot;e&quot; at the end - this is the standard English spelling.</li>
-            <li>• The word comes from Old English &quot;beforan&quot; meaning in front of or earlier.</li>
-            <li>• &quot;Befor&quot; is never correct in any context.</li>
-            <li>• Can be used as preposition, adverb, or conjunction.</li>
-            <li>• Common in both formal and informal contexts.</li>
-          </ul>
+
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Synonyms for Before</h2>
+        <div className="grid md:grid-cols-2 gap-4 text-lg md:text-xl text-blue-800">
+          <div>
+            <ul className="space-y-2">
+              <li>• Prior to</li>
+              <li>• Earlier than</li>
+              <li>• In front of</li>
+              <li>• Ahead of</li>
+            </ul>
+          </div>
+          <div>
+            <ul className="space-y-2">
+              <li>• Previously</li>
+              <li>• Formerly</li>
+              <li>• In advance</li>
+              <li>• Preceding</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+
+      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
+        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+          <li>• "Before" is always spelled with "e" at the end</li>
+          <li>• The word comes from Old English "beforan" meaning "in front of"</li>
+          <li>• The pronunciation is /bɪˈfɔːr/ (bi-FOR)</li>
+          <li>• "Befor" is a common misspelling but is never correct</li>
+          <li>• "Before" can function as a preposition, adverb, or conjunction</li>
+          <li>• The word is essential for expressing time relationships and sequences</li>
+        </ul>
+      </div>
+
+      <div className="bg-gray-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;befor&quot; ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;befor&quot; is never correct. The proper spelling is always &quot;before.&quot;</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it "befor"?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: This misspelling likely occurs because the final "e" in "before" can be subtle in pronunciation, leading some to omit it in writing.
+            </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does before mean?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Before means earlier than, in front of, prior to, or in advance of.</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is "befor" ever acceptable?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: No, "befor" is always incorrect. Always use "before" in all contexts.
+            </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember that &quot;before&quot; ends with &quot;e&quot; - think of &quot;be&quot; + &quot;fore.&quot;</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between before and after?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Before&quot; refers to earlier time or position, while &quot;after&quot; refers to later time or position.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can before be used as a conjunction?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;before&quot; can be used as a conjunction to connect clauses.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases with before?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Examples include: before long, before now, before you know it, and before time.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is before used in formal writing?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;before&quot; is appropriate in both formal and informal contexts.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can before be used as a noun?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;before&quot; is only used as a preposition, adverb, or conjunction.</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between "before" and "prior to"?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: Both mean the same thing, but "prior to" is more formal. "Before" is more commonly used in everyday speech and writing.
+            </p>
           </div>
         </div>
       </div>
+
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Before</strong> is the correct spelling with &quot;e&quot; at the end. It means earlier than, in front of, or prior to. The misspelling &quot;befor&quot; is never correct in English.</p>
+        <div className="text-lg md:text-xl text-green-800 space-y-4">
+          <p>
+            <strong>Before</strong> is the correct spelling of this essential word. The incorrect spelling "befor" should never be used.
+          </p>
+          <p>
+            Remember: Before = Be + for + e (with an "e" at the end). This spelling is consistent across all English-speaking countries and is one of the most fundamental words for expressing time relationships.
+          </p>
+        </div>
       </div>
     </div>
   )

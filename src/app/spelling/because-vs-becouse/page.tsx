@@ -1,138 +1,147 @@
 import { Metadata } from 'next'
-import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Because or Becouse - Which is Correct? | Word Finder',
-  description: 'Learn the correct spelling between &quot;because&quot; and &quot;becouse&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+  title: 'Because vs Becouse - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between "because" and "becouse". Discover definitions, examples, and usage tips for these commonly confused words.',
+  keywords: 'because, becouse, spelling, correct spelling, word comparison, English spelling, conjunction',
+  openGraph: {
+    title: 'Because vs Becouse - Which is Correct?',
+    description: 'Learn the correct spelling between "because" and "becouse". Discover definitions, examples, and usage tips.',
+    type: 'website',
+  },
 }
 
 export default function BecauseVsBecousePage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Because or Becouse</h1>
-      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;because&quot; and &quot;becouse&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
+      <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Because vs Becouse</h1>
+      
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl opacity-90">
+          Understanding the correct spelling of this essential conjunction.
+        </p>
       </div>
-      <div className="grid md:grid-cols-2 gap-6 mb-8">
-        <Card className="border-2 border-red-500 bg-red-50">
-          <CardContent className="p-6">
-            <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">❌</span>
-              <h3 className="text-2xl font-bold text-red-800">Incorrect: Becouse</h3>
-            </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Becouse&quot; is a misspelling. The correct spelling is &quot;because&quot; with &quot;au&quot; in the middle.</p>
-          </CardContent>
-        </Card>
-        <Card className="border-2 border-green-500 bg-green-50">
-          <CardContent className="p-6">
-            <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">✅</span>
-              <h3 className="text-2xl font-bold text-green-800">Correct: Because</h3>
-            </div>
-            <p className="text-lg md:text-xl text-green-700">&quot;Because&quot; is the correct spelling. It means for the reason that or since.</p>
-          </CardContent>
-        </Card>
-      </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="bg-white shadow-md border">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-green-900">Because (conjunction):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">For the reason that; since; as a result of the fact that.</p>
-              <div className="bg-green-50 p-4 rounded-lg">
-                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
-                <ul className="text-lg md:text-xl text-green-800 space-y-2">
-                  <li>• I stayed home <strong>because</strong> it was raining.</li>
-                  <li>• She was late <strong>because</strong> of traffic.</li>
-                  <li>• He couldn&apos;t come <strong>because</strong> he was sick.</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
-          <Card className="bg-white shadow-md border">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-red-900">Becouse (conjunction):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Becouse&quot; is a misspelling of &quot;because&quot; and is not a valid English word.</p>
-              <div className="bg-red-50 p-4 rounded-lg">
-                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
-                <ul className="text-lg md:text-xl text-red-800 space-y-2">
-                  <li>• &quot;Becouse&quot; is not used in standard English.</li>
-                  <li>• Always use <strong>because</strong> when explaining reasons.</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
+
+      <div className="grid md:grid-cols-2 gap-8 mb-8">
+        <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+          <h3 className="text-2xl font-bold mb-4 text-red-900 flex items-center">
+            ❌ Becouse
+          </h3>
+          <p className="text-lg md:text-xl text-red-800 mb-4">
+            This spelling is <strong>incorrect</strong>. "Becouse" is a misspelling of the word "because."
+          </p>
+          <div className="bg-red-100 p-4 rounded">
+            <p className="text-red-900 font-semibold">Incorrect Examples:</p>
+            <ul className="text-red-800 mt-2 space-y-1">
+              <li>• I stayed home becouse I was sick</li>
+              <li>• She left early becouse of the rain</li>
+              <li>• He couldn&apos;t come becouse he was busy</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-2xl font-bold mb-4 text-green-900 flex items-center">
+            ✅ Because
+          </h3>
+          <p className="text-lg md:text-xl text-green-800 mb-4">
+            This is the <strong>correct</strong> spelling. "Because" is the proper English spelling.
+          </p>
+          <div className="bg-green-100 p-4 rounded">
+            <p className="text-green-900 font-semibold">Correct Examples:</p>
+            <ul className="text-green-800 mt-2 space-y-1">
+              <li>• I stayed home because I was sick</li>
+              <li>• She left early because of the rain</li>
+              <li>• He couldn&apos;t come because he was busy</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="bg-green-100">
-            <CardContent className="p-6">
-              <h4 className="text-xl font-semibold mb-2 text-green-900">Because:</h4>
-              <ul className="text-lg md:text-xl text-green-800 space-y-1">
-                <li>• Since</li>
-                <li>• As</li>
-                <li>• For</li>
-                <li>• Given that</li>
-                <li>• Inasmuch as</li>
-              </ul>
-            </CardContent>
-          </Card>
-          <Card className="bg-red-100">
-            <CardContent className="p-6">
-              <h4 className="text-xl font-semibold mb-2 text-red-900">Becouse:</h4>
-              <ul className="text-lg md:text-xl text-red-800 space-y-1">
-                <li>• (No valid synonyms; not a standard English word)</li>
-              </ul>
-            </CardContent>
-          </Card>
+
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Definition of Because</h2>
+        <div className="text-lg md:text-xl text-blue-800 space-y-4">
+          <p>
+            <strong>Because</strong> (conjunction): For the reason that; since; as a result of the fact that.
+          </p>
+          <p>
+            Used to introduce a clause explaining the reason for something or the cause of an action or situation.
+          </p>
+          <p>
+            One of the most common conjunctions in English, used to show cause-and-effect relationships between ideas.
+          </p>
         </div>
       </div>
-      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Synonyms for Because</h2>
+        <div className="grid md:grid-cols-2 gap-4 text-lg md:text-xl text-blue-800">
+          <div>
+            <ul className="space-y-2">
+              <li>• Since</li>
+              <li>• As</li>
+              <li>• Given that</li>
+              <li>• Due to</li>
+            </ul>
+          </div>
+          <div>
+            <ul className="space-y-2">
+              <li>• Owing to</li>
+              <li>• Inasmuch as</li>
+              <li>• For the reason that</li>
+              <li>• On account of</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• <strong>Because</strong> is spelled with &quot;au&quot; in the middle, not &quot;ou.&quot;</li>
-          <li>• The word comes from the Middle English &quot;bi cause&quot; meaning &quot;by cause.&quot;</li>
-          <li>• Used to introduce a reason or explanation.</li>
-          <li>• Can be used at the beginning or middle of a sentence.</li>
-          <li>• &quot;Becouse&quot; is never correct in any context.</li>
+          <li>• "Because" is always spelled with "au" in the middle</li>
+          <li>• The word comes from Middle English "bi cause" meaning "by cause"</li>
+          <li>• The pronunciation is /bɪˈkɔːz/ (bi-KAWZ)</li>
+          <li>• "Becouse" is a common misspelling but is never correct</li>
+          <li>• "Because of" is a common phrase meaning "due to" or "on account of"</li>
+          <li>• Avoid starting sentences with "because" in formal writing unless the sentence is complete</li>
         </ul>
       </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+
+      <div className="bg-gray-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;becouse&quot; ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;becouse&quot; is never correct. The proper spelling is always &quot;because.&quot;</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it "becouse"?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: This misspelling likely occurs because the "au" sound in "because" can be pronounced differently in various accents, leading some to hear and write it as "becouse."
+            </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;be&quot; + &quot;cause&quot; - the word explains the cause of something.</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is "becouse" ever acceptable?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: No, "becouse" is always incorrect. Always use "because" in all contexts.
+            </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between because and since?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Both can introduce reasons, but &quot;since&quot; can also refer to time, while &quot;because&quot; only refers to reasons.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can because be used at the beginning of a sentence?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;because&quot; can be used at the beginning of a sentence, though it&apos;s more common in the middle.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;becouse&quot; likely occurs because of confusion with the pronunciation or similar words.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;because&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Examples include: because of, because why, just because, and because I said so.</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between "because" and "since"?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: Both can introduce reasons, but "since" can also refer to time. "Because" is more specific to causation and is often preferred for clarity.
+            </p>
           </div>
         </div>
       </div>
+
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Because</strong> is the correct spelling with &quot;au&quot; in the middle. It means for the reason that or since. The misspelling &quot;becouse&quot; is never correct. Use &quot;because&quot; to introduce reasons or explanations.</p>
+        <div className="text-lg md:text-xl text-green-800 space-y-4">
+          <p>
+            <strong>Because</strong> is the correct spelling of this conjunction. The incorrect spelling "becouse" should never be used.
+          </p>
+          <p>
+            Remember: Because = Be + cause (with "au" in the middle). This spelling is consistent across all English-speaking countries and is one of the most fundamental words in the language.
+          </p>
+        </div>
       </div>
     </div>
   )

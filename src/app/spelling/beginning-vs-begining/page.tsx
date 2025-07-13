@@ -1,154 +1,145 @@
-import type { Metadata } from 'next'
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Beginning vs Begining - Which is Correct? | Word Tips',
-  description: 'Learn the correct spelling between "beginning" and "begining". Discover definitions, examples, and tips to remember the right spelling.',
+  title: 'Beginning vs Begining - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between "beginning" and "begining". Discover definitions, examples, and usage tips for these commonly confused words.',
+  keywords: 'beginning, begining, spelling, correct spelling, word comparison, English spelling, noun, verb',
+  openGraph: {
+    title: 'Beginning vs Begining - Which is Correct?',
+    description: 'Learn the correct spelling between "beginning" and "begining". Discover definitions, examples, and usage tips.',
+    type: 'website',
+  },
 }
 
 export default function BeginningVsBeginingPage() {
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Beginning or Begining</h1>
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg inline-block">
-            <p className="text-lg md:text-xl font-semibold">Spelling Comparison</p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Beginning vs Begining</h1>
+      
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl opacity-90">
+          Understanding the correct spelling of this essential word for expressing starts and origins.
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-8 mb-8">
+        <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+          <h3 className="text-2xl font-bold mb-4 text-red-900 flex items-center">
+            ❌ Begining
+          </h3>
+          <p className="text-lg md:text-xl text-red-800 mb-4">
+            This spelling is <strong>incorrect</strong>. "Begining" is a misspelling of the word "beginning."
+          </p>
+          <div className="bg-red-100 p-4 rounded">
+            <p className="text-red-900 font-semibold">Incorrect Examples:</p>
+            <ul className="text-red-800 mt-2 space-y-1">
+              <li>• The begining of the story was exciting</li>
+              <li>• From the begining, I knew it was wrong</li>
+              <li>• The begining of the year is always busy</li>
+            </ul>
           </div>
         </div>
 
-        {/* Correct vs Incorrect Cards */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
-          {/* Incorrect Card */}
-          <div className="bg-red-50 border-2 border-red-200 rounded-lg p-6">
-            <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">❌</span>
-              <h2 className="text-2xl font-bold text-red-800">Begining</h2>
-            </div>
-            <p className="text-lg md:text-xl text-red-700">
-              This is the incorrect spelling. &quot;Begining&quot; is a common misspelling that omits the second &quot;n&quot;.
-            </p>
-          </div>
-
-          {/* Correct Card */}
-          <div className="bg-green-50 border-2 border-green-200 rounded-lg p-6">
-            <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">✅</span>
-              <h2 className="text-2xl font-bold text-green-800">Beginning</h2>
-            </div>
-            <p className="text-lg md:text-xl text-green-700">
-              This is the correct spelling. &quot;Beginning&quot; comes from the word &quot;begin&quot; with the suffix &quot;-ing&quot;.
-            </p>
-          </div>
-        </div>
-
-        {/* Definition Section */}
-        <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Definition</h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">Beginning (noun)</h3>
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                The point in time or space at which something starts; the first part or early stage of something.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">Beginning (verb)</h3>
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                The present participle of &quot;begin,&quot; meaning to start or commence something.
-              </p>
-            </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h4 className="text-lg font-semibold mb-2 text-gray-800">Examples:</h4>
-              <ul className="text-lg md:text-xl text-gray-700 space-y-2">
-                <li>• The <strong>beginning</strong> of the concert was amazing.</li>
-                <li>• He was <strong>beginning</strong> to feel tired after the long day.</li>
-                <li>• At the <strong>beginning</strong> of the week, we plan our activities.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Synonyms Section */}
-        <div className="bg-blue-50 rounded-lg p-6 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-blue-900">Synonyms</h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-blue-800">For &quot;beginning&quot; (noun):</h3>
-              <ul className="text-lg md:text-xl text-blue-700 space-y-2">
-                <li>• Start</li>
-                <li>• Commencement</li>
-                <li>• Onset</li>
-                <li>• Outset</li>
-                <li>• Genesis</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-blue-800">Related Terms:</h3>
-              <ul className="text-lg md:text-xl text-blue-700 space-y-2">
-                <li>• Origin</li>
-                <li>• Inception</li>
-                <li>• Dawn</li>
-                <li>• Opening</li>
-                <li>• Threshold</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Notes Section */}
-        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
-          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
-          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• &quot;Beginning&quot; is formed by adding the suffix &quot;-ing&quot; to the verb &quot;begin.&quot;</li>
-            <li>• The word &quot;begin&quot; has two &quot;n&quot;s, so &quot;beginning&quot; also has two &quot;n&quot;s.</li>
-            <li>• &quot;Begining&quot; is a phonetic misspelling that omits the second &quot;n.&quot;</li>
-            <li>• This pattern is consistent with other words like &quot;running&quot; (from &quot;run&quot;) and &quot;sitting&quot; (from &quot;sit&quot;).</li>
-          </ul>
-        </div>
-
-        {/* FAQ Section */}
-        <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">Why does &quot;beginning&quot; have two &quot;n&quot;s?</h3>
-              <p className="text-lg md:text-xl text-gray-700">
-                &quot;Beginning&quot; has two &quot;n&quot;s because it comes from the word &quot;begin&quot; which already has two &quot;n&quot;s. When adding the suffix &quot;-ing,&quot; we keep the original spelling.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">Is &quot;begining&quot; ever correct?</h3>
-              <p className="text-lg md:text-xl text-gray-700">
-                No, &quot;begining&quot; is never correct in standard English. It&apos;s always a misspelling of &quot;beginning.&quot;
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">What&apos;s the difference between &quot;beginning&quot; and &quot;begining&quot;?</h3>
-              <p className="text-lg md:text-xl text-gray-700">
-                &quot;Beginning&quot; is the correct spelling meaning the start of something, while &quot;begining&quot; is simply incorrect with a missing &quot;n.&quot;
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">How can I remember the correct spelling?</h3>
-              <p className="text-lg md:text-xl text-gray-700">
-                Remember that &quot;beginning&quot; comes from &quot;begin&quot; + &quot;ing.&quot; Since &quot;begin&quot; has two &quot;n&quot;s, &quot;beginning&quot; also has two &quot;n&quot;s.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">Are there other words that follow this same pattern?</h3>
-              <p className="text-lg md:text-xl text-gray-700">
-                Yes! Words like &quot;running&quot; (from &quot;run&quot;), &quot;sitting&quot; (from &quot;sit&quot;), &quot;swimming&quot; (from &quot;swim&quot;), and &quot;winning&quot; (from &quot;win&quot;) all follow similar patterns.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Summary Section */}
         <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
-          <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-          <p className="text-lg md:text-xl text-green-800 leading-relaxed">
-            <strong>&quot;Beginning&quot;</strong> is the correct spelling, while <strong>&quot;begining&quot;</strong> is incorrect. The word is formed by adding the suffix &quot;-ing&quot; to &quot;begin,&quot; maintaining the double &quot;n&quot; from the original word. Always use &quot;beginning&quot; when referring to the start of something or as the present participle of &quot;begin.&quot;
+          <h3 className="text-2xl font-bold mb-4 text-green-900 flex items-center">
+            ✅ Beginning
+          </h3>
+          <p className="text-lg md:text-xl text-green-800 mb-4">
+            This is the <strong>correct</strong> spelling. "Beginning" is the proper English spelling.
+          </p>
+          <div className="bg-green-100 p-4 rounded">
+            <p className="text-green-900 font-semibold">Correct Examples:</p>
+            <ul className="text-green-800 mt-2 space-y-1">
+              <li>• The beginning of the story was exciting</li>
+              <li>• From the beginning, I knew it was wrong</li>
+              <li>• The beginning of the year is always busy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Definition of Beginning</h2>
+        <div className="text-lg md:text-xl text-blue-800 space-y-4">
+          <p>
+            <strong>Beginning</strong> (noun): The point in time or space at which something starts; the first part or earliest stage of something.
+          </p>
+          <p>
+            <strong>Beginning</strong> (verb): Present participle of "begin" - the act of starting something.
+          </p>
+          <p>
+            Used to refer to the start, origin, or commencement of events, processes, stories, or time periods.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Synonyms for Beginning</h2>
+        <div className="grid md:grid-cols-2 gap-4 text-lg md:text-xl text-blue-800">
+          <div>
+            <ul className="space-y-2">
+              <li>• Start</li>
+              <li>• Commencement</li>
+              <li>• Onset</li>
+              <li>• Outset</li>
+            </ul>
+          </div>
+          <div>
+            <ul className="space-y-2">
+              <li>• Origin</li>
+              <li>• Inception</li>
+              <li>• Dawn</li>
+              <li>• Genesis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
+        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+          <li>• "Beginning" is always spelled with double "n" in the middle</li>
+          <li>• The word comes from "begin" + the suffix "-ing"</li>
+          <li>• The pronunciation is /bɪˈɡɪnɪŋ/ (bi-GIN-ing)</li>
+          <li>• "Begining" is a common misspelling but is never correct</li>
+          <li>• The double "n" follows the rule: double the final consonant before adding "-ing"</li>
+          <li>• This spelling pattern applies to other words like "running," "swimming," etc.</li>
+        </ul>
+      </div>
+
+      <div className="bg-gray-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it "begining"?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: This misspelling occurs because people forget to double the "n" when adding the "-ing" suffix to "begin." The rule is to double the final consonant before adding "-ing."
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is "begining" ever acceptable?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: No, "begining" is always incorrect. Always use "beginning" in all contexts.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between "beginning" and "start"?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: Both refer to the commencement of something, but "beginning" often implies the very first part or origin, while "start" can refer to any point where something begins.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <div className="text-lg md:text-xl text-green-800 space-y-4">
+          <p>
+            <strong>Beginning</strong> is the correct spelling of this word. The incorrect spelling "begining" should never be used.
+          </p>
+          <p>
+            Remember: Beginning = Begin + ning (with double "n"). This follows the English spelling rule of doubling the final consonant before adding "-ing" to words ending in consonant-vowel-consonant.
           </p>
         </div>
       </div>

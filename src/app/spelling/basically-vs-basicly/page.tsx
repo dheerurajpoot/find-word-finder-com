@@ -1,138 +1,147 @@
 import { Metadata } from 'next'
-import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Basically or Basicly - Which is Correct? | Word Finder',
-  description: 'Learn the correct spelling between &quot;basically&quot; and &quot;basicly&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+  title: 'Basically vs Basicly - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between "basically" and "basicly". Discover definitions, examples, and usage tips for these commonly confused words.',
+  keywords: 'basically, basicly, spelling, correct spelling, word comparison, English spelling, adverb',
+  openGraph: {
+    title: 'Basically vs Basicly - Which is Correct?',
+    description: 'Learn the correct spelling between "basically" and "basicly". Discover definitions, examples, and usage tips.',
+    type: 'website',
+  },
 }
 
 export default function BasicallyVsBasiclyPage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Basically or Basicly</h1>
-      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;basically&quot; and &quot;basicly&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
+      <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Basically vs Basicly</h1>
+      
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl opacity-90">
+          Understanding the correct spelling of this commonly used adverb.
+        </p>
       </div>
-      <div className="grid md:grid-cols-2 gap-6 mb-8">
-        <Card className="border-2 border-red-500 bg-red-50">
-          <CardContent className="p-6">
-            <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">❌</span>
-              <h3 className="text-2xl font-bold text-red-800">Incorrect: Basicly</h3>
-            </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Basicly&quot; is a misspelling. The correct spelling is &quot;basically&quot; with &quot;ally&quot; at the end.</p>
-          </CardContent>
-        </Card>
-        <Card className="border-2 border-green-500 bg-green-50">
-          <CardContent className="p-6">
-            <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">✅</span>
-              <h3 className="text-2xl font-bold text-green-800">Correct: Basically</h3>
-            </div>
-            <p className="text-lg md:text-xl text-green-700">&quot;Basically&quot; is the correct spelling. It means in the most fundamental way or essentially.</p>
-          </CardContent>
-        </Card>
-      </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="bg-white shadow-md border">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-green-900">Basically (adverb):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">In the most fundamental way; essentially; in simple terms.</p>
-              <div className="bg-green-50 p-4 rounded-lg">
-                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
-                <ul className="text-lg md:text-xl text-green-800 space-y-2">
-                  <li>• <strong>Basically</strong>, the project is complete.</li>
-                  <li>• It&apos;s <strong>basically</strong> the same thing.</li>
-                  <li>• <strong>Basically</strong>, we need to start over.</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
-          <Card className="bg-white shadow-md border">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-red-900">Basicly (adverb):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Basicly&quot; is a misspelling of &quot;basically&quot; and is not a valid English word.</p>
-              <div className="bg-red-50 p-4 rounded-lg">
-                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
-                <ul className="text-lg md:text-xl text-red-800 space-y-2">
-                  <li>• &quot;Basicly&quot; is not used in standard English.</li>
-                  <li>• Always use <strong>basically</strong> when referring to fundamental aspects.</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
+
+      <div className="grid md:grid-cols-2 gap-8 mb-8">
+        <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+          <h3 className="text-2xl font-bold mb-4 text-red-900 flex items-center">
+            ❌ Basicly
+          </h3>
+          <p className="text-lg md:text-xl text-red-800 mb-4">
+            This spelling is <strong>incorrect</strong>. "Basicly" is a misspelling of the word "basically."
+          </p>
+          <div className="bg-red-100 p-4 rounded">
+            <p className="text-red-900 font-semibold">Incorrect Examples:</p>
+            <ul className="text-red-800 mt-2 space-y-1">
+              <li>• It&apos;s basicly the same thing</li>
+              <li>• I basicly agree with you</li>
+              <li>• The concept is basicly simple</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-2xl font-bold mb-4 text-green-900 flex items-center">
+            ✅ Basically
+          </h3>
+          <p className="text-lg md:text-xl text-green-800 mb-4">
+            This is the <strong>correct</strong> spelling. "Basically" is the proper English spelling.
+          </p>
+          <div className="bg-green-100 p-4 rounded">
+            <p className="text-green-900 font-semibold">Correct Examples:</p>
+            <ul className="text-green-800 mt-2 space-y-1">
+              <li>• It&apos;s basically the same thing</li>
+              <li>• I basically agree with you</li>
+              <li>• The concept is basically simple</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="bg-green-100">
-            <CardContent className="p-6">
-              <h4 className="text-xl font-semibold mb-2 text-green-900">Basically:</h4>
-              <ul className="text-lg md:text-xl text-green-800 space-y-1">
-                <li>• Essentially</li>
-                <li>• Fundamentally</li>
-                <li>• Essentially</li>
-                <li>• In essence</li>
-                <li>• At heart</li>
-              </ul>
-            </CardContent>
-          </Card>
-          <Card className="bg-red-100">
-            <CardContent className="p-6">
-              <h4 className="text-xl font-semibold mb-2 text-red-900">Basicly:</h4>
-              <ul className="text-lg md:text-xl text-red-800 space-y-1">
-                <li>• (No valid synonyms; not a standard English word)</li>
-              </ul>
-            </CardContent>
-          </Card>
+
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Definition of Basically</h2>
+        <div className="text-lg md:text-xl text-blue-800 space-y-4">
+          <p>
+            <strong>Basically</strong> (adverb): In the most fundamental or essential way; essentially; fundamentally.
+          </p>
+          <p>
+            Used to indicate that something is true in the most important respects, or to simplify a complex situation by focusing on its core elements.
+          </p>
+          <p>
+            Often used as a filler word in speech to introduce or summarize a point, though this usage is considered informal.
+          </p>
         </div>
       </div>
-      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Synonyms for Basically</h2>
+        <div className="grid md:grid-cols-2 gap-4 text-lg md:text-xl text-blue-800">
+          <div>
+            <ul className="space-y-2">
+              <li>• Essentially</li>
+              <li>• Fundamentally</li>
+              <li>• Essentially</li>
+              <li>• In essence</li>
+            </ul>
+          </div>
+          <div>
+            <ul className="space-y-2">
+              <li>• At heart</li>
+              <li>• In principle</li>
+              <li>• Primarily</li>
+              <li>• Mainly</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• <strong>Basically</strong> is spelled with &quot;ally&quot; at the end, not &quot;ly&quot;.</li>
-          <li>• The word comes from &quot;basic&quot; + &quot;ally&quot; suffix.</li>
-          <li>• Used to introduce simplified explanations or summaries.</li>
-          <li>• Often used as a filler word in speech and informal writing.</li>
-          <li>• &quot;Basicly&quot; is never correct in any context.</li>
+          <li>• "Basically" is always spelled with "ally" at the end</li>
+          <li>• The word comes from "basic" + the suffix "-ally"</li>
+          <li>• The pronunciation is /ˈbeɪsɪkli/ (BAY-sik-lee)</li>
+          <li>• "Basicly" is a common misspelling but is never correct</li>
+          <li>• Overuse of "basically" in speech can make communication less precise</li>
+          <li>• In formal writing, consider using more specific alternatives</li>
         </ul>
       </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+
+      <div className="bg-gray-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;basicly&quot; ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;basicly&quot; is never correct. The proper spelling is always &quot;basically.&quot;</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it "basicly"?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: This misspelling occurs because the "al" sound in "basically" can be subtle when spoken quickly, leading some to hear and write it as "basicly."
+            </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;basic&quot; + &quot;ally&quot; - like other adverbs ending in &quot;ally&quot;.</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is "basicly" ever acceptable?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: No, "basicly" is always incorrect. Always use "basically" in all contexts.
+            </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between basically and essentially?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: They are very similar, but &quot;essentially&quot; is more formal than &quot;basically.&quot;</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can basically be used in formal writing?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: While acceptable, &quot;essentially&quot; or &quot;fundamentally&quot; are often preferred in formal writing.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;basicly&quot; likely occurs because of confusion about the &quot;ally&quot; ending or pronunciation.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;basically&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Examples include: basically speaking, basically the same, and basically done.</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: How should I use "basically" in writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: Use "basically" sparingly and purposefully. It&apos;s acceptable in informal writing but consider more precise alternatives in formal contexts.
+            </p>
           </div>
         </div>
       </div>
+
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Basically</strong> is the correct spelling with &quot;ally&quot; at the end. It means in the most fundamental way or essentially. The misspelling &quot;basicly&quot; is never correct.</p>
+        <div className="text-lg md:text-xl text-green-800 space-y-4">
+          <p>
+            <strong>Basically</strong> is the correct spelling of this adverb. The incorrect spelling "basicly" should never be used.
+          </p>
+          <p>
+            Remember: Basically = Basic + ally (with "ally" at the end). This spelling follows the standard English pattern for forming adverbs from adjectives ending in "-ic."
+          </p>
+        </div>
       </div>
     </div>
   )
