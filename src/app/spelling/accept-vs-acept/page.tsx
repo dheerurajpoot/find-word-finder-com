@@ -21,7 +21,7 @@ export default function AcceptVsAceptPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Acept</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Acept&quot; is a misspelling. The correct spelling is &quot;accept&quot; with &quot;cc&quot; at the beginning.</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Acept&quot; is a misspelling. The correct spelling is &quot;accept&quot; with two &quot;c&quot;s.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -30,7 +30,7 @@ export default function AcceptVsAceptPage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Accept</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">&quot;Accept&quot; is the correct spelling. It means to receive willingly or to agree to something.</p>
+            <p className="text-lg md:text-xl text-green-700">&quot;Accept&quot; is the correct spelling. It means to receive willingly, agree to, or approve of something.</p>
           </CardContent>
         </Card>
       </div>
@@ -40,13 +40,13 @@ export default function AcceptVsAceptPage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-green-900">Accept (verb):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">To receive willingly; to agree to something; to believe or recognize as valid.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">To receive willingly, agree to, approve of, or take something offered.</p>
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
-                  <li>• I <strong>accept</strong> your apology.</li>
-                  <li>• She <strong>accepted</strong> the job offer.</li>
-                  <li>• The committee <strong>accepted</strong> the proposal.</li>
+                  <li>• I will <strong>accept</strong> your offer for the job.</li>
+                  <li>• She decided to <strong>accept</strong> the invitation to the party.</li>
+                  <li>• The committee will <strong>accept</strong> your proposal.</li>
                 </ul>
               </div>
             </CardContent>
@@ -59,7 +59,7 @@ export default function AcceptVsAceptPage() {
                 <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-red-800 space-y-2">
                   <li>• &quot;Acept&quot; is not used in standard English.</li>
-                  <li>• Always use <strong>accept</strong> when referring to receiving or agreeing.</li>
+                  <li>• Always use <strong>accept</strong> when referring to receiving or agreeing to something.</li>
                 </ul>
               </div>
             </CardContent>
@@ -74,10 +74,10 @@ export default function AcceptVsAceptPage() {
               <h4 className="text-xl font-semibold mb-2 text-green-900">Accept:</h4>
               <ul className="text-lg md:text-xl text-green-800 space-y-1">
                 <li>• Receive</li>
-                <li>• Agree</li>
+                <li>• Agree to</li>
                 <li>• Approve</li>
                 <li>• Take</li>
-                <li>• Acknowledge</li>
+                <li>• Welcome</li>
               </ul>
             </CardContent>
           </Card>
@@ -91,15 +91,18 @@ export default function AcceptVsAceptPage() {
           </Card>
         </div>
       </div>
-      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
-        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
-        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• <strong>Accept</strong> is spelled with &quot;cc&quot; at the beginning, not &quot;c&quot;.</li>
-          <li>• The word comes from Latin &quot;acceptare&quot; meaning to receive.</li>
-          <li>• Used in formal and informal contexts.</li>
-          <li>• Often confused with &quot;except&quot; which means excluding.</li>
-          <li>• &quot;Acept&quot; is never correct in any context.</li>
-        </ul>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Accept</strong> is spelled with two &quot;c&quot;s at the beginning.</li>
+            <li>• The word comes from Latin &quot;acceptare&quot; meaning &quot;to take.&quot;</li>
+            <li>• Used to describe receiving, agreeing to, or approving of something.</li>
+            <li>• Common in both formal and informal writing.</li>
+            <li>• &quot;Acept&quot; is never correct in any context.</li>
+          </ul>
+        </div>
       </div>
       <div className="mb-8">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
@@ -110,11 +113,11 @@ export default function AcceptVsAceptPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ac&quot; + &quot;cept&quot; - like &quot;ac&quot; with &quot;cept&quot;, with double &quot;c&quot;.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ac + cept&quot; - remember the double &quot;c&quot; at the beginning.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between accept and except?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Accept&quot; means to receive or agree, while &quot;except&quot; means to exclude or leave out.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Accept&quot; means to receive or agree to, while &quot;except&quot; means to exclude or leave out.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can accept be used in formal writing?</h3>
@@ -122,17 +125,17 @@ export default function AcceptVsAceptPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;acept&quot; likely occurs because of confusion about the &quot;cc&quot; vs &quot;c&quot; spelling.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;acept&quot; likely occurs because of confusion about the double &quot;c&quot; at the beginning.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;accept&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Examples include: accept responsibility, accept defeat, accept an offer, accept the truth, and accept criticism.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: accept responsibility, accept an offer, accept an invitation, accept defeat, and accept criticism.</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Accept</strong> is the correct spelling with &quot;cc&quot; at the beginning. It means to receive willingly or to agree to something. The misspelling &quot;acept&quot; is never correct.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Accept</strong> is the correct spelling with two &quot;c&quot;s at the beginning. It means to receive willingly, agree to, or approve of something. The misspelling &quot;acept&quot; is never correct. Use &quot;accept&quot; to describe receiving or agreeing to something.</p>
       </div>
     </div>
   )

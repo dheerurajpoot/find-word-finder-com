@@ -21,7 +21,7 @@ export default function AcingVsAceingPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Aceing</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Aceing&quot; is a misspelling. The correct spelling is &quot;acing&quot; without the &quot;e&quot;.</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Aceing&quot; is a misspelling. The correct spelling is &quot;acing&quot; without the extra &quot;e.&quot;</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -30,7 +30,7 @@ export default function AcingVsAceingPage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Acing</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">&quot;Acing&quot; is the correct spelling. It means performing exceptionally well or achieving the highest score.</p>
+            <p className="text-lg md:text-xl text-green-700">&quot;Acing&quot; is the correct spelling. It means performing exceptionally well or getting the highest score.</p>
           </CardContent>
         </Card>
       </div>
@@ -40,12 +40,12 @@ export default function AcingVsAceingPage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-green-900">Acing (verb):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">To perform exceptionally well; to achieve the highest score or grade; to succeed brilliantly.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">Performing exceptionally well, getting the highest score, or succeeding brilliantly at something.</p>
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
-                  <li>• She is <strong>acing</strong> all her exams.</li>
-                  <li>• He is <strong>acing</strong> the interview process.</li>
+                  <li>• She was <strong>acing</strong> all her exams this semester.</li>
+                  <li>• He&apos;s been <strong>acing</strong> his job interviews.</li>
                   <li>• The team is <strong>acing</strong> the competition.</li>
                 </ul>
               </div>
@@ -75,9 +75,9 @@ export default function AcingVsAceingPage() {
               <ul className="text-lg md:text-xl text-green-800 space-y-1">
                 <li>• Excelling</li>
                 <li>• Succeeding</li>
+                <li>• Performing well</li>
                 <li>• Mastering</li>
-                <li>• Dominating</li>
-                <li>• Outperforming</li>
+                <li>• Nailing</li>
               </ul>
             </CardContent>
           </Card>
@@ -91,15 +91,18 @@ export default function AcingVsAceingPage() {
           </Card>
         </div>
       </div>
-      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
-        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
-        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• <strong>Acing</strong> is spelled without the &quot;e&quot; before &quot;ing&quot;.</li>
-          <li>• The word comes from &quot;ace&quot; + &quot;ing&quot; present participle ending.</li>
-          <li>• Used in informal and casual contexts.</li>
-          <li>• Often used in academic and sports contexts.</li>
-          <li>• &quot;Aceing&quot; is never correct in any context.</li>
-        </ul>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Acing</strong> is spelled without an extra &quot;e&quot; (ace + ing).</li>
+            <li>• The word comes from the verb &quot;ace&quot; + the suffix &quot;-ing.&quot;</li>
+            <li>• Used to describe exceptional performance or success.</li>
+            <li>• Common in both formal and informal writing.</li>
+            <li>• &quot;Aceing&quot; is never correct in any context.</li>
+          </ul>
+        </div>
       </div>
       <div className="mb-8">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
@@ -110,29 +113,29 @@ export default function AcingVsAceingPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ace&quot; + &quot;ing&quot; - like &quot;ace&quot; with &quot;ing&quot; ending, without an extra &quot;e&quot;.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ace + ing&quot; - the base word &quot;ace&quot; plus the suffix &quot;-ing.&quot;</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between acing and excelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: They are very similar, but &quot;acing&quot; is more informal and often implies achieving the highest possible score.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Acing&quot; specifically means getting the highest score or perfect performance, while &quot;excelling&quot; means performing very well.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can acing be used in formal writing?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Acing&quot; is more appropriate in informal contexts, though it can be used in casual formal writing.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;acing&quot; is appropriate in both formal and informal writing contexts.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;aceing&quot; likely occurs because of confusion about the spelling rule for adding &quot;ing&quot;.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;aceing&quot; likely occurs because of confusion about adding an extra &quot;e&quot; before &quot;ing.&quot;</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;acing&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Examples include: acing a test, acing an interview, acing the competition, acing a performance, and acing a challenge.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: acing a test, acing an interview, acing a presentation, and acing the competition.</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Acing</strong> is the correct spelling without the &quot;e&quot; before &quot;ing&quot;. It means performing exceptionally well or achieving the highest score. The misspelling &quot;aceing&quot; is never correct.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Acing</strong> is the correct spelling without an extra &quot;e.&quot; It means performing exceptionally well or getting the highest score. The misspelling &quot;aceing&quot; is never correct. Use &quot;acing&quot; to describe excellent performance or success.</p>
       </div>
     </div>
   )

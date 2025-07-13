@@ -21,7 +21,7 @@ export default function AccentVsAcentPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Acent</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Acent&quot; is a misspelling. The correct spelling is &quot;accent&quot; with &quot;cc&quot; at the beginning.</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Acent&quot; is a misspelling. The correct spelling is &quot;accent&quot; with two &quot;c&quot;s.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -30,7 +30,7 @@ export default function AccentVsAcentPage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Accent</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">&quot;Accent&quot; is the correct spelling. It refers to a distinctive way of speaking or emphasis on something.</p>
+            <p className="text-lg md:text-xl text-green-700">&quot;Accent&quot; is the correct spelling. It means a distinctive way of pronouncing words or emphasis on a particular syllable.</p>
           </CardContent>
         </Card>
       </div>
@@ -40,13 +40,13 @@ export default function AccentVsAcentPage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-green-900">Accent (noun/verb):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">A distinctive way of pronouncing words; emphasis or stress on a particular syllable or word; a mark used to indicate pronunciation.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">A distinctive way of pronouncing words, emphasis on a particular syllable, or a mark indicating pronunciation.</p>
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
-                  <li>• She has a British <strong>accent</strong>.</li>
-                  <li>• The word has an <strong>accent</strong> on the first syllable.</li>
-                  <li>• The design <strong>accents</strong> the room&apos;s beauty.</li>
+                  <li>• She has a British <strong>accent</strong> when she speaks.</li>
+                  <li>• The word &quot;record&quot; has the <strong>accent</strong> on the first syllable.</li>
+                  <li>• The design uses bright colors to <strong>accent</strong> the room.</li>
                 </ul>
               </div>
             </CardContent>
@@ -73,11 +73,11 @@ export default function AccentVsAcentPage() {
             <CardContent className="p-6">
               <h4 className="text-xl font-semibold mb-2 text-green-900">Accent:</h4>
               <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Pronunciation</li>
                 <li>• Emphasis</li>
                 <li>• Stress</li>
-                <li>• Pronunciation</li>
+                <li>• Intonation</li>
                 <li>• Highlight</li>
-                <li>• Inflection</li>
               </ul>
             </CardContent>
           </Card>
@@ -91,15 +91,18 @@ export default function AccentVsAcentPage() {
           </Card>
         </div>
       </div>
-      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
-        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
-        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• <strong>Accent</strong> is spelled with &quot;cc&quot; at the beginning, not &quot;c&quot;.</li>
-          <li>• The word comes from Latin &quot;accentus&quot; meaning tone or stress.</li>
-          <li>• Used in linguistics, music, and general contexts.</li>
-          <li>• Can refer to both speech patterns and visual emphasis.</li>
-          <li>• &quot;Acent&quot; is never correct in any context.</li>
-        </ul>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Accent</strong> is spelled with two &quot;c&quot;s at the beginning.</li>
+            <li>• The word comes from Latin &quot;accentus&quot; meaning &quot;tone.&quot;</li>
+            <li>• Used to describe pronunciation patterns or emphasis in speech.</li>
+            <li>• Common in both formal and informal writing.</li>
+            <li>• &quot;Acent&quot; is never correct in any context.</li>
+          </ul>
+        </div>
       </div>
       <div className="mb-8">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
@@ -110,11 +113,11 @@ export default function AccentVsAcentPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ac&quot; + &quot;cent&quot; - like &quot;ac&quot; with &quot;cent&quot;, with double &quot;c&quot;.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ac + cent&quot; - remember the double &quot;c&quot; at the beginning.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between accent and dialect?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: An accent refers to pronunciation differences, while a dialect includes vocabulary and grammar differences.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between accent and pronunciation?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Accent&quot; refers to a distinctive way of speaking, while &quot;pronunciation&quot; refers to how individual words are spoken.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can accent be used in formal writing?</h3>
@@ -122,7 +125,7 @@ export default function AccentVsAcentPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;acent&quot; likely occurs because of confusion about the &quot;cc&quot; vs &quot;c&quot; spelling.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;acent&quot; likely occurs because of confusion about the double &quot;c&quot; at the beginning.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;accent&quot;?</h3>
@@ -132,7 +135,7 @@ export default function AccentVsAcentPage() {
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Accent</strong> is the correct spelling with &quot;cc&quot; at the beginning. It refers to a distinctive way of speaking or emphasis on something. The misspelling &quot;acent&quot; is never correct.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Accent</strong> is the correct spelling with two &quot;c&quot;s at the beginning. It means a distinctive way of pronouncing words or emphasis on a particular syllable. The misspelling &quot;acent&quot; is never correct. Use &quot;accent&quot; to describe pronunciation patterns or emphasis in speech.</p>
       </div>
     </div>
   )

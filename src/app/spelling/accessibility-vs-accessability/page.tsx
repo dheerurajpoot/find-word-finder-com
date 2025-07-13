@@ -21,7 +21,7 @@ export default function AccessibilityVsAccessabilityPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Accessability</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Accessability&quot; is a misspelling. The correct spelling is &quot;accessibility&quot; with &quot;ibility&quot; at the end.</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Accessability&quot; is a misspelling. The correct spelling is &quot;accessibility&quot; with &quot;ibility&quot; ending.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -30,7 +30,7 @@ export default function AccessibilityVsAccessabilityPage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Accessibility</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">&quot;Accessibility&quot; is the correct spelling. It refers to the quality of being easily reached, used, or understood.</p>
+            <p className="text-lg md:text-xl text-green-700">&quot;Accessibility&quot; is the correct spelling. It means the quality of being easy to reach, enter, or use.</p>
           </CardContent>
         </Card>
       </div>
@@ -40,13 +40,13 @@ export default function AccessibilityVsAccessabilityPage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-green-900">Accessibility (noun):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">The quality of being easily reached, used, or understood; the degree to which something is accessible to people with disabilities.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">The quality of being easy to reach, enter, use, or understand; the degree to which something is accessible.</p>
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
                   <li>• The building&apos;s <strong>accessibility</strong> meets ADA standards.</li>
                   <li>• Website <strong>accessibility</strong> is important for all users.</li>
-                  <li>• The <strong>accessibility</strong> of public transportation has improved.</li>
+                  <li>• The park improved its <strong>accessibility</strong> for visitors.</li>
                 </ul>
               </div>
             </CardContent>
@@ -59,7 +59,7 @@ export default function AccessibilityVsAccessabilityPage() {
                 <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-red-800 space-y-2">
                   <li>• &quot;Accessability&quot; is not used in standard English.</li>
-                  <li>• Always use <strong>accessibility</strong> when referring to ease of access.</li>
+                  <li>• Always use <strong>accessibility</strong> when referring to ease of use or entry.</li>
                 </ul>
               </div>
             </CardContent>
@@ -73,11 +73,11 @@ export default function AccessibilityVsAccessabilityPage() {
             <CardContent className="p-6">
               <h4 className="text-xl font-semibold mb-2 text-green-900">Accessibility:</h4>
               <ul className="text-lg md:text-xl text-green-800 space-y-1">
-                <li>• Usability</li>
                 <li>• Availability</li>
-                <li>• Approachability</li>
                 <li>• Reachability</li>
-                <li>• Inclusivity</li>
+                <li>• Approachability</li>
+                <li>• Usability</li>
+                <li>• Attainability</li>
               </ul>
             </CardContent>
           </Card>
@@ -91,15 +91,18 @@ export default function AccessibilityVsAccessabilityPage() {
           </Card>
         </div>
       </div>
-      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
-        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
-        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• <strong>Accessibility</strong> is spelled with &quot;ibility&quot; at the end, not &quot;ability&quot;.</li>
-          <li>• The word comes from &quot;accessible&quot; + &quot;ity&quot; suffix.</li>
-          <li>• Used in disability rights, technology, and public policy contexts.</li>
-          <li>• Important concept in web design, architecture, and public services.</li>
-          <li>• &quot;Accessability&quot; is never correct in any context.</li>
-        </ul>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Accessibility</strong> is spelled with &quot;ibility&quot; ending, not &quot;ability.&quot;</li>
+            <li>• The word comes from &quot;accessible&quot; + &quot;ity&quot; suffix.</li>
+            <li>• Used to describe the quality of being easy to reach, enter, or use.</li>
+            <li>• Common in both formal and informal writing.</li>
+            <li>• &quot;Accessability&quot; is never correct in any context.</li>
+          </ul>
+        </div>
       </div>
       <div className="mb-8">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
@@ -110,11 +113,11 @@ export default function AccessibilityVsAccessabilityPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;accessible&quot; + &quot;ity&quot; - like &quot;accessible&quot; with &quot;ity&quot; ending, with &quot;ibility&quot;.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;accessible&quot; + &quot;ity&quot; - remember the &quot;ibility&quot; ending, not &quot;ability.&quot;</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between accessibility and usability?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Accessibility&quot; focuses on access for people with disabilities, while &quot;usability&quot; focuses on ease of use for everyone.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between accessibility and availability?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Accessibility&quot; refers to ease of use or entry, while &quot;availability&quot; refers to being present or ready for use.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can accessibility be used in formal writing?</h3>
@@ -126,13 +129,13 @@ export default function AccessibilityVsAccessabilityPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;accessibility&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Examples include: web accessibility, accessibility standards, accessibility features, and accessibility compliance.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: accessibility standards, accessibility features, accessibility guidelines, accessibility compliance, and accessibility testing.</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Accessibility</strong> is the correct spelling with &quot;ibility&quot; at the end. It refers to the quality of being easily reached, used, or understood. The misspelling &quot;accessability&quot; is never correct.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Accessibility</strong> is the correct spelling with &quot;ibility&quot; ending. It means the quality of being easy to reach, enter, or use. The misspelling &quot;accessability&quot; is never correct. Use &quot;accessibility&quot; to describe the quality of being accessible.</p>
       </div>
     </div>
   )

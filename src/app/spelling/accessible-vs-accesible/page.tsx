@@ -21,7 +21,7 @@ export default function AccessibleVsAccesiblePage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Accesible</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Accesible&quot; is a misspelling. The correct spelling is &quot;accessible&quot; with two &quot;s&quot;s.</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Accesible&quot; is a misspelling. The correct spelling is &quot;accessible&quot; with two &quot;c&quot;s.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -40,13 +40,13 @@ export default function AccessibleVsAccesiblePage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-green-900">Accessible (adjective):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">Easy to reach, enter, or use; able to be reached or understood by people with disabilities.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">Easy to reach, enter, use, or understand; available to people with disabilities.</p>
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
-                  <li>• The building is <strong>accessible</strong> to wheelchair users.</li>
-                  <li>• The information should be <strong>accessible</strong> to everyone.</li>
-                  <li>• The website is <strong>accessible</strong> on mobile devices.</li>
+                  <li>• The building is wheelchair <strong>accessible</strong>.</li>
+                  <li>• The information is easily <strong>accessible</strong> online.</li>
+                  <li>• The park is <strong>accessible</strong> to all visitors.</li>
                 </ul>
               </div>
             </CardContent>
@@ -59,7 +59,7 @@ export default function AccessibleVsAccesiblePage() {
                 <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-red-800 space-y-2">
                   <li>• &quot;Accesible&quot; is not used in standard English.</li>
-                  <li>• Always use <strong>accessible</strong> when referring to ease of use.</li>
+                  <li>• Always use <strong>accessible</strong> when referring to ease of use or entry.</li>
                 </ul>
               </div>
             </CardContent>
@@ -77,7 +77,7 @@ export default function AccessibleVsAccesiblePage() {
                 <li>• Reachable</li>
                 <li>• Approachable</li>
                 <li>• Attainable</li>
-                <li>• User-friendly</li>
+                <li>• Usable</li>
               </ul>
             </CardContent>
           </Card>
@@ -91,15 +91,18 @@ export default function AccessibleVsAccesiblePage() {
           </Card>
         </div>
       </div>
-      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
-        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
-        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• <strong>Accessible</strong> is spelled with two &quot;s&quot;s, not one.</li>
-          <li>• The word comes from &quot;access&quot; + &quot;ible&quot; suffix.</li>
-          <li>• Used in disability rights, technology, and general contexts.</li>
-          <li>• Important concept in web design and public facilities.</li>
-          <li>• &quot;Accesible&quot; is never correct in any context.</li>
-        </ul>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Accessible</strong> is spelled with two &quot;c&quot;s at the beginning.</li>
+            <li>• The word comes from Latin &quot;accessibilis&quot; meaning &quot;approachable.&quot;</li>
+            <li>• Used to describe something that is easy to reach, enter, or use.</li>
+            <li>• Common in both formal and informal writing.</li>
+            <li>• &quot;Accesible&quot; is never correct in any context.</li>
+          </ul>
+        </div>
       </div>
       <div className="mb-8">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
@@ -110,11 +113,11 @@ export default function AccessibleVsAccesiblePage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;access&quot; + &quot;ible&quot; - like &quot;access&quot; with &quot;ible&quot; ending, with two &quot;s&quot;s.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ac + cessible&quot; - remember the double &quot;c&quot; at the beginning.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between accessible and available?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Accessible&quot; implies ease of use, while &quot;available&quot; means something exists or can be obtained.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Accessible&quot; means easy to reach or use, while &quot;available&quot; means present and ready for use.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can accessible be used in formal writing?</h3>
@@ -122,17 +125,17 @@ export default function AccessibleVsAccesiblePage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;accesible&quot; likely occurs because of confusion about the number of &quot;s&quot;s or pronunciation.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;accesible&quot; likely occurs because of confusion about the double &quot;c&quot; at the beginning.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;accessible&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Examples include: wheelchair accessible, easily accessible, accessible design, and accessible technology.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: accessible design, accessible technology, accessible parking, accessible entrance, and accessible format.</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Accessible</strong> is the correct spelling with two &quot;s&quot;s. It means easy to reach, enter, or use. The misspelling &quot;accesible&quot; is never correct.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Accessible</strong> is the correct spelling with two &quot;c&quot;s at the beginning. It means easy to reach, enter, or use. The misspelling &quot;accesible&quot; is never correct. Use &quot;accessible&quot; to describe something that is easy to reach or use.</p>
       </div>
     </div>
   )
