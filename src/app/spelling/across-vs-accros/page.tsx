@@ -3,7 +3,7 @@ import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
   title: 'Across or Accros - Which is Correct? | Word Finder',
-  description: 'Learn the correct spelling between "across" and "accros". Discover definitions, usage examples, and common mistakes to avoid.',
+  description: 'Learn the correct spelling between &quot;across&quot; and &quot;accros&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
 }
 
 export default function AcrossVsAccrosPage() {
