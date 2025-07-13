@@ -21,7 +21,7 @@ export default function AccessoriesVsAccesoriesPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Accesories</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Accesories&quot; is a misspelling. The correct spelling is &quot;accessories&quot; with two &quot;s&quot;s.</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Accesories&quot; is a misspelling. The correct spelling is &quot;accessories&quot; with two &quot;c&quot;s.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -30,7 +30,7 @@ export default function AccessoriesVsAccesoriesPage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Accessories</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">&quot;Accessories&quot; is the correct spelling. It refers to additional items that complement or enhance something.</p>
+            <p className="text-lg md:text-xl text-green-700">&quot;Accessories&quot; is the correct spelling. It means additional items that complement or enhance something.</p>
           </CardContent>
         </Card>
       </div>
@@ -39,21 +39,21 @@ export default function AccessoriesVsAccesoriesPage() {
         <div className="grid md:grid-cols-2 gap-6">
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-green-900">Accessories (noun):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">Additional items that complement or enhance something; supplementary items or equipment.</p>
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Accessories (plural noun):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">Additional items that complement or enhance something; supplementary parts or attachments.</p>
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
-                  <li>• She bought matching <strong>accessories</strong> for her outfit.</li>
-                  <li>• The car comes with many <strong>accessories</strong>.</li>
-                  <li>• Phone <strong>accessories</strong> include cases and chargers.</li>
+                  <li>• She bought jewelry <strong>accessories</strong> to match her dress.</li>
+                  <li>• The phone comes with several <strong>accessories</strong>.</li>
+                  <li>• Car <strong>accessories</strong> can enhance its appearance.</li>
                 </ul>
               </div>
             </CardContent>
           </Card>
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-red-900">Accesories (noun):</h3>
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Accesories (plural noun):</h3>
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Accesories&quot; is a misspelling of &quot;accessories&quot; and is not a valid English word.</p>
               <div className="bg-red-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
@@ -73,11 +73,11 @@ export default function AccessoriesVsAccesoriesPage() {
             <CardContent className="p-6">
               <h4 className="text-xl font-semibold mb-2 text-green-900">Accessories:</h4>
               <ul className="text-lg md:text-xl text-green-800 space-y-1">
-                <li>• Add-ons</li>
-                <li>• Extras</li>
+                <li>• Additions</li>
                 <li>• Attachments</li>
-                <li>• Enhancements</li>
+                <li>• Extras</li>
                 <li>• Supplements</li>
+                <li>• Enhancements</li>
               </ul>
             </CardContent>
           </Card>
@@ -91,15 +91,18 @@ export default function AccessoriesVsAccesoriesPage() {
           </Card>
         </div>
       </div>
-      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
-        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
-        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• <strong>Accessories</strong> is spelled with two &quot;s&quot;s, not one.</li>
-          <li>• The word comes from &quot;accessory&quot; + &quot;ies&quot; plural ending.</li>
-          <li>• Used in fashion, technology, automotive, and general contexts.</li>
-          <li>• Can refer to both functional and decorative items.</li>
-          <li>• &quot;Accesories&quot; is never correct in any context.</li>
-        </ul>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Accessories</strong> is the plural form of &quot;accessory&quot; with two &quot;c&quot;s.</li>
+            <li>• The word comes from Latin &quot;accessorius&quot; meaning &quot;additional.&quot;</li>
+            <li>• Used to describe additional items that complement or enhance something.</li>
+            <li>• Common in both formal and informal writing.</li>
+            <li>• &quot;Accesories&quot; is never correct in any context.</li>
+          </ul>
+        </div>
       </div>
       <div className="mb-8">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
@@ -110,11 +113,11 @@ export default function AccessoriesVsAccesoriesPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;accessory&quot; + &quot;ies&quot; - like &quot;accessory&quot; with &quot;ies&quot; ending, with two &quot;s&quot;s.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ac + cessories&quot; - remember the double &quot;c&quot; at the beginning.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between accessories and attachments?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Accessories&quot; are additional items that enhance, while &quot;attachments&quot; are items that connect to something.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Accessories&quot; refers to additional items that enhance something, while &quot;attachments&quot; refers to things that are physically connected.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can accessories be used in formal writing?</h3>
@@ -122,17 +125,17 @@ export default function AccessoriesVsAccesoriesPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;accesories&quot; likely occurs because of confusion about the number of &quot;s&quot;s or pronunciation.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;accesories&quot; likely occurs because of confusion about the double &quot;c&quot; at the beginning.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;accessories&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Examples include: fashion accessories, car accessories, phone accessories, and computer accessories.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: fashion accessories, car accessories, phone accessories, computer accessories, and beauty accessories.</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Accessories</strong> is the correct spelling with two &quot;s&quot;s. It refers to additional items that complement or enhance something. The misspelling &quot;accesories&quot; is never correct.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Accessories</strong> is the correct spelling with two &quot;c&quot;s at the beginning. It means additional items that complement or enhance something. The misspelling &quot;accesories&quot; is never correct. Use &quot;accessories&quot; to describe additional items that enhance or complement something.</p>
       </div>
     </div>
   )

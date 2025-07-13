@@ -1,132 +1,142 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Acceptable or Acceptible - Which is Correct?",
-  description: "Learn the correct spelling between &apos;acceptable&apos; and &apos;acceptible&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Acceptable or Acceptible - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;acceptable&quot; and &quot;acceptible&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
 export default function AcceptableVsAcceptiblePage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Acceptable or Acceptible</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Acceptable or Acceptible, and how to use them properly.
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Acceptable or Acceptible</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;acceptable&quot; and &quot;acceptible&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards - Image Style */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Acceptible</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Acceptible&quot; is not a valid word in English.
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Acceptible</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Acceptable</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Acceptable&quot; is an adjective meaning able to be agreed on or suitable.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Acceptible&quot; is a misspelling. The correct spelling is &quot;acceptable&quot; with &quot;able&quot; ending.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Acceptable</h3>
             </div>
-          </Card>
-        </div>
-      </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Acceptable</span> (adjective): Able to be agreed on; suitable or satisfactory.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>The proposal was acceptable to everyone.</li>
-              <li>This behavior is not acceptable in our school.</li>
-              <li>The quality of work was acceptable but could be improved.</li>
-            </ul>
-          </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Acceptable&quot; is the correct spelling. It means satisfactory or adequate.</p>
+          </CardContent>
         </Card>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;acceptable&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Adjectives:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Permissible</li>
-                  <li>Allowable</li>
-                  <li>Admissible</li>
-                  <li>Satisfactory</li>
-                  <li>Tolerable</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Acceptable (adjective):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">Satisfactory or adequate; able to be accepted or approved.</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-green-800 space-y-2">
+                  <li>• The quality of work is <strong>acceptable</strong>.</li>
+                  <li>• This behavior is not <strong>acceptable</strong> in our school.</li>
+                  <li>• The price is <strong>acceptable</strong> for the service.</li>
                 </ul>
               </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Nouns:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Acceptability</li>
-                  <li>Permissibility</li>
-                  <li>Admissibility</li>
-                  <li>Suitability</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Acceptible (adjective):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Acceptible&quot; is a misspelling of &quot;acceptable&quot; and is not a valid English word.</p>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-red-800 space-y-2">
+                  <li>• &quot;Acceptible&quot; is not used in standard English.</li>
+                  <li>• Always use <strong>acceptable</strong> when referring to something satisfactory.</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Acceptable&quot; is the correct spelling. &quot;Acceptible&quot; is a common misspelling—remember, the correct ending is &quot;-able&quot; not &quot;-ible&quot;.
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it acceptible or acceptable?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct word is &quot;acceptable.&quot; &quot;Acceptible&quot; is a common misspelling.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce acceptable?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əkˈsɛptəbəl/ (uk-SEP-tuh-buhl).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does acceptable mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Able to be agreed on; suitable or satisfactory.</div>
-            </div>
+            </CardContent>
           </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-green-900">Acceptable:</h4>
+              <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Satisfactory</li>
+                <li>• Adequate</li>
+                <li>• Suitable</li>
+                <li>• Tolerable</li>
+                <li>• Passable</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-red-900">Acceptible:</h4>
+              <ul className="text-lg md:text-xl text-red-800 space-y-1">
+                <li>• (No valid synonyms; not a standard English word)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Acceptable</strong> is spelled with &quot;able&quot; ending, not &quot;ible.&quot;</li>
+            <li>• The word comes from &quot;accept&quot; + &quot;able&quot; suffix.</li>
+            <li>• Used to describe something that is satisfactory or adequate.</li>
+            <li>• Common in both formal and informal writing.</li>
+            <li>• &quot;Acceptible&quot; is never correct in any context.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;acceptible&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;acceptible&quot; is never correct. The proper spelling is always &quot;acceptable.&quot;</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;accept&quot; + &quot;able&quot; - remember the &quot;able&quot; ending, not &quot;ible.&quot;</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between acceptable and suitable?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Acceptable&quot; means satisfactory or adequate, while &quot;suitable&quot; means appropriate or fitting for a purpose.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can acceptable be used in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;acceptable&quot; is appropriate in both formal and informal writing contexts.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;acceptible&quot; likely occurs because of confusion about the &quot;able&quot; vs &quot;ible&quot; ending.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;acceptable&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: acceptable behavior, acceptable quality, acceptable level, acceptable standard, and acceptable use.</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Acceptable</strong> is the correct spelling with &quot;able&quot; ending. It means satisfactory or adequate. The misspelling &quot;acceptible&quot; is never correct. Use &quot;acceptable&quot; to describe something that is satisfactory or adequate.</p>
       </div>
     </div>
-  );
+  )
 } 

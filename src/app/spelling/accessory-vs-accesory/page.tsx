@@ -1,175 +1,142 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Accessory or Accesory - Which is Correct?",
-  description: "Learn the correct spelling between &apos;accessory&apos; and &apos;accesory&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Accessory or Accesory - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;accessory&quot; and &quot;accesory&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
 export default function AccessoryVsAccesoryPage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Accessory or Accesory</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Accessory or Accesory, and how to use them properly.
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Accessory or Accesory</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;accessory&quot; and &quot;accesory&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Accesory</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Accesory&quot; is missing the second &quot;s&quot; - it should be &quot;accessory.&quot;
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Accesory</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Accessory</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Accessory&quot; means an additional item or someone who helps in a crime.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Accesory&quot; is a misspelling. The correct spelling is &quot;accessory&quot; with two &quot;c&quot;s.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Accessory</h3>
             </div>
-          </Card>
-        </div>
-      </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Accessory</span> (noun): 1) An additional item that complements or enhances something else. 2) Someone who helps in a crime without being the main perpetrator.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>She wore beautiful accessories with her dress.</li>
-              <li>The phone comes with several accessories.</li>
-              <li>He was charged as an accessory to the crime.</li>
-            </ul>
-          </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Accessory&quot; is the correct spelling. It means an additional item that complements or enhances something.</p>
+          </CardContent>
         </Card>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;accessory&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Items:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Add-on</li>
-                  <li>Attachment</li>
-                  <li>Supplement</li>
-                  <li>Adornment</li>
-                  <li>Accoutrement</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Accessory (noun):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">An additional item that complements or enhances something; a supplementary part or attachment.</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-green-800 space-y-2">
+                  <li>• She bought jewelry <strong>accessories</strong> to match her dress.</li>
+                  <li>• The phone comes with several <strong>accessories</strong>.</li>
+                  <li>• Car <strong>accessories</strong> can enhance its appearance.</li>
                 </ul>
               </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Legal:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Accomplice</li>
-                  <li>Helper</li>
-                  <li>Assistant</li>
-                  <li>Partner</li>
-                  <li>Collaborator</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Accesory (noun):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Accesory&quot; is a misspelling of &quot;accessory&quot; and is not a valid English word.</p>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-red-800 space-y-2">
+                  <li>• &quot;Accesory&quot; is not used in standard English.</li>
+                  <li>• Always use <strong>accessory</strong> when referring to additional items.</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Accessory&quot; is the correct spelling. &quot;Accesory&quot; is a common misspelling—remember the double &quot;s&quot; in accessory.
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it accesory or accessory?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct spelling is &quot;accessory.&quot; &quot;Accesory&quot; is incorrect—it&apos;s missing the second &quot;s.&quot;</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce accessory?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /əkˈsɛsəri/ (ak-SES-uh-ree).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does accessory mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">It means an additional item that complements something else, or someone who helps in a crime.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the difference between accessory and supplement?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Accessory enhances or complements, while supplement adds to or completes something.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can accessory be used in fashion contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;Jewelry and handbags are popular fashion accessories&quot; is a common usage.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What are common phrases with accessory?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Common phrases include: fashion accessory, accessory to murder, and computer accessories.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is accessory used in legal contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;Accessory to a crime&quot; is a legal term for someone who helps but doesn&apos;t commit the main crime.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the plural form of accessory?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The plural is &quot;accessories&quot; - just add &quot;ies&quot; to the end.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the origin of accessory?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Accessory comes from Latin &quot;accessorius&quot; meaning additional or supplementary.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can accessory be used in technology contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;Phone accessories&quot; or &quot;computer accessories&quot; are common technology terms.</div>
-            </div>
+            </CardContent>
           </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-green-900">Accessory:</h4>
+              <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Addition</li>
+                <li>• Attachment</li>
+                <li>• Extra</li>
+                <li>• Supplement</li>
+                <li>• Enhancement</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-red-900">Accesory:</h4>
+              <ul className="text-lg md:text-xl text-red-800 space-y-1">
+                <li>• (No valid synonyms; not a standard English word)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Accessory</strong> is spelled with two &quot;c&quot;s at the beginning.</li>
+            <li>• The word comes from Latin &quot;accessorius&quot; meaning &quot;additional.&quot;</li>
+            <li>• Used to describe additional items that complement or enhance something.</li>
+            <li>• Common in both formal and informal writing.</li>
+            <li>• &quot;Accesory&quot; is never correct in any context.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;accesory&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;accesory&quot; is never correct. The proper spelling is always &quot;accessory.&quot;</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ac + cessory&quot; - remember the double &quot;c&quot; at the beginning.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between accessory and attachment?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Accessory&quot; refers to additional items that enhance something, while &quot;attachment&quot; refers to something that is physically connected.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can accessory be used in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;accessory&quot; is appropriate in both formal and informal writing contexts.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;accesory&quot; likely occurs because of confusion about the double &quot;c&quot; at the beginning.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;accessory&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: fashion accessories, car accessories, phone accessories, accessory before the fact, and accessory after the fact.</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Accessory</strong> is the correct spelling with two &quot;c&quot;s at the beginning. It means an additional item that complements or enhances something. The misspelling &quot;accesory&quot; is never correct. Use &quot;accessory&quot; to describe additional items that enhance or complement something.</p>
       </div>
     </div>
-  );
+  )
 } 

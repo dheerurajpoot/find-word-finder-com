@@ -21,7 +21,7 @@ export default function AccessVsAccsessPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Accsess</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Accsess&quot; is a misspelling. The correct spelling is &quot;access&quot; with one &quot;s&quot;.</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Accsess&quot; is a misspelling. The correct spelling is &quot;access&quot; with two &quot;c&quot;s and one &quot;s.&quot;</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -45,8 +45,8 @@ export default function AccessVsAccsessPage() {
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
                   <li>• Students have <strong>access</strong> to the library.</li>
+                  <li>• You need a password to <strong>access</strong> the system.</li>
                   <li>• The building has wheelchair <strong>access</strong>.</li>
-                  <li>• You can <strong>access</strong> the files online.</li>
                 </ul>
               </div>
             </CardContent>
@@ -59,7 +59,7 @@ export default function AccessVsAccsessPage() {
                 <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-red-800 space-y-2">
                   <li>• &quot;Accsess&quot; is not used in standard English.</li>
-                  <li>• Always use <strong>access</strong> when referring to entry or use.</li>
+                  <li>• Always use <strong>access</strong> when referring to entry or use of something.</li>
                 </ul>
               </div>
             </CardContent>
@@ -91,15 +91,18 @@ export default function AccessVsAccsessPage() {
           </Card>
         </div>
       </div>
-      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
-        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
-        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• <strong>Access</strong> is spelled with one &quot;s&quot;, not two.</li>
-          <li>• The word comes from Latin &quot;accessus&quot; meaning approach.</li>
-          <li>• Used as both noun and verb.</li>
-          <li>• Common in technology, business, and general contexts.</li>
-          <li>• &quot;Accsess&quot; is never correct in any context.</li>
-        </ul>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Access</strong> is spelled with two &quot;c&quot;s and one &quot;s&quot; at the end.</li>
+            <li>• The word comes from Latin &quot;accessus&quot; meaning &quot;approach.&quot;</li>
+            <li>• Used to describe the ability to enter, reach, or use something.</li>
+            <li>• Common in both formal and informal writing.</li>
+            <li>• &quot;Accsess&quot; is never correct in any context.</li>
+          </ul>
+        </div>
       </div>
       <div className="mb-8">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
@@ -110,11 +113,11 @@ export default function AccessVsAccsessPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ac&quot; + &quot;cess&quot; - like &quot;ac&quot; with &quot;cess&quot;, with one &quot;s&quot;.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ac + cess&quot; - remember the double &quot;c&quot; and single &quot;s&quot; at the end.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between access and entry?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Access&quot; implies the ability to use or reach something, while &quot;entry&quot; specifically refers to going into a place.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Access&quot; refers to the ability to reach or use something, while &quot;entry&quot; refers to the act of entering.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can access be used in formal writing?</h3>
@@ -122,17 +125,17 @@ export default function AccessVsAccsessPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;accsess&quot; likely occurs because of confusion about the number of &quot;s&quot;s.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;accsess&quot; likely occurs because of confusion about the number of &quot;s&quot; letters at the end.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;access&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Examples include: access to, access point, access control, remote access, and public access.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: access to information, access control, access point, access road, and access granted.</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Access</strong> is the correct spelling with one &quot;s&quot;. It means the ability to enter, reach, or use something. The misspelling &quot;accsess&quot; is never correct.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Access</strong> is the correct spelling with two &quot;c&quot;s and one &quot;s&quot; at the end. It means the ability to enter, reach, or use something. The misspelling &quot;accsess&quot; is never correct. Use &quot;access&quot; to describe the ability to reach or use something.</p>
       </div>
     </div>
   )

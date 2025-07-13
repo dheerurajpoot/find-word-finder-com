@@ -1,175 +1,142 @@
-import { Metadata } from "next";
-import { Card } from "@/components/ui/card";
+import { Metadata } from 'next'
+import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Access or Acsess - Which is Correct?",
-  description: "Learn the correct spelling between &apos;access&apos; and &apos;acsess&apos;. Discover definitions, examples, and usage tips for these commonly confused words.",
-};
+  title: 'Access or Acsess - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;access&quot; and &quot;acsess&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+}
 
 export default function AccessVsAcsessPage() {
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4 space-y-10">
-      {/* Title and subtitle */}
-      <div className="text-center space-y-3">
-        <h1 className="text-5xl font-extrabold tracking-tight">Access or Acsess</h1>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed bg-gray-50 rounded px-4 py-2 inline-block mx-auto max-w-xl">
-          Which spelling is correct, Access or Acsess, and how to use them properly.
-        </p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Access or Acsess</h1>
+      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;access&quot; and &quot;acsess&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
-
-      {/* Correct/Incorrect Cards */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <div className="flex-1">
-          <Card className="bg-red-50 border border-red-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">❌</span>
-                <span className="text-2xl font-extrabold text-red-800">INCORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-red-600 mb-2">Acsess</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This spelling is incorrect. &quot;Acsess&quot; is missing the second &quot;c&quot; - it should be &quot;access.&quot;
-              </div>
+      <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <Card className="border-2 border-red-500 bg-red-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">❌</span>
+              <h3 className="text-2xl font-bold text-red-800">Incorrect: Acsess</h3>
             </div>
-          </Card>
-        </div>
-        <div className="flex-1">
-          <Card className="bg-green-50 border border-green-200 rounded-xl p-6 h-full flex flex-col justify-between shadow-none">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-4xl">✅</span>
-                <span className="text-2xl font-extrabold text-green-800">CORRECT</span>
-              </div>
-              <div className="text-3xl font-extrabold text-green-600 mb-2">Access</div>
-              <div className="text-lg md:text-xl text-gray-700">
-                This is the correct spelling. &quot;Access&quot; means the ability to enter or use something.
-              </div>
+            <p className="text-lg md:text-xl text-red-700">&quot;Acsess&quot; is a misspelling. The correct spelling is &quot;access&quot; with two &quot;c&quot;s.</p>
+          </CardContent>
+        </Card>
+        <Card className="border-2 border-green-500 bg-green-50">
+          <CardContent className="p-6">
+            <div className="flex items-center mb-4">
+              <span className="text-3xl mr-3">✅</span>
+              <h3 className="text-2xl font-bold text-green-800">Correct: Access</h3>
             </div>
-          </Card>
-        </div>
-      </div>
-
-      {/* Definition */}
-      <div className="space-y-8">
-        <Card>
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Definition</div>
-            <div className="mb-2 text-lg md:text-xl">
-              <span className="font-bold">Access</span> (noun/verb): The ability to enter, approach, or use something. Permission to use or enter a place or system.
-            </div>
-            <div className="mb-2 font-semibold text-lg md:text-xl">Examples:</div>
-            <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-              <li>Students have access to the library.</li>
-              <li>She accessed the computer system.</li>
-              <li>The building has wheelchair access.</li>
-            </ul>
-          </div>
+            <p className="text-lg md:text-xl text-green-700">&quot;Access&quot; is the correct spelling. It means the ability to enter, reach, or use something.</p>
+          </CardContent>
         </Card>
       </div>
-
-      {/* Synonyms */}
-      <div className="space-y-8">
-        <Card className="bg-blue-50">
-          <div className="p-6">
-            <div className="mb-2 font-bold text-2xl">Synonyms</div>
-            <div className="font-semibold mb-2 text-lg md:text-xl">Words with similar meanings to &quot;access&quot;:</div>
-            <div className="flex flex-col sm:flex-row justify-between gap-12">
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Entry:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Entry</li>
-                  <li>Entrance</li>
-                  <li>Admission</li>
-                  <li>Approach</li>
-                  <li>Gateway</li>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Access (noun/verb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">The ability to enter, reach, or use something; to gain entry to or use of something.</p>
+              <div className="bg-green-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-green-800 space-y-2">
+                  <li>• Students have <strong>access</strong> to the library.</li>
+                  <li>• You need a password to <strong>access</strong> the system.</li>
+                  <li>• The building has wheelchair <strong>access</strong>.</li>
                 </ul>
               </div>
-              <div className="min-w-[220px]">
-                <div className="font-semibold text-lg md:text-xl">Permission:</div>
-                <ul className="list-disc list-inside ml-4 text-lg md:text-xl text-muted-foreground">
-                  <li>Permission</li>
-                  <li>Authorization</li>
-                  <li>Clearance</li>
-                  <li>Admittance</li>
-                  <li>Passage</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-white shadow-md border">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Acsess (noun/verb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Acsess&quot; is a misspelling of &quot;access&quot; and is not a valid English word.</p>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
+                <ul className="text-lg md:text-xl text-red-800 space-y-2">
+                  <li>• &quot;Acsess&quot; is not used in standard English.</li>
+                  <li>• Always use <strong>access</strong> when referring to entry or use of something.</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      {/* Note */}
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-yellow-900 text-lg md:text-xl">
-        <strong>Note:</strong> &quot;Access&quot; is the correct spelling. &quot;Acsess&quot; is a common misspelling—remember the double &quot;c&quot; in access.
-      </div>
-
-      {/* FAQ Section */}
-      <div>
-        <div className="text-2xl font-bold mb-4">FAQ&apos;s</div>
-        <div className="space-y-3">
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is it acsess or access?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct spelling is &quot;access.&quot; &quot;Acsess&quot; is incorrect—it&apos;s missing the second &quot;c.&quot;</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">How to pronounce access?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The correct pronunciation is /ˈæksɛs/ (AK-ses).</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What does access mean?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">It means the ability to enter, approach, or use something, or permission to use a system or place.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the difference between access and entrance?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Access refers to the ability to use or enter, while entrance is the physical opening or doorway.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can access be used in formal writing?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;Users have access to the database&quot; is appropriate in formal contexts.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What are common phrases with access?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Common phrases include: access code, access point, access control, and public access.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Is access used in technology contexts?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;Access&quot; is commonly used in computing, networking, and information technology.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the adjective form of access?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">The adjective is &quot;accessible&quot; - easy to reach, enter, or use.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">What&apos;s the origin of access?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Access comes from Latin &quot;accessus&quot; meaning approach or entrance.</div>
-            </div>
-          </Card>
-          <Card>
-            <div className="p-6">
-              <div className="font-semibold text-lg md:text-xl mb-1">Can access be used in everyday conversation?</div>
-              <div className="text-lg md:text-xl text-muted-foreground">Yes! &quot;I have access to the files&quot; or &quot;The building has good access&quot; are common uses.</div>
-            </div>
+            </CardContent>
           </Card>
         </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-green-900">Access:</h4>
+              <ul className="text-lg md:text-xl text-green-800 space-y-1">
+                <li>• Entry</li>
+                <li>• Admission</li>
+                <li>• Approach</li>
+                <li>• Entrance</li>
+                <li>• Use</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-100">
+            <CardContent className="p-6">
+              <h4 className="text-xl font-semibold mb-2 text-red-900">Acsess:</h4>
+              <ul className="text-lg md:text-xl text-red-800 space-y-1">
+                <li>• (No valid synonyms; not a standard English word)</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Access</strong> is spelled with two &quot;c&quot;s at the beginning.</li>
+            <li>• The word comes from Latin &quot;accessus&quot; meaning &quot;approach.&quot;</li>
+            <li>• Used to describe the ability to enter, reach, or use something.</li>
+            <li>• Common in both formal and informal writing.</li>
+            <li>• &quot;Acsess&quot; is never correct in any context.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;acsess&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;acsess&quot; is never correct. The proper spelling is always &quot;access.&quot;</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ac + cess&quot; - remember the double &quot;c&quot; at the beginning.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between access and entry?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Access&quot; refers to the ability to reach or use something, while &quot;entry&quot; refers to the act of entering.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can access be used in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;access&quot; is appropriate in both formal and informal writing contexts.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;acsess&quot; likely occurs because of confusion about the double &quot;c&quot; at the beginning.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md border">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;access&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: access to information, access control, access point, access road, and access granted.</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Access</strong> is the correct spelling with two &quot;c&quot;s at the beginning. It means the ability to enter, reach, or use something. The misspelling &quot;acsess&quot; is never correct. Use &quot;access&quot; to describe the ability to reach or use something.</p>
       </div>
     </div>
-  );
+  )
 } 

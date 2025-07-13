@@ -21,7 +21,7 @@ export default function AccessionVsAccesionPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Accesion</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Accesion&quot; is a misspelling. The correct spelling is &quot;accession&quot; with two &quot;s&quot;s.</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Accesion&quot; is a misspelling. The correct spelling is &quot;accession&quot; with two &quot;c&quot;s.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -39,27 +39,27 @@ export default function AccessionVsAccesionPage() {
         <div className="grid md:grid-cols-2 gap-6">
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-green-900">Accession (noun):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">The act of coming into possession of something; attaining a position of power or authority.</p>
+              <h3 className="text-xl font-semibold mb-2 text-green-900">Accession (noun/verb):</h3>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">The act of coming into possession of something; attaining a position or rank; adding to a collection.</p>
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
-                  <li>• The museum celebrated the <strong>accession</strong> of new artifacts.</li>
-                  <li>• The king&apos;s <strong>accession</strong> to the throne was peaceful.</li>
-                  <li>• The library recorded the <strong>accession</strong> of rare books.</li>
+                  <li>• The museum&apos;s <strong>accession</strong> of new artifacts.</li>
+                  <li>• The prince&apos;s <strong>accession</strong> to the throne.</li>
+                  <li>• The library will <strong>accession</strong> the rare books.</li>
                 </ul>
               </div>
             </CardContent>
           </Card>
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-red-900">Accesion (noun):</h3>
+              <h3 className="text-xl font-semibold mb-2 text-red-900">Accesion (noun/verb):</h3>
               <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Accesion&quot; is a misspelling of &quot;accession&quot; and is not a valid English word.</p>
               <div className="bg-red-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-red-800 space-y-2">
                   <li>• &quot;Accesion&quot; is not used in standard English.</li>
-                  <li>• Always use <strong>accession</strong> when referring to attainment.</li>
+                  <li>• Always use <strong>accession</strong> when referring to attaining or acquiring.</li>
                 </ul>
               </div>
             </CardContent>
@@ -73,11 +73,11 @@ export default function AccessionVsAccesionPage() {
             <CardContent className="p-6">
               <h4 className="text-xl font-semibold mb-2 text-green-900">Accession:</h4>
               <ul className="text-lg md:text-xl text-green-800 space-y-1">
-                <li>• Attainment</li>
                 <li>• Acquisition</li>
+                <li>• Attainment</li>
+                <li>• Addition</li>
                 <li>• Succession</li>
                 <li>• Induction</li>
-                <li>• Installation</li>
               </ul>
             </CardContent>
           </Card>
@@ -91,15 +91,18 @@ export default function AccessionVsAccesionPage() {
           </Card>
         </div>
       </div>
-      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
-        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
-        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• <strong>Accession</strong> is spelled with two &quot;s&quot;s, not one.</li>
-          <li>• The word comes from Latin &quot;accessio&quot; meaning addition.</li>
-          <li>• Used in formal contexts like museums, libraries, and royalty.</li>
-          <li>• Often used in academic and institutional settings.</li>
-          <li>• &quot;Accesion&quot; is never correct in any context.</li>
-        </ul>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
+        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+            <li>• <strong>Accession</strong> is spelled with two &quot;c&quot;s at the beginning.</li>
+            <li>• The word comes from Latin &quot;accessio&quot; meaning &quot;addition.&quot;</li>
+            <li>• Used to describe attaining a position or acquiring something.</li>
+            <li>• Common in formal writing, especially in legal and institutional contexts.</li>
+            <li>• &quot;Accesion&quot; is never correct in any context.</li>
+          </ul>
+        </div>
       </div>
       <div className="mb-8">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
@@ -110,29 +113,29 @@ export default function AccessionVsAccesionPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;access&quot; + &quot;ion&quot; - like &quot;access&quot; with &quot;ion&quot; ending, with two &quot;s&quot;s.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;ac + cession&quot; - remember the double &quot;c&quot; at the beginning.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between accession and succession?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Accession&quot; refers to attaining a position, while &quot;succession&quot; refers to the order of inheriting or following.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between accession and acquisition?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Accession&quot; refers to attaining a position or rank, while &quot;acquisition&quot; refers to obtaining or gaining possession of something.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can accession be used in formal writing?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;accession&quot; is appropriate in both formal and informal writing contexts.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;accession&quot; is appropriate in formal writing, especially in legal and institutional contexts.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;accesion&quot; likely occurs because of confusion about the number of &quot;s&quot;s or pronunciation.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;accesion&quot; likely occurs because of confusion about the double &quot;c&quot; at the beginning.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;accession&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Examples include: accession number, accession date, accession to power, and accession agreement.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: accession to the throne, accession number, accession date, accession agreement, and accession process.</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Accession</strong> is the correct spelling with two &quot;s&quot;s. It means the act of coming into possession of something or attaining a position. The misspelling &quot;accesion&quot; is never correct.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Accession</strong> is the correct spelling with two &quot;c&quot;s at the beginning. It means the act of coming into possession of something or attaining a position. The misspelling &quot;accesion&quot; is never correct. Use &quot;accession&quot; to describe attaining a position or acquiring something.</p>
       </div>
     </div>
   )
