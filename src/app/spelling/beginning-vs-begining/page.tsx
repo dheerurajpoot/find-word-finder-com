@@ -66,7 +66,7 @@ export default function BeginningVsBeginingPage() {
             <strong>Beginning</strong> (noun): The point in time or space at which something starts; the first part or earliest stage of something.
           </p>
           <p>
-            <strong>Beginning</strong> (verb): Present participle of "begin" - the act of starting something.
+            <strong>Beginning</strong> (verb): Present participle of &quot;begin&quot; - the act of starting something.
           </p>
           <p>
             Used to refer to the start, origin, or commencement of events, processes, stories, or time periods.
