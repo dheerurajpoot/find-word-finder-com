@@ -55,13 +55,13 @@ export default function CalendarVsCalanderPage() {
         <h2 className="text-2xl font-bold mb-4">Usage Examples</h2>
         <div className="space-y-4">
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-            <p className="text-lg"><strong>Correct:</strong> "I marked the meeting on my calendar for next Tuesday."</p>
+            <p className="text-lg"><strong>Correct:</strong> &quot;I marked the meeting on my calendar for next Tuesday.&quot;</p>
           </div>
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-            <p className="text-lg"><strong>Correct:</strong> "The school calendar shows when holidays are scheduled."</p>
+            <p className="text-lg"><strong>Correct:</strong> &quot;The school calendar shows when holidays are scheduled.&quot;</p>
           </div>
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-            <p className="text-lg"><strong>Correct:</strong> "She keeps a detailed calendar of all her appointments."</p>
+            <p className="text-lg"><strong>Correct:</strong> &quot;She keeps a detailed calendar of all her appointments.&quot;</p>
           </div>
         </div>
       </section>
@@ -102,11 +102,11 @@ export default function CalendarVsCalanderPage() {
           </div>
           <div className="border rounded-lg p-4">
             <h3 className="font-semibold text-lg mb-2">Is &quot;calander&quot; ever correct?</h3>
-            <p className="text-lg">No, &quot;calander&quot; is never the correct spelling. It's always &quot;calendar&quot; with an &quot;a&quot; in the middle.</p>
+            <p className="text-lg">No, &quot;calander&quot; is never the correct spelling. It&apos;s always &quot;calendar&quot; with an &quot;a&quot; in the middle.</p>
           </div>
           <div className="border rounded-lg p-4">
             <h3 className="font-semibold text-lg mb-2">How can I remember the correct spelling?</h3>
-            <p className="text-lg">Think of &quot;calendar&quot; as having &quot;cal&quot; + &quot;endar&quot; - the &quot;a&quot; in the middle is consistent with the word's Latin origin. You can also remember: &quot;A calendar has dates, and 'date' has an 'a'.&quot;</p>
+            <p className="text-lg">Think of &quot;calendar&quot; as having &quot;cal&quot; + &quot;endar&quot; - the &quot;a&quot; in the middle is consistent with the word&apos;s Latin origin. You can also remember: &quot;A calendar has dates, and &apos;date&apos; has an &apos;a&apos;.&quot;</p>
           </div>
         </div>
       </section>
@@ -121,7 +121,7 @@ export default function CalendarVsCalanderPage() {
             &quot;Calander&quot; is always incorrect and should be avoided in all contexts.
           </p>
           <p className="text-lg">
-            Use &quot;calendar&quot; when referring to any system for organizing time, whether it's a physical planner, digital tool, or system of reckoning dates.
+            Use &quot;calendar&quot; when referring to any system for organizing time, whether it&apos;s a physical planner, digital tool, or system of reckoning dates.
           </p>
         </div>
       </section>
