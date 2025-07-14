@@ -19,7 +19,7 @@ export default function BroccoliVsBrocolliPage() {
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Which Spelling is Correct?</h2>
         <p className="text-lg md:text-xl opacity-90">
-          Understanding the correct spelling of &quot;Broccoli&quot; and &quot;Brocolli&quot;. This is a noun referring to a green vegetable in the cabbage family.
+          Understanding the correct spelling of &quot;Broccoli&quot; and &quot;Brocolli&quot;. This is a green vegetable in the cabbage family.
         </p>
       </div>
 
@@ -36,7 +36,7 @@ export default function BroccoliVsBrocolliPage() {
             <ul className="text-red-800 mt-2 space-y-1">
               <li>• I love eating brocolli</li>
               <li>• The brocolli was steamed perfectly</li>
-              <li>• Brocolli is very nutritious</li>
+              <li>• Brocolli is very healthy</li>
             </ul>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function BroccoliVsBrocolliPage() {
             <ul className="text-green-800 mt-2 space-y-1">
               <li>• I love eating broccoli</li>
               <li>• The broccoli was steamed perfectly</li>
-              <li>• Broccoli is very nutritious</li>
+              <li>• Broccoli is very healthy</li>
             </ul>
           </div>
         </div>
@@ -63,16 +63,16 @@ export default function BroccoliVsBrocolliPage() {
         <h2 className="text-2xl font-bold mb-4 text-blue-900">Definition of Broccoli</h2>
         <div className="text-lg md:text-xl text-blue-800 space-y-4">
           <p>
-            <strong>Broccoli</strong> (noun): A green vegetable in the cabbage family, with dense clusters of flower buds and thick stalks.
+            <strong>Broccoli</strong> (noun): A green vegetable in the cabbage family, with dense clusters of small, edible flower heads on thick stalks.
           </p>
           <p>
-            <strong>Broccoli</strong> (noun): A plant of the species Brassica oleracea var. italica, cultivated for its edible flower heads.
+            <strong>Broccoli</strong> (noun): A plant of the species Brassica oleracea var. italica, cultivated for its edible flower heads and stalks.
           </p>
           <p>
-            <strong>Broccoli</strong> (noun): The edible green flower heads and stalks of this plant, often cooked as a vegetable.
+            Used to refer to the vegetable itself, whether raw, cooked, or as an ingredient in various dishes. It&apos;s known for its high nutritional value and distinctive appearance.
           </p>
           <p>
-            Used to refer to a nutritious green vegetable that is commonly eaten cooked or raw, known for its health benefits.
+            The word comes from the Italian &quot;broccolo&quot; (plural: broccoli), meaning the flowering top of a cabbage.
           </p>
         </div>
       </div>
@@ -102,12 +102,12 @@ export default function BroccoliVsBrocolliPage() {
       <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• &quot;Broccoli&quot; is always spelled with double &quot;c&quot; in the middle, not single &quot;c&quot;</li>
-          <li>• The word comes from Italian &quot;broccoli&quot; (plural of &quot;broccolo&quot; meaning sprout)</li>
-          <li>• The pronunciation is /ˈbrɒkəli/ (BROK-uh-lee) or /ˈbrɑːkəli/ (BRAH-kuh-lee)</li>
+          <li>• &quot;Broccoli&quot; is always spelled with double &quot;c&quot; and single &quot;l&quot;</li>
+          <li>• The word comes from Italian &quot;broccolo&quot; (plural: broccoli)</li>
+          <li>• The pronunciation is /ˈbrɒkəli/ (BROK-uh-lee)</li>
           <li>• &quot;Brocolli&quot; is a common misspelling but is never correct</li>
-          <li>• The double &quot;c&quot; is preserved from the Italian origin</li>
-          <li>• It&apos;s a noun referring to a specific type of vegetable</li>
+          <li>• The word is used as a noun only</li>
+          <li>• It&apos;s commonly used in cooking and nutrition contexts</li>
         </ul>
       </div>
 
@@ -117,7 +117,7 @@ export default function BroccoliVsBrocolliPage() {
           <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it &quot;brocolli&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: This misspelling occurs because people forget to double the &quot;c&quot; in the middle of the word. The correct spelling preserves the double &quot;c&quot; from the Italian origin.
+              A: This misspelling occurs because people confuse the double &quot;c&quot; with double &quot;l&quot;. The correct spelling has double &quot;c&quot; and single &quot;l&quot;.
             </p>
           </div>
           <div>
@@ -127,15 +127,15 @@ export default function BroccoliVsBrocolliPage() {
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between &quot;broccoli&quot; and &quot;cauliflower&quot;?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between broccoli and cauliflower?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: Both are in the same family, but broccoli has green flower heads while cauliflower has white flower heads. They have different flavors and nutritional profiles.
+              A: Broccoli has green flower heads, while cauliflower has white flower heads. Both are in the same family but are different varieties of Brassica oleracea.
             </p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: How do I remember the correct spelling?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: Think of &quot;broccoli&quot; as having double &quot;c&quot; like &quot;occasion&quot; and &quot;success.&quot; The word comes from Italian and preserves the double &quot;c&quot; spelling.
+              A: Think of &quot;broc&quot; + &quot;coli&quot;. The word has double &quot;c&quot; (like in &quot;broccoli&quot;) and single &quot;l&quot; (like in &quot;coli&quot;).
             </p>
           </div>
         </div>
@@ -148,7 +148,7 @@ export default function BroccoliVsBrocolliPage() {
             <strong>Broccoli</strong> is the correct spelling of this word. The incorrect spelling &quot;brocolli&quot; should never be used.
           </p>
           <p>
-            Remember: Broccoli has double &quot;c&quot; in the middle (like &quot;occasion&quot; and &quot;success&quot;). The word refers to a nutritious green vegetable in the cabbage family, and comes from Italian with the double &quot;c&quot; spelling pattern.
+            Remember: Broccoli = Broc + coli. The word has double &quot;c&quot; and single &quot;l&quot;, not double &quot;l.&quot;
           </p>
         </div>
       </div>

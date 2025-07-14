@@ -1,141 +1,156 @@
 import { Metadata } from 'next'
-import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Buoyant or Bouyant - Which is Correct? | Word Finder',
-  description: 'Learn the correct spelling between &quot;buoyant&quot; and &quot;bouyant&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+  title: 'Buoyant vs Bouyant - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;buoyant&quot; and &quot;bouyant&quot;. Discover definitions, examples, and usage tips for these commonly confused words.',
+  keywords: 'buoyant, bouyant, spelling, correct spelling, word comparison, English spelling, floating, cheerful',
+  openGraph: {
+    title: 'Buoyant vs Bouyant - Which is Correct?',
+    description: 'Learn the correct spelling between &quot;buoyant&quot; and &quot;bouyant&quot;. Discover definitions, examples, and usage tips.',
+    type: 'website',
+  },
 }
 
 export default function BuoyantVsBouyantPage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Buoyant or Bouyant</h1>
-      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;buoyant&quot; and &quot;bouyant&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
+      <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Buoyant or Bouyant</h1>
+      
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl opacity-90">
+          Understanding the correct spelling of this word meaning able to float or cheerful and optimistic.
+        </p>
       </div>
-      <div className="grid md:grid-cols-2 gap-6 mb-8">
-        <Card className="border-2 border-red-500 bg-red-50">
-          <CardContent className="p-6">
-            <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">❌</span>
-              <h3 className="text-2xl font-bold text-red-800">Incorrect: Bouyant</h3>
-            </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Bouyant&quot; is a misspelling. The correct spelling is &quot;buoyant&quot; with &quot;u&quot; before &quot;o&quot;.</p>
-          </CardContent>
-        </Card>
-        <Card className="border-2 border-green-500 bg-green-50">
-          <CardContent className="p-6">
-            <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">✅</span>
-              <h3 className="text-2xl font-bold text-green-800">Correct: Buoyant</h3>
-            </div>
-            <p className="text-lg md:text-xl text-green-700">&quot;Buoyant&quot; is the correct spelling. It refers to the ability to float or rise in a fluid.</p>
-          </CardContent>
-        </Card>
-      </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="bg-white shadow-md border">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-green-900">Buoyant (adjective):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">Able to float or rise in a fluid; cheerful and optimistic in attitude.</p>
-              <div className="bg-green-50 p-4 rounded-lg">
-                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
-                <ul className="text-lg md:text-xl text-green-800 space-y-2">
-                  <li>• The <strong>buoyant</strong> balloon floated upward.</li>
-                  <li>• She had a <strong>buoyant</strong> personality.</li>
-                  <li>• The <strong>buoyant</strong> material kept the boat afloat.</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
-          <Card className="bg-white shadow-md border">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-red-900">Bouyant (adjective):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Bouyant&quot; is a misspelling of &quot;buoyant&quot; and is not a valid English word.</p>
-              <div className="bg-red-50 p-4 rounded-lg">
-                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
-                <ul className="text-lg md:text-xl text-red-800 space-y-2">
-                  <li>• &quot;Bouyant&quot; is not used in standard English.</li>
-                  <li>• Always use <strong>buoyant</strong> when referring to floating ability.</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
+
+      <div className="grid md:grid-cols-2 gap-8 mb-8">
+        <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+          <h3 className="text-2xl font-bold mb-4 text-red-900 flex items-center">
+            ❌ Bouyant
+          </h3>
+          <p className="text-lg md:text-xl text-red-800 mb-4">
+            This spelling is <strong>incorrect</strong>. &quot;Bouyant&quot; is a misspelling of the word &quot;buoyant.&quot;
+          </p>
+          <div className="bg-red-100 p-4 rounded">
+            <p className="text-red-900 font-semibold">Incorrect Examples:</p>
+            <ul className="text-red-800 mt-2 space-y-1">
+              <li>• The wood is very bouyant in water</li>
+              <li>• She had a bouyant personality</li>
+              <li>• The bouyant market continued to rise</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-2xl font-bold mb-4 text-green-900 flex items-center">
+            ✅ Buoyant
+          </h3>
+          <p className="text-lg md:text-xl text-green-800 mb-4">
+            This is the <strong>correct</strong> spelling. &quot;Buoyant&quot; is the proper English spelling.
+          </p>
+          <div className="bg-green-100 p-4 rounded">
+            <p className="text-green-900 font-semibold">Correct Examples:</p>
+            <ul className="text-green-800 mt-2 space-y-1">
+              <li>• The wood is very buoyant in water</li>
+              <li>• She had a buoyant personality</li>
+              <li>• The buoyant market continued to rise</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="bg-green-100">
-            <CardContent className="p-6">
-              <h4 className="text-xl font-semibold mb-2 text-green-900">Buoyant:</h4>
-              <ul className="text-lg md:text-xl text-green-800 space-y-1">
-                <li>• Floating</li>
-                <li>• Light</li>
-                <li>• Cheerful</li>
-                <li>• Optimistic</li>
-                <li>• Upbeat</li>
-              </ul>
-            </CardContent>
-          </Card>
-          <Card className="bg-red-100">
-            <CardContent className="p-6">
-              <h4 className="text-xl font-semibold mb-2 text-red-900">Bouyant:</h4>
-              <ul className="text-lg md:text-xl text-red-800 space-y-1">
-                <li>• (No valid synonyms; not a standard English word)</li>
-              </ul>
-            </CardContent>
-          </Card>
+
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Definition of Buoyant</h2>
+        <div className="text-lg md:text-xl text-blue-800 space-y-4">
+          <p>
+            <strong>Buoyant</strong> (adjective): Able to float or rise to the top of a liquid or gas.
+          </p>
+          <p>
+            <strong>Buoyant</strong> (adjective): Cheerful and optimistic; tending to make someone feel happy and confident.
+          </p>
+          <p>
+            <strong>Buoyant</strong> (adjective): (of an economy or market) tending to rise or remain at a high level.
+          </p>
+          <p>
+            The word comes from the French &quot;bouyant&quot; and ultimately from the Latin &quot;boiare&quot; meaning to float.
+          </p>
         </div>
       </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
-        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
-          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
-          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Buoyant</strong> is spelled with &quot;u&quot; before &quot;o&quot;, not &quot;ou&quot;.</li>
-            <li>• The word comes from &quot;buoy&quot; + the suffix &quot;-ant&quot;.</li>
-            <li>• Used as an adjective only.</li>
-            <li>• Common in physics, engineering, and personality descriptions.</li>
-            <li>• &quot;Bouyant&quot; is never correct in any context.</li>
-          </ul>
+
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Synonyms for Buoyant</h2>
+        <div className="grid md:grid-cols-2 gap-4 text-lg md:text-xl text-blue-800">
+          <div>
+            <ul className="space-y-2">
+              <li>• Floating</li>
+              <li>• Light</li>
+              <li>• Cheerful</li>
+              <li>• Optimistic</li>
+            </ul>
+          </div>
+          <div>
+            <ul className="space-y-2">
+              <li>• Upbeat</li>
+              <li>• Lively</li>
+              <li>• Resilient</li>
+              <li>• Bouncy</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+
+      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
+        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+          <li>• &quot;Buoyant&quot; is always spelled with &quot;buoy&quot; at the beginning</li>
+          <li>• The word comes from French &quot;bouyant&quot; and Latin &quot;boiare&quot;</li>
+          <li>• The pronunciation is /ˈbɔɪənt/ (BOY-uhnt)</li>
+          <li>• &quot;Bouyant&quot; is a common misspelling but is never correct</li>
+          <li>• The word has multiple meanings: physical floating and emotional optimism</li>
+          <li>• It&apos;s commonly used in both scientific and everyday contexts</li>
+        </ul>
+      </div>
+
+      <div className="bg-gray-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;bouyant&quot; ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;bouyant&quot; is never correct. The proper spelling is always &quot;buoyant.&quot;</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it &quot;bouyant&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: This misspelling occurs because people hear the pronunciation /ˈbɔɪənt/ and assume it starts with &quot;bou&quot; instead of &quot;buoy.&quot; The spelling &quot;buoy&quot; is not intuitive from the pronunciation.
+            </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;buoy&quot; + &quot;ant&quot; - the word has &quot;u&quot; before &quot;o&quot; like &quot;buoy&quot; or &quot;buoyancy.&quot;</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is &quot;bouyant&quot; ever acceptable?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: No, &quot;bouyant&quot; is always incorrect. Always use &quot;buoyant&quot; in all contexts.
+            </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between buoyant and floating?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Buoyant&quot; describes the ability to float, while &quot;floating&quot; describes the actual state of being on the surface.</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between &quot;buoyant&quot; and &quot;floating&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: &quot;Buoyant&quot; describes the ability to float, while &quot;floating&quot; describes the actual state of being suspended in a liquid. Something can be buoyant without currently floating.
+            </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can buoyant be used to describe personality?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;buoyant&quot; can describe a cheerful and optimistic personality, as in &quot;She has a buoyant spirit.&quot;</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling likely occurs because of pronunciation or confusion with words that have &quot;ou&quot; instead of &quot;uo.&quot;</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;buoyant&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Examples include: buoyant mood, buoyant economy, buoyant spirit, and buoyant force.</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: Think of &quot;buoy&quot; (a floating marker) + &quot;ant.&quot; The word is related to floating, so it starts with &quot;buoy&quot; not &quot;bou.&quot;
+            </p>
           </div>
         </div>
       </div>
+
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Buoyant</strong> is the correct spelling with &quot;u&quot; before &quot;o&quot;. It refers to the ability to float or rise in a fluid, or a cheerful and optimistic attitude. The misspelling &quot;bouyant&quot; is never correct. Use &quot;buoyant&quot; when referring to floating ability or positive personality traits.</p>
+        <div className="text-lg md:text-xl text-green-800 space-y-4">
+          <p>
+            <strong>Buoyant</strong> is the correct spelling of this word. The incorrect spelling &quot;bouyant&quot; should never be used.
+          </p>
+          <p>
+            Remember: Buoyant = Buoy + ant. The word is related to floating (like a buoy), so it starts with &quot;buoy&quot; not &quot;bou.&quot;
+          </p>
+        </div>
       </div>
     </div>
   )

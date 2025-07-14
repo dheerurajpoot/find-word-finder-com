@@ -19,7 +19,7 @@ export default function BroadcastVsBrodcastPage() {
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Which Spelling is Correct?</h2>
         <p className="text-lg md:text-xl opacity-90">
-          Understanding the correct spelling of &quot;Broadcast&quot; and &quot;Brodcast&quot;. This is a verb and noun referring to the transmission of radio or television signals.
+          Understanding the correct spelling of &quot;Broadcast&quot; and &quot;Brodcast&quot;. This is a word meaning to transmit or send out information via radio, television, or other media.
         </p>
       </div>
 
@@ -36,7 +36,7 @@ export default function BroadcastVsBrodcastPage() {
             <ul className="text-red-800 mt-2 space-y-1">
               <li>• The news was brodcast live</li>
               <li>• They brodcast the game yesterday</li>
-              <li>• The brodcast reached millions</li>
+              <li>• The radio brodcast the weather</li>
             </ul>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function BroadcastVsBrodcastPage() {
             <ul className="text-green-800 mt-2 space-y-1">
               <li>• The news was broadcast live</li>
               <li>• They broadcast the game yesterday</li>
-              <li>• The broadcast reached millions</li>
+              <li>• The radio broadcast the weather</li>
             </ul>
           </div>
         </div>
@@ -63,16 +63,16 @@ export default function BroadcastVsBrodcastPage() {
         <h2 className="text-2xl font-bold mb-4 text-blue-900">Definition of Broadcast</h2>
         <div className="text-lg md:text-xl text-blue-800 space-y-4">
           <p>
-            <strong>Broadcast</strong> (verb): To transmit or send out radio or television signals to a wide audience.
+            <strong>Broadcast</strong> (verb): To transmit or send out information, programs, or signals via radio, television, or other electronic media.
           </p>
           <p>
             <strong>Broadcast</strong> (noun): A radio or television program or transmission.
           </p>
           <p>
-            <strong>Broadcast</strong> (verb): To make widely known or spread information to many people.
+            <strong>Broadcast</strong> (adjective): Relating to or involving the transmission of information to a wide audience.
           </p>
           <p>
-            Used to describe the transmission of audio or video content via radio, television, or other electronic media to a large audience.
+            The word comes from the combination of &quot;broad&quot; (wide) and &quot;cast&quot; (to throw or send), literally meaning to send widely.
           </p>
         </div>
       </div>
@@ -90,10 +90,10 @@ export default function BroadcastVsBrodcastPage() {
           </div>
           <div>
             <ul className="space-y-2">
-              <li>• Radiocast</li>
-              <li>• Stream</li>
               <li>• Relay</li>
+              <li>• Send</li>
               <li>• Disseminate</li>
+              <li>• Distribute</li>
             </ul>
           </div>
         </div>
@@ -102,12 +102,12 @@ export default function BroadcastVsBrodcastPage() {
       <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• &quot;Broadcast&quot; is always spelled with &quot;broad&quot; at the beginning, not &quot;brod&quot;</li>
-          <li>• The word comes from &quot;broad&quot; + &quot;cast&quot; (to throw or scatter widely)</li>
-          <li>• The pronunciation is /ˈbrɔːdkɑːst/ (BRAW-d-kast)</li>
+          <li>• &quot;Broadcast&quot; is always spelled with &quot;broad&quot; at the beginning</li>
+          <li>• The word comes from &quot;broad&quot; + &quot;cast&quot; (to send widely)</li>
+          <li>• The pronunciation is /ˈbrɔːdkɑːst/ (BRAWDS-kast)</li>
           <li>• &quot;Brodcast&quot; is a common misspelling but is never correct</li>
-          <li>• The word literally means to cast or throw something broadly</li>
-          <li>• It&apos;s both a verb and a noun in modern usage</li>
+          <li>• The word can be used as a verb, noun, or adjective</li>
+          <li>• It&apos;s commonly used in media and communication contexts</li>
         </ul>
       </div>
 
@@ -117,7 +117,7 @@ export default function BroadcastVsBrodcastPage() {
           <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it &quot;brodcast&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: This misspelling occurs because people forget the &quot;a&quot; in &quot;broad&quot; and write it as &quot;brod.&quot; The correct spelling is &quot;broad&quot; + &quot;cast.&quot;
+              A: This misspelling occurs because people hear the pronunciation and assume it starts with &quot;brod&quot; instead of &quot;broad.&quot; The spelling &quot;broad&quot; is not intuitive from the pronunciation.
             </p>
           </div>
           <div>
@@ -127,15 +127,15 @@ export default function BroadcastVsBrodcastPage() {
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between &quot;broadcast&quot; and &quot;stream&quot;?</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between &quot;broadcast&quot; and &quot;telecast&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: &quot;Broadcast&quot; traditionally refers to radio/TV transmission to many receivers simultaneously, while &quot;stream&quot; refers to digital transmission over the internet.
+              A: &quot;Broadcast&quot; is a broader term that includes radio, television, and other media, while &quot;telecast&quot; specifically refers to television broadcasting.
             </p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: How do I remember the correct spelling?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              A: Think of it as &quot;broad&quot; + &quot;cast&quot; - you&apos;re casting something broadly to a wide audience. Remember the &quot;a&quot; in &quot;broad.&quot;
+              A: Think of &quot;broad&quot; (wide) + &quot;cast&quot; (to send). The word literally means to send widely, so it starts with &quot;broad&quot; not &quot;brod.&quot;
             </p>
           </div>
         </div>
@@ -148,7 +148,7 @@ export default function BroadcastVsBrodcastPage() {
             <strong>Broadcast</strong> is the correct spelling of this word. The incorrect spelling &quot;brodcast&quot; should never be used.
           </p>
           <p>
-            Remember: Broadcast = Broad + cast (casting something broadly to a wide audience). The word refers to transmitting radio or television signals to many people simultaneously.
+            Remember: Broadcast = Broad + cast. The word literally means to send widely, so it starts with &quot;broad&quot; not &quot;brod.&quot;
           </p>
         </div>
       </div>

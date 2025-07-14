@@ -1,141 +1,153 @@
 import { Metadata } from 'next'
-import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Boxes or Boxs - Which is Correct? | Word Finder',
-  description: 'Learn the correct spelling between &quot;boxes&quot; and &quot;boxs&quot;. Discover definitions, usage examples, and common mistakes to avoid.',
+  title: 'Boxes vs Boxs - Which is Correct? | Word Finder',
+  description: 'Learn the correct spelling between &quot;boxes&quot; and &quot;boxs&quot;. Discover definitions, examples, and usage tips for these commonly confused words.',
+  keywords: 'boxes, boxs, spelling, correct spelling, word comparison, English spelling, plural, container',
+  openGraph: {
+    title: 'Boxes vs Boxs - Which is Correct?',
+    description: 'Learn the correct spelling between &quot;boxes&quot; and &quot;boxs&quot;. Discover definitions, examples, and usage tips.',
+    type: 'website',
+  },
 }
 
 export default function BoxesVsBoxsPage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Boxes or Boxs</h1>
-      <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;boxes&quot; and &quot;boxs&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
+      <h1 className="text-5xl font-extrabold mb-4 text-gray-900">Boxes or Boxs</h1>
+      
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-lg mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Which Spelling is Correct?</h2>
+        <p className="text-lg md:text-xl opacity-90">
+          Understanding the correct spelling of &quot; Boxes&quot; and &quot; Boxs&quot;. This is the plural form of the word &quot;box.&quot;
+        </p>
       </div>
-      <div className="grid md:grid-cols-2 gap-6 mb-8">
-        <Card className="border-2 border-red-500 bg-red-50">
-          <CardContent className="p-6">
-            <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">❌</span>
-              <h3 className="text-2xl font-bold text-red-800">Incorrect: Boxs</h3>
-            </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Boxs&quot; is a misspelling. The correct spelling is &quot;boxes&quot; with &quot;e&quot; before &quot;s&quot;.</p>
-          </CardContent>
-        </Card>
-        <Card className="border-2 border-green-500 bg-green-50">
-          <CardContent className="p-6">
-            <div className="flex items-center mb-4">
-              <span className="text-3xl mr-3">✅</span>
-              <h3 className="text-2xl font-bold text-green-800">Correct: Boxes</h3>
-            </div>
-            <p className="text-lg md:text-xl text-green-700">&quot;Boxes&quot; is the correct spelling. It is the plural form of &quot;box&quot;.</p>
-          </CardContent>
-        </Card>
-      </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definitions</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="bg-white shadow-md border">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-green-900">Boxes (noun/verb):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">The plural form of box; multiple containers or compartments; to put into boxes.</p>
-              <div className="bg-green-50 p-4 rounded-lg">
-                <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
-                <ul className="text-lg md:text-xl text-green-800 space-y-2">
-                  <li>• The <strong>boxes</strong> were stacked in the corner.</li>
-                  <li>• She <strong>boxes</strong> her belongings for the move.</li>
-                  <li>• The gift <strong>boxes</strong> were beautifully wrapped.</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
-          <Card className="bg-white shadow-md border">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-semibold mb-2 text-red-900">Boxs (noun/verb):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Boxs&quot; is a misspelling of &quot;boxes&quot; and is not a valid English word.</p>
-              <div className="bg-red-50 p-4 rounded-lg">
-                <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
-                <ul className="text-lg md:text-xl text-red-800 space-y-2">
-                  <li>• &quot;Boxs&quot; is not used in standard English.</li>
-                  <li>• Always use <strong>boxes</strong> when referring to multiple containers.</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
+
+      <div className="grid md:grid-cols-2 gap-8 mb-8">
+        <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+          <h3 className="text-2xl font-bold mb-4 text-red-900 flex items-center">
+            ❌ Boxs
+          </h3>
+          <p className="text-lg md:text-xl text-red-800 mb-4">
+            This spelling is <strong>incorrect</strong>. &quot;Boxs&quot; is a misspelling of the word &quot;boxes.&quot;
+          </p>
+          <div className="bg-red-100 p-4 rounded">
+            <p className="text-red-900 font-semibold">Incorrect Examples:</p>
+            <ul className="text-red-800 mt-2 space-y-1">
+              <li>• There are many boxs in the warehouse</li>
+              <li>• The boxs were delivered yesterday</li>
+              <li>• I need to pack these boxs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-2xl font-bold mb-4 text-green-900 flex items-center">
+            ✅ Boxes
+          </h3>
+          <p className="text-lg md:text-xl text-green-800 mb-4">
+            This is the <strong>correct</strong> spelling. &quot;Boxes&quot; is the proper English spelling.
+          </p>
+          <div className="bg-green-100 p-4 rounded">
+            <p className="text-green-900 font-semibold">Correct Examples:</p>
+            <ul className="text-green-800 mt-2 space-y-1">
+              <li>• There are many boxes in the warehouse</li>
+              <li>• The boxes were delivered yesterday</li>
+              <li>• I need to pack these boxes</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <Card className="bg-green-100">
-            <CardContent className="p-6">
-              <h4 className="text-xl font-semibold mb-2 text-green-900">Boxes:</h4>
-              <ul className="text-lg md:text-xl text-green-800 space-y-1">
-                <li>• Containers</li>
-                <li>• Cases</li>
-                <li>• Crates</li>
-                <li>• Cartons</li>
-                <li>• Packages</li>
-              </ul>
-            </CardContent>
-          </Card>
-          <Card className="bg-red-100">
-            <CardContent className="p-6">
-              <h4 className="text-xl font-semibold mb-2 text-red-900">Boxs:</h4>
-              <ul className="text-lg md:text-xl text-red-800 space-y-1">
-                <li>• (No valid synonyms; not a standard English word)</li>
-              </ul>
-            </CardContent>
-          </Card>
+
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Definition of Boxes</h2>
+        <div className="text-lg md:text-xl text-blue-800 space-y-4">
+          <p>
+            <strong>Boxes</strong> (noun): Plural form of &quot;box&quot; - multiple containers with rigid sides, typically rectangular or square in shape.
+          </p>
+          <p>
+            <strong>Boxes</strong> (verb): Third person singular present tense of &quot;box&quot; - to put something in a box or to fight with fists.
+          </p>
+          <p>
+            Used to refer to multiple containers, packages, or compartments, or to describe the action of putting items into containers.
+          </p>
         </div>
       </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
-        <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
-          <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
-          <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Boxes</strong> is spelled with &quot;e&quot; before &quot;s&quot;, not just &quot;s&quot;.</li>
-            <li>• The word follows the standard English plural rule: add &quot;-es&quot; to words ending in &quot;x&quot;.</li>
-            <li>• Can be used as both a noun and a verb.</li>
-            <li>• Common in everyday language for containers and packaging.</li>
-            <li>• &quot;Boxs&quot; is never correct in any context.</li>
-          </ul>
+
+      <div className="bg-blue-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">Synonyms for Boxes</h2>
+        <div className="grid md:grid-cols-2 gap-4 text-lg md:text-xl text-blue-800">
+          <div>
+            <ul className="space-y-2">
+              <li>• Containers</li>
+              <li>• Packages</li>
+              <li>• Cartons</li>
+              <li>• Crates</li>
+            </ul>
+          </div>
+          <div>
+            <ul className="space-y-2">
+              <li>• Cases</li>
+              <li>• Chests</li>
+              <li>• Receptacles</li>
+              <li>• Compartments</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
+
+      <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
+        <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+        <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+          <li>• &quot;Boxes&quot; is always spelled with &quot;es&quot; at the end, not just &quot;s&quot;</li>
+          <li>• The word follows the rule: add &quot;-es&quot; to words ending in &quot;x&quot;</li>
+          <li>• The pronunciation is /ˈbɒksɪz/ (BOK-siz)</li>
+          <li>• &quot;Boxs&quot; is a common misspelling but is never correct</li>
+          <li>• This spelling pattern applies to other words ending in &quot;x&quot; like &quot;taxes,&quot; &quot;faxes,&quot; etc.</li>
+          <li>• The word can be used as both a noun (plural) and a verb (third person singular)</li>
+        </ul>
+      </div>
+
+      <div className="bg-gray-50 p-6 rounded-lg mb-8">
+        <h2 className="text-2xl font-bold mb-4 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;boxs&quot; ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;boxs&quot; is never correct. The proper spelling is always &quot;boxes.&quot;</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Why do people spell it &quot;boxs&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: This misspelling occurs because people forget that words ending in &quot;x&quot; require &quot;-es&quot; instead of just &quot;-s&quot; to form the plural. The rule is to add &quot;-es&quot; to words ending in &quot;x.&quot;
+            </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of it as &quot;box&quot; + &quot;es&quot; - words ending in &quot;x&quot; add &quot;-es&quot; for plural, like &quot;foxes&quot; or &quot;taxes.&quot;</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: Is &quot;boxs&quot; ever acceptable?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: No, &quot;boxs&quot; is always incorrect. Always use &quot;boxes&quot; in all contexts.
+            </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between boxes and containers?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Boxes&quot; specifically refers to rectangular containers, while &quot;containers&quot; is a broader term for any storage vessel.</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: What&apos;s the difference between &quot;box&quot; and &quot;boxes&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: &quot;Box&quot; is the singular form (one container), while &quot;boxes&quot; is the plural form (multiple containers).
+            </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can boxes be used as a verb?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;boxes&quot; can be used as a verb meaning to put into boxes, as in &quot;She boxes her belongings.&quot;</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell this word?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling likely occurs because of confusion with simple plural rules or pronunciation patterns.</p>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;boxes&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Examples include: gift boxes, moving boxes, check boxes, think outside the box, and box office.</p>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900">Q: How do I remember the correct spelling?</h3>
+            <p className="text-lg md:text-xl text-gray-700">
+              A: Think of the rule: words ending in &quot;x&quot; get &quot;-es&quot; for plural. So box + es = boxes, just like tax + es = taxes.
+            </p>
           </div>
         </div>
       </div>
+
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Boxes</strong> is the correct spelling with &quot;e&quot; before &quot;s&quot;. It is the plural form of &quot;box&quot; and follows the standard English rule of adding &quot;-es&quot; to words ending in &quot;x&quot;. The misspelling &quot;boxs&quot; is never correct. Use &quot;boxes&quot; when referring to multiple containers or the action of putting items into boxes.</p>
+        <div className="text-lg md:text-xl text-green-800 space-y-4">
+          <p>
+            <strong>Boxes</strong> is the correct spelling of this word. The incorrect spelling &quot;boxs&quot; should never be used.
+          </p>
+          <p>
+            Remember: Boxes = Box + es. Words ending in &quot;x&quot; require &quot;-es&quot; to form the plural, not just &quot;-s.&quot;
+          </p>
+        </div>
       </div>
     </div>
   )
