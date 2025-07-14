@@ -103,7 +103,7 @@ export default function CalligraphyVsCalligraphyPage() {
           </div>
           <div className="border rounded-lg p-4">
             <h3 className="font-semibold text-lg mb-2">Is &quot;calligraphy&quot; ever correct?</h3>
-            <p className="text-lg">No, &quot;calligraphy&quot; is never the correct spelling. It's always &quot;calligraphy&quot; with two &quot;l&quot;s and &quot;graphy&quot; at the end.</p>
+            <p className="text-lg">No, &quot;calligraphy&quot; is never the correct spelling. It&apos;s always &quot;calligraphy&quot; with two &quot;l&quot;s and &quot;graphy&quot; at the end.</p>
           </div>
           <div className="border rounded-lg p-4">
             <h3 className="font-semibold text-lg mb-2">How can I remember the correct spelling?</h3>

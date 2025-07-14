@@ -106,7 +106,7 @@ export default function CalendarVsCalandarPage() {
           </div>
           <div className="border rounded-lg p-4">
             <h3 className="font-semibold text-lg mb-2">How can I remember the correct spelling?</h3>
-            <p className="text-lg">Think of &quot;calendar&quot; as having &quot;cal&quot; + &quot;endar&quot; - the &quot;a&quot; in the middle is consistent with the word's Latin origin. You can also remember: &quot;A calendar has dates, and &apos;date&apos; has an &apos;a&apos;.&quot;</p>
+            <p className="text-lg">Think of &quot;calendar&quot; as having &quot;cal&quot; + &quot;endar&quot; - the &quot;a&quot; in the middle is consistent with the word&apos;s Latin origin. You can also remember: &quot;A calendar has dates, and &apos;date&apos; has an &apos;a&apos;.&quot;</p>
           </div>
         </div>
       </section>
