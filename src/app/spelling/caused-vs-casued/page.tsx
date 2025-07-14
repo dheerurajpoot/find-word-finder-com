@@ -99,7 +99,7 @@ export default function CausedVsCasuedPage() {
             <li>• <strong>Caused</strong> is spelled with the &quot;a&quot; before the &quot;u&quot;.</li>
             <li>• &quot;Casued&quot; is a common typo due to letter transposition.</li>
             <li>• Always double-check spelling in important documents.</li>
-            <li>• The word "caused" is the past tense of "cause."</li>
+            <li>• The word &quot;caused&quot; is the past tense of &quot;cause.&quot;</li>
             <li>• &quot;Casued&quot; is never correct in any context.</li>
           </ul>
         </div>

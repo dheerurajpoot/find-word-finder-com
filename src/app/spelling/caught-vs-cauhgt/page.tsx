@@ -21,7 +21,7 @@ export default function CaughtVsCauhgtPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Cauhgt</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Cauhgt&quot; is a common misspelling. The correct spelling is &quot;caught&quot; with "a" and "u" after the "c" and "g" before the "h".</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Cauhgt&quot; is a common misspelling. The correct spelling is &quot;caught&quot; with &quot;a&quot; and &quot;u&quot; after the &quot;c&quot; and &quot;g&quot; before the &quot;h&quot;.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">

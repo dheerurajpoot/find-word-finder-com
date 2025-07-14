@@ -21,7 +21,7 @@ export default function CausalVsCausualPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Causual</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Causual&quot; is a common misspelling. The correct spelling is &quot;causal&quot; with the "u" before the "s".</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Causual&quot; is a common misspelling. The correct spelling is &quot;causal&quot; with the &quot;u&quot; before the &quot;s&quot;.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -96,7 +96,7 @@ export default function CausalVsCausualPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Causal</strong> is always spelled with the "u" before the "s".</li>
+            <li>• <strong>Causal</strong> is always spelled with the &quot;u&quot; before the &quot;s&quot;.</li>
             <li>• <strong>Causual</strong> is never correct.</li>
             <li>• The word comes from the Latin &quot;causa&quot; meaning &quot;cause&quot;.</li>
             <li>• Always use &quot;causal&quot; in academic and scientific writing.</li>
@@ -113,7 +113,7 @@ export default function CausalVsCausualPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember the "u" comes before the "s" in &quot;causal&quot;.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember the &quot;u&quot; comes before the &quot;s&quot; in &quot;causal&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does &quot;causal&quot; mean?</h3>
@@ -123,7 +123,7 @@ export default function CausalVsCausualPage() {
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Causal</strong> is the correct spelling with the "u" before the "s". The misspelling &quot;causual&quot; is never correct. Use &quot;causal&quot; in all contexts.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Causal</strong> is the correct spelling with the &quot;u&quot; before the &quot;s&quot;. The misspelling &quot;causual&quot; is never correct. Use &quot;causal&quot; in all contexts.</p>
       </div>
     </div>
   )

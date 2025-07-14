@@ -99,7 +99,7 @@ export default function CauseVsCasuePage() {
             <li>• <strong>Cause</strong> is spelled with the &quot;a&quot; before the &quot;u&quot;.</li>
             <li>• &quot;Casue&quot; is a common typo due to letter transposition.</li>
             <li>• Always double-check spelling in important documents.</li>
-            <li>• The word "cause" can be both a noun and a verb.</li>
+            <li>• The word &quot;cause&quot; can be both a noun and a verb.</li>
             <li>• &quot;Casue&quot; is never correct in any context.</li>
           </ul>
         </div>

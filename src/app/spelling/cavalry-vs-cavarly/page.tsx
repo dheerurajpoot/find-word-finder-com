@@ -21,7 +21,7 @@ export default function CavalryVsCavarlyPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Cavarly</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Cavarly&quot; is a common misspelling. The correct spelling is &quot;cavalry&quot; with the "l" before the "r".</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Cavarly&quot; is a common misspelling. The correct spelling is &quot;cavalry&quot; with the &quot;l&quot; before the &quot;r&quot;.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -96,7 +96,7 @@ export default function CavalryVsCavarlyPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Cavalry</strong> is always spelled with the "l" before the "r".</li>
+            <li>• <strong>Cavalry</strong> is always spelled with the &quot;l&quot; before the &quot;r&quot;.</li>
             <li>• <strong>Cavarly</strong> is never correct.</li>
             <li>• The word comes from the Italian &quot;cavalleria&quot; meaning &quot;horsemen&quot;.</li>
             <li>• Always use &quot;cavalry&quot; in historical and military contexts.</li>
@@ -113,7 +113,7 @@ export default function CavalryVsCavarlyPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember the "l" comes before the "r" in &quot;cavalry&quot;.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember the &quot;l&quot; comes before the &quot;r&quot; in &quot;cavalry&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does &quot;cavalry&quot; mean?</h3>
@@ -123,7 +123,7 @@ export default function CavalryVsCavarlyPage() {
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Cavalry</strong> is the correct spelling with the "l" before the "r". The misspelling &quot;cavarly&quot; is never correct. Use &quot;cavalry&quot; in all contexts.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Cavalry</strong> is the correct spelling with the &quot;l&quot; before the &quot;r&quot;. The misspelling &quot;cavarly&quot; is never correct. Use &quot;cavalry&quot; in all contexts.</p>
       </div>
     </div>
   )

@@ -21,7 +21,7 @@ export default function CategoryVsCathegoryPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Cathegory</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Cathegory&quot; is a common misspelling. The correct spelling is &quot;category&quot; with an "e" after the "g".</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Cathegory&quot; is a common misspelling. The correct spelling is &quot;category&quot; with an &quot;e&quot; after the &quot;g&quot;.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -96,7 +96,7 @@ export default function CategoryVsCathegoryPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Category</strong> is always spelled with an "e" after the "g".</li>
+            <li>• <strong>Category</strong> is always spelled with an &quot;e&quot; after the &quot;g&quot;.</li>
             <li>• The word comes from the Greek &quot;kategoria&quot; meaning &quot;accusation, predicate, category&quot;.</li>
             <li>• &quot;Cathegory&quot; is a common error due to the way the word sounds when spoken.</li>
             <li>• Always double-check spelling in formal writing.</li>
@@ -113,7 +113,7 @@ export default function CategoryVsCathegoryPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember there is an "e" after the "g" in &quot;category&quot;.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember there is an &quot;e&quot; after the &quot;g&quot; in &quot;category&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does &quot;category&quot; mean?</h3>
@@ -127,7 +127,7 @@ export default function CategoryVsCathegoryPage() {
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Category</strong> is the correct spelling with an "e" after the "g". It refers to a class or division of things. The misspelling &quot;cathegory&quot; is never correct. Use &quot;category&quot; in all contexts.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Category</strong> is the correct spelling with an &quot;e&quot; after the &quot;g&quot;. It refers to a class or division of things. The misspelling &quot;cathegory&quot; is never correct. Use &quot;category&quot; in all contexts.</p>
       </div>
     </div>
   )

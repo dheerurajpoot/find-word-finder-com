@@ -97,9 +97,9 @@ export default function CastVsCastedPage() {
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
             <li>• <strong>Cast</strong> is an irregular verb; its past tense is also <strong>cast</strong>.</li>
-            <li>• &quot;Casted&quot; is sometimes used in technical contexts (like "casted metal"), but not for the verb meaning "to throw" or "to assign a role."</li>
+            <li>• &quot;Casted&quot; is sometimes used in technical contexts (like &quot;casted metal&quot;), but not for the verb meaning &quot;to throw&quot; or &quot;to assign a role.&quot;</li>
             <li>• In standard English, always use <strong>cast</strong> for the past tense.</li>
-            <li>• The use of "casted" is considered nonstandard and should be avoided in formal writing.</li>
+            <li>• The use of &quot;casted&quot; is considered nonstandard and should be avoided in formal writing.</li>
           </ul>
         </div>
       </div>
@@ -107,26 +107,26 @@ export default function CastVsCastedPage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is "casted" ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: In standard English, "casted" is not correct for the past tense of "cast." Use "cast" instead. "Casted" may appear in technical jargon (e.g., "casted metal"), but not in general usage.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;casted&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: In standard English, &quot;casted&quot; is not correct for the past tense of &quot;cast.&quot; Use &quot;cast&quot; instead. &quot;Casted&quot; may appear in technical jargon (e.g., &quot;casted metal&quot;), but not in general usage.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What is the past tense of "cast"?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The past tense and past participle of "cast" is "cast."</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What is the past tense of &quot;cast&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The past tense and past participle of &quot;cast&quot; is &quot;cast.&quot;</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people say "casted"?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Some people mistakenly add "-ed" to form the past tense, but "cast" is irregular and does not change.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people say &quot;casted&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Some people mistakenly add &quot;-ed&quot; to form the past tense, but &quot;cast&quot; is irregular and does not change.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Are there any exceptions?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: In some technical fields, "casted" may be used (e.g., "casted metal"), but this is not standard for the verb meaning "to throw" or "to assign a role."</p>
+            <p className="text-lg md:text-xl text-gray-700">A: In some technical fields, &quot;casted&quot; may be used (e.g., &quot;casted metal&quot;), but this is not standard for the verb meaning &quot;to throw&quot; or &quot;to assign a role.&quot;</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Cast</strong> is the correct past tense and past participle of "cast." Avoid using "casted" in standard English. Use "cast" for all tenses and contexts except rare technical jargon.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Cast</strong> is the correct past tense and past participle of &quot;cast.&quot; Avoid using &quot;casted&quot; in standard English. Use &quot;cast&quot; for all tenses and contexts except rare technical jargon.</p>
       </div>
     </div>
   )

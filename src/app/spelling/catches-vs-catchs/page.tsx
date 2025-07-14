@@ -21,7 +21,7 @@ export default function CatchesVsCatchsPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Catchs</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Catchs&quot; is a common misspelling. The correct spelling is &quot;catches&quot; with "-es" at the end.</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Catchs&quot; is a common misspelling. The correct spelling is &quot;catches&quot; with &quot;-es&quot; at the end.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -96,7 +96,7 @@ export default function CatchesVsCatchsPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Catches</strong> is always spelled with "-es" at the end for third person singular present tense.</li>
+            <li>• <strong>Catches</strong> is always spelled with &quot;-es&quot; at the end for third person singular present tense.</li>
             <li>• <strong>Catchs</strong> is never correct.</li>
             <li>• The word &quot;catch&quot; comes from the Old North French &quot;cachier&quot; meaning &quot;to chase&quot;.</li>
             <li>• Always use &quot;catches&quot; in both formal and informal writing.</li>
@@ -113,7 +113,7 @@ export default function CatchesVsCatchsPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember to add "-es" to verbs ending in "ch" for third person singular present tense.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember to add &quot;-es&quot; to verbs ending in &quot;ch&quot; for third person singular present tense.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can &quot;catches&quot; be used in formal writing?</h3>
