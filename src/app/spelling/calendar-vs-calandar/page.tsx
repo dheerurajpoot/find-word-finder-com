@@ -102,7 +102,7 @@ export default function CalendarVsCalandarPage() {
           </div>
           <div className="border rounded-lg p-4">
             <h3 className="font-semibold text-lg mb-2">Is &quot;calandar&quot; ever correct?</h3>
-            <p className="text-lg">No, &quot;calandar&quot; is never the correct spelling. It's always &quot;calendar&quot; with an &quot;a&quot; in the middle.</p>
+            <p className="text-lg">No, &quot;calandar&quot; is never the correct spelling. It&apos;s always &quot;calendar&quot; with an &quot;a&quot; in the middle.</p>
           </div>
           <div className="border rounded-lg p-4">
             <h3 className="font-semibold text-lg mb-2">How can I remember the correct spelling?</h3>
