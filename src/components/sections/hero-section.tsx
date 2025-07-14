@@ -83,7 +83,7 @@ export function HeroSection() {
 							placeholder='YOUR LETTERS'
 							value={letters}
 							onChange={(e) =>
-								setLetters(e.target.value.toUpperCase())
+								setLetters(e.target.value.toUpperCase().replace(/[^A-Z]/g, ""))
 							}
 							onFocus={handleSearchInputFocus}
 							onKeyDown={handleKeyDown}
@@ -104,7 +104,7 @@ export function HeroSection() {
 										value={starts}
 										onChange={(e) =>
 											setStarts(
-												e.target.value.toUpperCase()
+												e.target.value.toUpperCase().replace(/[^A-Z]/g, "")
 											)
 										}
 										onKeyDown={handleKeyDown}
@@ -154,7 +154,7 @@ export function HeroSection() {
 										value={ends}
 										onChange={(e) =>
 											setEnds(
-												e.target.value.toUpperCase()
+												e.target.value.toUpperCase().replace(/[^A-Z]/g, "")
 											)
 										}
 										onKeyDown={handleKeyDown}
@@ -204,7 +204,7 @@ export function HeroSection() {
 										value={contains}
 										onChange={(e) =>
 											setContains(
-												e.target.value.toUpperCase()
+												e.target.value.toUpperCase().replace(/[^A-Z]/g, "")
 											)
 										}
 										onKeyDown={handleKeyDown}
