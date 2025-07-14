@@ -69,7 +69,7 @@ export default function CalendarVsCalandarPage() {
       <section className="mb-8">
         <h2 className="text-2xl font-bold mb-4">Synonyms</h2>
         <div className="bg-gray-50 rounded-lg p-6">
-          <p className="text-lg mb-4">Words with similar meanings to "calendar":</p>
+          <p className="text-lg mb-4">Words with similar meanings to &quot;calendar&quot;:</p>
           <ul className="list-disc list-inside space-y-2 text-lg">
             <li>Schedule</li>
             <li>Agenda</li>
@@ -106,7 +106,7 @@ export default function CalendarVsCalandarPage() {
           </div>
           <div className="border rounded-lg p-4">
             <h3 className="font-semibold text-lg mb-2">How can I remember the correct spelling?</h3>
-            <p className="text-lg">Think of &quot;calendar&quot; as having &quot;cal&quot; + &quot;endar&quot; - the &quot;a&quot; in the middle is consistent with the word's Latin origin. You can also remember: &quot;A calendar has dates, and 'date' has an 'a'.&quot;</p>
+            <p className="text-lg">Think of &quot;calendar&quot; as having &quot;cal&quot; + &quot;endar&quot; - the &quot;a&quot; in the middle is consistent with the word's Latin origin. You can also remember: &quot;A calendar has dates, and &apos;date&apos; has an &apos;a&apos;.&quot;</p>
           </div>
         </div>
       </section>

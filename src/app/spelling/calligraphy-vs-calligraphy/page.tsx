@@ -107,7 +107,7 @@ export default function CalligraphyVsCalligraphyPage() {
           </div>
           <div className="border rounded-lg p-4">
             <h3 className="font-semibold text-lg mb-2">How can I remember the correct spelling?</h3>
-            <p className="text-lg">Think of &quot;calligraphy&quot; as &quot;call&quot; + &quot;graphy&quot; - the word combines &quot;call&quot; (beautiful) with &quot;graphy&quot; (writing). You can also remember: &quot;Calligraphy has two 'l's like 'beautiful'.&quot;</p>
+            <p className="text-lg">Think of &quot;calligraphy&quot; as &quot;call&quot; + &quot;graphy&quot; - the word combines &quot;call&quot; (beautiful) with &quot;graphy&quot; (writing). You can also remember: &quot;Calligraphy has two &apos;l&apos;s like &apos;beautiful&apos;.&quot;</p>
           </div>
         </div>
       </section>
