@@ -40,7 +40,7 @@ export default function BicycleVsByciclePage() {
           <p className="text-lg mb-4"><strong>&quot;Bicycle&quot;</strong> is a vehicle with two wheels that you ride by pushing pedals with your feet. It is used for transportation, exercise, and recreation.</p>
           <ul className="list-disc list-inside space-y-2 text-lg">
             <li>A two-wheeled vehicle powered by pedaling</li>
-            <li>Commonly called a "bike"</li>
+            <li>Commonly called a &quot;bike&quot;</li>
             <li>Used for commuting, sport, and leisure</li>
           </ul>
         </div>
@@ -49,20 +49,20 @@ export default function BicycleVsByciclePage() {
         <h2 className="text-2xl font-bold mb-4">Usage Examples</h2>
         <div className="space-y-4">
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-            <p className="text-lg"><strong>Correct:</strong> "She rides her bicycle to school every day."</p>
+            <p className="text-lg"><strong>Correct:</strong> &quot;She rides her bicycle to school every day.&quot;</p>
           </div>
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-            <p className="text-lg"><strong>Correct:</strong> "He bought a new bicycle for his birthday."</p>
+            <p className="text-lg"><strong>Correct:</strong> &quot;He bought a new bicycle for his birthday.&quot;</p>
           </div>
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-            <p className="text-lg"><strong>Correct:</strong> "Bicycles are a great way to stay fit."</p>
+            <p className="text-lg"><strong>Correct:</strong> &quot;Bicycles are a great way to stay fit.&quot;</p>
           </div>
         </div>
       </section>
       <section className="mb-8">
         <h2 className="text-2xl font-bold mb-4">Synonyms</h2>
         <div className="bg-gray-50 rounded-lg p-6">
-          <p className="text-lg mb-4">Words with similar meanings to "bicycle":</p>
+          <p className="text-lg mb-4">Words with similar meanings to &quot;bicycle&quot;:</p>
           <ul className="list-disc list-inside space-y-2 text-lg">
             <li>Bike</li>
             <li>Cycle</li>
@@ -75,9 +75,9 @@ export default function BicycleVsByciclePage() {
         <h2 className="text-2xl font-bold mb-4">Notes</h2>
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6">
           <ul className="list-disc list-inside space-y-2 text-lg">
-            <li>"Bicycle" comes from the Latin "bi-" (two) and Greek "kyklos" (wheel)</li>
-            <li>Common misspellings include "bycicle," "bicyle," and "bicycal"</li>
-            <li>Remember: "bi" (two) + "cycle" (wheel)</li>
+            <li>&quot;Bicycle&quot; comes from the Latin &quot;bi-&quot; (two) and Greek &quot;kyklos&quot; (wheel)</li>
+            <li>Common misspellings include &quot;bycicle,&quot; &quot;bicyle,&quot; and &quot;bicycal&quot;</li>
+            <li>Remember: &quot;bi&quot; (two) + &quot;cycle&quot; (wheel)</li>
           </ul>
         </div>
       </section>
@@ -85,25 +85,25 @@ export default function BicycleVsByciclePage() {
         <h2 className="text-2xl font-bold mb-4">FAQ</h2>
         <div className="space-y-4">
           <div className="border rounded-lg p-4">
-            <h3 className="font-semibold text-lg mb-2">Why do people misspell "bicycle" as "bycicle"?</h3>
-            <p className="text-lg">The confusion often comes from the pronunciation and the "y" sound, but the correct spelling is always "bicycle."</p>
+            <h3 className="font-semibold text-lg mb-2">Why do people misspell &quot;bicycle&quot; as &quot;bycicle&quot;?</h3>
+            <p className="text-lg">The confusion often comes from the pronunciation and the &quot;y&quot; sound, but the correct spelling is always &quot;bicycle.&quot;</p>
           </div>
           <div className="border rounded-lg p-4">
-            <h3 className="font-semibold text-lg mb-2">Is "bycicle" ever correct?</h3>
-            <p className="text-lg">No, "bycicle" is never the correct spelling. Always use "bicycle."</p>
+            <h3 className="font-semibold text-lg mb-2">Is &quot;bycicle&quot; ever correct?</h3>
+            <p className="text-lg">No, &quot;bycicle&quot; is never the correct spelling. Always use &quot;bicycle.&quot;</p>
           </div>
           <div className="border rounded-lg p-4">
             <h3 className="font-semibold text-lg mb-2">How can I remember the correct spelling?</h3>
-            <p className="text-lg">Think of "bi" (two) and "cycle" (wheel) to remember the correct spelling.</p>
+            <p className="text-lg">Think of &quot;bi&quot; (two) and &quot;cycle&quot; (wheel) to remember the correct spelling.</p>
           </div>
         </div>
       </section>
       <section className="mb-8">
         <h2 className="text-2xl font-bold mb-4">Summary</h2>
         <div className="bg-green-50 border-2 border-green-200 rounded-lg p-6">
-          <p className="text-lg mb-4"><strong>Remember:</strong> The correct spelling is <strong>"bicycle"</strong> with an "i" after the "b" and a "y" after the "c."</p>
-          <p className="text-lg mb-4">"Bycicle" is always incorrect and should be avoided in all contexts.</p>
-          <p className="text-lg">Use "bicycle" when referring to a two-wheeled vehicle powered by pedaling.</p>
+          <p className="text-lg mb-4"><strong>Remember:</strong> The correct spelling is <strong>&quot;bicycle&quot;</strong> with an &quot;i&quot; after the &quot;b&quot; and a &quot;y&quot; after the &quot;c.&quot;</p>
+          <p className="text-lg mb-4">&quot;Bycicle&quot; is always incorrect and should be avoided in all contexts.</p>
+          <p className="text-lg">Use &quot;bicycle&quot; when referring to a two-wheeled vehicle powered by pedaling.</p>
         </div>
       </section>
     </div>

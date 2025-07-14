@@ -49,20 +49,20 @@ export default function BylawsVsByLawsPage() {
         <h2 className="text-2xl font-bold mb-4">Usage Examples</h2>
         <div className="space-y-4">
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-            <p className="text-lg"><strong>Correct:</strong> "The club updated its bylaws last year."</p>
+            <p className="text-lg"><strong>Correct:</strong> &quot;The club updated its bylaws last year.&quot;</p>
           </div>
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-            <p className="text-lg"><strong>Correct:</strong> "Every corporation must follow its bylaws."</p>
+            <p className="text-lg"><strong>Correct:</strong> &quot;Every corporation must follow its bylaws.&quot;</p>
           </div>
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-            <p className="text-lg"><strong>Correct:</strong> "The bylaws outline the responsibilities of each member."</p>
+            <p className="text-lg"><strong>Correct:</strong> &quot;The bylaws outline the responsibilities of each member.&quot;</p>
           </div>
         </div>
       </section>
       <section className="mb-8">
         <h2 className="text-2xl font-bold mb-4">Synonyms</h2>
         <div className="bg-gray-50 rounded-lg p-6">
-          <p className="text-lg mb-4">Words with similar meanings to "bylaws":</p>
+          <p className="text-lg mb-4">Words with similar meanings to &quot;bylaws&quot;:</p>
           <ul className="list-disc list-inside space-y-2 text-lg">
             <li>Regulations</li>
             <li>Rules</li>
@@ -76,8 +76,8 @@ export default function BylawsVsByLawsPage() {
         <h2 className="text-2xl font-bold mb-4">Notes</h2>
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6">
           <ul className="list-disc list-inside space-y-2 text-lg">
-            <li>"Bylaws" is always one word, not two</li>
-            <li>Common misspelling: "by laws" (incorrect as two words)</li>
+            <li>&quot;Bylaws&quot; is always one word, not two</li>
+            <li>Common misspelling: &quot;by laws&quot; (incorrect as two words)</li>
             <li>Remember: Internal rules = bylaws (one word)</li>
           </ul>
         </div>
@@ -86,25 +86,25 @@ export default function BylawsVsByLawsPage() {
         <h2 className="text-2xl font-bold mb-4">FAQ</h2>
         <div className="space-y-4">
           <div className="border rounded-lg p-4">
-            <h3 className="font-semibold text-lg mb-2">Why do people write "by laws" instead of "bylaws"?</h3>
-            <p className="text-lg">The confusion comes from the two-word phrase, but the correct form is always the single word "bylaws."</p>
+            <h3 className="font-semibold text-lg mb-2">Why do people write &quot;by laws&quot; instead of &quot;bylaws&quot;?</h3>
+            <p className="text-lg">The confusion comes from the two-word phrase, but the correct form is always the single word &quot;bylaws.&quot;</p>
           </div>
           <div className="border rounded-lg p-4">
-            <h3 className="font-semibold text-lg mb-2">Is "by laws" ever correct?</h3>
-            <p className="text-lg">No, "by laws" is never correct. Always use "bylaws" as one word.</p>
+            <h3 className="font-semibold text-lg mb-2">Is &quot;by laws&quot; ever correct?</h3>
+            <p className="text-lg">No, &quot;by laws&quot; is never correct. Always use &quot;bylaws&quot; as one word.</p>
           </div>
           <div className="border rounded-lg p-4">
             <h3 className="font-semibold text-lg mb-2">How can I remember the correct spelling?</h3>
-            <p className="text-lg">Think of "bylaws" as the internal laws "by" which an organization operates—one word.</p>
+            <p className="text-lg">Think of &quot;bylaws&quot; as the internal laws &quot;by&quot; which an organization operates—one word.</p>
           </div>
         </div>
       </section>
       <section className="mb-8">
         <h2 className="text-2xl font-bold mb-4">Summary</h2>
         <div className="bg-green-50 border-2 border-green-200 rounded-lg p-6">
-          <p className="text-lg mb-4"><strong>Remember:</strong> The correct spelling is <strong>"bylaws"</strong> as a single word.</p>
-          <p className="text-lg mb-4">"By laws" is always incorrect and should be avoided in all contexts.</p>
-          <p className="text-lg">Use "bylaws" when referring to the internal rules of an organization or group.</p>
+          <p className="text-lg mb-4"><strong>Remember:</strong> The correct spelling is <strong>&quot;bylaws&quot;</strong> as a single word.</p>
+          <p className="text-lg mb-4">&quot;By laws&quot; is always incorrect and should be avoided in all contexts.</p>
+          <p className="text-lg">Use &quot;bylaws&quot; when referring to the internal rules of an organization or group.</p>
         </div>
       </section>
     </div>

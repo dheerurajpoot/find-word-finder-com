@@ -460,9 +460,7 @@ function SearchContent() {
 										placeholder=''
 										value={starts}
 										onChange={(e) =>
-											setStarts(
-												e.target.value.toUpperCase()
-											)
+											setStarts(e.target.value.toUpperCase().replace(/[^A-Z]/g, ""))
 										}
 										className='peer text-sm'
 									/>
@@ -503,9 +501,7 @@ function SearchContent() {
 										placeholder=''
 										value={ends}
 										onChange={(e) =>
-											setEnds(
-												e.target.value.toUpperCase()
-											)
+											setEnds(e.target.value.toUpperCase().replace(/[^A-Z]/g, ""))
 										}
 										className='peer text-sm'
 									/>
@@ -546,9 +542,7 @@ function SearchContent() {
 										placeholder=''
 										value={contains}
 										onChange={(e) =>
-											setContains(
-												e.target.value.toUpperCase()
-											)
+											setContains(e.target.value.toUpperCase().replace(/[^A-Z]/g, ""))
 										}
 										className='peer text-sm'
 									/>
@@ -632,9 +626,7 @@ function SearchContent() {
 										placeholder=''
 										value={include}
 										onChange={(e) =>
-											setInclude(
-												e.target.value.toUpperCase()
-											)
+											setInclude(e.target.value.toUpperCase().replace(/[^A-Z]/g, ""))
 										}
 										className='peer text-sm'
 									/>
@@ -673,9 +665,7 @@ function SearchContent() {
 										placeholder=''
 										value={exclude}
 										onChange={(e) =>
-											setExclude(
-												e.target.value.toUpperCase()
-											)
+											setExclude(e.target.value.toUpperCase().replace(/[^A-Z]/g, ""))
 										}
 										className='peer text-sm'
 									/>
@@ -836,25 +826,10 @@ function SearchContent() {
 								</CardHeader>
 								<CardContent className='mx-auto max-w-4xl space-y-4 text-center text-lg text-gray-600'>
 									<p>
-										Unlock your full potential in word games
-										with our versatile Find Word Finder.
-										Whether you&apos;re playing Scrabble,
-										Words with Friends, solving a crossword,
-										or tackling any other word puzzle, our
-										tool is designed to give you the winning
-										edge.
+										Unlock your full potential in word games with our versatile Find Word Finder. Whether you&apos;re playing Scrabble, Words with Friends, solving a crossword, or tackling any other word puzzle, our tool is designed to give you the winning edge.
 									</p>
 									<p>
-										Simply enter the letters you have, and
-										let our advanced search engine present
-										you with a comprehensive list of
-										possible words. Use the powerful
-										filtering options to refine your results
-										by starting or ending letters, letters
-										contained within, and desired word
-										length. Our goal is to make you a more
-										confident and successful word game
-										player.
+										Simply enter the letters you have, and let our advanced search engine present you with a comprehensive list of possible words. Use the powerful filtering options to refine your results by starting or ending letters, letters contained within, and desired word length. Our goal is to make you a more confident and successful word game player.
 									</p>
 								</CardContent>
 							</Card>
@@ -955,7 +930,7 @@ function SearchContent() {
 											value={starts}
 											onChange={(e) => {
 												setStarts(
-													e.target.value.toUpperCase()
+													e.target.value.toUpperCase().replace(/[^A-Z]/g, "")
 												);
 											}}
 											className='peer text-sm'
@@ -1001,7 +976,7 @@ function SearchContent() {
 											value={ends}
 											onChange={(e) => {
 												setEnds(
-													e.target.value.toUpperCase()
+													e.target.value.toUpperCase().replace(/[^A-Z]/g, "")
 												);
 											}}
 											className='peer text-sm'
@@ -1049,7 +1024,7 @@ function SearchContent() {
 											value={contains}
 											onChange={(e) => {
 												setContains(
-													e.target.value.toUpperCase()
+													e.target.value.toUpperCase().replace(/[^A-Z]/g, "")
 												);
 											}}
 											className='peer text-sm'
@@ -1141,7 +1116,7 @@ function SearchContent() {
 											value={include}
 											onChange={(e) => {
 												setInclude(
-													e.target.value.toUpperCase()
+													e.target.value.toUpperCase().replace(/[^A-Z]/g, "")
 												);
 											}}
 											className='peer text-sm'
@@ -1187,7 +1162,7 @@ function SearchContent() {
 											value={exclude}
 											onChange={(e) => {
 												setExclude(
-													e.target.value.toUpperCase()
+													e.target.value.toUpperCase().replace(/[^A-Z]/g, "")
 												);
 											}}
 											className='peer text-sm'

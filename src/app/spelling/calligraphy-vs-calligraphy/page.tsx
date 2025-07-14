@@ -41,7 +41,7 @@ export default function CalligraphyVsCalligraphyPage() {
         <h2 className="text-2xl font-bold mb-4">Definition</h2>
         <div className="bg-gray-50 rounded-lg p-6">
           <p className="text-lg mb-4">
-            <strong>Calligraphy</strong> is the art of beautiful handwriting, typically using special pens or brushes to create decorative lettering. It involves:
+            <strong>&quot;Calligraphy&quot;</strong> is the art of beautiful handwriting, typically using special pens or brushes to create decorative lettering. It involves:
           </p>
           <ul className="list-disc list-inside space-y-2 text-lg">
             <li>The art of decorative handwriting</li>
@@ -56,13 +56,13 @@ export default function CalligraphyVsCalligraphyPage() {
         <h2 className="text-2xl font-bold mb-4">Usage Examples</h2>
         <div className="space-y-4">
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-            <p className="text-lg"><strong>Correct:</strong> "She studied calligraphy for years to perfect her handwriting."</p>
+            <p className="text-lg"><strong>Correct:</strong> &quot;She studied calligraphy for years to perfect her handwriting.&quot;</p>
           </div>
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-            <p className="text-lg"><strong>Correct:</strong> "The wedding invitations were written in beautiful calligraphy."</p>
+            <p className="text-lg"><strong>Correct:</strong> &quot;The wedding invitations were written in beautiful calligraphy.&quot;</p>
           </div>
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-            <p className="text-lg"><strong>Correct:</strong> "He practices calligraphy as a hobby to relax."</p>
+            <p className="text-lg"><strong>Correct:</strong> &quot;He practices calligraphy as a hobby to relax.&quot;</p>
           </div>
         </div>
       </section>
@@ -70,7 +70,7 @@ export default function CalligraphyVsCalligraphyPage() {
       <section className="mb-8">
         <h2 className="text-2xl font-bold mb-4">Synonyms</h2>
         <div className="bg-gray-50 rounded-lg p-6">
-          <p className="text-lg mb-4">Words with similar meanings to "calligraphy":</p>
+          <p className="text-lg mb-4">Words with similar meanings to &quot;calligraphy&quot;:</p>
           <ul className="list-disc list-inside space-y-2 text-lg">
             <li>Handwriting</li>
             <li>Penmanship</li>
@@ -86,10 +86,10 @@ export default function CalligraphyVsCalligraphyPage() {
         <h2 className="text-2xl font-bold mb-4">Notes</h2>
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6">
           <ul className="list-disc list-inside space-y-2 text-lg">
-            <li>"Calligraphy" comes from the Greek words "kallos" (beauty) and "graphein" (to write)</li>
+            <li>&quot;Calligraphy&quot; comes from the Greek words &quot;kallos&quot; (beauty) and &quot;graphein&quot; (to write)</li>
             <li>The word has been in English since the 17th century</li>
-            <li>Common misspellings include "calligraphy," "calligraphy," and "calligraphy"</li>
-            <li>Remember: "Calligraphy" has two "l"s and ends with "graphy"</li>
+            <li>Common misspellings include &quot;calligraphy,&quot; &quot;calligraphy,&quot; and &quot;calligraphy&quot;</li>
+            <li>Remember: &quot;Calligraphy&quot; has two &quot;l&quot;s and ends with &quot;graphy&quot;</li>
           </ul>
         </div>
       </section>
@@ -98,16 +98,16 @@ export default function CalligraphyVsCalligraphyPage() {
         <h2 className="text-2xl font-bold mb-4">FAQ</h2>
         <div className="space-y-4">
           <div className="border rounded-lg p-4">
-            <h3 className="font-semibold text-lg mb-2">Why do people misspell "calligraphy"?</h3>
-            <p className="text-lg">This is likely due to the complex spelling with double "l"s and the "graphy" ending. The word can be challenging to spell correctly due to its Greek origin and unusual letter combinations.</p>
+            <h3 className="font-semibold text-lg mb-2">Why do people misspell &quot;calligraphy&quot;?</h3>
+            <p className="text-lg">This is likely due to the complex spelling with double &quot;l&quot;s and the &quot;graphy&quot; ending. The word can be challenging to spell correctly due to its Greek origin and unusual letter combinations.</p>
           </div>
           <div className="border rounded-lg p-4">
-            <h3 className="font-semibold text-lg mb-2">Is "calligraphy" ever correct?</h3>
-            <p className="text-lg">No, "calligraphy" is never the correct spelling. It's always "calligraphy" with two "l"s and "graphy" at the end.</p>
+            <h3 className="font-semibold text-lg mb-2">Is &quot;calligraphy&quot; ever correct?</h3>
+            <p className="text-lg">No, &quot;calligraphy&quot; is never the correct spelling. It's always &quot;calligraphy&quot; with two &quot;l&quot;s and &quot;graphy&quot; at the end.</p>
           </div>
           <div className="border rounded-lg p-4">
             <h3 className="font-semibold text-lg mb-2">How can I remember the correct spelling?</h3>
-            <p className="text-lg">Think of "calligraphy" as "call" + "graphy" - the word combines "call" (beautiful) with "graphy" (writing). You can also remember: "Calligraphy has two 'l's like 'beautiful'."</p>
+            <p className="text-lg">Think of &quot;calligraphy&quot; as &quot;call&quot; + &quot;graphy&quot; - the word combines &quot;call&quot; (beautiful) with &quot;graphy&quot; (writing). You can also remember: &quot;Calligraphy has two 'l's like 'beautiful'.&quot;</p>
           </div>
         </div>
       </section>
@@ -116,13 +116,13 @@ export default function CalligraphyVsCalligraphyPage() {
         <h2 className="text-2xl font-bold mb-4">Summary</h2>
         <div className="bg-green-50 border-2 border-green-200 rounded-lg p-6">
           <p className="text-lg mb-4">
-            <strong>Remember:</strong> The correct spelling is <strong>"calligraphy"</strong> with two "l"s and "graphy" at the end.
+            <strong>Remember:</strong> The correct spelling is <strong>&quot;calligraphy&quot;</strong> with two &quot;l&quot;s and &quot;graphy&quot; at the end.
           </p>
           <p className="text-lg mb-4">
-            "Calligraphy" is always incorrect and should be avoided in all contexts.
+            &quot;Calligraphy&quot; is always incorrect and should be avoided in all contexts.
           </p>
           <p className="text-lg">
-            Use "calligraphy" when referring to the art of beautiful handwriting or decorative lettering.
+            Use &quot;calligraphy&quot; when referring to the art of beautiful handwriting or decorative lettering.
           </p>
         </div>
       </section>

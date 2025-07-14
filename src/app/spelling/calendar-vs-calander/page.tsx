@@ -69,7 +69,7 @@ export default function CalendarVsCalanderPage() {
       <section className="mb-8">
         <h2 className="text-2xl font-bold mb-4">Synonyms</h2>
         <div className="bg-gray-50 rounded-lg p-6">
-          <p className="text-lg mb-4">Words with similar meanings to "calendar":</p>
+          <p className="text-lg mb-4">Words with similar meanings to &quot;calendar&quot;:</p>
           <ul className="list-disc list-inside space-y-2 text-lg">
             <li>Schedule</li>
             <li>Agenda</li>
@@ -85,10 +85,10 @@ export default function CalendarVsCalanderPage() {
         <h2 className="text-2xl font-bold mb-4">Notes</h2>
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6">
           <ul className="list-disc list-inside space-y-2 text-lg">
-            <li>"Calendar" comes from the Latin word "calendarium" meaning "account book"</li>
+            <li>&quot;Calendar&quot; comes from the Latin word &quot;calendarium&quot; meaning &quot;account book&quot;</li>
             <li>The word has been in English since the 13th century</li>
-            <li>Common misspellings include "calander," "calandar," and "calender"</li>
-            <li>Remember: "Calendar" has an "a" in the middle, not an "e"</li>
+            <li>Common misspellings include &quot;calander,&quot; &quot;calandar,&quot; and &quot;calender&quot;</li>
+            <li>Remember: &quot;Calendar&quot; has an &quot;a&quot; in the middle, not an &quot;e&quot;</li>
           </ul>
         </div>
       </section>
@@ -97,16 +97,16 @@ export default function CalendarVsCalanderPage() {
         <h2 className="text-2xl font-bold mb-4">FAQ</h2>
         <div className="space-y-4">
           <div className="border rounded-lg p-4">
-            <h3 className="font-semibold text-lg mb-2">Why do people misspell "calendar" as "calander"?</h3>
-            <p className="text-lg">This is likely due to phonetic confusion. The pronunciation of "calendar" can make the middle vowel sound unclear, leading some to write "calander" instead of the correct "calendar."</p>
+            <h3 className="font-semibold text-lg mb-2">Why do people misspell &quot;calendar&quot; as &quot;calander&quot;?</h3>
+            <p className="text-lg">This is likely due to phonetic confusion. The pronunciation of &quot;calendar&quot; can make the middle vowel sound unclear, leading some to write &quot;calander&quot; instead of the correct &quot;calendar.&quot;</p>
           </div>
           <div className="border rounded-lg p-4">
-            <h3 className="font-semibold text-lg mb-2">Is "calander" ever correct?</h3>
-            <p className="text-lg">No, "calander" is never the correct spelling. It's always "calendar" with an "a" in the middle.</p>
+            <h3 className="font-semibold text-lg mb-2">Is &quot;calander&quot; ever correct?</h3>
+            <p className="text-lg">No, &quot;calander&quot; is never the correct spelling. It's always &quot;calendar&quot; with an &quot;a&quot; in the middle.</p>
           </div>
           <div className="border rounded-lg p-4">
             <h3 className="font-semibold text-lg mb-2">How can I remember the correct spelling?</h3>
-            <p className="text-lg">Think of "calendar" as having "cal" + "endar" - the "a" in the middle is consistent with the word's Latin origin. You can also remember: "A calendar has dates, and 'date' has an 'a'."</p>
+            <p className="text-lg">Think of &quot;calendar&quot; as having &quot;cal&quot; + &quot;endar&quot; - the &quot;a&quot; in the middle is consistent with the word's Latin origin. You can also remember: &quot;A calendar has dates, and 'date' has an 'a'.&quot;</p>
           </div>
         </div>
       </section>
@@ -115,13 +115,13 @@ export default function CalendarVsCalanderPage() {
         <h2 className="text-2xl font-bold mb-4">Summary</h2>
         <div className="bg-green-50 border-2 border-green-200 rounded-lg p-6">
           <p className="text-lg mb-4">
-            <strong>Remember:</strong> The correct spelling is <strong>"calendar"</strong> with an "a" in the middle.
+            <strong>Remember:</strong> The correct spelling is <strong>&quot;calendar&quot;</strong> with an &quot;a&quot; in the middle.
           </p>
           <p className="text-lg mb-4">
-            "Calander" is always incorrect and should be avoided in all contexts.
+            &quot;Calander&quot; is always incorrect and should be avoided in all contexts.
           </p>
           <p className="text-lg">
-            Use "calendar" when referring to any system for organizing time, whether it's a physical planner, digital tool, or system of reckoning dates.
+            Use &quot;calendar&quot; when referring to any system for organizing time, whether it's a physical planner, digital tool, or system of reckoning dates.
           </p>
         </div>
       </section>
