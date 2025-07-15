@@ -78,7 +78,7 @@ export default function ChallengedVsChallanged() {
           </div>
           <div className="mb-4">
             <p className="font-semibold text-lg md:text-xl">Q: Can &quot;challenged&quot; be used as an adjective?</p>
-            <p className="text-lg md:text-xl">A: Yes, it can describe someone who has faced challenges (e.g., "visually challenged").</p>
+            <p className="text-lg md:text-xl">A: Yes, it can describe someone who has faced challenges (e.g., &quot;visually challenged&quot;).</p>
           </div>
           <div>
             <p className="font-semibold text-lg md:text-xl">Q: Are there related words?</p>
