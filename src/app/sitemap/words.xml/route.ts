@@ -103,7 +103,7 @@ export async function GET() {
 	// Add word length pages
 	getWordLengths().forEach((length) => {
 		wordPages.push({
-			url: `/words-by-length/${length}`,
+			url: `words-by-length/${length}`,
 			priority: "0.7",
 			changefreq: "weekly",
 		});
@@ -112,7 +112,7 @@ export async function GET() {
 	// Add words ending in pages
 	getLetters().forEach((letter) => {
 		wordPages.push({
-			url: `/words-ending-in/${letter}`,
+			url: `words-ending-in/${letter}`,
 			priority: "0.7",
 			changefreq: "weekly",
 		});
@@ -121,7 +121,7 @@ export async function GET() {
 	// Add words starting with pages
 	getLetters().forEach((letter) => {
 		wordPages.push({
-			url: `/words-start-with/${letter}`,
+			url: `words-start-with/${letter}`,
 			priority: "0.7",
 			changefreq: "weekly",
 		});
@@ -130,7 +130,7 @@ export async function GET() {
 	// Add words with letters pages
 	getLetterCombinations().forEach((combo) => {
 		wordPages.push({
-			url: `/words-with-letters/${combo}`,
+			url: `words-with-letters/${combo}`,
 			priority: "0.7",
 			changefreq: "weekly",
 		});
@@ -143,17 +143,17 @@ export async function GET() {
 	popularLengths.forEach((length) => {
 		popularLetters.forEach((letter) => {
 			wordPages.push({
-				url: `/words-by-length/${length}/starting-with/${letter}`,
+				url: `words-by-length/${length}/starting-with/${letter}`,
 				priority: "0.6",
 				changefreq: "weekly",
 			});
 			wordPages.push({
-				url: `/words-by-length/${length}/ending-in/${letter}`,
+				url: `words-by-length/${length}/ending-in/${letter}`,
 				priority: "0.6",
 				changefreq: "weekly",
 			});
 			wordPages.push({
-				url: `/words-by-length/${length}/with/${letter}`,
+				url: `words-by-length/${length}/with/${letter}`,
 				priority: "0.6",
 				changefreq: "weekly",
 			});
