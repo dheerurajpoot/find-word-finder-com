@@ -78,7 +78,7 @@ export default function ChangingVsChangeing() {
           </div>
           <div className="mb-4">
             <p className="font-semibold text-lg md:text-xl">Q: Can &quot;changing&quot; be used as a noun?</p>
-            <p className="text-lg md:text-xl">A: Yes, as in "changing of the guard" or "changing rooms".</p>
+            <p className="text-lg md:text-xl">A: Yes, as in &quot;changing of the guard&quot; or &quot;changing rooms&quot;.</p>
           </div>
           <div>
             <p className="font-semibold text-lg md:text-xl">Q: Are there related words?</p>

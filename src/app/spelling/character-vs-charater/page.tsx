@@ -78,7 +78,7 @@ export default function CharacterVsCharater() {
           </div>
           <div className="mb-4">
             <p className="font-semibold text-lg md:text-xl">Q: Can &quot;character&quot; refer to letters or symbols?</p>
-            <p className="text-lg md:text-xl">A: Yes, in computing, a "character" is any letter, number, or symbol.</p>
+            <p className="text-lg md:text-xl">A: Yes, in computing, a &quot;character&quot; is any letter, number, or symbol.</p>
           </div>
           <div>
             <p className="font-semibold text-lg md:text-xl">Q: Are there related words?</p>

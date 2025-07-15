@@ -77,12 +77,12 @@ export default function ChampagneVsChampange() {
             <p className="text-lg md:text-xl">A: Champagne is a sparkling wine from the Champagne region of France, known for its bubbles and celebratory use.</p>
           </div>
           <div className="mb-4">
-            <p className="font-semibold text-lg md:text-xl">Q: Can "champagne" refer to other sparkling wines?</p>
-            <p className="text-lg md:text-xl">A: Technically, only sparkling wine from the Champagne region can be called "champagne" in many countries.</p>
+            <p className="font-semibold text-lg md:text-xl">Q: Can &quot;champagne&quot; refer to other sparkling wines?</p>
+            <p className="text-lg md:text-xl">A: Technically, only sparkling wine from the Champagne region can be called &quot;champagne&quot; in many countries.</p>
           </div>
           <div>
             <p className="font-semibold text-lg md:text-xl">Q: Are there related words?</p>
-            <p className="text-lg md:text-xl">A: Yes, "champagne flute" (glass), "champagne toast" (celebration).</p>
+            <p className="text-lg md:text-xl">A: Yes, &quot;champagne flute&quot; (glass), &quot;champagne toast&quot; (celebration).</p>
           </div>
         </section>
         {/* Summary Section (at the end) */}
