@@ -40,7 +40,7 @@ export default function ChallengedVsChallanged() {
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-900">Definitions</h2>
           <div className="mb-4">
-            <p className="text-lg md:text-xl"><strong>Challenged</strong>: Past tense of "challenge"; to have faced or dealt with a challenge.</p>
+            <p className="text-lg md:text-xl"><strong>Challenged</strong>: Past tense of &quot;challenge&quot;; to have faced or dealt with a challenge.</p>
           </div>
           <div>
             <p className="text-lg md:text-xl"><strong>Challanged</strong>: <span className="text-red-700">(Incorrect spelling)</span></p>
@@ -89,7 +89,7 @@ export default function ChallengedVsChallanged() {
         <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500 mt-8">
           <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
           <p className="text-lg md:text-xl text-green-800 leading-relaxed">
-            <strong>Challenged</strong> is the correct spelling for the past tense of "challenge". <strong>Challanged</strong> is a misspelling and should not be used in any context.
+            <strong>Challenged</strong> is the correct spelling for the past tense of &quot;challenge&quot;. <strong>Challanged</strong> is a misspelling and should not be used in any context.
           </p>
         </div>
       </main>
