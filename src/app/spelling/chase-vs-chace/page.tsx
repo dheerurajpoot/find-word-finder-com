@@ -78,7 +78,7 @@ export default function ChaseVsChace() {
           </div>
           <div className="mb-4">
             <p className="font-semibold text-lg md:text-xl">Q: Can &quot;chase&quot; be used as a noun?</p>
-            <p className="text-lg md:text-xl">A: Yes, it can refer to the act of pursuing (e.g., "a police chase").</p>
+            <p className="text-lg md:text-xl">A: Yes, it can refer to the act of pursuing (e.g., &quot;a police chase&quot;).</p>
           </div>
           <div>
             <p className="font-semibold text-lg md:text-xl">Q: Are there related words?</p>
