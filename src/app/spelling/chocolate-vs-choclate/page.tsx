@@ -24,8 +24,8 @@ export default function ChocolateVsChoclatePage() {
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <div className="bg-red-50 rounded-lg border-l-4 border-red-500">
           <h3 className="text-2xl font-bold text-red-900 flex items-center">❌ Incorrect: Choclate</h3>
-          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chocolate.&quot; The correct spelling includes an "o" after the "c" in the middle.</p>
-          <p className="text-lg md:text-xl text-red-800"><strong>Common Error:</strong> Omitting the second "o" in the word</p>
+          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chocolate.&quot; The correct spelling includes an &quot;o&quot; after the &quot;c&quot; in the middle.</p>
+          <p className="text-lg md:text-xl text-red-800"><strong>Common Error:</strong> Omitting the second &quot;o&quot; in the word</p>
         </div>
         <div className="bg-green-50 rounded-lg border-l-4 border-green-500">
           <h3 className="text-2xl font-bold text-green-900 flex items-center">✅ Correct: Chocolate</h3>
@@ -98,7 +98,7 @@ export default function ChocolateVsChoclatePage() {
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: Why do people misspell &quot;chocolate&quot; as &quot;choclate&quot;?</h3>
-            <p className="text-lg text-blue-800">A: The second "o" in "chocolate" is often silent, leading people to omit it when spelling the word.</p>
+            <p className="text-lg text-blue-800">A: The second &quot;o&quot; in &quot;chocolate&quot; is often silent, leading people to omit it when spelling the word.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: What is chocolate?</h3>

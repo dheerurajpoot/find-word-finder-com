@@ -24,7 +24,7 @@ export default function ChihuahuaVsChiwawaPage() {
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <div className="bg-red-50 rounded-lg border-l-4 border-red-500">
           <h3 className="text-2xl font-bold text-red-900 flex items-center">❌ Incorrect: Chiwawa</h3>
-          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;Chihuahua.&quot; The correct spelling uses "hua" in the middle, not "wa".</p>
+          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;Chihuahua.&quot; The correct spelling uses &quot;hua&quot; in the middle, not &quot;wa&quot;.</p>
           <p className="text-lg md:text-xl text-red-800"><strong>Common Error:</strong> Spelling the word phonetically as it sounds</p>
         </div>
         <div className="bg-green-50 rounded-lg border-l-4 border-green-500">
@@ -88,7 +88,7 @@ export default function ChihuahuaVsChiwawaPage() {
           <li>&bull; &quot;Chihuahua&quot; is pronounced as /tʃɪˈwɑːwə/</li>
           <li>&bull; The breed is named after the Mexican state of Chihuahua</li>
           <li>&bull; Chihuahuas are one of the smallest dog breeds in the world</li>
-          <li>&bull; Remember: The correct spelling is "Chihuahua" with "hua" in the middle</li>
+          <li>&bull; Remember: The correct spelling is &quot;Chihuahua&quot; with &quot;hua&quot; in the middle</li>
           <li>&bull; Commonly misspelled due to its unique pronunciation</li>
         </ul>
       </div>
@@ -106,7 +106,7 @@ export default function ChihuahuaVsChiwawaPage() {
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: How can I remember the correct spelling of &quot;Chihuahua&quot;?</h3>
-            <p className="text-lg text-blue-800">A: Remember that the breed is named after the Mexican state of Chihuahua, and the correct spelling includes "hua" in the middle.</p>
+            <p className="text-lg text-blue-800">A: Remember that the breed is named after the Mexican state of Chihuahua, and the correct spelling includes &quot;hua&quot; in the middle.</p>
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@ export default function ChihuahuaVsChiwawaPage() {
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500 mb-8">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <p className="text-lg md:text-xl text-green-800 leading-relaxed">
-          <strong>Chihuahua</strong> is the correct spelling. It refers to a small dog breed from Mexico, known for its tiny size and big personality. The word is spelled with "hua" in the middle: "Chihuahua". "Chiwawa" is a misspelling that should be avoided.
+          <strong>Chihuahua</strong> is the correct spelling. It refers to a small dog breed from Mexico, known for its tiny size and big personality. The word is spelled with &quot;hua&quot; in the middle: &quot;Chihuahua&quot;. &quot;Chiwawa&quot; is a misspelling that should be avoided.
         </p>
       </div>
     </div>

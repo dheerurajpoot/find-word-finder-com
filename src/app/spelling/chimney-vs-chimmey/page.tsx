@@ -24,7 +24,7 @@ export default function ChimneyVsChimmeyPage() {
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <div className="bg-red-50 rounded-lg border-l-4 border-red-500">
           <h3 className="text-2xl font-bold text-red-900 flex items-center">❌ Incorrect: Chimmey</h3>
-          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chimney.&quot; The correct spelling uses "ey" at the end, not "ey.</p>
+          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chimney.&quot; The correct spelling uses &quot;ey&quot; at the end, not &quot;ey.</p>
           <p className="text-lg md:text-xl text-red-800"><strong>Common Error:</strong> Confusing the ending with similar-sounding words</p>
         </div>
         <div className="bg-green-50 rounded-lg border-l-4 border-green-500">
@@ -74,9 +74,9 @@ export default function ChimneyVsChimmeyPage() {
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
           <li>• &quot;Chimney&quot; is pronounced as /ˈtʃɪmni/</li>
-          <li>• The word comes from Old French "cheminee" and Latin "caminus</li>
+          <li>• The word comes from Old French &quot;cheminee&quot; and Latin &quot;caminus</li>
           <li>• Chimneys are essential for proper ventilation in buildings</li>
-          <li>• Remember: "Chimney" ends with ey", not "ey</li>
+          <li>• Remember: &quot;Chimney&quot; ends with ey&quot;, not &quot;ey</li>
           <li>• The word can also refer to a narrow cleft in a cliff face</li>
         </ul>
       </div>
@@ -90,7 +90,7 @@ export default function ChimneyVsChimmeyPage() {
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">What is the origin of the word &quot;chimney&quot;?</h3>
-            <p className="text-lg text-blue-800">A: The word "chimney" comes from Old French "cheminee" and ultimately from Latin caminus, meaning "furnace" or "hearth.</p>
+            <p className="text-lg text-blue-800">A: The word &quot;chimney&quot; comes from Old French &quot;cheminee&quot; and ultimately from Latin caminus, meaning &quot;furnace&quot; or &quot;hearth.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">Why are chimneys important?</h3>
@@ -101,7 +101,7 @@ export default function ChimneyVsChimmeyPage() {
       
       <div className="bg-green-50 rounded-lg border-l-4 border-green-500 mb-8">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed"><strong>Chimney</strong> is the correct spelling. It refers to a vertical structure that provides ventilation for smoke and gases from fires or heating systems. "Chimmey is a misspelling that should be avoided.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed"><strong>Chimney</strong> is the correct spelling. It refers to a vertical structure that provides ventilation for smoke and gases from fires or heating systems. &quot;Chimmey is a misspelling that should be avoided.</p>
       </div>
 
     </div>

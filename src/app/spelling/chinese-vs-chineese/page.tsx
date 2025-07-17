@@ -24,8 +24,8 @@ export default function ChineseVsChineesePage() {
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <div className="bg-red-50 rounded-lg border-l-4 border-red-500">
           <h3 className="text-2xl font-bold text-red-900 flex items-center">❌ Incorrect: Chineese</h3>
-          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;Chinese.&quot; The correct spelling uses only one "e" after the "n".</p>
-          <p className="text-lg md:text-xl text-red-800"><strong>Common Error:</strong> Doubling the "e" in the word</p>
+          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;Chinese.&quot; The correct spelling uses only one &quot;e&quot; after the &quot;n&quot;.</p>
+          <p className="text-lg md:text-xl text-red-800"><strong>Common Error:</strong> Doubling the &quot;e&quot; in the word</p>
         </div>
         <div className="bg-green-50 rounded-lg border-l-4 border-green-500">
           <h3 className="text-2xl font-bold text-green-900 flex items-center">✅ Correct: Chinese</h3>
@@ -88,10 +88,10 @@ export default function ChineseVsChineesePage() {
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
           <li>&bull; &quot;Chinese&quot; is pronounced as /tʃaɪˈniːz/</li>
-          <li>&bull; The word comes from "China" + "-ese" (denoting nationality or language)</li>
-          <li>&bull; "Chinese" can refer to the people, language, or culture of China</li>
-          <li>&bull; Remember: Only one "e" after the "n" in "Chinese"</li>
-          <li>&bull; Commonly confused due to the double "e" sound</li>
+          <li>&bull; The word comes from &quot;China&quot; + &quot;-ese&quot; (denoting nationality or language)</li>
+          <li>&bull; &quot;Chinese&quot; can refer to the people, language, or culture of China</li>
+          <li>&bull; Remember: Only one &quot;e&quot; after the &quot;n&quot; in &quot;Chinese&quot;</li>
+          <li>&bull; Commonly confused due to the double &quot;e&quot; sound</li>
         </ul>
       </div>
       {/* FAQ Section */}
@@ -100,15 +100,15 @@ export default function ChineseVsChineesePage() {
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: Why do people misspell &quot;Chinese&quot; as &quot;Chineese&quot;?</h3>
-            <p className="text-lg text-blue-800">A: The double "e" sound in the middle of the word can lead to the mistaken addition of an extra "e". The correct spelling only has one "e" after the "n".</p>
+            <p className="text-lg text-blue-800">A: The double &quot;e&quot; sound in the middle of the word can lead to the mistaken addition of an extra &quot;e&quot;. The correct spelling only has one &quot;e&quot; after the &quot;n&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: What does &quot;Chinese&quot; refer to?</h3>
-            <p className="text-lg text-blue-800">A: "Chinese" can refer to the people of China, the language spoken in China (such as Mandarin or Cantonese), or anything relating to Chinese culture.</p>
+            <p className="text-lg text-blue-800">A: &quot;Chinese&quot; can refer to the people of China, the language spoken in China (such as Mandarin or Cantonese), or anything relating to Chinese culture.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: How can I remember the correct spelling of &quot;Chinese&quot;?</h3>
-            <p className="text-lg text-blue-800">A: Remember that the word is formed from "China" + "-ese". There is only one "e" after the "n".</p>
+            <p className="text-lg text-blue-800">A: Remember that the word is formed from &quot;China&quot; + &quot;-ese&quot;. There is only one &quot;e&quot; after the &quot;n&quot;.</p>
           </div>
         </div>
       </div>
@@ -116,7 +116,7 @@ export default function ChineseVsChineesePage() {
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500 mb-8">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <p className="text-lg md:text-xl text-green-800 leading-relaxed">
-          <strong>Chinese</strong> is the correct spelling. It refers to anything relating to China, its people, or its language. The word is spelled with only one "e" after the "n": "Chinese". "Chineese" is a misspelling that should be avoided.
+          <strong>Chinese</strong> is the correct spelling. It refers to anything relating to China, its people, or its language. The word is spelled with only one &quot;e&quot; after the &quot;n&quot;: &quot;Chinese&quot;. &quot;Chineese&quot; is a misspelling that should be avoided.
         </p>
       </div>
     </div>

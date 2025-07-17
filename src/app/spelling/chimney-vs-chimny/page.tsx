@@ -24,7 +24,7 @@ export default function ChimneyVsChimnyPage() {
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <div className="bg-red-50 rounded-lg border-l-4 border-red-500">
           <h3 className="text-2 font-bold text-red-900 flex items-center">❌ Incorrect: Chimny</h3>
-          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chimney.&quot; The correct spelling includes thee" before the y.</p>
+          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chimney.&quot; The correct spelling includes thee&quot; before the y.</p>
           <p className="text-lg md:text-xl text-red-800"><strong>Common Error:</strong> Omitting the e in the word</p>
         </div>
         <div className="bg-green-50 rounded-lg border-l-4 border-green-500">
@@ -74,9 +74,9 @@ export default function ChimneyVsChimnyPage() {
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
           <li>• &quot;Chimney&quot; is pronounced as /ˈtʃɪmni/</li>
-          <li>• The word comes from Old French chemineeand Latin "caminus</li>
+          <li>• The word comes from Old French chemineeand Latin &quot;caminus</li>
           <li>• Chimneys are essential for proper ventilation in buildings</li>
-          <li>• Remember: Chimney includes thee" before they</li>
+          <li>• Remember: Chimney includes thee&quot; before they</li>
           <li>• The word can also refer to a narrow cleft in a cliff face</li>
         </ul>
       </div>
@@ -86,11 +86,11 @@ export default function ChimneyVsChimnyPage() {
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">Why do people misspell &quot;chimney&quot; as &quot;chimny&quot;?</h3>
-            <p className="text-lg text-blue-800">This misspelling often occurs because the "e" sound is subtle in pronunciation, leading to its omission in writing. Fast typing or unfamiliarity with the word can also cause this error.</p>
+            <p className="text-lg text-blue-800">This misspelling often occurs because the &quot;e&quot; sound is subtle in pronunciation, leading to its omission in writing. Fast typing or unfamiliarity with the word can also cause this error.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">What is the origin of the word &quot;chimney&quot;?</h3>
-            <p className="text-lg text-blue-800">A: The word "chimney" comes from Old French "cheminee" and ultimately from Latin caminus, meaningfurnace or earth.</p>
+            <p className="text-lg text-blue-800">A: The word &quot;chimney&quot; comes from Old French &quot;cheminee&quot; and ultimately from Latin caminus, meaningfurnace or earth.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">Why are chimneys important?</h3>

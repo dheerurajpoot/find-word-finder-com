@@ -24,12 +24,12 @@ export default function ChoosesVsChoosedPage() {
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <div className="bg-red-50 rounded-lg border-l-4 border-red-500">
           <h3 className="text-2xl font-bold text-red-900 flex items-center">❌ Incorrect: Choosed</h3>
-          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chooses.&quot; The correct present tense form is "chooses"; "choosed" is not a word.</p>
+          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chooses.&quot; The correct present tense form is &quot;chooses&quot;; &quot;choosed&quot; is not a word.</p>
           <p className="text-lg md:text-xl text-red-800"><strong>Common Error:</strong> Applying regular verb rules to an irregular verb</p>
         </div>
         <div className="bg-green-50 rounded-lg border-l-4 border-green-500">
           <h3 className="text-2xl font-bold text-green-900 flex items-center">✅ Correct: Chooses</h3>
-          <p className="text-lg md:text-xl text-green-800 mb-4"><strong>Definition:</strong> Third person singular present tense of "choose"; to select from a number of possibilities.</p>
+          <p className="text-lg md:text-xl text-green-800 mb-4"><strong>Definition:</strong> Third person singular present tense of &quot;choose&quot;; to select from a number of possibilities.</p>
           <p className="text-lg md:text-xl text-green-800"><strong>Part of Speech:</strong> Verb</p>
         </div>
       </div>
@@ -101,11 +101,11 @@ export default function ChoosesVsChoosedPage() {
             <p className="text-lg text-blue-800">A: English learners sometimes apply the regular verb rule to &quot;choose&quot;, but the correct present tense is &quot;chooses&quot; and the past tense is &quot;chose&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
-            <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: What is the past tense of "choose"?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: What is the past tense of &quot;choose&quot;?</h3>
             <p className="text-lg text-blue-800">A: The past tense of &quot;choose&quot; is &quot;chose&quot;, not &quot;choosed&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
-            <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: How can I remember the correct form of "chooses"?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: How can I remember the correct form of &quot;chooses&quot;?</h3>
             <p className="text-lg text-blue-800">A: Remember that &quot;chooses&quot; is the present tense, third person singular form. The past tense is &quot;chose&quot;.</p>
           </div>
         </div>

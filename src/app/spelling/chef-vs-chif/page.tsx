@@ -24,8 +24,8 @@ export default function ChefVsChifPage() {
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <div className="bg-red-50 rounded-lg border-l-4 border-red-500">
           <h3 className="text-2xl font-bold text-red-900 flex items-center">❌ Incorrect: Chif</h3>
-          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chef.&quot; The correct spelling uses "e" after "ch-" and not "i".</p>
-          <p className="text-lg md:text-xl text-red-800"><strong>Common Error:</strong> Using "i" instead of "e" in the word</p>
+          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chef.&quot; The correct spelling uses &quot;e&quot; after &quot;ch-&quot; and not &quot;i&quot;.</p>
+          <p className="text-lg md:text-xl text-red-800"><strong>Common Error:</strong> Using &quot;i&quot; instead of &quot;e&quot; in the word</p>
         </div>
         <div className="bg-green-50 rounded-lg border-l-4 border-green-500">
           <h3 className="text-2xl font-bold text-green-900 flex items-center">✅ Correct: Chef</h3>
@@ -74,9 +74,9 @@ export default function ChefVsChifPage() {
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
           <li>• &quot;Chef&quot; is pronounced as /ʃɛf/</li>
-          <li>• The word comes from French, meaning "chief" or "head"</li>
+          <li>• The word comes from French, meaning &quot;chief&quot; or &quot;head&quot;</li>
           <li>• A chef is different from a cook; a chef usually has formal training</li>
-          <li>• Remember: "Chef" uses "e" after "ch-"</li>
+          <li>• Remember: &quot;Chef&quot; uses &quot;e&quot; after &quot;ch-&quot;</li>
         </ul>
       </div>
 
@@ -85,11 +85,11 @@ export default function ChefVsChifPage() {
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: Why do people misspell &quot;chef&quot; as &quot;chif&quot;?</h3>
-            <p className="text-lg text-blue-800">A: This misspelling often occurs because the "e" in "chef" is pronounced as /ɛ/ (like "eh"), which can be confused with "i" in English spelling. The word is borrowed from French, where "ch" is pronounced as /ʃ/ (like "sh").</p>
+            <p className="text-lg text-blue-800">A: This misspelling often occurs because the &quot;e&quot; in &quot;chef&quot; is pronounced as /ɛ/ (like &quot;eh&quot;), which can be confused with &quot;i&quot; in English spelling. The word is borrowed from French, where &quot;ch&quot; is pronounced as /ʃ/ (like &quot;sh&quot;).</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: What is the origin of the word &quot;chef&quot;?</h3>
-            <p className="text-lg text-blue-800">A: The word "chef" comes from French, meaning "chief" or "head." In English, it refers specifically to the head cook in a kitchen.</p>
+            <p className="text-lg text-blue-800">A: The word &quot;chef&quot; comes from French, meaning &quot;chief&quot; or &quot;head.&quot; In English, it refers specifically to the head cook in a kitchen.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: Is a chef the same as a cook?</h3>
@@ -99,7 +99,7 @@ export default function ChefVsChifPage() {
       </div>
       <div className="bg-green-50 rounded-lg border-l-4 border-green-500 mb-8">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed"><strong>Chef</strong> is the correct spelling. It refers to a professional cook, especially the chief cook in a restaurant or hotel. "Chif" is a misspelling that should be avoided.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed"><strong>Chef</strong> is the correct spelling. It refers to a professional cook, especially the chief cook in a restaurant or hotel. &quot;Chif&quot; is a misspelling that should be avoided.</p>
       </div>
     </div>
   )
