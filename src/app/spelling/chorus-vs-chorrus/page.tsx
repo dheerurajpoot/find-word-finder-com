@@ -86,7 +86,7 @@ export default function ChorusVsChorrusPage() {
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
           <li>&bull; &quot;Chorus&quot; is pronounced as /ˈkɔːrəs/</li>
-          <li>&bull; The word comes from Greek "khoros"</li>
+          <li>&bull; The word comes from Greek &quot;khoros&quot;</li>
           <li>&bull; &quot;Chorus&quot; is always spelled with one &quot;r&quot; in the middle</li>
           <li>&bull; Remember: The correct spelling is &quot;chorus&quot; with one &quot;r&quot;</li>
           <li>&bull; Commonly misspelled due to the double &quot;r&quot; sound</li>
@@ -101,8 +101,8 @@ export default function ChorusVsChorrusPage() {
             <p className="text-lg text-blue-800">A: The double &quot;r&quot; sound in the middle of the word can lead to the mistaken addition of an extra &quot;r&quot;. The correct spelling only has one &quot;r&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
-            <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: What does "chorus" mean?</h3>
-            <p className="text-lg text-blue-800">A: "Chorus" can refer to a group of singers or the repeated part of a song.</p>
+            <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: What does &quot;chorus&quot; mean?</h3>
+            <p className="text-lg text-blue-800">A: &quot;Chorus&quot; can refer to a group of singers or the repeated part of a song.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
             <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: How can I remember the correct spelling of &quot;chorus&quot;?</h3>

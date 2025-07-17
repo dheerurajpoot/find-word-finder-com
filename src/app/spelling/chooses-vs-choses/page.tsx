@@ -24,12 +24,12 @@ export default function ChoosesVsChosesPage() {
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <div className="bg-red-50 rounded-lg border-l-4 border-red-500">
           <h3 className="text-2xl font-bold text-red-900 flex items-center">❌ Incorrect: Choses</h3>
-          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chooses.&quot; The correct present tense, third person singular form of "choose" is "chooses"; "choses" is not correct in this context.</p>
-          <p className="text-lg md:text-xl text-red-800"><strong>Common Error:</strong> Using "s" instead of "es" for the third person singular</p>
+          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chooses.&quot; The correct present tense, third person singular form of &quot;choose&quot; is &quot;chooses&quot;; &quot;choses&quot; is not correct in this context.</p>
+          <p className="text-lg md:text-xl text-red-800"><strong>Common Error:</strong> Using &quot;s&quot; instead of &quot;es&quot; for the third person singular</p>
         </div>
         <div className="bg-green-50 rounded-lg border-l-4 border-green-500">
           <h3 className="text-2xl font-bold text-green-900 flex items-center">✅ Correct: Chooses</h3>
-          <p className="text-lg md:text-xl text-green-800 mb-4"><strong>Definition:</strong> Third person singular present tense of "choose"; to select from a number of possibilities.</p>
+          <p className="text-lg md:text-xl text-green-800 mb-4"><strong>Definition:</strong> Third person singular present tense of &quot;choose&quot;; to select from a number of possibilities.</p>
           <p className="text-lg md:text-xl text-green-800"><strong>Part of Speech:</strong> Verb</p>
         </div>
       </div>
@@ -86,10 +86,10 @@ export default function ChoosesVsChosesPage() {
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
           <li>&bull; &quot;Chooses&quot; is pronounced as /ˈtʃuːzɪz/</li>
-          <li>&bull; "Chooses" is the present tense, third person singular form of "choose"</li>
-          <li>&bull; "Choses" is not the correct form for this meaning</li>
+          <li>&bull; &quot;Chooses&quot; is the present tense, third person singular form of &quot;choose&quot;</li>
+          <li>&bull; &quot;Choses&quot; is not the correct form for this meaning</li>
           <li>&bull; Remember: The correct form is &quot;chooses&quot; with &quot;es&quot; at the end</li>
-          <li>&bull; Commonly misspelled by omitting the "e" before the "s"</li>
+          <li>&bull; Commonly misspelled by omitting the &quot;e&quot; before the &quot;s&quot;</li>
         </ul>
       </div>
       {/* FAQ Section */}
@@ -101,7 +101,7 @@ export default function ChoosesVsChosesPage() {
             <p className="text-lg text-blue-800">A: English learners sometimes omit the &quot;e&quot; before the &quot;s&quot; in the third person singular form, but the correct form is &quot;chooses&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
-            <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: What is the correct third person singular form of "choose"?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: What is the correct third person singular form of &quot;choose&quot;?</h3>
             <p className="text-lg text-blue-800">A: The correct form is &quot;chooses&quot;. &quot;Choses&quot; is not correct in this context.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">

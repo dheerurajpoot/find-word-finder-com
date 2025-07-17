@@ -24,12 +24,12 @@ export default function ChoseVsChosedPage() {
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <div className="bg-red-50 rounded-lg border-l-4 border-red-500">
           <h3 className="text-2xl font-bold text-red-900 flex items-center">❌ Incorrect: Chosed</h3>
-          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chose.&quot; The correct past tense of "choose" is "chose"; "chosed" is not a word.</p>
+          <p className="text-lg md:text-xl text-red-800 mb-4"><strong>Why it&apos;s wrong:</strong> This is a misspelling of &quot;chose.&quot; The correct past tense of &quot;choose&quot; is &quot;chose&quot;; &quot;chosed&quot; is not a word.</p>
           <p className="text-lg md:text-xl text-red-800"><strong>Common Error:</strong> Applying regular verb rules to an irregular verb</p>
         </div>
         <div className="bg-green-50 rounded-lg border-l-4 border-green-500">
           <h3 className="text-2xl font-bold text-green-900 flex items-center">✅ Correct: Chose</h3>
-          <p className="text-lg md:text-xl text-green-800 mb-4"><strong>Definition:</strong> Past tense of "choose"; selected from a number of possibilities.</p>
+          <p className="text-lg md:text-xl text-green-800 mb-4"><strong>Definition:</strong> Past tense of &quot;choose&quot;; selected from a number of possibilities.</p>
           <p className="text-lg md:text-xl text-green-800"><strong>Part of Speech:</strong> Verb (past tense)</p>
         </div>
       </div>
@@ -101,11 +101,11 @@ export default function ChoseVsChosedPage() {
             <p className="text-lg text-blue-800">A: English learners sometimes apply the regular verb rule to &quot;choose&quot;, but the correct past tense is &quot;chose&quot; and the past participle is &quot;chosen&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
-            <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: What is the past participle of "choose"?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: What is the past participle of &quot;choose&quot;?</h3>
             <p className="text-lg text-blue-800">A: The past participle of &quot;choose&quot; is &quot;chosen&quot;, not &quot;chosed&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-blue-200">
-            <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: How can I remember the correct form of "chose"?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-blue-900">Q: How can I remember the correct form of &quot;chose&quot;?</h3>
             <p className="text-lg text-blue-800">A: Remember that &quot;chose&quot; is the past tense, not &quot;chosed&quot;. The past participle is &quot;chosen&quot;.</p>
           </div>
         </div>
