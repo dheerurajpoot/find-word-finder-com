@@ -89,7 +89,7 @@ export default function SpellingPage() {
 
   return (
     <div className="max-w-6xl mx-auto py-10 px-4">
-      <h1 className="text-4xl md:text-5xl font-extrabold mb-8">Spelling Comparisons</h1>
+      <h1 className="text-4xl md:text-5xl font-extrabold mb-8">Misspelling</h1>
       
       {/* Search and Filter Section */}
       <div className="mb-8 space-y-4">
