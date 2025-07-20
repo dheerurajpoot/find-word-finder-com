@@ -63,7 +63,7 @@ export default function WidowVsWiddowPage() {
           <div>
             <ul className="list-disc ml-6 space-y-2">
               <li>Widowed woman</li>
-              <li>Single woman (after spouse's death)</li>
+              <li>Single woman (after spouse&apos;s death)</li>
               <li>Unmarried after bereavement</li>
               <li>Grieving spouse</li>
             </ul>

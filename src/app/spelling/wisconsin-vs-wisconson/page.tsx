@@ -55,7 +55,7 @@ export default function WisconsinVsWisconsonPage() {
           <div>
             <ul className="list-disc ml-6 space-y-2">
               <li>The Badger State</li>
-              <li>America's Dairyland</li>
+              <li>America&apos;s Dairyland</li>
               <li>WI (abbreviation)</li>
               <li>Midwest state</li>
             </ul>
@@ -65,7 +65,7 @@ export default function WisconsinVsWisconsonPage() {
               <li>Great Lakes state</li>
               <li>Cheese State</li>
               <li>Upper Midwest</li>
-              <li>Wisconsinite's home</li>
+              <li>Wisconsinite&apos;s home</li>
             </ul>
           </div>
         </div>
