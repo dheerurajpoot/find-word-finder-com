@@ -57,7 +57,7 @@ export default function WomanVsWemonPage() {
               <li>Lady</li>
               <li>Female</li>
               <li>Gal</li>
-              <li>Ma'am</li>
+              <li>Ma&apos;am</li>
             </ul>
           </div>
           <div>

@@ -82,7 +82,7 @@ export default function WhoseVsWhoosePage() {
         <div className="space-y-6">
           <div className="bg-white rounded-lg shadow p-5 border border-gray-200">
             <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900">Is &quot;whoose&quot; ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-800">No, &quot;whoose&quot; is not a word in English. The correct spelling is &quot;whose&quot; for possession, or &quot;who's&quot; as a contraction for "who is".</p>
+            <p className="text-lg md:text-xl text-gray-800">No, &quot;whoose&quot; is not a word in English. The correct spelling is &quot;whose&quot; for possession, or &quot;who&apos;s&quot; as a contraction for &quot;who is&quot;.</p>
           </div>
           <div className="bg-white rounded-lg shadow p-5 border border-gray-200">
             <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900">What does &quot;whose&quot; mean?</h3>
