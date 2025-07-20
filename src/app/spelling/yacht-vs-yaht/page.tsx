@@ -46,7 +46,7 @@ export default function YachtVsYahtPage() {
         </Card>
       </div>
       <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definition of &quot;Yacht&quot;</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definition of Yacht</h2>
         <div className="bg-gray-50 p-6 rounded-lg">
           <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-4">
             <strong>&quot;Yacht&quot;</strong> (noun): A medium-sized sailing boat or motorboat used for recreation, racing, or cruising.
@@ -57,7 +57,7 @@ export default function YachtVsYahtPage() {
         </div>
       </div>
       <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms for &quot;Yacht&quot;</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms for Yacht</h2>
         <div className="bg-blue-50 p-6 rounded-lg">
           <div className="grid md:grid-cols-2 gap-4">
             <div>

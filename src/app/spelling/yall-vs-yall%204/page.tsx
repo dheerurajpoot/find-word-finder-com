@@ -26,7 +26,7 @@ export default function YallVsYall4Page() {
               <strong>Incorrect spelling</strong> - &quot;Yall 4&quot; is not a recognized English word or phrase.
             </p>
             <p className="text-lg md:text-xl text-red-700">
-              &quot;Yall 4&quot; is not a standard spelling or usage. The correct informal contraction for "you all" is "yall" or "y'all".
+              &quot;Yall 4&quot; is not a standard spelling or usage. The correct informal contraction for &quot;you all&quot; is &quot;yall&quot; or &quot;y'all&quot;.
             </p>
           </CardContent>
         </Card>
@@ -40,7 +40,7 @@ export default function YallVsYall4Page() {
               <strong>Correct spelling</strong> - The informal contraction for "you all" commonly used in Southern American English.
             </p>
             <p className="text-lg md:text-xl text-green-700">
-              &quot;Yall&quot; (or more properly "y'all") is a colloquial contraction meaning "you all" and is widely used in informal speech.
+              &quot;Yall&quot; (or more properly &quot;y'all&quot;) is a colloquial contraction meaning &quot;you all&quot; and is widely used in informal speech.
             </p>
           </CardContent>
         </Card>
@@ -49,7 +49,7 @@ export default function YallVsYall4Page() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Definition of &quot;Yall&quot;</h2>
         <div className="bg-gray-50 p-6 rounded-lg">
           <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-4">
-            <strong>&quot;Yall&quot;</strong> (informal contraction): A colloquial contraction of "you all," used to address or refer to two or more people.
+            <strong>&quot;Yall&quot;</strong> (informal contraction): A colloquial contraction of &quot;you all,&quot; used to address or refer to two or more people.
           </p>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
             This word is used in informal speech, especially in the Southern United States, to address a group of people.
@@ -104,7 +104,7 @@ export default function YallVsYall4Page() {
       <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-          <li>• &quot;Yall&quot; is a colloquial contraction, more properly spelled "y'all" with an apostrophe.</li>
+          <li>• &quot;Yall&quot; is a colloquial contraction, more properly spelled &quot;y'all&quot; with an apostrophe.</li>
           <li>• The pronunciation is /jɑːl/ (yahl).</li>
           <li>• Commonly used in the Southern United States and informal speech.</li>
         </ul>
@@ -115,7 +115,7 @@ export default function YallVsYall4Page() {
           <div className="bg-white p-6 rounded-lg border border-gray-200">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Is &quot;yall 4&quot; ever correct?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              No, &quot;yall 4&quot; is never correct. The only correct form is &quot;yall&quot; or &quot;y'all&quot; as a contraction for "you all".
+              No, &quot;yall 4&quot; is never correct. The only correct form is &quot;yall&quot; or &quot;y'all&quot; as a contraction for &quot;you all&quot;.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-gray-200">
@@ -127,7 +127,7 @@ export default function YallVsYall4Page() {
           <div className="bg-white p-6 rounded-lg border border-gray-200">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">What is the origin of &quot;yall&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">
-              &quot;Yall&quot; originated in the Southern United States as a contraction of "you all".
+              &quot;Yall&quot; originated in the Southern United States as a contraction of &quot;you all&quot;.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg border border-gray-200">
@@ -147,7 +147,7 @@ export default function YallVsYall4Page() {
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <p className="text-lg md:text-xl text-green-800 leading-relaxed">
-          <strong>Yall</strong> is the correct informal contraction for "you all", while <strong>yall 4</strong> is always incorrect. Use &quot;yall&quot; or &quot;y'all&quot; in informal speech to address a group of people.
+          <strong>Yall</strong> is the correct informal contraction for &quot;you all&quot;, while <strong>yall 4</strong> is always incorrect. Use &quot;yall&quot; or &quot;y'all&quot; in informal speech to address a group of people.
         </p>
       </div>
     </div>

@@ -1166,6 +1166,8 @@ export const misspellingFolders = [
   "complaining-vs-complaning",
   "complaint-vs-complane",
   "complaint-vs-complant",
+  "complement-vs-compalement",
+  "complement-vs-complemment",
   "complement-vs-compliement",
   "completely-vs-completly",
   "completion-vs-compleation",

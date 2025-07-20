@@ -2,18 +2,18 @@ import { Card, CardContent } from "@/components/ui/card";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Complement vs Compliement - Correct Spelling and Usage Guide",
+  title: "Complement vs Complemment - Correct Spelling and Usage Guide",
   description:
-    "Learn the difference between 'complement' and 'compliement'. See which is correct, common misspellings, definitions, synonyms, usage notes, FAQs, and a summary to help you write with confidence.",
+    "Learn the difference between 'complement' and 'complemment'. See which is correct, common misspellings, definitions, synonyms, usage notes, FAQs, and a summary to help you write with confidence.",
 };
 
-export default function ComplementVsCompliementPage() {
+export default function ComplementVsComplemmentPage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl">
-      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Complement or Compliement</h1>
+      <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Complement or Complemment</h1>
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
         <p className="text-lg md:text-xl text-blue-900 leading-relaxed">
-          Unsure whether to use &quot;complement&quot; or &quot;compliement&quot;? This guide explains the correct spelling, meaning, and usage so you can write with confidence.
+          Unsure whether to use &quot;complement&quot; or &quot;complemment&quot;? This guide explains the correct spelling, meaning, and usage so you can write with confidence.
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -21,10 +21,10 @@ export default function ComplementVsCompliementPage() {
           <CardContent className="p-6">
             <div className="flex items-center mb-4">
               <span className="text-3xl mr-3">❌</span>
-              <h3 className="text-2xl font-bold text-red-900">Compliement</h3>
+              <h3 className="text-2xl font-bold text-red-900">Complemment</h3>
             </div>
             <p className="text-lg md:text-xl text-red-800 mb-4">
-              &quot;Compliement&quot; is a common misspelling and is not a recognized English word. Always use &quot;complement&quot; when referring to something that completes or goes well with something else.
+              &quot;Complemment&quot; is a common misspelling and is not a recognized English word. Always use &quot;complement&quot; when referring to something that completes or goes well with something else.
             </p>
           </CardContent>
         </Card>
@@ -75,7 +75,7 @@ export default function ComplementVsCompliementPage() {
         <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
         <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
           <li>&quot;Complement&quot; is the only correct spelling in standard English for something that completes or enhances.</li>
-          <li>&quot;Compliement&quot; is a misspelling and should be avoided in all contexts.</li>
+          <li>&quot;Complemment&quot; is a misspelling and should be avoided in all contexts.</li>
           <li>Remember: &quot;Complement&quot; with an &quot;e&quot; means something that completes; &quot;compliment&quot; with an &quot;i&quot; means praise.</li>
         </ul>
       </div>
@@ -83,8 +83,8 @@ export default function ComplementVsCompliementPage() {
         <h2 className="text-2xl font-bold mb-4 text-purple-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div className="bg-white rounded-lg shadow p-5 border border-gray-200">
-            <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900">Is &quot;compliement&quot; ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-800">No, &quot;compliement&quot; is not a word in English. The correct spelling is &quot;complement&quot; (for something that completes) or &quot;compliment&quot; (for praise).</p>
+            <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900">Is &quot;complemment&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-800">No, &quot;complemment&quot; is not a word in English. The correct spelling is &quot;complement&quot; (for something that completes) or &quot;compliment&quot; (for praise).</p>
           </div>
           <div className="bg-white rounded-lg shadow p-5 border border-gray-200">
             <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900">What does &quot;complement&quot; mean?</h3>
@@ -92,14 +92,14 @@ export default function ComplementVsCompliementPage() {
           </div>
           <div className="bg-white rounded-lg shadow p-5 border border-gray-200">
             <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900">How do you use &quot;complement&quot; in a sentence?</h3>
-            <p className="text-lg md:text-xl text-gray-800">Example: &quot;The wine was a perfect complement to the meal.&quot;</p>
+            <p className="text-lg md:text-xl text-gray-800">Example: &quot;The colors complement each other beautifully.&quot;</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500 mt-8">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <p className="text-lg md:text-xl text-green-900">
-          Always use &quot;complement&quot; when referring to something that completes or enhances. &quot;Compliement&quot; is a misspelling and should be avoided.
+          Always use &quot;complement&quot; when referring to something that completes or enhances. &quot;Complemment&quot; is a misspelling and should be avoided.
         </p>
       </div>
     </div>

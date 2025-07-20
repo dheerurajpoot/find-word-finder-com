@@ -46,7 +46,7 @@ export default function XylophoneVsXylephonePage() {
         </Card>
       </div>
       <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definition of &quot;Xylophone&quot;</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Definition of Xylophone</h2>
         <div className="bg-gray-50 p-6 rounded-lg">
           <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-4">
             <strong>&quot;Xylophone&quot;</strong> (noun): A musical instrument with wooden bars that are struck with mallets to produce sound.
@@ -57,7 +57,7 @@ export default function XylophoneVsXylephonePage() {
         </div>
       </div>
       <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms for &quot;Xylophone&quot;</h2>
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Synonyms for Xylophone</h2>
         <div className="bg-blue-50 p-6 rounded-lg">
           <div className="grid md:grid-cols-2 gap-4">
             <div>
