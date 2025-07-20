@@ -152,7 +152,7 @@ export default function WarrantyVsWarantyPage() {
           
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-3 text-gray-800">Is it common to misspell &quot;warranty&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">Yes, some people incorrectly spell it as &quot;waranty&quot;, possibly because they omit one "r". This is a common spelling mistake.</p>
+            <p className="text-lg md:text-xl text-gray-700">Yes, some people incorrectly spell it as &quot;waranty&quot;, possibly because they omit one &quot;r&quot;. This is a common spelling mistake.</p>
           </div>
         </div>
       </div>

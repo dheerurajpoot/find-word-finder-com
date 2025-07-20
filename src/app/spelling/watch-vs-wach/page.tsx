@@ -156,7 +156,7 @@ export default function WatchVsWachPage() {
           
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-3 text-gray-800">Is it common to misspell &quot;watch&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">Yes, some people incorrectly spell it as &quot;wach&quot;, possibly because they omit the "t". This is a common spelling mistake.</p>
+            <p className="text-lg md:text-xl text-gray-700">Yes, some people incorrectly spell it as &quot;wach&quot;, possibly because they omit the &quot;t&quot;. This is a common spelling mistake.</p>
           </div>
         </div>
       </div>
@@ -167,7 +167,7 @@ export default function WatchVsWachPage() {
           <strong>Watch</strong> is the correct spelling. It is both a noun (a timepiece) and a verb (to observe attentively).
         </p>
         <p className="text-lg md:text-xl text-green-800">
-          <strong>Wach</strong> is always incorrect. Remember to include the "t" before the "c" and "h" when writing this word.
+          <strong>Wach</strong> is always incorrect. Remember to include the &quot;t&quot; before the &quot;c&quot; and &quot;h&quot; when writing this word.
         </p>
       </div>
     </div>

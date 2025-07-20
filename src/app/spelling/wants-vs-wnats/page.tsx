@@ -141,7 +141,7 @@ export default function WantsVsWnatsPage() {
           
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-3 text-gray-800">How do you pronounce &quot;wants&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">It&apos;s pronounced as &quot;wahnts&quot; with a short "a" sound.</p>
+            <p className="text-lg md:text-xl text-gray-700">It&apos;s pronounced as &quot;wahnts&quot; with a short &quot;a&quot; sound.</p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">

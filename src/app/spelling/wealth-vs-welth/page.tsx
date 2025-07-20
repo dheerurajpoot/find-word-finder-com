@@ -137,7 +137,7 @@ export default function WealthVsWelthPage() {
           
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-3 text-gray-800">How do you pronounce &quot;wealth&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">It&apos;s pronounced as &quot;welth&quot; (with a short "e" and "th" sound at the end).</p>
+            <p className="text-lg md:text-xl text-gray-700">It&apos;s pronounced as &quot;welth&quot; (with a short &quot;e&quot; and &quot;th&quot; sound at the end).</p>
           </div>
           
           <div className="bg-white p-6 rounded-lg shadow-md">
@@ -152,7 +152,7 @@ export default function WealthVsWelthPage() {
           
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-3 text-gray-800">Is it common to misspell &quot;wealth&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">Yes, some people incorrectly spell it as &quot;welth&quot;, possibly because they omit the "a". This is a common spelling mistake.</p>
+            <p className="text-lg md:text-xl text-gray-700">Yes, some people incorrectly spell it as &quot;welth&quot;, possibly because they omit the &quot;a&quot;. This is a common spelling mistake.</p>
           </div>
         </div>
       </div>
@@ -163,7 +163,7 @@ export default function WealthVsWelthPage() {
           <strong>Wealth</strong> is the correct spelling. It is a noun meaning abundance of valuable possessions, money, or resources.
         </p>
         <p className="text-lg md:text-xl text-green-800">
-          <strong>Welth</strong> is always incorrect. Remember to include the "a" after the "e" when writing this word.
+          <strong>Welth</strong> is always incorrect. Remember to include the &quot;a&quot; after the &quot;e&quot; when writing this word.
         </p>
       </div>
     </div>
