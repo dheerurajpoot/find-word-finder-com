@@ -30,7 +30,7 @@ export default function VolcanoVsVolcanoePage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Volcano</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">&quot;Volcano&quot; is the correct spelling. It refers to a mountain or hill, typically conical, having a crater or vent through which lava, rock fragments, hot vapor, and gas are being or have been erupted from the earth's crust.</p>
+            <p className="text-lg md:text-xl text-green-700">&quot;Volcano&quot; is the correct spelling. It refers to a mountain or hill, typically conical, having a crater or vent through which lava, rock fragments, hot vapor, and gas are being or have been erupted from the earth&apos;s crust.</p>
           </CardContent>
         </Card>
       </div>
@@ -40,7 +40,7 @@ export default function VolcanoVsVolcanoePage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-green-900">Volcano (noun):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">A mountain or hill, typically conical, having a crater or vent through which lava, rock fragments, hot vapor, and gas are being or have been erupted from the earth's crust.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">A mountain or hill, typically conical, having a crater or vent through which lava, rock fragments, hot vapor, and gas are being or have been erupted from the earth&apos;s crust.</p>
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
