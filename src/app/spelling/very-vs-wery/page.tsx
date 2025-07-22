@@ -21,7 +21,7 @@ export default function VeryVsWeryPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Wery</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Wery&quot; is a misspelling. The correct spelling is &quot;very&quot; with a "v" at the beginning.</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Wery&quot; is a misspelling. The correct spelling is &quot;very&quot; with a &quot;v&quot; at the beginning.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -30,7 +30,7 @@ export default function VeryVsWeryPage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Very</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">&quot;Very&quot; is the correct spelling. It is an adverb meaning "to a high degree" or an adjective meaning "actual" or "precise".</p>
+            <p className="text-lg md:text-xl text-green-700">&quot;Very&quot; is the correct spelling. It is an adverb meaning &quot;to a high degree&quot; or an adjective meaning &quot;actual&quot; or &quot;precise&quot;.</p>
           </CardContent>
         </Card>
       </div>
@@ -98,7 +98,7 @@ export default function VeryVsWeryPage() {
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
             <li>• <strong>Very</strong> is spelled with a "v" at the beginning.</li>
             <li>• &quot;Wery&quot; is never correct in any context.</li>
-            <li>• The word comes from Latin "verus" meaning "true".</li>
+            <li>• The word comes from Latin &quot;verus&quot; meaning &quot;true&quot;.</li>
           </ul>
         </div>
       </div>
@@ -111,11 +111,11 @@ export default function VeryVsWeryPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;very&quot; starts with a "v" for "very important".</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;very&quot; starts with a &quot;v&quot; for &quot;very important&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does very mean?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: "Very" means to a high degree or actual/precise.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Very&quot; means to a high degree or actual/precise.</p>
           </div>
         </div>
       </div>

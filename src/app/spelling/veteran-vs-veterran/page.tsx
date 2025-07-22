@@ -21,7 +21,7 @@ export default function VeteranVsVeterranPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Veterran</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Veterran&quot; is a misspelling. The correct spelling is &quot;veteran&quot; with only one "r" after the "e".</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Veterran&quot; is a misspelling. The correct spelling is &quot;veteran&quot; with only one &quot;r&quot; after the &quot;e&quot;.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -96,9 +96,9 @@ export default function VeteranVsVeterranPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Veteran</strong> is spelled with only one "r" after the "e".</li>
+            <li>• <strong>Veteran</strong> is spelled with only one &quot;r&quot; after the &quot;e&quot;.</li>
             <li>• &quot;Veterran&quot; is never correct in any context.</li>
-            <li>• The word comes from Latin &quot;veteranus&quot; meaning "old, experienced".</li>
+            <li>• The word comes from Latin &quot;veteranus&quot; meaning &quot;old, experienced&quot;.</li>
           </ul>
         </div>
       </div>
@@ -111,7 +111,7 @@ export default function VeteranVsVeterranPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;veteran" has only one "r" after the "e".</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;veteran&quot; has only one &quot;r&quot; after the &quot;e&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does veteran mean?</h3>

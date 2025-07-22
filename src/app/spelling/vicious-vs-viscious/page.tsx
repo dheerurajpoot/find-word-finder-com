@@ -21,7 +21,7 @@ export default function ViciousVsVisciousPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Viscious</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Viscious&quot; is a misspelling. The correct spelling is &quot;vicious&quot; with only one "c" after the "i".</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Viscious&quot; is a misspelling. The correct spelling is &quot;vicious&quot; with only one &quot;c&quot; after the &quot;i&quot;.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -96,7 +96,7 @@ export default function ViciousVsVisciousPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Vicious</strong> is spelled with only one "c" after the "i".</li>
+            <li>• <strong>Vicious</strong> is spelled with only one &quot;c&quot; after the &quot;i&quot;.</li>
             <li>• &quot;Viscious&quot; is never correct in any context.</li>
             <li>• The word comes from Latin &quot;vitiosus&quot; meaning &quot;full of faults&quot;.</li>
           </ul>
@@ -111,11 +111,11 @@ export default function ViciousVsVisciousPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;vicious&quot; has only one "c" after the "i".</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;vicious&quot; has only one &quot;c&quot; after the &quot;i&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does vicious mean?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: "Vicious" means deliberately cruel, violent, or extremely severe.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Vicious&quot; means deliberately cruel, violent, or extremely severe.</p>
           </div>
         </div>
       </div>

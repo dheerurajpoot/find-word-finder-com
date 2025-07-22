@@ -21,7 +21,7 @@ export default function VeterinarianVsVetinarianPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Vetinarian</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Vetinarian&quot; is a misspelling. The correct spelling is &quot;veterinarian&quot; with an extra "er" after the "t".</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Vetinarian&quot; is a misspelling. The correct spelling is &quot;veterinarian&quot; with an extra &quot;er&quot; after the &quot;t&quot;.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -96,9 +96,9 @@ export default function VeterinarianVsVetinarianPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Veterinarian</strong> is spelled with "er" after the "t".</li>
+            <li>• <strong>Veterinarian</strong> is spelled with &quot;er&quot; after the &quot;t&quot;.</li>
             <li>• &quot;Vetinarian&quot; is never correct in any context.</li>
-            <li>• The word comes from Latin &quot;veterinarius&quot; meaning "of beasts of burden".</li>
+            <li>• The word comes from Latin &quot;veterinarius&quot; meaning &quot;of beasts of burden&quot;.</li>
           </ul>
         </div>
       </div>
@@ -111,7 +111,7 @@ export default function VeterinarianVsVetinarianPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;veterinarian" has "er" after the "t".</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;veterinarian&quot; has &quot;er&quot; after the &quot;t&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does veterinarian mean?</h3>

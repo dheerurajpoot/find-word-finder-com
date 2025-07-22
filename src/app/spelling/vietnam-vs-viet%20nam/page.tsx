@@ -21,7 +21,7 @@ export default function VietnamVsVietNamPage() {
               <span className="text-3xl mr-3">ℹ️</span>
               <h3 className="text-2xl font-bold text-yellow-800">Alternate: Viet Nam</h3>
             </div>
-            <p className="text-lg md:text-xl text-yellow-700">&quot;Viet Nam&quot; is an alternate, but less common, spelling. It is used in some official and historical contexts, but "Vietnam" is standard in modern English.</p>
+            <p className="text-lg md:text-xl text-yellow-700">&quot;Viet Nam&quot; is an alternate, but less common, spelling. It is used in some official and historical contexts, but &quot;Vietnam&quot; is standard in modern English.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -54,7 +54,7 @@ export default function VietnamVsVietNamPage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-yellow-900">Viet Nam (noun):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">An alternate spelling for "Vietnam" used in some official documents and historical references.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">An alternate spelling for &quot;Vietnam&quot; used in some official documents and historical references.</p>
               <div className="bg-yellow-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-yellow-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-yellow-800 space-y-2">
@@ -97,7 +97,7 @@ export default function VietnamVsVietNamPage() {
             <li>• <strong>Vietnam</strong> is the standard spelling in modern English.</li>
             <li>• <strong>Viet Nam</strong> is used in some official and historical contexts.</li>
             <li>• Both refer to the same country.</li>
-            <li>• The name comes from Vietnamese "Việt Nam" meaning "Southern Viet".</li>
+            <li>• The name comes from Vietnamese &quot;Việt Nam&quot; meaning &quot;Southern Viet&quot;.</li>
           </ul>
         </div>
       </div>
@@ -106,11 +106,11 @@ export default function VietnamVsVietNamPage() {
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;Viet Nam&quot; ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, but it is less common. "Vietnam" is standard in English.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, but it is less common. &quot;Vietnam&quot; is standard in English.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why are there two spellings?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: "Viet Nam" is closer to the Vietnamese language, but "Vietnam" is the standard English form.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Viet Nam&quot; is closer to the Vietnamese language, but &quot;Vietnam&quot; is the standard English form.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Which should I use in writing?</h3>

@@ -21,7 +21,7 @@ export default function VicinityVsVincinityPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Vincinity</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;Vincinity&quot; is a misspelling. The correct spelling is &quot;vicinity&quot; with only one "n" after the "i".</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Vincinity&quot; is a misspelling. The correct spelling is &quot;vicinity&quot; with only one &quot;n&quot; after the &quot;i&quot;.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -96,7 +96,7 @@ export default function VicinityVsVincinityPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Vicinity</strong> is spelled with only one "n" after the "i".</li>
+            <li>• <strong>Vicinity</strong> is spelled with only one &quot;n&quot; after the &quot;i&quot;.</li>
             <li>• &quot;Vincinity&quot; is never correct in any context.</li>
             <li>• The word comes from Latin &quot;vicinitas&quot; meaning &quot;neighborhood&quot;.</li>
           </ul>
@@ -111,11 +111,11 @@ export default function VicinityVsVincinityPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;vicinity&quot; has only one "n" after the "i".</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;vicinity&quot; has only one &quot;n&quot; after the &quot;i&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does vicinity mean?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: "Vicinity" means the area near or surrounding a particular place.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Vicinity&quot; means the area near or surrounding a particular place.</p>
           </div>
         </div>
       </div>

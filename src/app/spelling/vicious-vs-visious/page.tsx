@@ -115,7 +115,7 @@ export default function ViciousVsVisiousPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does vicious mean?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: "Vicious" means deliberately cruel, violent, or extremely severe.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Vicious&quot; means deliberately cruel, violent, or extremely severe.</p>
           </div>
         </div>
       </div>
