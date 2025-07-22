@@ -12,7 +12,7 @@ export default function ViewedVsViwedPage() {
       <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Viewed or Viwed</h1>
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between "viewed" and "viwed"? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;viewed&quot; and &quot;viwed&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <Card className="border-2 border-red-500 bg-red-50">
@@ -58,7 +58,7 @@ export default function ViewedVsViwedPage() {
               <div className="bg-red-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-red-800 space-y-2">
-                  <li>• "Viwed" is not used in standard English.</li>
+                  <li>• &quot;Viwed&quot; is not used in standard English.</li>
                   <li>• Always use <strong>viewed</strong> when referring to the past tense of &quot;view&quot;.</li>
                 </ul>
               </div>
@@ -107,7 +107,7 @@ export default function ViewedVsViwedPage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is "viwed" ever correct?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;viwed&quot; ever correct?</h3>
             <p className="text-lg md:text-xl text-gray-700">A: No, &quot;viwed&quot; is never correct. The proper spelling is always &quot;viewed&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
@@ -119,11 +119,11 @@ export default function ViewedVsViwedPage() {
             <p className="text-lg md:text-xl text-gray-700">A: &quot;Viewed&quot; means to have looked at or inspected something.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can I use "viewed" in formal writing?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can I use &quot;viewed&quot; in formal writing?</h3>
             <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;viewed&quot; is correct in all contexts.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people misspell "viewed"?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people misspell &quot;viewed&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;viwed&quot; often happens by switching the order of the &quot;e&quot; and &quot;w&quot;.</p>
           </div>
         </div>

@@ -12,7 +12,7 @@ export default function VillainyVsVillanyPage() {
       <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Villainy or Villany</h1>
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between "villainy" and "villany"? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;villainy&quot; and &quot;villany&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <Card className="border-2 border-red-500 bg-red-50">
@@ -107,7 +107,7 @@ export default function VillainyVsVillanyPage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is "villany" ever correct?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;villany&quot; ever correct?</h3>
             <p className="text-lg md:text-xl text-gray-700">A: No, &quot;villany&quot; is never correct. The proper spelling is always &quot;villainy&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">

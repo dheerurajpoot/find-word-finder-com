@@ -12,7 +12,7 @@ export default function VigilantVsVigilentPage() {
       <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Vigilant or Vigilent</h1>
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between "vigilant" and "vigilent"? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Confused between &quot;v  igilant&quot; and &quot;vigilent&quot;? Learn the correct spelling, meaning, and how to use it properly in your writing.</p>
       </div>
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <Card className="border-2 border-red-500 bg-red-50">
@@ -45,7 +45,7 @@ export default function VigilantVsVigilentPage() {
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
                   <li>• The guards remained <strong>vigilant</strong> throughout the night.</li>
-                  <li>• Parents should be <strong>vigilant</strong> about their children's safety.</li>
+                  <li>• Parents should be <strong>vigilant</strong> about their children&apos;s safety.</li>
                   <li>• She was <strong>vigilant</strong> in checking her work for errors.</li>
                 </ul>
               </div>
@@ -107,7 +107,7 @@ export default function VigilantVsVigilentPage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is "vigilent" ever correct?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;vigilent&quot; ever correct?</h3>
             <p className="text-lg md:text-xl text-gray-700">A: No, &quot;vigilent&quot; is never correct. The proper spelling is always &quot;vigilant&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">

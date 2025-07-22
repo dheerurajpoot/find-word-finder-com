@@ -45,7 +45,7 @@ export default function VindicateVsVindicatePage() {
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
                   <li>• The evidence will <strong>vindicate</strong> her.</li>
-                  <li>• He felt <strong>vindicated</strong> by the court's decision.</li>
+                  <li>• He felt <strong>vindicated</strong> by the court&apos;s decision.</li>
                   <li>• The results <strong>vindicate</strong> our theory.</li>
                 </ul>
               </div>

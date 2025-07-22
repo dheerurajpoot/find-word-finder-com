@@ -12,7 +12,7 @@ export default function ViewerVsViewerPage() {
       <h1 className="text-5xl font-extrabold text-center mb-6 text-gray-900">Viewer or Viewer</h1>
       <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Which Spelling is Correct?</h2>
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Both "viewer" and "viewer" are spelled the same and are correct. There is no common misspelling for this word, but this page provides information about its meaning and usage.</p>
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Both &quot;viewer&quot; and &quot;viewer&quot; are spelled the same and are correct. There is no common misspelling for this word, but this page provides information about its meaning and usage.</p>
       </div>
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <Card className="border-2 border-green-500 bg-green-50">
