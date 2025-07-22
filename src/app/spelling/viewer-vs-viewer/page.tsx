@@ -21,7 +21,7 @@ export default function ViewerVsViewerPage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Viewer</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">"Viewer" is the correct spelling. It means a person who looks at or watches something, such as a television program or an event.</p>
+            <p className="text-lg md:text-xl text-green-700">&quot;Viewer&quot; is the correct spelling. It means a person who looks at or watches something, such as a television program or an event.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -30,7 +30,7 @@ export default function ViewerVsViewerPage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Viewer</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">There is no common misspelling for "viewer". Both spellings are the same and correct.</p>
+            <p className="text-lg md:text-xl text-green-700">There is no common misspelling for &quot;viewer&quot;. Both spellings are the same and correct.</p>
           </CardContent>
         </Card>
       </div>
@@ -99,7 +99,7 @@ export default function ViewerVsViewerPage() {
             <li>• <strong>Viewer</strong> is always spelled the same way.</li>
             <li>• It is a noun referring to a person who watches or looks at something.</li>
             <li>• There is no common misspelling for this word.</li>
-            <li>• The word comes from the verb "view" plus the suffix "-er".</li>
+            <li>• The word comes from the verb &quot;view&quot; plus the suffix &quot;-er&quot;.</li>
           </ul>
         </div>
       </div>
@@ -107,19 +107,19 @@ export default function ViewerVsViewerPage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is there a misspelling for "viewer"?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: No, "viewer" is always spelled the same way.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is there a misspelling for &quot;viewer&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;viewer&quot; is always spelled the same way.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does "viewer" mean?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does &quot;viewer&quot; mean?</h3>
             <p className="text-lg md:text-xl text-gray-700">A: A person who looks at or watches something, especially television or an event.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can I use "viewer" in formal writing?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, "viewer" is correct in all contexts.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can I use &quot;viewer&quot; in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;viewer&quot; is correct in all contexts.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Are there synonyms for "viewer"?</h3>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Are there synonyms for &quot;viewer&quot;?</h3>
             <p className="text-lg md:text-xl text-gray-700">A: Yes, such as spectator, observer, watcher, audience member, and onlooker.</p>
           </div>
         </div>

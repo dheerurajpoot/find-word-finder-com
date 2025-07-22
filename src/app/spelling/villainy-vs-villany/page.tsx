@@ -21,7 +21,7 @@ export default function VillainyVsVillanyPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Villany</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">"Villany" is a misspelling. The correct spelling is "villainy" with an "i" after the double "l".</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Villany&quot; is a misspelling. The correct spelling is &quot;villainy&quot; with an &quot;i&quot; after the double &quot;l&quot;.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -30,7 +30,7 @@ export default function VillainyVsVillanyPage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Villainy</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">"Villainy" is the correct spelling. It means wicked or criminal behavior.</p>
+            <p className="text-lg md:text-xl text-green-700">&quot;Villainy&quot; is the correct spelling. It means wicked or criminal behavior.</p>
           </CardContent>
         </Card>
       </div>
@@ -54,11 +54,11 @@ export default function VillainyVsVillanyPage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-red-900">Villany (noun):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">"Villany" is a misspelling of "villainy" and is not a valid English word.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Villany&quot; is a misspelling of &quot;villainy&quot; and is not a valid English word.</p>
               <div className="bg-red-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-red-800 space-y-2">
-                  <li>• "Villany" is not used in standard English.</li>
+                  <li>• &quot;Villany&quot; is not used in standard English.</li>
                   <li>• Always use <strong>villainy</strong> when referring to wicked behavior.</li>
                 </ul>
               </div>
@@ -96,10 +96,10 @@ export default function VillainyVsVillanyPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Villainy</strong> is spelled with an "i" after the double "l".</li>
+            <li>• <strong>Villainy</strong> is spelled with an &quot;i&quot; after the double &quot;l&quot;.</li>
             <li>• It is a noun describing wicked or criminal behavior.</li>
-            <li>• "Villany" is never correct in any context.</li>
-            <li>• The word comes from "villain" plus the suffix "-y".</li>
+            <li>• &quot;Villany&quot; is never correct in any context.</li>
+            <li>• The word comes from &quot;villain&quot; plus the suffix &quot;-y&quot;.</li>
           </ul>
         </div>
       </div>
@@ -108,29 +108,29 @@ export default function VillainyVsVillanyPage() {
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is "villany" ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: No, "villany" is never correct. The proper spelling is always "villainy".</p>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;villany&quot; is never correct. The proper spelling is always &quot;villainy&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember "villainy" has an "i" after the double "l".</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;villainy&quot; has an &quot;i&quot; after the double &quot;l&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does villainy mean?</h3>
             <p className="text-lg md:text-xl text-gray-700">A: Villainy means wicked or criminal behavior.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can I use "villainy" in formal writing?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, "villainy" is correct in all contexts.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can I use &quot;villainy&quot; in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;villainy&quot; is correct in all contexts.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people misspell "villainy"?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling "villany" often happens by omitting the "i" after the double "l".</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people misspell &quot;villainy&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;villany&quot; often happens by omitting the &quot;i&quot; after the double &quot;l&quot;.</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Villainy</strong> is the correct spelling, meaning wicked or criminal behavior. The misspelling "villany" is never correct. Always use "villainy" when referring to wickedness.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Villainy</strong> is the correct spelling, meaning wicked or criminal behavior. The misspelling &quot;villany&quot; is never correct. Always use &quot;villainy&quot; when referring to wickedness.</p>
       </div>
     </div>
   )

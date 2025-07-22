@@ -21,7 +21,7 @@ export default function VillainousVsVillanousPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Villanous</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">"Villanous" is a misspelling. The correct spelling is "villainous" with an "i" after the double "l".</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Villanous&quot; is a misspelling. The correct spelling is &quot;villainous&quot; with an &quot;i&quot; after the double &quot;l&quot;.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -30,7 +30,7 @@ export default function VillainousVsVillanousPage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Villainous</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">"Villainous" is the correct spelling. It means relating to, constituting, or guilty of wicked or criminal behavior.</p>
+            <p className="text-lg md:text-xl text-green-700">&quot;Villainous&quot; is the correct spelling. It means relating to, constituting, or guilty of wicked or criminal behavior.</p>
           </CardContent>
         </Card>
       </div>
@@ -54,11 +54,11 @@ export default function VillainousVsVillanousPage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-red-900">Villanous (adjective):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">"Villanous" is a misspelling of "villainous" and is not a valid English word.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Villanous&quot; is a misspelling of &quot;villainous&quot; and is not a valid English word.</p>
               <div className="bg-red-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-red-800 space-y-2">
-                  <li>• "Villanous" is not used in standard English.</li>
+                  <li>• &quot;Villanous&quot; is not used in standard English.</li>
                   <li>• Always use <strong>villainous</strong> when describing wicked behavior.</li>
                 </ul>
               </div>
@@ -96,10 +96,10 @@ export default function VillainousVsVillanousPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Villainous</strong> is spelled with an "i" after the double "l".</li>
+            <li>• <strong>Villainous</strong> is spelled with an &quot;i&quot; after the double &quot;l&quot;.</li>
             <li>• It is an adjective describing wicked or criminal behavior.</li>
-            <li>• "Villanous" is never correct in any context.</li>
-            <li>• The word comes from "villain" plus the suffix "-ous".</li>
+            <li>• &quot;Villanous&quot; is never correct in any context.</li>
+            <li>• The word comes from &quot;villain&quot; plus the suffix &quot;-ous&quot;.</li>
           </ul>
         </div>
       </div>
@@ -108,29 +108,29 @@ export default function VillainousVsVillanousPage() {
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is "villanous" ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: No, "villanous" is never correct. The proper spelling is always "villainous".</p>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;villanous&quot; is never correct. The proper spelling is always &quot;villainous&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember "villainous" has an "i" after the double "l".</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;villainous&quot; has an &quot;i&quot; after the double &quot;l&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does villainous mean?</h3>
             <p className="text-lg md:text-xl text-gray-700">A: Villainous means relating to, constituting, or guilty of wicked or criminal behavior.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can I use "villainous" in formal writing?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, "villainous" is correct in all contexts.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can I use &quot;villainous&quot; in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;villainous&quot; is correct in all contexts.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people misspell "villainous"?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling "villanous" often happens by omitting the "i" after the double "l".</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people misspell &quot;villainous&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;villanous&quot; often happens by omitting the &quot;i&quot; after the double &quot;l&quot;.</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Villainous</strong> is the correct spelling, meaning wicked or criminal. The misspelling "villanous" is never correct. Always use "villainous" when describing wicked behavior.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Villainous</strong> is the correct spelling, meaning wicked or criminal. The misspelling &quot;villanous&quot; is never correct. Always use &quot;villainous&quot; when describing wicked behavior.</p>
       </div>
     </div>
   )

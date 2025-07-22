@@ -21,7 +21,7 @@ export default function VillainsVsVillansPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Villans</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">"Villans" is a misspelling. The correct spelling is "villains" with an "i" after the double "l".</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Villans&quot; is a misspelling. The correct spelling is &quot;villains&quot; with an &quot;i&quot; after the double &quot;l&quot;.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -30,7 +30,7 @@ export default function VillainsVsVillansPage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Villains</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">"Villains" is the correct spelling. It is the plural of "villain," meaning wicked or evil people in stories or real life.</p>
+            <p className="text-lg md:text-xl text-green-700">&quot;Villains&quot; is the correct spelling. It is the plural of &quot;villain,&quot; meaning wicked or evil people in stories or real life.</p>
           </CardContent>
         </Card>
       </div>
@@ -54,11 +54,11 @@ export default function VillainsVsVillansPage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-red-900">Villans (noun, plural):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">"Villans" is a misspelling of "villains" and is not a valid English word.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Villans&quot; is a misspelling of &quot;villains&quot; and is not a valid English word.</p>
               <div className="bg-red-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-red-800 space-y-2">
-                  <li>• "Villans" is not used in standard English.</li>
+                  <li>• &quot;Villans&quot; is not used in standard English.</li>
                   <li>• Always use <strong>villains</strong> when referring to evil characters.</li>
                 </ul>
               </div>
@@ -96,10 +96,10 @@ export default function VillainsVsVillansPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Villains</strong> is spelled with an "i" after the double "l".</li>
-            <li>• It is the plural of "villain".</li>
-            <li>• "Villans" is never correct in any context.</li>
-            <li>• The word comes from "villain" plus the plural suffix "-s".</li>
+            <li>• <strong>Villains</strong> is spelled with an &quot;i&quot; after the double &quot;l&quot;.</li>
+            <li>• It is the plural of &quot;villain&quot;.</li>
+            <li>• &quot;Villans&quot; is never correct in any context.</li>
+            <li>• The word comes from &quot;villain&quot; plus the plural suffix &quot;-s&quot;.</li>
           </ul>
         </div>
       </div>
@@ -107,30 +107,30 @@ export default function VillainsVsVillansPage() {
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is "villans" ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: No, "villans" is never correct. The proper spelling is always "villains".</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;villans&quot; ever correct?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;villans&quot; is never correct. The proper spelling is always &quot;villains&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember "villains" has an "i" after the double "l".</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;villains&quot; has an &quot;i&quot; after the double &quot;l&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does villains mean?</h3>
             <p className="text-lg md:text-xl text-gray-700">A: Villains means wicked or evil people, especially in stories or movies.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can I use "villains" in formal writing?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, "villains" is correct in all contexts.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can I use &quot;villains&quot; in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;villains&quot; is correct in all contexts.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people misspell "villains"?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling "villans" often happens by omitting the "i" after the double "l".</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people misspell &quot;villains&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;villans&quot; often happens by omitting the &quot;i&quot; after the double &quot;l&quot;.</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Villains</strong> is the correct spelling, meaning wicked or evil people. The misspelling "villans" is never correct. Always use "villains" when referring to evil characters.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Villains</strong> is the correct spelling, meaning wicked or evil people. The misspelling &quot;villans&quot; is never correct. Always use &quot;villains&quot; when referring to evil characters.</p>
       </div>
     </div>
   )

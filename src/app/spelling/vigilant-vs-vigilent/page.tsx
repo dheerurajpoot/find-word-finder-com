@@ -21,7 +21,7 @@ export default function VigilantVsVigilentPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Vigilent</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">"Vigilent" is a misspelling. The correct spelling is "vigilant" with an "a".</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;Vigilent&quot; is a misspelling. The correct spelling is &quot;vigilant&quot; with an &quot;a&quot;.</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -30,7 +30,7 @@ export default function VigilantVsVigilentPage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Vigilant</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">"Vigilant" is the correct spelling. It means keeping careful watch for possible danger or difficulties.</p>
+            <p className="text-lg md:text-xl text-green-700">&quot;Vigilant&quot; is the correct spelling. It means keeping careful watch for possible danger or difficulties.</p>
           </CardContent>
         </Card>
       </div>
@@ -54,11 +54,11 @@ export default function VigilantVsVigilentPage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-red-900">Vigilent (adjective):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">"Vigilent" is a misspelling of "vigilant" and is not a valid English word.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">&quot;Vigilent&quot; is a misspelling of &quot;vigilant&quot; and is not a valid English word.</p>
               <div className="bg-red-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-red-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-red-800 space-y-2">
-                  <li>• "Vigilent" is not used in standard English.</li>
+                  <li>• &quot;Vigilent&quot; is not used in standard English.</li>
                   <li>• Always use <strong>vigilant</strong> when describing someone who is alert.</li>
                 </ul>
               </div>
@@ -96,10 +96,10 @@ export default function VigilantVsVigilentPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Vigilant</strong> is spelled with an "a" before the "n".</li>
+            <li>• <strong>Vigilant</strong> is spelled with an &quot;a&quot; before the &quot;n&quot;.</li>
             <li>• It is an adjective describing alertness and carefulness.</li>
-            <li>• "Vigilent" is never correct in any context.</li>
-            <li>• The word comes from Latin "vigilans" meaning "keeping awake".</li>
+            <li>• &quot;Vigilent&quot; is never correct in any context.</li>
+            <li>• The word comes from Latin &quot;vigilans&quot; meaning &quot;keeping awake&quot;.</li>
           </ul>
         </div>
       </div>
@@ -108,29 +108,29 @@ export default function VigilantVsVigilentPage() {
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is "vigilent" ever correct?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: No, "vigilent" is never correct. The proper spelling is always "vigilant".</p>
+            <p className="text-lg md:text-xl text-gray-700">A: No, &quot;vigilent&quot; is never correct. The proper spelling is always &quot;vigilant&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember "vigilant" has an "a" before the "n".</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;vigilant&quot; has an &quot;a&quot; before the &quot;n&quot;.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What does vigilant mean?</h3>
             <p className="text-lg md:text-xl text-gray-700">A: Vigilant means keeping careful watch for possible danger or difficulties.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can I use "vigilant" in formal writing?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, "vigilant" is correct in all contexts.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can I use &quot;vigilant&quot; in formal writing?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;vigilant&quot; is correct in all contexts.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people misspell "vigilant"?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling "vigilent" often happens by replacing the "a" with an "e".</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people misspell &quot;vigilant&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;vigilent&quot; often happens by replacing the &quot;a&quot; with an &quot;e&quot;.</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Vigilant</strong> is the correct spelling, meaning alert and watchful. The misspelling "vigilent" is never correct. Always use "vigilant" when describing someone who is alert.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Vigilant</strong> is the correct spelling, meaning alert and watchful. The misspelling &quot;vigilent&quot; is never correct. Always use &quot;vigilant&quot; when describing someone who is alert.</p>
       </div>
     </div>
   )
