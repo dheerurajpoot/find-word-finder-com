@@ -17,7 +17,7 @@ export default function VirtualVsVirturalPage() {
       <div className="grid md:grid-cols-2 gap-6 mb-8">
         <Card className="border-2 border-red-500 bg-red-50">
           <CardContent className="p-6">
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-4">eeeeeeeee
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: Virtural</h3>
             </div>
