@@ -96,7 +96,7 @@ export default function VeryVsWeryPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Very</strong> is spelled with a "v" at the beginning.</li>
+            <li>• <strong>Very</strong> is spelled with a &quot;v&quot; at the beginning.</li>
             <li>• &quot;Wery&quot; is never correct in any context.</li>
             <li>• The word comes from Latin &quot;verus&quot; meaning &quot;true&quot;.</li>
           </ul>

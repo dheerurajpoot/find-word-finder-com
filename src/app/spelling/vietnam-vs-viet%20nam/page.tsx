@@ -114,7 +114,7 @@ export default function VietnamVsVietNamPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Which should I use in writing?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Use "Vietnam" for most English writing unless an official document specifies otherwise.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Use &quot;Vietnam&quot; for most English writing unless an official document specifies otherwise.</p>
           </div>
         </div>
       </div>
