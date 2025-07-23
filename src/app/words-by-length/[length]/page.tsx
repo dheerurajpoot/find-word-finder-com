@@ -223,16 +223,184 @@ export default function WordsByLengthPage({
 									`${wordLength} Letter Words`}
 							</h1>
 							<p className='text-gray-700 leading-relaxed mb-4'>
-								{startsWith &&
-									`Find all ${wordLength}-letter words that start with "${startsWith.toUpperCase()}" for Scrabble, Words with Friends, and more.`}
-								{endsWith &&
-									`Find all ${wordLength}-letter words that end with "${endsWith.toUpperCase()}" for Scrabble, Words with Friends, and more.`}
-								{contains &&
-									`Find all ${wordLength}-letter words that contain "${contains.toUpperCase()}" for Scrabble, Words with Friends, and more.`}
-								{!startsWith &&
-									!endsWith &&
-									!contains &&
-									`Find all ${wordLength}-letter words for Scrabble, Words with Friends, and more. Results are always up-to-date!`}
+								{startsWith && (
+									<>
+										<strong>
+											Words that start with{" "}
+											{startsWith.toUpperCase()}
+										</strong>{" "}
+										are commonly used for word games like
+										Scrabble and Words with Friends. This
+										list will help you to find the top
+										scoring words to beat the opponent. You
+										can also find a list of all{" "}
+										<Link
+											href={`/words-by-length/${wordLength}/ending-in/${startsWith}`}
+											className='text-blue-600 hover:underline'>
+											words that end with{" "}
+											{startsWith.toUpperCase()}
+										</Link>{" "}
+										and{" "}
+										<Link
+											href={`/words-by-length/${wordLength}/with/${startsWith}`}
+											className='text-blue-600 hover:underline'>
+											words with{" "}
+											{startsWith.toUpperCase()}
+										</Link>
+										. Try our{" "}
+										<Link
+											href={`/words-by-length/5/starting-with/${startsWith}`}
+											className='text-blue-600 hover:underline'>
+											five letter words starting with{" "}
+											{startsWith.toUpperCase()} page
+										</Link>{" "}
+										if you're playing Wordle-like games or
+										use the{" "}
+										<a
+											href='https://www.nytimes.com/games/wordle/index.html'
+											target='_blank'
+											rel='noopener noreferrer'
+											className='text-blue-600 hover:underline'>
+											New York Times Wordle Solver
+										</a>{" "}
+										to quickly find the NYT Wordle daily
+										answer.
+									</>
+								)}
+								{endsWith && (
+									<>
+										<strong>
+											Words that end with{" "}
+											{endsWith.toUpperCase()}
+										</strong>{" "}
+										are commonly used for word games like
+										Scrabble and Words with Friends. This
+										list will help you to find the top
+										scoring words to beat the opponent. You
+										can also find a list of all{" "}
+										<Link
+											href={`/words-by-length/${wordLength}/starting-with/${endsWith}`}
+											className='text-blue-600 hover:underline'>
+											words that start with{" "}
+											{endsWith.toUpperCase()}
+										</Link>{" "}
+										and{" "}
+										<Link
+											href={`/words-by-length/${wordLength}/with/${endsWith}`}
+											className='text-blue-600 hover:underline'>
+											words with {endsWith.toUpperCase()}
+										</Link>
+										. Try our{" "}
+										<Link
+											href={`/words-by-length/5/ending-in/${endsWith}`}
+											className='text-blue-600 hover:underline'>
+											five letter words ending in{" "}
+											{endsWith.toUpperCase()} page
+										</Link>{" "}
+										if you're playing Wordle-like games or
+										use the{" "}
+										<a
+											href='https://www.nytimes.com/games/wordle/index.html'
+											target='_blank'
+											rel='noopener noreferrer'
+											className='text-blue-600 hover:underline'>
+											New York Times Wordle Solver
+										</a>{" "}
+										to quickly find the NYT Wordle daily
+										answer.
+									</>
+								)}
+								{contains && (
+									<>
+										<strong>
+											Words that contain{" "}
+											{contains.toUpperCase()}
+										</strong>{" "}
+										are commonly used for word games like
+										Scrabble and Words with Friends. This
+										list will help you to find the top
+										scoring words to beat the opponent. You
+										can also find a list of all{" "}
+										<Link
+											href={`/words-by-length/${wordLength}/starting-with/${contains}`}
+											className='text-blue-600 hover:underline'>
+											words that start with{" "}
+											{contains.toUpperCase()}
+										</Link>{" "}
+										and{" "}
+										<Link
+											href={`/words-by-length/${wordLength}/ending-in/${contains}`}
+											className='text-blue-600 hover:underline'>
+											words that end with{" "}
+											{contains.toUpperCase()}
+										</Link>
+										. Try our{" "}
+										<Link
+											href={`/words-by-length/5/with/${contains}`}
+											className='text-blue-600 hover:underline'>
+											five letter words with{" "}
+											{contains.toUpperCase()} page
+										</Link>{" "}
+										if you're playing Wordle-like games or
+										use the{" "}
+										<a
+											href='https://www.nytimes.com/games/wordle/index.html'
+											target='_blank'
+											rel='noopener noreferrer'
+											className='text-blue-600 hover:underline'>
+											New York Times Wordle Solver
+										</a>{" "}
+										to quickly find the NYT Wordle daily
+										answer.
+									</>
+								)}
+								{!startsWith && !endsWith && !contains && (
+									<>
+										<strong>
+											{wordLength} Letter Words
+										</strong>{" "}
+										are commonly used for word games like
+										Scrabble and Words with Friends. This
+										list will help you to find the top
+										scoring words to beat the opponent. You
+										can also find a list of all{" "}
+										<Link
+											href={`/words-by-length/${wordLength}/starting-with/a`}
+											className='text-blue-600 hover:underline'>
+											words that start with A
+										</Link>
+										,{" "}
+										<Link
+											href={`/words-by-length/${wordLength}/ending-in/e`}
+											className='text-blue-600 hover:underline'>
+											words that end with E
+										</Link>
+										, and{" "}
+										<Link
+											href={`/words-by-length/${wordLength}/with/s`}
+											className='text-blue-600 hover:underline'>
+											words with S
+										</Link>
+										. Try our{" "}
+										<Link
+											href={`/words-by-length/5/starting-with/a`}
+											className='text-blue-600 hover:underline'>
+											five letter words starting with A
+											page
+										</Link>{" "}
+										if you're playing Wordle-like games or
+										use the{" "}
+										<a
+											href='https://www.nytimes.com/games/wordle/index.html'
+											target='_blank'
+											rel='noopener noreferrer'
+											className='text-blue-600 hover:underline'>
+											New York Times Wordle Solver
+										</a>{" "}
+										to quickly find the NYT Wordle daily
+										answer.
+									</>
+								)}
 							</p>
 						</div>
 						{/* Words Grid */}
