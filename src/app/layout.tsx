@@ -70,17 +70,17 @@ export default function RootLayout({
 				{/* Google AdSense */}
 				<Script
 					async
-					src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2320541206058096'
-					crossOrigin='anonymous'
-					strategy='afterInteractive'
+					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2320541206058096"
+					crossOrigin="anonymous"
+					strategy="afterInteractive"
 				/>
 
 				{/* Google Analytics */}
 				<Script
-					src='https://www.googletagmanager.com/gtag/js?id=G-WD0SR0VT9B'
-					strategy='afterInteractive'
+					src="https://www.googletagmanager.com/gtag/js?id=G-WD0SR0VT9B"
+					strategy="afterInteractive"
 				/>
-				<Script id='google-analytics' strategy='afterInteractive'>
+				<Script id="google-analytics" strategy="afterInteractive">
 					{`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
