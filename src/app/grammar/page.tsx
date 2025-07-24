@@ -43,15 +43,25 @@ export default function GrammarPage() {
                 <CardContent>
                   <p className="text-gray-600 mb-4">{topic.description}</p>
                   <div className="space-y-2">
-                    {topic.topics.map((subtopic, subIndex) => (
-                      <Link
-                        key={subIndex}
-                        href={`/grammar/${subtopic.toLowerCase().replace(/\s+/g, "-")}`}
-                        className="block text-blue-600 hover:text-blue-800 hover:underline"
-                      >
-                        • {subtopic}
-                      </Link>
-                    ))}
+                    {topic.topics.map((subtopic, subIndex) => {
+                      // Map of grammar topics to their spelling URLs
+                      const spellingLinks: Record<string, string> = {
+                        "Your vs You're": "/spelling/your-vs-youre",
+                        "There vs Their": "/spelling/there-vs-their",
+                        "Its vs It's": "/spelling/its-vs-its",
+                        "Affect vs Effect": "/spelling/affect-vs-effect",
+                      };
+                      const href = spellingLinks[subtopic] || `/grammar/${subtopic.toLowerCase().replace(/\s+/g, "-")}`;
+                      return (
+                        <Link
+                          key={subIndex}
+                          href={href}
+                          className="block text-blue-600 hover:text-blue-800 hover:underline"
+                        >
+                          • {subtopic}
+                        </Link>
+                      );
+                    })}
                   </div>
                 </CardContent>
               </Card>

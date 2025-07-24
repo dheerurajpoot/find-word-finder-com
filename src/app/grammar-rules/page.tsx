@@ -327,7 +327,7 @@ export default function GrammarRulesPage() {
 										Verb Tenses
 									</Link>
 									<Link
-										href='/misspellings'
+										href='/spelling'
 										className='block text-gray-700 hover:text-purple-600 hover:bg-purple-50 transition-all duration-200 text-sm py-2 px-3 rounded-lg border-l-4 border-gray-200 hover:border-purple-400'>
 										Common Misspellings
 									</Link>
