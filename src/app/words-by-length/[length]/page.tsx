@@ -4,13 +4,6 @@ import { useState, useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import {
-	Select,
-	SelectContent,
-	SelectItem,
-	SelectTrigger,
-	SelectValue,
-} from "@/components/ui/select";
 import { Trophy, BookOpen, Target } from "lucide-react";
 import Link from "next/link";
 import { WordDetailsDialog } from "@/components/word-details-dialog";
@@ -254,7 +247,7 @@ export default function WordsByLengthPage({
 											five letter words starting with{" "}
 											{startsWith.toUpperCase()} page
 										</Link>{" "}
-										if you're playing Wordle-like games or
+										if you&apos;re playing Wordle-like games or
 										use the{" "}
 										<a
 											href='https://www.nytimes.com/games/wordle/index.html'
@@ -297,7 +290,7 @@ export default function WordsByLengthPage({
 											five letter words ending in{" "}
 											{endsWith.toUpperCase()} page
 										</Link>{" "}
-										if you're playing Wordle-like games or
+										if you&apos;re playing Wordle-like games or
 										use the{" "}
 										<a
 											href='https://www.nytimes.com/games/wordle/index.html'
@@ -341,7 +334,7 @@ export default function WordsByLengthPage({
 											five letter words with{" "}
 											{contains.toUpperCase()} page
 										</Link>{" "}
-										if you're playing Wordle-like games or
+										if you&apos;re playing Wordle-like games or
 										use the{" "}
 										<a
 											href='https://www.nytimes.com/games/wordle/index.html'
@@ -388,7 +381,7 @@ export default function WordsByLengthPage({
 											five letter words starting with A
 											page
 										</Link>{" "}
-										if you're playing Wordle-like games or
+										if you&apos;re playing Wordle-like games or
 										use the{" "}
 										<a
 											href='https://www.nytimes.com/games/wordle/index.html'
