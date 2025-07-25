@@ -75,6 +75,7 @@ function SearchContent() {
 	const [showMore, setShowMore] = useState(false);
 	const [include, setInclude] = useState("");
 	const [exclude, setExclude] = useState("");
+	const [warning, setWarning] = useState("");
 
 	const initialized = React.useRef(false);
 
@@ -460,7 +461,11 @@ function SearchContent() {
 										placeholder=''
 										value={starts}
 										onChange={(e) =>
-											setStarts(e.target.value.toUpperCase().replace(/[^A-Z]/g, ""))
+											setStarts(
+												e.target.value
+													.toUpperCase()
+													.replace(/[^A-Z]/g, "")
+											)
 										}
 										className='peer text-sm'
 									/>
@@ -501,7 +506,11 @@ function SearchContent() {
 										placeholder=''
 										value={ends}
 										onChange={(e) =>
-											setEnds(e.target.value.toUpperCase().replace(/[^A-Z]/g, ""))
+											setEnds(
+												e.target.value
+													.toUpperCase()
+													.replace(/[^A-Z]/g, "")
+											)
 										}
 										className='peer text-sm'
 									/>
@@ -542,7 +551,11 @@ function SearchContent() {
 										placeholder=''
 										value={contains}
 										onChange={(e) =>
-											setContains(e.target.value.toUpperCase().replace(/[^A-Z]/g, ""))
+											setContains(
+												e.target.value
+													.toUpperCase()
+													.replace(/[^A-Z]/g, "")
+											)
 										}
 										className='peer text-sm'
 									/>
@@ -625,9 +638,14 @@ function SearchContent() {
 										type='text'
 										placeholder=''
 										value={include}
-										onChange={(e) =>
-											setInclude(e.target.value.toUpperCase().replace(/[^A-Z]/g, ""))
-										}
+										onChange={(e) => {
+											setInclude(
+												e.target.value
+													.toUpperCase()
+													.replace(/[^A-Z]/g, "")
+											);
+											setWarning("");
+										}}
 										className='peer text-sm'
 									/>
 									<Label
@@ -653,7 +671,10 @@ function SearchContent() {
 											variant='ghost'
 											size='sm'
 											className='absolute right-1 top-1 h-6 w-6 p-0'
-											onClick={() => setInclude("")}>
+											onClick={() => {
+												setInclude("");
+												setWarning("");
+											}}>
 											<X className='h-3 w-3' />
 										</Button>
 									)}
@@ -664,9 +685,14 @@ function SearchContent() {
 										type='text'
 										placeholder=''
 										value={exclude}
-										onChange={(e) =>
-											setExclude(e.target.value.toUpperCase().replace(/[^A-Z]/g, ""))
-										}
+										onChange={(e) => {
+											setExclude(
+												e.target.value
+													.toUpperCase()
+													.replace(/[^A-Z]/g, "")
+											);
+											setWarning("");
+										}}
 										className='peer text-sm'
 									/>
 									<Label
@@ -692,12 +718,20 @@ function SearchContent() {
 											variant='ghost'
 											size='sm'
 											className='absolute right-1 top-1 h-6 w-6 p-0'
-											onClick={() => setExclude("")}>
+											onClick={() => {
+												setExclude("");
+												setWarning("");
+											}}>
 											<X className='h-3 w-3' />
 										</Button>
 									)}
 								</div>
 							</div>
+							{warning && (
+								<div className='text-red-600 text-sm mb-2'>
+									{warning}
+								</div>
+							)}
 							<Button
 								onClick={() => handleSearch()}
 								className='w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold mt-2'
@@ -771,7 +805,7 @@ function SearchContent() {
 												: ""
 										}>
 										<CardContent className='p-6'>
-											<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-3'>
+											<div className='flex flex-wrap gap-3'>
 												{(showMore
 													? wordsInGroup
 													: wordsInGroup.slice(0, 20)
@@ -826,10 +860,25 @@ function SearchContent() {
 								</CardHeader>
 								<CardContent className='mx-auto max-w-4xl space-y-4 text-center text-lg text-gray-600'>
 									<p>
-										Unlock your full potential in word games with our versatile Find Word Finder. Whether you&apos;re playing Scrabble, Words with Friends, solving a crossword, or tackling any other word puzzle, our tool is designed to give you the winning edge.
+										Unlock your full potential in word games
+										with our versatile Find Word Finder.
+										Whether you&apos;re playing Scrabble,
+										Words with Friends, solving a crossword,
+										or tackling any other word puzzle, our
+										tool is designed to give you the winning
+										edge.
 									</p>
 									<p>
-										Simply enter the letters you have, and let our advanced search engine present you with a comprehensive list of possible words. Use the powerful filtering options to refine your results by starting or ending letters, letters contained within, and desired word length. Our goal is to make you a more confident and successful word game player.
+										Simply enter the letters you have, and
+										let our advanced search engine present
+										you with a comprehensive list of
+										possible words. Use the powerful
+										filtering options to refine your results
+										by starting or ending letters, letters
+										contained within, and desired word
+										length. Our goal is to make you a more
+										confident and successful word game
+										player.
 									</p>
 								</CardContent>
 							</Card>
@@ -930,7 +979,9 @@ function SearchContent() {
 											value={starts}
 											onChange={(e) => {
 												setStarts(
-													e.target.value.toUpperCase().replace(/[^A-Z]/g, "")
+													e.target.value
+														.toUpperCase()
+														.replace(/[^A-Z]/g, "")
 												);
 											}}
 											className='peer text-sm'
@@ -976,7 +1027,9 @@ function SearchContent() {
 											value={ends}
 											onChange={(e) => {
 												setEnds(
-													e.target.value.toUpperCase().replace(/[^A-Z]/g, "")
+													e.target.value
+														.toUpperCase()
+														.replace(/[^A-Z]/g, "")
 												);
 											}}
 											className='peer text-sm'
@@ -1024,7 +1077,9 @@ function SearchContent() {
 											value={contains}
 											onChange={(e) => {
 												setContains(
-													e.target.value.toUpperCase().replace(/[^A-Z]/g, "")
+													e.target.value
+														.toUpperCase()
+														.replace(/[^A-Z]/g, "")
 												);
 											}}
 											className='peer text-sm'
@@ -1115,9 +1170,19 @@ function SearchContent() {
 											placeholder=''
 											value={include}
 											onChange={(e) => {
-												setInclude(
-													e.target.value.toUpperCase().replace(/[^A-Z]/g, "")
-												);
+												const value = e.target.value
+													.toUpperCase()
+													.replace(/[^A-Z]/g, "");
+												for (const l of value) {
+													if (exclude.includes(l)) {
+														setWarning(
+															`You cannot include and exclude the same letter: ${l}`
+														);
+														return;
+													}
+												}
+												setWarning("");
+												setInclude(value);
 											}}
 											className='peer text-sm'
 										/>
@@ -1149,6 +1214,7 @@ function SearchContent() {
 												className='absolute right-1 top-1 h-6 w-6 p-0'
 												onClick={() => {
 													setInclude("");
+													setWarning("");
 												}}>
 												<X className='h-3 w-3' />
 											</Button>
@@ -1161,9 +1227,19 @@ function SearchContent() {
 											placeholder=''
 											value={exclude}
 											onChange={(e) => {
-												setExclude(
-													e.target.value.toUpperCase().replace(/[^A-Z]/g, "")
-												);
+												const value = e.target.value
+													.toUpperCase()
+													.replace(/[^A-Z]/g, "");
+												for (const l of value) {
+													if (include.includes(l)) {
+														setWarning(
+															`You cannot include and exclude the same letter: ${l}`
+														);
+														return;
+													}
+												}
+												setWarning("");
+												setExclude(value);
 											}}
 											className='peer text-sm'
 										/>
@@ -1195,12 +1271,18 @@ function SearchContent() {
 												className='absolute right-1 top-1 h-6 w-6 p-0'
 												onClick={() => {
 													setExclude("");
+													setWarning("");
 												}}>
 												<X className='h-3 w-3' />
 											</Button>
 										)}
 									</div>
 								</div>
+								{warning && (
+									<div className='text-red-600 text-sm mb-2'>
+										{warning}
+									</div>
+								)}
 								<Button
 									onClick={() => handleSearch()}
 									className='w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold mt-2'
