@@ -1,11 +1,12 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { Grid3X3, Search, RotateCcw, CheckCircle, XCircle, AlertCircle } from "lucide-react"
+import React from "react"
 
 interface WordleSuggestion {
   word: string
@@ -14,11 +15,15 @@ interface WordleSuggestion {
 }
 
 export default function WordleHelperPage() {
-  const [knownLetters, setKnownLetters] = useState(["", "", "", "", ""])
+  const [wordLength, setWordLength] = useState(5);
+  const [correct, setCorrect] = useState(Array(wordLength).fill(""));
+  const [misplaced, setMisplaced] = useState(Array(wordLength).fill(""));
   const [wrongLetters, setWrongLetters] = useState("")
   const [wrongPositions, setWrongPositions] = useState(["", "", "", "", ""])
   const [suggestions, setSuggestions] = useState<WordleSuggestion[]>([])
   const [attempt, setAttempt] = useState(1)
+
+  }, [wordLength]);
 
   // Common 5-letter words for Wordle
   const wordleWords = [
@@ -835,17 +840,6 @@ export default function WordleHelperPage() {
       "PRINT",
       "PRIOR",
       "PRIZE",
-      "PLATE",
-      "POINT",
-      "POUND",
-      "POWER",
-      "PRESS",
-      "PRICE",
-      "PRIDE",
-      "PRIME",
-      "PRINT",
-      "PRIOR",
-      "PRIZE",
       "PROOF",
       "PROUD",
       "PROVE",
@@ -1074,8 +1068,8 @@ export default function WordleHelperPage() {
   const findSuggestions = () => {
     const filteredWords = wordleWords.filter((word) => {
       // Check known letters (green)
-      for (let i = 0; i < 5; i++) {
-        if (knownLetters[i] && word[i] !== knownLetters[i].toUpperCase()) {
+      for (let i = 0; i < wordLength; i++) {
+        if (correct[i] && word[i] !== correct[i].toUpperCase()) {
           return false
         }
       }
@@ -1088,9 +1082,9 @@ export default function WordleHelperPage() {
       }
 
       // Check wrong positions (yellow)
-      for (let i = 0; i < 5; i++) {
-        if (wrongPositions[i]) {
-          const letter = wrongPositions[i].toUpperCase()
+      for (let i = 0; i < wordLength; i++) {
+        if (misplaced[i]) {
+          const letter = misplaced[i].toUpperCase()
           if (word[i] === letter || !word.includes(letter)) {
             return false
           }
@@ -1112,7 +1106,8 @@ export default function WordleHelperPage() {
   }
 
   const resetAll = () => {
-    setKnownLetters(["", "", "", "", ""])
+    setCorrect(Array(wordLength).fill(""))
+    setMisplaced(Array(wordLength).fill(""))
     setWrongLetters("")
     setWrongPositions(["", "", "", "", ""])
     setSuggestions([])
@@ -1141,6 +1136,40 @@ export default function WordleHelperPage() {
     }
   }
 
+  const handleCorrectChange = (idx: number, value: string) => {
+    const arr = [...correct]
+    const char = value.replace(/[^a-zA-Z]/g, '').slice(0, 1).toLowerCase()
+    arr[idx] = char
+    setCorrect(arr)
+    if (char && idx < wordLength - 1) {
+      correctRefs[idx + 1].current?.focus()
+    }
+  }
+  const handleMisplacedChange = (idx: number, value: string) => {
+    const arr = [...misplaced]
+    const char = value.replace(/[^a-zA-Z]/g, '').slice(0, 1).toLowerCase()
+    arr[idx] = char
+    setMisplaced(arr)
+    if (char && idx < wordLength - 1) {
+      misplacedRefs[idx + 1].current?.focus()
+    }
+  }
+
+  // Handle Enter key for correct/misplaced inputs
+  const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>, idx: number, type: 'correct' | 'misplaced') => {
+    if (e.key === 'Enter') {
+      e.preventDefault()
+      findSuggestions()
+    } else if (e.key === 'Backspace') {
+      if (type === 'correct' && !correct[idx] && idx > 0) {
+        correctRefs[idx - 1].current?.focus()
+      }
+      if (type === 'misplaced' && !misplaced[idx] && idx > 0) {
+        misplacedRefs[idx - 1].current?.focus()
+      }
+    }
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 py-12">
       <div className="container mx-auto px-4">
@@ -1152,8 +1181,8 @@ export default function WordleHelperPage() {
                 <Grid3X3 className="h-10 w-10 text-white" />
               </div>
             </div>
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">Wordle Helper</h1>
-            <p className="text-xl text-gray-600 mb-2">Get the best word suggestions for your Wordle puzzle</p>
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">Wordle Word Finder</h1>
+            <p className="text-xl text-gray-600 mb-2">Wordle Helper will help you to get the best word suggestions for your Wordle puzzle</p>
             <p className="text-gray-500">Enter what you know and get smart recommendations</p>
           </div>
 
@@ -1168,6 +1197,35 @@ export default function WordleHelperPage() {
               </CardTitle>
             </CardHeader>
             <CardContent className="p-8">
+              {/* Word Length Selector */}
+              <div className="mb-6 flex items-center gap-2">
+                <label className="mb-2 font-semibold flex items-center">
+                  Word Length:
+                  <input
+                    type="number"
+                    min={2}
+                    value={wordLength}
+                    onChange={e => {
+                      const val = Math.max(2, Number(e.target.value));
+                      setWordLength(val);
+                    }}
+                    className="ml-2 border rounded px-2 py-1 w-16 text-center"
+                    placeholder="5"
+                  />
+                </label>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setWordLength(5);
+                    setCorrect(Array(5).fill(""));
+                    setMisplaced(Array(5).fill(""));
+                  }}
+                  className="ml-2 px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded text-sm font-semibold border border-gray-300"
+                >
+                  Reset <center><RotateCcw className="h-4 w-4 mr-2" /></center>
+                </button>
+              </div>
+
               {/* Known Letters (Green) */}
               <div className="mb-6">
                 <label className="block text-sm font-medium text-gray-700 mb-3">
@@ -1175,19 +1233,17 @@ export default function WordleHelperPage() {
                   Known Letters (Green - Correct Position)
                 </label>
                 <div className="grid grid-cols-5 gap-2">
-                  {knownLetters.map((letter, index) => (
+                  {correct.map((letter, index) => (
                     <Input
                       key={index}
                       type="text"
                       maxLength={1}
                       value={letter}
-                      onChange={(e) => {
-                        const newKnown = [...knownLetters]
-                        newKnown[index] = e.target.value.toUpperCase()
-                        setKnownLetters(newKnown)
-                      }}
+                      onChange={(e) => handleCorrectChange(index, e.target.value)}
+                      onKeyDown={(e) => handleInputKeyDown(e, index, 'correct')}
                       className="h-12 text-center text-lg font-bold bg-green-50 border-green-300"
                       placeholder={`${index + 1}`}
+                      ref={correctRefs[index]}
                     />
                   ))}
                 </div>
@@ -1200,19 +1256,17 @@ export default function WordleHelperPage() {
                   Wrong Position Letters (Yellow - In Word, Wrong Spot)
                 </label>
                 <div className="grid grid-cols-5 gap-2">
-                  {wrongPositions.map((letter, index) => (
+                  {misplaced.map((letter, index) => (
                     <Input
                       key={index}
                       type="text"
                       maxLength={1}
                       value={letter}
-                      onChange={(e) => {
-                        const newWrong = [...wrongPositions]
-                        newWrong[index] = e.target.value.toUpperCase()
-                        setWrongPositions(newWrong)
-                      }}
+                      onChange={(e) => handleMisplacedChange(index, e.target.value)}
+                      onKeyDown={(e) => handleInputKeyDown(e, index, 'misplaced')}
                       className="h-12 text-center text-lg font-bold bg-yellow-50 border-yellow-300"
                       placeholder={`${index + 1}`}
+                      ref={misplacedRefs[index]}
                     />
                   ))}
                 </div>
@@ -1366,6 +1420,111 @@ export default function WordleHelperPage() {
             </Card>
           </div>
         </div>
+      </div>
+      <div className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Article Section */}
+        <article className="md:col-span-2 space-y-8">
+          <section>
+            <h1 className="text-3xl font-bold mb-2">Wordle Word Finder</h1>
+            <p>Find the best words for Wordle and similar games. Enter your clues and get instant suggestions. Wordle Helper will help you to get the best word suggestions for your Wordle puzzle</p>
+          </section>
+          <section>
+            <h2 className="text-2xl font-bold mb-2">What is Wordle?</h2>
+            <p>Wordle is a daily word puzzle game where you guess a five-letter word in six tries. Each guess gives you color-coded feedback to help you solve the puzzle. It's fun, educational, and has become a global phenomenon!</p>
+          </section>
+          <section>
+            <h2 className="text-2xl font-bold mb-2">How To Play Wordle</h2>
+            <ol className="list-decimal ml-6">
+              <li>Enter any five-letter word as your first guess.</li>
+              <li>Use the color feedback: Green means correct letter and position, Yellow means correct letter but wrong position, Gray means the letter is not in the word.</li>
+              <li>Keep guessing and use the clues to solve the word in six tries or less!</li>
+            </ol>
+          </section>
+          <section>
+            <h2 className="text-2xl font-bold mb-2">How Wordle Helper Helps People</h2>
+            <ul className="list-disc ml-6">
+              <li>Finds all possible words based on your clues</li>
+              <li>Helps you learn new words and strategies</li>
+              <li>Great for improving your Wordle streak and vocabulary!</li>
+              <li>Supports custom word lengths for other word games</li>
+            </ul>
+          </section>
+          <section>
+            <h2 className="text-2xl font-bold mb-2">Wordle Tips and Tricks</h2>
+            <ul className="list-disc ml-6">
+              <li>Start with words that use common letters (E, A, R, I, O, T, N, S)</li>
+              <li>Try to use at least two vowels in your first guess</li>
+              <li>Use your clues to eliminate as many letters as possible</li>
+              <li>Don’t repeat gray letters in your next guess</li>
+              <li>Use this helper to see all possible words for your clues!</li>
+            </ul>
+          </section>
+          <section>
+            <h2 className="text-2xl font-bold mb-2">25 Best Starting Words For Wordle</h2>
+            <div className="flex flex-wrap gap-2">
+              {['ADIEU', 'AUDIO', 'AROSE', 'RAISE', 'SLATE', 'CRANE', 'SLANT', 'CARTE', 'REACT', 'EARTH', 'LEAST', 'SALET', 'ALERT', 'LATER', 'ALTER', 'STARE', 'TEARS', 'STEAL', 'LEARN', 'TRAIL', 'TRAIN', 'CRATE', 'TRACE', 'CRONE', 'STONE'].map(word => (
+                <span key={word} className="bg-gray-100 rounded px-2 py-1 font-mono">{word}</span>
+              ))}
+            </div>
+          </section>
+
+          {/* FAQ Section */}
+          <section>
+            <h2 className="text-2xl font-bold mb-2">Frequently Asked Questions (FAQ)</h2>
+            <ul className="list-disc ml-6">
+              <li><b>Can I use this for 6-letter or 4-letter Wordle?</b> Yes! Just set the word length above the input boxes.</li>
+              <li><b>Does this work for NYT Wordle?</b> Yes, it’s designed for the official Wordle and similar games.</li>
+              <li><b>Is this tool free?</b> Yes, you can use it as much as you like for free.</li>
+              <li><b>Can I use this on my phone?</b> Yes, the site is mobile-friendly.</li>
+              <li><b>Where can I find past Wordle answers?</b> Check our Wordle Archive or blog for daily answers and tips.</li>
+            </ul>
+          </section>
+
+          {/* Conclusion Section */}
+          <section>
+          <h2 className="text-2xl font-bold mb-2">Conclusion</h2>
+          <p>Use this Wordle Helper to improve your game, learn new words, and have fun! Share with friends and keep practicing to become a Wordle master.</p>
+          </section>
+        </article>
+
+        {/* Sidebar Section */}
+        <aside className="space-y-6">
+          <div className="bg-white rounded-xl shadow p-4">
+            <div className="bg-green-400 text-white font-bold rounded-t-xl px-4 py-2 text-lg mb-4">Word Finder</div>
+            <ul className="space-y-1 text-gray-800">
+              <li><a href="/word-finder" className="hover:underline">Word Finder</a></li>
+              <li><a href="/wordle-helper" className="hover:underline">Wordle Helper</a></li>
+              <li><a href="/words-with-friends-cheat" className="hover:underline">Words With Friends Cheat</a></li>
+              <li><a href="/crossword-popular-clues" className="hover:underline">Crossword Popular Clues</a>
+                <ul className="ml-4 mt-1">
+                  <li><a href="/crossword-top-picks" className="text-sm hover:underline">Crossword Top Picks</a></li>
+                </ul>
+              </li>
+              <li><a href="/anagram-solver" className="hover:underline">Anagram Solver</a></li>
+              <li><a href="/word-descrambler" className="hover:underline">Word Descrambler</a></li>
+              <li><a href="/scrabble-cheat" className="hover:underline">Scrabble Cheat</a></li>
+              <li><a href="/unscrambler" className="hover:underline">Unscrambler</a></li>
+              <li><a href="/word-scramble" className="hover:underline">Word Scramble</a></li>
+              <li><a href="/word-unscrambler" className="hover:underline">Word Unscrambler</a></li>
+            </ul>
+          </div>
+          <div className="bg-white rounded-xl shadow p-4">
+            <div className="bg-green-400 text-white font-bold rounded-t-xl px-4 py-2 text-lg mb-4">Dictionaries</div>
+            <ul className="space-y-1 text-gray-800">
+              <li><a href="/spelling" className="hover:underline">Spelling</a></li>
+            <li><a href="/scrabble-dictionary" className="hover:underline">Scrabble Dictionary</a></li>
+              <li><a href="/words-with-friends-dictionary" className="hover:underline">Words With Friends Dictionary</a></li>
+            </ul>
+          </div>
+          <div className="bg-white rounded-xl shadow p-4">
+            <div className="bg-green-400 text-white font-bold rounded-t-xl px-4 py-2 text-lg mb-4">Lists of Words</div>
+            <ul className="space-y-1 text-gray-800">
+              <li><a href="/words-ending-in" className="hover:underline">Words Ending In</a></li>
+              <li><a href="/words-with-letters" className="hover:underline">Words With Letters</a></li>
+              <li><a href="/words-start-with" className="hover:underline">Words Start With</a></li>
+            </ul>
+          </div>
+        </aside>
       </div>
     </div>
   )

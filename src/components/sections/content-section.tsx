@@ -46,7 +46,8 @@ export function ContentSections() {
 		"Crossword Solver",
 		"Word Generator",
 		"Rhyme Finder",
-		"Scrabble Score Calculator Finder",
+		"Wordle Helper",
+		"Scrabble Calculator",
 	];
 
 	const trendingPages = [
@@ -277,6 +278,11 @@ export function ContentSections() {
 							<div className='p-6'>
 								<div className='space-y-2'>
 									<Link
+										href='/spelling'
+										className='block text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all duration-200 text-sm py-2 px-3 rounded-lg border-l-4 border-gray-200 hover:border-green-400 border-b border-gray-100 hover:border-b-green-200'>
+										MisSpelling
+									</Link>									
+									<Link
 										href='/scrabble-dictionary'
 										className='block text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all duration-200 text-sm py-2 px-3 rounded-lg border-l-4 border-gray-200 hover:border-green-400 border-b border-gray-100 hover:border-b-green-200'>
 										Scrabble Dictionary
@@ -287,9 +293,9 @@ export function ContentSections() {
 										Words With Friends Dictionary
 									</Link>
 									<Link
-										href='/grammar-rules'
+										href='/grammar'
 										className='block text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all duration-200 text-sm py-2 px-3 rounded-lg border-l-4 border-gray-200 hover:border-green-400 border-b border-gray-100 hover:border-b-green-200'>
-										Grammer Rules
+										Grammer
 									</Link>
 								</div>
 							</div>
