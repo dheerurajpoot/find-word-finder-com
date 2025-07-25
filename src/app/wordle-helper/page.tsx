@@ -23,6 +23,13 @@ export default function WordleHelperPage() {
   const [suggestions, setSuggestions] = useState<WordleSuggestion[]>([])
   const [attempt, setAttempt] = useState(1)
 
+  // Add refs for correct and misplaced inputs
+  const correctRefs = Array.from({ length: wordLength }, () => React.createRef<HTMLInputElement>());
+  const misplacedRefs = Array.from({ length: wordLength }, () => React.createRef<HTMLInputElement>());
+
+  useEffect(() => {
+    setCorrect(Array(wordLength).fill(""));
+    setMisplaced(Array(wordLength).fill(""));
   }, [wordLength]);
 
   // Common 5-letter words for Wordle
