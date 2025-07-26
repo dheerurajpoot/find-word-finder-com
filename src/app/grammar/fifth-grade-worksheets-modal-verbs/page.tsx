@@ -21,7 +21,7 @@ export default function FifthGradeWorksheetsModalVerbsPage() {
               What are Modal Verbs?
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Modal verbs are auxiliary verbs that express modality - the speaker's attitude toward the action or state described by the main verb. 
+              Modal verbs are auxiliary verbs that express modality - the speaker&apos;s attitude toward the action or state described by the main verb. 
               They help us communicate possibility, necessity, ability, permission, and other meanings.
             </p>
             <div className="bg-orange-50 p-4 rounded-lg">
@@ -238,57 +238,57 @@ export default function FifthGradeWorksheetsModalVerbsPage() {
               
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">1. "You must wear a helmet when riding a bike."</p>
+                  <p className="font-medium text-gray-800 mb-2">1. &quot;You must wear a helmet when riding a bike.&quot;</p>
                   <p className="text-sm text-gray-600 mb-2">a) ability b) obligation c) possibility d) advice</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-orange-600 hover:text-orange-800 font-medium">
                       Show Answer
                     </summary>
-                    <p className="mt-2 text-gray-700">Answer: <strong>b) obligation</strong> - "must" expresses a strong requirement</p>
+                    <p className="mt-2 text-gray-700">Answer: <strong>b) obligation</strong> - &quot;must&quot; expresses a strong requirement</p>
                   </details>
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">2. "She can play the piano beautifully."</p>
+                  <p className="font-medium text-gray-800 mb-2">2. &quot;She can play the piano beautifully.&quot;</p>
                   <p className="text-sm text-gray-600 mb-2">a) ability b) permission c) possibility d) advice</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-orange-600 hover:text-orange-800 font-medium">
                       Show Answer
                     </summary>
-                    <p className="mt-2 text-gray-700">Answer: <strong>a) ability</strong> - "can" expresses skill or capability</p>
+                    <p className="mt-2 text-gray-700">Answer: <strong>a) ability</strong> - &quot;can&quot; expresses skill or capability</p>
                   </details>
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">3. "You should study harder for the test."</p>
+                  <p className="font-medium text-gray-800 mb-2">3. &quot;You should study harder for the test.&quot;</p>
                   <p className="text-sm text-gray-600 mb-2">a) obligation b) ability c) possibility d) advice</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-orange-600 hover:text-orange-800 font-medium">
                       Show Answer
                     </summary>
-                    <p className="mt-2 text-gray-700">Answer: <strong>d) advice</strong> - "should" gives a recommendation</p>
+                    <p className="mt-2 text-gray-700">Answer: <strong>d) advice</strong> - &quot;should&quot; gives a recommendation</p>
                   </details>
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">4. "It might snow tomorrow."</p>
+                  <p className="font-medium text-gray-800 mb-2">4. &quot;It might snow tomorrow.&quot;</p>
                   <p className="text-sm text-gray-600 mb-2">a) obligation b) ability c) possibility d) advice</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-orange-600 hover:text-orange-800 font-medium">
                       Show Answer
                     </summary>
-                    <p className="mt-2 text-gray-700">Answer: <strong>c) possibility</strong> - "might" expresses uncertainty</p>
+                    <p className="mt-2 text-gray-700">Answer: <strong>c) possibility</strong> - &quot;might&quot; expresses uncertainty</p>
                   </details>
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">5. "May I borrow your pencil?"</p>
+                  <p className="font-medium text-gray-800 mb-2">5. &quot;May I borrow your pencil?&quot;</p>
                   <p className="text-sm text-gray-600 mb-2">a) ability b) permission c) possibility d) advice</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-orange-600 hover:text-orange-800 font-medium">
                       Show Answer
                     </summary>
-                    <p className="mt-2 text-gray-700">Answer: <strong>b) permission</strong> - "may" asks for permission</p>
+                    <p className="mt-2 text-gray-700">Answer: <strong>b) permission</strong> - &quot;may&quot; asks for permission</p>
                   </details>
                 </div>
               </div>
@@ -303,16 +303,16 @@ export default function FifthGradeWorksheetsModalVerbsPage() {
               <div className="flex items-start space-x-3">
                 <span className="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">1</span>
                 <div>
-                  <h3 className="font-semibold text-orange-800">Modal verbs don't change form</h3>
-                  <p className="text-gray-700">Unlike regular verbs, modal verbs don't add -s, -ed, or -ing endings.</p>
+                  <h3 className="font-semibold text-orange-800">Modal verbs don&apos;t change form</h3>
+                  <p className="text-gray-700">Unlike regular verbs, modal verbs don&apos;t add -s, -ed, or -ing endings.</p>
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
                 <span className="bg-orange-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">2</span>
                 <div>
-                  <h3 className="font-semibold text-orange-800">They're followed by base form verbs</h3>
-                  <p className="text-gray-700">Modal verbs are always followed by the base form of the main verb (without "to").</p>
+                  <h3 className="font-semibold text-orange-800">They&apos;re followed by base form verbs</h3>
+                  <p className="text-gray-700">Modal verbs are always followed by the base form of the main verb (without &quot;to&quot;).</p>
                 </div>
               </div>
               

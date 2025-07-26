@@ -128,7 +128,7 @@ export default function ExamplesOfPointOfViewPage() {
               <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
                 <li>Uses &quot;he,&quot; &quot;she,&quot; &quot;they&quot; pronouns</li>
                 <li>Narrator knows everything about all characters</li>
-                <li>Can reveal multiple characters' thoughts and feelings</li>
+                <li>Can reveal multiple character&apos;s thoughts and feelings</li>
                 <li>Provides the broadest perspective</li>
               </ul>
               
@@ -161,7 +161,7 @@ export default function ExamplesOfPointOfViewPage() {
                     <summary className="cursor-pointer text-purple-600 hover:text-purple-800 font-medium">
                       Show Answer
                     </summary>
-                    <p className="mt-2 text-gray-700">First Person - uses "I"</p>
+                    <p className="mt-2 text-gray-700">First Person - uses &quot;I&quot;</p>
                   </details>
                 </div>
                 
@@ -171,7 +171,7 @@ export default function ExamplesOfPointOfViewPage() {
                     <summary className="cursor-pointer text-purple-600 hover:text-purple-800 font-medium">
                       Show Answer
                     </summary>
-                    <p className="mt-2 text-gray-700">Second Person - uses "you"</p>
+                    <p className="mt-2 text-gray-700">Second Person - uses &quot;you&quot;</p>
                   </details>
                 </div>
                 
@@ -181,7 +181,7 @@ export default function ExamplesOfPointOfViewPage() {
                     <summary className="cursor-pointer text-purple-600 hover:text-purple-800 font-medium">
                       Show Answer
                     </summary>
-                    <p className="mt-2 text-gray-700">Third Person Limited - uses "she" and shows her feelings</p>
+                    <p className="mt-2 text-gray-700">Third Person Limited - uses &quot;she&quot; and shows her feelings</p>
                   </details>
                 </div>
                 
@@ -191,7 +191,7 @@ export default function ExamplesOfPointOfViewPage() {
                     <summary className="cursor-pointer text-purple-600 hover:text-purple-800 font-medium">
                       Show Answer
                     </summary>
-                    <p className="mt-2 text-gray-700">Third Person Omniscient - shows both characters' thoughts</p>
+                    <p className="mt-2 text-gray-700">Third Person Omniscient - shows both characters&apos; thoughts</p>
                   </details>
                 </div>
                 
@@ -201,7 +201,7 @@ export default function ExamplesOfPointOfViewPage() {
                     <summary className="cursor-pointer text-purple-600 hover:text-purple-800 font-medium">
                       Show Answer
                     </summary>
-                    <p className="mt-2 text-gray-700">First Person - uses "we"</p>
+                    <p className="mt-2 text-gray-700">First Person - uses &quot;we&quot;</p>
                   </details>
                 </div>
               </div>

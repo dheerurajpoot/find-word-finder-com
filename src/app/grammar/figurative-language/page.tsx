@@ -29,7 +29,7 @@ export default function FigurativeLanguagePage() {
             <div className="bg-indigo-50 p-4 rounded-lg">
               <h3 className="font-semibold text-indigo-800 mb-2">Common Types of Figurative Language:</h3>
               <ul className="list-disc list-inside space-y-1 text-gray-700">
-                <li>Simile (comparison using "like" or "as")</li>
+                <li>Simile (comparison using &quot;like&quot; or &quot;as&quot;)</li>
                 <li>Metaphor (direct comparison)</li>
                 <li>Personification (giving human qualities to non-human things)</li>
                 <li>Hyperbole (exaggeration)</li>
@@ -52,19 +52,19 @@ export default function FigurativeLanguagePage() {
               <h4 className="font-semibold text-blue-800 mb-2">Examples:</h4>
               <div className="space-y-3">
                 <div className="bg-white p-3 rounded border-l-4 border-blue-400">
-                  <p className="text-gray-800">"Her smile was <strong>like</strong> sunshine on a cloudy day."</p>
+                  <p className="text-gray-800">&quot;Her smile was <strong>like</strong> sunshine on a cloudy day.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-blue-400">
-                  <p className="text-gray-800">"He ran <strong>as</strong> fast <strong>as</strong> a cheetah."</p>
+                  <p className="text-gray-800">&quot;He ran <strong>as</strong> fast <strong>as</strong> a cheetah.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-blue-400">
-                  <p className="text-gray-800">"The water was <strong>like</strong> glass, smooth and clear."</p>
+                  <p className="text-gray-800">&quot;The water was <strong>like</strong> glass, smooth and clear.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-blue-400">
-                  <p className="text-gray-800">"She was <strong>as</strong> brave <strong>as</strong> a lion."</p>
+                  <p className="text-gray-800">&quot;She was <strong>as</strong> brave <strong>as</strong> a lion.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-blue-400">
-                  <p className="text-gray-800">"His voice was <strong>like</strong> thunder in the quiet room."</p>
+                  <p className="text-gray-800">&quot;His voice was <strong>like</strong> thunder in the quiet room.&quot;</p>
                 </div>
               </div>
             </div>
@@ -83,19 +83,19 @@ export default function FigurativeLanguagePage() {
               <h4 className="font-semibold text-green-800 mb-2">Examples:</h4>
               <div className="space-y-3">
                 <div className="bg-white p-3 rounded border-l-4 border-green-400">
-                  <p className="text-gray-800">"Life is a <strong>journey</strong> with many twists and turns."</p>
+                  <p className="text-gray-800">&quot;Life is a <strong>journey</strong> with many twists and turns.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-green-400">
-                  <p className="text-gray-800">"The classroom was a <strong>zoo</strong> during recess."</p>
+                  <p className="text-gray-800">&quot;The classroom was a <strong>zoo</strong> during recess.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-green-400">
-                  <p className="text-gray-800">"Her eyes were <strong>diamonds</strong> sparkling in the light."</p>
+                  <p className="text-gray-800">&quot;Her eyes were <strong>diamonds</strong> sparkling in the light.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-green-400">
-                  <p className="text-gray-800">"Time is <strong>money</strong>."</p>
+                  <p className="text-gray-800">&quot;Time is <strong>money</strong>.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-green-400">
-                  <p className="text-gray-800">"The world is a <strong>stage</strong>."</p>
+                  <p className="text-gray-800">&quot;The world is a <strong>stage</strong>.&quot;</p>
                 </div>
               </div>
             </div>
@@ -114,19 +114,19 @@ export default function FigurativeLanguagePage() {
               <h4 className="font-semibold text-yellow-800 mb-2">Examples:</h4>
               <div className="space-y-3">
                 <div className="bg-white p-3 rounded border-l-4 border-yellow-400">
-                  <p className="text-gray-800">"The wind <strong>whispered</strong> through the trees."</p>
+                  <p className="text-gray-800">&quot;The wind <strong>whispered</strong> through the trees.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-yellow-400">
-                  <p className="text-gray-800">"The sun <strong>smiled</strong> down on the beach."</p>
+                  <p className="text-gray-800">&quot;The sun <strong>smiled</strong> down on the beach.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-yellow-400">
-                  <p className="text-gray-800">"The flowers <strong>danced</strong> in the breeze."</p>
+                  <p className="text-gray-800">&quot;The flowers <strong>danced</strong> in the breeze.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-yellow-400">
-                  <p className="text-gray-800">"The car <strong>groaned</strong> as it climbed the hill."</p>
+                  <p className="text-gray-800">&quot;The car <strong>groaned</strong> as it climbed the hill.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-yellow-400">
-                  <p className="text-gray-800">"Fear <strong>gripped</strong> her heart."</p>
+                  <p className="text-gray-800">&quot;Fear <strong>gripped</strong> her heart.&quot;</p>
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function FigurativeLanguagePage() {
                   <p className="text-gray-800">&quot;I&apos;ve told you a <strong>million times</strong> to clean your room!&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-red-400">
-                  <p className="text-gray-800">"This backpack weighs a <strong>ton</strong>!"</p>
+                  <p className="text-gray-800">&quot;This backpack weighs a <strong>ton</strong>!&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-red-400">
                   <p className="text-gray-800">&quot;I&apos;m so hungry I could eat a <strong>horse</strong>.&quot;</p>
@@ -157,7 +157,7 @@ export default function FigurativeLanguagePage() {
                   <p className="text-gray-800">&quot;She&apos;s been waiting here for <strong>ages</strong>.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-red-400">
-                  <p className="text-gray-800">"I have a <strong>mountain</strong> of homework to do."</p>
+                  <p className="text-gray-800">&quot;I have a <strong>mountain</strong> of homework to do.&quot;</p>
                 </div>
               </div>
             </div>
@@ -176,19 +176,19 @@ export default function FigurativeLanguagePage() {
               <h4 className="font-semibold text-purple-800 mb-2">Examples:</h4>
               <div className="space-y-3">
                 <div className="bg-white p-3 rounded border-l-4 border-purple-400">
-                  <p className="text-gray-800">"<strong>P</strong>eter <strong>P</strong>iper <strong>p</strong>icked a <strong>p</strong>eck of <strong>p</strong>ickled <strong>p</strong>eppers."</p>
+                  <p className="text-gray-800">&quot;<strong>P</strong>eter <strong>P</strong>iper <strong>p</strong>icked a <strong>p</strong>eck of <strong>p</strong>ickled <strong>p</strong>eppers.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-purple-400">
-                  <p className="text-gray-800">"The <strong>s</strong>ilent <strong>s</strong>now <strong>s</strong>ettled <strong>s</strong>oftly."</p>
+                  <p className="text-gray-800">&quot;The <strong>s</strong>ilent <strong>s</strong>now <strong>s</strong>ettled <strong>s</strong>oftly.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-purple-400">
-                  <p className="text-gray-800">"<strong>B</strong>ig <strong>b</strong>rown <strong>b</strong>ears <strong>b</strong>ounce <strong>b</strong>alls."</p>
+                  <p className="text-gray-800">&quot;<strong>B</strong>ig <strong>b</strong>rown <strong>b</strong>ears <strong>b</strong>ounce <strong>b</strong>alls.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-purple-400">
-                  <p className="text-gray-800">"<strong>S</strong>ally <strong>s</strong>ells <strong>s</strong>ea<strong>s</strong>hells by the <strong>s</strong>ea<strong>s</strong>hore."</p>
+                  <p className="text-gray-800">&quot;<strong>S</strong>ally <strong>s</strong>ells <strong>s</strong>ea<strong>s</strong>hells by the <strong>s</strong>ea<strong>s</strong>hore.&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-purple-400">
-                  <p className="text-gray-800">"The <strong>w</strong>ind <strong>w</strong>histled through the <strong>w</strong>illow trees."</p>
+                  <p className="text-gray-800">&quot;The <strong>w</strong>ind <strong>w</strong>histled through the <strong>w</strong>illow trees.&quot;</p>
                 </div>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function FigurativeLanguagePage() {
               
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">1. "The stars winked at me from the night sky."</p>
+                  <p className="font-medium text-gray-800 mb-2">1. &quot;The stars winked at me from the night sky.&quot;</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-indigo-600 hover:text-indigo-800 font-medium">
                       Show Answer
@@ -213,17 +213,17 @@ export default function FigurativeLanguagePage() {
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">2. "She is as busy as a bee."</p>
+                  <p className="font-medium text-gray-800 mb-2">2. &quot;She is as busy as a bee.&quot;</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-indigo-600 hover:text-indigo-800 font-medium">
                       Show Answer
                     </summary>
-                    <p className="mt-2 text-gray-700">Answer: <strong>Simile</strong> - uses "as" to compare her to a bee</p>
+                    <p className="mt-2 text-gray-700">Answer: <strong>Simile</strong> - uses &quot;as&quot; to compare her to a bee</p>
                   </details>
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">3. "The classroom was a zoo during lunch break."</p>
+                  <p className="font-medium text-gray-800 mb-2">3. &quot;The classroom was a zoo during lunch break.&quot;</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-indigo-600 hover:text-indigo-800 font-medium">
                       Show Answer
@@ -248,7 +248,7 @@ export default function FigurativeLanguagePage() {
                     <summary className="cursor-pointer text-indigo-600 hover:text-indigo-800 font-medium">
                       Show Answer
                     </summary>
-                    <p className="mt-2 text-gray-700">Answer: <strong>Alliteration</strong> - repetition of the "b" sound</p>
+                    <p className="mt-2 text-gray-700">Answer: <strong>Alliteration</strong> - repetition of the &quot;b&quot; sound</p>
                   </details>
                 </div>
               </div>

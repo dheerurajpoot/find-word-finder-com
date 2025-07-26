@@ -157,7 +157,7 @@ export default function HomophonesExamplesPage() {
               
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">1. I'm going _____ the store. (to/too/two)</p>
+                  <p className="font-medium text-gray-800 mb-2">1. I&apos;m going _____ the store. (to/too/two)</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-cyan-600 hover:text-cyan-800 font-medium">
                       Show Answer
@@ -167,7 +167,7 @@ export default function HomophonesExamplesPage() {
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">2. _____ going to the party. (There/Their/They're)</p>
+                  <p className="font-medium text-gray-800 mb-2">2. _____ going to the party. (There/Their/They&apos;re)</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-cyan-600 hover:text-cyan-800 font-medium">
                       Show Answer
@@ -177,7 +177,7 @@ export default function HomophonesExamplesPage() {
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">3. Is this _____ book? (your/you're)</p>
+                  <p className="font-medium text-gray-800 mb-2">3. Is this _____ book? (your/you&apos;re)</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-cyan-600 hover:text-cyan-800 font-medium">
                       Show Answer

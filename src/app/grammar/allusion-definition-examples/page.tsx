@@ -62,9 +62,9 @@ export default function AllusionDefinitionExamplesPage() {
             <h2 className="text-2xl font-bold mb-2 text-blue-700">Tips for Spotting Allusions</h2>
             <ul className="list-disc ml-6 text-gray-700 text-base">
               <li>Look for names or phrases from famous stories, history, or pop culture.</li>
-              <li>Ask yourself: Does this remind me of a book, movie, or person I've heard of?</li>
+              <li>Ask yourself: Does this remind me of a book, movie, or person I&apos;ve heard of?</li>
               <li>Allusions often add extra meaning or a hidden message to writing.</li>
-              <li>If you don't know the reference, try looking it up!</li>
+              <li>If you don&apos;t know the reference, try looking it up!</li>
             </ul>
           </section>
 

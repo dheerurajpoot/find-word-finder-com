@@ -9,7 +9,7 @@ export default function ExamplesOfRhymePage() {
           <header className="text-center space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold text-green-800">Examples of Rhyme</h1>
             <p className="text-lg text-gray-700">
-              Rhyme is the repetition of similar sounds at the end of words. It's a fundamental element of poetry and songwriting that creates rhythm and musicality.
+              Rhyme is the repetition of similar sounds at the end of words. It&apos;s a fundamental element of poetry and songwriting that creates rhythm and musicality.
             </p>
             <p className="text-sm text-green-600 font-medium">
               Key Takeaway: Rhyme adds musical quality and helps with memorization in poetry and songs.
@@ -21,7 +21,7 @@ export default function ExamplesOfRhymePage() {
               What is Rhyme?
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Rhyme occurs when words have similar ending sounds. It's a literary device that creates a pleasing musical effect and helps 
+              Rhyme occurs when words have similar ending sounds. It&apos;s a literary device that creates a pleasing musical effect and helps 
               establish rhythm in poetry and songs. Rhyme can make text more memorable and enjoyable to read or hear.
             </p>
             <div className="bg-green-50 p-4 rounded-lg">
@@ -246,8 +246,8 @@ export default function ExamplesOfRhymePage() {
               <div className="flex items-start space-x-3">
                 <span className="bg-green-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">1</span>
                 <div>
-                  <h3 className="font-semibold text-green-800">Don't force it</h3>
-                  <p className="text-gray-700">Rhyme should enhance your message, not distract from it. Don't sacrifice meaning for rhyme.</p>
+                  <h3 className="font-semibold text-green-800">Don&apos;t force it</h3>
+                  <p className="text-gray-700">Rhyme should enhance your message, not distract from it. Don&apos;t sacrifice meaning for rhyme.</p>
                 </div>
               </div>
               

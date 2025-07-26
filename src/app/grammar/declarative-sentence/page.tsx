@@ -9,7 +9,7 @@ export default function DeclarativeSentencePage() {
           <header className="text-center space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold text-blue-800">Declarative Sentence</h1>
             <p className="text-lg text-gray-700">
-              A declarative sentence makes a statement or declaration. It's the most common type of sentence and ends with a period.
+              A declarative sentence makes a statement or declaration. It&apos;s the most common type of sentence and ends with a period.
             </p>
             <p className="text-sm text-blue-600 font-medium">
               Key Takeaway: Declarative sentences tell us something and always end with a period.
@@ -22,7 +22,7 @@ export default function DeclarativeSentencePage() {
             </h2>
             <p className="text-gray-700 leading-relaxed">
               A declarative sentence is a type of sentence that makes a statement, provides information, or declares something. 
-              It's the most common sentence type in English and is used to share facts, opinions, or information.
+              It&apos;s the most common sentence type in English and is used to share facts, opinions, or information.
             </p>
             <div className="bg-blue-50 p-4 rounded-lg">
               <h3 className="font-semibold text-blue-800 mb-2">Characteristics:</h3>

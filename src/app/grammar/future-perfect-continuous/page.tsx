@@ -28,7 +28,7 @@ export default function FuturePerfectContinuousPage() {
               <h3 className="font-semibold text-teal-800 mb-2">Structure:</h3>
               <ul className="list-disc list-inside space-y-1 text-gray-700">
                 <li>Subject + will + have + been + verb-ing</li>
-                <li>Example: "I will have been studying for three hours by 5 PM."</li>
+                <li>Example: &quot;I will have been studying for three hours by 5 PM.&quot;</li>
                 <li>Used to show duration of an action up to a future point</li>
                 <li>Often includes time expressions like &quot;for,&quot; &quot;since,&quot; &quot;by&quot;</li>
               </ul>
@@ -198,7 +198,7 @@ export default function FuturePerfectContinuousPage() {
               
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">1. "I will have been working here for five years by next month."</p>
+                  <p className="font-medium text-gray-800 mb-2">1. &quot;I will have been working here for five years by next month.&quot;</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-teal-600 hover:text-teal-800 font-medium">
                       Show Answer
@@ -208,7 +208,7 @@ export default function FuturePerfectContinuousPage() {
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">2. "I will work here for five years."</p>
+                  <p className="font-medium text-gray-800 mb-2">2. &quot;I will work here for five years.&quot;</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-teal-600 hover:text-teal-800 font-medium">
                       Show Answer
@@ -218,7 +218,7 @@ export default function FuturePerfectContinuousPage() {
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">3. "She will have been studying since morning."</p>
+                  <p className="font-medium text-gray-800 mb-2">3. &quot;She will have been studying since morning.&quot;</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-teal-600 hover:text-teal-800 font-medium">
                       Show Answer
@@ -228,7 +228,7 @@ export default function FuturePerfectContinuousPage() {
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">4. "They have been working here for five years."</p>
+                  <p className="font-medium text-gray-800 mb-2">4. &quot;They have been working here for five years.&quot;</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-teal-600 hover:text-teal-800 font-medium">
                       Show Answer
@@ -238,7 +238,7 @@ export default function FuturePerfectContinuousPage() {
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">5. "By the end of the day, he will have been driving for eight hours."</p>
+                  <p className="font-medium text-gray-800 mb-2">5. &quot;By the end of the day, he will have been driving for eight hours.&quot;</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-teal-600 hover:text-teal-800 font-medium">
                       Show Answer
@@ -259,7 +259,7 @@ export default function FuturePerfectContinuousPage() {
                 <span className="bg-teal-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">1</span>
                 <div>
                   <h3 className="font-semibold text-teal-800">Use with time expressions</h3>
-                  <p className="text-gray-700">Always include time expressions like &quot;for,&quot; &quot;since,&quot; &quot;by,&quot; or &quot;by the time&quot; to show duration and future point.</p>
+                    <p className="text-gray-700">Always include time expressions like &quot;for,&quot; &quot;since,&quot; &quot;by,&quot; or &quot;by the time&quot; to show duration and future point.</p>
                 </div>
               </div>
               

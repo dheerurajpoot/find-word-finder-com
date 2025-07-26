@@ -28,7 +28,7 @@ export default function FuturePerfectTensePage() {
               <h3 className="font-semibold text-emerald-800 mb-2">Structure:</h3>
               <ul className="list-disc list-inside space-y-1 text-gray-700">
                 <li>Subject + will + have + past participle</li>
-                <li>Example: "I will have finished my homework by 8 PM."</li>
+                <li>Example: &quot;I will have finished my homework by 8 PM.&quot;</li>
                 <li>Used to show completion before a future time</li>
                 <li>Often includes time expressions like &quot;by,&quot; &quot;before,&quot; &quot;by the time&quot;</li>
               </ul>
@@ -199,7 +199,7 @@ export default function FuturePerfectTensePage() {
               
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">1. "I will have finished my work by 5 PM."</p>
+                  <p className="font-medium text-gray-800 mb-2">1. &quot;I will have finished my work by 5 PM.&quot;</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-emerald-600 hover:text-emerald-800 font-medium">
                       Show Answer
@@ -209,7 +209,7 @@ export default function FuturePerfectTensePage() {
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">2. "I will finish my work by 5 PM."</p>
+                  <p className="font-medium text-gray-800 mb-2">2. &quot;I will finish my work by 5 PM.&quot;</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-emerald-600 hover:text-emerald-800 font-medium">
                       Show Answer
@@ -219,7 +219,7 @@ export default function FuturePerfectTensePage() {
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">3. "She will have completed the course by next month."</p>
+                  <p className="font-medium text-gray-800 mb-2">3. &quot;She will have completed the course by next month.&quot;</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-emerald-600 hover:text-emerald-800 font-medium">
                       Show Answer
@@ -229,7 +229,7 @@ export default function FuturePerfectTensePage() {
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">4. "They have finished their homework."</p>
+                  <p className="font-medium text-gray-800 mb-2">4. &quot;They have finished their homework.&quot;</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-emerald-600 hover:text-emerald-800 font-medium">
                       Show Answer
@@ -239,7 +239,7 @@ export default function FuturePerfectTensePage() {
                 </div>
                 
                 <div className="bg-white p-4 rounded border">
-                  <p className="font-medium text-gray-800 mb-2">5. "By the time you arrive, I will have prepared dinner."</p>
+                  <p className="font-medium text-gray-800 mb-2">5. &quot;By the time you arrive, I will have prepared dinner.&quot;</p>
                   <details className="mt-2">
                     <summary className="cursor-pointer text-emerald-600 hover:text-emerald-800 font-medium">
                       Show Answer

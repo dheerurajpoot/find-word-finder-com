@@ -21,7 +21,7 @@ export default function FirstGradeWorksheetsNounsVerbsPage() {
               What are Nouns?
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Nouns are words that name people, places, things, or ideas. They are one of the most important parts of speech because they tell us what we're talking about.
+              Nouns are words that name people, places, things, or ideas. They are one of the most important parts of speech because they tell us what we&apos;re talking about.
             </p>
             <div className="bg-pink-50 p-4 rounded-lg">
               <h3 className="font-semibold text-pink-800 mb-2">Types of Nouns:</h3>
@@ -40,7 +40,7 @@ export default function FirstGradeWorksheetsNounsVerbsPage() {
               What are Verbs?
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Verbs are action words that tell us what someone or something is doing. They can also show a state of being (like "is," "are," "was").
+              Verbs are action words that tell us what someone or something is doing. They can also show a state of being (like &quot;is,&quot; &quot;are,&quot; &quot;was&quot;).
             </p>
             <div className="bg-blue-50 p-4 rounded-lg">
               <h3 className="font-semibold text-blue-800 mb-2">Types of Verbs:</h3>
@@ -338,7 +338,7 @@ export default function FirstGradeWorksheetsNounsVerbsPage() {
                 <span className="bg-pink-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">1</span>
                 <div>
                   <h3 className="font-semibold text-pink-800">Ask questions</h3>
-                  <p className="text-gray-700">For nouns: "What is it?" or "Who is it?" For verbs: "What is happening?" or "What is being done?"</p>
+                  <p className="text-gray-700">For nouns: &quot;What is it?&quot; or &quot;Who is it?&quot; For verbs: &quot;What is happening?&quot; or &quot;What is being done?&quot;</p>
                 </div>
               </div>
               
@@ -362,7 +362,7 @@ export default function FirstGradeWorksheetsNounsVerbsPage() {
                 <span className="bg-pink-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">4</span>
                 <div>
                   <h3 className="font-semibold text-pink-800">Make it fun</h3>
-                  <p className="text-gray-700">Play games like "I Spy" for nouns and "Simon Says" for verbs to make learning enjoyable.</p>
+                  <p className="text-gray-700">Play games like &quot;I Spy&quot; for nouns and &quot;Simon Says&quot; for verbs to make learning enjoyable.</p>
                 </div>
               </div>
             </div>
