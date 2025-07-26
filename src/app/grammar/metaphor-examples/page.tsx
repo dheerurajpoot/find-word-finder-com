@@ -107,7 +107,7 @@ export default function MetaphorExamplesPage() {
           <header className="mb-6">
             <h1 className="text-4xl font-extrabold mb-3 text-yellow-700">Metaphor Examples</h1>
             <p className="text-lg text-gray-700 mb-2">
-              <b>What is a metaphor?</b> A metaphor is a way to describe something by saying it <b>is</b> something else—even though it isn't, literally! Writers use metaphors to make their writing more colorful and interesting.
+              <b>What is a metaphor?</b> A metaphor is a way to describe something by saying it <b>is</b> something else—even though it isn&apos;t, literally! Writers use metaphors to make their writing more colorful and interesting.
             </p>
             <p className="text-yellow-700 font-semibold">Metaphors help us picture things in new and creative ways.</p>
           </header>
@@ -162,7 +162,7 @@ export default function MetaphorExamplesPage() {
           {/* Conclusion Section */}
           <section>
             <h2 className="text-2xl font-bold mb-2 text-yellow-700">Conclusion</h2>
-            <p className="mb-2 text-gray-700">Try making your own metaphors! Think of something you want to describe, and imagine what else it could be. For example, "My room is a treasure chest" or "My dog is a rocket."</p>
+            <p className="mb-2 text-gray-700">Try making your own metaphors! Think of something you want to describe, and imagine what else it could be. For example, &quot;My room is a treasure chest&quot; or &quot;My dog is a rocket.&quot;</p>
           </section>
 
           {/* More Resources Section */}

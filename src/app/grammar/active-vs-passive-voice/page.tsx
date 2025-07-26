@@ -42,7 +42,7 @@ export default function ActiveVsPassiveVoicePage() {
             <h2 className="text-2xl font-bold mb-4 text-green-700">Structure</h2>
             <div className="bg-green-100 rounded p-4 mb-4 text-gray-800">
               <b>Active:</b> Subject + Verb + Object <br/>
-              <b>Passive:</b> Object + (form of "be") + Past Participle + by Subject
+              <b>Passive:</b> Object + (form of &quot;be&quot;) + Past Participle + by Subject
             </div>
           </section>
 
@@ -86,7 +86,7 @@ export default function ActiveVsPassiveVoicePage() {
             <ul className="list-disc ml-6 text-gray-700 text-base">
               <li>Use active voice for clear, direct sentences.</li>
               <li>Use passive voice when the doer is unknown or less important.</li>
-              <li>Look for forms of "be" (is, was, were) and "by" to spot passive voice.</li>
+              <li>Look for forms of &quot;be&quot; (is, was, were) and &quot;by&quot; to spot passive voice.</li>
             </ul>
           </section>
 

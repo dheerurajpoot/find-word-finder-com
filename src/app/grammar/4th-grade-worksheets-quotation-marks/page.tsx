@@ -29,7 +29,7 @@ export default function QuotationMarks4thGradePage() {
           <header className="mb-6">
             <h1 className="text-3xl md:text-4xl font-extrabold mb-3 text-pink-700">4th Grade Worksheets: Quotation Marks</h1>
             <p className="text-lg text-gray-700 mb-2">
-              <b>What are quotation marks?</b> Quotation marks ( " " ) are punctuation marks used to show someone is speaking, to quote what someone said, or to show the title of a short work. They help make writing clear and interesting!
+              <b>What are quotation marks?</b> Quotation marks ( &quot; &quot; ) are punctuation marks used to show someone is speaking, to quote what someone said, or to show the title of a short work. They help make writing clear and interesting!
             </p>
             <p className="text-pink-700 font-semibold">Quotation marks help you show exactly what someone said or wrote.</p>
           </header>

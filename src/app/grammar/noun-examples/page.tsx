@@ -80,7 +80,7 @@ export default function NounExamplesPage() {
                     </ul>
                   </div>
                 </div>
-                <p className="text-green-700 text-xs mt-2">Tip: If it’s a name, it’s a proper noun!</p>
+                <p className="text-green-700 text-xs mt-2">Tip: If it&apos;s a name, it&apos;s a proper noun!</p>
               </div>
               {/* Collective Nouns */}
               <div className="border-l-4 border-yellow-200 pl-4 bg-yellow-50 rounded-lg shadow-sm py-4">
@@ -93,7 +93,7 @@ export default function NounExamplesPage() {
                   <li>a <b>choir</b> of singers</li>
                   <li>a <b>panel</b> of judges</li>
                 </ul>
-                <p className="text-yellow-700 text-xs mt-2">Tip: Collective nouns are often followed by "of" + plural noun.</p>
+                <p className="text-yellow-700 text-xs mt-2">Tip: Collective nouns are often followed by &quot;of&quot; + plural noun.</p>
               </div>
               {/* Concrete Nouns */}
               <div className="border-l-4 border-purple-200 pl-4 bg-purple-50 rounded-lg shadow-sm py-4">
@@ -102,7 +102,7 @@ export default function NounExamplesPage() {
                 <ul className="list-disc ml-6 text-sm">
                   <li>dog</li><li>ball</li><li>chicken</li><li>boat</li><li>music</li>
                 </ul>
-                <p className="text-purple-700 text-xs mt-2">Tip: If you can experience it with your senses, it’s a concrete noun.</p>
+                <p className="text-purple-700 text-xs mt-2">Tip: If you can experience it with your senses, it&apos;s a concrete noun.</p>
               </div>
               {/* Abstract Nouns */}
               <div className="border-l-4 border-pink-200 pl-4 bg-pink-50 rounded-lg shadow-sm py-4">
@@ -111,7 +111,7 @@ export default function NounExamplesPage() {
                 <ul className="list-disc ml-6 text-sm">
                   <li>happiness</li><li>truth</li><li>wisdom</li><li>love</li><li>anxiety</li>
                 </ul>
-                <p className="text-pink-700 text-xs mt-2">Tip: If you can’t touch it, but you can feel or think it, it’s an abstract noun.</p>
+                <p className="text-pink-700 text-xs mt-2">Tip: If you can&apos;t touch it, but you can feel or think it, it&apos;s an abstract noun.</p>
               </div>
               {/* Compound Nouns */}
               <div className="border-l-4 border-red-200 pl-4 bg-red-50 rounded-lg shadow-sm py-4">

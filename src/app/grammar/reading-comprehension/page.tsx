@@ -62,7 +62,7 @@ export default function ReadingComprehensionPage() {
           <header className="mb-6">
             <h1 className="text-4xl font-extrabold mb-3 text-blue-700">Reading Comprehension</h1>
             <p className="text-lg text-gray-700 mb-2">
-              Reading comprehension means understanding what you read. It's not just about reading the words—it's about knowing what they mean and remembering the story or information.
+              Reading comprehension means understanding what you read. It&apos;s not just about reading the words—it&apos;s about knowing what they mean and remembering the story or information.
             </p>
             <p className="text-blue-700 font-semibold">Good reading comprehension helps you learn, have fun, and do well in school!</p>
           </header>

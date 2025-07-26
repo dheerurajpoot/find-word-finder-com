@@ -77,7 +77,7 @@ export default function BracketsParenthesesPage() {
             <ul className="list-disc ml-6 text-gray-700 text-base">
               <li>Use parentheses for extra information that can be left out.</li>
               <li>Use brackets to add or change words in a quote.</li>
-              <li>Don't overuse—too many can make writing confusing.</li>
+              <li>Don&apos;t overuse—too many can make writing confusing.</li>
             </ul>
           </section>
 

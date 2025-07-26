@@ -43,8 +43,8 @@ export default function AssonanceConsonanceWorksheetsPage() {
           <section>
             <h2 className="text-2xl font-bold mb-4 text-yellow-700">Difference Between Assonance and Consonance</h2>
             <ul className="list-disc ml-6 text-gray-700 mb-4">
-              <li><b>Assonance:</b> Repeats vowel sounds (e.g., "The rain in Spain").</li>
-              <li><b>Consonance:</b> Repeats consonant sounds (e.g., "Mike likes his new bike").</li>
+              <li><b>Assonance:</b> Repeats vowel sounds (e.g., &quot;The rain in Spain&quot;).</li>
+              <li><b>Consonance:</b> Repeats consonant sounds (e.g., &quot;Mike likes his new bike&quot;).</li>
             </ul>
           </section>
 

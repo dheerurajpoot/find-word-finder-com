@@ -80,7 +80,7 @@ export default function AdjectivesStartWithRPage() {
             <h2 className="text-2xl font-bold mb-2 text-pink-700">Tips for Using Adjectives</h2>
             <ul className="list-disc ml-6 text-gray-700 text-base">
               <li>Try using new adjectives to make your writing more interesting.</li>
-              <li>Use more than one adjective for extra detail (e.g., "the rapid, rugged river").</li>
+              <li>Use more than one adjective for extra detail (e.g., &quot;the rapid, rugged river&quot;).</li>
               <li>Adjectives answer questions like: What kind? How many? Which one?</li>
             </ul>
           </section>

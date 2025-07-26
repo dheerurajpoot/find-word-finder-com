@@ -81,7 +81,7 @@ export default function AdjectiveExamplesPage() {
             <ul className="list-disc ml-6 text-gray-700 text-base">
               <li>Adjectives describe nouns or pronouns.</li>
               <li>They answer questions like: What kind? How many? Which one?</li>
-              <li>Try using more than one adjective to add detail (e.g., "the big, blue ball").</li>
+              <li>Try using more than one adjective to add detail (e.g., &quot;the big, blue ball&quot;).</li>
             </ul>
           </section>
 

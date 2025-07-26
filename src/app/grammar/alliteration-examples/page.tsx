@@ -73,9 +73,9 @@ export default function AlliterationExamplesPage() {
           <section>
             <h2 className="text-2xl font-bold mb-2 text-purple-700">Famous Tongue Twisters & Brand Examples</h2>
             <ul className="list-disc ml-6 text-gray-700 text-base">
-              <li>"She sells seashells by the seashore."</li>
-              <li>"Peter Piper picked a peck of pickled peppers."</li>
-              <li>"How much wood would a woodchuck chuck if a woodchuck could chuck wood?"</li>
+              <li>&quot;She sells seashells by the seashore.&quot;</li>
+              <li>&quot;Peter Piper picked a peck of pickled peppers.&quot;</li>
+              <li>&quot;How much wood would a woodchuck chuck if a woodchuck could chuck wood?&quot;</li>
               <li>Best Buy, Coca Cola, Dunkin Donuts</li>
               <li>Lemon loaves, pepperoni pizza, cheddar cheese</li>
             </ul>

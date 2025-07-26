@@ -107,7 +107,7 @@ export default function PersonificationExamplesForKidsPage() {
           <header className="mb-6">
             <h1 className="text-4xl font-extrabold mb-3 text-green-700">Personification Examples for Kids</h1>
             <p className="text-lg text-gray-700 mb-2">
-              <b>What is personification?</b> Personification is when we give human qualities to things that aren't human—like animals, objects, or even ideas! Writers use personification to make stories and poems more lively and fun.
+              <b>What is personification?</b> Personification is when we give human qualities to things that aren&apos;t human—like animals, objects, or even ideas! Writers use personification to make stories and poems more lively and fun.
             </p>
             <p className="text-green-700 font-semibold">Personification helps us imagine the world in a more creative way.</p>
           </header>
@@ -154,7 +154,7 @@ export default function PersonificationExamplesForKidsPage() {
             <ul className="list-disc ml-6 text-gray-700 text-base">
               <li>Look for things, animals, or ideas doing something only people can do (like talking, smiling, or dancing).</li>
               <li>Ask: Is this object or animal acting like a person?</li>
-              <li>Personification often uses verbs like "whispered," "danced," or "called."</li>
+              <li>Personification often uses verbs like &quot;whispered,&quot; &quot;danced,&quot; or &quot;called.&quot;</li>
               <li>It makes writing more fun and helps you imagine things better!</li>
             </ul>
           </section>
@@ -162,7 +162,7 @@ export default function PersonificationExamplesForKidsPage() {
           {/* Conclusion Section */}
           <section>
             <h2 className="text-2xl font-bold mb-2 text-green-700">Conclusion</h2>
-            <p className="mb-2 text-gray-700">Try writing your own personification! Think of something that's not a person and imagine what it would do if it were alive. For example, "The pencil raced across the page."</p>
+            <p className="mb-2 text-gray-700">Try writing your own personification! Think of something that&apos;s not a person and imagine what it would do if it were alive. For example, &quot;The pencil raced across the page.&quot;</p>
           </section>
 
           {/* More Resources Section */}

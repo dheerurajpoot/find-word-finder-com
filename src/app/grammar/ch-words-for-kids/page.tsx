@@ -32,7 +32,7 @@ export default function ChWordsForKidsPage() {
           <header className="mb-6">
             <h1 className="text-3xl md:text-4xl font-extrabold mb-3 text-pink-700">CH Words for Kids</h1>
             <p className="text-lg text-gray-700 mb-2">
-              <b>What are CH words?</b> CH words are words that start with the letters "ch" and make the /ch/ sound, like in "chair" or "cheese." Learning CH words helps kids read and spell better!
+              <b>What are CH words?</b> CH words are words that start with the letters &quot;ch&quot; and make the /ch/ sound, like in &quot;chair&quot; or &quot;cheese.&quot; Learning CH words helps kids read and spell better!
             </p>
             <p className="text-pink-700 font-semibold">Practice CH words to become a reading champion!</p>
           </header>

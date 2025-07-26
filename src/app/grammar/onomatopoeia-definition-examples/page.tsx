@@ -63,7 +63,7 @@ export default function OnomatopoeiaDefinitionExamplesPage() {
             <ul className="list-disc ml-6 text-gray-700 text-base">
               <li>Listen for words that sound like the noise they describe.</li>
               <li>Onomatopoeia is common in comics, poems, and animal stories.</li>
-              <li>Words like "buzz," "meow," and "pop" are classic examples.</li>
+              <li>Words like &quot;buzz,&quot; &quot;meow,&quot; and &quot;pop&quot; are classic examples.</li>
               <li>Onomatopoeia makes writing more fun and helps readers imagine sounds.</li>
             </ul>
           </section>
