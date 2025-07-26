@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
 import { Grid3X3, Search, RotateCcw, CheckCircle, XCircle, AlertCircle } from "lucide-react"
 import React from "react"
+import Link from "next/link"
 
 interface WordleSuggestion {
   word: string
@@ -19,7 +20,7 @@ export default function WordleHelperPage() {
   const [correct, setCorrect] = useState(Array(wordLength).fill(""));
   const [misplaced, setMisplaced] = useState(Array(wordLength).fill(""));
   const [wrongLetters, setWrongLetters] = useState("")
-  const [wrongPositions, setWrongPositions] = useState(["", "", "", "", ""])
+  // const [wrongPositions, setWrongPositions] = useState(["", "", "", "", ""])
   const [suggestions, setSuggestions] = useState<WordleSuggestion[]>([])
   const [attempt, setAttempt] = useState(1)
 
@@ -1116,7 +1117,7 @@ export default function WordleHelperPage() {
     setCorrect(Array(wordLength).fill(""))
     setMisplaced(Array(wordLength).fill(""))
     setWrongLetters("")
-    setWrongPositions(["", "", "", "", ""])
+    // setWrongPositions(["", "", "", "", ""])
     setSuggestions([])
     setAttempt(1)
   }
@@ -1437,7 +1438,7 @@ export default function WordleHelperPage() {
           </section>
           <section>
             <h2 className="text-2xl font-bold mb-2">What is Wordle?</h2>
-            <p>Wordle is a daily word puzzle game where you guess a five-letter word in six tries. Each guess gives you color-coded feedback to help you solve the puzzle. It's fun, educational, and has become a global phenomenon!</p>
+            <p>Wordle is a daily word puzzle game where you guess a five-letter word in six tries. Each guess gives you color-coded feedback to help you solve the puzzle. It&apos;s fun, educational, and has become a global phenomenon!</p>
           </section>
           <section>
             <h2 className="text-2xl font-bold mb-2">How To Play Wordle</h2>
@@ -1499,36 +1500,36 @@ export default function WordleHelperPage() {
           <div className="bg-white rounded-xl shadow p-4">
             <div className="bg-green-400 text-white font-bold rounded-t-xl px-4 py-2 text-lg mb-4">Word Finder</div>
             <ul className="space-y-1 text-gray-800">
-              <li><a href="/word-finder" className="hover:underline">Word Finder</a></li>
-              <li><a href="/wordle-helper" className="hover:underline">Wordle Helper</a></li>
-              <li><a href="/words-with-friends-cheat" className="hover:underline">Words With Friends Cheat</a></li>
-              <li><a href="/crossword-popular-clues" className="hover:underline">Crossword Popular Clues</a>
+              <li><Link href="/word-finder" className="hover:underline">Word Finder</Link></li>
+              <li><Link href="/wordle-helper" className="hover:underline">Wordle Helper</Link></li>
+              <li><Link href="/words-with-friends-cheat" className="hover:underline">Words With Friends Cheat</Link></li>
+              <li><Link href="/crossword-popular-clues" className="hover:underline">Crossword Popular Clues</Link>
                 <ul className="ml-4 mt-1">
-                  <li><a href="/crossword-top-picks" className="text-sm hover:underline">Crossword Top Picks</a></li>
+                  <li><Link href="/crossword-top-picks" className="text-sm hover:underline">Crossword Top Picks</Link></li>
                 </ul>
               </li>
-              <li><a href="/anagram-solver" className="hover:underline">Anagram Solver</a></li>
-              <li><a href="/word-descrambler" className="hover:underline">Word Descrambler</a></li>
-              <li><a href="/scrabble-cheat" className="hover:underline">Scrabble Cheat</a></li>
-              <li><a href="/unscrambler" className="hover:underline">Unscrambler</a></li>
-              <li><a href="/word-scramble" className="hover:underline">Word Scramble</a></li>
-              <li><a href="/word-unscrambler" className="hover:underline">Word Unscrambler</a></li>
+              <li><Link href="/anagram-solver" className="hover:underline">Anagram Solver</Link></li>
+              <li><Link href="/word-descrambler" className="hover:underline">Word Descrambler</Link></li>
+              <li><Link href="/scrabble-cheat" className="hover:underline">Scrabble Cheat</Link></li>
+              <li><Link href="/unscrambler" className="hover:underline">Unscrambler</Link></li>
+              <li><Link href="/word-scramble" className="hover:underline">Word Scramble</Link></li>
+              <li><Link href="/word-unscrambler" className="hover:underline">Word Unscrambler</Link></li>
             </ul>
           </div>
           <div className="bg-white rounded-xl shadow p-4">
             <div className="bg-green-400 text-white font-bold rounded-t-xl px-4 py-2 text-lg mb-4">Dictionaries</div>
             <ul className="space-y-1 text-gray-800">
-              <li><a href="/spelling" className="hover:underline">Spelling</a></li>
-            <li><a href="/scrabble-dictionary" className="hover:underline">Scrabble Dictionary</a></li>
-              <li><a href="/words-with-friends-dictionary" className="hover:underline">Words With Friends Dictionary</a></li>
+              <li><Link href="/spelling" className="hover:underline">Spelling</Link></li>
+            <li><Link href="/scrabble-dictionary" className="hover:underline">Scrabble Dictionary</Link></li>
+              <li><Link href="/words-with-friends-dictionary" className="hover:underline">Words With Friends Dictionary</Link></li>
             </ul>
           </div>
           <div className="bg-white rounded-xl shadow p-4">
             <div className="bg-green-400 text-white font-bold rounded-t-xl px-4 py-2 text-lg mb-4">Lists of Words</div>
             <ul className="space-y-1 text-gray-800">
-              <li><a href="/words-ending-in" className="hover:underline">Words Ending In</a></li>
-              <li><a href="/words-with-letters" className="hover:underline">Words With Letters</a></li>
-              <li><a href="/words-start-with" className="hover:underline">Words Start With</a></li>
+              <li><Link href="/words-ending-in" className="hover:underline">Words Ending In</Link></li>
+              <li><Link href="/words-with-letters" className="hover:underline">Words With Letters</Link></li>
+              <li><Link href="/words-start-with" className="hover:underline">Words Start With</Link></li>
             </ul>
           </div>
         </aside>
