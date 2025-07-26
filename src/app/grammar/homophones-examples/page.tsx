@@ -77,7 +77,7 @@ export default function HomophonesExamplesPage() {
               </div>
               
               <div className="bg-purple-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-purple-800 mb-2">4. Its, It's</h3>
+                <h3 className="font-semibold text-purple-800 mb-2">4. Its, It&apos;s</h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700">
                   <li><strong>Its</strong> - shows possession (belonging to it)</li>
                   <li><strong>It&apos;s</strong> - contraction of &quot;it is&quot; or &quot;it has&quot;</li>

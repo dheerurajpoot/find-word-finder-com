@@ -120,19 +120,19 @@ export default function ExamplesOfRhymePage() {
               <h4 className="font-semibold text-yellow-800 mb-2">Examples:</h4>
               <div className="space-y-3">
                 <div className="bg-white p-3 rounded border-l-4 border-yellow-400">
-                  <p className="text-gray-800">"Once upon a <strong>midnight</strong> <strong>dreary</strong>"</p>
+                  <p className="text-gray-800">&quot;Once upon a <strong>midnight</strong> <strong>dreary</strong>&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-yellow-400">
-                  <p className="text-gray-800">"The <strong>rain</strong> in <strong>Spain</strong> falls mainly on the plain"</p>
+                  <p className="text-gray-800">&quot;The <strong>rain</strong> in <strong>Spain</strong> falls mainly on the plain&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-yellow-400">
-                  <p className="text-gray-800">"I <strong>hear</strong> the <strong>clear</strong> call of the wild"</p>
+                  <p className="text-gray-800">&quot;I <strong>hear</strong> the <strong>clear</strong> call of the wild&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-yellow-400">
-                  <p className="text-gray-800">"The <strong>light</strong> of the <strong>night</strong> was bright"</p>
+                  <p className="text-gray-800">&quot;The <strong>light</strong> of the <strong>night</strong> was bright&quot;</p>
                 </div>
                 <div className="bg-white p-3 rounded border-l-4 border-yellow-400">
-                  <p className="text-gray-800">"In the <strong>deep</strong> of <strong>sleep</strong>, I dream"</p>
+                  <p className="text-gray-800">&quot;In the <strong>deep</strong> of <strong>sleep</strong>, I dream&quot;</p>
                 </div>
               </div>
             </div>
