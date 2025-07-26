@@ -98,7 +98,7 @@ export default function WordleHelperPage() {
           wordleWords = allWords;
           console.log('Broader search added', allWords.length - wordleWords.length, 'more words');
         } catch (error) {
-          console.log('Broader search failed, using original results');
+          console.log('Broader search failed, using original results', error);
         }
       }
 
@@ -223,7 +223,7 @@ export default function WordleHelperPage() {
         testWords.forEach((word: string) => {
           console.log(`\nTesting word: ${word}`);
           let valid = true;
-          let reasons = [];
+          const reasons = [];
           
           for (let i = 0; i < wordLength; i++) {
             if (misplaced[i]) {
