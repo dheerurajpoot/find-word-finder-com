@@ -341,14 +341,14 @@ export default function GrammarRulesPage() {
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Choose the correct word:</h3>
                 <div className="space-y-4">
                   <div className="bg-white p-4 rounded-lg">
-                    <p className="mb-2">___ going to the store. (Your/You're)</p>
+                    <p className="mb-2">___ going to the store. (Your/You&apos;re)</p>
                     <details className="mt-2">
                       <summary className="cursor-pointer text-purple-600 font-semibold">Show Answer</summary>
-                      <p className="mt-2 text-gray-700">Answer: You're (contraction of "you are")</p>
+                      <p className="mt-2 text-gray-700">Answer: You&apos;re (contraction of &quot;you are&quot;)</p>
                     </details>
                   </div>
                   <div className="bg-white p-4 rounded-lg">
-                    <p className="mb-2">The cat wagged ___ tail. (its/it's)</p>
+                    <p className="mb-2">The cat wagged ___ tail. (its/it&apos;s)</p>
                     <details className="mt-2">
                       <summary className="cursor-pointer text-purple-600 font-semibold">Show Answer</summary>
                       <p className="mt-2 text-gray-700">Answer: its (possessive form)</p>

@@ -40,7 +40,7 @@ export default function Semicolons() {
                 <div className="border-l-4 border-yellow-500 pl-6">
                   <h3 className="text-2xl font-semibold text-yellow-700 mb-3">1. To Join Independent Clauses</h3>
                   <p className="text-yellow-600">Use a semicolon to join two closely related independent clauses that are not joined by a coordinating conjunction.</p>
-                  <p className="text-yellow-800 font-semibold mt-2">Example: I have a big test tomorrow; I can't go out tonight.</p>
+                  <p className="text-yellow-800 font-semibold mt-2">Example: I have a big test tomorrow; I can&apos;t go out tonight.</p>
                 </div>
                 <div className="border-l-4 border-orange-500 pl-6">
                   <h3 className="text-2xl font-semibold text-orange-700 mb-3">2. With Conjunctive Adverbs</h3>
@@ -127,7 +127,7 @@ export default function Semicolons() {
                       <p className="mb-2">I like pizza; and I like pasta.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-orange-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">Incorrect. Use a comma before "and" or remove "and" to use a semicolon.</p>
+                        <p className="mt-2 text-gray-700">Incorrect. Use a comma before &quot;and&quot; or remove &quot;and&quot; to use a semicolon.</p>
                       </details>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
@@ -141,7 +141,7 @@ export default function Semicolons() {
                       <p className="mb-2">We went to the store; because we needed milk.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-orange-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">Incorrect. Use a comma, not a semicolon, before "because."</p>
+                        <p className="mt-2 text-gray-700">Incorrect. Use a comma, not a semicolon, before &quot;because.&quot;</p>
                       </details>
                     </div>
                   </div>
