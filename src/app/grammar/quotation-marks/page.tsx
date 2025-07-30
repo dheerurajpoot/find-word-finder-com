@@ -178,7 +178,7 @@ export default function QuotationMarks() {
                       </details>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">___I can't wait for the weekend!___ exclaimed Lily.</p>
+                      <p className="mb-2">___I can&apos;t wait for the weekend!___ exclaimed Lily.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-purple-600 font-semibold">Show Answer</summary>
                         <p className="mt-2 text-gray-700">&quot;I can&apos;t wait for the weekend!&quot; exclaimed Lily.</p>
