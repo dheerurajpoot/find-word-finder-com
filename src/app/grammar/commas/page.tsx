@@ -113,10 +113,10 @@ export default function Commas() {
                       </details>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">She likes apples but she doesn't like oranges.</p>
+                      <p className="mb-2">She likes apples but she doesn&apos;t like oranges.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-lime-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">She likes apples, but she doesn't like oranges.</p>
+                        <p className="mt-2 text-gray-700">She likes apples, but she doesn&apos;t like oranges.</p>
                       </details>
                     </div>
                   </div>
@@ -234,7 +234,7 @@ export default function Commas() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2">Oxford Comma</h4>
-                    <p className="text-gray-600">The comma before "and" in a list of three or more items is called the Oxford comma. It is optional but recommended for clarity.</p>
+                    <p className="text-gray-600">The comma before &quot;and&quot; in a list of three or more items is called the Oxford comma. It is optional but recommended for clarity.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">

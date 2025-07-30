@@ -40,12 +40,12 @@ export default function QuotationMarks() {
                 <div className="border-l-4 border-pink-500 pl-6">
                   <h3 className="text-2xl font-semibold text-pink-700 mb-3">1. Direct Speech</h3>
                   <p className="text-pink-600">Use quotation marks to show the exact words spoken by a person.</p>
-                  <p className="text-pink-800 font-semibold mt-2">Example: She said, "I am going to the store."</p>
+                  <p className="text-pink-800 font-semibold mt-2">Example: She said, &quot;I am going to the store.&quot;</p>
                 </div>
                 <div className="border-l-4 border-fuchsia-500 pl-6">
                   <h3 className="text-2xl font-semibold text-fuchsia-700 mb-3">2. Quotations</h3>
                   <p className="text-fuchsia-600">Use quotation marks to show a direct quote from a book, article, or speech.</p>
-                  <p className="text-fuchsia-800 font-semibold mt-2">Example: The teacher said, "Reading is important."</p>
+                  <p className="text-fuchsia-800 font-semibold mt-2">Example: The teacher said, &quot;Reading is important.&quot;</p>
                 </div>
                 <div className="border-l-4 border-purple-500 pl-6">
                   <h3 className="text-2xl font-semibold text-purple-700 mb-3">3. Titles of Short Works</h3>
@@ -55,7 +55,7 @@ export default function QuotationMarks() {
                 <div className="border-l-4 border-pink-500 pl-6">
                   <h3 className="text-2xl font-semibold text-pink-700 mb-3">4. Highlighting Words</h3>
                   <p className="text-pink-600">Use quotation marks to highlight a word or phrase being discussed.</p>
-                  <p className="text-pink-800 font-semibold mt-2">Example: The word "courage" means bravery.</p>
+                  <p className="text-pink-800 font-semibold mt-2">Example: The word &quot;courage&quot; means bravery.</p>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function QuotationMarks() {
                   <h4 className="font-semibold text-gray-800 mb-4">Is the quotation mark usage correct?</h4>
                   <div className="space-y-4">
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">She said, "I am happy".</p>
+                      <p className="mb-2">She said, &quot;I am happy&quot;.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-fuchsia-600 font-semibold">Show Answer</summary>
                         <p className="mt-2 text-gray-700">Incorrect. The period should be inside the quotation marks: &quot;I am happy.&quot;</p>
@@ -143,7 +143,7 @@ export default function QuotationMarks() {
                       </details>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">The word "friendship" means a lot to me.</p>
+                      <p className="mb-2">The word &quot;friendship&quot; means a lot to me.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-fuchsia-600 font-semibold">Show Answer</summary>
                         <p className="mt-2 text-gray-700">Correct.</p>
@@ -206,14 +206,14 @@ export default function QuotationMarks() {
                       </details>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">Title: poem, "Twinkle, Twinkle, Little Star"</p>
+                      <p className="mb-2">Title: poem, &quot;Twinkle, Twinkle, Little Star&quot;</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-pink-600 font-semibold">Show Example</summary>
                         <p className="mt-2 text-gray-700">We read the poem &quot;Twinkle, Twinkle, Little Star.&quot;</p>
                       </details>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">Highlight: word "bravery"</p>
+                      <p className="mb-2">Highlight: word &quot;bravery&quot;</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-pink-600 font-semibold">Show Example</summary>
                         <p className="mt-2 text-gray-700">The word &quot;bravery&quot; means courage.</p>
