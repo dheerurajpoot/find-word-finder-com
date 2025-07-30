@@ -4,15 +4,15 @@ import Link from "next/link"
 
 export default function SightWordsSecondGrade() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-green-50 to-lime-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white py-16">
+      <div className="bg-gradient-to-r from-emerald-600 via-green-600 to-lime-600 text-white py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">
             Second Grade Sight Words
           </h1>
           <p className="text-xl text-center max-w-3xl mx-auto">
-            Essential sight words that second graders need to recognize instantly for reading fluency
+            Master essential words that appear frequently in second-grade reading
           </p>
         </div>
       </div>
@@ -27,165 +27,149 @@ export default function SightWordsSecondGrade() {
                 What Are Second Grade Sight Words?
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Second grade sight words are common words that children should recognize instantly without having to 
-                sound them out. These words appear frequently in texts and often don&apos;t follow regular spelling patterns. 
-                Learning these sight words helps second graders become fluent readers and improves their reading speed 
-                and comprehension.
+                Second grade sight words are common words that children should recognize instantly without 
+                having to sound them out. These words appear frequently in books and texts, making them 
+                essential for reading fluency and comprehension. By mastering these words, second graders 
+                can read more smoothly and focus on understanding the meaning of what they&apos;re reading.
               </p>
             </div>
 
-            {/* Second Grade Sight Words List */}
+            {/* Sight Word Categories */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Second Grade Sight Words List
+                Second Grade Sight Word Categories
               </h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="border-l-4 border-emerald-500 pl-4">
-                  <h3 className="text-xl font-semibold text-emerald-700 mb-3">Common Words</h3>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="font-medium">always</span>
-                      <span className="text-emerald-600 font-semibold">always</span>
+              <div className="space-y-6">
+                <div className="border-l-4 border-emerald-500 pl-6">
+                  <h3 className="text-2xl font-semibold text-emerald-700 mb-3">High-Frequency Words</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-emerald-50 p-4 rounded-lg">
+                      <p className="font-semibold text-emerald-800">always</p>
+                      <p className="text-emerald-600">Used in many sentences</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">around</span>
-                      <span className="text-emerald-600 font-semibold">around</span>
+                    <div className="bg-emerald-50 p-4 rounded-lg">
+                      <p className="font-semibold text-emerald-800">around</p>
+                      <p className="text-emerald-600">Preposition and adverb</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">because</span>
-                      <span className="text-emerald-600 font-semibold">because</span>
+                    <div className="bg-emerald-50 p-4 rounded-lg">
+                      <p className="font-semibold text-emerald-800">because</p>
+                      <p className="text-emerald-600">Connecting word</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">been</span>
-                      <span className="text-emerald-600 font-semibold">been</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">before</span>
-                      <span className="text-emerald-600 font-semibold">before</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">best</span>
-                      <span className="text-emerald-600 font-semibold">best</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">both</span>
-                      <span className="text-emerald-600 font-semibold">both</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">buy</span>
-                      <span className="text-emerald-600 font-semibold">buy</span>
+                    <div className="bg-emerald-50 p-4 rounded-lg">
+                      <p className="font-semibold text-emerald-800">before</p>
+                      <p className="text-emerald-600">Time and position word</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="border-l-4 border-teal-500 pl-4">
-                  <h3 className="text-xl font-semibold text-teal-700 mb-3">Action Words</h3>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="font-medium">call</span>
-                      <span className="text-teal-600 font-semibold">call</span>
+                <div className="border-l-4 border-green-500 pl-6">
+                  <h3 className="text-2xl font-semibold text-green-700 mb-3">Action Words</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <p className="font-semibold text-green-800">found</p>
+                      <p className="text-green-600">Past tense of find</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">cold</span>
-                      <span className="text-teal-600 font-semibold">cold</span>
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <p className="font-semibold text-green-800">gave</p>
+                      <p className="text-green-600">Past tense of give</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">does</span>
-                      <span className="text-teal-600 font-semibold">does</span>
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <p className="font-semibold text-green-800">goes</p>
+                      <p className="text-green-600">Present tense of go</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">don&apos;t</span>
-                      <span className="text-teal-600 font-semibold">don&apos;t</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">fast</span>
-                      <span className="text-teal-600 font-semibold">fast</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">first</span>
-                      <span className="text-teal-600 font-semibold">first</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">five</span>
-                      <span className="text-teal-600 font-semibold">five</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">found</span>
-                      <span className="text-teal-600 font-semibold">found</span>
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <p className="font-semibold text-green-800">know</p>
+                      <p className="text-green-600">To have information</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="border-l-4 border-cyan-500 pl-4">
-                  <h3 className="text-xl font-semibold text-cyan-700 mb-3">Descriptive Words</h3>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="font-medium">gave</span>
-                      <span className="text-cyan-600 font-semibold">gave</span>
+                <div className="border-l-4 border-lime-500 pl-6">
+                  <h3 className="text-2xl font-semibold text-lime-700 mb-3">Descriptive Words</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-lime-50 p-4 rounded-lg">
+                      <p className="font-semibold text-lime-800">many</p>
+                      <p className="text-lime-600">Large number</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">goes</span>
-                      <span className="text-cyan-600 font-semibold">goes</span>
+                    <div className="bg-lime-50 p-4 rounded-lg">
+                      <p className="font-semibold text-lime-800">new</p>
+                      <p className="text-lime-600">Not old</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">green</span>
-                      <span className="text-cyan-600 font-semibold">green</span>
+                    <div className="bg-lime-50 p-4 rounded-lg">
+                      <p className="font-semibold text-lime-800">old</p>
+                      <p className="text-lime-600">Not new</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">its</span>
-                      <span className="text-cyan-600 font-semibold">its</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">made</span>
-                      <span className="text-cyan-600 font-semibold">made</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">many</span>
-                      <span className="text-cyan-600 font-semibold">many</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">off</span>
-                      <span className="text-cyan-600 font-semibold">off</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="font-medium">or</span>
-                      <span className="text-cyan-600 font-semibold">or</span>
+                    <div className="bg-lime-50 p-4 rounded-lg">
+                      <p className="font-semibold text-lime-800">right</p>
+                      <p className="text-lime-600">Correct or direction</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Sight Words in Sentences */}
+            {/* Complete Sight Word List */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Sight Words in Sentences
+                Complete Second Grade Sight Word List
               </h2>
               
-              <div className="space-y-4">
-                <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-xl border-l-4 border-emerald-400">
-                  <p className="text-lg">
-                    <span className="font-semibold text-emerald-700">I always eat breakfast before school.</span>
-                  </p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="bg-gradient-to-r from-emerald-50 to-green-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-emerald-800 mb-3">Set 1</h4>
+                  <div className="space-y-1 text-sm">
+                    <p>always</p>
+                    <p>around</p>
+                    <p>because</p>
+                    <p>been</p>
+                    <p>before</p>
+                    <p>best</p>
+                    <p>both</p>
+                    <p>buy</p>
+                  </div>
                 </div>
                 
-                <div className="bg-gradient-to-r from-teal-50 to-cyan-50 p-6 rounded-xl border-l-4 border-teal-400">
-                  <p className="text-lg">
-                    <span className="font-semibold text-teal-700">The green car goes fast around the corner.</span>
-                  </p>
+                <div className="bg-gradient-to-r from-green-50 to-lime-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-green-800 mb-3">Set 2</h4>
+                  <div className="space-y-1 text-sm">
+                    <p>call</p>
+                    <p>cold</p>
+                    <p>does</p>
+                    <p>don&apos;t</p>
+                    <p>fast</p>
+                    <p>first</p>
+                    <p>found</p>
+                    <p>gave</p>
+                  </div>
                 </div>
                 
-                <div className="bg-gradient-to-r from-cyan-50 to-emerald-50 p-6 rounded-xl border-l-4 border-cyan-400">
-                  <p className="text-lg">
-                    <span className="font-semibold text-cyan-700">She found many books at the library.</span>
-                  </p>
+                <div className="bg-gradient-to-r from-lime-50 to-emerald-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-lime-800 mb-3">Set 3</h4>
+                  <div className="space-y-1 text-sm">
+                    <p>goes</p>
+                    <p>green</p>
+                    <p>its</p>
+                    <p>made</p>
+                    <p>many</p>
+                    <p>new</p>
+                    <p>off</p>
+                    <p>old</p>
+                  </div>
                 </div>
                 
-                <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-xl border-l-4 border-emerald-400">
-                  <p className="text-lg">
-                    <span className="font-semibold text-emerald-700">Both children like to play outside.</span>
-                  </p>
+                <div className="bg-gradient-to-r from-emerald-50 to-green-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-emerald-800 mb-3">Set 4</h4>
+                  <div className="space-y-1 text-sm">
+                    <p>pull</p>
+                    <p>read</p>
+                    <p>right</p>
+                    <p>sing</p>
+                    <p>sit</p>
+                    <p>sleep</p>
+                    <p>tell</p>
+                    <p>their</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -193,35 +177,35 @@ export default function SightWordsSecondGrade() {
             {/* Interactive Quiz 1 */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Interactive Quiz 1: Identify Sight Words
+                Interactive Quiz 1: Word Recognition
               </h2>
               
               <div className="space-y-6">
-                <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-xl">
-                  <h4 className="font-semibold text-gray-800 mb-4">Find the sight words in each sentence:</h4>
+                <div className="bg-gradient-to-r from-emerald-50 to-green-50 p-6 rounded-xl">
+                  <h4 className="font-semibold text-gray-800 mb-4">Find the sight word in each sentence:</h4>
                   
                   <div className="space-y-4">
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">I always eat breakfast before school.</p>
+                      <p className="mb-2">I always brush my teeth before bed.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-emerald-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">Answer: always, before</p>
+                        <p className="mt-2 text-gray-700">Answer: always</p>
                       </details>
                     </div>
                     
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">The green car goes fast around the corner.</p>
+                      <p className="mb-2">The cat goes around the house.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-emerald-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">Answer: green, goes, fast, around</p>
+                        <p className="mt-2 text-gray-700">Answer: goes, around</p>
                       </details>
                     </div>
                     
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">She found many books at the library.</p>
+                      <p className="mb-2">I found my book because it was on the table.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-emerald-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">Answer: found, many</p>
+                        <p className="mt-2 text-gray-700">Answer: found, because</p>
                       </details>
                     </div>
                   </div>
@@ -232,34 +216,34 @@ export default function SightWordsSecondGrade() {
             {/* Interactive Quiz 2 */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Interactive Quiz 2: Complete with Sight Words
+                Interactive Quiz 2: Fill in the Blanks
               </h2>
               
               <div className="space-y-6">
-                <div className="bg-gradient-to-r from-teal-50 to-cyan-50 p-6 rounded-xl">
+                <div className="bg-gradient-to-r from-green-50 to-lime-50 p-6 rounded-xl">
                   <h4 className="font-semibold text-gray-800 mb-4">Complete each sentence with a sight word:</h4>
                   
                   <div className="space-y-4">
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">I _____ eat breakfast before school. (every time)</p>
+                      <p className="mb-2">I _____ brush my teeth. (always/around)</p>
                       <details className="mt-2">
-                        <summary className="cursor-pointer text-teal-600 font-semibold">Show Answer</summary>
+                        <summary className="cursor-pointer text-green-600 font-semibold">Show Answer</summary>
                         <p className="mt-2 text-gray-700">Answer: always</p>
                       </details>
                     </div>
                     
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">The green car _____ fast around the corner. (moves)</p>
+                      <p className="mb-2">The dog _____ around the yard. (goes/gave)</p>
                       <details className="mt-2">
-                        <summary className="cursor-pointer text-teal-600 font-semibold">Show Answer</summary>
+                        <summary className="cursor-pointer text-green-600 font-semibold">Show Answer</summary>
                         <p className="mt-2 text-gray-700">Answer: goes</p>
                       </details>
                     </div>
                     
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">She _____ many books at the library. (discovered)</p>
+                      <p className="mb-2">I _____ my book on the shelf. (found/know)</p>
                       <details className="mt-2">
-                        <summary className="cursor-pointer text-teal-600 font-semibold">Show Answer</summary>
+                        <summary className="cursor-pointer text-green-600 font-semibold">Show Answer</summary>
                         <p className="mt-2 text-gray-700">Answer: found</p>
                       </details>
                     </div>
@@ -271,35 +255,35 @@ export default function SightWordsSecondGrade() {
             {/* Interactive Quiz 3 */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Interactive Quiz 3: Sight Word Categories
+                Interactive Quiz 3: Word Categories
               </h2>
               
               <div className="space-y-6">
-                <div className="bg-gradient-to-r from-cyan-50 to-emerald-50 p-6 rounded-xl">
-                  <h4 className="font-semibold text-gray-800 mb-4">Sort these sight words by category:</h4>
+                <div className="bg-gradient-to-r from-lime-50 to-emerald-50 p-6 rounded-xl">
+                  <h4 className="font-semibold text-gray-800 mb-4">Sort these words by category:</h4>
                   
                   <div className="space-y-4">
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">Common words: always, around, because, been, before, best, both, buy</p>
+                      <p className="mb-2">Action Words: goes, found, gave, know</p>
                       <details className="mt-2">
-                        <summary className="cursor-pointer text-cyan-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">Answer: All are common second grade sight words</p>
+                        <summary className="cursor-pointer text-lime-600 font-semibold">Show Answer</summary>
+                        <p className="mt-2 text-gray-700">Answer: All are action words (verbs)</p>
                       </details>
                     </div>
                     
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">Action words: call, cold, does, don&apos;t, fast, first, five, found</p>
+                      <p className="mb-2">Descriptive Words: many, new, old, right</p>
                       <details className="mt-2">
-                        <summary className="cursor-pointer text-cyan-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">Answer: All are action or descriptive words</p>
+                        <summary className="cursor-pointer text-lime-600 font-semibold">Show Answer</summary>
+                        <p className="mt-2 text-gray-700">Answer: All are descriptive words (adjectives)</p>
                       </details>
                     </div>
                     
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">Descriptive words: gave, goes, green, its, made, many, off, or</p>
+                      <p className="mb-2">High-Frequency: always, around, because, before</p>
                       <details className="mt-2">
-                        <summary className="cursor-pointer text-cyan-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">Answer: All are descriptive or connecting words</p>
+                        <summary className="cursor-pointer text-lime-600 font-semibold">Show Answer</summary>
+                        <p className="mt-2 text-gray-700">Answer: All are high-frequency words</p>
                       </details>
                     </div>
                   </div>
@@ -310,35 +294,35 @@ export default function SightWordsSecondGrade() {
             {/* Interactive Quiz 4 */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Interactive Quiz 4: Sight Word Recognition
+                Interactive Quiz 4: Sentence Building
               </h2>
               
               <div className="space-y-6">
-                <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-xl">
-                  <h4 className="font-semibold text-gray-800 mb-4">Which of these are second grade sight words?</h4>
+                <div className="bg-gradient-to-r from-emerald-50 to-green-50 p-6 rounded-xl">
+                  <h4 className="font-semibold text-gray-800 mb-4">Create sentences using these sight words:</h4>
                   
                   <div className="space-y-4">
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">1. always, around, because, been, before, best, both, buy</p>
+                      <p className="mb-2">Use: always</p>
                       <details className="mt-2">
-                        <summary className="cursor-pointer text-emerald-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">Answer: All are second grade sight words</p>
+                        <summary className="cursor-pointer text-emerald-600 font-semibold">Show Example</summary>
+                        <p className="mt-2 text-gray-700">Example: I always eat breakfast before school.</p>
                       </details>
                     </div>
                     
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">2. call, cold, does, don&apos;t, fast, first, five, found</p>
+                      <p className="mb-2">Use: found</p>
                       <details className="mt-2">
-                        <summary className="cursor-pointer text-emerald-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">Answer: All are second grade sight words</p>
+                        <summary className="cursor-pointer text-emerald-600 font-semibold">Show Example</summary>
+                        <p className="mt-2 text-gray-700">Example: I found my lost toy under the bed.</p>
                       </details>
                     </div>
                     
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">3. gave, goes, green, its, made, many, off, or</p>
+                      <p className="mb-2">Use: many</p>
                       <details className="mt-2">
-                        <summary className="cursor-pointer text-emerald-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">Answer: All are second grade sight words</p>
+                        <summary className="cursor-pointer text-emerald-600 font-semibold">Show Example</summary>
+                        <p className="mt-2 text-gray-700">Example: There are many books in the library.</p>
                       </details>
                     </div>
                   </div>
@@ -359,7 +343,7 @@ export default function SightWordsSecondGrade() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2">Practice Daily</h4>
-                    <p className="text-gray-600">Review sight words every day to build recognition speed.</p>
+                    <p className="text-gray-600">Review sight words for 10-15 minutes each day.</p>
                   </div>
                 </div>
                 
@@ -368,8 +352,8 @@ export default function SightWordsSecondGrade() {
                     2
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Use in Context</h4>
-                    <p className="text-gray-600">Read and write sentences using sight words.</p>
+                    <h4 className="font-semibold text-gray-800 mb-2">Use Flashcards</h4>
+                    <p className="text-gray-600">Create flashcards and practice reading them quickly.</p>
                   </div>
                 </div>
                 
@@ -378,8 +362,18 @@ export default function SightWordsSecondGrade() {
                     3
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Make it Fun</h4>
-                    <p className="text-gray-600">Use games and activities to practice sight words.</p>
+                    <h4 className="font-semibold text-gray-800 mb-2">Read Books</h4>
+                    <p className="text-gray-600">Point out sight words when reading together.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-emerald-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                    4
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Write Sentences</h4>
+                    <p className="text-gray-600">Use sight words in your own sentences.</p>
                   </div>
                 </div>
               </div>
@@ -394,17 +388,17 @@ export default function SightWordsSecondGrade() {
                 <Link href="/grammar/sight-words-first-grade" className="block text-emerald-600 hover:text-emerald-800 font-medium">
                   First Grade Sight Words
                 </Link>
-                <Link href="/grammar/reading-skills" className="block text-emerald-600 hover:text-emerald-800 font-medium">
-                  Reading Skills
+                <Link href="/grammar/sight-words-worksheets-1st-grade" className="block text-emerald-600 hover:text-emerald-800 font-medium">
+                  Sight Words Worksheets
+                </Link>
+                <Link href="/grammar/sight-words-practice-2nd-grade" className="block text-emerald-600 hover:text-emerald-800 font-medium">
+                  Sight Words Practice
                 </Link>
                 <Link href="/grammar/phonics" className="block text-emerald-600 hover:text-emerald-800 font-medium">
                   Phonics
                 </Link>
-                <Link href="/grammar/second-grade-worksheets" className="block text-emerald-600 hover:text-emerald-800 font-medium">
-                  Second Grade Worksheets
-                </Link>
-                <Link href="/grammar/early-literacy" className="block text-emerald-600 hover:text-emerald-800 font-medium">
-                  Early Literacy
+                <Link href="/grammar/reading-comprehension" className="block text-emerald-600 hover:text-emerald-800 font-medium">
+                  Reading Comprehension
                 </Link>
               </div>
             </div>
@@ -413,24 +407,24 @@ export default function SightWordsSecondGrade() {
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Quick Reference</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="font-medium">Total Words:</span>
-                  <span className="text-gray-600">100+ words</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="font-medium">Recognition:</span>
-                  <span className="text-gray-600">Instant</span>
-                </div>
-                <div className="flex justify-between">
                   <span className="font-medium">Grade Level:</span>
-                  <span className="text-gray-600">2nd Grade</span>
+                  <span className="text-gray-600">Second Grade</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-medium">Word Count:</span>
+                  <span className="text-gray-600">46 words</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-medium">Difficulty:</span>
+                  <span className="text-gray-600">Intermediate</span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-2xl p-6">
+            <div className="bg-gradient-to-r from-emerald-500 to-green-500 text-white rounded-2xl p-6">
               <h3 className="text-2xl font-bold mb-4">Pro Tip</h3>
               <p className="text-emerald-100">
-                Second grade sight words should be recognized instantly without sounding them out!
+                Sight words help build reading fluency and confidence!
               </p>
             </div>
           </div>

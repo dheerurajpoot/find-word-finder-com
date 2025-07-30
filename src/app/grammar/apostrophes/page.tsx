@@ -27,7 +27,7 @@ export default function Apostrophes() {
                 What Is an Apostrophe?
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                An apostrophe (') is a punctuation mark used to show possession, form contractions, and indicate omitted letters or numbers. It helps clarify meaning and avoid confusion in writing.
+                An apostrophe (&apos;) is a punctuation mark used to show possession, form contractions, and indicate omitted letters or numbers. It helps clarify meaning and avoid confusion in writing.
               </p>
             </div>
 
@@ -40,17 +40,17 @@ export default function Apostrophes() {
                 <div className="border-l-4 border-amber-500 pl-6">
                   <h3 className="text-2xl font-semibold text-amber-700 mb-3">1. Contractions</h3>
                   <p className="text-amber-600">Use apostrophes to show where letters have been omitted in contractions.</p>
-                  <p className="text-amber-800 font-semibold mt-2">Example: do not → don't, I am → I'm</p>
+                  <p className="text-amber-800 font-semibold mt-2">Example: do not → don&apos;t, I am → I&apos;m</p>
                 </div>
                 <div className="border-l-4 border-yellow-500 pl-6">
                   <h3 className="text-2xl font-semibold text-yellow-700 mb-3">2. Possession</h3>
                   <p className="text-yellow-600">Use apostrophes to show ownership or possession.</p>
-                  <p className="text-yellow-800 font-semibold mt-2">Example: the girl's book, the dogs' owner</p>
+                  <p className="text-yellow-800 font-semibold mt-2">Example: the girl&apos;s book, the dogs&apos; owner</p>
                 </div>
                 <div className="border-l-4 border-orange-500 pl-6">
                   <h3 className="text-2xl font-semibold text-orange-700 mb-3">3. Plurals of Letters and Numbers</h3>
                   <p className="text-orange-600">Use apostrophes to form plurals of single letters and sometimes numbers.</p>
-                  <p className="text-orange-800 font-semibold mt-2">Example: Mind your p's and q's. Find all the number 7's.</p>
+                  <p className="text-orange-800 font-semibold mt-2">Example: Mind your p&apos;s and q&apos;s. Find all the number 7&apos;s.</p>
                 </div>
               </div>
             </div>
@@ -63,17 +63,17 @@ export default function Apostrophes() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-6 rounded-xl border-l-4 border-amber-400">
                   <p className="text-lg">
-                    <span className="font-semibold text-amber-700">It's raining outside. (contraction for "it is")</span>
+                    <span className="font-semibold text-amber-700">It&apos;s raining outside. (contraction for &quot;it is&quot;)</span>
                   </p>
                 </div>
                 <div className="bg-gradient-to-r from-yellow-50 to-orange-50 p-6 rounded-xl border-l-4 border-yellow-400">
                   <p className="text-lg">
-                    <span className="font-semibold text-yellow-700">The cat's toy is under the table. (singular possession)</span>
+                    <span className="font-semibold text-yellow-700">The cat&apos;s toy is under the table. (singular possession)</span>
                   </p>
                 </div>
                 <div className="bg-gradient-to-r from-orange-50 to-amber-50 p-6 rounded-xl border-l-4 border-orange-400">
                   <p className="text-lg">
-                    <span className="font-semibold text-orange-700">The students' desks are clean. (plural possession)</span>
+                    <span className="font-semibold text-orange-700">The students&apos; desks are clean. (plural possession)</span>
                   </p>
                 </div>
               </div>
@@ -92,21 +92,21 @@ export default function Apostrophes() {
                       <p className="mb-2">Its raining outside.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-amber-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">It's raining outside.</p>
+                        <p className="mt-2 text-gray-700">It&apos;s raining outside.</p>
                       </details>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
                       <p className="mb-2">The dogs bone is missing.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-amber-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">The dog's bone is missing.</p>
+                        <p className="mt-2 text-gray-700">The dog&apos;s bone is missing.</p>
                       </details>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
                       <p className="mb-2">The teachers lounge is open.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-amber-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">The teachers' lounge is open.</p>
+                        <p className="mt-2 text-gray-700">The teachers&apos; lounge is open.</p>
                       </details>
                     </div>
                   </div>
@@ -127,21 +127,21 @@ export default function Apostrophes() {
                       <p className="mb-2">Its a beautiful day.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-yellow-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">Incorrect. Should be "It's a beautiful day."</p>
+                        <p className="mt-2 text-gray-700">Incorrect. Should be &quot;It&apos;s a beautiful day.&quot;</p>
                       </details>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">The boys' shoes are new.</p>
+                      <p className="mb-2">The boys&apos; shoes are new.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-yellow-600 font-semibold">Show Answer</summary>
                         <p className="mt-2 text-gray-700">Correct. Plural possession.</p>
                       </details>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">She can't find her keys.</p>
+                        <p className="mb-2">She can&apos;t find her keys.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-yellow-600 font-semibold">Show Answer</summary>
-                        <p className="mt-2 text-gray-700">Correct. Contraction for "cannot."</p>
+                        <p className="mt-2 text-gray-700">Correct. Contraction for &quot;cannot.&quot;</p>
                       </details>
                     </div>
                   </div>
@@ -159,14 +159,14 @@ export default function Apostrophes() {
                   <h4 className="font-semibold text-gray-800 mb-4">Is the apostrophe showing possession or plural?</h4>
                   <div className="space-y-4">
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">The cats' toys are everywhere.</p>
+                      <p className="mb-2">The cats&apos; toys are everywhere.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-orange-600 font-semibold">Show Answer</summary>
                         <p className="mt-2 text-gray-700">Possession (toys belong to multiple cats)</p>
                       </details>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">The cat's toy is missing.</p>
+                      <p className="mb-2">The cat&apos;s toy is missing.</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-orange-600 font-semibold">Show Answer</summary>
                         <p className="mt-2 text-gray-700">Possession (toy belongs to one cat)</p>
@@ -194,24 +194,24 @@ export default function Apostrophes() {
                   <h4 className="font-semibold text-gray-800 mb-4">Create sentences using apostrophes:</h4>
                   <div className="space-y-4">
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">Contraction: cannot → can't</p>
+                      <p className="mb-2">Contraction: cannot → can&apos;t</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-amber-600 font-semibold">Show Example</summary>
-                        <p className="mt-2 text-gray-700">She can't find her book.</p>
+                        <p className="mt-2 text-gray-700">She can&apos;t find her book.</p>
                       </details>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
                       <p className="mb-2">Possession: the dog of the boy</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-amber-600 font-semibold">Show Example</summary>
-                        <p className="mt-2 text-gray-700">The boy's dog is playful.</p>
+                        <p className="mt-2 text-gray-700">The boy&apos;s dog is playful.</p>
                       </details>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="mb-2">Plural of a letter: more than one "a"</p>
+                      <p className="mb-2">Plural of a letter: more than one &quot;a&quot;</p>
                       <details className="mt-2">
                         <summary className="cursor-pointer text-amber-600 font-semibold">Show Example</summary>
-                        <p className="mt-2 text-gray-700">There are two a's in "banana."</p>
+                        <p className="mt-2 text-gray-700">There are two a&apos;s in &quot;banana.&quot;</p>
                       </details>
                     </div>
                   </div>
@@ -230,8 +230,8 @@ export default function Apostrophes() {
                     1
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 mb-2">Its vs. It's</h4>
-                    <p className="text-gray-600">"Its" is possessive; "it's" is a contraction for "it is" or "it has."</p>
+                    <h4 className="font-semibold text-gray-800 mb-2">Its vs. It&apos;s</h4>
+                    <p className="text-gray-600">&quot;Its&quot; is possessive; &quot;it&apos;s&quot; is a contraction for &quot;it is&quot; or &quot;it has.&quot;</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -240,7 +240,7 @@ export default function Apostrophes() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2">Plural Possession</h4>
-                    <p className="text-gray-600">Add an apostrophe after the "s" for plural nouns: the girls' room.</p>
+                    <p className="text-gray-600">Add an apostrophe after the &quot;s&quot; for plural nouns: the girls&apos; room.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -283,7 +283,7 @@ export default function Apostrophes() {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="font-medium">Symbol:</span>
-                  <span className="text-gray-600">'</span>
+                  <span className="text-gray-600">&apos;</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="font-medium">Main Uses:</span>
