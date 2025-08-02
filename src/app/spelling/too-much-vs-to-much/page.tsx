@@ -21,7 +21,7 @@ export default function TooMuchVsToMuchPage() {
               <span className="text-3xl mr-3">❌</span>
               <h3 className="text-2xl font-bold text-red-800">Incorrect: To Much</h3>
             </div>
-            <p className="text-lg md:text-xl text-red-700">&quot;To much&quot; is a misspelling. The correct spelling is &quot;too much&quot; with two &quot;o&quot;s in &quot;too&quot;.</p>
+            <p className="text-lg md:text-xl text-red-700">&quot;To much&quot; is a misspelling. The correct spelling is &quot;too much&quot; with two &quot;o&quot;s in &quot;too.&quot;</p>
           </CardContent>
         </Card>
         <Card className="border-2 border-green-500 bg-green-50">
@@ -30,7 +30,7 @@ export default function TooMuchVsToMuchPage() {
               <span className="text-3xl mr-3">✅</span>
               <h3 className="text-2xl font-bold text-green-800">Correct: Too Much</h3>
             </div>
-            <p className="text-lg md:text-xl text-green-700">&quot;Too much&quot; is the correct spelling. It means an excessive amount or more than is needed.</p>
+            <p className="text-lg md:text-xl text-green-700">&quot;Too much&quot; is the correct spelling. It means an excessive amount.</p>
           </CardContent>
         </Card>
       </div>
@@ -40,13 +40,13 @@ export default function TooMuchVsToMuchPage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-green-900">Too Much (phrase):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">An excessive amount; more than is needed or desired.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">An excessive or more than adequate amount; more than is needed or desired.</p>
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
                   <li>• That&apos;s <strong>too much</strong> work for one person.</li>
-                  <li>• I ate <strong>too much</strong> at dinner.</li>
-                  <li>• The movie was <strong>too much</strong> for young children.</li>
+                  <li>• She spent <strong>too much</strong> money on clothes.</li>
+                  <li>• The noise was <strong>too much</strong> to bear.</li>
                 </ul>
               </div>
             </CardContent>
@@ -74,10 +74,10 @@ export default function TooMuchVsToMuchPage() {
               <h4 className="text-xl font-semibold mb-2 text-green-900">Too Much:</h4>
               <ul className="text-lg md:text-xl text-green-800 space-y-1">
                 <li>• Excessive</li>
-                <li>• Overmuch</li>
-                <li>• In excess</li>
+                <li>• Overwhelming</li>
                 <li>• More than enough</li>
                 <li>• Beyond what&apos;s needed</li>
+                <li>• Excessive amount</li>
               </ul>
             </CardContent>
           </Card>
@@ -96,10 +96,10 @@ export default function TooMuchVsToMuchPage() {
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
-            <li>• <strong>Too</strong> is spelled with two &quot;o&quot;s, not one.</li>
-            <li>• &quot;Too&quot; means also or excessively, while &quot;to&quot; is a preposition.</li>
+            <li>• <strong>Too much</strong> is spelled with two &quot;o&quot;s in &quot;too&quot;: too much.</li>
+            <li>• &quot;Too&quot; means excessive or also, while &quot;to&quot; is a preposition.</li>
             <li>• &quot;To much&quot; is never correct in any context.</li>
-            <li>• The word &quot;too&quot; comes from Old English &quot;tō&quot; meaning &quot;also.&quot;</li>
+            <li>• The phrase indicates an excessive or overwhelming amount.</li>
           </ul>
         </div>
       </div>
@@ -112,11 +112,11 @@ export default function TooMuchVsToMuchPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do I remember the correct spelling?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;too&quot; has two &quot;o&quot;s, just like &quot;also&quot; has two &quot;l&quot;s.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Remember &quot;too&quot; has two &quot;o&quot;s - think of it as &quot;too&quot; (excessive) + &quot;much.&quot;</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between &quot;to&quot; and &quot;too&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;To&quot; is a preposition, while &quot;too&quot; means also or excessively.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What&apos;s the difference between &quot;too&quot; and &quot;to&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Too&quot; means excessive or also, while &quot;to&quot; is a preposition indicating direction or purpose.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can &quot;too much&quot; be used in formal writing?</h3>
@@ -124,25 +124,25 @@ export default function TooMuchVsToMuchPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people misspell &quot;too much&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;to much&quot; often happens by omitting the second &quot;o&quot; in &quot;too.&quot;</p>
+            <p className="text-lg md:text-xl text-gray-700">A: The misspelling &quot;to much&quot; often happens by using &quot;to&quot; instead of &quot;too.&quot;</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common phrases using &quot;too much&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Examples include: too much trouble, too much information, too much to handle, and too much work.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Examples include: too much trouble, too much to handle, too much information, and too much work.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;too much&quot; always negative?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Usually, but it can also be used neutrally to describe quantity, like &quot;too much detail.&quot;</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Usually yes, &quot;too much&quot; indicates an excessive or overwhelming amount that is often problematic.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can &quot;too much&quot; be used as a noun?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, it can function as a noun phrase, as in &quot;That&apos;s too much for me to handle.&quot;</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;too much&quot; can function as a noun phrase meaning an excessive amount.</p>
           </div>
         </div>
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Too Much</strong> is the correct spelling with two &quot;o&quot;s in &quot;too.&quot; It means an excessive amount. The misspelling &quot;to much&quot; is never correct. Always use &quot;too much&quot; when referring to excess or more than needed.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Too much</strong> is the correct spelling with two &quot;o&quot;s in &quot;too&quot;: too much. It means an excessive or overwhelming amount. The misspelling &quot;to much&quot; is never correct. Always use &quot;too much&quot; when referring to an excessive quantity or degree.</p>
       </div>
     </div>
   )
