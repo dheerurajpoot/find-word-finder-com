@@ -76,7 +76,7 @@ export default function TooMuchVsToMuchEncodedPage() {
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="bg-blue-50 border-blue-200">
             <CardContent className="p-6">
-              <h3 className="text-2xl font-bold text-blue-900 mb-4">"Too" (Adverb)</h3>
+              <h3 className="text-2xl font-bold text-blue-900 mb-4">&quot;Too&quot; (Adverb)</h3>
               <ul className="text-blue-800 space-y-2">
                 <li>• Means &quot;excessively&quot;</li>
                 <li>• Also means &quot;also&quot;</li>
