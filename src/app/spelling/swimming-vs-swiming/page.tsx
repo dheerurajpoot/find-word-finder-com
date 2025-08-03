@@ -14,7 +14,7 @@ export default function SwimmingVsSwimingPage() {
         <p className="text-xl text-gray-600">Word Definitions & Spelling Guide</p>
       </div>
 
-      <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg mb-8 border-l-4 border-blue-500">
+      <div className="bg-gradient-to-r from-slate-50 to-gray-50 p-6 rounded-lg mb-8 border-l-4 border-slate-500">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Word Definitions & Spelling Rules</h2>
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Master the correct spelling between &quot;swimming&quot; and &quot;swiming&quot;. Learn word definitions, usage examples, and proper spelling patterns.</p>
       </div>
@@ -46,13 +46,13 @@ export default function SwimmingVsSwimingPage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-green-900">Swimming (noun/verb):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">The act of moving through water using arms and legs; a sport or recreational activity; the present participle of swim.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">The act of moving through water using arms and legs; a sport or recreational activity in water.</p>
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
                   <li>• She enjoys <strong>swimming</strong> in the pool.</li>
                   <li>• <strong>Swimming</strong> is great exercise.</li>
-                  <li>• The children are <strong>swimming</strong> in the lake.</li>
+                  <li>• The fish were <strong>swimming</strong> upstream.</li>
                 </ul>
               </div>
             </CardContent>
@@ -83,8 +83,8 @@ export default function SwimmingVsSwimingPage() {
                 <li>• Diving</li>
                 <li>• Floating</li>
                 <li>• Paddling</li>
-                <li>• Stroking</li>
-                <li>• Aquatics</li>
+                <li>• Splashing</li>
+                <li>• Wading</li>
               </ul>
             </CardContent>
           </Card>
@@ -100,14 +100,48 @@ export default function SwimmingVsSwimingPage() {
       </div>
 
       <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Memory Tricks & Tips</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <Card className="bg-yellow-50 border-yellow-300 text-center">
+            <CardContent className="p-6">
+              <div className="text-4xl mb-3">🔤</div>
+              <h3 className="text-xl font-bold text-yellow-900 mb-2">Double M Rule</h3>
+              <p className="text-yellow-800">&quot;Swimming&quot; has two &quot;m&quot;s like &quot;running&quot; and &quot;jumping&quot;</p>
+            </CardContent>
+          </Card>
+          <Card className="bg-blue-50 border-blue-300 text-center">
+            <CardContent className="p-6">
+              <div className="text-4xl mb-3">🧠</div>
+              <h3 className="text-xl font-bold text-blue-900 mb-2">Think Water</h3>
+              <p className="text-blue-800">&quot;Swimming&quot; = water, &quot;Swiming&quot; = wrong</p>
+            </CardContent>
+          </Card>
+          <Card className="bg-green-50 border-green-300 text-center">
+            <CardContent className="p-6">
+              <div className="text-4xl mb-3">✍️</div>
+              <h3 className="text-xl font-bold text-green-900 mb-2">Write It Out</h3>
+              <p className="text-green-800">Practice writing &quot;swimming&quot; to build muscle memory</p>
+            </CardContent>
+          </Card>
+          <Card className="bg-purple-50 border-purple-300 text-center">
+            <CardContent className="p-6">
+              <div className="text-4xl mb-3">🔍</div>
+              <h3 className="text-xl font-bold text-purple-900 mb-2">Proofread</h3>
+              <p className="text-purple-800">Always double-check your spelling before submitting</p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+
+      <div className="mb-8">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Spelling Rules:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
             <li>• <strong>Swimming</strong> is spelled with double &quot;m&quot;: s-w-i-m-m-i-n-g.</li>
-            <li>• The word follows the rule: double the final consonant before adding &quot;ing&quot;.</li>
+            <li>• The word comes from Old English &quot;swimman&quot; meaning &quot;to swim.&quot;</li>
             <li>• &quot;Swiming&quot; is not a recognized English word.</li>
-            <li>• Remember: swim + m + ing = swimming (double the &quot;m&quot;).</li>
+            <li>• Remember: swimming has two &quot;m&quot;s like &quot;running&quot; and &quot;jumping.&quot;</li>
           </ul>
         </div>
       </div>
@@ -117,15 +151,15 @@ export default function SwimmingVsSwimingPage() {
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are the grammar rules for &quot;swimming&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swimming&quot; is the present participle of &quot;swim&quot; and can be used as a gerund (noun) or in progressive verb forms.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swimming&quot; can be used as a gerund (swimming is fun), present participle (she is swimming), or noun (competitive swimming) and follows standard English grammar patterns.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How does &quot;swimming&quot; differ from &quot;swim&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swim&quot; is the base verb form, while &quot;swimming&quot; is the present participle used for ongoing actions or as a noun.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How does &quot;swimming&quot; differ from &quot;diving&quot;?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swimming&quot; involves moving through water using arms and legs, while &quot;diving&quot; involves jumping or plunging into water from above.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What part of speech is &quot;swimming&quot; in sentences?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swimming&quot; can be used as a gerund (noun), present participle (verb), or adjective describing activities related to water movement.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swimming&quot; can be used as a gerund (swimming is exercise), present participle (she is swimming), or noun (swimming pool) depending on context.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can &quot;swimming&quot; be used in formal writing?</h3>
@@ -133,15 +167,15 @@ export default function SwimmingVsSwimingPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are the origins of the word &quot;swimming&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swimming&quot; comes from Old English &quot;swimman&quot; meaning &quot;to swim&quot; and follows standard English verb conjugation patterns.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swimming&quot; comes from Old English &quot;swimman&quot; meaning &quot;to swim&quot; and is related to German &quot;schwimmen&quot; and Dutch &quot;zwemmen.&quot;</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do you use &quot;swimming&quot; in different sentence structures?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swimming&quot; can be used as a gerund (&quot;Swimming is fun&quot;), present participle (&quot;I am swimming&quot;), or adjective (&quot;swimming pool&quot;).</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swimming&quot; can be used as a gerund (&quot;swimming is fun&quot;), present participle (&quot;she is swimming&quot;), or noun (&quot;swimming pool&quot;).</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are common collocations with &quot;swimming&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Common collocations include: swimming pool, swimming lessons, swimming competition, swimming stroke, swimming costume, and swimming goggles.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Common collocations include: swimming pool, swimming lessons, swimming competition, swimming costume, swimming goggles, swimming technique, and swimming stroke.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do you teach children the difference between &quot;swimming&quot; and &quot;swiming&quot;?</h3>
@@ -149,38 +183,38 @@ export default function SwimmingVsSwimingPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;swimming&quot; used in sports contexts?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;swimming&quot; is very common in sports contexts, Olympic events, and recreational activities involving water movement.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;swimming&quot; is very common in sports contexts, especially in competitive swimming, Olympic events, and recreational water activities.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are the different meanings of &quot;swimming&quot; in various contexts?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swimming&quot; can mean physical activity (swimming laps), sport (competitive swimming), recreation (swimming for fun), or exercise (swimming workout).</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swimming&quot; can mean water movement (swimming in the pool), sport activity (competitive swimming), or recreational activity (swimming for fun).</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do you remember the correct spelling of &quot;swimming&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of &quot;swimming&quot; as following the rule: double the final consonant before adding &quot;ing.&quot; Other examples: run → running, hop → hopping.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of &quot;swimming&quot; as having two &quot;m&quot;s like other gerund forms: running, jumping, swimming. The double &quot;m&quot; is consistent.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common misspellings of &quot;swimming&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Common misspellings include: swiming, swiming, swiming, swiming, and swiming. The correct spelling always has double &quot;m.&quot;</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Common misspellings include: swiming, swimming, swimming, swimming, and swimming. The correct spelling always has two &quot;m&quot;s.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How is &quot;swimming&quot; used in fitness and health contexts?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: In fitness and health contexts, &quot;swimming&quot; refers to a low-impact cardiovascular exercise that works multiple muscle groups.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How is &quot;swimming&quot; used in fitness contexts?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: In fitness contexts, &quot;swimming&quot; describes a low-impact cardiovascular exercise that works multiple muscle groups and improves endurance.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What is the difference between swimming and floating?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swimming&quot; involves active movement through water using arms and legs, while &quot;floating&quot; means staying on the water&apos;s surface without active movement.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swimming&quot; involves active movement through water using arms and legs, while &quot;floating&quot; involves staying on the water&apos;s surface without active movement.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell &quot;swimming&quot; with single &quot;m&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: People often forget to double the &quot;m&quot; because they may not be familiar with the rule that final consonants are doubled before adding &quot;ing.&quot;</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell &quot;swimming&quot; with one &quot;m&quot; instead of two?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: People often confuse single and double &quot;m&quot; because they may not pronounce the double &quot;m&quot; clearly, but &quot;swimming&quot; specifically has two &quot;m&quot;s.</p>
           </div>
         </div>
       </div>
 
-      <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
-        <h2 className="text-2xl font-bold mb-4 text-blue-900">Word Definitions Summary</h2>
-        <p className="text-lg md:text-xl text-blue-800 leading-relaxed">Word Definition Rule: <strong>Swimming</strong> is the correct spelling with double &quot;m&quot;: s-w-i-m-m-i-n-g. &quot;Swimming&quot; is the present participle of &quot;swim&quot; meaning the act of moving through water using arms and legs, or a sport and recreational activity. The incorrect spelling &quot;swiming&quot; is not a recognized English word and should never be used. Always use &quot;swimming&quot; when referring to water movement, aquatic sports, or exercise activities.</p>
+      <div className="bg-slate-50 p-6 rounded-lg border-l-4 border-slate-500">
+        <h2 className="text-2xl font-bold mb-4 text-slate-900">Word Definitions Summary</h2>
+        <p className="text-lg md:text-xl text-slate-800 leading-relaxed">Word Definition Rule: <strong>Swimming</strong> is the correct spelling with double &quot;m&quot;: s-w-i-m-m-i-n-g. &quot;Swimming&quot; is a gerund, present participle, and noun meaning the act of moving through water using arms and legs, or a sport or recreational activity in water. The incorrect spelling &quot;swiming&quot; is not a recognized English word and should never be used. Always use &quot;swimming&quot; when referring to water movement, aquatic sports, or recreational water activities.</p>
       </div>
     </div>
   )

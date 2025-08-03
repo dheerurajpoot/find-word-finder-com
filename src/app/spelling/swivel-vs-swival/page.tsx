@@ -14,7 +14,7 @@ export default function SwivelVsSwivalPage() {
         <p className="text-xl text-gray-600">Word Definitions & Spelling Guide</p>
       </div>
 
-      <div className="bg-gradient-to-r from-teal-50 to-cyan-50 p-6 rounded-lg mb-8 border-l-4 border-teal-500">
+      <div className="bg-gradient-to-r from-slate-50 to-gray-50 p-6 rounded-lg mb-8 border-l-4 border-slate-500">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Word Definitions & Spelling Rules</h2>
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed">Master the correct spelling between &quot;swivel&quot; and &quot;swival&quot;. Learn word definitions, usage examples, and proper spelling patterns.</p>
       </div>
@@ -46,13 +46,13 @@ export default function SwivelVsSwivalPage() {
           <Card className="bg-white shadow-md border">
             <CardContent className="p-6">
               <h3 className="text-xl font-semibold mb-2 text-green-900">Swivel (verb/noun):</h3>
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">To turn or rotate around a central point; a device that allows rotation around a central axis.</p>
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed mb-2">To turn or rotate on a central point; a device that allows rotation or turning movement.</p>
               <div className="bg-green-50 p-4 rounded-lg">
                 <h4 className="text-lg font-semibold mb-2 text-green-900">Examples:</h4>
                 <ul className="text-lg md:text-xl text-green-800 space-y-2">
                   <li>• The chair can <strong>swivel</strong> 360 degrees.</li>
                   <li>• He <strong>swiveled</strong> around to face the door.</li>
-                  <li>• The <strong>swivel</strong> mechanism allows smooth rotation.</li>
+                  <li>• The camera mount has a <strong>swivel</strong> joint.</li>
                 </ul>
               </div>
             </CardContent>
@@ -83,8 +83,8 @@ export default function SwivelVsSwivalPage() {
                 <li>• Rotate</li>
                 <li>• Turn</li>
                 <li>• Pivot</li>
-                <li>• Spin</li>
                 <li>• Revolve</li>
+                <li>• Spin</li>
               </ul>
             </CardContent>
           </Card>
@@ -100,12 +100,46 @@ export default function SwivelVsSwivalPage() {
       </div>
 
       <div className="mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-gray-900">Memory Tricks & Tips</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <Card className="bg-yellow-50 border-yellow-300 text-center">
+            <CardContent className="p-6">
+              <div className="text-4xl mb-3">🔤</div>
+              <h3 className="text-xl font-bold text-yellow-900 mb-2">EL Rule</h3>
+              <p className="text-yellow-800">&quot;Swivel&quot; ends with &quot;el&quot; like &quot;level&quot; and &quot;travel&quot;</p>
+            </CardContent>
+          </Card>
+          <Card className="bg-blue-50 border-blue-300 text-center">
+            <CardContent className="p-6">
+              <div className="text-4xl mb-3">🧠</div>
+              <h3 className="text-xl font-bold text-blue-900 mb-2">Think Turn</h3>
+              <p className="text-blue-800">&quot;Swivel&quot; = turn, &quot;Swival&quot; = wrong</p>
+            </CardContent>
+          </Card>
+          <Card className="bg-green-50 border-green-300 text-center">
+            <CardContent className="p-6">
+              <div className="text-4xl mb-3">✍️</div>
+              <h3 className="text-xl font-bold text-green-900 mb-2">Write It Out</h3>
+              <p className="text-green-800">Practice writing &quot;swivel&quot; to build muscle memory</p>
+            </CardContent>
+          </Card>
+          <Card className="bg-purple-50 border-purple-300 text-center">
+            <CardContent className="p-6">
+              <div className="text-4xl mb-3">🔍</div>
+              <h3 className="text-xl font-bold text-purple-900 mb-2">Proofread</h3>
+              <p className="text-purple-800">Always double-check your spelling before submitting</p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+
+      <div className="mb-8">
         <h2 className="text-3xl font-bold mb-6 text-gray-900">Notes</h2>
         <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
           <h3 className="text-xl font-semibold mb-4 text-yellow-900">Spelling Rules:</h3>
           <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
             <li>• <strong>Swivel</strong> is spelled with &quot;el&quot;: s-w-i-v-e-l.</li>
-            <li>• The word comes from Middle English &quot;swivelen&quot; meaning &quot;to turn.&quot;</li>
+            <li>• The word comes from Middle English &quot;swivelen&quot; meaning &quot;to swing.&quot;</li>
             <li>• &quot;Swival&quot; is not a recognized English word.</li>
             <li>• Remember: swivel ends with &quot;el&quot; like &quot;level&quot; and &quot;travel.&quot;</li>
           </ul>
@@ -117,15 +151,15 @@ export default function SwivelVsSwivalPage() {
         <div className="space-y-6">
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are the grammar rules for &quot;swivel&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; can be used as both a verb (to turn around) and a noun (a rotating device). It follows standard English grammar patterns.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; can be used as a verb (to swivel) or a noun (a swivel) and follows standard English grammar patterns for both parts of speech.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How does &quot;swivel&quot; differ from &quot;rotate&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; specifically refers to turning around a central point, while &quot;rotate&quot; is a broader term for any circular movement.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; typically implies turning on a central point or axis, while &quot;rotate&quot; can refer to any circular movement around a center.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What part of speech is &quot;swivel&quot; in sentences?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; can be used as a verb (to turn around) or a noun (a rotating device or mechanism).</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; can be used as a verb (swivel the chair) or a noun (the swivel joint) depending on context.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Can &quot;swivel&quot; be used in formal writing?</h3>
@@ -133,15 +167,15 @@ export default function SwivelVsSwivalPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are the origins of the word &quot;swivel&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; comes from Middle English &quot;swivelen&quot; meaning &quot;to turn&quot; and has Germanic roots related to turning or twisting.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; comes from Middle English &quot;swivelen&quot; meaning &quot;to swing&quot; and is related to Old English &quot;swifan&quot; meaning &quot;to move quickly.&quot;</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do you use &quot;swivel&quot; in different sentence structures?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; can be used as a verb (&quot;The chair swivels&quot;), noun (&quot;The swivel is broken&quot;), or in compound forms (&quot;swivel chair&quot;).</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; can be used as a transitive verb (&quot;swivel the chair&quot;), intransitive verb (&quot;the chair swivels&quot;), or noun (&quot;the swivel mechanism&quot;).</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are common collocations with &quot;swivel&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Common collocations include: swivel chair, swivel head, swivel mechanism, swivel mount, swivel base, and swivel joint.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Common collocations include: swivel chair, swivel joint, swivel mount, swivel mechanism, swivel base, swivel head, and swivel action.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do you teach children the difference between &quot;swivel&quot; and &quot;swival&quot;?</h3>
@@ -149,38 +183,38 @@ export default function SwivelVsSwivalPage() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Is &quot;swivel&quot; used in technical contexts?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;swivel&quot; is very common in technical contexts, engineering, and mechanical descriptions to describe rotating mechanisms.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Yes, &quot;swivel&quot; is very common in technical contexts, especially in engineering, mechanics, and furniture design when describing rotational movement.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are the different meanings of &quot;swivel&quot; in various contexts?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; can mean mechanical rotation (swivel joint), physical turning (swivel head), or device movement (swivel chair).</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; can mean rotational movement (swivel chair), turning action (swivel around), or mechanical joint (swivel mount).</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How do you remember the correct spelling of &quot;swivel&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Think of &quot;swivel&quot; as ending with &quot;el&quot; like other words: level, travel, swivel. The &quot;el&quot; ending is common in English words.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Think of &quot;swivel&quot; as ending with &quot;el&quot; like other words: level, travel, swivel. The &quot;el&quot; ending is consistent.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What are some common misspellings of &quot;swivel&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: Common misspellings include: swival, swivle, swivell, swivle, and swivell. The correct spelling always ends with &quot;el.&quot;</p>
+            <p className="text-lg md:text-xl text-gray-700">A: Common misspellings include: swival, swivel, swivel, swivel, and swivel. The correct spelling always ends with &quot;el.&quot;</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
-            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How is &quot;swivel&quot; used in furniture and design?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: In furniture and design, &quot;swivel&quot; describes chairs, stools, and other items that can rotate around a central axis for flexibility.</p>
+            <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: How is &quot;swivel&quot; used in furniture contexts?</h3>
+            <p className="text-lg md:text-xl text-gray-700">A: In furniture contexts, &quot;swivel&quot; describes chairs, stools, or bases that can rotate 360 degrees, allowing users to turn without moving the furniture.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: What is the difference between swivel and pivot?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; refers to smooth rotation around a central point, while &quot;pivot&quot; refers to turning on a fixed point or axis.</p>
+            <p className="text-lg md:text-xl text-gray-700">A: &quot;Swivel&quot; typically implies smooth rotational movement, while &quot;pivot&quot; suggests turning on a central point, often with more limited range of motion.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border">
             <h3 className="text-xl font-semibold mb-3 text-gray-900">Q: Why do people often misspell &quot;swivel&quot; with &quot;al&quot; instead of &quot;el&quot;?</h3>
-            <p className="text-lg md:text-xl text-gray-700">A: People often confuse &quot;al&quot; and &quot;el&quot; because they sound similar, but &quot;swivel&quot; specifically ends with &quot;el&quot; like &quot;level.&quot;</p>
+            <p className="text-lg md:text-xl text-gray-700">A: People often confuse &quot;al&quot; and &quot;el&quot; because they may not pronounce the &quot;e&quot; clearly, but &quot;swivel&quot; specifically ends with &quot;el.&quot;</p>
           </div>
         </div>
       </div>
 
-      <div className="bg-teal-50 p-6 rounded-lg border-l-4 border-teal-500">
-        <h2 className="text-2xl font-bold mb-4 text-teal-900">Word Definitions Summary</h2>
-        <p className="text-lg md:text-xl text-teal-800 leading-relaxed">Word Definition Rule: <strong>Swivel</strong> is the correct spelling with &quot;el&quot;: s-w-i-v-e-l. &quot;Swivel&quot; is a word of Middle English origin meaning to turn or rotate around a central point, or a device that allows such rotation. The incorrect spelling &quot;swival&quot; is not a recognized English word and should never be used. Always use &quot;swivel&quot; when referring to rotation, turning mechanisms, or rotating devices.</p>
+      <div className="bg-slate-50 p-6 rounded-lg border-l-4 border-slate-500">
+        <h2 className="text-2xl font-bold mb-4 text-slate-900">Word Definitions Summary</h2>
+        <p className="text-lg md:text-xl text-slate-800 leading-relaxed">Word Definition Rule: <strong>Swivel</strong> is the correct spelling with &quot;el&quot;: s-w-i-v-e-l. &quot;Swivel&quot; is a verb and noun meaning to turn or rotate on a central point, or a device that allows rotation or turning movement. The incorrect spelling &quot;swival&quot; is not a recognized English word and should never be used. Always use &quot;swivel&quot; when referring to rotational movement, turning actions, or mechanical joints that allow circular motion.</p>
       </div>
     </div>
   )

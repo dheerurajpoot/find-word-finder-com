@@ -2,16 +2,16 @@ import { Metadata } from 'next'
 import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: 'Swallow vs Swollow - Correct Spelling & Word Definitions | Word Finder',
-  description: 'Learn the correct spelling: &quot;swallow&quot; vs &quot;swollow&quot;. Understand word definitions, usage examples, and avoid common spelling mistakes.',
+  title: 'Swallow vs Swalow - Correct Spelling & Word Definitions | Word Finder',
+  description: 'Learn the correct spelling: &quot;swallow&quot; vs &quot;swalow&quot;. Understand word definitions, usage examples, and avoid common spelling mistakes.',
 }
 
-export default function SwallowVsSwollowPage() {
+export default function SwallowVsSwalowPage() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-5xl">
       <div className="text-center mb-10">
         <h1 className="text-6xl font-black mb-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-          Swallow vs Swollow
+          Swallow vs Swalow
         </h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
           The Ultimate Spelling Guide: Understanding the Difference Between Correct and Incorrect Usage
@@ -28,7 +28,7 @@ export default function SwallowVsSwollowPage() {
             <span className="text-2xl ml-3">✅</span>
           </div>
           <p className="text-lg text-gray-700 mt-4">
-            &quot;Swollow&quot; is always incorrect - remember the &quot;a&quot; in &quot;swallow&quot;!
+            &quot;Swalow&quot; is always incorrect - remember the double &quot;l&quot; in &quot;swallow&quot;!
           </p>
         </div>
       </div>
@@ -41,12 +41,12 @@ export default function SwallowVsSwollowPage() {
               <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">✗</span>
               </div>
-              <h3 className="text-3xl font-bold text-red-800 mb-4">Swollow</h3>
+              <h3 className="text-3xl font-bold text-red-800 mb-4">Swalow</h3>
               <div className="bg-white p-4 rounded-lg mb-4">
                 <p className="text-xl text-red-700 font-semibold">❌ INCORRECT</p>
               </div>
               <p className="text-lg text-red-700 leading-relaxed">
-                This spelling is never acceptable in English. It&apos;s a common mistake that should be avoided.
+                This spelling is never acceptable in English. It&apos;s missing the second &quot;l&quot;.
               </p>
             </div>
           </CardContent>
@@ -87,24 +87,24 @@ export default function SwallowVsSwollowPage() {
           </Card>
           <Card className="bg-orange-50 border-orange-200">
             <CardContent className="p-6">
-              <h3 className="text-2xl font-bold text-orange-900 mb-4">&quot;A&quot; (Vowel)</h3>
+              <h3 className="text-2xl font-bold text-orange-900 mb-4">&quot;All&quot; (Middle)</h3>
               <ul className="text-orange-800 space-y-2">
-                <li>• Short &quot;a&quot; sound</li>
+                <li>• Double &quot;l&quot;</li>
                 <li>• Like &quot;wall&quot;</li>
                 <li>• Common pattern</li>
-                <li>• Not &quot;o&quot;</li>
-                </ul>
+                <li>• Not single &quot;l&quot;</li>
+              </ul>
             </CardContent>
           </Card>
           <Card className="bg-purple-50 border-purple-200">
             <CardContent className="p-6">
-              <h3 className="text-2xl font-bold text-purple-900 mb-4">&quot;Low&quot; (Suffix)</h3>
+              <h3 className="text-2xl font-bold text-purple-900 mb-4">&quot;Ow&quot; (Ending)</h3>
               <ul className="text-purple-800 space-y-2">
                 <li>• Ends the word</li>
                 <li>• Like &quot;follow&quot;</li>
                 <li>• Common ending</li>
                 <li>• Easy to spell</li>
-                </ul>
+              </ul>
             </CardContent>
           </Card>
         </div>
@@ -135,19 +135,19 @@ export default function SwallowVsSwollowPage() {
             <h3 className="text-2xl font-bold text-red-800 mb-4">❌ Common Mistakes</h3>
             <div className="space-y-4">
               <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;Please <strong>swollow</strong> your medicine&quot; ❌</p>
+                <p className="text-lg text-red-800">&quot;Please <strong>swalow</strong> your medicine&quot; ❌</p>
                 <p className="text-sm text-red-600 mt-1">Should be: &quot;swallow&quot;</p>
               </div>
               <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;The bird <strong>swollowed</strong> the worm&quot; ❌</p>
+                <p className="text-lg text-red-800">&quot;The bird <strong>swalowed</strong> the worm&quot; ❌</p>
                 <p className="text-sm text-red-600 mt-1">Should be: &quot;swallowed&quot;</p>
               </div>
               <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;I <strong>swollow</strong> my pride&quot; ❌</p>
+                <p className="text-lg text-red-800">&quot;I <strong>swalow</strong> my pride&quot; ❌</p>
                 <p className="text-sm text-red-600 mt-1">Should be: &quot;swallow&quot;</p>
               </div>
               <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;She <strong>swollowed</strong> hard&quot; ❌</p>
+                <p className="text-lg text-red-800">&quot;She <strong>swalowed</strong> hard&quot; ❌</p>
                 <p className="text-sm text-red-600 mt-1">Should be: &quot;swallowed&quot;</p>
               </div>
             </div>
@@ -162,15 +162,15 @@ export default function SwallowVsSwollowPage() {
           <Card className="bg-yellow-50 border-yellow-300 text-center">
             <CardContent className="p-6">
               <div className="text-4xl mb-3">🔤</div>
-              <h3 className="text-xl font-bold text-yellow-900 mb-2">A Rule</h3>
-              <p className="text-yellow-800">&quot;Swallow&quot; has &quot;a&quot; like &quot;wall&quot; and &quot;ball&quot;</p>
+              <h3 className="text-xl font-bold text-yellow-900 mb-2">LL Rule</h3>
+              <p className="text-yellow-800">&quot;Swallow&quot; has double &quot;l&quot; like &quot;wall&quot;</p>
             </CardContent>
           </Card>
           <Card className="bg-blue-50 border-blue-300 text-center">
             <CardContent className="p-6">
               <div className="text-4xl mb-3">🧠</div>
-              <h3 className="text-xl font-bold text-blue-900 mb-2">Think Food</h3>
-              <p className="text-blue-800">&quot;Swallow&quot; = eat, &quot;Swollow&quot; = wrong</p>
+              <h3 className="text-xl font-bold text-blue-900 mb-2">Think Double</h3>
+              <p className="text-blue-800">&quot;Swallow&quot; = two L&apos;s, &quot;Swalow&quot; = wrong</p>
             </CardContent>
           </Card>
           <Card className="bg-green-50 border-green-300 text-center">
@@ -215,7 +215,7 @@ export default function SwallowVsSwollowPage() {
                 <li>• <strong>Past Participle:</strong> &quot;I have swallowed&quot;</li>
                 <li>• <strong>Gerund:</strong> &quot;Swallowing is difficult&quot;</li>
                 <li>• <strong>Infinitive:</strong> &quot;To swallow medicine&quot;</li>
-          </ul>
+              </ul>
             </div>
           </div>
         </div>
@@ -227,8 +227,8 @@ export default function SwallowVsSwollowPage() {
         <div className="space-y-6">
           <Card className="border-l-4 border-indigo-500">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-indigo-900 mb-3">Q: Why do people confuse &quot;swallow&quot; and &quot;swollow&quot;?</h3>
-              <p className="text-lg text-gray-700">A: The confusion often stems from similar pronunciation and the fact that &quot;o&quot; and &quot;a&quot; can sound similar in some accents. Many people don&apos;t realize that &quot;swallow&quot; is spelled with &quot;a&quot;.</p>
+              <h3 className="text-xl font-bold text-indigo-900 mb-3">Q: Why do people confuse &quot;swallow&quot; and &quot;swalow&quot;?</h3>
+              <p className="text-lg text-gray-700">A: The confusion often stems from similar pronunciation and the fact that many people don&apos;t realize &quot;swallow&quot; has a double &quot;l&quot;. They may hear it as a single &quot;l&quot; sound.</p>
             </CardContent>
           </Card>
 
@@ -256,7 +256,7 @@ export default function SwallowVsSwollowPage() {
           <Card className="border-l-4 border-red-500">
             <CardContent className="p-6">
               <h3 className="text-xl font-bold text-red-900 mb-3">Q: How can I teach children the difference?</h3>
-              <p className="text-lg text-gray-700">A: Use visual aids showing &quot;swallow&quot; has &quot;a&quot; in the middle (like &quot;wall&quot; and &quot;ball&quot;), and emphasize that &quot;swollow&quot; is not a real word. Create simple sentences and have them identify which spelling is correct.</p>
+              <p className="text-lg text-gray-700">A: Use visual aids showing &quot;swallow&quot; has double &quot;l&quot; in the middle (like &quot;wall&quot; and &quot;ball&quot;), and emphasize that &quot;swalow&quot; is missing a letter. Create simple sentences and have them identify which spelling is correct.</p>
             </CardContent>
           </Card>
 
@@ -284,14 +284,14 @@ export default function SwallowVsSwollowPage() {
           <Card className="border-l-4 border-yellow-500">
             <CardContent className="p-6">
               <h3 className="text-xl font-bold text-yellow-900 mb-3">Q: How do you remember the correct spelling of &quot;swallow&quot;?</h3>
-              <p className="text-lg text-gray-700">A: Think of &quot;swallow&quot; as having &quot;a&quot; in the middle like other words: wall, ball, swallow. The &quot;a&quot; pattern is consistent and easy to remember.</p>
+              <p className="text-lg text-gray-700">A: Think of &quot;swallow&quot; as having double &quot;l&quot; in the middle like other words: wall, ball, swallow. The double &quot;l&quot; pattern is consistent and easy to remember.</p>
             </CardContent>
           </Card>
 
           <Card className="border-l-4 border-cyan-500">
             <CardContent className="p-6">
               <h3 className="text-xl font-bold text-cyan-900 mb-3">Q: What are some common misspellings of &quot;swallow&quot;?</h3>
-              <p className="text-lg text-gray-700">A: Common misspellings include: swollow, swallow, swallow, swallow, and swallow. The correct spelling always has &quot;a&quot; in the middle.</p>
+              <p className="text-lg text-gray-700">A: Common misspellings include: swalow, swallow, swallow, swallow, and swallow. The correct spelling always has double &quot;l&quot; in the middle.</p>
             </CardContent>
           </Card>
 
@@ -311,8 +311,8 @@ export default function SwallowVsSwollowPage() {
 
           <Card className="border-l-4 border-violet-500">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-violet-900 mb-3">Q: Why do people often misspell &quot;swallow&quot; with &quot;o&quot; instead of &quot;a&quot;?</h3>
-              <p className="text-lg text-gray-700">A: People often confuse &quot;o&quot; and &quot;a&quot; because they may not pronounce the &quot;a&quot; clearly, but &quot;swallow&quot; specifically has &quot;a&quot; in the middle.</p>
+              <h3 className="text-xl font-bold text-violet-900 mb-3">Q: Why do people often misspell &quot;swallow&quot; with single &quot;l&quot;?</h3>
+              <p className="text-lg text-gray-700">A: People often miss the double &quot;l&quot; because they may not pronounce it clearly or hear it as a single &quot;l&quot; sound, but &quot;swallow&quot; specifically has double &quot;l.&quot;</p>
             </CardContent>
           </Card>
 
@@ -336,12 +336,12 @@ export default function SwallowVsSwollowPage() {
       <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl text-center">
         <h2 className="text-3xl font-bold mb-4">Key Takeaway</h2>
         <p className="text-xl leading-relaxed mb-6">
-          Always remember: <strong>&quot;Swallow&quot;</strong> has &quot;a&quot; in the middle and means &quot;to take food or liquid into the stomach.&quot; 
+          Always remember: <strong>&quot;Swallow&quot;</strong> has double &quot;l&quot; in the middle and means &quot;to take food or liquid into the stomach.&quot; 
           <br />
-          <strong>&quot;Swollow&quot;</strong> is never correct in any context.
+          <strong>&quot;Swalow&quot;</strong> is never correct in any context.
         </p>
         <div className="bg-black bg-opacity-20 p-4 rounded-lg inline-block">
-          <p className="text-lg font-semibold">💡 Pro Tip: Think &quot;SW + A + LLOW = SWALLOW&quot;</p>
+          <p className="text-lg font-semibold">💡 Pro Tip: Think &quot;SW + ALL + OW = SWALLOW&quot;</p>
         </div>
       </div>
     </div>
