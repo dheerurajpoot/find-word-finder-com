@@ -61,9 +61,9 @@ export default function ContactPage() {
 									directly.
 								</p>
 								<a
-									href='tel:+1-555-123-4567'
+									href='tel:+91-7003168945'
 									className='text-green-600 font-semibold hover:underline'>
-									+91-9876543212
+									+91-7003-168-945
 								</a>
 								<p className='text-sm text-gray-500 mt-2'>
 									Available Mon-Fri, 9am-5pm EST.
