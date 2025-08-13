@@ -10,7 +10,7 @@ interface AdSenseProps {
 export default function AdSense({ adSlot, style, format = "auto" }: AdSenseProps) {
   useEffect(() => {
     try {
-    //   @ts-expect-error
+    // @ts-expect-error: TypeScript doesn't recognize the window.adsbygoogle property, but it's provided by Google AdSense
       (window.adsbygoogle = window.adsbygoogle || []).push({});
     } catch (e) {
       console.error("AdSense error", e);
