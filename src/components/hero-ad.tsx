@@ -19,7 +19,7 @@ export default function AdSense({ adSlot, style, format = "auto" }: AdSenseProps
 
   return (
     <ins
-      className="adsbygoogle"
+      className="adsbygoogle mx-auto my-3"
       style={{ display: "block", ...(style || {}) }}
       data-ad-client="ca-pub-2320541206058096" 
       data-ad-slot={adSlot}
