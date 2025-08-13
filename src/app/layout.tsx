@@ -59,7 +59,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en'>
+		<html lang='en' suppressHydrationWarning>
 			<head suppressHydrationWarning>
 				{/* Google Search Console Verification */}
 				<meta
@@ -85,7 +85,7 @@ export default function RootLayout({
           `}
 				</Script>
 				<link rel='icon' href='/favicon.ico' />
-				<link rel='apple-touch-icon' href='/apple-touch-icon.png' />
+				<link rel='apple-touch-icon' href='/favicon.ico' />
 				<meta name='theme-color' content='#10b981' />
 				<link rel='manifest' href='/manifest.json' />
 				<script
@@ -104,7 +104,7 @@ export default function RootLayout({
 							},
 						}),
 					}}
-				/>
+				suppressHydrationWarning />
 			</head>
 			<body className={inter.className} suppressHydrationWarning>
 				<Header />

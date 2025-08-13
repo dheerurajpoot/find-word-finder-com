@@ -19,6 +19,7 @@ import {
 	PopoverContent,
 } from "@/components/ui/popover";
 import { Label } from "@/components/ui/label";
+import HeroAd from "../hero-ad";
 
 export function HeroSection() {
 	const [letters, setLetters] = useState("");
@@ -74,6 +75,8 @@ export function HeroSection() {
 						and more!
 					</p>
 				</div>
+		{/* Google AdSense Ad Code */}
+				<HeroAd />
 
 				<div className='max-w-2xl mx-auto'>
 					<div className='relative mb-6' ref={searchInputRef}>
