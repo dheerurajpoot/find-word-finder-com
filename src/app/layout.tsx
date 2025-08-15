@@ -6,6 +6,7 @@ import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { baseUrl } from "@/lib/constant";
+import { GlobalAdInserter } from "@/components/ads";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -107,6 +108,7 @@ export default function RootLayout({
 				suppressHydrationWarning />
 			</head>
 			<body className={inter.className} suppressHydrationWarning>
+				<GlobalAdInserter />
 				<Header />
 				<main className='min-h-screen'>{children}</main>
 				<Footer />
