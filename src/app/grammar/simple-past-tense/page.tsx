@@ -2,15 +2,15 @@
 
 import Link from "next/link"
 
-export default function MetaphorExamples() {
+export default function SimplePastTense() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-fuchsia-50">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-rose-500 to-pink-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">Metaphor Examples</h1>
+          <h1 className="text-5xl font-bold mb-4">Simple Past Tense</h1>
           <p className="text-xl opacity-90">
-            Discover the power of figurative language and creative expression
+            Master the basic past tense for completed actions and events
           </p>
         </div>
       </div>
@@ -22,114 +22,119 @@ export default function MetaphorExamples() {
             {/* Introduction */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h2 className="text-3xl font-bold text-rose-800 mb-4">
-                What Are Metaphors?
+                What Is the Simple Past Tense?
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                A metaphor is a figure of speech that directly compares two unlike things without using &quot;like&quot; or &quot;as.&quot; It creates vivid imagery and helps readers understand complex ideas through familiar comparisons.
+                The simple past tense is used to describe actions, events, or situations that happened and were completed at a specific time in the past. It&apos;s one of the most commonly used tenses in English.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
-                Metaphors make language more colorful, engaging, and memorable by drawing unexpected connections between different concepts.
+                This tense helps us talk about what happened yesterday, last week, or any time before now.
               </p>
             </div>
 
-            {/* Types of Metaphors */}
+            {/* Formation */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h2 className="text-3xl font-bold text-rose-800 mb-6">
-                Types of Metaphors
+                How to Form the Simple Past
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-rose-50 p-6 rounded-xl">
-                  <h3 className="text-xl font-semibold text-rose-700 mb-3">Direct Metaphors</h3>
+                  <h3 className="text-xl font-semibold text-rose-700 mb-3">Regular Verbs</h3>
                   <p className="text-gray-700 mb-3">
-                    Straightforward comparisons
+                    Add &quot;-ed&quot; to the base form
                   </p>
                   <p className="text-gray-600">
-                    &quot;Life is a journey&quot;<br />
-                    &quot;Time is money&quot;<br />
-                    &quot;Love is a rose&quot;
+                    work → <strong>worked</strong><br />
+                    play → <strong>played</strong><br />
+                    study → <strong>studied</strong><br />
+                    visit → <strong>visited</strong>
                   </p>
                 </div>
                 <div className="bg-pink-50 p-6 rounded-xl">
-                  <h3 className="text-xl font-semibold text-pink-700 mb-3">Implied Metaphors</h3>
+                  <h3 className="text-xl font-semibold text-pink-700 mb-3">Irregular Verbs</h3>
                   <p className="text-gray-700 mb-3">
-                    Subtle comparisons without direct statements
+                    Have unique past forms
                   </p>
                   <p className="text-gray-600">
-                    &quot;The wind whispered through the trees&quot;<br />
-                    &quot;The sun smiled down on us&quot;
+                    go → <strong>went</strong><br />
+                    see → <strong>saw</strong><br />
+                    eat → <strong>ate</strong><br />
+                    write → <strong>wrote</strong>
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Common Metaphor Categories */}
+            {/* Uses of Simple Past */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h2 className="text-3xl font-bold text-rose-800 mb-6">
-                Common Metaphor Categories
+                When to Use Simple Past
               </h2>
               <div className="space-y-6">
                 <div className="border-l-4 border-rose-500 pl-6">
-                  <h3 className="text-xl font-semibold text-rose-700 mb-2">Nature & Weather</h3>
+                  <h3 className="text-xl font-semibold text-rose-700 mb-2">Completed Actions in the Past</h3>
                   <p className="text-gray-700 mb-3">
-                    Using natural elements to describe emotions and situations
+                    Actions that happened and finished at a specific time
                   </p>
                   <p className="text-gray-600 italic">
-                    &quot;Her smile was like sunshine&quot;<br />
-                    &quot;He has a heart of stone&quot;<br />
-                    &quot;The news hit me like a thunderbolt&quot;
+                    I <strong>visited</strong> Paris last summer.<br />
+                    She <strong>finished</strong> her homework at 8 PM.<br />
+                    They <strong>played</strong> soccer yesterday.
                   </p>
                 </div>
                 <div className="border-l-4 border-pink-500 pl-6">
-                  <h3 className="text-xl font-semibold text-pink-700 mb-2">Animals & Creatures</h3>
+                  <h3 className="text-xl font-semibold text-pink-700 mb-2">Past Habits or States</h3>
                   <p className="text-gray-700 mb-3">
-                    Comparing human traits to animal characteristics
+                    Things that were true in the past but aren&apos;t now
                   </p>
                   <p className="text-gray-600 italic">
-                    &quot;She&apos;s a social butterfly&quot;<br />
-                    &quot;He&apos;s as stubborn as a mule&quot;<br />
-                    &quot;The child is a little monkey&quot;
+                    I <strong>lived</strong> in London for five years.<br />
+                    She <strong>worked</strong> as a teacher.<br />
+                    They <strong>liked</strong> classical music.
                   </p>
                 </div>
                 <div className="border-l-4 border-fuchsia-500 pl-6">
-                  <h3 className="text-xl font-semibold text-fuchsia-700 mb-2">Objects & Machines</h3>
+                  <h3 className="text-xl font-semibold text-fuchsia-700 mb-2">Sequential Events</h3>
                   <p className="text-gray-700 mb-3">
-                    Using inanimate objects to describe living things
+                    Actions that happened one after another
                   </p>
                   <p className="text-gray-600 italic">
-                    &quot;My brain is a computer&quot;<br />
-                    &quot;She&apos;s the engine of our team&quot;<br />
-                    &quot;His mind is a steel trap&quot;
+                    I <strong>woke up</strong>, <strong>showered</strong>, and <strong>went</strong> to work.<br />
+                    She <strong>opened</strong> the door and <strong>entered</strong> the room.<br />
+                    The movie <strong>started</strong> at 7 PM and <strong>ended</strong> at 9 PM.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Famous Metaphor Examples */}
+            {/* Time Expressions */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h2 className="text-3xl font-bold text-rose-800 mb-6">
-                Famous Metaphor Examples
+                Common Time Expressions
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-rose-50 p-6 rounded-xl">
-                  <h3 className="text-xl font-semibold text-rose-700 mb-3">Literature</h3>
+                  <h3 className="text-xl font-semibold text-rose-700 mb-3">Specific Time</h3>
                   <p className="text-gray-700 mb-3">
-                    Classic examples from famous works
+                    Exact times and dates
                   </p>
                   <p className="text-gray-600">
-                    &quot;All the world&apos;s a stage&quot; - Shakespeare<br />
-                    &quot;Life is a broken-winged bird&quot; - Hughes<br />
-                    &quot;Hope is the thing with feathers&quot; - Dickinson
+                    yesterday, last night<br />
+                    last week, last month<br />
+                    in 2010, on Monday<br />
+                    at 3 PM, two hours ago
                   </p>
                 </div>
                 <div className="bg-pink-50 p-6 rounded-xl">
-                  <h3 className="text-xl font-semibold text-pink-700 mb-3">Everyday Speech</h3>
+                  <h3 className="text-xl font-semibold text-pink-700 mb-3">General Past</h3>
                   <p className="text-gray-700 mb-3">
-                    Common metaphors we use daily
+                    Vague past time references
                   </p>
                   <p className="text-gray-600">
-                    &quot;I&apos;m drowning in work&quot;<br />
-                    &quot;She&apos;s the apple of my eye&quot;<br />
-                    &quot;He&apos;s a couch potato&quot;
+                    before, ago, previously<br />
+                    once, in the past<br />
+                    when I was young<br />
+                    during my childhood
                   </p>
                 </div>
               </div>
@@ -144,68 +149,68 @@ export default function MetaphorExamples() {
               <div className="space-y-6">
                 <details className="bg-rose-50 rounded-xl p-6">
                   <summary className="text-xl font-semibold text-rose-700 cursor-pointer hover:text-rose-800">
-                    Quiz 1: Identify Metaphors
+                    Quiz 1: Form Simple Past
                   </summary>
                   <div className="mt-4 space-y-3">
-                    <p className="text-gray-700">Which of these are metaphors?</p>
+                    <p className="text-gray-700">Change these verbs to simple past:</p>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="text-gray-700 mb-2">1. &quot;Life is a roller coaster&quot;</p>
-                      <p className="text-gray-600 text-sm">Answer: Yes, it&apos;s a metaphor comparing life to a roller coaster</p>
+                      <p className="text-gray-700 mb-2">1. I (visit) my grandmother last week.</p>
+                      <p className="text-gray-600 text-sm">Answer: I visited my grandmother last week.</p>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="text-gray-700 mb-2">2. &quot;She runs like the wind&quot;</p>
-                      <p className="text-gray-600 text-sm">Answer: No, this is a simile (uses &quot;like&quot;)</p>
+                      <p className="text-gray-700 mb-2">2. She (go) to the store yesterday.</p>
+                      <p className="text-gray-600 text-sm">Answer: She went to the store yesterday. (irregular verb)</p>
                     </div>
                   </div>
                 </details>
 
                 <details className="bg-pink-50 rounded-xl p-6">
                   <summary className="text-xl font-semibold text-pink-700 cursor-pointer hover:text-pink-800">
-                    Quiz 2: Complete the Metaphor
+                    Quiz 2: Choose the Right Form
                   </summary>
                   <div className="mt-4 space-y-3">
-                    <p className="text-gray-700">Complete these metaphor starters:</p>
+                    <p className="text-gray-700">Select the correct verb form:</p>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="text-gray-700 mb-2">1. &quot;Knowledge is _____&quot;</p>
-                      <p className="text-gray-600 text-sm">Possible answers: power, light, a key, a weapon</p>
+                      <p className="text-gray-700 mb-2">1. I _____ (work/worked) in that company for five years.</p>
+                      <p className="text-gray-600 text-sm">Answer: worked (simple past for completed past action)</p>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="text-gray-700 mb-2">2. &quot;Friendship is _____&quot;</p>
-                      <p className="text-gray-600 text-sm">Possible answers: a garden, a bridge, a shelter, a treasure</p>
+                      <p className="text-gray-700 mb-2">2. She _____ (see/saw) the movie last night.</p>
+                      <p className="text-gray-600 text-sm">Answer: saw (irregular verb in simple past)</p>
                     </div>
                   </div>
                 </details>
 
                 <details className="bg-fuchsia-50 rounded-xl p-6">
                   <summary className="text-xl font-semibold text-fuchsia-700 cursor-pointer hover:text-fuchsia-800">
-                    Quiz 3: Metaphor Meanings
+                    Quiz 3: Time Expressions
                   </summary>
                   <div className="mt-4 space-y-3">
-                    <p className="text-gray-700">What do these metaphors mean?</p>
+                    <p className="text-gray-700">Complete with appropriate time expressions:</p>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="text-gray-700 mb-2">1. &quot;She has a heart of gold&quot;</p>
-                      <p className="text-gray-600 text-sm">Answer: She is very kind, generous, and caring</p>
+                      <p className="text-gray-700 mb-2">1. I finished my homework _____.</p>
+                      <p className="text-gray-600 text-sm">Answer: yesterday, last night, two hours ago, etc.</p>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="text-gray-700 mb-2">2. &quot;The classroom was a zoo&quot;</p>
-                      <p className="text-gray-600 text-sm">Answer: The classroom was very noisy and chaotic</p>
+                      <p className="text-gray-700 mb-2">2. She lived in Paris _____.</p>
+                      <p className="text-gray-600 text-sm">Answer: in 2010, last year, for five years, etc.</p>
                     </div>
                   </div>
                 </details>
 
                 <details className="bg-rose-50 rounded-xl p-6">
                   <summary className="text-xl font-semibold text-rose-700 cursor-pointer hover:text-rose-800">
-                    Quiz 4: Create Your Own
+                    Quiz 4: Simple Past vs. Present Perfect
                   </summary>
                   <div className="mt-4 space-y-3">
-                    <p className="text-gray-700">Create metaphors for these concepts:</p>
+                    <p className="text-gray-700">Choose the correct tense:</p>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="text-gray-700 mb-2">1. Create a metaphor for &quot;learning&quot;</p>
-                      <p className="text-gray-600 text-sm">Example: &quot;Learning is building a house&quot;</p>
+                      <p className="text-gray-700 mb-2">1. I _____ (went/have been) to Paris in 2010.</p>
+                      <p className="text-gray-600 text-sm">Answer: went (simple past for specific past time)</p>
                     </div>
                     <div className="bg-white p-4 rounded-lg">
-                      <p className="text-gray-700 mb-2">2. Create a metaphor for &quot;time&quot;</p>
-                      <p className="text-gray-600 text-sm">Example: &quot;Time is a river&quot;</p>
+                      <p className="text-gray-700 mb-2">2. I _____ (went/have been) to Paris before.</p>
+                      <p className="text-gray-600 text-sm">Answer: have been (present perfect for life experience)</p>
                     </div>
                   </div>
                 </details>
@@ -218,10 +223,10 @@ export default function MetaphorExamples() {
                 Important Notes
               </h2>
               <div className="space-y-4 text-gray-700">
-                <p>• Metaphors create stronger imagery than similes because they make direct comparisons.</p>
-                <p>• Good metaphors should be original and avoid clichés when possible.</p>
-                <p>• Metaphors can be extended throughout a piece of writing for deeper meaning.</p>
-                <p>• Context is important - metaphors should make sense to your audience.</p>
+                <p>• Simple past is used for completed actions with specific time references.</p>
+                <p>• Regular verbs add &quot;-ed,&quot; but irregular verbs have unique forms that must be memorized.</p>
+                <p>• Don&apos;t use simple past for actions that continue to the present - use present perfect instead.</p>
+                <p>• Time expressions help determine whether to use simple past or present perfect.</p>
               </div>
             </div>
           </div>
@@ -231,7 +236,7 @@ export default function MetaphorExamples() {
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <h3 className="text-xl font-bold text-rose-800 mb-4">Pro Tip</h3>
               <p className="text-gray-700">
-                When writing metaphors, think about the emotions and associations you want to create. Choose comparisons that will resonate with your readers and enhance their understanding.
+                To identify when to use simple past, ask yourself: &quot;Did this action happen at a specific time in the past and is it finished?&quot; If yes, use simple past. If the action continues to the present, consider present perfect.
               </p>
             </div>
 
@@ -239,18 +244,18 @@ export default function MetaphorExamples() {
               <h3 className="text-xl font-bold text-rose-800 mb-4">Related Topics</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/grammar/similes" className="text-rose-600 hover:text-rose-800 hover:underline">
-                    Similes
+                  <Link href="/grammar/verb-tenses" className="text-rose-600 hover:text-rose-800 hover:underline">
+                    Verb Tenses
                   </Link>
                 </li>
                 <li>
-                  <Link href="/grammar/figurative-language" className="text-rose-600 hover:text-rose-800 hover:underline">
-                    Figurative Language
+                  <Link href="/grammar/past-perfect" className="text-rose-600 hover:text-rose-800 hover:underline">
+                    Past Perfect
                   </Link>
                 </li>
                 <li>
-                  <Link href="/grammar/creative-writing" className="text-rose-600 hover:text-rose-800 hover:underline">
-                    Creative Writing
+                  <Link href="/grammar/present-perfect" className="text-rose-600 hover:text-rose-800 hover:underline">
+                    Present Perfect
                   </Link>
                 </li>
                 <li>
@@ -270,4 +275,4 @@ export default function MetaphorExamples() {
       </div>
     </div>
   )
-} 
+}

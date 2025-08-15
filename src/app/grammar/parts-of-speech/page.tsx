@@ -1,173 +1,424 @@
-"use client";
-import React from "react";
-import Link from "next/link";
+"use client"
+
+import Link from "next/link"
 
 export default function PartsOfSpeechPage() {
   return (
-    <div className="min-h-screen bg-green-50 py-8">
-      <main className="max-w-3xl mx-auto p-4 md:p-8">
-        <div className="bg-white rounded-xl shadow-lg p-6 md:p-10 space-y-10">
-          <header className="mb-6">
-            <h1 className="text-4xl font-extrabold mb-3 text-green-700">Parts of Speech</h1>
-            <p className="text-lg text-gray-700 mb-2">
-              Parts of speech are the building blocks of language. Every word you speak or write is a part of speech. Understanding them helps you write better sentences, punctuate correctly, and communicate more clearly.
-            </p>
-            <p className="text-green-700 font-semibold">There are 8 main parts of speech in English: nouns, pronouns, adjectives, verbs, adverbs, prepositions, conjunctions, and articles.</p>
-          </header>
-
-          <section>
-            <h2 className="text-2xl font-bold mb-4 text-green-700">Why Understanding Parts of Speech is Important</h2>
-            <ul className="list-disc ml-6 text-gray-700 text-base">
-              <li>Helps you understand and build sentences correctly</li>
-              <li>Improves your grammar and punctuation</li>
-              <li>Makes it easier to learn new languages</li>
-              <li>Helps you avoid common writing mistakes</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold mb-4 text-green-700">The 8 Parts of Speech</h2>
-            <ol className="space-y-6">
-              {[
-                {
-                  label: "Noun",
-                  color: "bg-green-200 text-green-800",
-                  desc: "A noun names a person, place, thing, or idea.",
-                  ex: "dog, Paris, happiness, cake",
-                  sent: "Mary ate chocolate cake and ice cream.",
-                  tip: "Nouns are often the subject or object in a sentence."
-                },
-                {
-                  label: "Pronoun",
-                  color: "bg-blue-200 text-blue-800",
-                  desc: "A pronoun replaces a noun to avoid repetition.",
-                  ex: "he, she, it, they, you, them",
-                  sent: "Susan is my neighbor. She is charming.",
-                  tip: "Pronouns make sentences less repetitive."
-                },
-                {
-                  label: "Adjective",
-                  color: "bg-yellow-200 text-yellow-800",
-                  desc: "An adjective describes or modifies a noun or pronoun.",
-                  ex: "happy, small, blue, hungry",
-                  sent: "She wore a beautiful, blue dress.",
-                  tip: "Adjectives answer 'what kind?' or 'which one?'"
-                },
-                {
-                  label: "Verb",
-                  color: "bg-red-200 text-red-800",
-                  desc: "A verb expresses an action or a state of being.",
-                  ex: "run, jump, is, think, have",
-                  sent: "The teacher is happy; she likes her students.",
-                  tip: "Every sentence needs a verb!"
-                },
-                {
-                  label: "Adverb",
-                  color: "bg-purple-200 text-purple-800",
-                  desc: "An adverb describes a verb, adjective, or another adverb. It often tells how, when, where, or to what extent.",
-                  ex: "quickly, very, well, yesterday",
-                  sent: "She walked away slowly.",
-                  tip: "Many adverbs end in -ly."
-                },
-                {
-                  label: "Preposition",
-                  color: "bg-pink-200 text-pink-800",
-                  desc: "A preposition shows the relationship between a noun (or pronoun) and another word in the sentence.",
-                  ex: "in, on, at, to, after, with",
-                  sent: "She sat behind me in class.",
-                  tip: "Prepositions often show location, time, or direction."
-                },
-                {
-                  label: "Conjunction",
-                  color: "bg-orange-200 text-orange-800",
-                  desc: "A conjunction connects words, phrases, or clauses.",
-                  ex: "and, but, or, so, because",
-                  sent: "He wanted apple pie and ice cream.",
-                  tip: "The most common conjunctions are and, but, or."
-                },
-                {
-                  label: "Article",
-                  color: "bg-gray-200 text-gray-800",
-                  desc: "An article is a word that defines a noun as specific or unspecific.",
-                  ex: "a, an, the",
-                  sent: "The cat is on the table.",
-                  tip: "A and an are indefinite; the is definite."
-                }
-              ].map((part, idx) => (
-                <li key={part.label} className="flex items-start gap-4 border-l-4 pl-4 py-4 border-green-200 bg-green-50 rounded-lg shadow-sm">
-                  <div className={`flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-full font-bold text-lg ring-2 ring-white shadow ${part.color}`}>{idx + 1}</div>
-                  <div>
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className="text-xl font-bold">{part.label}</span>
-                    </div>
-                    <p className="text-gray-700 mb-1">{part.desc}</p>
-                    <p className="text-sm text-gray-600 mb-1">Examples: <span className="font-mono">{part.ex}</span></p>
-                    <p className="text-gray-600 mb-1">Sentence: <span className="italic">{part.sent}</span></p>
-                    <p className="text-green-700 text-xs">Tip: {part.tip}</p>
-                  </div>
-                </li>
-              ))}
-            </ol>
-          </section>
-
-          <section>
-            <h2 className="text-2xl font-bold mb-2 text-green-700">Takeaways & Tips</h2>
-            <ul className="list-disc ml-6 text-gray-700 text-base">
-              <li>There are 8 main parts of speech in English.</li>
-              <li>Many words can be used as more than one part of speech.</li>
-              <li>Knowing parts of speech helps you write and speak more clearly.</li>
-              <li>Practice identifying parts of speech in sentences to improve your grammar.</li>
-            </ul>
-          </section>
-
-          {/* Common Mistakes Section */}
-          <section>
-            <h2 className="text-2xl font-bold mb-2 text-green-700">Common Mistakes with Parts of Speech</h2>
-            <ul className="list-disc ml-6 text-gray-700 text-base mb-2">
-              <li><b>Confusing adjectives and adverbs:</b> <span className="italic">She runs quick</span> (incorrect) → <span className="italic">She runs quickly</span> (correct).</li>
-              <li><b>Using the wrong pronoun:</b> <span className="italic">Me and him went</span> (incorrect) → <span className="italic">He and I went</span> (correct).</li>
-              <li><b>Forgetting articles:</b> <span className="italic">I saw cat</span> (incorrect) → <span className="italic">I saw a cat</span> (correct).</li>
-              <li><b>Misplacing prepositions:</b> <span className="italic">Where are you at?</span> (incorrect) → <span className="italic">Where are you?</span> (correct).</li>
-            </ul>
-            <p className="text-green-700 text-xs">Tip: Read your sentences out loud to catch common mistakes!</p>
-          </section>
-
-          {/* Practice Mini-Quiz Section */}
-          <section>
-            <h2 className="text-2xl font-bold mb-2 text-green-700">Practice: Identify the Part of Speech</h2>
-            <p className="mb-2 text-gray-700">Try to identify the part of speech for the bolded word in each sentence:</p>
-            <ol className="list-decimal ml-6 text-gray-700 mb-2">
-              <li>The <b>dog</b> barked loudly.</li>
-              <li>She <b>quickly</b> finished her homework.</li>
-              <li>We went <b>to</b> the park.</li>
-              <li><b>He</b> is my friend.</li>
-              <li>It was a <b>beautiful</b> day.</li>
-            </ol>
-            <details className="bg-gray-50 rounded p-2 text-sm cursor-pointer">
-              <summary className="font-semibold text-green-700">Show Answers</summary>
-              <ul className="list-disc ml-6 mt-2">
-                <li>dog – Noun</li>
-                <li>quickly – Adverb</li>
-                <li>to – Preposition</li>
-                <li>He – Pronoun</li>
-                <li>beautiful – Adjective</li>
-              </ul>
-            </details>
-          </section>
-
-          {/* More Resources Section */}
-          <section>
-            <h2 className="text-2xl font-bold mb-2 text-green-700">More Resources</h2>
-            <ul className="list-disc ml-6 text-gray-700 text-base">
-              <li>Learn more about <Link href="/grammar/noun-examples" className="text-green-700 underline hover:text-green-900">nouns</Link>, <b>adjectives</b>, <b>verbs</b>, and <b>adverbs</b> to build even stronger sentences.</li>
-              <li>Practice with grammar workbooks or online quizzes.</li>
-              <li>Read books and articles, and try to spot different parts of speech in sentences.</li>
-              <li>Write your own sentences and label each word’s part of speech.</li>
-              <li>Ask a teacher or friend to quiz you on the parts of speech.</li>
-            </ul>
-          </section>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white py-16">
+        <div className="container mx-auto px-4">
+          <h1 className="text-5xl font-extrabold text-center mb-4">
+            Parts of Speech
+          </h1>
+          <p className="text-xl text-center max-w-3xl mx-auto">
+            Master the building blocks of English grammar with comprehensive definitions, examples, and interactive quizzes
+          </p>
         </div>
-      </main>
+      </div>
+
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Main Content */}
+          <div className="lg:col-span-2 space-y-8">
+            {/* Introduction */}
+            <div className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-blue-500">
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                What are Parts of Speech?
+              </h2>
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+                Parts of speech are the fundamental categories into which words are classified based on their function in a sentence. 
+                Understanding these categories helps you construct grammatically correct sentences and communicate effectively. 
+                The eight main parts of speech are: <strong>nouns</strong>, <strong>verbs</strong>, <strong>adjectives</strong>, 
+                <strong>adverbs</strong>, <strong>pronouns</strong>, <strong>prepositions</strong>, <strong>conjunctions</strong>, 
+                and <strong>interjections</strong>.
+              </p>
+            </div>
+
+            {/* Parts of Speech Grid */}
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                The Eight Parts of Speech
+              </h2>
+              
+              <div className="space-y-6">
+                <div className="border-l-4 border-blue-500 pl-6">
+                  <h3 className="text-2xl font-semibold text-blue-700 mb-3">1. Nouns</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <p className="font-semibold text-blue-800">Definition</p>
+                      <p className="text-blue-600">Words that name people, places, things, or ideas</p>
+                    </div>
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <p className="font-semibold text-blue-800">Examples</p>
+                      <p className="text-blue-600">teacher, city, book, happiness</p>
+                    </div>
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <p className="font-semibold text-blue-800">Function</p>
+                      <p className="text-blue-600">Subject, object, or complement in sentences</p>
+                    </div>
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <p className="font-semibold text-blue-800">Sentence</p>
+                      <p className="text-blue-600">The <Link href="/grammar/nouns" className="text-blue-600 hover:text-blue-800 font-semibold">teacher</Link> loves her <Link href="/grammar/common-nouns" className="text-blue-600 hover:text-blue-800 font-semibold">students</Link>.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-green-500 pl-6">
+                  <h3 className="text-2xl font-semibold text-green-700 mb-3">2. Verbs</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <p className="font-semibold text-green-800">Definition</p>
+                      <p className="text-green-600">Words that express actions, states, or occurrences</p>
+                    </div>
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <p className="font-semibold text-green-800">Examples</p>
+                      <p className="text-green-600">run, is, think, have</p>
+                    </div>
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <p className="font-semibold text-green-800">Function</p>
+                      <p className="text-green-600">Show what the subject does or is</p>
+                    </div>
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <p className="font-semibold text-green-800">Sentence</p>
+                      <p className="text-green-600">The cat <Link href="/grammar/action-verb-examples" className="text-green-600 hover:text-green-800 font-semibold">runs</Link> quickly.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-purple-500 pl-6">
+                  <h3 className="text-2xl font-semibold text-purple-700 mb-3">3. Adjectives</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-purple-50 p-4 rounded-lg">
+                      <p className="font-semibold text-purple-800">Definition</p>
+                      <p className="text-purple-600">Words that describe or modify nouns and pronouns</p>
+                    </div>
+                    <div className="bg-purple-50 p-4 rounded-lg">
+                      <p className="font-semibold text-purple-800">Examples</p>
+                      <p className="text-purple-600">beautiful, tall, smart, red</p>
+                    </div>
+                    <div className="bg-purple-50 p-4 rounded-lg">
+                      <p className="font-semibold text-purple-800">Function</p>
+                      <p className="text-purple-600">Provide more information about nouns</p>
+                    </div>
+                    <div className="bg-purple-50 p-4 rounded-lg">
+                      <p className="font-semibold text-purple-800">Sentence</p>
+                      <p className="text-purple-600">The <Link href="/grammar/adjectives" className="text-purple-600 hover:text-purple-800 font-semibold">beautiful</Link> flower bloomed.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-orange-500 pl-6">
+                  <h3 className="text-2xl font-semibold text-orange-700 mb-3">4. Adverbs</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-orange-50 p-4 rounded-lg">
+                      <p className="font-semibold text-orange-800">Definition</p>
+                      <p className="text-orange-600">Words that modify verbs, adjectives, or other adverbs</p>
+                    </div>
+                    <div className="bg-orange-50 p-4 rounded-lg">
+                      <p className="font-semibold text-orange-800">Examples</p>
+                      <p className="text-orange-600">quickly, very, well, yesterday</p>
+                    </div>
+                    <div className="bg-orange-50 p-4 rounded-lg">
+                      <p className="font-semibold text-orange-800">Function</p>
+                      <p className="text-orange-600">Describe how, when, where, or to what extent</p>
+                    </div>
+                    <div className="bg-orange-50 p-4 rounded-lg">
+                      <p className="font-semibold text-orange-800">Sentence</p>
+                      <p className="text-orange-600">She <Link href="/grammar/adverbs" className="text-orange-600 hover:text-orange-800 font-semibold">quickly</Link> finished her work.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-red-500 pl-6">
+                  <h3 className="text-2xl font-semibold text-red-700 mb-3">5. Pronouns</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-red-50 p-4 rounded-lg">
+                      <p className="font-semibold text-red-800">Definition</p>
+                      <p className="text-red-600">Words that take the place of nouns</p>
+                    </div>
+                    <div className="bg-red-50 p-4 rounded-lg">
+                      <p className="font-semibold text-red-800">Examples</p>
+                      <p className="text-red-600">he, she, it, they, you, them</p>
+                    </div>
+                    <div className="bg-red-50 p-4 rounded-lg">
+                      <p className="font-semibold text-red-800">Function</p>
+                      <p className="text-red-600">Avoid repetition and refer to nouns</p>
+                    </div>
+                    <div className="bg-red-50 p-4 rounded-lg">
+                      <p className="font-semibold text-red-800">Sentence</p>
+                      <p className="text-red-600"><Link href="/grammar/possessive-pronouns" className="text-red-600 hover:text-red-800 font-semibold">He</Link> gave <Link href="/grammar/possessive-pronouns" className="text-red-600 hover:text-red-800 font-semibold">it</Link> to <Link href="/grammar/possessive-pronouns" className="text-red-600 hover:text-red-800 font-semibold">her</Link>.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-teal-500 pl-6">
+                  <h3 className="text-2xl font-semibold text-teal-700 mb-3">6. Prepositions</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-teal-50 p-4 rounded-lg">
+                      <p className="font-semibold text-teal-800">Definition</p>
+                      <p className="text-teal-600">Words that show relationships between words</p>
+                    </div>
+                    <div className="bg-teal-50 p-4 rounded-lg">
+                      <p className="font-semibold text-teal-800">Examples</p>
+                      <p className="text-teal-600">in, on, at, to, after, with</p>
+                    </div>
+                    <div className="bg-teal-50 p-4 rounded-lg">
+                      <p className="font-semibold text-teal-800">Function</p>
+                      <p className="text-teal-600">Show location, time, or direction</p>
+                    </div>
+                    <div className="bg-teal-50 p-4 rounded-lg">
+                      <p className="font-semibold text-teal-800">Sentence</p>
+                      <p className="text-teal-600">The book is <Link href="/grammar/prepositions" className="text-teal-600 hover:text-teal-800 font-semibold">on</Link> the table.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-indigo-500 pl-6">
+                  <h3 className="text-2xl font-semibold text-indigo-700 mb-3">7. Conjunctions</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-indigo-50 p-4 rounded-lg">
+                      <p className="font-semibold text-indigo-800">Definition</p>
+                      <p className="text-indigo-600">Words that connect words, phrases, or clauses</p>
+                    </div>
+                    <div className="bg-indigo-50 p-4 rounded-lg">
+                      <p className="font-semibold text-indigo-800">Examples</p>
+                      <p className="text-indigo-600">and, but, or, so, because</p>
+                    </div>
+                    <div className="bg-indigo-50 p-4 rounded-lg">
+                      <p className="font-semibold text-indigo-800">Function</p>
+                      <p className="text-indigo-600">Join ideas and show relationships</p>
+                    </div>
+                    <div className="bg-indigo-50 p-4 rounded-lg">
+                      <p className="font-semibold text-indigo-800">Sentence</p>
+                      <p className="text-indigo-600">I like tea <Link href="/grammar/conjunction-definition-examples" className="text-indigo-600 hover:text-indigo-800 font-semibold">and</Link> coffee.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-pink-500 pl-6">
+                  <h3 className="text-2xl font-semibold text-pink-700 mb-3">8. Interjections</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-pink-50 p-4 rounded-lg">
+                      <p className="font-semibold text-pink-800">Definition</p>
+                      <p className="text-pink-600">Words that express strong emotions or reactions</p>
+                    </div>
+                    <div className="bg-pink-50 p-4 rounded-lg">
+                      <p className="font-semibold text-pink-800">Examples</p>
+                      <p className="text-pink-600">wow, oh, ouch, yay, boo</p>
+                    </div>
+                    <div className="bg-pink-50 p-4 rounded-lg">
+                      <p className="font-semibold text-pink-800">Function</p>
+                      <p className="text-pink-600">Express feelings or reactions</p>
+                    </div>
+                    <div className="bg-pink-50 p-4 rounded-lg">
+                      <p className="font-semibold text-pink-800">Sentence</p>
+                      <p className="text-pink-600"><strong>Wow</strong>! That was amazing!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Interactive Quiz Section */}
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                Interactive Parts of Speech Quiz
+              </h2>
+              
+              <div className="space-y-6">
+                <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl">
+                  <h4 className="font-semibold text-gray-800 mb-4">Identify the part of speech for the highlighted word:</h4>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-white p-4 rounded-lg">
+                      <p className="mb-2">1. The <span className="bg-yellow-200 px-2 py-1 rounded font-semibold">beautiful</span> sunset painted the sky.</p>
+                      <details className="mt-2">
+                        <summary className="cursor-pointer text-blue-600 font-semibold">Show Answer</summary>
+                        <p className="mt-2 text-gray-700">Answer: <strong>Adjective</strong> - &quot;Beautiful&quot; describes the sunset.</p>
+                      </details>
+                    </div>
+                    
+                    <div className="bg-white p-4 rounded-lg">
+                      <p className="mb-2">2. She <span className="bg-yellow-200 px-2 py-1 rounded font-semibold">quickly</span> finished her homework.</p>
+                      <details className="mt-2">
+                        <summary className="cursor-pointer text-blue-600 font-semibold">Show Answer</summary>
+                        <p className="mt-2 text-gray-700">Answer: <strong>Adverb</strong> - &quot;Quickly&quot; modifies the verb &quot;finished.&quot;</p>
+                      </details>
+                    </div>
+                    
+                    <div className="bg-white p-4 rounded-lg">
+                      <p className="mb-2">3. The <span className="bg-yellow-200 px-2 py-1 rounded font-semibold">students</span> studied diligently.</p>
+                      <details className="mt-2">
+                        <summary className="cursor-pointer text-blue-600 font-semibold">Show Answer</summary>
+                        <p className="mt-2 text-gray-700">Answer: <strong>Noun</strong> - &quot;Students&quot; names the people performing the action.</p>
+                      </details>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Advanced Quiz Section */}
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                Advanced Sentence Analysis Quiz
+              </h2>
+              
+              <div className="space-y-6">
+                <div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-xl">
+                  <h4 className="font-semibold text-gray-800 mb-4">Analyze this sentence: &quot;The clever cat quickly caught the small mouse in the dark corner.&quot;</h4>
+                  
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h5 className="font-semibold mb-3 text-indigo-700">Identify the parts of speech:</h5>
+                      <div className="space-y-2">
+                        <div className="flex items-center space-x-2">
+                          <span className="bg-yellow-200 px-2 py-1 rounded text-sm">The</span>
+                          <span className="text-sm">→</span>
+                          <span className="bg-blue-100 px-3 py-1 rounded text-sm">Article</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <span className="bg-yellow-200 px-2 py-1 rounded text-sm">clever</span>
+                          <span className="text-sm">→</span>
+                          <span className="bg-purple-100 px-3 py-1 rounded text-sm">Adjective</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <span className="bg-yellow-200 px-2 py-1 rounded text-sm">cat</span>
+                          <span className="text-sm">→</span>
+                          <span className="bg-blue-100 px-3 py-1 rounded text-sm">Noun</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <span className="bg-yellow-200 px-2 py-1 rounded text-sm">quickly</span>
+                          <span className="text-sm">→</span>
+                          <span className="bg-orange-100 px-3 py-1 rounded text-sm">Adverb</span>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                          <span className="bg-yellow-200 px-2 py-1 rounded text-sm">caught</span>
+                          <span className="text-sm">→</span>
+                          <span className="bg-green-100 px-3 py-1 rounded text-sm">Verb</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <h5 className="font-semibold mb-3 text-indigo-700">Sentence Structure:</h5>
+                      <div className="bg-gray-50 p-4 rounded">
+                        <p className="text-sm text-gray-700">
+                          <strong>Subject:</strong> The clever cat<br/>
+                          <strong>Predicate:</strong> quickly caught the small mouse in the dark corner<br/>
+                          <strong>Direct Object:</strong> the small mouse<br/>
+                          <strong>Prepositional Phrase:</strong> in the dark corner
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Notes Section */}
+            <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+              <h3 className="text-xl font-semibold mb-4 text-yellow-900">Notes:</h3>
+              <ul className="text-lg md:text-xl text-yellow-800 space-y-3">
+                <li>• Many words can function as different parts of speech depending on how they&apos;re used in a sentence</li>
+                <li>• Context is crucial for determining a word&apos;s part of speech</li>
+                <li>• Some words can be multiple parts of speech simultaneously (e.g., &quot;running&quot; can be a verb or adjective)</li>
+                <li>• Understanding parts of speech helps with sentence structure and grammar rules</li>
+                <li>• Practice identifying parts of speech in everyday reading and writing</li>
+              </ul>
+            </div>
+
+            {/* Grammar Rules */}
+            <div className="bg-white rounded-2xl shadow-lg p-8">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                Important Rules for Parts of Speech
+              </h2>
+              
+              <div className="space-y-4">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                    1
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Word Function</h4>
+                    <p className="text-gray-600">A word&apos;s part of speech is determined by how it functions in a sentence, not by the word itself.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                    2
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Multiple Functions</h4>
+                    <p className="text-gray-600">Many words can serve as different parts of speech depending on context (e.g., &quot;light&quot; as noun, adjective, or verb).</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
+                    3
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2">Sentence Structure</h4>
+                    <p className="text-gray-600">Every complete sentence must have at least a subject (noun/pronoun) and a predicate (verb).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Sidebar */}
+          <div className="space-y-6">
+            <div className="bg-white rounded-2xl shadow-lg p-6">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Related Topics</h3>
+              <div className="space-y-3">
+                <Link href="/grammar/nouns" className="block text-blue-600 hover:text-blue-800 font-medium">
+                  Nouns
+                </Link>
+                <Link href="/grammar/verbs" className="block text-green-600 hover:text-green-800 font-medium">
+                  Verbs
+                </Link>
+                <Link href="/grammar/adjectives" className="block text-purple-600 hover:text-purple-800 font-medium">
+                  Adjectives
+                </Link>
+                <Link href="/grammar/adverbs" className="block text-orange-600 hover:text-orange-800 font-medium">
+                  Adverbs
+                </Link>
+                <Link href="/grammar/pronouns" className="block text-red-600 hover:text-red-800 font-medium">
+                  Pronouns
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl shadow-lg p-6">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Quick Reference</h3>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="font-medium">Total:</span>
+                  <span className="text-gray-600">8 parts</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-medium">Function:</span>
+                  <span className="text-gray-600">Word classification</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="font-medium">Difficulty:</span>
+                  <span className="text-gray-600">Beginner</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-2xl p-6">
+              <h3 className="text-2xl font-bold mb-4">Pro Tip</h3>
+              <p className="text-blue-100">
+                Understanding parts of speech is the foundation for mastering English grammar and improving your writing skills!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  );
+  )
 } 
