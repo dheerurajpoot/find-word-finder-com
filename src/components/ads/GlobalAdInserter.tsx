@@ -7,15 +7,6 @@ import { AD_CONFIG, getAdSlots, isAdEnabled } from '@/lib/adConfig';
 // This component automatically inserts ads on ALL pages without manual configuration
 
 export function GlobalAdInserter() {
-  useEffect(() => {
-    // Wait for page to load completely
-    const timer = setTimeout(() => {
-      insertAdsGlobally();
-    }, AD_CONFIG.PLACEMENT.insertion_delay);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   const insertAdsGlobally = () => {
     // Get all pages automatically
     const pages = document.querySelectorAll('main, article, .content, [role="main"]');
@@ -27,6 +18,15 @@ export function GlobalAdInserter() {
       }
     });
   };
+
+  useEffect(() => {
+    // Wait for page to load completely
+    const timer = setTimeout(() => {
+      insertAdsGlobally();
+    }, AD_CONFIG.PLACEMENT.insertion_delay);
+
+    return () => clearTimeout(timer);
+  }, [insertAdsGlobally]);
 
   const insertAdsOnPage = (pageElement: HTMLElement) => {
     // Get page type from URL
@@ -127,7 +127,7 @@ export function GlobalAdInserter() {
     // Trigger AdSense
     setTimeout(() => {
       try {
-        // @ts-ignore
+        // @ts-expect-error - AdSense global variable
         (window.adsbygoogle = window.adsbygoogle || []).push({});
       } catch (error) {
         console.error('AdSense error:', error);
@@ -152,7 +152,7 @@ export function GlobalAdInserter() {
     // Trigger AdSense
     setTimeout(() => {
       try {
-        // @ts-ignore
+        // @ts-expect-error - AdSense global variable
         (window.adsbygoogle = window.adsbygoogle || []).push({});
       } catch (error) {
         console.error('AdSense error:', error);
