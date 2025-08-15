@@ -9,55 +9,55 @@ export const AD_CONFIG = {
   AD_SLOTS: {
     // Spelling pages (e.g., /spelling/adapt-vs-addapt)
     spelling: {
-      top_banner: '6789012345',      // Replace with real slot ID
-      in_content_1: '7890123456',    // Replace with real slot ID
-      in_content_2: '8901234567',    // Replace with real slot ID
-      bottom_banner: '9012345678'    // Replace with real slot ID
+      top_banner: '9700413896',      // Replace with real slot ID
+      in_content_1: '4752173699',    // Replace with real slot ID
+      in_content_2: '7515187964',    // Replace with real slot ID
+      bottom_banner: '7653152285'    // Replace with real slot ID
     },
     
     // Grammar pages (e.g., /grammar/nouns)
     grammar: {
-      top_banner: '0123456789',      // Replace with real slot ID
-      in_content_1: '1234567890',    // Replace with real slot ID
-      in_content_2: '2345678901',    // Replace with real slot ID
-      bottom_banner: '3456789012'    // Replace with real slot ID
+      top_banner: '9700413896',      // Replace with real slot ID
+      in_content_1: '4752173699',    // Replace with real slot ID
+      in_content_2: '7515187964',    // Replace with real slot ID
+      bottom_banner: '7653152285'    // Replace with real slot ID
     },
     
     // Blog pages
     blog: {
-      top_banner: '4567890123',      // Replace with real slot ID
-      in_content_1: '5678901234',    // Replace with real slot ID
-      in_content_2: '6789012345',    // Replace with real slot ID
-      bottom_banner: '7890123456'    // Replace with real slot ID
+      top_banner: '9700413896',      // Replace with real slot ID
+      in_content_1: '4752173699',    // Replace with real slot ID
+      in_content_2: '7515187964',    // Replace with real slot ID
+      bottom_banner: '7653152285'    // Replace with real slot ID
     },
     
     // Confusing words pages
     'confusing-words': {
-      top_banner: '8901234567',      // Replace with real slot ID
-      in_content_1: '9012345678',    // Replace with real slot ID
-      in_content_2: '0123456789',    // Replace with real slot ID
-      bottom_banner: '1234567890'    // Replace with real slot ID
+      top_banner: '9700413896',      // Replace with real slot ID
+      in_content_1: '4752173699',    // Replace with real slot ID
+      in_content_2: '7515187964',    // Replace with real slot ID
+      bottom_banner: '7653152285'    // Replace with real slot ID
     },
     
     // Tool pages (word finder, scrabble, etc.)
     tool: {
-      top_banner: '2345678901',      // Replace with real slot ID
-      in_content_1: '3456789012',    // Replace with real slot ID
-      in_content_2: '4567890123',    // Replace with real slot ID
-      bottom_banner: '5678901234'    // Replace with real slot ID
+      top_banner: '9700413896',      // Replace with real slot ID
+      in_content_1: '4752173699',    // Replace with real slot ID
+      in_content_2: '7515187964',    // Replace with real slot ID
+      bottom_banner: '7653152285'    // Replace with real slot ID
     },
     
     // Static pages (about, contact, etc.)
     static: {
-      top_banner: '6789012345',      // Replace with real slot ID
-      bottom_banner: '7890123456'    // Replace with real slot ID
+      top_banner: '9700413896',      // Replace with real slot ID
+      bottom_banner: '7653152285'    // Replace with real slot ID
     },
     
     // General/fallback
     general: {
-      top_banner: '8901234567',      // Replace with real slot ID
-      in_content_1: '9012345678',    // Replace with real slot ID
-      bottom_banner: '0123456789'    // Replace with real slot ID
+      top_banner: '9700413896',      // Replace with real slot ID
+      in_content_1: '4752173699',    // Replace with real slot ID
+      bottom_banner: '7653152285'    // Replace with real slot ID
     }
   },
   
@@ -70,10 +70,10 @@ export const AD_CONFIG = {
     min_content_length: 50,
     
     // Delay before inserting ads (milliseconds)
-    insertion_delay: 1000,
+    insertion_delay: 500,
     
     // Ad spacing (minimum paragraphs between ads)
-    min_paragraphs_between_ads: 6,
+    min_paragraphs_between_ads: 5,
     
     // Enable/disable specific ad types
     enable_top_banner: true,

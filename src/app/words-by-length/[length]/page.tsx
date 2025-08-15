@@ -250,7 +250,7 @@ export default function WordsByLengthPage({
 										if you&apos;re playing Wordle-like games or
 										use the{" "}
 										<a
-											href='https://www.nytimes.com/games/wordle/index.html'
+											href='https://findwordfinder.com/wordle-helper'
 											target='_blank'
 											rel='noopener noreferrer'
 											className='text-blue-600 hover:underline'>
@@ -293,7 +293,7 @@ export default function WordsByLengthPage({
 										if you&apos;re playing Wordle-like games or
 										use the{" "}
 										<a
-											href='https://www.nytimes.com/games/wordle/index.html'
+											href='https://findwordfinder.com/wordle-helper'
 											target='_blank'
 											rel='noopener noreferrer'
 											className='text-blue-600 hover:underline'>
@@ -337,7 +337,7 @@ export default function WordsByLengthPage({
 										if you&apos;re playing Wordle-like games or
 										use the{" "}
 										<a
-											href='https://www.nytimes.com/games/wordle/index.html'
+											href='https://findwordfinder.com/wordle-helper'
 											target='_blank'
 											rel='noopener noreferrer'
 											className='text-blue-600 hover:underline'>
@@ -384,7 +384,7 @@ export default function WordsByLengthPage({
 										if you&apos;re playing Wordle-like games or
 										use the{" "}
 										<a
-											href='https://www.nytimes.com/games/wordle/index.html'
+											href='https://findwordfinder.com/wordle-helper'
 											target='_blank'
 											rel='noopener noreferrer'
 											className='text-blue-600 hover:underline'>
