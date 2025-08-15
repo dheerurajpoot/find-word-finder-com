@@ -1,7 +1,5 @@
 "use client"
 
-import { Metadata } from 'next'
-
 // export const metadata: Metadata = {
 //   title: 'To vs Too: Understanding the Difference | Grammar Guide',
 //   description: 'Learn the difference between "to" and "too" with clear examples, usage tips, and common mistakes to avoid. Perfect for improving your English grammar.',

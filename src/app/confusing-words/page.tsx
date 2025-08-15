@@ -1,8 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Metadata } from 'next'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 // export const metadata: Metadata = {
 //   title: 'Confusing Words - Common Word Pairs Explained | Word Finder',
@@ -28,7 +27,7 @@ export default function ConfusingWordsPage() {
   const categories = ['All', 'Grammar', 'Homophones', 'Spelling', 'Vocabulary', 'Nature', 'Food', 'Sports']
   
   // Fetch confusing words from API with retry mechanism
-  const fetchConfusingWords = async (retryCount = 0) => {
+  const fetchConfusingWords = useCallback(async (retryCount = 0) => {
     try {
       setLoading(true)
       setError(null)
@@ -69,7 +68,7 @@ export default function ConfusingWordsPage() {
     } finally {
       setLoading(false)
     }
-  }
+  }, [])
 
   // Get category and display count from URL parameter on page load
   useEffect(() => {
@@ -92,7 +91,7 @@ export default function ConfusingWordsPage() {
     
     // Fetch data after setting initial state
     fetchConfusingWords()
-  }, [])
+  }, [fetchConfusingWords])
   
   // Filter words based on selected category
   const filteredWords = selectedCategory === 'All' 
@@ -314,7 +313,7 @@ export default function ConfusingWordsPage() {
           {filteredWords.length === 0 ? (
             <div className="text-center py-12">
               <div className="text-gray-400 text-6xl mb-4">🔍</div>
-              <p className="text-xl text-gray-600">No word pairs found for "{selectedCategory}" category.</p>
+              <p className="text-xl text-gray-600">No word pairs found for &quot;{selectedCategory}&quot; category.</p>
             </div>
           ) : (
             <>

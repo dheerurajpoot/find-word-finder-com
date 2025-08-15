@@ -8,7 +8,6 @@ export default function SpellingPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [displayCount, setDisplayCount] = useState(6);
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const cardsPerPage = 6;
 
   // Get category and display count from URL parameter on page load
   useEffect(() => {
@@ -58,14 +57,6 @@ export default function SpellingPage() {
   const displayedPages = filteredPages.slice(0, displayCount);
   const hasMorePages = displayCount < filteredPages.length;
 
-  const loadMore = () => {
-    setDisplayCount(prev => Math.min(prev + 6, filteredPages.length));
-  };
-
-  const showLess = () => {
-    setDisplayCount(6);
-  };
-
   const handleCategoryChange = (category: string) => {
     // Update URL with category parameter and reload
     const url = new URL(window.location.href);
@@ -95,18 +86,6 @@ export default function SpellingPage() {
       .replace(/\bvs\b/i, "or")
       .replace(/\b(\w)/g, (m) => m.toUpperCase());
   }
-
-  const gradientColors = [
-    "from-blue-400 to-purple-500",
-    "from-green-400 to-blue-500",
-    "from-pink-400 to-red-500",
-    "from-yellow-400 to-orange-500",
-    "from-purple-400 to-pink-500",
-    "from-indigo-400 to-purple-500",
-    "from-teal-400 to-green-500",
-    "from-red-400 to-pink-500"
-  ];
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       {/* Hero Section */}
@@ -212,12 +191,12 @@ export default function SpellingPage() {
           {filteredPages.length === 0 ? (
             <div className="text-center py-12">
               <div className="text-gray-400 text-6xl mb-4">🔍</div>
-              <p className="text-xl text-gray-600">No spelling comparisons found for "{selectedCategory}" category.</p>
+              <p className="text-xl text-gray-600">No spelling comparisons found for &quot;{selectedCategory}&quot; category.</p>
             </div>
           ) : (
             <>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                {displayedPages.map((folder, index) => (
+                {displayedPages.map((folder) => (
                   <Link 
                     key={folder} 
                     href={`/spelling/${folder}`}
@@ -339,7 +318,7 @@ export default function SpellingPage() {
                 <div className="bg-emerald-500 text-white rounded-full p-2 text-sm font-bold">3</div>
                 <div>
                   <h4 className="font-semibold text-emerald-800 mb-1">Rule Patterns</h4>
-                  <p className="text-emerald-700 text-sm">Learn common spelling rules like "i before e except after c."</p>
+                  <p className="text-emerald-700 text-sm">Learn common spelling rules like &quot;i before e except after c.&quot;</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
