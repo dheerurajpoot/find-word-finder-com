@@ -5,9 +5,9 @@ export async function GET() {
 	const now = new Date().toISOString();
 
 	const dictionaryPages = [
-		{ url: "/scrabble-dictionary", priority: "0.8", changefreq: "weekly" },
+		{ url: "scrabble-dictionary", priority: "0.8", changefreq: "weekly" },
 		{
-			url: "/words-with-friends-dictionary",
+			url: "words-with-friends-dictionary",
 			priority: "0.8",
 			changefreq: "weekly",
 		},

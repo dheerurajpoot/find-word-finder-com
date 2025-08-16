@@ -5,9 +5,9 @@ export async function GET() {
 	const now = new Date().toISOString();
 
 	const legalPages = [
-		{ url: "/privacy", priority: "0.4", changefreq: "yearly" },
-		{ url: "/terms", priority: "0.4", changefreq: "yearly" },
-		{ url: "/disclaimer", priority: "0.4", changefreq: "yearly" },
+		{ url: "privacy", priority: "0.4", changefreq: "yearly" },
+		{ url: "terms", priority: "0.4", changefreq: "yearly" },
+		{ url: "disclaimer", priority: "0.4", changefreq: "yearly" },
 	];
 
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

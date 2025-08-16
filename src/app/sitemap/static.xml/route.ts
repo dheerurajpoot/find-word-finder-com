@@ -5,12 +5,12 @@ export async function GET() {
 	const now = new Date().toISOString();
 
 	const staticPages = [
-		{ url: "/", priority: "1.0", changefreq: "daily" },
-		{ url: "/search", priority: "0.9", changefreq: "daily" },
-		{ url: "/about", priority: "0.5", changefreq: "monthly" },
-		{ url: "/contact", priority: "0.5", changefreq: "monthly" },
-		{ url: "/word-finders", priority: "0.7", changefreq: "weekly" },
-		{ url: "/word-lists", priority: "0.7", changefreq: "weekly" },
+		{ url: "", priority: "1.0", changefreq: "daily" },
+		{ url: "search", priority: "0.9", changefreq: "daily" },
+		{ url: "about", priority: "0.5", changefreq: "monthly" },
+		{ url: "contact", priority: "0.5", changefreq: "monthly" },
+		{ url: "word-finders", priority: "0.7", changefreq: "weekly" },
+		{ url: "word-lists", priority: "0.7", changefreq: "weekly" },
 	];
 
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

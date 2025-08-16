@@ -11,9 +11,9 @@ export async function GET() {
 		changefreq: string;
 		lastmod?: string;
 	}> = [
-		{ url: "/blog", priority: "0.8", changefreq: "daily" },
+		{ url: "blog", priority: "0.8", changefreq: "daily" },
 		...blogPosts.map((post) => ({
-			url: `/blog/${post.slug}`,
+			url: `blog/${post.slug}`,
 			priority: "0.8",
 			changefreq: "monthly",
 			lastmod: new Date(post.date).toISOString(),

@@ -5,8 +5,8 @@ export async function GET() {
 	const now = new Date().toISOString();
 
 	const gamePages = [
-		{ url: "/wordle-helper", priority: "0.8", changefreq: "weekly" },
-		{ url: "/scrabble-calculator", priority: "0.8", changefreq: "weekly" },
+		{ url: "wordle-helper", priority: "0.8", changefreq: "weekly" },
+		{ url: "scrabble-calculator", priority: "0.8", changefreq: "weekly" },
 	];
 
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

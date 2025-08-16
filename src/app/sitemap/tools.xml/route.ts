@@ -5,11 +5,11 @@ export async function GET() {
 	const now = new Date().toISOString();
 
 	const tools = [
-		{ url: "/anagram-solver", priority: "0.8", changefreq: "weekly" },
-		{ url: "/word-unscrambler", priority: "0.8", changefreq: "weekly" },
-		{ url: "/crossword-solver", priority: "0.8", changefreq: "weekly" },
-		{ url: "/rhyme-finder", priority: "0.8", changefreq: "weekly" },
-		{ url: "/word-generator", priority: "0.8", changefreq: "weekly" },
+		{ url: "anagram-solver", priority: "0.8", changefreq: "weekly" },
+		{ url: "word-unscrambler", priority: "0.8", changefreq: "weekly" },
+		{ url: "crossword-solver", priority: "0.8", changefreq: "weekly" },
+		{ url: "rhyme-finder", priority: "0.8", changefreq: "weekly" },
+		{ url: "word-generator", priority: "0.8", changefreq: "weekly" },
 	];
 
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
