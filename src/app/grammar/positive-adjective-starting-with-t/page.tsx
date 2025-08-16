@@ -32,8 +32,8 @@ export default function PositiveAdjectiveStartingWithT() {
                 people, situations, and things in an encouraging and optimistic way.
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                From "talented" to "trustworthy," T-adjectives offer a rich vocabulary for building 
-                self-esteem, motivating others, and creating positive environments. They're 
+                From &quot;talented&quot; to &quot;trustworthy,&quot; T-adjectives offer a rich vocabulary for building 
+                self-esteem, motivating others, and creating positive environments. They&apos;re 
                 particularly useful in personal development, professional settings, and encouraging communication.
               </p>
               <p className="text-lg text-gray-700">
@@ -140,7 +140,7 @@ export default function PositiveAdjectiveStartingWithT() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-teal-50 to-cyan-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "having natural aptitude or skill"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;having natural aptitude or skill&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q1" id="q1a" className="text-teal-600" />
@@ -158,7 +158,7 @@ export default function PositiveAdjectiveStartingWithT() {
                 </div>
                 <div className="bg-gradient-to-r from-cyan-50 to-blue-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "able to be relied on as honest"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;able to be relied on as honest&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q2" id="q2a" className="text-cyan-600" />
@@ -185,7 +185,7 @@ export default function PositiveAdjectiveStartingWithT() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-blue-50 to-teal-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"She is a _____ artist who creates beautiful paintings."</p>
+                  <p className="text-gray-700 mb-3">&quot;She is a _____ artist who creates beautiful paintings.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q3" id="q3a" className="text-blue-600" />
@@ -203,7 +203,7 @@ export default function PositiveAdjectiveStartingWithT() {
                 </div>
                 <div className="bg-gradient-to-r from-teal-50 to-cyan-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"His _____ nature makes him a great friend."</p>
+                  <p className="text-gray-700 mb-3">&quot;His _____ nature makes him a great friend.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q4" id="q4a" className="text-teal-600" />
@@ -230,7 +230,7 @@ export default function PositiveAdjectiveStartingWithT() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-cyan-50 to-blue-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "trustworthy"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;trustworthy&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q5" id="q5a" className="text-cyan-600" />
@@ -248,7 +248,7 @@ export default function PositiveAdjectiveStartingWithT() {
                 </div>
                 <div className="bg-gradient-to-r from-blue-50 to-teal-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "talented"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;talented&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q6" id="q6a" className="text-blue-600" />

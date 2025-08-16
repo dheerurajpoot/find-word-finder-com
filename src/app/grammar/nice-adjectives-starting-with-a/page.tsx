@@ -32,8 +32,8 @@ export default function NiceAdjectivesStartingWithA() {
                 people, places, and things in a kind and agreeable way.
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                From "amazing" to "awesome," A-adjectives offer a delightful vocabulary for 
-                creating positive impressions and building friendly relationships. They're 
+                From &quot;amazing&quot; to &quot;awesome,&quot; A-adjectives offer a delightful vocabulary for 
+                creating positive impressions and building friendly relationships. They&apos;re 
                 particularly useful in social interactions, compliments, and encouraging communication.
               </p>
               <p className="text-lg text-gray-700">
@@ -140,7 +140,7 @@ export default function NiceAdjectivesStartingWithA() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "causing great surprise or wonder"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;causing great surprise or wonder&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q1" id="q1a" className="text-blue-600" />
@@ -158,7 +158,7 @@ export default function NiceAdjectivesStartingWithA() {
                 </div>
                 <div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "pleasant and easy to get along with"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;pleasant and easy to get along with&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q2" id="q2a" className="text-indigo-600" />
@@ -185,7 +185,7 @@ export default function NiceAdjectivesStartingWithA() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"She has an _____ personality that everyone loves."</p>
+                  <p className="text-gray-700 mb-3">&quot;She has an _____ personality that everyone loves.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q3" id="q3a" className="text-purple-600" />
@@ -203,7 +203,7 @@ export default function NiceAdjectivesStartingWithA() {
                 </div>
                 <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"The _____ child smiled at everyone."</p>
+                  <p className="text-gray-700 mb-3">&quot;The _____ child smiled at everyone.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q4" id="q4a" className="text-blue-600" />
@@ -230,7 +230,7 @@ export default function NiceAdjectivesStartingWithA() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "agreeable"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;agreeable&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q5" id="q5a" className="text-indigo-600" />
@@ -248,7 +248,7 @@ export default function NiceAdjectivesStartingWithA() {
                 </div>
                 <div className="bg-gradient-to-r from-purple-50 to-blue-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "amazing"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;amazing&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q6" id="q6a" className="text-purple-600" />
@@ -325,7 +325,7 @@ export default function NiceAdjectivesStartingWithA() {
                   <span className="text-2xl">🌟</span>
                   <p className="text-blue-100">
                     Remember that sincerity is key when using nice adjectives - 
-                    they're most effective when genuine.
+                    they&apos;re most effective when genuine.
                   </p>
                 </div>
               </div>

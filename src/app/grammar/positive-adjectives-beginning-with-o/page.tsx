@@ -32,8 +32,8 @@ export default function PositiveAdjectivesBeginningWithO() {
                 people, situations, and things in an encouraging and optimistic way.
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                From "outstanding" to "optimistic," O-adjectives offer a rich vocabulary for building 
-                self-esteem, motivating others, and creating positive environments. They're 
+                From &quot;outstanding&quot; to &quot;optimistic,&quot; O-adjectives offer a rich vocabulary for building 
+                self-esteem, motivating others, and creating positive environments. They&apos;re 
                 particularly useful in personal development, professional settings, and encouraging communication.
               </p>
               <p className="text-lg text-gray-700">
@@ -140,7 +140,7 @@ export default function PositiveAdjectivesBeginningWithO() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-orange-50 to-amber-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "exceptionally good or excellent"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;exceptionally good or excellent&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q1" id="q1a" className="text-orange-600" />
@@ -158,7 +158,7 @@ export default function PositiveAdjectivesBeginningWithO() {
                 </div>
                 <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "hopeful and confident about the future"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;hopeful and confident about the future&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q2" id="q2a" className="text-amber-600" />
@@ -185,7 +185,7 @@ export default function PositiveAdjectivesBeginningWithO() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-yellow-50 to-orange-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"She has an _____ personality that everyone admires."</p>
+                  <p className="text-gray-700 mb-3">&quot;She has an _____ personality that everyone admires.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q3" id="q3a" className="text-yellow-600" />
@@ -203,7 +203,7 @@ export default function PositiveAdjectivesBeginningWithO() {
                 </div>
                 <div className="bg-gradient-to-r from-orange-50 to-amber-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"His _____ approach to work impressed the team."</p>
+                  <p className="text-gray-700 mb-3">&quot;His _____ approach to work impressed the team.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q4" id="q4a" className="text-orange-600" />
@@ -230,7 +230,7 @@ export default function PositiveAdjectivesBeginningWithO() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "optimistic"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;optimistic&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q5" id="q5a" className="text-amber-600" />
@@ -248,7 +248,7 @@ export default function PositiveAdjectivesBeginningWithO() {
                 </div>
                 <div className="bg-gradient-to-r from-yellow-50 to-orange-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "organized"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;organized&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q6" id="q6a" className="text-yellow-600" />

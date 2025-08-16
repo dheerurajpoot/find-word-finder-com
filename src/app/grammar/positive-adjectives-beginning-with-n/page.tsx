@@ -32,8 +32,8 @@ export default function PositiveAdjectivesBeginningWithN() {
                 people, situations, and things in an encouraging and optimistic way.
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                From "nice" to "noble," N-adjectives offer a rich vocabulary for building 
-                self-esteem, motivating others, and creating positive environments. They're 
+                From &quot;nice&quot; to &quot;noble,&quot; N-adjectives offer a rich vocabulary for building 
+                self-esteem, motivating others, and creating positive environments. They&apos;re 
                 particularly useful in personal development, professional settings, and encouraging communication.
               </p>
               <p className="text-lg text-gray-700">
@@ -140,7 +140,7 @@ export default function PositiveAdjectivesBeginningWithN() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "pleasant, agreeable, and kind"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;pleasant, agreeable, and kind&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q1" id="q1a" className="text-emerald-600" />

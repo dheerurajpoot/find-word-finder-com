@@ -32,8 +32,8 @@ export default function PositiveAdjectivesBeginningWithB() {
                 people, situations, and things in an encouraging and optimistic way.
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                From "beautiful" to "brilliant," B-adjectives offer a rich vocabulary for building 
-                self-esteem, motivating others, and creating positive environments. They're 
+                From &quot;beautiful&quot; to &quot;brilliant,&quot; B-adjectives offer a rich vocabulary for building 
+                self-esteem, motivating others, and creating positive environments. They&apos;re 
                 particularly useful in personal development, professional settings, and encouraging communication.
               </p>
               <p className="text-lg text-gray-700">
@@ -140,7 +140,7 @@ export default function PositiveAdjectivesBeginningWithB() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "pleasing the senses or mind aesthetically"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;pleasing the senses or mind aesthetically&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q1" id="q1a" className="text-green-600" />
@@ -158,7 +158,7 @@ export default function PositiveAdjectivesBeginningWithB() {
                 </div>
                 <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "exceptionally clever or talented"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;exceptionally clever or talented&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q2" id="q2a" className="text-emerald-600" />
@@ -185,7 +185,7 @@ export default function PositiveAdjectivesBeginningWithB() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-teal-50 to-green-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"She has a _____ personality that brightens everyone's day."</p>
+                  <p className="text-gray-700 mb-3">&quot;She has a _____ personality that brightens everyone&apos;s day.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q3" id="q3a" className="text-teal-600" />
@@ -203,7 +203,7 @@ export default function PositiveAdjectivesBeginningWithB() {
                 </div>
                 <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"His _____ approach to problem-solving impressed the team."</p>
+                  <p className="text-gray-700 mb-3">&quot;His _____ approach to problem-solving impressed the team.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q4" id="q4a" className="text-green-600" />
@@ -230,7 +230,7 @@ export default function PositiveAdjectivesBeginningWithB() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "beautiful"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;beautiful&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q5" id="q5a" className="text-emerald-600" />
@@ -248,7 +248,7 @@ export default function PositiveAdjectivesBeginningWithB() {
                 </div>
                 <div className="bg-gradient-to-r from-teal-50 to-green-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "bright"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;bright&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q6" id="q6a" className="text-teal-600" />

@@ -32,8 +32,8 @@ export default function GoodAdjectivesThatStartWithI() {
                 in a clear and effective way.
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                From "intelligent" to "inspiring," I-adjectives offer a rich vocabulary for describing 
-                people, situations, and things in a positive light. They're particularly useful in 
+                From &quot;intelligent&quot; to &quot;inspiring,&quot; I-adjectives offer a rich vocabulary for describing 
+                people, situations, and things in a positive light. They&apos;re particularly useful in 
                 professional settings, personal relationships, and creative writing.
               </p>
               <p className="text-lg text-gray-700">
@@ -140,7 +140,7 @@ export default function GoodAdjectivesThatStartWithI() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "having or showing intelligence"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;having or showing intelligence&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q1" id="q1a" className="text-indigo-600" />
@@ -158,7 +158,7 @@ export default function GoodAdjectivesThatStartWithI() {
                 </div>
                 <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "filling someone with the urge to do something"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;filling someone with the urge to do something&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q2" id="q2a" className="text-purple-600" />
@@ -185,7 +185,7 @@ export default function GoodAdjectivesThatStartWithI() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-pink-50 to-indigo-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"Her _____ approach to problem-solving impressed everyone."</p>
+                  <p className="text-gray-700 mb-3">&quot;Her _____ approach to problem-solving impressed everyone.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q3" id="q3a" className="text-pink-600" />
@@ -203,7 +203,7 @@ export default function GoodAdjectivesThatStartWithI() {
                 </div>
                 <div className="bg-gradient-to-r from-indigo-50 to-purple-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"The _____ speech motivated the entire team."</p>
+                  <p className="text-gray-700 mb-3">&quot;The _____ speech motivated the entire team.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q4" id="q4a" className="text-indigo-600" />
@@ -230,7 +230,7 @@ export default function GoodAdjectivesThatStartWithI() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "intelligent"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;intelligent&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q5" id="q5a" className="text-purple-600" />
@@ -248,7 +248,7 @@ export default function GoodAdjectivesThatStartWithI() {
                 </div>
                 <div className="bg-gradient-to-r from-pink-50 to-indigo-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "inspiring"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;inspiring&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q6" id="q6a" className="text-pink-600" />
