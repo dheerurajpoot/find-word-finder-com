@@ -32,8 +32,8 @@ export default function PositiveAdjectiveStartingWithC() {
                 people, situations, and things in an encouraging and optimistic way.
               </p>
               <p className="text-lg text-gray-700 mb-4">
-                From "creative" to "confident," C-adjectives offer a rich vocabulary for building 
-                self-esteem, motivating others, and creating positive environments. They're 
+                From &quot;creative&quot; to &quot;confident,&quot; C-adjectives offer a rich vocabulary for building 
+                self-esteem, motivating others, and creating positive environments. They&apos;re 
                 particularly useful in personal development, professional settings, and encouraging communication.
               </p>
               <p className="text-lg text-gray-700">
@@ -140,7 +140,7 @@ export default function PositiveAdjectiveStartingWithC() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-cyan-50 to-teal-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "relating to or involving the imagination"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;relating to or involving the imagination&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q1" id="q1a" className="text-cyan-600" />
@@ -158,7 +158,7 @@ export default function PositiveAdjectiveStartingWithC() {
                 </div>
                 <div className="bg-gradient-to-r from-teal-50 to-blue-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "feeling or showing certainty"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;feeling or showing certainty&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q2" id="q2a" className="text-teal-600" />
@@ -185,7 +185,7 @@ export default function PositiveAdjectiveStartingWithC() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"She has a _____ personality that brightens everyone's day."</p>
+                  <p className="text-gray-700 mb-3">&quot;She has a _____ personality that brightens everyone&apos;s day.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q3" id="q3a" className="text-blue-600" />
@@ -203,7 +203,7 @@ export default function PositiveAdjectiveStartingWithC() {
                 </div>
                 <div className="bg-gradient-to-r from-cyan-50 to-teal-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"His _____ approach to problem-solving impressed the team."</p>
+                  <p className="text-gray-700 mb-3">&quot;His _____ approach to problem-solving impressed the team.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q4" id="q4a" className="text-cyan-600" />
@@ -230,7 +230,7 @@ export default function PositiveAdjectiveStartingWithC() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-teal-50 to-blue-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "confident"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;confident&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q5" id="q5a" className="text-teal-600" />
@@ -248,7 +248,7 @@ export default function PositiveAdjectiveStartingWithC() {
                 </div>
                 <div className="bg-gradient-to-r from-blue-50 to-cyan-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "cheerful"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;cheerful&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q6" id="q6a" className="text-blue-600" />

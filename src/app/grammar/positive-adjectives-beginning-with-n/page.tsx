@@ -158,7 +158,7 @@ export default function PositiveAdjectivesBeginningWithN() {
                 </div>
                 <div className="bg-gradient-to-r from-teal-50 to-cyan-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">Which adjective means "having or showing fine personal qualities"?</p>
+                  <p className="text-gray-700 mb-3">Which adjective means &quot;having or showing fine personal qualities&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q2" id="q2a" className="text-teal-600" />
@@ -185,7 +185,7 @@ export default function PositiveAdjectivesBeginningWithN() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-cyan-50 to-emerald-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"She has a _____ personality that everyone loves."</p>
+                  <p className="text-gray-700 mb-3">&quot;She has a _____ personality that everyone loves.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q3" id="q3a" className="text-cyan-600" />
@@ -203,7 +203,7 @@ export default function PositiveAdjectivesBeginningWithN() {
                 </div>
                 <div className="bg-gradient-to-r from-emerald-50 to-teal-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Complete the sentence:</h3>
-                  <p className="text-gray-700 mb-3">"His _____ approach to leadership impressed the team."</p>
+                  <p className="text-gray-700 mb-3">&quot;His _____ approach to leadership impressed the team.&quot;</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q4" id="q4a" className="text-emerald-600" />
@@ -230,7 +230,7 @@ export default function PositiveAdjectivesBeginningWithN() {
               <div className="space-y-4">
                 <div className="bg-gradient-to-r from-teal-50 to-cyan-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 1:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "nice"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;nice&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q5" id="q5a" className="text-teal-600" />
@@ -248,7 +248,7 @@ export default function PositiveAdjectivesBeginningWithN() {
                 </div>
                 <div className="bg-gradient-to-r from-cyan-50 to-emerald-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "noble"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;noble&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q6" id="q6a" className="text-cyan-600" />

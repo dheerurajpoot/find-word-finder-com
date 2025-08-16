@@ -318,7 +318,7 @@ export default function GoodAdjectivesThatStartWithI() {
                   <span className="text-2xl">🎯</span>
                   <p className="text-indigo-100">
                     Use these adjectives strategically to enhance communication and express 
-                    appreciation for others' qualities.
+                    appreciation for others&apos; qualities.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">

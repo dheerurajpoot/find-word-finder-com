@@ -248,7 +248,7 @@ export default function PositiveAdjectivesBeginningWithI() {
                 </div>
                 <div className="bg-gradient-to-r from-pink-50 to-indigo-50 p-4 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Question 2:</h3>
-                  <p className="text-gray-700 mb-3">What's the opposite of "inspiring"?</p>
+                  <p className="text-gray-700 mb-3">What&apos;s the opposite of &quot;inspiring&quot;?</p>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <input type="radio" name="q6" id="q6a" className="text-pink-600" />
