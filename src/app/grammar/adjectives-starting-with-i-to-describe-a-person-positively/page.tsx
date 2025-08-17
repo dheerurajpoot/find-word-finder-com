@@ -151,6 +151,9 @@ export default function AdjectivesStartingWithIToDescribePersonPositively() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: A) Motivating and uplifting</p>
+                          {quiz1Answers['inspiring'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['inspiring']}</p>
+                          )}
                         </div>
                       )}
                     </div>

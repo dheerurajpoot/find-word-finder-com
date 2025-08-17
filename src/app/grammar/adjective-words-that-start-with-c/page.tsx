@@ -190,6 +190,9 @@ export default function AdjectiveWordsThatStartWithC() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: A) Having imagination and originality</p>
+                          {quiz1Answers['creative'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['creative']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -231,6 +234,9 @@ export default function AdjectiveWordsThatStartWithC() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: B) Eager to learn or know</p>
+                          {quiz1Answers['curious'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['curious']}</p>
+                          )}
                         </div>
                       )}
                     </div>

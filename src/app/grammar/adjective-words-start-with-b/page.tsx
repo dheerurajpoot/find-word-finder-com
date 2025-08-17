@@ -190,6 +190,9 @@ export default function AdjectiveWordsStartWithB() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: A) Exceptionally clever</p>
+                          {quiz1Answers['brilliant'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['brilliant']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -231,6 +234,9 @@ export default function AdjectiveWordsStartWithB() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: B) Confident and courageous</p>
+                          {quiz1Answers['bold'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['bold']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -261,6 +267,9 @@ export default function AdjectiveWordsStartWithB() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: bright, brilliant, bold</p>
+                          {quiz1Answers['challenging'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['challenging']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -276,6 +285,9 @@ export default function AdjectiveWordsStartWithB() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: beautiful, bubbly, benevolent</p>
+                          {quiz1Answers['personality'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['personality']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -306,6 +318,9 @@ export default function AdjectiveWordsStartWithB() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: dim, dark, dull</p>
+                          {quiz1Answers['bright_opposite'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['bright_opposite']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -321,6 +336,9 @@ export default function AdjectiveWordsStartWithB() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: ugly, unattractive, hideous</p>
+                          {quiz1Answers['beautiful_opposite'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['beautiful_opposite']}</p>
+                          )}
                         </div>
                       )}
                     </div>

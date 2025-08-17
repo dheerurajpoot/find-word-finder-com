@@ -5,20 +5,10 @@ import { useState } from "react"
 
 export default function AdjectivesThatBeginWithLetterE() {
   const [quiz1Answers, setQuiz1Answers] = useState<{[key: string]: string}>({})
-  const [quiz2Answers, setQuiz2Answers] = useState<{[key: string]: string}>({})
-  const [quiz3Answers, setQuiz3Answers] = useState<{[key: string]: string}>({})
   const [showResults, setShowResults] = useState(false)
 
   const handleQuiz1Change = (question: string, answer: string) => {
     setQuiz1Answers(prev => ({ ...prev, [question]: answer }))
-  }
-
-  const handleQuiz2Change = (question: string, answer: string) => {
-    setQuiz2Answers(prev => ({ ...prev, [question]: answer }))
-  }
-
-  const handleQuiz3Change = (question: string, answer: string) => {
-    setQuiz3Answers(prev => ({ ...prev, [question]: answer }))
   }
 
   const checkAnswers = () => {
@@ -27,8 +17,6 @@ export default function AdjectivesThatBeginWithLetterE() {
 
   const resetQuiz = () => {
     setQuiz1Answers({})
-    setQuiz2Answers({})
-    setQuiz3Answers({})
     setShowResults(false)
   }
 
@@ -163,6 +151,9 @@ export default function AdjectivesThatBeginWithLetterE() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: A) Full of life and vigor</p>
+                          {quiz1Answers['energetic'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['energetic']}</p>
+                          )}
                         </div>
                       )}
                     </div>

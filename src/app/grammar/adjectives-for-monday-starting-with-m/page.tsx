@@ -151,6 +151,9 @@ export default function AdjectivesForMondayStartingWithM() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: A) Driven and enthusiastic for the week</p>
+                          {quiz1Answers['motivated'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['motivated']}</p>
+                          )}
                         </div>
                       )}
                     </div>

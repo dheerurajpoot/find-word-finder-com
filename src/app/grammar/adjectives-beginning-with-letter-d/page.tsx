@@ -189,7 +189,10 @@ export default function AdjectivesBeginningWithLetterD() {
                       </div>
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
-                          <p className="text-green-800 font-semibold">Correct Answer: A) Having a strong will to succeed</p>
+                          <p className="text-green-800 font-semibold">Correct Answer: B) Having a strong will to succeed</p>
+                          {quiz1Answers['determined'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['determined']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -231,6 +234,9 @@ export default function AdjectivesBeginningWithLetterD() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: B) Hardworking and careful</p>
+                          {quiz1Answers['diligent'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['diligent']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -261,6 +267,9 @@ export default function AdjectivesBeginningWithLetterD() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: determined, diligent, dedicated</p>
+                          {quiz1Answers['student'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['student']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -276,6 +285,9 @@ export default function AdjectivesBeginningWithLetterD() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: delightful, dynamic, dependable</p>
+                          {quiz1Answers['personality'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['personality']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -306,6 +318,9 @@ export default function AdjectivesBeginningWithLetterD() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: unpleasant, awful, terrible</p>
+                          {quiz1Answers['delightful_opposite'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['delightful_opposite']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -321,6 +336,9 @@ export default function AdjectivesBeginningWithLetterD() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: undetermined, indecisive, uncertain</p>
+                          {quiz1Answers['determined_opposite'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['determined_opposite']}</p>
+                          )}
                         </div>
                       )}
                     </div>

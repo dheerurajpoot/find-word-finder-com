@@ -190,6 +190,9 @@ export default function AdjectiveWordStartWithI() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: B) Having great mental ability</p>
+                          {quiz1Answers['intelligent'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['intelligent']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -231,6 +234,9 @@ export default function AdjectiveWordStartWithI() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: A) Creative and original</p>
+                          {quiz1Answers['innovative'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['innovative']}</p>
+                          )}
                         </div>
                       )}
                     </div>

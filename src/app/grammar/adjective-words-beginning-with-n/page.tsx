@@ -190,6 +190,9 @@ export default function AdjectiveWordsBeginningWithN() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: B) Existing in nature, not artificial</p>
+                          {quiz1Answers['natural'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['natural']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -231,6 +234,9 @@ export default function AdjectiveWordsBeginningWithN() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: A) Caring and supportive</p>
+                          {quiz1Answers['nurturing'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['nurturing']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -261,6 +267,9 @@ export default function AdjectiveWordsBeginningWithN() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: nurturing, nice, noble</p>
+                          {quiz1Answers['encouraging'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['encouraging']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -276,6 +285,9 @@ export default function AdjectiveWordsBeginningWithN() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: natural, neat, nimble</p>
+                          {quiz1Answers['approach'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['approach']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -306,6 +318,9 @@ export default function AdjectiveWordsBeginningWithN() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: artificial, synthetic, man-made</p>
+                          {quiz1Answers['natural_opposite'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['natural_opposite']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -321,6 +336,9 @@ export default function AdjectiveWordsBeginningWithN() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: mean, nasty, unpleasant</p>
+                          {quiz1Answers['nice_opposite'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['nice_opposite']}</p>
+                          )}
                         </div>
                       )}
                     </div>

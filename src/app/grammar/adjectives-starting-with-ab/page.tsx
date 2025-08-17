@@ -151,6 +151,9 @@ export default function AdjectivesStartingWithAb() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: A) Plentiful and well-supplied</p>
+                          {quiz1Answers['abundant'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['abundant']}</p>
+                          )}
                         </div>
                       )}
                     </div>

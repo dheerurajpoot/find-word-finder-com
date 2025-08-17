@@ -190,6 +190,9 @@ export default function AdjectivesBeginningWithGToDescribeAPerson() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: A) Sincere and authentic</p>
+                          {quiz1Answers['genuine'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['genuine']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -231,6 +234,9 @@ export default function AdjectivesBeginningWithGToDescribeAPerson() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Correct Answer: B) Courteous and kind</p>
+                          {quiz1Answers['gracious'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['gracious']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -261,6 +267,9 @@ export default function AdjectivesBeginningWithGToDescribeAPerson() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: generous, gracious, good-natured</p>
+                          {quiz1Answers['teacher'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['teacher']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -276,6 +285,9 @@ export default function AdjectivesBeginningWithGToDescribeAPerson() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: genuine, gentle, gracious</p>
+                          {quiz1Answers['personality'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['personality']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -306,6 +318,9 @@ export default function AdjectivesBeginningWithGToDescribeAPerson() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: selfish, stingy, greedy</p>
+                          {quiz1Answers['generous_opposite'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['generous_opposite']}</p>
+                          )}
                         </div>
                       )}
                     </div>
@@ -321,6 +336,9 @@ export default function AdjectivesBeginningWithGToDescribeAPerson() {
                       {showResults && (
                         <div className="mt-2 p-2 rounded bg-green-50 border border-green-200">
                           <p className="text-green-800 font-semibold">Suggested Answer: fake, insincere, phony</p>
+                          {quiz1Answers['genuine_opposite'] && (
+                            <p className="text-green-700 mt-1">Your Answer: {quiz1Answers['genuine_opposite']}</p>
+                          )}
                         </div>
                       )}
                     </div>
