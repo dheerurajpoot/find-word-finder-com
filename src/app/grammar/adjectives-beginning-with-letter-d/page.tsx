@@ -5,20 +5,10 @@ import { useState } from "react"
 
 export default function AdjectivesBeginningWithLetterD() {
   const [quiz1Answers, setQuiz1Answers] = useState<{[key: string]: string}>({})
-  const [quiz2Answers, setQuiz2Answers] = useState<{[key: string]: string}>({})
-  const [quiz3Answers, setQuiz3Answers] = useState<{[key: string]: string}>({})
   const [showResults, setShowResults] = useState(false)
 
   const handleQuiz1Change = (question: string, answer: string) => {
     setQuiz1Answers(prev => ({ ...prev, [question]: answer }))
-  }
-
-  const handleQuiz2Change = (question: string, answer: string) => {
-    setQuiz2Answers(prev => ({ ...prev, [question]: answer }))
-  }
-
-  const handleQuiz3Change = (question: string, answer: string) => {
-    setQuiz3Answers(prev => ({ ...prev, [question]: answer }))
   }
 
   const checkAnswers = () => {
@@ -27,8 +17,6 @@ export default function AdjectivesBeginningWithLetterD() {
 
   const resetQuiz = () => {
     setQuiz1Answers({})
-    setQuiz2Answers({})
-    setQuiz3Answers({})
     setShowResults(false)
   }
 
@@ -267,7 +255,7 @@ export default function AdjectivesBeginningWithLetterD() {
                       <input
                         type="text"
                         placeholder="Type your answer..."
-                        onChange={(e) => handleQuiz2Change('student', e.target.value)}
+                        onChange={(e) => handleQuiz1Change('student', e.target.value)}
                         className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                       />
                       {showResults && (
@@ -282,7 +270,7 @@ export default function AdjectivesBeginningWithLetterD() {
                       <input
                         type="text"
                         placeholder="Type your answer..."
-                        onChange={(e) => handleQuiz2Change('personality', e.target.value)}
+                        onChange={(e) => handleQuiz1Change('personality', e.target.value)}
                         className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                       />
                       {showResults && (
@@ -312,7 +300,7 @@ export default function AdjectivesBeginningWithLetterD() {
                       <input
                         type="text"
                         placeholder="Type your answer..."
-                        onChange={(e) => handleQuiz3Change('delightful_opposite', e.target.value)}
+                        onChange={(e) => handleQuiz1Change('delightful_opposite', e.target.value)}
                         className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-fuchsia-500 focus:border-transparent"
                       />
                       {showResults && (
@@ -327,7 +315,7 @@ export default function AdjectivesBeginningWithLetterD() {
                       <input
                         type="text"
                         placeholder="Type your answer..."
-                        onChange={(e) => handleQuiz3Change('determined_opposite', e.target.value)}
+                        onChange={(e) => handleQuiz1Change('determined_opposite', e.target.value)}
                         className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-fuchsia-500 focus:border-transparent"
                       />
                       {showResults && (

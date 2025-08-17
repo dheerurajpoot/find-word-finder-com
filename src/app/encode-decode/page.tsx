@@ -9,7 +9,7 @@ import { ArrowLeft, ArrowRight, Copy, RotateCcw, Code, Lock, Globe, Sparkles, Za
 
 export default function EncodeDecodePage() {
   // Get initial tab from URL or default to 'escape'
-  const [activeTab, setActiveTab] = useState(() => {
+  const [activeTab] = useState(() => {
     if (typeof window !== 'undefined') {
       const urlParams = new URLSearchParams(window.location.search);
       return urlParams.get('tab') || 'escape';
