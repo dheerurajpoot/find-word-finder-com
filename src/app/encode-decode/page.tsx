@@ -8,7 +8,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { ArrowLeft, ArrowRight, Copy, RotateCcw, Code, Lock, Globe, Sparkles, Zap, Shield } from 'lucide-react';
 
 export default function EncodeDecodePage() {
-  const [activeTab, setActiveTab] = useState('escape');
+  // Get initial tab from URL or default to 'escape'
+  const [activeTab, setActiveTab] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get('tab') || 'escape';
+    }
+    return 'escape';
+  });
+  
   const [escapeInput, setEscapeInput] = useState('');
   const [escapeOutput, setEscapeOutput] = useState('');
   const [encodeInput, setEncodeInput] = useState('');
@@ -37,26 +45,14 @@ export default function EncodeDecodePage() {
   const handleEscapeOutputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = e.target.value;
     setEscapeOutput(value);
-    // Auto-decode if the text looks like escaped content
-    if (value.includes('%') && value.length > 10) {
-      try {
-        const decoded = decodeURIComponent(value);
-        setEscapeInput(decoded);
-      } catch {
-        // If decoding fails, don't change the input
-      }
-    }
+    // Removed automatic decoding - only convert when button is clicked
   };
 
   // Auto-encode when pasting in normal box
   const handleEscapeInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = e.target.value;
     setEscapeInput(value);
-    // Auto-encode if the text looks like a URL or contains special characters
-    if (value.includes('://') || value.includes('?') || value.includes('&') || value.includes('=')) {
-      const encoded = escapeText(value);
-      setEscapeOutput(encoded);
-    }
+    // Removed automatic encoding - only convert when button is clicked
   };
 
   // Encode/Decode functions
@@ -85,26 +81,14 @@ export default function EncodeDecodePage() {
   const handleEncodeOutputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = e.target.value;
     setEncodeOutput(value);
-    // Auto-decode if the text looks like encoded content
-    if (value.includes('%') && value.length > 10) {
-      try {
-        const decoded = decodeText(value, parseInt(codeKey));
-        setEncodeInput(decoded);
-      } catch {
-        // If decoding fails, don't change the input
-      }
-    }
+    // Removed automatic decoding - only convert when button is clicked
   };
 
   // Auto-encode when pasting in normal box
   const handleEncodeInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = e.target.value;
     setEncodeInput(value);
-    // Auto-encode if the text looks like a URL or contains special characters
-    if (value.includes('://') || value.includes('?') || value.includes('&') || value.includes('=') || value.length > 5) {
-      const encoded = encodeText(value, parseInt(codeKey));
-      setEncodeOutput(encoded);
-    }
+    // Removed automatic encoding - only convert when button is clicked
   };
 
   // HTML Page Encoder
@@ -135,14 +119,16 @@ dF('${encoded}');
     setEncodeOutput('');
     setHtmlInput('');
     setHtmlOutput('');
+    // Reload the page with current tab to ensure fresh state
+    window.location.href = `?tab=${activeTab}`;
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-x-hidden">
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
-        <div className="relative container mx-auto px-4 py-16 text-center">
+        <div className="relative container mx-auto px-4 sm:px-6 py-16 text-center">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl mb-6 shadow-2xl">
             <Code className="w-10 h-10 text-white" />
           </div>
@@ -156,11 +142,13 @@ dF('${encoded}');
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto px-4 pb-16 max-w-7xl">
+      <div className="container mx-auto px-4 pb-16 max-w-7xl overflow-x-hidden">
         {/* Tab Navigation */}
         <div className="flex flex-col sm:flex-row gap-2 mb-8 p-2 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
           <button
-            onClick={() => setActiveTab('escape')}
+            onClick={() => {
+              window.location.href = '?tab=escape';
+            }}
             className={`flex items-center gap-3 px-6 py-4 text-sm font-semibold rounded-xl transition-all duration-300 ${
               activeTab === 'escape'
                 ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg shadow-blue-500/25'
@@ -171,7 +159,9 @@ dF('${encoded}');
             Escape/Unescape
           </button>
           <button
-            onClick={() => setActiveTab('encode')}
+            onClick={() => {
+              window.location.href = '?tab=encode';
+            }}
             className={`flex items-center gap-3 px-6 py-4 text-sm font-semibold rounded-xl transition-all duration-300 ${
               activeTab === 'encode'
                 ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg shadow-blue-500/25'
@@ -182,7 +172,9 @@ dF('${encoded}');
             Encode/Decode
           </button>
           <button
-            onClick={() => setActiveTab('html')}
+            onClick={() => {
+              window.location.href = '?tab=html';
+            }}
             className={`flex items-center gap-3 px-6 py-4 text-sm font-semibold rounded-xl transition-all duration-300 ${
               activeTab === 'html'
                 ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg shadow-blue-500/25'
@@ -209,7 +201,7 @@ dF('${encoded}');
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
                   <div className="space-y-3">
                     <label className="block text-lg font-semibold text-white flex items-center gap-2">
                       <Sparkles className="w-5 h-5 text-blue-400" />
@@ -267,6 +259,18 @@ dF('${encoded}');
                     Copy Left
                   </Button>
                 </div>
+                
+                {/* Reset button below the action buttons */}
+                <div className="flex justify-center mt-4">
+                  <Button 
+                    onClick={clearInputs}
+                    variant="outline"
+                    className="flex items-center gap-3 px-8 py-3 bg-white/10 hover:bg-white/20 text-white border-white/20 font-semibold rounded-xl transition-all duration-300 hover:scale-105"
+                  >
+                    <RotateCcw className="w-5 h-5" />
+                    Reset
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -309,7 +313,7 @@ dF('${encoded}');
                   </span>
                 </div>
                 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
                   <div className="space-y-3">
                     <label className="block text-lg font-semibold text-white flex items-center gap-2">
                       <Sparkles className="w-5 h-5 text-orange-400" />
@@ -368,6 +372,18 @@ dF('${encoded}');
                     Copy Left
                   </Button>
                 </div>
+                
+                {/* Reset button below the action buttons */}
+                <div className="flex justify-center mt-4">
+                  <Button 
+                    onClick={clearInputs}
+                    variant="outline"
+                    className="flex items-center gap-3 px-8 py-3 bg-white/10 hover:bg-white/20 text-white border-white/20 font-semibold rounded-xl transition-all duration-300 hover:scale-105"
+                  >
+                    <RotateCcw className="w-5 h-5" />
+                    Reset
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -407,7 +423,7 @@ dF('${encoded}');
                   </Select>
                 </div>
                 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
                   <div className="space-y-3">
                     <label className="block text-lg font-semibold text-white flex items-center gap-2">
                       <Code className="w-5 h-5 text-indigo-400" />
@@ -452,6 +468,18 @@ dF('${encoded}');
                     Copy
                   </Button>
                 </div>
+                
+                {/* Reset button below the action buttons */}
+                <div className="flex justify-center mt-4">
+                  <Button 
+                    onClick={clearInputs}
+                    variant="outline"
+                    className="flex items-center gap-3 px-8 py-3 bg-white/10 hover:bg-white/20 text-white border-white/20 font-semibold rounded-xl transition-all duration-300 hover:scale-105"
+                  >
+                    <RotateCcw className="w-5 h-5" />
+                    Reset
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -466,7 +494,7 @@ dF('${encoded}');
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
               <div className="p-6 bg-gradient-to-br from-blue-500/10 to-blue-600/10 rounded-xl border border-blue-500/20">
                 <h3 className="font-semibold text-lg text-white mb-3 flex items-center gap-2">
                   <Globe className="w-5 h-5 text-blue-400" />
@@ -475,7 +503,7 @@ dF('${encoded}');
                 <p className="text-sm text-gray-300 mb-3">
                   Use this to hide email addresses or simple text from web crawlers. The escaped text can be used directly with the browser&apos;s built-in unescape() function.
                 </p>
-                <code className="text-xs bg-black/30 p-3 block rounded-lg text-blue-300 border border-blue-500/20">
+                <code className="text-xs bg-black/30 p-3 block rounded-lg text-blue-300 border border-blue-500/20 break-all">
                   document.write(unescape(&apos;%65%78%61%6D%70%6C%65%40%65%6D%61%69%6C%2E%63%6F%6D&apos;));
                 </code>
               </div>
@@ -501,16 +529,7 @@ dF('${encoded}');
               </div>
             </div>
             
-            <div className="pt-6 border-t border-white/20 text-center">
-              <Button 
-                onClick={clearInputs}
-                variant="outline"
-                className="flex items-center gap-3 px-8 py-3 bg-white/10 hover:bg-white/20 text-white border-white/20 font-semibold rounded-xl transition-all duration-300 hover:scale-105 mx-auto"
-              >
-                <RotateCcw className="w-5 h-5" />
-                Clear All
-              </Button>
-            </div>
+
           </CardContent>
         </Card>
       </div>
