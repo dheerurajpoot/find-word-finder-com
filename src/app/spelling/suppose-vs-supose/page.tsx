@@ -23,8 +23,8 @@ export default function SupposeVsSuposePage() {
         <div className="text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Quick Answer</h2>
           <div className="inline-flex items-center bg-white px-6 py-3 rounded-full shadow-lg">
-            <span className="text-2xl mr-3">✏️</span>
-            <span className="text-2xl font-bold text-green-600">&quot;Suppose&quot; is Correct</span>
+            <span className="text-2xl mr-3">🎯</span>
+            <span className="text-2xl font-bold text-orange-600">&quot;Suppose&quot; is Correct</span>
             <span className="text-2xl ml-3">✅</span>
           </div>
           <p className="text-lg text-gray-700 mt-4">
@@ -35,35 +35,35 @@ export default function SupposeVsSuposePage() {
 
       {/* Comparison Cards */}
       <div className="grid lg:grid-cols-2 gap-8 mb-12">
-        <Card className="transform hover:scale-105 transition-transform duration-300 border-0 shadow-xl bg-gradient-to-br from-red-50 to-red-100">
+        <Card className="transform hover:scale-105 transition-transform duration-300 border-0 shadow-xl bg-gradient-to-br from-orange-50 to-orange-100">
           <CardContent className="p-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">✗</span>
+              <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">⚠️</span>
               </div>
-              <h3 className="text-3xl font-bold text-red-800 mb-4">Supose</h3>
+              <h3 className="text-3xl font-bold text-orange-800 mb-4">Supose</h3>
               <div className="bg-white p-4 rounded-lg mb-4">
-                <p className="text-xl text-red-700 font-semibold">❌ INCORRECT</p>
+                <p className="text-xl text-orange-700 font-semibold">❌ INCORRECT</p>
               </div>
-              <p className="text-lg text-red-700 leading-relaxed">
+              <p className="text-lg text-orange-700 leading-relaxed">
                 This spelling is never acceptable in English. It&apos;s a common typo that should be avoided.
               </p>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="transform hover:scale-105 transition-transform duration-300 border-0 shadow-xl bg-gradient-to-br from-green-50 to-green-100">
+        <Card className="transform hover:scale-105 transition-transform duration-300 border-0 shadow-xl bg-gradient-to-br from-pink-50 to-pink-100">
           <CardContent className="p-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl">✓</span>
+              <div className="w-16 h-16 bg-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">🏆</span>
               </div>
-              <h3 className="text-3xl font-bold text-green-800 mb-4">Suppose</h3>
+              <h3 className="text-3xl font-bold text-pink-800 mb-4">Suppose</h3>
               <div className="bg-white p-4 rounded-lg mb-4">
-                <p className="text-xl text-green-700 font-semibold">✅ CORRECT</p>
+                <p className="text-lg text-pink-700 font-semibold">✅ CORRECT</p>
               </div>
-              <p className="text-lg text-green-700 leading-relaxed">
-                This is the proper spelling meaning &quot;to assume&quot; or &quot;to believe.&quot;
+              <p className="text-lg text-pink-700 leading-relaxed">
+                This is the proper spelling meaning &quot;to assume to be true or real for the sake of argument or explanation.&quot;
               </p>
             </div>
           </CardContent>
@@ -74,14 +74,14 @@ export default function SupposeVsSuposePage() {
       <div className="mb-12">
         <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Understanding the Difference</h2>
         <div className="grid md:grid-cols-3 gap-6">
-          <Card className="bg-green-50 border-green-200">
+          <Card className="bg-pink-50 border-pink-200">
             <CardContent className="p-6">
-              <h3 className="text-2xl font-bold text-green-900 mb-4">&quot;Suppose&quot; (Correct)</h3>
-              <ul className="text-green-800 space-y-2">
+              <h3 className="text-2xl font-bold text-pink-900 mb-4">&quot;Suppose&quot; (Correct)</h3>
+              <ul className="text-pink-800 space-y-2">
                 <li>• Has double &quot;p&quot;</li>
+                <li>• Has &quot;e&quot; at the end</li>
                 <li>• Standard English spelling</li>
-                <li>• Verb meaning &quot;assume&quot;</li>
-                <li>• Widely recognized</li>
+                <li>• Verb meaning to assume</li>
               </ul>
             </CardContent>
           </Card>
@@ -90,20 +90,20 @@ export default function SupposeVsSuposePage() {
               <h3 className="text-2xl font-bold text-orange-900 mb-4">Common Error</h3>
               <ul className="text-orange-800 space-y-2">
                 <li>• &quot;Supose&quot; is wrong</li>
-                <li>• Missing one &quot;p&quot;</li>
-                <li>• Sounds similar but incorrect</li>
+                <li>• Missing second &quot;p&quot;</li>
                 <li>• Common typo</li>
+                <li>• Not a real word</li>
               </ul>
             </CardContent>
           </Card>
-          <Card className="bg-red-50 border-red-200">
+          <Card className="bg-rose-50 border-rose-200">
             <CardContent className="p-6">
-              <h3 className="text-2xl font-bold text-red-900 mb-4">Memory Aid</h3>
-              <ul className="text-red-800 space-y-2">
-                <li>• Think &quot;SUP + POSE&quot;</li>
-                <li>• &quot;pose&quot; like &quot;pose a question&quot;</li>
-                <li>• Double &quot;p&quot; for emphasis</li>
-                <li>• Related to &quot;propose&quot;</li>
+              <h3 className="text-2xl font-bold text-rose-900 mb-4">Memory Trick</h3>
+              <ul className="text-rose-800 space-y-2">
+                <li>• Think &quot;suppose&quot; has &quot;pp&quot;</li>
+                <li>• Like &quot;appear&quot; or &quot;oppose&quot;</li>
+                <li>• Double &quot;p&quot; = proper</li>
+                <li>• Single &quot;p&quot; = problem</li>
               </ul>
             </CardContent>
           </Card>
@@ -112,215 +112,173 @@ export default function SupposeVsSuposePage() {
 
       {/* Usage Examples */}
       <div className="mb-12">
-        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Real-World Examples</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-2xl font-bold text-green-800 mb-4">✅ Correct Usage</h3>
-            <div className="space-y-4">
-              <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-                <p className="text-lg text-green-800">&quot;I <strong>suppose</strong> you&apos;re right.&quot;</p>
-              </div>
-              <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-                <p className="text-lg text-green-800">&quot;Let me <strong>suppose</strong; for a moment.&quot;</p>
-              </div>
-              <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-                <p className="text-lg text-green-800">&quot;What do you <strong>suppose</strong> happened?&quot;</p>
-              </div>
-              <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-                <p className="text-lg text-green-800">&quot;I <strong>suppose</strong; we should go.&quot;</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold text-red-800 mb-4">❌ Common Mistakes</h3>
-            <div className="space-y-4">
-              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;I <strong>supose</strong> you&apos;re right.&quot; ❌</p>
-                <p className="text-sm text-red-600 mt-1">Should be: &quot;suppose&quot;</p>
-              </div>
-              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;Let me <strong>supose</strong> for a moment.&quot; ❌</p>
-                <p className="text-sm text-red-600 mt-1">Should be: &quot;suppose&quot;</p>
-              </div>
-              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;What do you <strong>supose</strong> happened?&quot; ❌</p>
-                <p className="text-sm text-red-600 mt-1">Should be: &quot;suppose&quot;</p>
-              </div>
-              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;I <strong>supose</strong> we should go.&quot; ❌</p>
-                <p className="text-sm text-red-600 mt-1">Should be: &quot;suppose&quot;</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Memory Tricks */}
-      <div className="mb-12">
-        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Memory Tricks & Tips</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Card className="bg-green-50 border-green-300 text-center">
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Correct Usage Examples</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-50 border-green-200">
             <CardContent className="p-6">
-              <div className="text-4xl mb-3">🔤</div>
-              <h3 className="text-xl font-bold text-green-900 mb-2">Double P Rule</h3>
-              <p className="text-green-800">&quot;Suppose&quot; has double &quot;p&quot;</p>
+              <h3 className="text-2xl font-bold text-green-900 mb-4">✅ Correct: &quot;Suppose&quot;</h3>
+              <div className="space-y-3">
+                <p className="text-green-800"><strong>•</strong> &quot;I suppose you&apos;re right about that.&quot;</p>
+                <p className="text-green-800"><strong>•</strong> &quot;Let&apos;s suppose for a moment that...&quot;</p>
+                <p className="text-green-800"><strong>•</strong> &quot;What do you suppose happened?&quot;</p>
+                <p className="text-green-800"><strong>•</strong> &quot;I suppose we should leave now.&quot;</p>
+              </div>
             </CardContent>
           </Card>
-          <Card className="bg-orange-50 border-orange-300 text-center">
+          <Card className="bg-red-50 border-red-200">
             <CardContent className="p-6">
-              <div className="text-4xl mb-3">🧠</div>
-              <h3 className="text-xl font-bold text-orange-900 mb-2">Think Pose</h3>
-              <p className="text-orange-800">&quot;Suppose&quot; like &quot;pose a question&quot;</p>
-            </CardContent>
-          </Card>
-          <Card className="bg-red-50 border-red-300 text-center">
-            <CardContent className="p-6">
-              <div className="text-4xl mb-3">✍️</div>
-              <h3 className="text-xl font-bold text-red-900 mb-2">Pattern Recognition</h3>
-              <p className="text-red-800">Double &quot;p&quot; for emphasis</p>
-            </CardContent>
-          </Card>
-          <Card className="bg-pink-50 border-pink-300 text-center">
-            <CardContent className="p-6">
-              <div className="text-4xl mb-3">🔍</div>
-              <h3 className="text-xl font-bold text-pink-900 mb-2">Break It Down</h3>
-              <p className="text-pink-800">SUP + POSE = Suppose</p>
+              <h3 className="text-2xl font-bold text-red-900 mb-4">❌ Incorrect: &quot;Supose&quot;</h3>
+              <div className="space-y-3">
+                <p className="text-red-800"><strong>•</strong> &quot;I supose you&apos;re right&quot; ❌</p>
+                <p className="text-red-800"><strong>•</strong> &quot;Let&apos;s supose for a moment&quot; ❌</p>
+                <p className="text-red-800"><strong>•</strong> &quot;What do you supose happened?&quot; ❌</p>
+                <p className="text-red-800"><strong>•</strong> &quot;I supose we should leave&quot; ❌</p>
+              </div>
             </CardContent>
           </Card>
         </div>
       </div>
 
-      {/* Advanced Usage */}
+      {/* Etymology and History */}
       <div className="mb-12">
-        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Advanced Usage Patterns</h2>
-        <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-xl">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Common Phrases</h3>
-              <ul className="space-y-3 text-lg text-gray-700">
-                <li>• <strong>I suppose</strong> - I think or believe</li>
-                <li>• <strong>Let me suppose</strong> - Let me assume</li>
-                <li>• <strong>What do you suppose</strong> - What do you think</li>
-                <li>• <strong>I suppose so</strong> - I think so</li>
-                <li>• <strong>Supposing that</strong> - Assuming that</li>
-                <li>• <strong>I suppose not</strong> - I think not</li>
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Word Origin & History</h2>
+        <Card className="bg-blue-50 border-blue-200">
+          <CardContent className="p-8">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-2xl font-bold text-blue-900 mb-4">Etymology</h3>
+                <p className="text-blue-800 leading-relaxed">
+                  The word &quot;suppose&quot; comes from the Old French <em>supposer</em>, which in turn comes from the Latin <em>supponere</em> meaning &quot;to put under, to substitute.&quot; The double &quot;p&quot; has been preserved throughout its evolution into modern English.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-blue-900 mb-4">Historical Usage</h3>
+                <p className="text-blue-800 leading-relaxed">
+                  &quot;Suppose&quot; has been used in English since the 14th century. The spelling with double &quot;p&quot; has remained consistent throughout its history, making &quot;supose&quot; an obvious error that should be avoided in all contexts.
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Common Mistakes */}
+      <div className="mb-12">
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Why People Make This Mistake</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-yellow-50 border-yellow-200">
+            <CardContent className="p-6">
+              <h3 className="text-2xl font-bold text-yellow-900 mb-4">Typing Errors</h3>
+              <ul className="text-yellow-800 space-y-2">
+                <li>• Fast typing can miss the second &quot;p&quot;</li>
+                <li>• Auto-correct might not catch it</li>
+                <li>• Similar to words like &quot;pose&quot;</li>
+                <li>• Phonetic confusion</li>
               </ul>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Grammatical Functions</h3>
-              <ul className="space-y-3 text-lg text-gray-700">
-                <li>• <strong>Present tense:</strong> &quot;I suppose&quot;</li>
-                <li>• <strong>Past tense:</strong> &quot;I supposed&quot;</li>
-                <li>• <strong>Future:</strong> &quot;Will suppose&quot;</li>
-                <li>• <strong>Gerund:</strong> &quot;Supposing&quot;</li>
-                <li>• <strong>Infinitive:</strong> &quot;To suppose&quot;</li>
-                <li>• <strong>Conditional:</strong> &quot;Would suppose&quot;</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-purple-50 border-purple-200">
+            <CardContent className="p-6">
+              <h3 className="text-2xl font-bold text-purple-900 mb-4">Prevention Tips</h3>
+              <ul className="text-purple-800 space-y-2">
+                <li>• Always double-check spelling</li>
+                <li>• Use spell-check tools</li>
+                <li>• Remember the double &quot;p&quot; rule</li>
+                <li>• Practice writing it correctly</li>
               </ul>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
 
-      {/* FAQ Section */}
+      {/* Related Words */}
       <div className="mb-12">
-        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Frequently Asked Questions</h2>
-        <div className="space-y-6">
-          <Card className="border-l-4 border-green-500">
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Related Words & Forms</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card className="bg-indigo-50 border-indigo-200">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-green-900 mb-3">Q: Why do people misspell &quot;suppose&quot; as &quot;supose&quot;?</h3>
-              <p className="text-lg text-gray-700">A: The misspelling often occurs because people may forget that &quot;suppose&quot; has double &quot;p&quot;. They might accidentally drop one &quot;p&quot; when typing quickly.</p>
+              <h3 className="text-2xl font-bold text-indigo-900 mb-4">Verb Forms</h3>
+              <ul className="text-indigo-800 space-y-2">
+                <li>• suppose (present)</li>
+                <li>• supposed (past/past participle)</li>
+                <li>• supposing (present participle)</li>
+                <li>• supposes (3rd person singular)</li>
+              </ul>
             </CardContent>
           </Card>
-
-          <Card className="border-l-4 border-orange-500">
+          <Card className="bg-teal-50 border-teal-200">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-orange-900 mb-3">Q: Is &quot;suppose&quot; related to &quot;pose&quot;?</h3>
-              <p className="text-lg text-gray-700">A: Yes! &quot;Suppose&quot; comes from the idea of &quot;posing&quot; or &quot;placing&quot; an assumption. Think of it as &quot;posing a supposition&quot; or assumption.</p>
+              <h3 className="text-2xl font-bold text-teal-900 mb-4">Related Nouns</h3>
+              <ul className="text-teal-800 space-y-2">
+                <li>• supposition</li>
+                <li>• supposal</li>
+                <li>• suppositive</li>
+                <li>• presupposition</li>
+              </ul>
             </CardContent>
           </Card>
-
-          <Card className="border-l-4 border-red-500">
+          <Card className="bg-cyan-50 border-cyan-200">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-red-900 mb-3">Q: What&apos;s the difference between &quot;suppose&quot; and &quot;assume&quot;?</h3>
-              <p className="text-lg text-gray-700">A: &quot;Suppose&quot; means to think or believe something is true, while &quot;assume&quot; means to take something for granted without proof. Both imply uncertainty.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-blue-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-blue-900 mb-3">Q: Can &quot;suppose&quot; be used in formal writing?</h3>
-              <p className="text-lg text-gray-700">A: Yes! &quot;Suppose&quot; is a standard English word that&apos;s perfectly appropriate in formal writing, academic papers, and professional communication.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-purple-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-purple-900 mb-3">Q: What are some synonyms for &quot;suppose&quot;?</h3>
-              <p className="text-lg text-gray-700">A: Common synonyms include: assume, presume, think, believe, imagine, consider, and reckon. Each has slightly different connotations.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-teal-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-teal-900 mb-3">Q: How can I remember the correct spelling?</h3>
-              <p className="text-lg text-gray-700">A: Think of the word &quot;pose&quot; (like posing a question) and remember that &quot;suppose&quot; has double &quot;p&quot;. The double &quot;p&quot; is crucial for the correct spelling.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-pink-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-pink-900 mb-3">Q: Is there a mnemonic device for this word?</h3>
-              <p className="text-lg text-gray-700">A: Yes! Think: &quot;SUPPOSE has double P like POSE&quot;. Or remember: &quot;SUP + POSE&quot; breaks down the word into manageable parts.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-indigo-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-indigo-900 mb-3">Q: What&apos;s the base form of &quot;suppose&quot;?</h3>
-              <p className="text-lg text-gray-700">A: &quot;Suppose&quot; is the base form. For example: &quot;I suppose&quot; (present), &quot;I supposed&quot; (past), &quot;I have supposed&quot; (past participle).</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-cyan-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-cyan-900 mb-3">Q: What&apos;s the etymology of &quot;suppose&quot;?</h3>
-              <p className="text-lg text-gray-700">A: &quot;Suppose&quot; comes from the Latin &quot;supponere&quot; meaning &quot;to place under&quot; or &quot;to assume,&quot; related to the idea of placing an assumption.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-lime-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-lime-900 mb-3">Q: Can &quot;suppose&quot; be used to express doubt?</h3>
-              <p className="text-lg text-gray-700">A: Yes! &quot;Suppose&quot; often implies uncertainty or doubt about the truth of a statement. It suggests that something is thought to be true but may not be.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-amber-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-amber-900 mb-3">Q: What&apos;s the difference between &quot;suppose&quot; and &quot;think&quot;?</h3>
-              <p className="text-lg text-gray-700">A: &quot;Suppose&quot; means to assume or believe something is true, while &quot;think&quot; means to use one&apos;s mind to form thoughts. &quot;Suppose&quot; implies more uncertainty.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-emerald-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-emerald-900 mb-3">Q: How do I use &quot;suppose&quot; in different contexts?</h3>
-              <p className="text-lg text-gray-700">A: &quot;Suppose&quot; can be used in various contexts: assumptions (I suppose), hypotheticals (supposing that), beliefs (I suppose so), and uncertainty (I suppose not).</p>
+              <h3 className="text-2xl font-bold text-cyan-900 mb-4">Similar Words</h3>
+              <ul className="text-cyan-800 space-y-2">
+                <li>• assume</li>
+                <li>• presume</li>
+                <li>• guess</li>
+                <li>• imagine</li>
+              </ul>
             </CardContent>
           </Card>
         </div>
       </div>
 
-      {/* Final Summary */}
-      <div className="bg-gradient-to-r from-orange-600 to-pink-600 text-white p-8 rounded-2xl text-center">
-        <h2 className="text-3xl font-bold mb-4">Key Takeaway</h2>
-        <p className="text-xl leading-relaxed mb-6">
-          Always remember: <strong>&quot;Suppose&quot;</strong> has double &quot;p&quot; and means &quot;to assume&quot; or &quot;to believe.&quot; 
-          <br />
-          <strong>&quot;Supose&quot;</strong> is never correct in any context.
+      {/* Final Tips */}
+      <div className="mb-12">
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Final Tips to Remember</h2>
+        <Card className="bg-gradient-to-r from-green-100 to-blue-100 border-green-300">
+          <CardContent className="p-8">
+            <div className="text-center">
+              <div className="inline-flex items-center bg-white px-6 py-3 rounded-full shadow-lg mb-6">
+                <span className="text-3xl mr-3">💡</span>
+                <span className="text-2xl font-bold text-green-600">Remember: Double &quot;P&quot; = Proper!</span>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6 text-left">
+                <div>
+                  <h3 className="text-2xl font-bold text-green-900 mb-4">✅ Always Correct</h3>
+                  <ul className="text-green-800 space-y-2">
+                    <li>• suppose</li>
+                    <li>• supposed</li>
+                    <li>• supposing</li>
+                    <li>• supposes</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-red-900 mb-4">❌ Never Correct</h3>
+                  <ul className="text-red-800 space-y-2">
+                    <li>• supose</li>
+                    <li>• suposed</li>
+                    <li>• suposing</li>
+                    <li>• suposes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Call to Action */}
+      <div className="text-center">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">Ready to Master More Spelling?</h2>
+        <p className="text-lg text-gray-600 mb-8">
+          Explore our comprehensive spelling guides and improve your writing skills today!
         </p>
-        <div className="bg-black bg-opacity-20 p-4 rounded-lg inline-block">
-          <p className="text-lg font-semibold">💡 Pro Tip: Think &quot;SUP + POSE&quot; and remember the double &quot;p&quot; like in &quot;pose&quot;!</p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a href="/spelling" className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-3 rounded-full font-semibold hover:from-orange-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105">
+            Browse All Spelling Guides
+          </a>
+          <a href="/word-finders" className="bg-gray-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-900 transition-all duration-300 transform hover:scale-105">
+            Explore Word Tools
+          </a>
         </div>
       </div>
     </div>
