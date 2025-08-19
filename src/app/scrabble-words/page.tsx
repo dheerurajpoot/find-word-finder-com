@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, Trophy, Target } from "lucide-react";
+import { BookOpen, Trophy } from "lucide-react";
 import { WordDetailsDialog } from "@/components/word-details-dialog";
 
 export default function ScrabbleWordsPage() {
