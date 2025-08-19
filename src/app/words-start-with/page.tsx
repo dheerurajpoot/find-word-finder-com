@@ -77,8 +77,8 @@ export default function WordsStartWithPage() {
 
 						{/* Popular Prefixes */}
 						<Card className='shadow-lg border border-gray-100'>
-							<CardHeader className='bg-gradient-to-r from-green-500 to-green-600 text-white rounded-t-xl'>
-								<CardTitle>
+							<CardHeader className='bg-green-500 text-white rounded-t-xl p-0'>
+								<CardTitle className='p-6'>
 									Most Popular Word Prefixes
 								</CardTitle>
 							</CardHeader>
@@ -126,8 +126,8 @@ export default function WordsStartWithPage() {
 
 						{/* Single Letter */}
 						<Card className='shadow-lg border border-gray-100'>
-							<CardHeader className='bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-t-xl'>
-								<CardTitle>
+							<CardHeader className='bg-orange-500 text-white rounded-t-xl p-0'>
+								<CardTitle className='p-6'>
 									Words Starting with Single Letters
 								</CardTitle>
 							</CardHeader>
@@ -149,8 +149,8 @@ export default function WordsStartWithPage() {
 
 						{/* Alphabet Navigation */}
 						<Card className='shadow-lg border border-gray-100'>
-							<CardHeader className='bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-t-xl'>
-								<CardTitle>
+							<CardHeader className='bg-blue-500 text-white rounded-t-xl p-0'>
+								<CardTitle className='p-6'>
 									Words Starting with Each Letter
 								</CardTitle>
 							</CardHeader>
@@ -175,8 +175,8 @@ export default function WordsStartWithPage() {
 					<div className='lg:col-span-1 space-y-6'>
 						{/* Quick Stats */}
 						<Card className='shadow-lg border border-gray-100'>
-							<CardHeader className='bg-gradient-to-r from-green-400 to-green-500 text-white rounded-t-xl'>
-								<CardTitle>Prefix Stats</CardTitle>
+							<CardHeader className='bg-green-500 text-white rounded-t-xl p-0'>
+								<CardTitle className='p-6'>Prefix Stats</CardTitle>
 							</CardHeader>
 							<CardContent className='p-4'>
 								<div className='space-y-3'>
@@ -214,8 +214,8 @@ export default function WordsStartWithPage() {
 
 						{/* Etymology Tips */}
 						<Card className='shadow-lg border border-gray-100'>
-							<CardHeader className='bg-gradient-to-r from-indigo-500 to-indigo-600 text-white rounded-t-xl'>
-								<CardTitle>Prefix Meanings</CardTitle>
+							<CardHeader className='bg-indigo-500 text-white rounded-t-xl p-0'>
+								<CardTitle className='p-6'>Prefix Meanings</CardTitle>
 							</CardHeader>
 							<CardContent className='p-4'>
 								<div className='space-y-3 text-sm'>
@@ -249,8 +249,8 @@ export default function WordsStartWithPage() {
 
 						{/* Related Searches */}
 						<Card className='shadow-lg border border-gray-100'>
-							<CardHeader className='bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-t-xl'>
-								<CardTitle>Related Searches</CardTitle>
+							<CardHeader className='bg-teal-500 text-white rounded-t-xl p-0'>
+								<CardTitle className='p-6'>Related Searches</CardTitle>
 							</CardHeader>
 							<CardContent className='p-4'>
 								<div className='space-y-2'>
