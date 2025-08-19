@@ -24,7 +24,7 @@ export default function SubmitVsSubmittPage() {
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Quick Answer</h2>
           <div className="inline-flex items-center bg-white px-6 py-3 rounded-full shadow-lg">
             <span className="text-2xl mr-3">📝</span>
-            <span className="text-2xl font-bold text-green-600">&quot;Submit&quot; is Correct</span>
+            <span className="text-2xl font-bold text-violet-600">&quot;Submit&quot; is Correct</span>
             <span className="text-2xl ml-3">✅</span>
           </div>
           <p className="text-lg text-gray-700 mt-4">
@@ -98,12 +98,12 @@ export default function SubmitVsSubmittPage() {
           </Card>
           <Card className="bg-fuchsia-50 border-fuchsia-200">
             <CardContent className="p-6">
-              <h3 className="text-2xl font-bold text-fuchsia-900 mb-4">&quot;No Suffix</strong></h3>
+              <h3 className="text-2xl font-bold text-fuchsia-900 mb-4">Memory Trick</h3>
               <ul className="text-fuchsia-800 space-y-2">
-                <li>• Base form of verb</li>
-                <li>• Present tense</li>
-                <li>• No extra letters</li>
-                <li>• Simple and clean</li>
+                <li>• Think &quot;SUB + MIT&quot;</li>
+                <li>• Only one &quot;t&quot; in &quot;mit&quot;</li>
+                <li>• Like &quot;mission&quot; or &quot;permit&quot;</li>
+                <li>• Extra &quot;t&quot; = wrong</li>
               </ul>
             </CardContent>
           </Card>
@@ -112,201 +112,173 @@ export default function SubmitVsSubmittPage() {
 
       {/* Usage Examples */}
       <div className="mb-12">
-        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Real-World Examples</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-2xl font-bold text-green-800 mb-4">✅ Correct Usage</h3>
-            <div className="space-y-4">
-              <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-                <p className="text-lg text-green-800">&quot;Please <strong>submit</strong> your application by Friday.&quot;</p>
-              </div>
-              <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-                <p className="text-lg text-green-800">&quot;You must <strong>submit</strong> the form online.&quot;</p>
-              </div>
-              <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-                <p className="text-lg text-green-800">&quot;Students should <strong>submit</strong> their essays on time.&quot;</p>
-              </div>
-              <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-                <p className="text-lg text-green-800">&quot;The deadline to <strong>submit</strong> is tomorrow.&quot;</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold text-red-800 mb-4">❌ Common Mistakes</h3>
-            <div className="space-y-4">
-              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;Please <strong>submitt</strong> your application&quot; ❌</p>
-                <p className="text-sm text-red-600 mt-1">Should be: &quot;submit&quot;</p>
-              </div>
-              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;You must <strong>submitt</strong> the form&quot; ❌</p>
-                <p className="text-sm text-red-600 mt-1">Should be: &quot;submit&quot;</p>
-              </div>
-              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;Students should <strong>submitt</strong> their essays&quot; ❌</p>
-                <p className="text-sm text-red-600 mt-1">Should be: &quot;submit&quot;</p>
-              </div>
-              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;Deadline to <strong>submitt</strong> is tomorrow&quot; ❌</p>
-                <p className="text-sm text-red-600 mt-1">Should be: &quot;submit&quot;</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Memory Tricks */}
-      <div className="mb-12">
-        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Memory Tricks & Tips</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Card className="bg-yellow-50 border-yellow-300 text-center">
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Correct Usage Examples</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-50 border-green-200">
             <CardContent className="p-6">
-              <div className="text-4xl mb-3">📝</div>
-              <h3 className="text-xl font-bold text-yellow-900 mb-2">Think Single T</h3>
-              <p className="text-yellow-800">&quot;Submit&quot; has one &quot;t&quot;, like &quot;permit&quot;</p>
+              <h3 className="text-2xl font-bold text-green-900 mb-4">✅ Correct: &quot;Submit&quot;</h3>
+              <div className="space-y-3">
+                <p className="text-green-800"><strong>•</strong> &quot;Please submit your application by Friday.&quot;</p>
+                <p className="text-green-800"><strong>•</strong> &quot;I will submit the report tomorrow.&quot;</p>
+                <p className="text-green-800"><strong>•</strong> &quot;The deadline to submit is next week.&quot;</p>
+                <p className="text-green-800"><strong>•</strong> &quot;Students must submit their assignments on time.&quot;</p>
+              </div>
             </CardContent>
           </Card>
-          <Card className="bg-blue-50 border-blue-300 text-center">
+          <Card className="bg-red-50 border-red-200">
             <CardContent className="p-6">
-              <div className="text-4xl mb-3">🔤</div>
-              <h3 className="text-xl font-bold text-blue-900 mb-2">Root Rule</h3>
-              <p className="text-blue-800">&quot;Mit&quot; root only has one &quot;t&quot;</p>
-            </CardContent>
-          </Card>
-          <Card className="bg-green-50 border-green-300 text-center">
-            <CardContent className="p-6">
-              <div className="text-4xl mb-3">✍️</div>
-              <h3 className="text-xl font-bold text-green-900 mb-2">Write It Out</h3>
-              <p className="text-green-800">Practice writing &quot;submit&quot; to build muscle memory</p>
-            </CardContent>
-          </Card>
-          <Card className="bg-purple-50 border-purple-300 text-center">
-            <CardContent className="p-6">
-              <div className="text-4xl mb-3">🔍</div>
-              <h3 className="text-xl font-bold text-purple-900 mb-2">Proofread</h3>
-              <p className="text-purple-800">Always double-check your spelling before submitting</p>
+              <h3 className="text-2xl font-bold text-red-900 mb-4">❌ Incorrect: &quot;Submitt&quot;</h3>
+              <div className="space-y-3">
+                <p className="text-red-800"><strong>•</strong> &quot;Please submitt your application&quot; ❌</p>
+                <p className="text-red-800"><strong>•</strong> &quot;I will submitt the report&quot; ❌</p>
+                <p className="text-red-800"><strong>•</strong> &quot;The deadline to submitt is next week&quot; ❌</p>
+                <p className="text-red-800"><strong>•</strong> &quot;Students must submitt their assignments&quot; ❌</p>
+              </div>
             </CardContent>
           </Card>
         </div>
       </div>
 
-      {/* Advanced Usage */}
+      {/* Etymology and History */}
       <div className="mb-12">
-        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Advanced Usage Patterns</h2>
-        <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-xl">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Common Phrases</h3>
-              <ul className="space-y-3 text-lg text-gray-700">
-                <li>• <strong>Submit for review</strong> - send for examination</li>
-                <li>• <strong>Submit on time</strong> - hand in punctually</li>
-                <li>• <strong>Submit electronically</strong> - send via computer</li>
-                <li>• <strong>Submit in writing</strong> - provide in text form</li>
-                <li>• <strong>Submit for approval</strong> - send for authorization</li>
-                <li>• <strong>Submit for consideration</strong> - present for review</li>
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Word Origin & History</h2>
+        <Card className="bg-blue-50 border-blue-200">
+          <CardContent className="p-8">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-2xl font-bold text-blue-900 mb-4">Etymology</h3>
+                <p className="text-blue-800 leading-relaxed">
+                  The word &quot;submit&quot; comes from the Latin <em>submittere</em>, which combines <em>sub</em> (under) and <em>mittere</em> (to send). The spelling has been consistent throughout its evolution into English, with only one &quot;t&quot; in the root.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-blue-900 mb-4">Historical Usage</h3>
+                <p className="text-blue-800 leading-relaxed">
+                  &quot;Submit&quot; has been used in English since the 14th century. The spelling with single &quot;t&quot; has remained consistent, making &quot;submitt&quot; an obvious error that should be avoided in all contexts.
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Common Mistakes */}
+      <div className="mb-12">
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Why People Make This Mistake</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-yellow-50 border-yellow-200">
+            <CardContent className="p-6">
+              <h3 className="text-2xl font-bold text-yellow-900 mb-4">Typing Errors</h3>
+              <ul className="text-yellow-800 space-y-2">
+                <li>• Fast typing can add extra &quot;t&quot;</li>
+                <li>• Auto-correct might not catch it</li>
+                <li>• Similar to words like &quot;commit&quot;</li>
+                <li>• Phonetic confusion</li>
               </ul>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Related Words</h3>
-              <ul className="space-y-3 text-lg text-gray-700">
-                <li>• <strong>Submit</strong> - to present</li>
-                <li>• <strong>Submission</strong> - the act of submitting</li>
-                <li>• <strong>Submittable</strong> - able to be submitted</li>
-                <li>• <strong>Mission</strong> - task or assignment</li>
-                <li>• <strong>Admit</strong> - to allow entry</li>
-                <li>• <strong>Commit</strong> - to pledge</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-purple-50 border-purple-200">
+            <CardContent className="p-6">
+              <h3 className="text-2xl font-bold text-purple-900 mb-4">Prevention Tips</h3>
+              <ul className="text-purple-800 space-y-2">
+                <li>• Always double-check spelling</li>
+                <li>• Use spell-check tools</li>
+                <li>• Remember the single &quot;t&quot; rule</li>
+                <li>• Practice writing it correctly</li>
               </ul>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
 
-      {/* FAQ Section */}
+      {/* Related Words */}
       <div className="mb-12">
-        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Frequently Asked Questions</h2>
-        <div className="space-y-6">
-          <Card className="border-l-4 border-violet-500">
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Related Words & Forms</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card className="bg-indigo-50 border-indigo-200">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-violet-900 mb-3">Q: Why do people misspell &quot;submit&quot; as &quot;submitt&quot;?</h3>
-              <p className="text-lg text-gray-700">A: The most common error is adding an extra &quot;t&quot; to the word. This happens because people think the word should have double &quot;t&quot;s like some other words, but &quot;submit&quot; only has one &quot;t.&quot;</p>
+              <h3 className="text-2xl font-bold text-indigo-900 mb-4">Verb Forms</h3>
+              <ul className="text-indigo-800 space-y-2">
+                <li>• submit (present)</li>
+                <li>• submits (3rd person singular)</li>
+                <li>• submitted (past/past participle)</li>
+                <li>• submitting (present participle)</li>
+              </ul>
             </CardContent>
           </Card>
-
-          <Card className="border-l-4 border-green-500">
+          <Card className="bg-teal-50 border-teal-200">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-green-900 mb-3">Q: Is &quot;submit&quot; used in formal writing?</h3>
-              <p className="text-lg text-gray-700">A: Yes! &quot;Submit&quot; is a formal, standard English word commonly used in academic, business, and professional contexts. It&apos;s perfectly appropriate for all types of writing.</p>
+              <h3 className="text-2xl font-bold text-teal-900 mb-4">Related Nouns</h3>
+              <ul className="text-teal-800 space-y-2">
+                <li>• submission</li>
+                <li>• submitter</li>
+                <li>• submittal</li>
+                <li>• resubmission</li>
+              </ul>
             </CardContent>
           </Card>
-
-          <Card className="border-l-4 border-purple-500">
+          <Card className="bg-cyan-50 border-cyan-200">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-purple-900 mb-3">Q: What&apos;s the etymology of &quot;submit&quot;?</h3>
-              <p className="text-lg text-gray-700">A: &quot;Submit&quot; comes from Latin: &quot;sub&quot; (under) + &quot;mittere&quot; (to send). It literally means &quot;to send under&quot; or &quot;to present for consideration.&quot;</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-orange-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-orange-900 mb-3">Q: Are there regional variations in usage?</h3>
-              <p className="text-lg text-gray-700">A: No, &quot;submit&quot; is spelled the same way in all English-speaking countries. It&apos;s a standardized word used worldwide.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-red-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-red-900 mb-3">Q: How can I remember the correct spelling?</h3>
-              <p className="text-lg text-gray-700">A: Remember that &quot;submit&quot; has only one &quot;t&quot; in the middle. Think of it as &quot;sub&quot; + &quot;mit&quot; - the &quot;mit&quot; part only has one &quot;t.&quot;</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-blue-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-blue-900 mb-3">Q: What are some synonyms for &quot;submit&quot;?</h3>
-              <p className="text-lg text-gray-700">A: Common synonyms include: present, hand in, turn in, deliver, provide, offer, furnish, and yield.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-teal-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-teal-900 mb-3">Q: Can &quot;submit&quot; be used in different contexts?</h3>
-              <p className="text-lg text-gray-700">A: Yes! &quot;Submit&quot; can describe handing in homework, sending applications, providing reports, or even yielding to authority. It&apos;s a versatile word.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-pink-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-pink-900 mb-3">Q: What&apos;s the difference between &quot;submit&quot; and &quot;hand in&quot;?</h3>
-              <p className="text-lg text-gray-700">A: &quot;Submit&quot; is more formal and can refer to electronic or digital submissions, while &quot;hand in&quot; is more casual and typically refers to physical documents.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-indigo-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-indigo-900 mb-3">Q: Is there a difference between &quot;submit&quot; and &quot;submitted&quot;?</h3>
-              <p className="text-lg text-gray-700">A: &quot;Submit&quot; is the present tense verb meaning &quot;to present,&quot; while &quot;submitted&quot; is the past tense and past participle form. Both are correct but used in different contexts.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-emerald-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-emerald-900 mb-3">Q: How do I know when to use &quot;submit&quot; vs &quot;submitted&quot;?</h3>
-              <p className="text-lg text-gray-700">A: Use &quot;submit&quot; for present tense actions (&quot;I will submit the form&quot;) and &quot;submitted&quot; for past tense actions (&quot;I submitted the form yesterday&quot;). &quot;Submitted&quot; is also used as a past participle (&quot;The form has been submitted&quot;).</p>
+              <h3 className="text-2xl font-bold text-cyan-900 mb-4">Similar Words</h3>
+              <ul className="text-cyan-800 space-y-2">
+                <li>• commit</li>
+                <li>• permit</li>
+                <li>• transmit</li>
+                <li>• emit</li>
+              </ul>
             </CardContent>
           </Card>
         </div>
       </div>
 
-      {/* Final Summary */}
-      <div className="bg-gradient-to-r from-violet-600 to-purple-600 text-white p-8 rounded-2xl text-center">
-        <h2 className="text-3xl font-bold mb-4">Key Takeaway</h2>
-        <p className="text-xl leading-relaxed mb-6">
-          Always remember: <strong>&quot;Submit&quot;</strong> has only one &quot;t&quot; in the middle. 
-          <br />
-          <strong>&quot;Submitt&quot;</strong> has an extra &quot;t&quot; and is incorrect.
+      {/* Final Tips */}
+      <div className="mb-12">
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Final Tips to Remember</h2>
+        <Card className="bg-gradient-to-r from-green-100 to-blue-100 border-green-300">
+          <CardContent className="p-8">
+            <div className="text-center">
+              <div className="inline-flex items-center bg-white px-6 py-3 rounded-full shadow-lg mb-6">
+                <span className="text-3xl mr-3">💡</span>
+                <span className="text-2xl font-bold text-green-600">Remember: Single &quot;T&quot; = Correct!</span>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6 text-left">
+                <div>
+                  <h3 className="text-2xl font-bold text-green-900 mb-4">✅ Always Correct</h3>
+                  <ul className="text-green-800 space-y-2">
+                    <li>• submit</li>
+                    <li>• submits</li>
+                    <li>• submitted</li>
+                    <li>• submitting</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-red-900 mb-4">❌ Never Correct</h3>
+                  <ul className="text-red-800 space-y-2">
+                    <li>• submitt</li>
+                    <li>• submitts</li>
+                    <li>• submittted</li>
+                    <li>• submittting</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Call to Action */}
+      <div className="text-center">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">Ready to Master More Spelling?</h2>
+        <p className="text-lg text-gray-600 mb-8">
+          Explore our comprehensive spelling guides and improve your writing skills today!
         </p>
-        <div className="bg-black bg-opacity-20 p-4 rounded-lg inline-block">
-          <p className="text-lg font-semibold">💡 Pro Tip: Think &quot;SUB + MIT&quot; - only one &quot;t&quot; in the middle!</p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a href="/spelling" className="bg-gradient-to-r from-violet-500 to-purple-500 text-white px-8 py-3 rounded-full font-semibold hover:from-violet-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105">
+            Browse All Spelling Guides
+          </a>
+          <a href="/word-finders" className="bg-gray-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-900 transition-all duration-300 transform hover:scale-105">
+            Explore Word Tools
+          </a>
         </div>
       </div>
     </div>
