@@ -79,7 +79,7 @@ export default function SteppingVsStepingPage() {
               <h3 className="text-2xl font-bold text-lime-900 mb-4">&quot;Step&quot; (Root)</h3>
               <ul className="text-lime-800 space-y-2">
                 <li>• Means &quot;to move by lifting foot&quot;</li>
-                • Related to walking</li>
+                <li>• Related to walking</li>
                 <li>• Old English origin</li>
                 <li>• Used in many contexts</li>
               </ul>
@@ -100,10 +100,10 @@ export default function SteppingVsStepingPage() {
             <CardContent className="p-6">
               <h3 className="text-2xl font-bold text-emerald-900 mb-4">&quot;Ing&quot; (Suffix)</h3>
               <ul className="text-emerald-800 space-y-2">
-                <li>• Forms present participle</li>
-                <li>• Means &quot;ongoing action&quot;</li>
-                <li>• Common English pattern</li>
-                <li>• Creates &quot;stepping&quot;</li>
+                <li>• Present participle ending</li>
+                <li>• Forms continuous tense</li>
+                <li>• Standard English suffix</li>
+                <li>• Added to base form</li>
               </ul>
             </CardContent>
           </Card>
@@ -112,201 +112,173 @@ export default function SteppingVsStepingPage() {
 
       {/* Usage Examples */}
       <div className="mb-12">
-        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Real-World Examples</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-2xl font-bold text-lime-800 mb-4">✅ Correct Usage</h3>
-            <div className="space-y-4">
-              <div className="bg-lime-50 p-4 rounded-lg border-l-4 border-lime-500">
-                <p className="text-lg text-lime-800">&quot;She was <strong>stepping</strong> carefully on the ice.&quot;</p>
-              </div>
-              <div className="bg-lime-50 p-4 rounded-lg border-l-4 border-lime-500">
-                <p className="text-lg text-lime-800">&quot;The children were <strong>stepping</strong> in puddles.&quot;</p>
-              </div>
-              <div className="bg-lime-50 p-4 rounded-lg border-l-4 border-lime-500">
-                <p className="text-lg text-lime-800">&quot;He kept <strong>stepping</strong> on my toes.&quot;</p>
-              </div>
-              <div className="bg-lime-50 p-4 rounded-lg border-l-4 border-lime-500">
-                <p className="text-lg text-lime-800">&quot;The dancer was <strong>stepping</strong> gracefully.&quot;</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h3 className="text-2xl font-bold text-red-800 mb-4">❌ Common Mistakes</h3>
-            <div className="space-y-4">
-              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;She was <strong>steping</strong> carefully&quot; ❌</p>
-                <p className="text-sm text-red-600 mt-1">Should be: &quot;stepping&quot;</p>
-              </div>
-              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;The children were <strong>steping</strong> in puddles&quot; ❌</p>
-                <p className="text-sm text-red-600 mt-1">Should be: &quot;stepping&quot;</p>
-              </div>
-              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;He kept <strong>steping</strong> on my toes&quot; ❌</p>
-                <p className="text-sm text-red-600 mt-1">Should be: &quot;stepping&quot;</p>
-              </div>
-              <div className="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                <p className="text-lg text-red-800">&quot;The dancer was <strong>steping</strong> gracefully&quot; ❌</p>
-                <p className="text-sm text-red-600 mt-1">Should be: &quot;stepping&quot;</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Memory Tricks */}
-      <div className="mb-12">
-        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Memory Tricks & Tips</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Card className="bg-yellow-50 border-yellow-300 text-center">
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Correct Usage Examples</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-green-50 border-green-200">
             <CardContent className="p-6">
-              <div className="text-4xl mb-3">👣</div>
-              <h3 className="text-xl font-bold text-yellow-900 mb-2">Think Steps</h3>
-              <p className="text-yellow-800">&quot;Stepping&quot; comes from &quot;step&quot;</p>
+              <h3 className="text-2xl font-bold text-green-900 mb-4">✅ Correct: &quot;Stepping&quot;</h3>
+              <div className="space-y-3">
+                <p className="text-green-800"><strong>•</strong> &quot;She was stepping carefully on the ice.&quot;</p>
+                <p className="text-green-800"><strong>•</strong> &quot;The children are stepping in puddles.&quot;</p>
+                <p className="text-green-800"><strong>•</strong> &quot;I enjoy stepping through the forest.&quot;</p>
+                <p className="text-green-800"><strong>•</strong> &quot;He kept stepping on my toes.&quot;</p>
+              </div>
             </CardContent>
           </Card>
-          <Card className="bg-blue-50 border-blue-300 text-center">
+          <Card className="bg-red-50 border-red-200">
             <CardContent className="p-6">
-              <div className="text-4xl mb-3">🔤</div>
-              <h3 className="text-xl font-bold text-blue-900 mb-2">Double P Rule</h3>
-              <p className="text-blue-800">Remember the double &quot;p&quot; in &quot;step&quot;</p>
-            </CardContent>
-          </Card>
-          <Card className="bg-green-50 border-green-300 text-center">
-            <CardContent className="p-6">
-              <div className="text-4xl mb-3">✍️</div>
-              <h3 className="text-xl font-bold text-green-900 mb-2">Write It Out</h3>
-              <p className="text-green-800">Practice writing &quot;stepping&quot; to build muscle memory</p>
-            </CardContent>
-          </Card>
-          <Card className="bg-purple-50 border-purple-300 text-center">
-            <CardContent className="p-6">
-              <div className="text-4xl mb-3">🔍</div>
-              <h3 className="text-xl font-bold text-purple-900 mb-2">Proofread</h3>
-              <p className="text-purple-800">Always double-check your spelling before submitting</p>
+              <h3 className="text-2xl font-bold text-red-900 mb-4">❌ Incorrect: &quot;Steping&quot;</h3>
+              <div className="space-y-3">
+                <p className="text-red-800"><strong>•</strong> &quot;She was steping carefully&quot; ❌</p>
+                <p className="text-red-800"><strong>•</strong> &quot;The children are steping in puddles&quot; ❌</p>
+                <p className="text-red-800"><strong>•</strong> &quot;I enjoy steping through the forest&quot; ❌</p>
+                <p className="text-red-800"><strong>•</strong> &quot;He kept steping on my toes&quot; ❌</p>
+              </div>
             </CardContent>
           </Card>
         </div>
       </div>
 
-      {/* Advanced Usage */}
+      {/* Etymology and History */}
       <div className="mb-12">
-        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Advanced Usage Patterns</h2>
-        <div className="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-xl">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Common Phrases</h3>
-              <ul className="space-y-3 text-lg text-gray-700">
-                <li>• <strong>Stepping up</strong> - taking responsibility</li>
-                <li>• <strong>Stepping down</strong> - resigning from position</li>
-                <li>• <strong>Stepping in</strong> - intervening</li>
-                <li>• <strong>Stepping out</strong> - leaving briefly</li>
-                <li>• <strong>Stepping back</strong> - reconsidering</li>
-                <li>• <strong>Stepping forward</strong> - volunteering</li>
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Word Origin & History</h2>
+        <Card className="bg-blue-50 border-blue-200">
+          <CardContent className="p-8">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-2xl font-bold text-blue-900 mb-4">Etymology</h3>
+                <p className="text-blue-800 leading-relaxed">
+                  The word &quot;step&quot; comes from Old English <em>steppan</em>, meaning &quot;to step, go, or advance.&quot; When adding the &quot;-ing&quot; suffix, the double &quot;p&quot; is preserved to maintain the correct pronunciation and spelling.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-blue-900 mb-4">Historical Usage</h3>
+                <p className="text-blue-800 leading-relaxed">
+                  &quot;Stepping&quot; has been used in English since the Middle Ages. The spelling with double &quot;p&quot; has remained consistent throughout its history, making &quot;steping&quot; an obvious error that should be avoided in all contexts.
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Common Mistakes */}
+      <div className="mb-12">
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Why People Make This Mistake</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="bg-yellow-50 border-yellow-200">
+            <CardContent className="p-6">
+              <h3 className="text-2xl font-bold text-yellow-900 mb-4">Typing Errors</h3>
+              <ul className="text-yellow-800 space-y-2">
+                <li>• Fast typing can miss the second &quot;p&quot;</li>
+                <li>• Auto-correct might not catch it</li>
+                <li>• Similar to words like &quot;stepping&quot;</li>
+                <li>• Phonetic confusion</li>
               </ul>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Grammatical Functions</h3>
-              <ul className="space-y-3 text-lg text-gray-700">
-                <li>• <strong>Present participle:</strong> &quot;I am stepping&quot;</li>
-                <li>• <strong>Gerund:</strong> &quot;Stepping is good exercise&quot;</li>
-                <li>• <strong>Adjective:</strong> &quot;stepping stones&quot;</li>
-                <li>• <strong>Noun:</strong> &quot;The stepping was rhythmic&quot;</li>
-                <li>• <strong>Modifier:</strong> &quot;stepping motion&quot;</li>
-                <li>• <strong>Verb phrase:</strong> &quot;to keep stepping&quot;</li>
+            </CardContent>
+          </Card>
+          <Card className="bg-purple-50 border-purple-200">
+            <CardContent className="p-6">
+              <h3 className="text-2xl font-bold text-purple-900 mb-4">Prevention Tips</h3>
+              <ul className="text-purple-800 space-y-2">
+                <li>• Always double-check spelling</li>
+                <li>• Use spell-check tools</li>
+                <li>• Remember the double &quot;p&quot; rule</li>
+                <li>• Practice writing it correctly</li>
               </ul>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
 
-      {/* FAQ Section */}
+      {/* Related Words */}
       <div className="mb-12">
-        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Frequently Asked Questions</h2>
-        <div className="space-y-6">
-          <Card className="border-l-4 border-lime-500">
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Related Words & Forms</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card className="bg-indigo-50 border-indigo-200">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-lime-900 mb-3">Q: Why do people confuse &quot;stepping&quot; and &quot;steping&quot;?</h3>
-              <p className="text-lg text-gray-700">A: The confusion often stems from the similarity to other words like &quot;hoping&quot; or &quot;taping.&quot; However, &quot;stepping&quot; follows the pattern of &quot;step&quot; + &quot;ing&quot; present participle suffix.</p>
+              <h3 className="text-2xl font-bold text-indigo-900 mb-4">Verb Forms</h3>
+              <ul className="text-indigo-800 space-y-2">
+                <li>• step (present)</li>
+                <li>• steps (3rd person singular)</li>
+                <li>• stepped (past/past participle)</li>
+                <li>• stepping (present participle)</li>
+              </ul>
             </CardContent>
           </Card>
-
-          <Card className="border-l-4 border-green-500">
+          <Card className="bg-teal-50 border-teal-200">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-green-900 mb-3">Q: Can &quot;stepping&quot; be used in formal writing?</h3>
-              <p className="text-lg text-gray-700">A: Absolutely! &quot;Stepping&quot; is perfectly acceptable in formal writing, academic papers, and professional communication. It&apos;s a standard English present participle.</p>
+              <h3 className="text-2xl font-bold text-teal-900 mb-4">Related Nouns</h3>
+              <ul className="text-teal-800 space-y-2">
+                <li>• step</li>
+                <li>• stepper</li>
+                <li>• stepstool</li>
+                <li>• doorstep</li>
+              </ul>
             </CardContent>
           </Card>
-
-          <Card className="border-l-4 border-emerald-500">
+          <Card className="bg-cyan-50 border-cyan-200">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-emerald-900 mb-3">Q: What&apos;s the etymology of &quot;stepping&quot;?</h3>
-              <p className="text-lg text-gray-700">A: &quot;Stepping&quot; comes from Old English &quot;steppan&quot; meaning &quot;to step&quot; or &quot;to go.&quot; It was first used in English in the 14th century to describe the action of walking.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-orange-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-orange-900 mb-3">Q: Are there regional variations in usage?</h3>
-              <p className="text-lg text-gray-700">A: The spelling &quot;stepping&quot; is standard across all English-speaking regions. However, some regions might use alternative terms like &quot;walking&quot; or &quot;treading.&quot;</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-red-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-red-900 mb-3">Q: How can I teach children the difference?</h3>
-              <p className="text-lg text-gray-700">A: Use visual aids like breaking down the word: &quot;step&quot; + &quot;ing.&quot; Create simple sentences and have them identify which spelling is correct.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-blue-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-blue-900 mb-3">Q: What are some synonyms for &quot;stepping&quot;?</h3>
-              <p className="text-lg text-gray-700">A: Common synonyms include: walking, treading, pacing, striding, and ambling.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-purple-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-purple-900 mb-3">Q: Can &quot;stepping&quot; be used in other contexts?</h3>
-              <p className="text-lg text-gray-700">A: Yes! While often describing physical movement, &quot;stepping&quot; can be used metaphorically. For example, &quot;stepping up to the challenge&quot; means taking responsibility, and &quot;stepping into someone&apos;s shoes&quot; means taking over their role.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-pink-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-pink-900 mb-3">Q: What&apos;s the difference between &quot;stepping&quot; and &quot;walking&quot;?</h3>
-              <p className="text-lg text-gray-700">A: &quot;Stepping&quot; refers to the individual action of lifting and setting down each foot, while &quot;walking&quot; is the broader activity of moving on foot. &quot;Stepping&quot; is more specific and detailed.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-teal-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-teal-900 mb-3">Q: Is &quot;stepping&quot; always about physical movement?</h3>
-              <p className="text-lg text-gray-700">A: No! While &quot;stepping&quot; often describes physical movement, it can also be used metaphorically. For example, &quot;stepping up to the challenge&quot; means taking responsibility, and &quot;stepping into someone&apos;s shoes&quot; means taking over their role.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-cyan-500">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-cyan-900 mb-3">Q: What are some common idioms with &quot;stepping&quot;?</h3>
-              <p className="text-lg text-gray-700">A: Popular idioms include: &quot;step on it&quot; (hurry up), &quot;step out of line&quot; (misbehave), &quot;step into the breach&quot; (fill a gap), and &quot;step on someone&apos;s toes&quot; (offend someone).</p>
+              <h3 className="text-2xl font-bold text-cyan-900 mb-4">Similar Words</h3>
+              <ul className="text-cyan-800 space-y-2">
+                <li>• walking</li>
+                <li>• running</li>
+                <li>• jumping</li>
+                <li>• hopping</li>
+              </ul>
             </CardContent>
           </Card>
         </div>
       </div>
 
-      {/* Final Summary */}
-      <div className="bg-gradient-to-r from-lime-600 to-green-600 text-white p-8 rounded-2xl text-center">
-        <h2 className="text-3xl font-bold mb-4">Key Takeaway</h2>
-        <p className="text-xl leading-relaxed mb-6">
-          Always remember: <strong>&quot;Stepping&quot;</strong> is the correct spelling meaning &quot;taking steps.&quot; 
-          <br />
-          <strong>&quot;Steping&quot;</strong> is never correct in any context.
+      {/* Final Tips */}
+      <div className="mb-12">
+        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Final Tips to Remember</h2>
+        <Card className="bg-gradient-to-r from-green-100 to-blue-100 border-green-300">
+          <CardContent className="p-8">
+            <div className="text-center">
+              <div className="inline-flex items-center bg-white px-6 py-3 rounded-full shadow-lg mb-6">
+                <span className="text-3xl mr-3">💡</span>
+                <span className="text-2xl font-bold text-green-600">Remember: Double &quot;P&quot; = Proper!</span>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6 text-left">
+                <div>
+                  <h3 className="text-2xl font-bold text-green-900 mb-4">✅ Always Correct</h3>
+                  <ul className="text-green-800 space-y-2">
+                    <li>• stepping</li>
+                    <li>• stepped</li>
+                    <li>• stepper</li>
+                    <li>• stepstool</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-red-900 mb-4">❌ Never Correct</h3>
+                  <ul className="text-red-800 space-y-2">
+                    <li>• steping</li>
+                    <li>• steped</li>
+                    <li>• steper</li>
+                    <li>• stepstol</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Call to Action */}
+      <div className="text-center">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">Ready to Master More Spelling?</h2>
+        <p className="text-lg text-gray-600 mb-8">
+          Explore our comprehensive spelling guides and improve your writing skills today!
         </p>
-        <div className="bg-black bg-opacity-20 p-4 rounded-lg inline-block">
-          <p className="text-lg font-semibold">💡 Pro Tip: Think &quot;STEP + ING = STEPPING&quot;</p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a href="/spelling" className="bg-gradient-to-r from-lime-500 to-green-500 text-white px-8 py-3 rounded-full font-semibold hover:from-lime-600 hover:to-green-600 transition-all duration-300 transform hover:scale-105">
+            Browse All Spelling Guides
+          </a>
+          <a href="/word-finders" className="bg-gray-800 text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-900 transition-all duration-300 transform hover:scale-105">
+            Explore Word Tools
+          </a>
         </div>
       </div>
     </div>
