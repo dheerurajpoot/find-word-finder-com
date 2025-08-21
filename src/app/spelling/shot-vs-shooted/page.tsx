@@ -65,8 +65,8 @@ export default function ShotVsShootedPage() {
               <p className="text-lg text-rose-700 leading-relaxed">
                 This is the proper spelling meaning &quot;fired a projectile or took a photograph.&quot;
               </p>
-            </CardContent>
-          </Card>
+            </div>
+          </CardContent>
         </Card>
       </div>
 
