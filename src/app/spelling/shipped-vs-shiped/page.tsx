@@ -65,8 +65,8 @@ export default function ShippedVsShipedPage() {
               <p className="text-lg text-lime-700 leading-relaxed">
                 This is the proper spelling meaning &quot;sent or transported goods.&quot;
               </p>
-            </CardContent>
-          </Card>
+            </div>
+          </CardContent>
         </Card>
       </div>
 

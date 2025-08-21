@@ -65,8 +65,8 @@ export default function ShooInVsShoeInPage() {
               <p className="text-lg text-sky-700 leading-relaxed">
                 This is the proper spelling meaning &quot;a person or thing that is certain to win or succeed.&quot;
               </p>
-            </CardContent>
-          </Card>
+            </div>
+          </CardContent>
         </Card>
       </div>
 

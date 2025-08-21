@@ -65,8 +65,8 @@ export default function ShoppingVsShopingPage() {
               <p className="text-lg text-amber-700 leading-relaxed">
                 This is the proper spelling meaning &quot;the activity of buying goods or services.&quot;
               </p>
-            </CardContent>
-          </Card>
+            </div>
+          </CardContent>
         </Card>
       </div>
 

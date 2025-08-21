@@ -65,8 +65,8 @@ export default function ShockVsSchockPage() {
               <p className="text-lg text-emerald-700 leading-relaxed">
                 This is the proper spelling meaning &quot;a sudden upsetting or surprising event.&quot;
               </p>
-            </CardContent>
-          </Card>
+            </div>
+          </CardContent>
         </Card>
       </div>
 
