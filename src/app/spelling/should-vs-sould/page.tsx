@@ -65,8 +65,8 @@ export default function ShouldVsSouldPage() {
               <p className="text-lg text-sky-700 leading-relaxed">
                 This is the proper spelling meaning &quot;used to indicate obligation or recommendation.&quot;
               </p>
-            </CardContent>
-          </Card>
+            </div>
+          </CardContent>
         </Card>
       </div>
 
