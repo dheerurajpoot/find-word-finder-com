@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Search, Shuffle, Target, Grid3X3 } from "lucide-react";
+import { Search, Shuffle, Target, Grid3X3, HelpCircle } from "lucide-react";
 
 export default function WordFindersPage() {
 	const tools = [
@@ -34,6 +34,13 @@ export default function WordFindersPage() {
 			icon: Grid3X3,
 			href: "/crossword-solver",
 			color: "text-orange-600",
+		},
+		{
+			title: "Wordle Tools",
+			description: "Get hints and suggestions for your daily Wordle puzzle",
+			icon: HelpCircle,
+			href: "/wordle-helper",
+			color: "text-teal-600",
 		},
 	];
 
