@@ -124,7 +124,7 @@ export default function ScandinaviaVsScandanaviaPage() {
                 <p className="text-lg text-green-800">&quot;<strong>Scandinavia</strong> is known for its beautiful fjords.&quot;</p>
               </div>
               <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-                <p className="text-lg text-green-800">&quot;The culture of <strong>Scandinavia</strong; is fascinating.&quot;</p>
+                <p className="text-lg text-green-800">&quot;The culture of <strong>Scandinavia</strong> is fascinating.&quot;</p>
               </div>
               <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
                 <p className="text-lg text-green-800">&quot;Many people visit <strong>Scandinavia</strong> for the Northern Lights.&quot;</p>

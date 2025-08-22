@@ -121,7 +121,7 @@ export default function ScarfVsSkarfPage() {
                 <p className="text-lg text-green-800">&quot;She wrapped her <strong>scarf</strong> tightly around her neck.&quot;</p>
               </div>
               <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
-                <p className="text-lg text-green-800">&quot;The wool <strong>scarf</strong; kept me warm in winter.&quot;</p>
+                <p className="text-lg text-green-800">&quot;The wool <strong>scarf</strong> kept me warm in winter.&quot;</p>
               </div>
               <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
                 <p className="text-lg text-green-800">&quot;I bought a new silk <strong>scarf</strong> for the party.&quot;</p>
