@@ -204,12 +204,46 @@ export default function AsymmetryVsAssymetryPage() {
       {/* Summary */}
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">
-          <strong>&quot;Asymmetry&quot;</strong> is the correct spelling with single &quot;s.&quot; The spelling &quot;assymetry&quot; 
-          is incorrect and should never be used. This word comes from the Greek &quot;a-&quot; (not) + &quot;symmetria&quot; 
-          and maintains the single &quot;s&quot; spelling. Remember that &quot;asymmetry&quot; has only one &quot;s&quot; 
-          because it literally means &quot;not symmetry,&quot; and &quot;symmetry&quot; also has only one &quot;s.&quot;
-        </p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Asymmetry</strong> is the correct spelling with single &quot;s&quot;: a-sym-me-try. It means lack of symmetry or balance. The misspelling &quot;assymetry&quot; is never correct. Always use &quot;asymmetry&quot; when referring to lack of balance or proportion.</p>
+      </div>
+
+      {/* Three Column Layout */}
+      <div className="grid md:grid-cols-3 gap-6 mt-12">
+        {/* Featured Misspellings */}
+        <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+          <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/believes-vs-belives" className="text-blue-700 hover:text-blue-900 underline">Believes vs Belives</a></li>
+            <li><a href="/spelling/splendid-vs-spendid" className="text-blue-700 hover:text-blue-900 underline">Splendid vs Spendid</a></li>
+            <li><a href="/spelling/behaviour-vs-behavor" className="text-blue-700 hover:text-blue-900 underline">Behaviour vs Behaver</a></li>
+            <li><a href="/spelling/should-vs-shoud" className="text-blue-700 hover:text-blue-900 underline">Should vs Shoud</a></li>
+            <li><a href="/spelling/similar-vs-silimar" className="text-blue-700 hover:text-blue-900 underline">Similar vs Silimar</a></li>
+          </ul>
+        </div>
+
+        {/* Related Misspellings */}
+        <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+          <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/apparatus-vs-aparatus" className="text-purple-700 hover:text-purple-900 underline">Apparatus vs Aparatus</a></li>
+            <li><a href="/spelling/cassette-vs-casete" className="text-purple-700 hover:text-purple-900 underline">Cassette vs Casete</a></li>
+            <li><a href="/spelling/technology-vs-tecnology" className="text-purple-700 hover:text-purple-900 underline">Technology vs Tecnology</a></li>
+            <li><a href="/spelling/consensus-vs-concensus" className="text-purple-700 hover:text-purple-900 underline">Consensus vs Concensus</a></li>
+            <li><a href="/spelling/running-vs-runing" className="text-purple-700 hover:text-purple-900 underline">Running vs Runing</a></li>
+          </ul>
+        </div>
+
+        {/* Learned Grammar */}
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
+          <ul className="space-y-2">
+            <li><a href="/grammar/adjectives" className="text-green-700 hover:text-green-900 underline">Adjectives Guide</a></li>
+            <li><a href="/grammar/declarative-sentence" className="text-green-700 hover:text-green-900 underline">Declarative Sentences</a></li>
+            <li><a href="/grammar/suffixes" className="text-green-700 hover:text-green-900 underline">Suffixes</a></li>
+            <li><a href="/grammar/adjectives-starting-with-vowels" className="text-green-700 hover:text-green-900 underline">Adjectives Starting with Vowels</a></li>
+            <li><a href="/grammar/3rd-grade-worksheets-proper-nouns" className="text-green-700 hover:text-green-900 underline">Proper Nouns Worksheets</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   )

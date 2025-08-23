@@ -125,7 +125,46 @@ export default function TyrannyVsTyrranyPage() {
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Tyranny</strong> is the correct spelling with one &quot;r&quot; after the &quot;y&quot;. It means cruel and oppressive government or rule. The misspelling &quot;tyrrany&quot; is never correct. Use &quot;tyranny&quot; to describe oppressive rule.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Tyranny</strong> is the correct spelling with single &quot;r&quot;: ty-ran-ny. It means cruel and oppressive government or rule. The misspelling &quot;tyrrany&quot; is never correct. Always use &quot;tyranny&quot; when referring to oppressive rule or dictatorship.</p>
+      </div>
+
+      {/* Three Column Layout */}
+      <div className="grid md:grid-cols-3 gap-6 mt-12">
+        {/* Featured Misspellings */}
+        <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+          <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/specially-vs-specialy" className="text-blue-700 hover:text-blue-900 underline">Specially vs Specialy</a></li>
+            <li><a href="/spelling/acknowledgement-vs-acknowlegement" className="text-blue-700 hover:text-blue-900 underline">Acknowledgement vs Acknowlegement</a></li>
+            <li><a href="/spelling/temperature-vs-temprature" className="text-blue-700 hover:text-blue-900 underline">Temperature vs Temprature</a></li>
+            <li><a href="/spelling/visibly-vs-visably" className="text-blue-700 hover:text-blue-900 underline">Visibly vs Visably</a></li>
+            <li><a href="/spelling/community-vs-commenity" className="text-blue-700 hover:text-blue-900 underline">Community vs Commenity</a></li>
+          </ul>
+        </div>
+
+        {/* Related Misspellings */}
+        <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+          <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/knowledgement-vs-acknowledgement" className="text-purple-700 hover:text-purple-900 underline">Knowledgement vs Acknowledgement</a></li>
+            <li><a href="/spelling/stroll-vs-strol" className="text-purple-700 hover:text-purple-900 underline">Stroll vs Strol</a></li>
+            <li><a href="/spelling/tenement-vs-tenament" className="text-purple-700 hover:text-purple-900 underline">Tenement vs Tenament</a></li>
+            <li><a href="/spelling/asymmetry-vs-assymetry" className="text-purple-700 hover:text-purple-900 underline">Asymmetry vs Assymetry</a></li>
+            <li><a href="/spelling/believes-vs-belives" className="text-purple-700 hover:text-purple-900 underline">Believes vs Belives</a></li>
+          </ul>
+        </div>
+
+        {/* Learned Grammar */}
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
+          <ul className="space-y-2">
+            <li><a href="/grammar/adjectives" className="text-green-700 hover:text-green-900 underline">Adjectives Guide</a></li>
+            <li><a href="/grammar/declarative-sentence" className="text-green-700 hover:text-green-900 underline">Declarative Sentences</a></li>
+            <li><a href="/grammar/suffixes" className="text-green-700 hover:text-green-900 underline">Suffixes</a></li>
+            <li><a href="/grammar/adjectives-starting-with-vowels" className="text-green-700 hover:text-green-900 underline">Adjectives Starting with Vowels</a></li>
+            <li><a href="/grammar/3rd-grade-worksheets-proper-nouns" className="text-green-700 hover:text-green-900 underline">Proper Nouns Worksheets</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   )

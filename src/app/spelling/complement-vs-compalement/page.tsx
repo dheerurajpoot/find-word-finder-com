@@ -96,11 +96,48 @@ export default function ComplementVsCompalementPage() {
           </div>
         </div>
       </div>
-      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500 mt-8">
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-900">
-          Always use &quot;complement&quot; when referring to something that completes or enhances. &quot;Compalement&quot; is a misspelling and should be avoided.
-        </p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Complement</strong> is the correct spelling with &quot;le&quot;: com-ple-ment. It means something that completes or enhances. The misspelling &quot;compalement&quot; is never correct. Always use &quot;complement&quot; when referring to something that completes or enhances.</p>
+      </div>
+
+      {/* Three Column Layout */}
+      <div className="grid md:grid-cols-3 gap-6 mt-12">
+        {/* Featured Misspellings */}
+        <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+          <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/temperament-vs-temperment" className="text-blue-700 hover:text-blue-900 underline">Temperament vs Temperment</a></li>
+            <li><a href="/spelling/comrade-vs-comrad" className="text-blue-700 hover:text-blue-900 underline">Comrade vs Comrad</a></li>
+            <li><a href="/spelling/completion-vs-complition" className="text-blue-700 hover:text-blue-900 underline">Completion vs Complition</a></li>
+            <li><a href="/spelling/squeeze-vs-squeese" className="text-blue-700 hover:text-blue-900 underline">Squeeze vs Squeese</a></li>
+            <li><a href="/spelling/accommodate-vs-accomodate" className="text-blue-700 hover:text-blue-900 underline">Accommodate vs Accomodate</a></li>
+          </ul>
+        </div>
+
+        {/* Related Misspellings */}
+        <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+          <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/conform-vs-coform" className="text-purple-700 hover:text-purple-900 underline">Conform vs Coform</a></li>
+            <li><a href="/spelling/russian-vs-rusian" className="text-purple-700 hover:text-purple-900 underline">Russian vs Rusian</a></li>
+            <li><a href="/spelling/august-vs-agust" className="text-purple-700 hover:text-purple-900 underline">August vs Agust</a></li>
+            <li><a href="/spelling/strength-vs-strengh" className="text-purple-700 hover:text-purple-900 underline">Strength vs Strengh</a></li>
+            <li><a href="/spelling/weights-vs-weigths" className="text-purple-700 hover:text-purple-900 underline">Weights vs Weigths</a></li>
+          </ul>
+        </div>
+
+        {/* Learned Grammar */}
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
+          <ul className="space-y-2">
+            <li><a href="/grammar/adjectives" className="text-green-700 hover:text-green-900 underline">Adjectives Guide</a></li>
+            <li><a href="/grammar/declarative-sentence" className="text-green-700 hover:text-green-900 underline">Declarative Sentences</a></li>
+            <li><a href="/grammar/suffixes" className="text-green-700 hover:text-green-900 underline">Suffixes</a></li>
+            <li><a href="/grammar/adjectives-starting-with-vowels" className="text-green-700 hover:text-green-900 underline">Adjectives Starting with Vowels</a></li>
+            <li><a href="/grammar/3rd-grade-worksheets-proper-nouns" className="text-green-700 hover:text-green-900 underline">Proper Nouns Worksheets</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   );

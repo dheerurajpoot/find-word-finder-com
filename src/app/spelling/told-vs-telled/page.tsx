@@ -142,7 +142,46 @@ export default function ToldVsTelledPage() {
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Told</strong> is the correct spelling - it is the irregular past tense of &quot;tell.&quot; It means communicated information to someone. The misspelling &quot;telled&quot; is never correct. Always use &quot;told&quot; as the past tense of tell.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Told</strong> is the correct spelling for both past tense and past participle: told. It means to communicate information. The misspelling &quot;telled&quot; is never correct. Always use &quot;told&quot; when referring to past communication.</p>
+      </div>
+
+      {/* Three Column Layout */}
+      <div className="grid md:grid-cols-3 gap-6 mt-12">
+        {/* Featured Misspellings */}
+        <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+          <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/affect-vs-effect" className="text-blue-700 hover:text-blue-900 underline">Affect vs Effect</a></li>
+            <li><a href="/spelling/withhold-vs-withold" className="text-blue-700 hover:text-blue-900 underline">Withhold vs Withold</a></li>
+            <li><a href="/spelling/biscuit-vs-buiscuit" className="text-blue-700 hover:text-blue-900 underline">Biscuit vs Buiscuit</a></li>
+            <li><a href="/spelling/access-vs-akcess" className="text-blue-700 hover:text-blue-900 underline">Access vs Akcess</a></li>
+            <li><a href="/spelling/complement-vs-compalement" className="text-blue-700 hover:text-blue-900 underline">Complement vs Compalement</a></li>
+          </ul>
+        </div>
+
+        {/* Related Misspellings */}
+        <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+          <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/temperament-vs-temperment" className="text-purple-700 hover:text-purple-900 underline">Temperament vs Temperment</a></li>
+            <li><a href="/spelling/comrade-vs-comrad" className="text-purple-700 hover:text-purple-900 underline">Comrade vs Comrad</a></li>
+            <li><a href="/spelling/completion-vs-complition" className="text-purple-700 hover:text-purple-900 underline">Completion vs Complition</a></li>
+            <li><a href="/spelling/squeeze-vs-squeese" className="text-purple-700 hover:text-purple-900 underline">Squeeze vs Squeese</a></li>
+            <li><a href="/spelling/accommodate-vs-accomodate" className="text-purple-700 hover:text-purple-900 underline">Accommodate vs Accomodate</a></li>
+          </ul>
+        </div>
+
+        {/* Learned Grammar */}
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
+          <ul className="space-y-2">
+            <li><a href="/grammar/adjectives" className="text-green-700 hover:text-green-900 underline">Adjectives Guide</a></li>
+            <li><a href="/grammar/declarative-sentence" className="text-green-700 hover:text-green-900 underline">Declarative Sentences</a></li>
+            <li><a href="/grammar/suffixes" className="text-green-700 hover:text-green-900 underline">Suffixes</a></li>
+            <li><a href="/grammar/adjectives-starting-with-vowels" className="text-green-700 hover:text-green-900 underline">Adjectives Starting with Vowels</a></li>
+            <li><a href="/grammar/3rd-grade-worksheets-proper-nouns" className="text-green-700 hover:text-green-900 underline">Proper Nouns Worksheets</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   )

@@ -142,7 +142,46 @@ export default function TenementVsTenamentPage() {
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Tenement</strong> is the correct spelling with &quot;ment&quot; at the end: ten-e-ment. It means a building divided into apartments, especially in poor areas. The misspelling &quot;tenament&quot; is never correct. Always use &quot;tenement&quot; when referring to multi-family dwellings or apartment buildings.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Tenement</strong> is the correct spelling with &quot;e&quot;: ten-e-ment. It means a building divided into apartments or a run-down apartment building. The misspelling &quot;tenament&quot; is never correct. Always use &quot;tenement&quot; when referring to multi-family housing.</p>
+      </div>
+
+      {/* Three Column Layout */}
+      <div className="grid md:grid-cols-3 gap-6 mt-12">
+        {/* Featured Misspellings */}
+        <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+          <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/asymmetry-vs-assymetry" className="text-blue-700 hover:text-blue-900 underline">Asymmetry vs Assymetry</a></li>
+            <li><a href="/spelling/believes-vs-belives" className="text-blue-700 hover:text-blue-900 underline">Believes vs Belives</a></li>
+            <li><a href="/spelling/splendid-vs-spendid" className="text-blue-700 hover:text-blue-900 underline">Splendid vs Spendid</a></li>
+            <li><a href="/spelling/behaviour-vs-behavor" className="text-blue-700 hover:text-blue-900 underline">Behaviour vs Behaver</a></li>
+            <li><a href="/spelling/should-vs-shoud" className="text-blue-700 hover:text-blue-900 underline">Should vs Shoud</a></li>
+          </ul>
+        </div>
+
+        {/* Related Misspellings */}
+        <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+          <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/similar-vs-silimar" className="text-purple-700 hover:text-purple-900 underline">Similar vs Silimar</a></li>
+            <li><a href="/spelling/apparatus-vs-aparatus" className="text-purple-700 hover:text-purple-900 underline">Apparatus vs Aparatus</a></li>
+            <li><a href="/spelling/cassette-vs-casete" className="text-purple-700 hover:text-purple-900 underline">Cassette vs Casete</a></li>
+            <li><a href="/spelling/technology-vs-tecnology" className="text-purple-700 hover:text-purple-900 underline">Technology vs Tecnology</a></li>
+            <li><a href="/spelling/consensus-vs-concensus" className="text-purple-700 hover:text-purple-900 underline">Consensus vs Concensus</a></li>
+          </ul>
+        </div>
+
+        {/* Learned Grammar */}
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
+          <ul className="space-y-2">
+            <li><a href="/grammar/adjectives" className="text-green-700 hover:text-green-900 underline">Adjectives Guide</a></li>
+            <li><a href="/grammar/declarative-sentence" className="text-green-700 hover:text-green-900 underline">Declarative Sentences</a></li>
+            <li><a href="/grammar/suffixes" className="text-green-700 hover:text-green-900 underline">Suffixes</a></li>
+            <li><a href="/grammar/adjectives-starting-with-vowels" className="text-green-700 hover:text-green-900 underline">Adjectives Starting with Vowels</a></li>
+            <li><a href="/grammar/3rd-grade-worksheets-proper-nouns" className="text-green-700 hover:text-green-900 underline">Proper Nouns Worksheets</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   )
