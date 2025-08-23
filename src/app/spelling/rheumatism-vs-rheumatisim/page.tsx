@@ -65,7 +65,8 @@ export default function RheumatismVsRheumatisimPage() {
               <p className="text-lg text-green-700 leading-relaxed">
                 This is the proper spelling meaning &quot;a disease marked by inflammation and pain in the joints.&quot;
               </p>
-            </CardContent>
+            </div>
+          </CardContent>
         </Card>
       </div>
 

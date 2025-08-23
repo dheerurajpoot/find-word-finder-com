@@ -53,9 +53,46 @@ export default function CherryVsCheryPage() {
 
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500 mb-8">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800">
-          <strong>Cherry</strong> is the correct spelling. It refers to a small, round fruit with a stone in the center, typically red or black in color, and also to the tree that produces these fruits. The word is spelled with two &quot;r&quot;s: &quot;cherry.&quot; &quot;Chery&quot; is a misspelling that should be avoided.
-        </p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Cherry</strong> is the correct spelling with double &quot;r&quot;: cher-ry. It means a small, round, red fruit. The misspelling &quot;chery&quot; is never correct. Always use &quot;cherry&quot; when referring to this type of fruit.</p>
+      </div>
+
+      {/* Three Column Layout */}
+      <div className="grid md:grid-cols-3 gap-6 mt-12">
+        {/* Featured Misspellings */}
+        <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+          <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/uniform-vs-unaform" className="text-blue-700 hover:text-blue-900 underline">Uniform vs Unaform</a></li>
+            <li><a href="/spelling/berries-vs-berrys" className="text-blue-700 hover:text-blue-900 underline">Berries vs Berrys</a></li>
+            <li><a href="/spelling/vigilance-vs-vigilence" className="text-blue-700 hover:text-blue-900 underline">Vigilance vs Vigilence</a></li>
+            <li><a href="/spelling/told-vs-telled" className="text-blue-700 hover:text-blue-900 underline">Told vs Telled</a></li>
+            <li><a href="/spelling/affect-vs-effect" className="text-blue-700 hover:text-blue-900 underline">Affect vs Effect</a></li>
+          </ul>
+        </div>
+
+        {/* Related Misspellings */}
+        <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+          <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/withhold-vs-withold" className="text-purple-700 hover:text-purple-900 underline">Withhold vs Withold</a></li>
+            <li><a href="/spelling/biscuit-vs-buiscuit" className="text-purple-700 hover:text-purple-900 underline">Biscuit vs Buiscuit</a></li>
+            <li><a href="/spelling/access-vs-akcess" className="text-purple-700 hover:text-purple-900 underline">Access vs Akcess</a></li>
+            <li><a href="/spelling/complement-vs-compalement" className="text-purple-700 hover:text-purple-900 underline">Complement vs Compalement</a></li>
+            <li><a href="/spelling/temperament-vs-temperment" className="text-purple-700 hover:text-purple-900 underline">Temperament vs Temperment</a></li>
+          </ul>
+        </div>
+
+        {/* Learned Grammar */}
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
+          <ul className="space-y-2">
+            <li><a href="/grammar/adjectives" className="text-green-700 hover:text-green-900 underline">Adjectives Guide</a></li>
+            <li><a href="/grammar/declarative-sentence" className="text-green-700 hover:text-green-900 underline">Declarative Sentences</a></li>
+            <li><a href="/grammar/suffixes" className="text-green-700 hover:text-green-900 underline">Suffixes</a></li>
+            <li><a href="/grammar/adjectives-starting-with-vowels" className="text-green-700 hover:text-green-900 underline">Adjectives Starting with Vowels</a></li>
+            <li><a href="/grammar/3rd-grade-worksheets-proper-nouns" className="text-green-700 hover:text-green-900 underline">Proper Nouns Worksheets</a></li>
+          </ul>
+        </div>
       </div>
 
       <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500 mb-8">

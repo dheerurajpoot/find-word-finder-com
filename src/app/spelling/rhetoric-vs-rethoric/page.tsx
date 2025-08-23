@@ -65,7 +65,8 @@ export default function RhetoricVsRethoricPage() {
               <p className="text-lg text-green-700 leading-relaxed">
                 This is the proper spelling meaning &quot;the art of effective or persuasive speaking or writing.&quot;
               </p>
-            </CardContent>
+            </div>
+          </CardContent>
         </Card>
       </div>
 
