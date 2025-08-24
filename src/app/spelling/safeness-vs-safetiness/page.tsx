@@ -65,7 +65,8 @@ export default function SafenessVsSafetinessPage() {
               <p className="text-lg text-green-700 leading-relaxed">
                 This is the proper spelling meaning &quot;the quality of being safe.&quot;
               </p>
-            </CardContent>
+            </div>
+          </CardContent>
         </Card>
       </div>
 
@@ -169,7 +170,7 @@ export default function SafenessVsSafetinessPage() {
             <CardContent className="p-6">
               <div className="text-4xl mb-3">🧠</div>
               <h3 className="text-xl font-bold text-cyan-900 mb-2">Think Quality</h3>
-              <p className="text-cyan-800">&quot;Safeness&quot; = quality, &quot;Safetiness&quot; = wrong spelling</p>
+              <p className="text-cyan-800">&quot;Safeness&quot; = quality of being safe, &quot;Safetiness&quot; = wrong spelling</p>
             </CardContent>
           </Card>
           <Card className="bg-teal-50 border-teal-300 text-center">
@@ -197,12 +198,12 @@ export default function SafenessVsSafetinessPage() {
             <div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Common Phrases</h3>
               <ul className="space-y-3 text-lg text-gray-700">
-                <li>• <strong>Product safeness</strong> - item security</li>
+                <li>• <strong>Personal safeness</strong> - individual security</li>
                 <li>• <strong>Environmental safeness</strong> - eco protection</li>
                 <li>• <strong>Workplace safeness</strong> - job security</li>
-                <li>• <strong>Food safeness</strong> - meal protection</li>
-                <li>• <strong>Chemical safeness</strong> - substance security</li>
-                <li>• <strong>Vehicle safeness</strong> - transport protection</li>
+                <li>• <strong>Financial safeness</strong> - money security</li>
+                <li>• <strong>Digital safeness</strong> - online security</li>
+                <li>• <strong>Physical safeness</strong> - bodily protection</li>
               </ul>
             </div>
             <div>
@@ -212,8 +213,8 @@ export default function SafenessVsSafetinessPage() {
                 <li>• <strong>Plural:</strong> &quot;Several safenesses&quot;</li>
                 <li>• <strong>Possessive:</strong> &quot;Safeness&apos;s importance&quot;</li>
                 <li>• <strong>Compound:</strong> &quot;Safeness-focused approach&quot;</li>
-                <li>• <strong>Adjective:</strong> &quot;Safeness standards&quot;</li>
-                <li>• <strong>Subject:</strong> &quot;Safeness comes first&quot;</li>
+                <li>• <strong>Adjective:</strong> &quot;Safeness measures&quot;</li>
+                <li>• <strong>Subject:</strong> &quot;Safeness protects people&quot;</li>
               </ul>
             </div>
           </div>

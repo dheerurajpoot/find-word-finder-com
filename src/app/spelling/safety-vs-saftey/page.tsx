@@ -65,7 +65,8 @@ export default function SafetyVsSafteyPage() {
               <p className="text-lg text-green-700 leading-relaxed">
                 This is the proper spelling meaning &quot;the condition of being protected from harm.&quot;
               </p>
-            </CardContent>
+            </div>
+          </CardContent>
         </Card>
       </div>
 

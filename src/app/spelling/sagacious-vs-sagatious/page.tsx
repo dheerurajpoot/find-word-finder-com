@@ -65,7 +65,8 @@ export default function SagaciousVsSagatiousPage() {
               <p className="text-lg text-green-700 leading-relaxed">
                 This is the proper spelling meaning &quot;having or showing keen mental discernment.&quot;
               </p>
-            </CardContent>
+            </div>
+          </CardContent>
         </Card>
       </div>
 

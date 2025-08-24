@@ -60,12 +60,13 @@ export default function SafetyVsSavetyPage() {
               </div>
               <h3 className="text-3xl font-bold text-green-800 mb-4">Safety</h3>
               <div className="bg-white p-4 rounded-lg mb-4">
-                <p className="text-xl text-green-700 font-semibold">✅ CORRECT</p>
+                <p className="text-lg text-green-700 font-semibold">✅ CORRECT</p>
               </div>
               <p className="text-lg text-green-700 leading-relaxed">
                 This is the proper spelling meaning &quot;the condition of being protected from harm.&quot;
               </p>
-            </CardContent>
+            </div>
+          </CardContent>
         </Card>
       </div>
 
@@ -162,7 +163,7 @@ export default function SafetyVsSavetyPage() {
             <CardContent className="p-6">
               <div className="text-4xl mb-3">🛡️</div>
               <h3 className="text-xl font-bold text-yellow-900 mb-2">F Rule</h3>
-              <p className="text-yellow-800">&quot;Safety&quot; has an &quot;f&quot;, not missing it</p>
+              <p className="text-yellow-800">&quot;Safety&quot; has &quot;f&quot;, not missing it</p>
             </CardContent>
           </Card>
           <Card className="bg-lime-50 border-lime-300 text-center">
@@ -197,12 +198,12 @@ export default function SafetyVsSavetyPage() {
             <div>
               <h3 className="text-2xl font-bold text-gray-800 mb-4">Common Phrases</h3>
               <ul className="space-y-3 text-lg text-gray-700">
-                <li>• <strong>Safety first</strong> - priority rule</li>
-                <li>• <strong>Safety measures</strong> - protective steps</li>
-                <li>• <strong>Safety standards</strong> - protection rules</li>
-                <li>• <strong>Safety guidelines</strong> - protection advice</li>
-                <li>• <strong>Safety training</strong> - protection education</li>
-                <li>• <strong>Safety equipment</strong> - protective gear</li>
+                <li>• <strong>Workplace safety</strong> - job security</li>
+                <li>• <strong>Road safety</strong> - traffic security</li>
+                <li>• <strong>Food safety</strong> - meal protection</li>
+                <li>• <strong>Fire safety</strong> - flame protection</li>
+                <li>• <strong>Child safety</strong> - kid protection</li>
+                <li>• <strong>Public safety</strong> - community security</li>
               </ul>
             </div>
             <div>
@@ -211,9 +212,9 @@ export default function SafetyVsSavetyPage() {
                 <li>• <strong>Noun:</strong> &quot;The safety is important&quot;</li>
                 <li>• <strong>Plural:</strong> &quot;Several safeties&quot;</li>
                 <li>• <strong>Possessive:</strong> &quot;Safety&apos;s importance&quot;</li>
-                <li>• <strong>Compound:</strong> &quot;Safety-conscious workers&quot;</li>
-                <li>• <strong>Adjective:</strong> &quot;Safety protocols&quot;</li>
-                <li>• <strong>Subject:</strong> &quot;Safety comes first&quot;</li>
+                <li>• <strong>Compound:</strong> &quot;Safety-focused approach&quot;</li>
+                <li>• <strong>Adjective:</strong> &quot;Safety measures&quot;</li>
+                <li>• <strong>Subject:</strong> &quot;Safety protects people&quot;</li>
               </ul>
             </div>
           </div>
@@ -238,9 +239,9 @@ export default function SafetyVsSavetyPage() {
             </CardContent>
           </Card>
 
-          <Card className="border-l-4 border-emerald-500">
+          <Card className="border-l-4 border-teal-500">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-emerald-900 mb-3">Q: What&apos;s the etymology of &quot;safety&quot;?</h3>
+              <h3 className="text-xl font-bold text-teal-900 mb-3">Q: What&apos;s the etymology of &quot;safety&quot;?</h3>
               <p className="text-lg text-gray-700">A: &quot;Safety&quot; comes from combining &quot;safe&quot; (protected) with the suffix &quot;-ty&quot; (state of). It literally means &quot;the state of being safe&quot; or protected from harm.</p>
             </CardContent>
           </Card>
@@ -259,10 +260,10 @@ export default function SafetyVsSavetyPage() {
             </CardContent>
           </Card>
 
-          <Card className="border-l-4 border-teal-500">
+          <Card className="border-l-4 border-emerald-500">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-teal-900 mb-3">Q: What are some synonyms for &quot;safety&quot;?</h3>
-              <p className="text-lg text-gray-700">A: Common synonyms include: security, protection, security, well-being, welfare, security, and harmlessness.</p>
+              <h3 className="text-xl font-bold text-emerald-900 mb-3">Q: What are some synonyms for &quot;safety&quot;?</h3>
+              <p className="text-lg text-gray-700">A: Common synonyms include: security, protection, safeness, well-being, welfare, and harmlessness.</p>
             </CardContent>
           </Card>
 
@@ -275,8 +276,8 @@ export default function SafetyVsSavetyPage() {
 
           <Card className="border-l-4 border-indigo-500">
             <CardContent className="p-6">
-              <h3 className="text-xl font-bold text-indigo-900 mb-3">Q: What&apos;s the difference between &quot;safety&quot; and &quot;security&quot;?</h3>
-              <p className="text-lg text-gray-700">A: &quot;Safety&quot; refers to protection from accidents and harm, while &quot;security&quot; refers to protection from threats and attacks. Safety is about preventing accidents, security is about preventing intentional harm.</p>
+              <h3 className="text-xl font-bold text-indigo-900 mb-3">Q: What&apos;s the difference between &quot;safety&quot; and &quot;safeness&quot;?</h3>
+              <p className="text-lg text-gray-700">A: &quot;Safety&quot; refers to the condition of being protected from harm, while &quot;safeness&quot; refers to the quality of being safe. They are very similar but &quot;safety&quot; emphasizes the condition aspect.</p>
             </CardContent>
           </Card>
         </div>
@@ -286,7 +287,7 @@ export default function SafetyVsSavetyPage() {
       <div className="bg-gradient-to-r from-lime-600 to-green-600 text-white p-8 rounded-2xl text-center">
         <h2 className="text-3xl font-bold mb-4">Key Takeaway</h2>
         <p className="text-xl leading-relaxed mb-6">
-          Always remember: <strong>&quot;Safety&quot;</strong> has an &quot;f&quot; and means &quot;protection from harm.&quot; 
+          Always remember: <strong>&quot;Safety&quot;</strong> has &quot;f&quot; and means &quot;the condition of being protected.&quot; 
           <br />
           <strong>&quot;Savety&quot;</strong> is never correct in any context.
         </p>
@@ -303,9 +304,9 @@ export default function SafetyVsSavetyPage() {
           <ul className="space-y-3 text-blue-800">
             <li><a href="/spelling/said-vs-sayed" className="hover:text-blue-600 underline">Said vs Sayed</a></li>
             <li><a href="/spelling/sagacious-vs-sagatious" className="hover:text-blue-600 underline">Sagacious vs Sagatious</a></li>
+            <li><a href="/spelling/safeness-vs-safetiness" className="hover:text-blue-600 underline">Safeness vs Safetiness</a></li>
             <li><a href="/spelling/safety-vs-safty" className="hover:text-blue-600 underline">Safety vs Safty</a></li>
             <li><a href="/spelling/safety-vs-saftey" className="hover:text-blue-600 underline">Safety vs Saftey</a></li>
-            <li><a href="/spelling/safeness-vs-safetiness" className="hover:text-blue-600 underline">Safeness vs Safetiness</a></li>
           </ul>
         </div>
 
@@ -325,11 +326,11 @@ export default function SafetyVsSavetyPage() {
         <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl border border-purple-200">
           <h3 className="text-2xl font-bold text-purple-900 mb-4 text-center">Learned Grammar</h3>
           <ul className="space-y-3 text-purple-800">
-            <li><a href="/grammar/adjective-start-with-k" className="hover:text-purple-600 underline">Adjective Start With K</a></li>
-            <li><a href="/grammar/adjective-start-with-l" className="hover:text-purple-600 underline">Adjective Start With L</a></li>
-            <li><a href="/grammar/adjective-start-with-m" className="hover:text-purple-600 underline">Adjective Start With M</a></li>
-            <li><a href="/grammar/adjective-start-with-n" className="hover:text-purple-600 underline">Adjective Start With N</a></li>
-            <li><a href="/grammar/adjective-start-with-o" className="hover:text-purple-600 underline">Adjective Start With O</a></li>
+            <li><a href="/grammar/adjective-start-with-a" className="hover:text-purple-600 underline">Adjective Start With A</a></li>
+            <li><a href="/grammar/adjective-start-with-b" className="hover:text-purple-600 underline">Adjective Start With B</a></li>
+            <li><a href="/grammar/adjective-start-with-c" className="hover:text-purple-600 underline">Adjective Start With C</a></li>
+            <li><a href="/grammar/adjective-start-with-d" className="hover:text-purple-600 underline">Adjective Start With D</a></li>
+            <li><a href="/grammar/adjective-start-with-e" className="hover:text-purple-600 underline">Adjective Start With E</a></li>
           </ul>
         </div>
       </div>
