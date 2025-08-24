@@ -137,13 +137,45 @@ export default function BerserkVsBersarkPage() {
 
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <div className="text-lg md:text-xl text-green-800 space-y-4">
-          <p>
-            <strong>Berserk</strong> is the correct spelling of this word. The incorrect spelling &quot;bersark&quot; should never be used.
-          </p>
-          <p>
-            Remember: Berserk = Ber + serk (with &quot;e&quot; before &quot;r&quot; in the middle). This spelling is consistent across all English-speaking countries and is the standard in all contexts.
-          </p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Berserk</strong> is the correct spelling with &quot;er&quot;: ber-serk. It means out of control with anger or excitement. The misspelling &quot;bersark&quot; is never correct. Always use &quot;berserk&quot; when referring to someone who is out of control.</p>
+      </div>
+
+      {/* Three Column Layout */}
+      <div className="grid md:grid-cols-3 gap-6 mt-12">
+        {/* Featured Misspellings */}
+        <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+          <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/condemn-vs-condem" className="text-blue-700 hover:text-blue-900 underline">Condemn vs Condem</a></li>
+            <li><a href="/spelling/verbiage-vs-verbage" className="text-blue-700 hover:text-blue-900 underline">Verbiage vs Verbage</a></li>
+            <li><a href="/spelling/submitted-vs-submited" className="text-blue-700 hover:text-blue-900 underline">Submitted vs Submited</a></li>
+            <li><a href="/spelling/along-vs-allong" className="text-blue-700 hover:text-blue-900 underline">Along vs Allong</a></li>
+            <li><a href="/spelling/adverse-vs-adverse" className="text-blue-700 hover:text-blue-900 underline">Adverse vs Adverse</a></li>
+          </ul>
+        </div>
+
+        {/* Related Misspellings */}
+        <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+          <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/xylophone-vs-xylephone" className="text-purple-700 hover:text-purple-900 underline">Xylophone vs Xylephone</a></li>
+            <li><a href="/spelling/sufficiently-vs-sufficently" className="text-purple-700 hover:text-purple-900 underline">Sufficiently vs Sufficently</a></li>
+            <li><a href="/spelling/attendance-vs-attendence" className="text-purple-700 hover:text-purple-900 underline">Attendance vs Attendence</a></li>
+            <li><a href="/spelling/succumb-vs-succum" className="text-purple-700 hover:text-purple-900 underline">Succumb vs Succum</a></li>
+            <li><a href="/spelling/slipped-vs-sliped" className="text-purple-700 hover:text-purple-900 underline">Slipped vs Sliped</a></li>
+          </ul>
+        </div>
+
+        {/* Learned Grammar */}
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
+          <ul className="space-y-2">
+            <li><a href="/grammar/adjectives" className="text-green-700 hover:text-green-900 underline">Adjectives Guide</a></li>
+            <li><a href="/grammar/declarative-sentence" className="text-green-700 hover:text-green-900 underline">Declarative Sentences</a></li>
+            <li><a href="/grammar/suffixes" className="text-green-700 hover:text-green-900 underline">Suffixes</a></li>
+            <li><a href="/grammar/adjectives-starting-with-vowels" className="text-green-700 hover:text-green-900 underline">Adjectives Starting with Vowels</a></li>
+            <li><a href="/grammar/3rd-grade-worksheets-proper-nouns" className="text-green-700 hover:text-green-900 underline">Proper Nouns Worksheets</a></li>
+          </ul>
         </div>
       </div>
     </div>
