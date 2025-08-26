@@ -101,7 +101,7 @@ export default function RepelledVsRepeledPage() {
               <h3 className="text-2xl font-bold text-cyan-900 mb-4">Grammar Rule</h3>
               <ul className="text-cyan-800 space-y-2">
                 <li>• Verbs ending in &quot;el&quot;</li>
-                • Double &quot;l&quot; before &quot;ed&quot;</li>
+                <li>• Double &quot;l&quot; before &quot;ed&quot;</li>
                 <li>• Always for past tense</li>
                 <li>• Standard English rule</li>
               </ul>
