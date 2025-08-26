@@ -296,17 +296,22 @@ export default function ResponseVsReponsePage() {
         </div>
       </div>
 
+      <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Response</strong> is the correct spelling with &quot;se&quot; at the end. It means a reply or answer to something. The misspelling &quot;reponse&quot; is never correct. Always use &quot;response&quot; when referring to replies or answers.</p>
+      </div>
+
       {/* Three Column Layout */}
       <div className="grid md:grid-cols-3 gap-6 mt-12">
         {/* Featured Misspellings */}
         <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
           <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/separate-vs-seperate" className="text-blue-700 hover:text-blue-900 underline">Separate vs Seperate</a></li>
-            <li><a href="/spelling/definitely-vs-definately" className="text-blue-700 hover:text-blue-900 underline">Definitely vs Definately</a></li>
-            <li><a href="/spelling/occurred-vs-occured" className="text-blue-700 hover:text-blue-900 underline">Occurred vs Occured</a></li>
-            <li><a href="/spelling/privilege-vs-priviledge" className="text-blue-700 hover:text-blue-900 underline">Privilege vs Priviledge</a></li>
-            <li><a href="/spelling/embarrass-vs-embarass" className="text-blue-700 hover:text-blue-900 underline">Embarrass vs Embarass</a></li>
+            <li><a href="/spelling/strength-vs-strengh" className="text-blue-700 hover:text-blue-900 underline">Strength vs Strengh</a></li>
+            <li><a href="/spelling/weights-vs-weigths" className="text-blue-700 hover:text-blue-900 underline">Weights vs Weigths</a></li>
+            <li><a href="/spelling/biscuit-vs-bisquit" className="text-blue-700 hover:text-blue-900 underline">Biscuit vs Bisquit</a></li>
+            <li><a href="/spelling/bonfire-vs-bondfire" className="text-blue-700 hover:text-blue-900 underline">Bonfire vs Bondfire</a></li>
+            <li><a href="/spelling/their-vs-thier" className="text-blue-700 hover:text-blue-900 underline">Their vs Thier</a></li>
           </ul>
         </div>
 
@@ -314,11 +319,11 @@ export default function ResponseVsReponsePage() {
         <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
           <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/defense-vs-defence" className="text-purple-700 hover:text-purple-900 underline">Defense vs Defence</a></li>
-            <li><a href="/spelling/license-vs-licence" className="text-purple-700 hover:text-purple-900 underline">License vs Licence</a></li>
-            <li><a href="/spelling/pretense-vs-pretence" className="text-purple-700 hover:text-purple-900 underline">Pretense vs Pretence</a></li>
-            <li><a href="/spelling/offense-vs-offence" className="text-purple-700 hover:text-purple-900 underline">Offense vs Offence</a></li>
-            <li><a href="/spelling/sense-vs-sence" className="text-purple-700 hover:text-purple-900 underline">Sense vs Sence</a></li>
+            <li><a href="/spelling/although-vs-allthough" className="text-purple-700 hover:text-purple-900 underline">Although vs Allthough</a></li>
+            <li><a href="/spelling/cherry-vs-chery" className="text-purple-700 hover:text-purple-900 underline">Cherry vs Chery</a></li>
+            <li><a href="/spelling/uniform-vs-unaform" className="text-purple-700 hover:text-purple-900 underline">Uniform vs Unaform</a></li>
+            <li><a href="/spelling/berries-vs-berrys" className="text-purple-700 hover:text-purple-900 underline">Berries vs Berrys</a></li>
+            <li><a href="/spelling/vigilance-vs-vigilence" className="text-purple-700 hover:text-purple-900 underline">Vigilance vs Vigilence</a></li>
           </ul>
         </div>
 
@@ -326,11 +331,11 @@ export default function ResponseVsReponsePage() {
         <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
           <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
           <ul className="space-y-2">
-            <li><a href="/grammar/nouns" className="text-green-700 hover:text-green-900 underline">Nouns</a></li>
-            <li><a href="/grammar/spelling-rules" className="text-green-700 hover:text-green-900 underline">Spelling Rules</a></li>
-            <li><a href="/grammar/word-formation" className="text-green-700 hover:text-green-900 underline">Word Formation</a></li>
-            <li><a href="/grammar/etymology" className="text-green-700 hover:text-green-900 underline">Etymology</a></li>
-            <li><a href="/grammar/english-grammar" className="text-green-700 hover:text-green-900 underline">English Grammar</a></li>
+            <li><a href="/grammar/adjectives" className="text-green-700 hover:text-green-900 underline">Adjectives Guide</a></li>
+            <li><a href="/grammar/declarative-sentence" className="text-green-700 hover:text-green-900 underline">Declarative Sentences</a></li>
+            <li><a href="/grammar/suffixes" className="text-green-700 hover:text-green-900 underline">Suffixes</a></li>
+            <li><a href="/grammar/adjectives-starting-with-vowels" className="text-green-700 hover:text-green-900 underline">Adjectives Starting with Vowels</a></li>
+            <li><a href="/grammar/3rd-grade-worksheets-proper-nouns" className="text-green-700 hover:text-green-900 underline">Proper Nouns Worksheets</a></li>
           </ul>
         </div>
       </div>
