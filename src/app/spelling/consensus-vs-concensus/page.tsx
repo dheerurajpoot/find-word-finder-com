@@ -146,7 +146,7 @@ export default function ConsensusVsConcensusPage() {
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Consensus</strong> is the correct spelling with &quot;s&quot; in the middle: con-sen-sus. It means general agreement among a group of people. The misspelling &quot;concensus&quot; is never correct. Always use &quot;consensus&quot; when referring to collective agreement or unanimous opinion.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Consensus</strong> is the correct spelling with &quot;ns&quot; in the middle. It means general agreement among a group. The misspelling &quot;concensus&quot; with &quot;nc&quot; is never correct. Always use &quot;consensus&quot; when referring to agreement or unity of opinion.</p>
       </div>
 
       {/* Three Column Layout */}
@@ -155,11 +155,11 @@ export default function ConsensusVsConcensusPage() {
         <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
           <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/running-vs-runing" className="text-blue-700 hover:text-blue-900 underline">Running vs Runing</a></li>
-            <li><a href="/spelling/attacked-vs-attacted" className="text-blue-700 hover:text-blue-900 underline">Attacked vs Attacted</a></li>
-            <li><a href="/spelling/challenged-vs-challanged" className="text-blue-700 hover:text-blue-900 underline">Challenged vs Challanged</a></li>
-            <li><a href="/spelling/concussion-vs-concusion" className="text-blue-700 hover:text-blue-900 underline">Concussion vs Concusion</a></li>
-            <li><a href="/spelling/acceptable-vs-acceptible" className="text-blue-700 hover:text-blue-900 underline">Acceptable vs Acceptible</a></li>
+            <li><a href="/spelling/strength-vs-strengh" className="text-blue-700 hover:text-blue-900 underline">Strength vs Strengh</a></li>
+            <li><a href="/spelling/weights-vs-weigths" className="text-blue-700 hover:text-blue-900 underline">Weights vs Weigths</a></li>
+            <li><a href="/spelling/biscuit-vs-bisquit" className="text-blue-700 hover:text-blue-900 underline">Biscuit vs Bisquit</a></li>
+            <li><a href="/spelling/bonfire-vs-bondfire" className="text-blue-700 hover:text-blue-900 underline">Bonfire vs Bondfire</a></li>
+            <li><a href="/spelling/their-vs-thier" className="text-blue-700 hover:text-blue-900 underline">Their vs Thier</a></li>
           </ul>
         </div>
 
@@ -167,11 +167,11 @@ export default function ConsensusVsConcensusPage() {
         <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
           <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/tyranny-vs-tyrrany" className="text-purple-700 hover:text-purple-900 underline">Tyranny vs Tyrrany</a></li>
-            <li><a href="/spelling/specially-vs-specialy" className="text-purple-700 hover:text-purple-900 underline">Specially vs Specialy</a></li>
-            <li><a href="/spelling/acknowledgement-vs-acknowlegement" className="text-purple-700 hover:text-purple-900 underline">Acknowledgement vs Acknowlegement</a></li>
-            <li><a href="/spelling/temperature-vs-temprature" className="text-purple-700 hover:text-purple-900 underline">Temperature vs Temprature</a></li>
-            <li><a href="/spelling/visibly-vs-visably" className="text-purple-700 hover:text-purple-900 underline">Visibly vs Visably</a></li>
+            <li><a href="/spelling/although-vs-allthough" className="text-purple-700 hover:text-purple-900 underline">Although vs Allthough</a></li>
+            <li><a href="/spelling/cherry-vs-chery" className="text-purple-700 hover:text-purple-900 underline">Cherry vs Chery</a></li>
+            <li><a href="/spelling/uniform-vs-unaform" className="text-purple-700 hover:text-purple-900 underline">Uniform vs Unaform</a></li>
+            <li><a href="/spelling/berries-vs-berrys" className="text-purple-700 hover:text-purple-900 underline">Berries vs Berrys</a></li>
+            <li><a href="/spelling/vigilance-vs-vigilence" className="text-purple-700 hover:text-purple-900 underline">Vigilance vs Vigilence</a></li>
           </ul>
         </div>
 

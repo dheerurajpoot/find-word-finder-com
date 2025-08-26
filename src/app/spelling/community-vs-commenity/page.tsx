@@ -126,7 +126,7 @@ export default function CommunityVsCommenityPage() {
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Community</strong> is the correct spelling with double &quot;m&quot;: com-mu-ni-ty. It means a group of people living in the same area or sharing common interests. The misspelling &quot;commenity&quot; is never correct. Always use &quot;community&quot; when referring to groups or neighborhoods.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Community</strong> is the correct spelling with &quot;unity&quot; at the end. It means a group of people living together. The misspelling &quot;commenity&quot; with &quot;ity&quot; is never correct. Always use &quot;community&quot; when referring to groups or neighborhoods.</p>
       </div>
 
       {/* Three Column Layout */}
@@ -135,11 +135,11 @@ export default function CommunityVsCommenityPage() {
         <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
           <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/knowledgement-vs-acknowledgement" className="text-blue-700 hover:text-blue-900 underline">Knowledgement vs Acknowledgement</a></li>
-            <li><a href="/spelling/stroll-vs-strol" className="text-blue-700 hover:text-blue-900 underline">Stroll vs Strol</a></li>
-            <li><a href="/spelling/tenement-vs-tenament" className="text-blue-700 hover:text-blue-900 underline">Tenement vs Tenament</a></li>
-            <li><a href="/spelling/asymmetry-vs-assymetry" className="text-blue-700 hover:text-blue-900 underline">Asymmetry vs Assymetry</a></li>
-            <li><a href="/spelling/believes-vs-belives" className="text-blue-700 hover:text-blue-900 underline">Believes vs Belives</a></li>
+            <li><a href="/spelling/strength-vs-strengh" className="text-blue-700 hover:text-blue-900 underline">Strength vs Strengh</a></li>
+            <li><a href="/spelling/weights-vs-weigths" className="text-blue-700 hover:text-blue-900 underline">Weights vs Weigths</a></li>
+            <li><a href="/spelling/biscuit-vs-bisquit" className="text-blue-700 hover:text-blue-900 underline">Biscuit vs Bisquit</a></li>
+            <li><a href="/spelling/bonfire-vs-bondfire" className="text-blue-700 hover:text-blue-900 underline">Bonfire vs Bondfire</a></li>
+            <li><a href="/spelling/their-vs-thier" className="text-blue-700 hover:text-blue-900 underline">Their vs Thier</a></li>
           </ul>
         </div>
 
@@ -147,11 +147,11 @@ export default function CommunityVsCommenityPage() {
         <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
           <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/splendid-vs-spendid" className="text-purple-700 hover:text-purple-900 underline">Splendid vs Spendid</a></li>
-            <li><a href="/spelling/behaviour-vs-behavor" className="text-purple-700 hover:text-purple-900 underline">Behaviour vs Behaver</a></li>
-            <li><a href="/spelling/should-vs-shoud" className="text-purple-700 hover:text-purple-900 underline">Should vs Shoud</a></li>
-            <li><a href="/spelling/similar-vs-silimar" className="text-purple-700 hover:text-purple-900 underline">Similar vs Silimar</a></li>
-            <li><a href="/spelling/apparatus-vs-aparatus" className="text-purple-700 hover:text-purple-900 underline">Apparatus vs Aparatus</a></li>
+            <li><a href="/spelling/although-vs-allthough" className="text-purple-700 hover:text-purple-900 underline">Although vs Allthough</a></li>
+            <li><a href="/spelling/cherry-vs-chery" className="text-purple-700 hover:text-purple-900 underline">Cherry vs Chery</a></li>
+            <li><a href="/spelling/uniform-vs-unaform" className="text-purple-700 hover:text-purple-900 underline">Uniform vs Unaform</a></li>
+            <li><a href="/spelling/berries-vs-berrys" className="text-purple-700 hover:text-purple-900 underline">Berries vs Berrys</a></li>
+            <li><a href="/spelling/vigilance-vs-vigilence" className="text-purple-700 hover:text-purple-900 underline">Vigilance vs Vigilence</a></li>
           </ul>
         </div>
 
