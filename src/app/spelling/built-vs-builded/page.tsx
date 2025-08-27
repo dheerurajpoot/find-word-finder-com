@@ -145,6 +145,45 @@ export default function BuiltVsBuildedPage() {
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
         <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Built</strong> is the correct past tense and past participle of &quot;build.&quot; It&apos;s an irregular verb that doesn&apos;t follow the regular -ed pattern. The misspelling &quot;builded&quot; is never correct in modern English. Use &quot;built&quot; for all past tense and past participle forms of the verb &quot;build.&quot;</p>
       </div>
+
+      {/* Three Column Layout */}
+      <div className="grid md:grid-cols-3 gap-6 mt-12">
+        {/* Featured Misspellings */}
+        <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+          <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/separate-vs-seperate" className="text-blue-700 hover:text-blue-900 underline">Separate vs Seperate</a></li>
+            <li><a href="/spelling/against-vs-againstt" className="text-blue-700 hover:text-blue-900 underline">Against vs Againstt</a></li>
+            <li><a href="/spelling/barely-vs-bearly" className="text-blue-700 hover:text-blue-900 underline">Barely vs Bearly</a></li>
+            <li><a href="/spelling/definitely-vs-definately" className="text-blue-700 hover:text-blue-900 underline">Definitely vs Definately</a></li>
+            <li><a href="/spelling/occurred-vs-occured" className="text-blue-700 hover:text-blue-900 underline">Occurred vs Occured</a></li>
+          </ul>
+        </div>
+
+        {/* Related Misspellings */}
+        <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+          <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/felt-vs-feeled" className="text-purple-700 hover:text-purple-900 underline">Felt vs Feeled</a></li>
+            <li><a href="/spelling/kept-vs-keeped" className="text-purple-700 hover:text-purple-900 underline">Kept vs Keeped</a></li>
+            <li><a href="/spelling/slept-vs-sleeped" className="text-purple-700 hover:text-purple-900 underline">Slept vs Sleeped</a></li>
+            <li><a href="/spelling/wept-vs-weeped" className="text-purple-700 hover:text-purple-900 underline">Wept vs Weeped</a></li>
+            <li><a href="/spelling/crept-vs-creeped" className="text-purple-700 hover:text-purple-900 underline">Crept vs Creeped</a></li>
+          </ul>
+        </div>
+
+        {/* Learned Grammar */}
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
+          <ul className="space-y-2">
+            <li><a href="/grammar/verbs" className="text-green-700 hover:text-green-900 underline">Verbs Guide</a></li>
+            <li><a href="/grammar/irregular-verbs" className="text-green-700 hover:text-green-900 underline">Irregular Verbs</a></li>
+            <li><a href="/grammar/parts-of-speech" className="text-green-700 hover:text-green-900 underline">Parts of Speech</a></li>
+            <li><a href="/grammar/spelling-rules" className="text-green-700 hover:text-green-900 underline">Spelling Rules</a></li>
+            <li><a href="/grammar/verb-tenses" className="text-green-700 hover:text-green-900 underline">Verb Tenses</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 } 
