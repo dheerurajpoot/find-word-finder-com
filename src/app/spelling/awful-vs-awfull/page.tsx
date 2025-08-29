@@ -143,7 +143,46 @@ export default function AwfulVsAwfullPage() {
       </div>
       <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
         <h2 className="text-2xl font-bold mb-4 text-green-900">Summary</h2>
-        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Awful</strong> is the correct spelling with one &quot;l&quot; at the end. It means extremely bad, unpleasant, or terrible. The misspelling &quot;awfull&quot; is never correct. Use &quot;awful&quot; to describe very bad experiences, situations, or feelings.</p>
+        <p className="text-lg md:text-xl text-green-800 leading-relaxed">Remember: <strong>Awful</strong> is the correct spelling with one &quot;l&quot; at the end. It means extremely bad, unpleasant, or terrible. The misspelling &quot;awfull&quot; is never correct. Use &quot;awful&quot; to describe very bad experiences, situations, or feelings.        </p>
+      </div>
+
+      {/* Three Column Layout */}
+      <div className="grid md:grid-cols-3 gap-6 mt-12">
+        {/* Featured Misspellings */}
+        <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+          <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/terrible-vs-terrible" className="text-blue-700 hover:text-blue-900 underline">Terrible vs Terrible</a></li>
+            <li><a href="/spelling/horrible-vs-horrible" className="text-blue-700 hover:text-blue-900 underline">Horrible vs Horrible</a></li>
+            <li><a href="/spelling/dreadful-vs-dreadful" className="text-blue-700 hover:text-blue-900 underline">Dreadful vs Dreadful</a></li>
+            <li><a href="/spelling/appalling-vs-appalling" className="text-blue-700 hover:text-blue-900 underline">Appalling vs Appalling</a></li>
+            <li><a href="/spelling/atrocious-vs-atrocious" className="text-blue-700 hover:text-blue-900 underline">Atrocious vs Atrocious</a></li>
+          </ul>
+        </div>
+
+        {/* Related Misspellings */}
+        <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+          <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/ghastly-vs-ghastly" className="text-purple-700 hover:text-purple-900 underline">Ghastly vs Ghastly</a></li>
+            <li><a href="/spelling/frightful-vs-frightful" className="text-purple-700 hover:text-purple-900 underline">Frightful vs Frightful</a></li>
+            <li><a href="/spelling/shocking-vs-shocking" className="text-purple-700 hover:text-purple-900 underline">Shocking vs Shocking</a></li>
+            <li><a href="/spelling/bad-vs-bad" className="text-purple-700 hover:text-purple-900 underline">Bad vs Bad</a></li>
+            <li><a href="/spelling/terrible-vs-terrible" className="text-purple-700 hover:text-purple-900 underline">Terrible vs Terrible</a></li>
+          </ul>
+        </div>
+
+        {/* Learned Grammar */}
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
+          <ul className="space-y-2">
+            <li><a href="/grammar/adjectives" className="text-green-700 hover:text-green-900 underline">Adjectives Guide</a></li>
+            <li><a href="/grammar/ful-endings" className="text-green-700 hover:text-green-900 underline">Ful Endings</a></li>
+            <li><a href="/grammar/spelling-rules" className="text-green-700 hover:text-green-900 underline">Spelling Rules</a></li>
+            <li><a href="/grammar/etymology" className="text-green-700 hover:text-green-900 underline">Etymology</a></li>
+            <li><a href="/grammar/common-mistakes" className="text-green-700 hover:text-green-900 underline">Common Mistakes</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   )
