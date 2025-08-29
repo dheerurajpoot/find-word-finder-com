@@ -203,6 +203,45 @@ export default function CherryVsCheryPage() {
           </div>
         </div>
       </div>
+
+      {/* Three Column Layout */}
+      <div className="grid md:grid-cols-3 gap-6 mt-12">
+        {/* Featured Misspellings */}
+        <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+          <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/front-vs-front" className="text-blue-700 hover:text-blue-900 underline">Front vs Front</a></li>
+            <li><a href="/spelling/full-vs-full" className="text-blue-700 hover:text-blue-900 underline">Full vs Full</a></li>
+            <li><a href="/spelling/fun-vs-fun" className="text-blue-700 hover:text-blue-900 underline">Fun vs Fun</a></li>
+            <li><a href="/spelling/future-vs-future" className="text-blue-700 hover:text-blue-900 underline">Future vs Future</a></li>
+            <li><a href="/spelling/game-vs-game" className="text-blue-700 hover:text-blue-900 underline">Game vs Game</a></li>
+          </ul>
+        </div>
+
+        {/* Related Misspellings */}
+        <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
+          <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
+          <ul className="space-y-2">
+            <li><a href="/spelling/berry-vs-bery" className="text-purple-700 hover:text-purple-900 underline">Berry vs Bery</a></li>
+            <li><a href="/spelling/strawberry-vs-strawbery" className="text-purple-700 hover:text-purple-900 underline">Strawberry vs Strawbery</a></li>
+            <li><a href="/spelling/blueberry-vs-bluebery" className="text-purple-700 hover:text-purple-900 underline">Blueberry vs Bluebery</a></li>
+            <li><a href="/spelling/raspberry-vs-raspbery" className="text-purple-700 hover:text-purple-900 underline">Raspberry vs Raspbery</a></li>
+            <li><a href="/spelling/blackberry-vs-blackbery" className="text-purple-700 hover:text-purple-900 underline">Blackberry vs Blackbery</a></li>
+          </ul>
+        </div>
+
+        {/* Learned Grammar */}
+        <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
+          <ul className="space-y-2">
+            <li><a href="/grammar/nouns" className="text-green-700 hover:text-green-900 underline">Nouns Guide</a></li>
+            <li><a href="/grammar/double-consonants" className="text-green-700 hover:text-green-900 underline">Double Consonants</a></li>
+            <li><a href="/grammar/rr-patterns" className="text-green-700 hover:text-green-900 underline">Rr Patterns</a></li>
+            <li><a href="/grammar/spelling-rules" className="text-green-700 hover:text-green-900 underline">Spelling Rules</a></li>
+            <li><a href="/grammar/etymology" className="text-green-700 hover:text-green-900 underline">Etymology</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 } 
