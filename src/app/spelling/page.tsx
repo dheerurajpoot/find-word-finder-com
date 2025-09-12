@@ -1,361 +1,283 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import { useState, useMemo, useEffect } from "react";
-import { misspellingFolders } from "@/lib/misspellings";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { SpellingEntry } from "@/lib/supabase";
+import {
+	Search,
+	Sparkles,
+	Brain,
+	Lightbulb,
+	RefreshCw,
+	FileText,
+} from "lucide-react";
+import { spellingAPI } from "@/lib/api";
 
-export default function SpellingPage() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [displayCount, setDisplayCount] = useState(6);
-  const [selectedCategory, setSelectedCategory] = useState('All');
+export default function SpellingIndexPage() {
+	const [entries, setEntries] = useState<SpellingEntry[]>([]);
+	const [filteredEntries, setFilteredEntries] = useState<SpellingEntry[]>([]);
+	const [searchTerm, setSearchTerm] = useState("");
+	const [selectedLetter, setSelectedLetter] = useState("All");
+	const [loading, setLoading] = useState(true);
 
-  // Get category and display count from URL parameter on page load
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const urlParams = new URLSearchParams(window.location.search);
-      const categoryFromUrl = urlParams.get('category');
-      const displayFromUrl = urlParams.get('display');
-      
-      if (categoryFromUrl) {
-        setSelectedCategory(categoryFromUrl);
-      }
-      
-      if (displayFromUrl) {
-        const displayCount = parseInt(displayFromUrl);
-        if (!isNaN(displayCount)) {
-          setDisplayCount(displayCount);
-        }
-      }
-    }
-  }, []);
+	// Fetch entries on component mount
+	useEffect(() => {
+		const fetchEntries = async () => {
+			try {
+				const data = await spellingAPI.getEntries();
+				setEntries(data || []);
+				setFilteredEntries(data || []);
+			} catch (error) {
+				console.error("Error fetching spelling entries:", error);
+			} finally {
+				setLoading(false);
+			}
+		};
 
-  // Categories for spelling topics - All and A-Z
-  const categories = ['All', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+		fetchEntries();
+	}, []);
 
-  // Filter and search logic
-  const filteredPages = useMemo(() => {
-    let filtered = misspellingFolders;
+	// Filter entries based on search term and selected letter
+	useEffect(() => {
+		let filtered = entries;
 
-    // Apply search filter
-    if (searchTerm) {
-      filtered = filtered.filter(page => 
-        prettify(page).toLowerCase().includes(searchTerm.toLowerCase())
-      );
-    }
+		// Filter by search term
+		if (searchTerm.trim()) {
+			filtered = filtered.filter(
+				(entry) =>
+					entry.title
+						.toLowerCase()
+						.includes(searchTerm.toLowerCase()) ||
+					entry.correct_word
+						.toLowerCase()
+						.includes(searchTerm.toLowerCase()) ||
+					entry.incorrect_word
+						.toLowerCase()
+						.includes(searchTerm.toLowerCase()) ||
+					entry.description
+						.toLowerCase()
+						.includes(searchTerm.toLowerCase())
+			);
+		}
 
-    // Apply category filter
-    if (selectedCategory !== "All") {
-      filtered = filtered.filter(page => {
-        const title = prettify(page);
-        return title.startsWith(selectedCategory);
-      });
-    }
+		// Filter by selected letter
+		if (selectedLetter !== "All") {
+			filtered = filtered.filter((entry) =>
+				entry.title
+					.toLowerCase()
+					.startsWith(selectedLetter.toLowerCase())
+			);
+		}
 
-    return filtered;
-  }, [searchTerm, selectedCategory]);
+		setFilteredEntries(filtered);
+	}, [entries, searchTerm, selectedLetter]);
 
-  const displayedPages = filteredPages.slice(0, displayCount);
-  const hasMorePages = displayCount < filteredPages.length;
+	const handleRefresh = async () => {
+		setLoading(true);
+		try {
+			const data = await spellingAPI.getEntries();
+			setEntries(data || []);
+		} catch (error) {
+			console.error("Error refreshing entries:", error);
+		} finally {
+			setLoading(false);
+		}
+	};
 
-  const handleCategoryChange = (category: string) => {
-    // Update URL with category parameter and reload
-    const url = new URL(window.location.href);
-    if (category === 'All') {
-      url.searchParams.delete('category');
-    } else {
-      url.searchParams.set('category', category);
-    }
-    window.location.href = url.toString();
-  };
+	return (
+		<div className='min-h-screen bg-gradient-to-br from-gray-50 to-white'>
+			{/* Hero Section with Purple Gradient */}
+			<div className='bg-gradient-to-br from-purple-600 via-purple-700 to-purple-800 text-white py-16 px-4'>
+				<div className='max-w-7xl mx-auto text-center'>
+					{/* Icon */}
+					<div className='flex justify-center mb-4'>
+						<div className='w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center'>
+							<FileText className='w-6 h-6 text-white' />
+						</div>
+					</div>
 
-  const handleSearch = () => {
-    // Search functionality - can be enhanced later
-    setDisplayCount(6);
-  };
+					{/* Title */}
+					<h1 className='text-5xl md:text-6xl font-bold mb-6'>
+						Misspelling Guide
+					</h1>
 
-  const handleReload = () => {
-    // Force reload of all data
-    setDisplayCount(6);
-    setSelectedCategory('All');
-    setSearchTerm('');
-  };
+					{/* Description */}
+					<p className='text-xl md:text-2xl mb-8 text-purple-100 max-w-3xl mx-auto'>
+						Master the art of spelling with our comprehensive
+						collection of commonly confused words and their correct
+						spellings.
+					</p>
 
-  function prettify(name: string) {
-    return name
-      .replace(/-/g, " ")
-      .replace(/\bvs\b/i, "or")
-      .replace(/\b(\w)/g, (m) => m.toUpperCase());
-  }
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 transform -skew-y-3 origin-top-left"></div>
-        <div className="relative z-10 container mx-auto px-4 py-16">
-          <div className="text-center text-white">
-            <div className="inline-block bg-white/20 backdrop-blur-sm rounded-full p-4 mb-6">
-              <span className="text-4xl">📝</span>
-            </div>
-            <h1 className="text-6xl md:text-7xl font-black mb-6 tracking-tight">
-              Misspelling Guide
-            </h1>
-            <p className="text-xl md:text-2xl opacity-95 max-w-3xl mx-auto leading-relaxed mb-8">
-              Master the art of spelling with our comprehensive collection of commonly confused words and their correct spellings
-            </p>
-            
-            {/* Search Section - Moved to Hero Section */}
-            <div className="max-w-md mx-auto mb-8">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
-                <div className="relative">
-                  <input
-                    type="text"
-                    placeholder="Search spelling comparisons..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className="w-full pl-12 pr-20 py-3 bg-white/90 backdrop-blur-sm border border-white/30 rounded-xl focus:ring-2 focus:ring-white focus:border-transparent transition-all text-gray-900 placeholder-gray-600"
-                    onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
-                  />
-                  <span className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500 text-xl">
-                    🔍
-                  </span>
-                  <button
-                    onClick={handleSearch}
-                    className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-lg text-sm transition-colors"
-                  >
-                    Search
-                  </button>
-                </div>
-              </div>
-            </div>
-            
-            <div className="flex flex-wrap justify-center gap-4">
-              <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 text-sm font-medium">
-                📚 Spelling Comparisons
-              </div>
-              <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 text-sm font-medium">
-                🎯 Interactive Learning
-              </div>
-              <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 text-sm font-medium">
-                💡 Memory Tips
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+					{/* Search Bar */}
+					<div className='max-w-2xl mx-auto mb-8'>
+						<div className='relative'>
+							<Search className='absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5' />
+							<Input
+								placeholder='Search spelling comparisons...'
+								value={searchTerm}
+								onChange={(e) => setSearchTerm(e.target.value)}
+								className='pl-12 pr-4 py-4 text-lg rounded-full border-0 shadow-lg'
+							/>
+							<Button className='absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700 rounded-full px-6'>
+								Search
+							</Button>
+						</div>
+					</div>
 
+					{/* Navigation Tabs */}
+					<div className='flex justify-center gap-4'>
+						<Button className='bg-purple-500 hover:bg-purple-400 text-white px-6 py-3 rounded-full flex items-center gap-2'>
+							<Sparkles className='w-4 h-4' />
+							Spelling Comparisons
+						</Button>
+						<Button className='bg-purple-500 hover:bg-purple-400 text-white px-6 py-3 rounded-full flex items-center gap-2'>
+							<Brain className='w-4 h-4' />
+							Interactive Learning
+						</Button>
+						<Button className='bg-purple-500 hover:bg-purple-400 text-white px-6 py-3 rounded-full flex items-center gap-2'>
+							<Lightbulb className='w-4 h-4' />
+							Memory Tips
+						</Button>
+					</div>
+				</div>
+			</div>
 
+			{/* Alphabetical Navigation */}
+			<div className='bg-gray-50 py-6 px-4'>
+				<div className='max-w-7xl mx-auto'>
+					<div className='flex flex-wrap justify-center gap-2'>
+						<Button
+							onClick={() => setSelectedLetter("All")}
+							className={`px-4 py-2 rounded-full transition-colors ${
+								selectedLetter === "All"
+									? "bg-blue-600 text-white hover:bg-blue-700"
+									: "bg-white text-gray-700 hover:bg-gray-100 border-gray-300"
+							}`}>
+							All
+						</Button>
+						{Array.from({ length: 26 }, (_, i) =>
+							String.fromCharCode(65 + i)
+						).map((letter) => (
+							<Button
+								key={letter}
+								onClick={() => setSelectedLetter(letter)}
+								variant='outline'
+								className={`px-4 py-2 rounded-full transition-colors ${
+									selectedLetter === letter
+										? "bg-blue-600 text-white hover:bg-blue-700 border-blue-600"
+										: "bg-white text-gray-700 hover:bg-gray-100 border-gray-300"
+								}`}>
+								{letter}
+							</Button>
+						))}
+					</div>
+				</div>
+			</div>
 
-      {/* Main Content */}
-      <div className="container mx-auto px-4 pb-16">
-        {/* Category Filter */}
-        <div className="mb-8">
-          <div className="flex flex-wrap gap-3 justify-center">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => handleCategoryChange(category)}
-                className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 transform hover:scale-105 ${
-                  selectedCategory === category
-                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
-                    : 'bg-white text-gray-700 hover:bg-gray-50 border border-gray-200 hover:border-blue-300'
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
+			{/* Main Content */}
+			<div className='max-w-7xl mx-auto py-12 px-4'>
+				{/* Section Header */}
+				<div className='flex items-center justify-between mb-8'>
+					<div className='flex items-center gap-4'>
+						<h2 className='text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent'>
+							Spelling Comparisons
+						</h2>
+					</div>
+					<Button
+						onClick={handleRefresh}
+						disabled={loading}
+						className='bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full flex items-center gap-2 disabled:opacity-50'>
+						<RefreshCw
+							className={`w-4 h-4 ${
+								loading ? "animate-spin" : ""
+							}`}
+						/>
+						{loading ? "Refreshing..." : "Refresh Data"}
+					</Button>
+				</div>
 
-        {/* Refresh Button */}
-        <div className="text-center mb-6">
-          <button
-            onClick={() => {
-              handleReload();
-              window.location.reload();
-            }}
-            className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm"
-          >
-            🔄 Refresh Data
-          </button>
-        </div>
-
-        {/* Spelling Comparisons Grid */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
-            <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-              Spelling Comparisons
-            </span>
-            <div className="ml-4 h-px flex-1 bg-gradient-to-r from-blue-500 to-transparent"></div>
-          </h2>
-          
-          {filteredPages.length === 0 ? (
-            <div className="text-center py-12">
-              <div className="text-gray-400 text-6xl mb-4">🔍</div>
-              <p className="text-xl text-gray-600">No spelling comparisons found for &quot;{selectedCategory}&quot; category.</p>
-            </div>
-          ) : (
-            <>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                {displayedPages.map((folder) => (
-                  <Link 
-                    key={folder} 
-                    href={`/spelling/${folder}`}
-                    className="group block"
-                  >
-                    <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
-                      <div className="p-6">
-                        <div className="flex items-center justify-between mb-4">
-                          <span className="text-3xl">📝</span>
-                          <span className="px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
-                            Spelling
-                          </span>
-                        </div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
-                          {searchTerm
-                            ? (() => {
-                                const pretty = prettify(folder);
-                                const trimmedSearch = searchTerm.trim();
-                                if (!trimmedSearch) return pretty;
-                                const lowerPretty = pretty.toLowerCase();
-                                const lowerSearch = trimmedSearch.toLowerCase();
-                                const matchIndex = lowerPretty.indexOf(lowerSearch);
-                                if (matchIndex === -1) return pretty;
-                                return (
-                                  <>
-                                    {pretty.slice(0, matchIndex)}
-                                    <span className="bg-yellow-300 text-black rounded px-1 font-bold">
-                                      {pretty.slice(matchIndex, matchIndex + trimmedSearch.length)}
-                                    </span>
-                                    {pretty.slice(matchIndex + trimmedSearch.length)}
-                                  </>
-                                );
-                              })()
-                            : prettify(folder)}
-                        </h3>
-                        <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                          Learn the correct spelling and common mistakes for this word comparison.
-                        </p>
-                        <div className="flex items-center justify-between">
-                          <span className="text-blue-600 font-semibold group-hover:text-blue-600 transition-colors">
-                            Learn More
-                          </span>
-                          <span className="text-blue-600 group-hover:translate-x-1 transition-transform">
-                            →
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-
-              {/* Load More Button */}
-              {hasMorePages && (
-                <div className="text-center">
-                  <button
-                    onClick={() => {
-                      // Update URL with display count and reload
-                      const url = new URL(window.location.href);
-                      url.searchParams.set('display', String(displayCount + 6));
-                      window.location.href = url.toString();
-                    }}
-                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                  >
-                    <span className="flex items-center justify-center gap-2">
-                      📚 Load More Spelling Comparisons
-                    </span>
-                  </button>
-                </div>
-              )}
-
-              {/* Show Less Button */}
-              {displayCount > 6 && (
-                <div className="text-center mt-4">
-                  <button
-                    onClick={() => {
-                      // Update URL with display count and reload
-                      const url = new URL(window.location.href);
-                      url.searchParams.set('display', '6');
-                      window.location.href = url.toString();
-                    }}
-                    className="bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                  >
-                    <span className="flex items-center justify-center gap-2">
-                      🔽 Show Less
-                    </span>
-                  </button>
-                </div>
-              )}
-            </>
-          )}
-        </div>
-
-        {/* Learning Tips */}
-        <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 border border-emerald-200">
-          <h2 className="text-3xl font-bold text-emerald-900 mb-6 flex items-center">
-            <span className="mr-3">💡</span>
-            Pro Spelling Tips
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <div className="bg-emerald-500 text-white rounded-full p-2 text-sm font-bold">1</div>
-                <div>
-                  <h4 className="font-semibold text-emerald-800 mb-1">Sound It Out</h4>
-                  <p className="text-emerald-700 text-sm">Break words into syllables and sound them out to identify spelling patterns.</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="bg-emerald-500 text-white rounded-full p-2 text-sm font-bold">2</div>
-                <div>
-                  <h4 className="font-semibold text-emerald-800 mb-1">Visual Memory</h4>
-                  <p className="text-emerald-700 text-sm">Write words multiple times to create visual memory patterns.</p>
-                </div>
-              </div>
-            </div>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <div className="bg-emerald-500 text-white rounded-full p-2 text-sm font-bold">3</div>
-                <div>
-                  <h4 className="font-semibold text-emerald-800 mb-1">Rule Patterns</h4>
-                  <p className="text-emerald-700 text-sm">Learn common spelling rules like &quot;i before e except after c.&quot;</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="bg-emerald-500 text-white rounded-full p-2 text-sm font-bold">4</div>
-                <div>
-                  <h4 className="font-semibold text-emerald-800 mb-1">Practice Daily</h4>
-                  <p className="text-emerald-700 text-sm">Regular practice with challenging words improves spelling accuracy.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-12">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Ready to Master Spelling?</h3>
-            <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-              Start with any spelling comparison that interests you. Each guide includes correct spellings, common mistakes, and memory tricks to help you learn effectively.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link 
-                href="/grammar"
-                className="bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-50 transition-colors"
-              >
-                Explore Grammar Topics
-              </Link>
-              <Link 
-                href="/confusing-words"
-                className="bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold hover:bg-blue-800 transition-colors border border-white/20"
-              >
-                Confusing Words
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-} 
+				{/* Entries Grid */}
+				{filteredEntries.length > 0 ? (
+					<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
+						{filteredEntries.map((entry) => (
+							<Link
+								key={entry.id}
+								href={`/spelling/${entry.slug}`}
+								className='group'>
+								<Card className='h-full hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-2 cursor-pointer border-0 shadow-lg'>
+									<CardHeader className='pb-4'>
+										<div className='flex items-start justify-between mb-3'>
+											<div className='w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center'>
+												<FileText className='w-4 h-4 text-purple-600' />
+											</div>
+											<Badge className='bg-blue-100 text-blue-800 border-0'>
+												Spelling
+											</Badge>
+										</div>
+										<CardTitle className='text-xl font-bold text-gray-800 group-hover:text-purple-600 transition-colors'>
+											{entry.title}
+										</CardTitle>
+									</CardHeader>
+									<CardContent className='pt-0'>
+										<p className='text-gray-600 mb-4 line-clamp-3 leading-relaxed'>
+											Learn the correct spelling and
+											common mistakes for this word
+											comparison.
+										</p>
+										<div className='flex items-center text-purple-600 font-medium group-hover:text-purple-700 transition-colors'>
+											<span>Learn More</span>
+											<svg
+												className='w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform'
+												fill='none'
+												stroke='currentColor'
+												viewBox='0 0 24 24'>
+												<path
+													strokeLinecap='round'
+													strokeLinejoin='round'
+													strokeWidth={2}
+													d='M9 5l7 7-7 7'
+												/>
+											</svg>
+										</div>
+									</CardContent>
+								</Card>
+							</Link>
+						))}
+					</div>
+				) : (
+					<div className='text-center py-16'>
+						<div className='bg-white p-12 rounded-2xl shadow-lg max-w-md mx-auto'>
+							<div className='w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6'>
+								<FileText className='w-8 h-8 text-gray-400' />
+							</div>
+							<h3 className='text-2xl font-semibold text-gray-800 mb-4'>
+								{searchTerm || selectedLetter !== "All"
+									? "No Results Found"
+									: "No Spelling Entries Available"}
+							</h3>
+							<p className='text-lg text-gray-600'>
+								{searchTerm || selectedLetter !== "All"
+									? "Try adjusting your search or filter criteria."
+									: "Check back later for spelling guides and tips!"}
+							</p>
+							{(searchTerm || selectedLetter !== "All") && (
+								<Button
+									onClick={() => {
+										setSearchTerm("");
+										setSelectedLetter("All");
+									}}
+									className='mt-4 bg-purple-600 hover:bg-purple-700 text-white'>
+									Clear Filters
+								</Button>
+							)}
+						</div>
+					</div>
+				)}
+			</div>
+		</div>
+	);
+}
