@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
@@ -151,11 +152,11 @@ export default function ThanksVsThenksPage() {
         <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
           <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/thank-vs-tank" className="text-blue-700 hover:text-blue-900 underline">Thank vs Tank</a></li>
-            <li><a href="/spelling/thankful-vs-thankfull" className="text-blue-700 hover:text-blue-900 underline">Thankful vs Thankfull</a></li>
-            <li><a href="/spelling/thankfully-vs-thankfully" className="text-blue-700 hover:text-blue-900 underline">Thankfully vs Thankfully</a></li>
-            <li><a href="/spelling/thankless-vs-thankless" className="text-blue-700 hover:text-blue-900 underline">Thankless vs Thankless</a></li>
-            <li><a href="/spelling/thankfulness-vs-thankfulness" className="text-blue-700 hover:text-blue-900 underline">Thankfulness vs Thankfulness</a></li>
+            <li><Link href="/spelling/thank-vs-tank" className="text-blue-700 hover:text-blue-900 underline">Thank vs Tank</Link></li>
+            <li><Link href="/spelling/thankful-vs-thankfull" className="text-blue-700 hover:text-blue-900 underline">Thankful vs Thankfull</Link></li>
+            <li><Link href="/spelling/thankfully-vs-thankfully" className="text-blue-700 hover:text-blue-900 underline">Thankfully vs Thankfully</Link></li>
+            <li><Link href="/spelling/thankless-vs-thankless" className="text-blue-700 hover:text-blue-900 underline">Thankless vs Thankless</Link></li>
+            <li><Link href="/spelling/thankfulness-vs-thankfulness" className="text-blue-700 hover:text-blue-900 underline">Thankfulness vs Thankfulness</Link></li>
           </ul>
         </div>
 
@@ -163,11 +164,11 @@ export default function ThanksVsThenksPage() {
         <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
           <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/gratitude-vs-gratitude" className="text-purple-700 hover:text-purple-900 underline">Gratitude vs Gratitude</a></li>
-            <li><a href="/spelling/appreciation-vs-appreciation" className="text-purple-700 hover:text-purple-900 underline">Appreciation vs Appreciation</a></li>
-            <li><a href="/spelling/acknowledgment-vs-acknowledgment" className="text-purple-700 hover:text-purple-900 underline">Acknowledgment vs Acknowledgment</a></li>
-            <li><a href="/spelling/recognition-vs-recognition" className="text-purple-700 hover:text-purple-900 underline">Recognition vs Recognition</a></li>
-            <li><a href="/spelling/blessing-vs-blessing" className="text-purple-700 hover:text-purple-900 underline">Blessing vs Blessing</a></li>
+            <li><Link href="/spelling/gratitude-vs-gratitude" className="text-purple-700 hover:text-purple-900 underline">Gratitude vs Gratitude</Link></li>
+            <li><Link href="/spelling/appreciation-vs-appreciation" className="text-purple-700 hover:text-purple-900 underline">Appreciation vs Appreciation</Link></li>
+            <li><Link href="/spelling/acknowledgment-vs-acknowledgment" className="text-purple-700 hover:text-purple-900 underline">Acknowledgment vs Acknowledgment</Link></li>
+            <li><Link href="/spelling/recognition-vs-recognition" className="text-purple-700 hover:text-purple-900 underline">Recognition vs Recognition</Link></li>
+            <li><Link href="/spelling/blessing-vs-blessing" className="text-purple-700 hover:text-purple-900 underline">Blessing vs Blessing</Link></li>
           </ul>
         </div>
 
@@ -175,11 +176,11 @@ export default function ThanksVsThenksPage() {
         <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
           <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
           <ul className="space-y-2">
-            <li><a href="/grammar/th-sound" className="text-green-700 hover:text-green-900 underline">TH Sound</a></li>
-            <li><a href="/grammar/nouns" className="text-green-700 hover:text-green-900 underline">Nouns Guide</a></li>
-            <li><a href="/grammar/interjections" className="text-green-700 hover:text-green-900 underline">Interjections</a></li>
-            <li><a href="/grammar/old-english" className="text-green-700 hover:text-green-900 underline">Old English</a></li>
-            <li><a href="/grammar/etymology" className="text-green-700 hover:text-green-900 underline">Etymology</a></li>
+            <li><Link href="/grammar/th-sound" className="text-green-700 hover:text-green-900 underline">TH Sound</Link></li>
+            <li><Link href="/grammar/nouns" className="text-green-700 hover:text-green-900 underline">Nouns Guide</Link></li>
+            <li><Link href="/grammar/interjections" className="text-green-700 hover:text-green-900 underline">Interjections</Link></li>
+            <li><Link href="/grammar/old-english" className="text-green-700 hover:text-green-900 underline">Old English</Link></li>
+            <li><Link href="/grammar/etymology" className="text-green-700 hover:text-green-900 underline">Etymology</Link></li>
           </ul>
         </div>
       </div>

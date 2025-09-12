@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { Card } from "@/components/ui/card";
 
 export const metadata: Metadata = {
@@ -134,11 +135,11 @@ export default function ActuallyVsActualyPage() {
         <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
           <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/attitude-vs-attitude" className="text-blue-700 hover:text-blue-900 underline">Attitude vs Attitude</a></li>
-            <li><a href="/spelling/attorney-vs-attorney" className="text-blue-700 hover:text-blue-900 underline">Attorney vs Attorney</a></li>
-            <li><a href="/spelling/attract-vs-attract" className="text-blue-700 hover:text-blue-900 underline">Attract vs Attract</a></li>
-            <li><a href="/spelling/attractive-vs-attractive" className="text-blue-700 hover:text-blue-900 underline">Attractive vs Attractive</a></li>
-            <li><a href="/spelling/audience-vs-audience" className="text-blue-700 hover:text-blue-900 underline">Audience vs Audience</a></li>
+            <li><Link href="/spelling/attitude-vs-attitude" className="text-blue-700 hover:text-blue-900 underline">Attitude vs Attitude</Link></li>
+            <li><Link href="/spelling/attorney-vs-attorney" className="text-blue-700 hover:text-blue-900 underline">Attorney vs Attorney</Link></li>
+            <li><Link href="/spelling/attract-vs-attract" className="text-blue-700 hover:text-blue-900 underline">Attract vs Attract</Link></li>
+            <li><Link href="/spelling/attractive-vs-attractive" className="text-blue-700 hover:text-blue-900 underline">Attractive vs Attractive</Link></li>
+            <li><Link href="/spelling/audience-vs-audience" className="text-blue-700 hover:text-blue-900 underline">Audience vs Audience</Link></li>
           </ul>
         </div>
 
@@ -146,11 +147,11 @@ export default function ActuallyVsActualyPage() {
         <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
           <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/really-vs-really" className="text-purple-700 hover:text-purple-900 underline">Really vs Really</a></li>
-            <li><a href="/spelling/in-fact-vs-in-fact" className="text-purple-700 hover:text-purple-900 underline">In Fact vs In Fact</a></li>
-            <li><a href="/spelling/truly-vs-truly" className="text-purple-700 hover:text-purple-900 underline">Truly vs Truly</a></li>
-            <li><a href="/spelling/indeed-vs-indeed" className="text-purple-700 hover:text-purple-900 underline">Indeed vs Indeed</a></li>
-            <li><a href="/spelling/truthfully-vs-truthfully" className="text-purple-700 hover:text-purple-900 underline">Truthfully vs Truthfully</a></li>
+            <li><Link href="/spelling/really-vs-really" className="text-purple-700 hover:text-purple-900 underline">Really vs Really</Link></li>
+            <li><Link href="/spelling/in-fact-vs-in-fact" className="text-purple-700 hover:text-purple-900 underline">In Fact vs In Fact</Link></li>
+            <li><Link href="/spelling/truly-vs-truly" className="text-purple-700 hover:text-purple-900 underline">Truly vs Truly</Link></li>
+            <li><Link href="/spelling/indeed-vs-indeed" className="text-purple-700 hover:text-purple-900 underline">Indeed vs Indeed</Link></li>
+            <li><Link href="/spelling/truthfully-vs-truthfully" className="text-purple-700 hover:text-purple-900 underline">Truthfully vs Truthfully</Link></li>
           </ul>
         </div>
 
@@ -158,11 +159,11 @@ export default function ActuallyVsActualyPage() {
         <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
           <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
           <ul className="space-y-2">
-            <li><a href="/grammar/adverbs" className="text-green-700 hover:text-green-900 underline">Adverbs Guide</a></li>
-            <li><a href="/grammar/ly-endings" className="text-green-700 hover:text-green-900 underline">Ly Endings</a></li>
-            <li><a href="/grammar/spelling-rules" className="text-green-700 hover:text-green-900 underline">Spelling Rules</a></li>
-            <li><a href="/grammar/etymology" className="text-green-700 hover:text-green-900 underline">Etymology</a></li>
-            <li><a href="/grammar/common-mistakes" className="text-green-700 hover:text-green-900 underline">Common Mistakes</a></li>
+            <li><Link href="/grammar/adverbs" className="text-green-700 hover:text-green-900 underline">Adverbs Guide</Link></li>
+            <li><Link href="/grammar/ly-endings" className="text-green-700 hover:text-green-900 underline">Ly Endings</Link></li>
+            <li><Link href="/grammar/spelling-rules" className="text-green-700 hover:text-green-900 underline">Spelling Rules</Link></li>
+            <li><Link href="/grammar/etymology" className="text-green-700 hover:text-green-900 underline">Etymology</Link></li>
+            <li><Link href="/grammar/common-mistakes" className="text-green-700 hover:text-green-900 underline">Common Mistakes</Link></li>
           </ul>
         </div>
       </div>

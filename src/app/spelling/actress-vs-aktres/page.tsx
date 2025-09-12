@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
@@ -125,11 +126,11 @@ export default function ActressVsAktresPage() {
         <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
           <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/artist-vs-artist" className="text-blue-700 hover:text-blue-900 underline">Artist vs Artist</a></li>
-            <li><a href="/spelling/ask-vs-ask" className="text-blue-700 hover:text-blue-900 underline">Ask vs Ask</a></li>
-            <li><a href="/spelling/assist-vs-assist" className="text-blue-700 hover:text-blue-900 underline">Assist vs Assist</a></li>
-            <li><a href="/spelling/assistant-vs-assistant" className="text-blue-700 hover:text-blue-900 underline">Assistant vs Assistant</a></li>
-            <li><a href="/spelling/associate-vs-associate" className="text-blue-700 hover:text-blue-900 underline">Associate vs Associate</a></li>
+            <li><Link href="/spelling/artist-vs-artist" className="text-blue-700 hover:text-blue-900 underline">Artist vs Artist</Link></li>
+            <li><Link href="/spelling/ask-vs-ask" className="text-blue-700 hover:text-blue-900 underline">Ask vs Ask</Link></li>
+            <li><Link href="/spelling/assist-vs-assist" className="text-blue-700 hover:text-blue-900 underline">Assist vs Assist</Link></li>
+            <li><Link href="/spelling/assistant-vs-assistant" className="text-blue-700 hover:text-blue-900 underline">Assistant vs Assistant</Link></li>
+            <li><Link href="/spelling/associate-vs-associate" className="text-blue-700 hover:text-blue-900 underline">Associate vs Associate</Link></li>
           </ul>
         </div>
 
@@ -137,11 +138,11 @@ export default function ActressVsAktresPage() {
         <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
           <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/female-actor-vs-female-actor" className="text-purple-700 hover:text-purple-900 underline">Female Actor vs Female Actor</a></li>
-            <li><a href="/spelling/performer-vs-performer" className="text-purple-700 hover:text-purple-900 underline">Performer vs Performer</a></li>
-            <li><a href="/spelling/entertainer-vs-entertainer" className="text-purple-700 hover:text-purple-900 underline">Entertainer vs Entertainer</a></li>
-            <li><a href="/spelling/thespian-vs-thespian" className="text-purple-700 hover:text-purple-900 underline">Thespian vs Thespian</a></li>
-            <li><a href="/spelling/star-vs-star" className="text-purple-700 hover:text-purple-900 underline">Star vs Star</a></li>
+            <li><Link href="/spelling/female-actor-vs-female-actor" className="text-purple-700 hover:text-purple-900 underline">Female Actor vs Female Actor</Link></li>
+            <li><Link href="/spelling/performer-vs-performer" className="text-purple-700 hover:text-purple-900 underline">Performer vs Performer</Link></li>
+            <li><Link href="/spelling/entertainer-vs-entertainer" className="text-purple-700 hover:text-purple-900 underline">Entertainer vs Entertainer</Link></li>
+            <li><Link href="/spelling/thespian-vs-thespian" className="text-purple-700 hover:text-purple-900 underline">Thespian vs Thespian</Link></li>
+            <li><Link href="/spelling/star-vs-star" className="text-purple-700 hover:text-purple-900 underline">Star vs Star</Link></li>
           </ul>
         </div>
 
@@ -149,11 +150,11 @@ export default function ActressVsAktresPage() {
         <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
           <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
           <ul className="space-y-2">
-            <li><a href="/grammar/nouns" className="text-green-700 hover:text-green-900 underline">Nouns Guide</a></li>
-            <li><a href="/grammar/feminine-forms" className="text-green-700 hover:text-green-900 underline">Feminine Forms</a></li>
-            <li><a href="/grammar/double-letters" className="text-green-700 hover:text-green-900 underline">Double Letters</a></li>
-            <li><a href="/grammar/spelling-rules" className="text-green-700 hover:text-green-900 underline">Spelling Rules</a></li>
-            <li><a href="/grammar/etymology" className="text-green-700 hover:text-green-900 underline">Etymology</a></li>
+            <li><Link href="/grammar/nouns" className="text-green-700 hover:text-green-900 underline">Nouns Guide</Link></li>
+            <li><Link href="/grammar/feminine-forms" className="text-green-700 hover:text-green-900 underline">Feminine Forms</Link></li>
+            <li><Link href="/grammar/double-letters" className="text-green-700 hover:text-green-900 underline">Double Letters</Link></li>
+            <li><Link href="/grammar/spelling-rules" className="text-green-700 hover:text-green-900 underline">Spelling Rules</Link></li>
+            <li><Link href="/grammar/etymology" className="text-green-700 hover:text-green-900 underline">Etymology</Link></li>
           </ul>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
@@ -128,11 +129,11 @@ export default function TreatedVsTretedPage() {
         <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
           <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/sacrilege-vs-sacralige" className="text-blue-700 hover:text-blue-900 underline">Sacrilege vs Sacralige</a></li>
-            <li><a href="/spelling/shepherd-vs-sheperd" className="text-blue-700 hover:text-blue-900 underline">Shepherd vs Sheperd</a></li>
-            <li><a href="/spelling/arithmetic-vs-arithmatic" className="text-blue-700 hover:text-blue-900 underline">Arithmetic vs Arithmatic</a></li>
-            <li><a href="/spelling/story-vs-storry" className="text-blue-700 hover:text-blue-900 underline">Story vs Storry</a></li>
-            <li><a href="/spelling/stretched-vs-streched" className="text-blue-700 hover:text-blue-900 underline">Stretched vs Streched</a></li>
+            <li><Link href="/spelling/sacrilege-vs-sacralige" className="text-blue-700 hover:text-blue-900 underline">Sacrilege vs Sacralige</Link></li>
+            <li><Link href="/spelling/shepherd-vs-sheperd" className="text-blue-700 hover:text-blue-900 underline">Shepherd vs Sheperd</Link></li>
+            <li><Link href="/spelling/arithmetic-vs-arithmatic" className="text-blue-700 hover:text-blue-900 underline">Arithmetic vs Arithmatic</Link></li>
+            <li><Link href="/spelling/story-vs-storry" className="text-blue-700 hover:text-blue-900 underline">Story vs Storry</Link></li>
+            <li><Link href="/spelling/stretched-vs-streched" className="text-blue-700 hover:text-blue-900 underline">Stretched vs Streched</Link></li>
           </ul>
         </div>
 
@@ -140,11 +141,11 @@ export default function TreatedVsTretedPage() {
         <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
           <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/syphilis-vs-syphyllis" className="text-purple-700 hover:text-purple-900 underline">Syphilis vs Syphyllis</a></li>
-            <li><a href="/spelling/accommodation-vs-accommidation" className="text-purple-700 hover:text-purple-900 underline">Accommodation vs Accommidation</a></li>
-            <li><a href="/spelling/seated-vs-sitted" className="text-purple-700 hover:text-purple-900 underline">Seated vs Sitted</a></li>
-            <li><a href="/spelling/appreciate-vs-appreiciate" className="text-purple-700 hover:text-purple-900 underline">Appreciate vs Appreiciate</a></li>
-            <li><a href="/spelling/allusion-vs-alusion" className="text-purple-700 hover:text-purple-900 underline">Allusion vs Alusion</a></li>
+            <li><Link href="/spelling/syphilis-vs-syphyllis" className="text-purple-700 hover:text-purple-900 underline">Syphilis vs Syphyllis</Link></li>
+            <li><Link href="/spelling/accommodation-vs-accommidation" className="text-purple-700 hover:text-purple-900 underline">Accommodation vs Accommidation</Link></li>
+            <li><Link href="/spelling/seated-vs-sitted" className="text-purple-700 hover:text-purple-900 underline">Seated vs Sitted</Link></li>
+            <li><Link href="/spelling/appreciate-vs-appreiciate" className="text-purple-700 hover:text-purple-900 underline">Appreciate vs Appreiciate</Link></li>
+            <li><Link href="/spelling/allusion-vs-alusion" className="text-purple-700 hover:text-purple-900 underline">Allusion vs Alusion</Link></li>
           </ul>
         </div>
 
@@ -152,11 +153,11 @@ export default function TreatedVsTretedPage() {
         <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
           <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
           <ul className="space-y-2">
-            <li><a href="/grammar/adjectives" className="text-green-700 hover:text-green-900 underline">Adjectives Guide</a></li>
-            <li><a href="/grammar/declarative-sentence" className="text-green-700 hover:text-green-900 underline">Declarative Sentences</a></li>
-            <li><a href="/grammar/suffixes" className="text-green-700 hover:text-green-900 underline">Suffixes</a></li>
-            <li><a href="/grammar/adjectives-starting-with-vowels" className="text-green-700 hover:text-green-900 underline">Adjectives Starting with Vowels</a></li>
-            <li><a href="/grammar/3rd-grade-worksheets-proper-nouns" className="text-green-700 hover:text-green-900 underline">Proper Nouns Worksheets</a></li>
+            <li><Link href="/grammar/adjectives" className="text-green-700 hover:text-green-900 underline">Adjectives Guide</Link></li>
+            <li><Link href="/grammar/declarative-sentence" className="text-green-700 hover:text-green-900 underline">Declarative Sentences</Link></li>
+            <li><Link href="/grammar/suffixes" className="text-green-700 hover:text-green-900 underline">Suffixes</Link></li>
+            <li><Link href="/grammar/adjectives-starting-with-vowels" className="text-green-700 hover:text-green-900 underline">Adjectives Starting with Vowels</Link></li>
+            <li><Link href="/grammar/3rd-grade-worksheets-proper-nouns" className="text-green-700 hover:text-green-900 underline">Proper Nouns Worksheets</Link></li>
           </ul>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
 
 export const metadata: Metadata = {
@@ -139,11 +140,11 @@ export default function VirtualVsVirtuelPage() {
         <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
           <h3 className="text-xl font-bold mb-4 text-blue-900">Featured Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/skies-vs-skys" className="text-blue-700 hover:text-blue-900 underline">Skies vs Skys</a></li>
-            <li><a href="/spelling/accessories-vs-accesories" className="text-blue-700 hover:text-blue-900 underline">Accessories vs Accesories</a></li>
-            <li><a href="/spelling/surface-vs-serface" className="text-blue-700 hover:text-blue-900 underline">Surface vs Serface</a></li>
-            <li><a href="/spelling/sheriff-vs-sherif" className="text-blue-700 hover:text-blue-900 underline">Sheriff vs Sherif</a></li>
-            <li><a href="/spelling/strike-vs-stike" className="text-blue-700 hover:text-blue-900 underline">Strike vs Stike</a></li>
+            <li><Link href="/spelling/skies-vs-skys" className="text-blue-700 hover:text-blue-900 underline">Skies vs Skys</Link></li>
+            <li><Link href="/spelling/accessories-vs-accesories" className="text-blue-700 hover:text-blue-900 underline">Accessories vs Accesories</Link></li>
+            <li><Link href="/spelling/surface-vs-serface" className="text-blue-700 hover:text-blue-900 underline">Surface vs Serface</Link></li>
+            <li><Link href="/spelling/sheriff-vs-sherif" className="text-blue-700 hover:text-blue-900 underline">Sheriff vs Sherif</Link></li>
+            <li><Link href="/spelling/strike-vs-stike" className="text-blue-700 hover:text-blue-900 underline">Strike vs Stike</Link></li>
           </ul>
         </div>
 
@@ -151,11 +152,11 @@ export default function VirtualVsVirtuelPage() {
         <div className="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-500">
           <h3 className="text-xl font-bold mb-4 text-purple-900">Related Misspellings</h3>
           <ul className="space-y-2">
-            <li><a href="/spelling/altogether-vs-altogather" className="text-purple-700 hover:text-purple-900 underline">Altogether vs Altogather</a></li>
-            <li><a href="/spelling/archive-vs-archieve" className="text-purple-700 hover:text-purple-900 underline">Archive vs Archieve</a></li>
-            <li><a href="/spelling/acing-vs-aceing" className="text-purple-700 hover:text-purple-900 underline">Acing vs Aceing</a></li>
-            <li><a href="/spelling/variance-vs-varience" className="text-purple-700 hover:text-purple-900 underline">Variance vs Varience</a></li>
-            <li><a href="/spelling/apparent-vs-aparent" className="text-purple-700 hover:text-purple-900 underline">Apparent vs Aparent</a></li>
+            <li><Link href="/spelling/altogether-vs-altogather" className="text-purple-700 hover:text-purple-900 underline">Altogether vs Altogather</Link></li>
+            <li><Link href="/spelling/archive-vs-archieve" className="text-purple-700 hover:text-purple-900 underline">Archive vs Archieve</Link></li>
+            <li><Link href="/spelling/acing-vs-aceing" className="text-purple-700 hover:text-purple-900 underline">Acing vs Aceing</Link></li>
+            <li><Link href="/spelling/variance-vs-varience" className="text-purple-700 hover:text-purple-900 underline">Variance vs Varience</Link></li>
+            <li><Link href="/spelling/apparent-vs-aparent" className="text-purple-700 hover:text-purple-900 underline">Apparent vs Aparent</Link></li>
           </ul>
         </div>
 
@@ -163,11 +164,11 @@ export default function VirtualVsVirtuelPage() {
         <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
           <h3 className="text-xl font-bold mb-4 text-green-900">Learned Grammar</h3>
           <ul className="space-y-2">
-            <li><a href="/grammar/adjectives" className="text-green-700 hover:text-green-900 underline">Adjectives Guide</a></li>
-            <li><a href="/grammar/declarative-sentence" className="text-green-700 hover:text-green-900 underline">Declarative Sentences</a></li>
-            <li><a href="/grammar/suffixes" className="text-green-700 hover:text-green-900 underline">Suffixes</a></li>
-            <li><a href="/grammar/adjectives-starting-with-vowels" className="text-green-700 hover:text-green-900 underline">Adjectives Starting with Vowels</a></li>
-            <li><a href="/grammar/3rd-grade-worksheets-proper-nouns" className="text-green-700 hover:text-green-900 underline">Proper Nouns Worksheets</a></li>
+            <li><Link href="/grammar/adjectives" className="text-green-700 hover:text-green-900 underline">Adjectives Guide</Link></li>
+            <li><Link href="/grammar/declarative-sentence" className="text-green-700 hover:text-green-900 underline">Declarative Sentences</Link></li>
+            <li><Link href="/grammar/suffixes" className="text-green-700 hover:text-green-900 underline">Suffixes</Link></li>
+            <li><Link href="/grammar/adjectives-starting-with-vowels" className="text-green-700 hover:text-green-900 underline">Adjectives Starting with Vowels</Link></li>
+            <li><Link href="/grammar/3rd-grade-worksheets-proper-nouns" className="text-green-700 hover:text-green-900 underline">Proper Nouns Worksheets</Link></li>
           </ul>
         </div>
       </div>
