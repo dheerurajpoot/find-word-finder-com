@@ -16,13 +16,8 @@ export default function SpellingPage() {
 			const categoryFromUrl = urlParams.get("category");
 			const displayFromUrl = urlParams.get("display");
 
-async function getSpellingEntry(slug: string): Promise<SpellingEntry | null> {
-	try {
-		const axios = require("axios");
-		const response = await axios.get(
-			`${process.env.NEXT_PUBLIC_BASE_URL}/api/spelling?slug=${slug}`,
-			{
-				timeout: 10000,
+			if (categoryFromUrl) {
+				setSelectedCategory(categoryFromUrl);
 			}
 
 			if (displayFromUrl) {
