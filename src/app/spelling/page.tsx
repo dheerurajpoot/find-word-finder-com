@@ -16,14 +16,11 @@ import {
 	FileText,
 } from "lucide-react";
 import { spellingAPI } from "@/lib/api";
-import { misspellingFolders } from "@/lib/misspellings"; // TODO: Remove this import when static pages are no longer needed
 
 export default function SpellingIndexPage() {
 	const [entries, setEntries] = useState<SpellingEntry[]>([]);
 	const [filteredEntries, setFilteredEntries] = useState<SpellingEntry[]>([]);
-	const [filteredStaticPages, setFilteredStaticPages] = useState<string[]>(
-		[]
-	); // TODO: Remove this state when static pages are no longer needed
+	
 	const [searchTerm, setSearchTerm] = useState("");
 	const [selectedLetter, setSelectedLetter] = useState("All");
 	const [loading, setLoading] = useState(true);
@@ -49,7 +46,7 @@ export default function SpellingIndexPage() {
 	// Filter entries based on search term and selected letter
 	useEffect(() => {
 		let filtered = entries;
-		let filteredStatic = misspellingFolders;
+
 
 		// Filter by search term
 		if (searchTerm.trim()) {
@@ -69,11 +66,6 @@ export default function SpellingIndexPage() {
 						.includes(searchTerm.toLowerCase())
 			);
 
-			filteredStatic = filteredStatic.filter((page) =>
-				prettifyStaticPage(page)
-					.toLowerCase()
-					.includes(searchTerm.toLowerCase())
-			);
 		}
 
 		// Filter by selected letter
@@ -84,15 +76,11 @@ export default function SpellingIndexPage() {
 					.startsWith(selectedLetter.toLowerCase())
 			);
 
-			filteredStatic = filteredStatic.filter((page) =>
-				prettifyStaticPage(page)
-					.toLowerCase()
-					.startsWith(selectedLetter.toLowerCase())
-			);
+			
 		}
 
 		setFilteredEntries(filtered);
-		setFilteredStaticPages(filteredStatic);
+		
 		setDisplayCount(12); // Reset display count when filters change
 	}, [entries, searchTerm, selectedLetter]);
 
@@ -109,13 +97,7 @@ export default function SpellingIndexPage() {
 		}
 	};
 
-	// Helper function to prettify static page names - TODO: Remove when static pages are no longer needed
-	const prettifyStaticPage = (name: string) => {
-		return name
-			.replace(/-/g, " ")
-			.replace(/\bvs\b/i, "or")
-			.replace(/\b(\w)/g, (m) => m.toUpperCase());
-	};
+	
 
 	return (
 		<div className='min-h-screen bg-gradient-to-br from-gray-50 to-white'>
@@ -217,8 +199,8 @@ export default function SpellingIndexPage() {
 						</h2>
 						<div className='flex gap-2'>
 							<Badge className='bg-purple-100 text-purple-800 border-0'>
-								{filteredEntries.length +
-									filteredStaticPages.length}{" "}
+								{filteredEntries.length 
+									}{" "}
 								Spelling Comparisons
 							</Badge>
 						</div>
@@ -288,67 +270,13 @@ export default function SpellingIndexPage() {
 					</div>
 				)}
 
-				{/* Static Pages Section - TODO: Remove this entire section when static pages are no longer needed */}
-				{filteredStaticPages.length > 0 && (
-					<div className='mb-12'>
-						<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
-							{filteredStaticPages
-								.slice(0, displayCount)
-								.map((page) => (
-									<Link
-										key={page}
-										href={`/spelling/${page}`}
-										className='group'>
-										<Card className='h-full hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-2 cursor-pointer border-0 shadow-lg'>
-											<CardHeader>
-												<div className='flex items-start justify-between mb-3'>
-													<div className='w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center'>
-														<FileText className='w-4 h-4 text-blue-600' />
-													</div>
-													<Badge className='bg-blue-100 text-blue-800 border-0'>
-														Spelling
-													</Badge>
-												</div>
-												<CardTitle className='text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors'>
-													{prettifyStaticPage(page)}
-												</CardTitle>
-											</CardHeader>
-											<CardContent className='pt-0'>
-												<p className='text-gray-600 mb-4 line-clamp-3 leading-relaxed'>
-													Learn the correct spelling
-													and common mistakes for this
-													word comparison.
-												</p>
-												<div className='flex items-center text-blue-600 font-medium group-hover:text-blue-700 transition-colors'>
-													<span>Learn More</span>
-													<svg
-														className='w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform'
-														fill='none'
-														stroke='currentColor'
-														viewBox='0 0 24 24'>
-														<path
-															strokeLinecap='round'
-															strokeLinejoin='round'
-															strokeWidth={2}
-															d='M9 5l7 7-7 7'
-														/>
-													</svg>
-												</div>
-											</CardContent>
-										</Card>
-									</Link>
-								))}
-						</div>
-					</div>
-				)}
-
 				{/* Load More / Show Less Buttons */}
-				{filteredEntries.length + filteredStaticPages.length > 12 && (
+				{filteredEntries.length > 12 && (
 					<div className='text-center mb-8'>
 						<div className='flex flex-col sm:flex-row gap-4 justify-center'>
 							{/* Load More Button */}
 							{(filteredEntries.length > displayCount ||
-								filteredStaticPages.length > displayCount) && (
+								 displayCount) && (
 								<Button
 									onClick={() =>
 										setDisplayCount(displayCount + 12)
@@ -359,7 +287,7 @@ export default function SpellingIndexPage() {
 										{Math.min(
 											12,
 											filteredEntries.length +
-												filteredStaticPages.length -
+												-
 												displayCount
 										)}{" "}
 										more)
@@ -374,8 +302,8 @@ export default function SpellingIndexPage() {
 									className='bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl'>
 									<span className='flex items-center justify-center gap-2'>
 										🔽 Show Less (Showing {displayCount} of{" "}
-										{filteredEntries.length +
-											filteredStaticPages.length}
+										{filteredEntries.length 
+											}
 										)
 									</span>
 								</Button>
@@ -386,7 +314,7 @@ export default function SpellingIndexPage() {
 
 				{/* No Results Message */}
 				{filteredEntries.length === 0 &&
-					filteredStaticPages.length === 0 && (
+					 (
 						<div className='text-center py-16'>
 							<div className='bg-white p-12 rounded-2xl shadow-lg max-w-md mx-auto'>
 								<div className='w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6'>
