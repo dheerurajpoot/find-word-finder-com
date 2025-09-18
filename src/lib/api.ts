@@ -375,7 +375,6 @@ export async function getWordDefinition(word: string): Promise<string> {
 	}
 }
 
-// Get rhyming words using Datamuse API
 export async function getRhymingWords(word: string): Promise<string[]> {
 	try {
 		const response = await fetch(
