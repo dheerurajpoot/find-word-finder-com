@@ -451,7 +451,7 @@ export default function AdminSpellingPage() {
 								</div>
 							</div>
 
-							<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+							<div className='grid gap-4'>
 								<div>
 									<label className='block text-sm font-medium mb-1'>
 										Correct Synonyms (comma separated)
