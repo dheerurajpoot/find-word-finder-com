@@ -7,8 +7,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { SpellingEntry } from "@/lib/supabase";
-import { Plus, Edit, Trash2, Save, X } from "lucide-react";
+import { Edit, Trash2, Save, ArrowLeft } from "lucide-react";
 import { spellingAPI } from "@/lib/api";
+import { useRouter } from "next/navigation";
 
 export default function AdminSpellingPage() {
 	const [accessKey, setAccessKey] = useState("");
@@ -39,6 +40,8 @@ export default function AdminSpellingPage() {
 		is_published: true,
 	});
 
+	const router = useRouter();
+
 	// Check for stored authentication on component mount
 	useEffect(() => {
 		const storedKey = localStorage.getItem("admin_key");
@@ -66,12 +69,6 @@ export default function AdminSpellingPage() {
 		} finally {
 			setLoading(false);
 		}
-	};
-
-	const logout = () => {
-		localStorage.removeItem("admin_key");
-		setIsAuthenticated(false);
-		setAccessKey("");
 	};
 
 	const fetchSpellingEntries = async () => {
@@ -125,7 +122,8 @@ export default function AdminSpellingPage() {
 			};
 
 			if (isCreating) {
-				await spellingAPI.createEntry(entryData);
+				const res = await spellingAPI.createEntry(entryData);
+				console.log(res);
 			} else if (editingEntry) {
 				await spellingAPI.updateEntry(editingEntry.id, entryData);
 			}
@@ -201,12 +199,6 @@ export default function AdminSpellingPage() {
 		});
 	};
 
-	const startCreate = () => {
-		setEditingEntry(null);
-		setIsCreating(true);
-		resetForm();
-	};
-
 	const cancelEdit = () => {
 		setEditingEntry(null);
 		setIsCreating(false);
@@ -250,317 +242,304 @@ export default function AdminSpellingPage() {
 					<h1 className='text-3xl font-bold text-gray-900'>
 						Spelling Entries Admin
 					</h1>
-					<div className='flex gap-2'>
-						<Button
-							onClick={startCreate}
-							className='bg-green-600 hover:bg-green-700'>
-							<Plus className='w-4 h-4 mr-2' />
-							Add New Entry
-						</Button>
-						<Button onClick={logout} variant='outline'>
-							Logout
-						</Button>
-					</div>
+					<Button onClick={() => router.push("/admin")}>
+						<ArrowLeft className='w-4 h-4 mr-2' />
+						Back to Dashboard
+					</Button>
 				</div>
 
-				{/* Form */}
-				{(isCreating || editingEntry) && (
-					<Card className='mb-8'>
-						<CardHeader>
-							<CardTitle className='flex justify-between items-center'>
-								{isCreating ? "Create New Entry" : "Edit Entry"}
-								<Button
-									onClick={cancelEdit}
-									variant='outline'
-									size='sm'>
-									<X className='w-4 h-4' />
-								</Button>
-							</CardTitle>
-						</CardHeader>
-						<CardContent className='space-y-4'>
-							<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-								<div>
-									<label className='block text-sm font-medium mb-1'>
-										Slug *
-									</label>
-									<Input
-										value={formData.slug}
-										onChange={(e) =>
-											setFormData({
-												...formData,
-												slug: e.target.value,
-											})
-										}
-										placeholder='correct-vs-incorrect'
-									/>
-								</div>
-								<div>
-									<label className='block text-sm font-medium mb-1'>
-										Title *
-									</label>
-									<Input
-										value={formData.title}
-										onChange={(e) =>
-											setFormData({
-												...formData,
-												title: e.target.value,
-											})
-										}
-										placeholder='Correct vs Incorrect'
-									/>
-								</div>
-							</div>
-
+				<Card className='mb-8'>
+					<CardHeader>
+						<CardTitle className='flex justify-between items-center'>
+							{editingEntry ? "Edit Entry" : "Create New Entry"}
+							<Button
+								onClick={handleSave}
+								disabled={loading}
+								className='bg-blue-600 hover:bg-blue-700'>
+								<Save className='w-4 h-4 mr-2' />
+								{loading ? "Saving..." : "Save Entry"}
+							</Button>
+						</CardTitle>
+					</CardHeader>
+					<CardContent className='space-y-4'>
+						<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
 							<div>
 								<label className='block text-sm font-medium mb-1'>
-									Description
-								</label>
-								<Textarea
-									value={formData.description}
-									onChange={(e) =>
-										setFormData({
-											...formData,
-											description: e.target.value,
-										})
-									}
-									placeholder='Brief description of the spelling difference'
-									rows={3}
-								/>
-							</div>
-
-							<div>
-								<label className='block text-sm font-medium mb-1'>
-									Keywords
+									Slug *
 								</label>
 								<Input
-									value={formData.keywords}
+									value={formData.slug}
 									onChange={(e) =>
 										setFormData({
 											...formData,
-											keywords: e.target.value,
+											slug: e.target.value,
 										})
 									}
-									placeholder='spelling, grammar, english, writing tips'
+									placeholder='correct-vs-incorrect'
 								/>
 							</div>
-
-							<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-								<div>
-									<label className='block text-sm font-medium mb-1'>
-										Correct Word *
-									</label>
-									<Input
-										value={formData.correct_word}
-										onChange={(e) =>
-											setFormData({
-												...formData,
-												correct_word: e.target.value,
-											})
-										}
-										placeholder='correct'
-									/>
-								</div>
-								<div>
-									<label className='block text-sm font-medium mb-1'>
-										Incorrect Word *
-									</label>
-									<Input
-										value={formData.incorrect_word}
-										onChange={(e) =>
-											setFormData({
-												...formData,
-												incorrect_word: e.target.value,
-											})
-										}
-										placeholder='incorrect'
-									/>
-								</div>
-							</div>
-
-							<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-								<div>
-									<label className='block text-sm font-medium mb-1'>
-										Correct Definition
-									</label>
-									<Textarea
-										value={formData.correct_definition}
-										onChange={(e) =>
-											setFormData({
-												...formData,
-												correct_definition:
-													e.target.value,
-											})
-										}
-										placeholder='Definition of correct word'
-										rows={3}
-									/>
-								</div>
-								<div>
-									<label className='block text-sm font-medium mb-1'>
-										Incorrect Definition
-									</label>
-									<Textarea
-										value={formData.incorrect_definition}
-										onChange={(e) =>
-											setFormData({
-												...formData,
-												incorrect_definition:
-													e.target.value,
-											})
-										}
-										placeholder='Definition of incorrect word'
-										rows={3}
-									/>
-								</div>
-							</div>
-
-							<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-								<div>
-									<label className='block text-sm font-medium mb-1'>
-										Correct Examples (one per line)
-									</label>
-									<Textarea
-										value={formData.correct_examples}
-										onChange={(e) =>
-											setFormData({
-												...formData,
-												correct_examples:
-													e.target.value,
-											})
-										}
-										placeholder='Example sentence 1&#10;Example sentence 2'
-										rows={4}
-									/>
-								</div>
-								<div>
-									<label className='block text-sm font-medium mb-1'>
-										Incorrect Examples (one per line)
-									</label>
-									<Textarea
-										value={formData.incorrect_examples}
-										onChange={(e) =>
-											setFormData({
-												...formData,
-												incorrect_examples:
-													e.target.value,
-											})
-										}
-										placeholder='Example sentence 1&#10;Example sentence 2'
-										rows={4}
-									/>
-								</div>
-							</div>
-
-							<div className='grid gap-4'>
-								<div>
-									<label className='block text-sm font-medium mb-1'>
-										Correct Synonyms (comma separated)
-									</label>
-									<Input
-										value={formData.synonyms_correct}
-										onChange={(e) =>
-											setFormData({
-												...formData,
-												synonyms_correct:
-													e.target.value,
-											})
-										}
-										placeholder='synonym1, synonym2, synonym3'
-									/>
-								</div>
-							</div>
-
 							<div>
 								<label className='block text-sm font-medium mb-1'>
-									Notes (one per line)
+									Title *
 								</label>
-								<Textarea
-									value={formData.notes}
+								<Input
+									value={formData.title}
 									onChange={(e) =>
 										setFormData({
 											...formData,
-											notes: e.target.value,
+											title: e.target.value,
 										})
 									}
-									placeholder='Important note 1&#10;Important note 2'
+									placeholder='Correct vs Incorrect'
+								/>
+							</div>
+						</div>
+
+						<div>
+							<label className='block text-sm font-medium mb-1'>
+								Description
+							</label>
+							<Textarea
+								value={formData.description}
+								onChange={(e) =>
+									setFormData({
+										...formData,
+										description: e.target.value,
+									})
+								}
+								placeholder='Brief description of the spelling difference'
+								rows={3}
+							/>
+						</div>
+
+						<div>
+							<label className='block text-sm font-medium mb-1'>
+								Keywords
+							</label>
+							<Input
+								value={formData.keywords}
+								onChange={(e) =>
+									setFormData({
+										...formData,
+										keywords: e.target.value,
+									})
+								}
+								placeholder='spelling, grammar, english, writing tips'
+							/>
+						</div>
+
+						<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+							<div>
+								<label className='block text-sm font-medium mb-1'>
+									Correct Word *
+								</label>
+								<Input
+									value={formData.correct_word}
+									onChange={(e) =>
+										setFormData({
+											...formData,
+											correct_word: e.target.value,
+										})
+									}
+									placeholder='correct'
+								/>
+							</div>
+							<div>
+								<label className='block text-sm font-medium mb-1'>
+									Incorrect Word *
+								</label>
+								<Input
+									value={formData.incorrect_word}
+									onChange={(e) =>
+										setFormData({
+											...formData,
+											incorrect_word: e.target.value,
+										})
+									}
+									placeholder='incorrect'
+								/>
+							</div>
+						</div>
+
+						<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+							<div>
+								<label className='block text-sm font-medium mb-1'>
+									Correct Definition
+								</label>
+								<Textarea
+									value={formData.correct_definition}
+									onChange={(e) =>
+										setFormData({
+											...formData,
+											correct_definition: e.target.value,
+										})
+									}
+									placeholder='Definition of correct word'
 									rows={3}
 								/>
 							</div>
-
 							<div>
 								<label className='block text-sm font-medium mb-1'>
-									FAQs (Question and Answer pairs, separated
-									by blank lines)
+									Incorrect Definition
 								</label>
 								<Textarea
-									value={formData.faqs}
+									value={formData.incorrect_definition}
 									onChange={(e) =>
 										setFormData({
 											...formData,
-											faqs: e.target.value,
+											incorrect_definition:
+												e.target.value,
 										})
 									}
-									placeholder='Question 1?&#10;Answer 1&#10;&#10;Question 2?&#10;Answer 2'
-									rows={6}
-								/>
-							</div>
-
-							<div>
-								<label className='block text-sm font-medium mb-1'>
-									Summary
-								</label>
-								<Textarea
-									value={formData.summary}
-									onChange={(e) =>
-										setFormData({
-											...formData,
-											summary: e.target.value,
-										})
-									}
-									placeholder='Brief summary of the spelling difference'
+									placeholder='Definition of incorrect word'
 									rows={3}
 								/>
 							</div>
+						</div>
 
-							<div className='flex items-center space-x-2'>
-								<input
-									type='checkbox'
-									id='is_published'
-									checked={formData.is_published}
+						<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+							<div>
+								<label className='block text-sm font-medium mb-1'>
+									Correct Examples (one per line)
+								</label>
+								<Textarea
+									value={formData.correct_examples}
 									onChange={(e) =>
 										setFormData({
 											...formData,
-											is_published: e.target.checked,
+											correct_examples: e.target.value,
 										})
 									}
-									className='rounded'
+									placeholder='Example sentence 1&#10;Example sentence 2'
+									rows={4}
 								/>
-								<label
-									htmlFor='is_published'
-									className='text-sm font-medium'>
-									Published (visible to users)
+							</div>
+							<div>
+								<label className='block text-sm font-medium mb-1'>
+									Incorrect Examples (one per line)
 								</label>
+								<Textarea
+									value={formData.incorrect_examples}
+									onChange={(e) =>
+										setFormData({
+											...formData,
+											incorrect_examples: e.target.value,
+										})
+									}
+									placeholder='Example sentence 1&#10;Example sentence 2'
+									rows={4}
+								/>
 							</div>
+						</div>
 
-							<div className='flex gap-2'>
-								<Button
-									onClick={handleSave}
-									disabled={loading}
-									className='bg-blue-600 hover:bg-blue-700'>
-									<Save className='w-4 h-4 mr-2' />
-									{loading ? "Saving..." : "Save Entry"}
-								</Button>
-								<Button onClick={cancelEdit} variant='outline'>
-									Cancel
-								</Button>
+						<div className='grid gap-4'>
+							<div>
+								<label className='block text-sm font-medium mb-1'>
+									Correct Synonyms (comma separated)
+								</label>
+								<Input
+									value={formData.synonyms_correct}
+									onChange={(e) =>
+										setFormData({
+											...formData,
+											synonyms_correct: e.target.value,
+										})
+									}
+									placeholder='synonym1, synonym2, synonym3'
+								/>
 							</div>
-						</CardContent>
-					</Card>
-				)}
+						</div>
+
+						<div>
+							<label className='block text-sm font-medium mb-1'>
+								Notes (one per line)
+							</label>
+							<Textarea
+								value={formData.notes}
+								onChange={(e) =>
+									setFormData({
+										...formData,
+										notes: e.target.value,
+									})
+								}
+								placeholder='Important note 1&#10;Important note 2'
+								rows={3}
+							/>
+						</div>
+
+						<div>
+							<label className='block text-sm font-medium mb-1'>
+								FAQs (Question and Answer pairs, separated by
+								blank lines)
+							</label>
+							<Textarea
+								value={formData.faqs}
+								onChange={(e) =>
+									setFormData({
+										...formData,
+										faqs: e.target.value,
+									})
+								}
+								placeholder='Question 1?&#10;Answer 1&#10;&#10;Question 2?&#10;Answer 2'
+								rows={6}
+							/>
+						</div>
+
+						<div>
+							<label className='block text-sm font-medium mb-1'>
+								Summary
+							</label>
+							<Textarea
+								value={formData.summary}
+								onChange={(e) =>
+									setFormData({
+										...formData,
+										summary: e.target.value,
+									})
+								}
+								placeholder='Brief summary of the spelling difference'
+								rows={3}
+							/>
+						</div>
+
+						<div className='flex items-center space-x-2'>
+							<input
+								type='checkbox'
+								id='is_published'
+								checked={formData.is_published}
+								onChange={(e) =>
+									setFormData({
+										...formData,
+										is_published: e.target.checked,
+									})
+								}
+								className='rounded'
+							/>
+							<label
+								htmlFor='is_published'
+								className='text-sm font-medium'>
+								Published (visible to users)
+							</label>
+						</div>
+
+						<div className='flex gap-2'>
+							<Button
+								onClick={handleSave}
+								disabled={loading}
+								className='bg-blue-600 hover:bg-blue-700'>
+								<Save className='w-4 h-4 mr-2' />
+								{loading ? "Saving..." : "Save Entry"}
+							</Button>
+							<Button onClick={cancelEdit} variant='outline'>
+								Cancel
+							</Button>
+						</div>
+					</CardContent>
+				</Card>
 
 				{/* Entries List */}
 				<div className='grid gap-4'>
-					{spellingEntries.map((entry) => (
+					{spellingEntries.slice(0, 3).map((entry) => (
 						<Card key={entry.id}>
 							<CardContent className='p-6'>
 								<div className='flex justify-between items-start mb-4'>

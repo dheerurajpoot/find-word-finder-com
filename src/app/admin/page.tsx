@@ -16,6 +16,8 @@ export default function AdminDashboard() {
 	const [spellingEntries, setSpellingEntries] = useState<SpellingEntry[]>([]);
 	const [loading, setLoading] = useState(false);
 	const [searchTerm, setSearchTerm] = useState("");
+	const [displayCount, setDisplayCount] = useState(12);
+
 	const [stats, setStats] = useState({
 		totalEntries: 0,
 		publishedEntries: 0,
@@ -142,7 +144,7 @@ export default function AdminDashboard() {
 						<Link href='/admin/spelling'>
 							<Button className='bg-green-600 hover:bg-green-700'>
 								<Plus className='w-4 h-4 mr-2' />
-								Manage Entries
+								Create New Entry
 							</Button>
 						</Link>
 						<Button onClick={logout} variant='outline'>
@@ -269,7 +271,7 @@ export default function AdminDashboard() {
 				<Card>
 					<CardHeader>
 						<div className='flex justify-between items-center'>
-							<CardTitle>Recent Entries</CardTitle>
+							<CardTitle>Total Entries</CardTitle>
 							<div className='flex items-center space-x-2'>
 								<Search className='h-4 w-4 text-gray-400' />
 								<Input
@@ -285,64 +287,70 @@ export default function AdminDashboard() {
 					</CardHeader>
 					<CardContent>
 						<div className='space-y-4'>
-							{filteredEntries.slice(0, 10).map((entry) => (
-								<div
-									key={entry.id}
-									className='flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50'>
-									<div className='flex-1'>
-										<div className='flex items-center space-x-3 mb-2'>
-											<h3 className='font-semibold text-gray-900'>
-												{entry.title}
-											</h3>
-											<Badge
-												variant={
-													entry.is_published
-														? "default"
-														: "secondary"
-												}>
-												{entry.is_published
-													? "Published"
-													: "Draft"}
-											</Badge>
+							{filteredEntries
+								.slice(0, displayCount)
+								.map((entry) => (
+									<div
+										key={entry.id}
+										className='flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50'>
+										<div className='flex-1'>
+											<div className='flex items-center space-x-3 mb-2'>
+												<h3 className='font-semibold text-gray-900'>
+													{entry.title}
+												</h3>
+												<Badge
+													variant={
+														entry.is_published
+															? "default"
+															: "secondary"
+													}>
+													{entry.is_published
+														? "Published"
+														: "Draft"}
+												</Badge>
+											</div>
+											<div className='flex items-center space-x-4 text-sm text-gray-600'>
+												<span>
+													Correct:{" "}
+													<strong>
+														{entry.correct_word}
+													</strong>
+												</span>
+												<span>
+													Incorrect:{" "}
+													<strong>
+														{entry.incorrect_word}
+													</strong>
+												</span>
+												<span>Views: 0</span>
+												<span>
+													Created:{" "}
+													{new Date(
+														entry.created_at
+													).toLocaleDateString()}
+												</span>
+											</div>
 										</div>
-										<div className='flex items-center space-x-4 text-sm text-gray-600'>
-											<span>
-												Correct:{" "}
-												<strong>
-													{entry.correct_word}
-												</strong>
-											</span>
-											<span>
-												Incorrect:{" "}
-												<strong>
-													{entry.incorrect_word}
-												</strong>
-											</span>
-											<span>Views: 0</span>
-											<span>
-												Created:{" "}
-												{new Date(
-													entry.created_at
-												).toLocaleDateString()}
-											</span>
+										<div className='flex items-center space-x-2'>
+											<Link
+												href={`/spelling/${entry.slug}`}
+												target='_blank'>
+												<Button
+													variant='outline'
+													size='sm'>
+													<Eye className='h-4 w-4' />
+												</Button>
+											</Link>
+											<Link href='/admin/spelling'>
+												<Button
+													variant='outline'
+													size='sm'>
+													<Edit className='h-4 w-4' />
+												</Button>
+											</Link>
 										</div>
 									</div>
-									<div className='flex items-center space-x-2'>
-										<Link
-											href={`/spelling/${entry.slug}`}
-											target='_blank'>
-											<Button variant='outline' size='sm'>
-												<Eye className='h-4 w-4' />
-											</Button>
-										</Link>
-										<Link href='/admin/spelling'>
-											<Button variant='outline' size='sm'>
-												<Edit className='h-4 w-4' />
-											</Button>
-										</Link>
-									</div>
-								</div>
-							))}
+								))}
 						</div>
 
 						{filteredEntries.length === 0 && (
@@ -353,13 +361,45 @@ export default function AdminDashboard() {
 							</div>
 						)}
 
-						{filteredEntries.length > 10 && (
-							<div className='text-center mt-4'>
-								<Link href='/admin/spelling'>
-									<Button variant='outline'>
-										View All Entries
-									</Button>
-								</Link>
+						{/* Load More / Show Less Buttons */}
+						{filteredEntries.length > 12 && (
+							<div className='text-center my-8'>
+								<div className='flex flex-col sm:flex-row gap-4 justify-center'>
+									{/* Load More Button */}
+									{(filteredEntries.length > displayCount ||
+										displayCount) && (
+										<Button
+											onClick={() =>
+												setDisplayCount(
+													displayCount + 12
+												)
+											}
+											className='bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl'>
+											<span className='flex items-center justify-center gap-2'>
+												📚 Load More (
+												{Math.min(
+													12,
+													filteredEntries.length +
+														-displayCount
+												)}{" "}
+												more)
+											</span>
+										</Button>
+									)}
+
+									{/* Show Less Button */}
+									{displayCount > 12 && (
+										<Button
+											onClick={() => setDisplayCount(12)}
+											className='bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl'>
+											<span className='flex items-center justify-center gap-2'>
+												🔽 Show Less (Showing{" "}
+												{displayCount} of{" "}
+												{filteredEntries.length})
+											</span>
+										</Button>
+									)}
+								</div>
 							</div>
 						)}
 					</CardContent>
