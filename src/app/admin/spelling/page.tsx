@@ -319,7 +319,7 @@ export default function AdminSpellingPage() {
 
 						<div>
 							<label className='block text-sm font-medium mb-1'>
-								Keywords
+								Keywords *
 							</label>
 							<Input
 								value={formData.keywords}
