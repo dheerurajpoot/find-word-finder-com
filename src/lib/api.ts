@@ -95,6 +95,7 @@ export const spellingAPI = {
 			// If we get data back, the slug exists
 			return response.data !== null && response.data !== undefined;
 		} catch (error) {
+			console.error("Error checking slug exists:", error);
 			// If 404 or error, slug doesn't exist
 			return false;
 		}
