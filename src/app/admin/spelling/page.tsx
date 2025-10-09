@@ -19,7 +19,7 @@ export default function AdminSpellingPage() {
 	const [editingEntry, setEditingEntry] = useState<SpellingEntry | null>(
 		null
 	);
-	const [isCreating, setIsCreating] = useState(false);
+	// const [isCreating, setIsCreating] = useState(false);
 
 	// Form state
 	const [formData, setFormData] = useState({
@@ -57,8 +57,6 @@ export default function AdminSpellingPage() {
 
 		setLoading(true);
 		try {
-			await spellingAPI.testAuth(accessKey);
-
 			// Store the key in localStorage
 			localStorage.setItem("admin_key", accessKey);
 			setIsAuthenticated(true);
@@ -88,7 +86,8 @@ export default function AdminSpellingPage() {
 			!formData.slug ||
 			!formData.title ||
 			!formData.correct_word ||
-			!formData.incorrect_word
+			!formData.incorrect_word ||
+			!formData.keywords
 		) {
 			alert("Please fill in all required fields");
 			return;
@@ -121,17 +120,23 @@ export default function AdminSpellingPage() {
 					.filter((qa) => qa.question && qa.answer),
 			};
 
-			if (isCreating) {
-				const res = await spellingAPI.createEntry(entryData);
-				console.log(res);
-			} else if (editingEntry) {
+			const res = await spellingAPI.createEntry(entryData);
+
+			if (editingEntry) {
 				await spellingAPI.updateEntry(editingEntry.id, entryData);
 			}
 
-			setEditingEntry(null);
-			setIsCreating(false);
-			resetForm();
-			fetchSpellingEntries();
+			if (res.status === 201) {
+				alert(res.message);
+				setEditingEntry(null);
+				// setIsCreating(false);
+				resetForm();
+				fetchSpellingEntries();
+			} else if (res.status === 400) {
+				alert(res.message);
+			} else {
+				alert("Error saving entry");
+			}
 		} catch (error) {
 			console.error("Error:", error);
 			alert("Error saving entry");
@@ -177,7 +182,7 @@ export default function AdminSpellingPage() {
 
 	const startEdit = (entry: SpellingEntry) => {
 		setEditingEntry(entry);
-		setIsCreating(false);
+		// setIsCreating(false);
 		setFormData({
 			slug: entry.slug,
 			title: entry.title,
@@ -201,7 +206,7 @@ export default function AdminSpellingPage() {
 
 	const cancelEdit = () => {
 		setEditingEntry(null);
-		setIsCreating(false);
+		// setIsCreating(false);
 		resetForm();
 	};
 

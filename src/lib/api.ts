@@ -88,6 +88,18 @@ export const spellingAPI = {
 		return response.data;
 	},
 
+	// Check if slug exists
+	checkSlugExists: async (slug: string): Promise<boolean> => {
+		try {
+			const response = await api.get(`/spelling?slug=${slug}`);
+			// If we get data back, the slug exists
+			return response.data !== null && response.data !== undefined;
+		} catch (error) {
+			// If 404 or error, slug doesn't exist
+			return false;
+		}
+	},
+
 	// Create new spelling entry
 	createEntry: async (entryData: CreateSpellingEntryData) => {
 		const adminKey = getAdminKey();
@@ -95,11 +107,24 @@ export const spellingAPI = {
 			throw new Error("Admin key not found");
 		}
 
+		// Check if slug already exists
+		const slugExists = await spellingAPI.checkSlugExists(entryData.slug);
+		if (slugExists) {
+			return {
+				status: 400,
+				message: `Entry with slug "${entryData.slug}" already exists. Please use a different slug.`,
+			};
+		}
+
 		const response = await api.post("/spelling", {
 			accessKey: adminKey,
 			...entryData,
 		});
-		return response.data;
+		return {
+			status: response.status,
+			message: "Entry created successfully",
+			data: response.data,
+		};
 	},
 
 	// Update spelling entry
@@ -127,15 +152,6 @@ export const spellingAPI = {
 		const response = await api.delete(
 			`/spelling?id=${id}&accessKey=${adminKey}`
 		);
-		return response.data;
-	},
-
-	// Test authentication
-	testAuth: async (accessKey: string) => {
-		const response = await api.post("/spelling", {
-			accessKey,
-			slug: "test-auth",
-		});
 		return response.data;
 	},
 };
