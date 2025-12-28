@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Card, CardContent } from "@/components/ui/card";
-import { SpellingEntry } from "@/lib/supabase";
-import axios from "axios";
+import { SpellingEntry, supabase } from "@/lib/supabase";
 import Link from "next/link";
+import { grammarCategories, GrammarTopic } from "@/lib/grammar-data";
 
 interface PageProps {
 	params: Promise<{ slug: string }>;
@@ -11,18 +11,95 @@ interface PageProps {
 
 async function getSpellingEntry(slug: string): Promise<SpellingEntry | null> {
 	try {
-		const response = await axios.get(
-			`${process.env.NEXT_PUBLIC_BASE_URL}/api/spelling?slug=${slug}`,
-			{
-				timeout: 10000,
-			}
-		);
+		const { data, error } = await supabase
+			.from("spelling_entries")
+			.select("*")
+			.eq("slug", slug)
+			.single();
 
-		return response.data;
+		if (error) {
+			console.error("Error fetching spelling entry:", error);
+			return null;
+		}
+
+		return data;
 	} catch (error) {
 		console.error("Error fetching spelling entry:", error);
 		return null;
 	}
+}
+
+async function getFeaturedMisspellings(
+	count: number = 5
+): Promise<SpellingEntry[]> {
+	try {
+		// Use a random sorting or just take latest for now if random is hard in Supabase simple query
+		// For true random, we might need a stored procedure or fetch more and shuffle.
+		// For now, let's fetch a few recent ones and shuffle them in code.
+		const { data, error } = await supabase
+			.from("spelling_entries")
+			.select("*")
+			.limit(20); // Fetch more to shuffle
+
+		if (error || !data) return [];
+
+		return data.sort(() => 0.5 - Math.random()).slice(0, count);
+	} catch (error) {
+		console.error("Error fetching featured misspellings:", error);
+		return [];
+	}
+}
+
+async function getRelatedMisspellings(
+	currentEntry: SpellingEntry,
+	count: number = 5
+): Promise<SpellingEntry[]> {
+	try {
+		// Try to find entries starting with the same letter
+		const firstLetter = currentEntry.correct_word.charAt(0).toLowerCase();
+
+		const { data, error } = await supabase
+			.from("spelling_entries")
+			.select("*")
+			.ilike("correct_word", `${firstLetter}%`)
+			.neq("id", currentEntry.id)
+			.limit(20);
+
+		if (error || !data) return [];
+
+		// If we don't have enough, maybe just return what we have or fetch randoms?
+		// For now, just shuffle what we found.
+		let results = data.sort(() => 0.5 - Math.random()).slice(0, count);
+
+		// If fewer than count, fill with randoms (excluding current and already picked)
+		if (results.length < count) {
+			const { data: randomData } = await supabase
+				.from("spelling_entries")
+				.select("*")
+				.neq("id", currentEntry.id)
+				.limit(20);
+
+			if (randomData) {
+				const extra = randomData
+					.filter((r) => !results.find((e) => e.id === r.id))
+					.sort(() => 0.5 - Math.random())
+					.slice(0, count - results.length);
+				results = [...results, ...extra];
+			}
+		}
+
+		return results;
+	} catch (error) {
+		console.error("Error fetching related misspellings:", error);
+		return [];
+	}
+}
+
+function getLearnedGrammar(count: number = 5): GrammarTopic[] {
+	// Flatten all topics
+	const allTopics = grammarCategories.flatMap((c) => c.topics);
+	// Shuffle and pick
+	return allTopics.sort(() => 0.5 - Math.random()).slice(0, count);
 }
 
 export async function generateMetadata({
@@ -53,9 +130,13 @@ export default async function SpellingPage({ params }: PageProps) {
 		notFound();
 	}
 
+	const featuredMisspellings = await getFeaturedMisspellings();
+	const relatedMisspellings = await getRelatedMisspellings(entry);
+	const learnedGrammar = getLearnedGrammar();
+
 	return (
 		<div className='container mx-auto px-4 py-8 max-w-4xl'>
-			<h1 className='text-5xl font-extrabold text-center mb-6 text-gray-900'>
+			<h1 className='text-3xl md:text-5xl font-extrabold text-center mb-6 text-gray-900'>
 				{entry.title}
 			</h1>
 
@@ -65,7 +146,7 @@ export default async function SpellingPage({ params }: PageProps) {
 				</p>
 			</div>
 
-			<div className='grid md:grid-cols-2 gap-6 mb-8'>
+			<div className='flex flex-col md:flex-row gap-4 mb-8'>
 				<Card className='border-red-200 bg-red-50'>
 					<CardContent className='p-6'>
 						<div className='flex items-center mb-4'>
@@ -108,7 +189,7 @@ export default async function SpellingPage({ params }: PageProps) {
 			</div>
 
 			<div className='mb-8'>
-				<h2 className='text-3xl font-bold mb-6 text-gray-900'>
+				<h2 className='text-2xl font-bold mb-6 text-gray-900'>
 					Definition of {entry.correct_word}
 				</h2>
 				<div className='bg-gray-50 p-6 rounded-lg'>
@@ -124,7 +205,7 @@ export default async function SpellingPage({ params }: PageProps) {
 			</div>
 
 			<div className='mb-8'>
-				<h2 className='text-3xl font-bold mb-6 text-gray-900'>
+				<h2 className='text-2xl font-bold mb-6 text-gray-900'>
 					Synonyms for {entry.correct_word}
 				</h2>
 				<div className='bg-blue-50 p-6 rounded-lg'>
@@ -161,7 +242,7 @@ export default async function SpellingPage({ params }: PageProps) {
 			</div>
 
 			<div className='mb-8'>
-				<h2 className='text-3xl font-bold mb-6 text-gray-900'>
+				<h2 className='text-2xl font-bold mb-6 text-gray-900'>
 					Usage Examples
 				</h2>
 				<div className='space-y-4'>
@@ -202,7 +283,7 @@ export default async function SpellingPage({ params }: PageProps) {
 
 			{entry.faqs.length > 0 && (
 				<div className='mb-8'>
-					<h2 className='text-3xl font-bold mb-6 text-gray-900'>
+					<h2 className='text-2xl font-bold mb-6 text-gray-900'>
 						Frequently Asked Questions
 					</h2>
 					<div className='space-y-6'>
@@ -247,41 +328,16 @@ export default async function SpellingPage({ params }: PageProps) {
 						Featured Misspellings
 					</h3>
 					<ul className='space-y-2'>
-						<li>
-							<Link
-								href='/spelling/abandoned-vs-abandoned'
-								className='text-blue-700 hover:text-blue-900 underline'>
-								Abandoned vs Abandoned
-							</Link>
-						</li>
-						<li>
-							<Link
-								href='/spelling/abandoning-vs-abandoning'
-								className='text-blue-700 hover:text-blue-900 underline'>
-								Abandoning vs Abandoning
-							</Link>
-						</li>
-						<li>
-							<Link
-								href='/spelling/abandonment-vs-abandonment'
-								className='text-blue-700 hover:text-blue-900 underline'>
-								Abandonment vs Abandonment
-							</Link>
-						</li>
-						<li>
-							<Link
-								href='/spelling/abandons-vs-abandons'
-								className='text-blue-700 hover:text-blue-900 underline'>
-								Abandons vs Abandons
-							</Link>
-						</li>
-						<li>
-							<Link
-								href='/spelling/abandoned-vs-abandoned'
-								className='text-blue-700 hover:text-blue-900 underline'>
-								Abandoned vs Abandoned
-							</Link>
-						</li>
+						{featuredMisspellings.map((featured) => (
+							<li key={featured.id}>
+								<Link
+									href={`/spelling/${featured.slug}`}
+									className='text-blue-700 hover:text-blue-900 underline'>
+									{featured.correct_word} vs{" "}
+									{featured.incorrect_word}
+								</Link>
+							</li>
+						))}
 					</ul>
 				</div>
 
@@ -291,41 +347,16 @@ export default async function SpellingPage({ params }: PageProps) {
 						Related Misspellings
 					</h3>
 					<ul className='space-y-2'>
-						<li>
-							<Link
-								href='/spelling/desert-vs-dessert'
-								className='text-purple-700 hover:text-purple-900 underline'>
-								Desert vs Dessert
-							</Link>
-						</li>
-						<li>
-							<Link
-								href='/spelling/forsake-vs-forsake'
-								className='text-purple-700 hover:text-purple-900 underline'>
-								Forsake vs Forsake
-							</Link>
-						</li>
-						<li>
-							<Link
-								href='/spelling/relinquish-vs-relinquish'
-								className='text-purple-700 hover:text-purple-900 underline'>
-								Relinquish vs Relinquish
-							</Link>
-						</li>
-						<li>
-							<Link
-								href='/spelling/surrender-vs-surrender'
-								className='text-purple-700 hover:text-purple-900 underline'>
-								Surrender vs Surrender
-							</Link>
-						</li>
-						<li>
-							<Link
-								href='/spelling/leave-vs-leave'
-								className='text-purple-700 hover:text-purple-900 underline'>
-								Leave vs Leave
-							</Link>
-						</li>
+						{relatedMisspellings.map((related) => (
+							<li key={related.id}>
+								<Link
+									href={`/spelling/${related.slug}`}
+									className='text-purple-700 hover:text-purple-900 underline'>
+									{related.correct_word} vs{" "}
+									{related.incorrect_word}
+								</Link>
+							</li>
+						))}
 					</ul>
 				</div>
 
@@ -335,41 +366,15 @@ export default async function SpellingPage({ params }: PageProps) {
 						Learned Grammar
 					</h3>
 					<ul className='space-y-2'>
-						<li>
-							<Link
-								href='/grammar/verbs'
-								className='text-green-700 hover:text-green-900 underline'>
-								Verbs Guide
-							</Link>
-						</li>
-						<li>
-							<Link
-								href='/grammar/on-vs-one'
-								className='text-green-700 hover:text-green-900 underline'>
-								On vs One
-							</Link>
-						</li>
-						<li>
-							<Link
-								href='/grammar/etymology'
-								className='text-green-700 hover:text-green-900 underline'>
-								Etymology
-							</Link>
-						</li>
-						<li>
-							<Link
-								href='/grammar/french-words'
-								className='text-green-700 hover:text-green-900 underline'>
-								French Words
-							</Link>
-						</li>
-						<li>
-							<Link
-								href='/grammar/word-endings'
-								className='text-green-700 hover:text-green-900 underline'>
-								Word Endings
-							</Link>
-						</li>
+						{learnedGrammar.map((topic, index) => (
+							<li key={index}>
+								<Link
+									href={topic.href}
+									className='text-green-700 hover:text-green-900 underline'>
+									{topic.name}
+								</Link>
+							</li>
+						))}
 					</ul>
 				</div>
 			</div>
