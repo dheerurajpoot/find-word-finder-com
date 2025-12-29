@@ -7,6 +7,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { baseUrl } from "@/lib/constant";
 import { GlobalAdInserter } from "@/components/ads";
+import { CanonicalLink } from "@/components/CanonicalLink";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,9 +23,6 @@ export const metadata: Metadata = {
 	creator: "Find Word Finder",
 	publisher: "Find Word Finder",
 	robots: "index, follow",
-	alternates: {
-		canonical: `${baseUrl}`,
-	},
 	openGraph: {
 		title: "Find Word Finder - Free Find Word Finder & Scrabble Helper Tools",
 		description:
@@ -110,6 +108,7 @@ export default function RootLayout({
 			<body className={inter.className} suppressHydrationWarning>
 				<GlobalAdInserter />
 				<Header />
+				<CanonicalLink />
 				<main className='min-h-screen'>{children}</main>
 				<Footer />
 			</body>
