@@ -7,8 +7,6 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { baseUrl } from "@/lib/constant";
 import { GlobalAdInserter } from "@/components/ads";
-import { CanonicalLink } from "@/components/CanonicalLink";
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,16 +38,6 @@ export const metadata: Metadata = {
 		locale: "en_US",
 		type: "website",
 	},
-	twitter: {
-		card: "summary_large_image",
-		title: "Find Word Finder - Free Find Word Finder & Scrabble Helper Tools",
-		description:
-			"Find words for Scrabble, Words with Friends, and other word games.",
-		// siteId: "Your Twitter Site ID",
-		creator: "@YourTwitterHandle",
-		// creatorId: "Your Twitter Creator ID",
-		images: [`${baseUrl}/banner.png`],
-	},
 };
 
 export default function RootLayout({
@@ -67,15 +55,17 @@ export default function RootLayout({
 				/>
 
 				{/* Google AdSense */}
-				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2320541206058096"
-     crossOrigin="anonymous"></script>
+				<script
+					async
+					src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2320541206058096'
+					crossOrigin='anonymous'></script>
 
 				{/* Google Analytics */}
 				<Script
-					src="https://www.googletagmanager.com/gtag/js?id=G-WD0SR0VT9B"
-					strategy="afterInteractive"
+					src='https://www.googletagmanager.com/gtag/js?id=G-WD0SR0VT9B'
+					strategy='afterInteractive'
 				/>
-				<Script id="google-analytics" strategy="afterInteractive">
+				<Script id='google-analytics' strategy='afterInteractive'>
 					{`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -103,12 +93,12 @@ export default function RootLayout({
 							},
 						}),
 					}}
-				suppressHydrationWarning />
+					suppressHydrationWarning
+				/>
 			</head>
 			<body className={inter.className} suppressHydrationWarning>
 				<GlobalAdInserter />
 				<Header />
-				<CanonicalLink />
 				<main className='min-h-screen'>{children}</main>
 				<Footer />
 			</body>
