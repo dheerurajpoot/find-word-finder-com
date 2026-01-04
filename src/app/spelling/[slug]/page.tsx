@@ -119,6 +119,9 @@ export async function generateMetadata({
 		title: `${entry.title} | Word Finder`,
 		description: entry.description,
 		keywords: entry.keywords || "",
+		alternates: {
+			canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/spelling/${slug}`,
+		},
 	};
 }
 
