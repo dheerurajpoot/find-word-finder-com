@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, Trophy, Target } from "lucide-react";
 import { WordDetailsDialog } from "@/components/word-details-dialog";
+import { baseUrl } from "@/lib/constant";
 
 export default function ScrabbleDictionaryPage() {
 	const scrabbleWords = [
@@ -68,6 +69,19 @@ export default function ScrabbleDictionaryPage() {
 
 	return (
 		<div className='min-h-screen bg-gradient-to-b from-gray-50 to-white'>
+			<head>
+				<title>Scrabble Dictionary | Find Word Finder</title>
+				<meta
+					name='description'
+					content='The official Scrabble dictionary contains over 100,000 playable words. Our comprehensive database includes words from the Official Tournament and Club Word List (OTCWL), used in North American Scrabble tournaments.'
+				/>
+				<meta
+					name='keywords'
+					content='Scrabble dictionary, Scrabble words, Scrabble word list, Scrabble word finder, Scrabble word search'
+				/>
+				<meta name='robots' content='index, follow' />
+				<link rel='canonical' href={`${baseUrl}scrabble-dictionary`} />
+			</head>
 			<div className='container mx-auto px-4 py-8'>
 				<div className='grid grid-cols-1 lg:grid-cols-4 gap-8'>
 					{/* Main Content */}
@@ -127,7 +141,9 @@ export default function ScrabbleDictionaryPage() {
 						{/* Words by Length */}
 						<Card className='shadow-lg border border-gray-100'>
 							<CardHeader className='bg-blue-500 text-white rounded-t-xl p-0'>
-								<CardTitle className='p-6'>Scrabble Words by Length</CardTitle>
+								<CardTitle className='p-6'>
+									Scrabble Words by Length
+								</CardTitle>
 							</CardHeader>
 							<CardContent className='p-6'>
 								<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
@@ -169,7 +185,9 @@ export default function ScrabbleDictionaryPage() {
 						{/* Search Results */}
 						<Card className='shadow-lg border border-gray-100'>
 							<CardHeader className='bg-green-500 text-white rounded-t-xl p-0'>
-								<CardTitle className='p-6'>Featured Scrabble Words</CardTitle>
+								<CardTitle className='p-6'>
+									Featured Scrabble Words
+								</CardTitle>
 							</CardHeader>
 							<CardContent className='p-6'>
 								<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3'>
@@ -215,7 +233,9 @@ export default function ScrabbleDictionaryPage() {
 						{/* Quick Stats */}
 						<Card className='shadow-lg border border-gray-100'>
 							<CardHeader className='bg-green-500 text-white rounded-t-xl p-0'>
-								<CardTitle className='p-6'>Dictionary Stats</CardTitle>
+								<CardTitle className='p-6'>
+									Dictionary Stats
+								</CardTitle>
 							</CardHeader>
 							<CardContent className='p-4'>
 								<div className='space-y-3'>
@@ -256,7 +276,9 @@ export default function ScrabbleDictionaryPage() {
 						{/* Quick Links */}
 						<Card className='shadow-lg border border-gray-100'>
 							<CardHeader className='bg-blue-500 text-white rounded-t-xl p-0'>
-								<CardTitle className='p-6'>Quick Links</CardTitle>
+								<CardTitle className='p-6'>
+									Quick Links
+								</CardTitle>
 							</CardHeader>
 							<CardContent className='p-4'>
 								<div className='space-y-2'>
@@ -287,7 +309,9 @@ export default function ScrabbleDictionaryPage() {
 						{/* Tips */}
 						<Card className='shadow-lg border border-gray-100'>
 							<CardHeader className='bg-purple-500 text-white rounded-t-xl p-0'>
-								<CardTitle className='p-6'>Scrabble Tips</CardTitle>
+								<CardTitle className='p-6'>
+									Scrabble Tips
+								</CardTitle>
 							</CardHeader>
 							<CardContent className='p-4'>
 								<div className='space-y-3 text-sm'>

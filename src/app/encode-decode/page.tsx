@@ -6,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowLeft, ArrowRight, Copy, RotateCcw, Code, Lock, Globe, Sparkles, Zap, Shield } from 'lucide-react';
+import { baseUrl } from '@/lib/constant';
 
 export default function EncodeDecodePage() {
   // Get initial tab from URL or default to 'escape'
@@ -125,6 +126,12 @@ dF('${encoded}');
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 overflow-x-hidden">
+      <head>  <title>Encode/Decode Tools | Find Word Finder</title>
+        <meta name='description' content='Advanced HTML, text, and JavaScript encoding/decoding utilities for protecting your source code with military-grade obfuscation' />
+        <meta name='keywords' content='encode/decode, html, text, javascript, encoding, decoding, obfuscation' />
+        <meta name='robots' content='index, follow' />
+        <link rel='canonical' href={`${baseUrl}encode-decode`} />
+      </head>
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
