@@ -15,6 +15,7 @@ async function getSpellingEntry(slug: string): Promise<SpellingEntry | null> {
 			.from("spelling_entries")
 			.select("*")
 			.eq("slug", slug)
+			.eq("is_published", true)
 			.single();
 
 		if (error) {
@@ -39,6 +40,7 @@ async function getFeaturedMisspellings(
 		const { data, error } = await supabase
 			.from("spelling_entries")
 			.select("*")
+			.eq("is_published", true)
 			.limit(20); // Fetch more to shuffle
 
 		if (error || !data) return [];
@@ -62,6 +64,7 @@ async function getRelatedMisspellings(
 			.from("spelling_entries")
 			.select("*")
 			.ilike("correct_word", `${firstLetter}%`)
+			.eq("is_published", true)
 			.neq("id", currentEntry.id)
 			.limit(20);
 
@@ -76,6 +79,7 @@ async function getRelatedMisspellings(
 			const { data: randomData } = await supabase
 				.from("spelling_entries")
 				.select("*")
+				.eq("is_published", true)
 				.neq("id", currentEntry.id)
 				.limit(20);
 

@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, Trophy } from "lucide-react";
 import { WordDetailsDialog } from "@/components/word-details-dialog";
+import { baseUrl } from "@/lib/constant";
 
 export default function ScrabbleWordsPage() {
 	const scrabbleWords = [
@@ -68,6 +69,19 @@ export default function ScrabbleWordsPage() {
 
 	return (
 		<div className='min-h-screen bg-gradient-to-b from-gray-50 to-white'>
+			<head>
+				<title>Scrabble Words | Find Word Finder</title>
+				<meta
+					name='description'
+					content='Discover the best Scrabble words to boost your score! Our comprehensive database includes over 100,000 playable words from the Official Tournament and Club Word List (OTCWL).'
+				/>
+				<meta
+					name='keywords'
+					content='Scrabble words, Scrabble word list, Scrabble word finder, Scrabble word search'
+				/>
+				<meta name='robots' content='index, follow' />
+				<link rel='canonical' href={`${baseUrl}scrabble-words`} />
+			</head>
 			<div className='container mx-auto px-4 py-8'>
 				<div className='grid grid-cols-1 lg:grid-cols-4 gap-8'>
 					{/* Main Content */}
@@ -81,10 +95,12 @@ export default function ScrabbleWordsPage() {
 								</h1>
 							</div>
 							<p className='text-lg text-gray-700 leading-relaxed mb-6'>
-								Discover the best Scrabble words to boost your score! Our comprehensive
-								database includes over 100,000 playable words from the Official
-								Tournament and Club Word List (OTCWL). Find high-scoring words,
-								strategic combinations, and improve your Scrabble game strategy.
+								Discover the best Scrabble words to boost your
+								score! Our comprehensive database includes over
+								100,000 playable words from the Official
+								Tournament and Club Word List (OTCWL). Find
+								high-scoring words, strategic combinations, and
+								improve your Scrabble game strategy.
 							</p>
 							<div className='flex flex-wrap gap-3'>
 								<Link
@@ -138,7 +154,9 @@ export default function ScrabbleWordsPage() {
 						{/* Words by Length */}
 						<Card className='shadow-lg border border-gray-100'>
 							<CardHeader className='bg-blue-500 text-white rounded-t-xl p-0'>
-								<CardTitle className='p-6'>Words by Length</CardTitle>
+								<CardTitle className='p-6'>
+									Words by Length
+								</CardTitle>
 							</CardHeader>
 							<CardContent className='p-6'>
 								<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
@@ -152,10 +170,12 @@ export default function ScrabbleWordsPage() {
 													{item.length}
 												</div>
 												<div className='text-sm text-gray-600 mb-2'>
-													{item.count.toLocaleString()} words
+													{item.count.toLocaleString()}{" "}
+													words
 												</div>
 												<div className='text-xs text-gray-500'>
-													Examples: {item.examples.join(", ")}
+													Examples:{" "}
+													{item.examples.join(", ")}
 												</div>
 											</div>
 										</Link>
@@ -167,7 +187,9 @@ export default function ScrabbleWordsPage() {
 						{/* Featured Scrabble Words */}
 						<Card className='shadow-lg border border-gray-100'>
 							<CardHeader className='bg-green-500 text-white rounded-t-xl p-0'>
-								<CardTitle className='p-6'>Featured Scrabble Words</CardTitle>
+								<CardTitle className='p-6'>
+									Featured Scrabble Words
+								</CardTitle>
 							</CardHeader>
 							<CardContent className='p-6'>
 								<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3'>
@@ -200,7 +222,9 @@ export default function ScrabbleWordsPage() {
 						{/* Quick Tools */}
 						<Card className='shadow-lg border border-gray-100'>
 							<CardHeader className='bg-purple-500 text-white rounded-t-xl p-0'>
-								<CardTitle className='p-6'>Quick Tools</CardTitle>
+								<CardTitle className='p-6'>
+									Quick Tools
+								</CardTitle>
 							</CardHeader>
 							<CardContent className='p-4 space-y-3'>
 								<Link
@@ -229,21 +253,27 @@ export default function ScrabbleWordsPage() {
 						{/* Scrabble Tips */}
 						<Card className='shadow-lg border border-gray-100'>
 							<CardHeader className='bg-orange-500 text-white rounded-t-xl p-0'>
-								<CardTitle className='p-6'>Scrabble Tips</CardTitle>
+								<CardTitle className='p-6'>
+									Scrabble Tips
+								</CardTitle>
 							</CardHeader>
 							<CardContent className='p-4 space-y-3'>
 								<div className='text-sm text-gray-700'>
 									<p className='mb-2'>
-										<strong>High-Value Letters:</strong> Q (10), Z (10), J (8), X (8)
+										<strong>High-Value Letters:</strong> Q
+										(10), Z (10), J (8), X (8)
 									</p>
 									<p className='mb-2'>
-										<strong>Common 2-Letter Words:</strong> QI, ZA, XU, JO
+										<strong>Common 2-Letter Words:</strong>{" "}
+										QI, ZA, XU, JO
 									</p>
 									<p className='mb-2'>
-										<strong>Use Prefixes/Suffixes:</strong> RE-, UN-, -ING, -ED
+										<strong>Use Prefixes/Suffixes:</strong>{" "}
+										RE-, UN-, -ING, -ED
 									</p>
 									<p>
-										<strong>Plan Ahead:</strong> Save high-value tiles for bonus squares
+										<strong>Plan Ahead:</strong> Save
+										high-value tiles for bonus squares
 									</p>
 								</div>
 							</CardContent>
@@ -252,7 +282,9 @@ export default function ScrabbleWordsPage() {
 						{/* Related Pages */}
 						<Card className='shadow-lg border border-gray-100'>
 							<CardHeader className='bg-purple-500 text-white rounded-t-xl p-0'>
-								<CardTitle className='p-6'>Related Pages</CardTitle>
+								<CardTitle className='p-6'>
+									Related Pages
+								</CardTitle>
 							</CardHeader>
 							<CardContent className='p-4 space-y-2'>
 								<Link
