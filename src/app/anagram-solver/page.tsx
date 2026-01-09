@@ -7,7 +7,6 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Shuffle, Search, RotateCcw } from "lucide-react";
 import { searchWords } from "@/lib/api";
-import Head from "next/head";
 import { baseUrl } from "@/lib/constant";
 
 interface AnagramResult {
