@@ -10,6 +10,10 @@ export async function GET() {
 		{ url: "crossword-solver", priority: "0.8", changefreq: "weekly" },
 		{ url: "rhyme-finder", priority: "0.8", changefreq: "weekly" },
 		{ url: "word-generator", priority: "0.8", changefreq: "weekly" },
+		{ url: "encoder-decoder", priority: "0.8", changefreq: "weekly" },
+		{ url: "egfr-calculator", priority: "0.8", changefreq: "weekly" },
+		{ url: "scrabble-calculator", priority: "0.8", changefreq: "weekly" },
+		{ url: "wordle-helper", priority: "0.8", changefreq: "weekly" },
 	];
 
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
